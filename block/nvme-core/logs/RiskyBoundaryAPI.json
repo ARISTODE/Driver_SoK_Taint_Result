@@ -1,0 +1,756 @@
+[
+  {
+    "id": 0,
+    "kernel boundary func name": "__register_chrdev",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 7,
+    "call path": "( [4]nvme_core_init ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L2083 )->__register_chrdev ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/char_dev.c#L246 )->__register_chrdev_region ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/char_dev.c#L74 )->kfree ( Unknown Loc ) )"
+  },
+  {
+    "id": 1,
+    "kernel boundary func name": "__register_chrdev",
+    "risky func": "kobject_put",
+    "Risky API Class": "refCount",
+    "Is Controlled Path": 1,
+    "No. path cond": 3,
+    "call path": "( [3]nvme_core_init ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L2083 )->__register_chrdev ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/char_dev.c#L246 )->kobject_put ( Unknown Loc ) )"
+  },
+  {
+    "id": 2,
+    "kernel boundary func name": "__register_chrdev",
+    "risky func": "mutex_lock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 1,
+    "call path": "( [4]nvme_core_init ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L2083 )->__register_chrdev ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/char_dev.c#L246 )->__unregister_chrdev_region ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/char_dev.c#L150 )->mutex_lock ( Unknown Loc ) )"
+  },
+  {
+    "id": 3,
+    "kernel boundary func name": "__register_chrdev",
+    "risky func": "mutex_unlock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 9,
+    "call path": "( [4]nvme_core_init ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L2083 )->__register_chrdev ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/char_dev.c#L246 )->__unregister_chrdev_region ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/char_dev.c#L150 )->mutex_unlock ( Unknown Loc ) )"
+  },
+  {
+    "id": 4,
+    "kernel boundary func name": "__register_chrdev",
+    "risky func": "kzalloc.502",
+    "Risky API Class": "",
+    "Is Controlled Path": 1,
+    "No. path cond": 1,
+    "call path": "( [4]nvme_core_init ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L2083 )->__register_chrdev ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/char_dev.c#L246 )->__register_chrdev_region ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/char_dev.c#L74 )->kzalloc.502 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L634 ) )"
+  },
+  {
+    "id": 5,
+    "kernel boundary func name": "__register_chrdev",
+    "risky func": "kobject_get",
+    "Risky API Class": "refCount",
+    "Is Controlled Path": 1,
+    "No. path cond": 3,
+    "call path": "( [4]nvme_core_init ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L2083 )->__register_chrdev ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/char_dev.c#L246 )->cdev_add ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/char_dev.c#L456 )->kobject_get ( Unknown Loc ) )"
+  },
+  {
+    "id": 6,
+    "kernel boundary func name": "cancel_delayed_work_sync",
+    "risky func": "del_timer",
+    "Risky API Class": "timer",
+    "Is Controlled Path": 0,
+    "No. path cond": 1,
+    "call path": "( [5]nvme_stop_keep_alive ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L539 )->cancel_delayed_work_sync ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L3021 )->__cancel_work_timer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L2873 )->try_to_grab_pending ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1204 )->del_timer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1161 ) )"
+  },
+  {
+    "id": 7,
+    "kernel boundary func name": "__unregister_chrdev",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 2,
+    "call path": "( [3]nvme_core_exit ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L2107 )->__unregister_chrdev ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/char_dev.c#L313 )->kfree ( Unknown Loc ) )( [3]nvme_core_init ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L2083 )->__unregister_chrdev ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/char_dev.c#L313 )->kfree ( Unknown Loc ) )"
+  },
+  {
+    "id": 8,
+    "kernel boundary func name": "__unregister_chrdev",
+    "risky func": "mutex_lock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "call path": "( [4]nvme_core_exit ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L2107 )->__unregister_chrdev ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/char_dev.c#L313 )->__unregister_chrdev_region ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/char_dev.c#L150 )->mutex_lock ( Unknown Loc ) )( [4]nvme_core_init ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L2083 )->__unregister_chrdev ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/char_dev.c#L313 )->__unregister_chrdev_region ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/char_dev.c#L150 )->mutex_lock ( Unknown Loc ) )"
+  },
+  {
+    "id": 9,
+    "kernel boundary func name": "__unregister_chrdev",
+    "risky func": "mutex_unlock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 5,
+    "call path": "( [4]nvme_core_exit ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L2107 )->__unregister_chrdev ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/char_dev.c#L313 )->__unregister_chrdev_region ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/char_dev.c#L150 )->mutex_unlock ( Unknown Loc ) )( [4]nvme_core_init ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L2083 )->__unregister_chrdev ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/char_dev.c#L313 )->__unregister_chrdev_region ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/char_dev.c#L150 )->mutex_unlock ( Unknown Loc ) )"
+  },
+  {
+    "id": 10,
+    "kernel boundary func name": "__unregister_chrdev",
+    "risky func": "kobject_put",
+    "Risky API Class": "refCount",
+    "Is Controlled Path": 1,
+    "No. path cond": 2,
+    "call path": "( [4]nvme_core_exit ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L2107 )->__unregister_chrdev ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/char_dev.c#L313 )->cdev_del ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/char_dev.c#L485 )->kobject_put ( Unknown Loc ) )( [4]nvme_core_init ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L2083 )->__unregister_chrdev ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/char_dev.c#L313 )->cdev_del ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/char_dev.c#L485 )->kobject_put ( Unknown Loc ) )"
+  },
+  {
+    "id": 11,
+    "kernel boundary func name": "blk_cleanup_queue",
+    "risky func": "mutex_lock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 2,
+    "call path": "( [3]nvme_alloc_ns ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1641 )->blk_cleanup_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-core.c#L544 )->mutex_lock ( Unknown Loc ) )( [3]nvme_ns_remove ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1708 )->blk_cleanup_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-core.c#L544 )->mutex_lock ( Unknown Loc ) )"
+  },
+  {
+    "id": 12,
+    "kernel boundary func name": "blk_cleanup_queue",
+    "risky func": "mutex_unlock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 3,
+    "call path": "( [3]nvme_alloc_ns ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1641 )->blk_cleanup_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-core.c#L544 )->mutex_unlock ( Unknown Loc ) )( [3]nvme_ns_remove ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1708 )->blk_cleanup_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-core.c#L544 )->mutex_unlock ( Unknown Loc ) )"
+  },
+  {
+    "id": 13,
+    "kernel boundary func name": "blk_cleanup_queue",
+    "risky func": "kobject_put",
+    "Risky API Class": "refCount",
+    "Is Controlled Path": 1,
+    "No. path cond": 3,
+    "call path": "( [4]nvme_alloc_ns ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1641 )->blk_cleanup_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-core.c#L544 )->blk_put_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-core.c#L379 )->kobject_put ( Unknown Loc ) )( [4]nvme_ns_remove ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1708 )->blk_cleanup_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-core.c#L544 )->blk_put_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-core.c#L379 )->kobject_put ( Unknown Loc ) )"
+  },
+  {
+    "id": 14,
+    "kernel boundary func name": "blk_cleanup_queue",
+    "risky func": "del_timer",
+    "Risky API Class": "timer",
+    "Is Controlled Path": 0,
+    "No. path cond": 5,
+    "call path": "( [7]nvme_alloc_ns ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1641 )->blk_cleanup_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-core.c#L544 )->blk_sync_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-core.c#L282 )->cancel_delayed_work_sync ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L3021 )->__cancel_work_timer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L2873 )->try_to_grab_pending ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1204 )->del_timer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1161 ) )( [7]nvme_ns_remove ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1708 )->blk_cleanup_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-core.c#L544 )->blk_sync_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-core.c#L282 )->cancel_delayed_work_sync ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L3021 )->__cancel_work_timer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L2873 )->try_to_grab_pending ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1204 )->del_timer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1161 ) )"
+  },
+  {
+    "id": 15,
+    "kernel boundary func name": "blk_cleanup_queue",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 7,
+    "call path": "( [7]nvme_alloc_ns ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1641 )->blk_cleanup_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-core.c#L544 )->blk_mq_free_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L2140 )->blk_mq_exit_hw_queues ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1703 )->blk_mq_exit_hctx ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1682 )->blk_mq_free_bitmap ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1609 )->kfree ( Unknown Loc ) )( [7]nvme_ns_remove ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1708 )->blk_cleanup_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-core.c#L544 )->blk_mq_free_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L2140 )->blk_mq_exit_hw_queues ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1703 )->blk_mq_exit_hctx ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1682 )->blk_mq_free_bitmap ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1609 )->kfree ( Unknown Loc ) )"
+  },
+  {
+    "id": 16,
+    "kernel boundary func name": "blk_cleanup_queue",
+    "risky func": "add_timer",
+    "Risky API Class": "timer",
+    "Is Controlled Path": 0,
+    "No. path cond": 26,
+    "call path": "( [10]nvme_alloc_ns ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1641 )->blk_cleanup_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-core.c#L544 )->blk_freeze_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L102 )->blk_mq_freeze_queue_start ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L81 )->blk_mq_run_hw_queues ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L955 )->blk_mq_run_hw_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L934 )->kblockd_schedule_delayed_work_on ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-core.c#L3107 )->queue_delayed_work_on ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1547 )->__queue_delayed_work ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1502 )->add_timer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1104 ) )( [10]nvme_ns_remove ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1708 )->blk_cleanup_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-core.c#L544 )->blk_freeze_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L102 )->blk_mq_freeze_queue_start ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L81 )->blk_mq_run_hw_queues ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L955 )->blk_mq_run_hw_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L934 )->kblockd_schedule_delayed_work_on ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-core.c#L3107 )->queue_delayed_work_on ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1547 )->__queue_delayed_work ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1502 )->add_timer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1104 ) )"
+  },
+  {
+    "id": 17,
+    "kernel boundary func name": "blk_cleanup_queue",
+    "risky func": "mod_timer",
+    "Risky API Class": "timer",
+    "Is Controlled Path": 0,
+    "No. path cond": 27,
+    "call path": "( [11]nvme_alloc_ns ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1641 )->blk_cleanup_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-core.c#L544 )->blk_freeze_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L102 )->blk_mq_freeze_queue_start ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L81 )->blk_mq_run_hw_queues ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L955 )->blk_mq_run_hw_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L934 )->kblockd_schedule_delayed_work_on ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-core.c#L3107 )->queue_delayed_work_on ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1547 )->__queue_delayed_work ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1502 )->add_timer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1104 )->mod_timer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1084 ) )( [11]nvme_ns_remove ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1708 )->blk_cleanup_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-core.c#L544 )->blk_freeze_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L102 )->blk_mq_freeze_queue_start ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L81 )->blk_mq_run_hw_queues ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L955 )->blk_mq_run_hw_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L934 )->kblockd_schedule_delayed_work_on ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-core.c#L3107 )->queue_delayed_work_on ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1547 )->__queue_delayed_work ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1502 )->add_timer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1104 )->mod_timer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1084 ) )"
+  },
+  {
+    "id": 18,
+    "kernel boundary func name": "blk_mq_start_stopped_hw_queues",
+    "risky func": "add_timer",
+    "Risky API Class": "timer",
+    "Is Controlled Path": 0,
+    "No. path cond": 21,
+    "call path": "( [7]nvme_start_queues ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L2069 )->blk_mq_start_stopped_hw_queues ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1007 )->blk_mq_run_hw_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L934 )->kblockd_schedule_delayed_work_on ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-core.c#L3107 )->queue_delayed_work_on ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1547 )->__queue_delayed_work ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1502 )->add_timer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1104 ) )( [7]nvme_kill_queues ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L2031 )->blk_mq_start_stopped_hw_queues ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1007 )->blk_mq_run_hw_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L934 )->kblockd_schedule_delayed_work_on ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-core.c#L3107 )->queue_delayed_work_on ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1547 )->__queue_delayed_work ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1502 )->add_timer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1104 ) )"
+  },
+  {
+    "id": 19,
+    "kernel boundary func name": "blk_mq_start_stopped_hw_queues",
+    "risky func": "mod_timer",
+    "Risky API Class": "timer",
+    "Is Controlled Path": 0,
+    "No. path cond": 22,
+    "call path": "( [8]nvme_start_queues ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L2069 )->blk_mq_start_stopped_hw_queues ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1007 )->blk_mq_run_hw_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L934 )->kblockd_schedule_delayed_work_on ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-core.c#L3107 )->queue_delayed_work_on ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1547 )->__queue_delayed_work ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1502 )->add_timer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1104 )->mod_timer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1084 ) )( [8]nvme_kill_queues ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L2031 )->blk_mq_start_stopped_hw_queues ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1007 )->blk_mq_run_hw_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L934 )->kblockd_schedule_delayed_work_on ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-core.c#L3107 )->queue_delayed_work_on ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1547 )->__queue_delayed_work ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1502 )->add_timer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1104 )->mod_timer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1084 ) )"
+  },
+  {
+    "id": 20,
+    "kernel boundary func name": "blk_mq_stop_hw_queues",
+    "risky func": "del_timer",
+    "Risky API Class": "timer",
+    "Is Controlled Path": 0,
+    "No. path cond": 3,
+    "call path": "( [6]nvme_stop_queues ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L2052 )->blk_mq_stop_hw_queues ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L979 )->blk_mq_stop_hw_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L971 )->cancel_delayed_work ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L2993 )->try_to_grab_pending ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1204 )->del_timer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1161 ) )"
+  },
+  {
+    "id": 21,
+    "kernel boundary func name": "blk_mq_cancel_requeue_work",
+    "risky func": "del_timer",
+    "Risky API Class": "timer",
+    "Is Controlled Path": 0,
+    "No. path cond": 1,
+    "call path": "( [6]nvme_stop_queues ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L2052 )->blk_mq_cancel_requeue_work ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L569 )->cancel_work_sync ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L2949 )->__cancel_work_timer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L2873 )->try_to_grab_pending ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1204 )->del_timer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1161 ) )"
+  },
+  {
+    "id": 22,
+    "kernel boundary func name": "blk_mq_alloc_request",
+    "risky func": "add_timer",
+    "Risky API Class": "timer",
+    "Is Controlled Path": 0,
+    "No. path cond": 32,
+    "call path": "( [8]nvme_alloc_request ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L212 )->blk_mq_alloc_request ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L233 )->__blk_mq_run_hw_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L799 )->blk_mq_run_hw_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L934 )->kblockd_schedule_delayed_work_on ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-core.c#L3107 )->queue_delayed_work_on ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1547 )->__queue_delayed_work ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1502 )->add_timer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1104 ) )"
+  },
+  {
+    "id": 23,
+    "kernel boundary func name": "blk_mq_alloc_request",
+    "risky func": "mod_timer",
+    "Risky API Class": "timer",
+    "Is Controlled Path": 0,
+    "No. path cond": 33,
+    "call path": "( [9]nvme_alloc_request ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L212 )->blk_mq_alloc_request ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L233 )->__blk_mq_run_hw_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L799 )->blk_mq_run_hw_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L934 )->kblockd_schedule_delayed_work_on ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-core.c#L3107 )->queue_delayed_work_on ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1547 )->__queue_delayed_work ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1502 )->add_timer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1104 )->mod_timer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1084 ) )"
+  },
+  {
+    "id": 24,
+    "kernel boundary func name": "blk_execute_rq",
+    "risky func": "add_timer",
+    "Risky API Class": "timer",
+    "Is Controlled Path": 0,
+    "No. path cond": 22,
+    "call path": "( [9]__nvme_submit_user_cmd ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L380 )->blk_execute_rq ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-exec.c#L99 )->blk_execute_rq_nowait ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-exec.c#L51 )->blk_mq_insert_request ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1074 )->blk_mq_run_hw_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L934 )->kblockd_schedule_delayed_work_on ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-core.c#L3107 )->queue_delayed_work_on ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1547 )->__queue_delayed_work ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1502 )->add_timer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1104 ) )( [9]__nvme_submit_sync_cmd ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L344 )->blk_execute_rq ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-exec.c#L99 )->blk_execute_rq_nowait ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-exec.c#L51 )->blk_mq_insert_request ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1074 )->blk_mq_run_hw_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L934 )->kblockd_schedule_delayed_work_on ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-core.c#L3107 )->queue_delayed_work_on ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1547 )->__queue_delayed_work ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1502 )->add_timer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1104 ) )"
+  },
+  {
+    "id": 25,
+    "kernel boundary func name": "blk_execute_rq",
+    "risky func": "mod_timer",
+    "Risky API Class": "timer",
+    "Is Controlled Path": 0,
+    "No. path cond": 23,
+    "call path": "( [10]__nvme_submit_user_cmd ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L380 )->blk_execute_rq ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-exec.c#L99 )->blk_execute_rq_nowait ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-exec.c#L51 )->blk_mq_insert_request ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1074 )->blk_mq_run_hw_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L934 )->kblockd_schedule_delayed_work_on ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-core.c#L3107 )->queue_delayed_work_on ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1547 )->__queue_delayed_work ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1502 )->add_timer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1104 )->mod_timer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1084 ) )( [10]__nvme_submit_sync_cmd ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L344 )->blk_execute_rq ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-exec.c#L99 )->blk_execute_rq_nowait ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-exec.c#L51 )->blk_mq_insert_request ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1074 )->blk_mq_run_hw_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L934 )->kblockd_schedule_delayed_work_on ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-core.c#L3107 )->queue_delayed_work_on ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1547 )->__queue_delayed_work ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1502 )->add_timer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1104 )->mod_timer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1084 ) )"
+  },
+  {
+    "id": 26,
+    "kernel boundary func name": "blk_execute_rq_nowait",
+    "risky func": "add_timer",
+    "Risky API Class": "timer",
+    "Is Controlled Path": 0,
+    "No. path cond": 21,
+    "call path": "( [8]nvme_keep_alive ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L495 )->blk_execute_rq_nowait ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-exec.c#L51 )->blk_mq_insert_request ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1074 )->blk_mq_run_hw_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L934 )->kblockd_schedule_delayed_work_on ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-core.c#L3107 )->queue_delayed_work_on ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1547 )->__queue_delayed_work ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1502 )->add_timer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1104 ) )"
+  },
+  {
+    "id": 27,
+    "kernel boundary func name": "blk_execute_rq_nowait",
+    "risky func": "mod_timer",
+    "Risky API Class": "timer",
+    "Is Controlled Path": 0,
+    "No. path cond": 22,
+    "call path": "( [9]nvme_keep_alive ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L495 )->blk_execute_rq_nowait ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-exec.c#L51 )->blk_mq_insert_request ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1074 )->blk_mq_run_hw_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L934 )->kblockd_schedule_delayed_work_on ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-core.c#L3107 )->queue_delayed_work_on ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1547 )->__queue_delayed_work ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1502 )->add_timer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1104 )->mod_timer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1084 ) )"
+  },
+  {
+    "id": 28,
+    "kernel boundary func name": "ida_simple_remove",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 5,
+    "call path": "( [5]nvme_alloc_ns ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1641 )->ida_simple_remove ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L1123 )->ida_remove ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L1010 )->free_bitmap ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L868 )->kfree ( Unknown Loc ) )( [5]nvme_free_ns ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L155 )->ida_simple_remove ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L1123 )->ida_remove ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L1010 )->free_bitmap ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L868 )->kfree ( Unknown Loc ) )"
+  },
+  {
+    "id": 29,
+    "kernel boundary func name": "ida_remove",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 3,
+    "call path": "( [4]nvme_release_instance ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1938 )->ida_remove ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L1010 )->free_bitmap ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L868 )->kfree ( Unknown Loc ) )"
+  },
+  {
+    "id": 30,
+    "kernel boundary func name": "ida_simple_get",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 10,
+    "call path": "( [5]nvme_alloc_ns ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1641 )->ida_simple_get ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L1078 )->ida_remove ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L1010 )->free_bitmap ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L868 )->kfree ( Unknown Loc ) )"
+  },
+  {
+    "id": 31,
+    "kernel boundary func name": "ida_pre_get",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 4,
+    "call path": "( [4]nvme_set_instance ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1918 )->ida_pre_get ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L896 )->free_bitmap ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L868 )->kfree ( Unknown Loc ) )"
+  },
+  {
+    "id": 32,
+    "kernel boundary func name": "ida_destroy",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "call path": "( [3]nvme_free_ctrl ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1959 )->ida_destroy ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L1059 )->kfree ( Unknown Loc ) )"
+  },
+  {
+    "id": 33,
+    "kernel boundary func name": "get_device",
+    "risky func": "kobject_get",
+    "Risky API Class": "refCount",
+    "Is Controlled Path": 1,
+    "No. path cond": 1,
+    "call path": "( [3]nvme_init_ctrl ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1981 )->get_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L1201 )->kobject_get ( Unknown Loc ) )"
+  },
+  {
+    "id": 34,
+    "kernel boundary func name": "put_device",
+    "risky func": "kobject_put",
+    "Risky API Class": "refCount",
+    "Is Controlled Path": 1,
+    "No. path cond": 1,
+    "call path": "( [3]nvme_free_ctrl ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1959 )->put_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L1211 )->kobject_put ( Unknown Loc ) )"
+  },
+  {
+    "id": 35,
+    "kernel boundary func name": "device_destroy",
+    "risky func": "kobject_put",
+    "Risky API Class": "refCount",
+    "Is Controlled Path": 1,
+    "No. path cond": 12,
+    "call path": "( [7]nvme_uninit_ctrl ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1945 )->device_destroy ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L1850 )->device_unregister ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L1296 )->device_del ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L1232 )->cleanup_device_parent ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L851 )->cleanup_glue_dir ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L839 )->kobject_put ( Unknown Loc ) )"
+  },
+  {
+    "id": 36,
+    "kernel boundary func name": "device_destroy",
+    "risky func": "mutex_lock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 12,
+    "call path": "( [7]nvme_uninit_ctrl ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1945 )->device_destroy ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L1850 )->device_unregister ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L1296 )->device_del ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L1232 )->cleanup_device_parent ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L851 )->cleanup_glue_dir ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L839 )->mutex_lock ( Unknown Loc ) )"
+  },
+  {
+    "id": 37,
+    "kernel boundary func name": "device_destroy",
+    "risky func": "mutex_unlock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 12,
+    "call path": "( [7]nvme_uninit_ctrl ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1945 )->device_destroy ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L1850 )->device_unregister ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L1296 )->device_del ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L1232 )->cleanup_device_parent ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L851 )->cleanup_glue_dir ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L839 )->mutex_unlock ( Unknown Loc ) )"
+  },
+  {
+    "id": 38,
+    "kernel boundary func name": "device_destroy",
+    "risky func": "kobject_get",
+    "Risky API Class": "refCount",
+    "Is Controlled Path": 0,
+    "No. path cond": 5,
+    "call path": "( [5]nvme_uninit_ctrl ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1945 )->device_destroy ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L1850 )->class_find_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/class.c#L412 )->get_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L1201 )->kobject_get ( Unknown Loc ) )"
+  },
+  {
+    "id": 39,
+    "kernel boundary func name": "device_create_with_groups",
+    "risky func": "kzalloc.380",
+    "Risky API Class": "",
+    "Is Controlled Path": 1,
+    "No. path cond": 2,
+    "call path": "( [4]nvme_init_ctrl ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1981 )->device_create_with_groups ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L1818 )->device_create_groups_vargs ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L1680 )->kzalloc.380 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L634 ) )"
+  },
+  {
+    "id": 40,
+    "kernel boundary func name": "device_create_with_groups",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 14,
+    "call path": "( [5]nvme_init_ctrl ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1981 )->device_create_with_groups ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L1818 )->device_create_groups_vargs ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L1680 )->device_add ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L1025 )->kfree ( Unknown Loc ) )"
+  },
+  {
+    "id": 41,
+    "kernel boundary func name": "device_create_with_groups",
+    "risky func": "mutex_lock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 17,
+    "call path": "( [7]nvme_init_ctrl ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1981 )->device_create_with_groups ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L1818 )->device_create_groups_vargs ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L1680 )->device_add ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L1025 )->cleanup_device_parent ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L851 )->cleanup_glue_dir ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L839 )->mutex_lock ( Unknown Loc ) )"
+  },
+  {
+    "id": 42,
+    "kernel boundary func name": "device_create_with_groups",
+    "risky func": "mutex_unlock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 15,
+    "call path": "( [7]nvme_init_ctrl ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1981 )->device_create_with_groups ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L1818 )->device_create_groups_vargs ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L1680 )->device_add ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L1025 )->cleanup_device_parent ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L851 )->cleanup_glue_dir ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L839 )->mutex_unlock ( Unknown Loc ) )"
+  },
+  {
+    "id": 43,
+    "kernel boundary func name": "device_create_with_groups",
+    "risky func": "kobject_put",
+    "Risky API Class": "refCount",
+    "Is Controlled Path": 1,
+    "No. path cond": 17,
+    "call path": "( [7]nvme_init_ctrl ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1981 )->device_create_with_groups ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L1818 )->device_create_groups_vargs ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L1680 )->device_add ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L1025 )->cleanup_device_parent ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L851 )->cleanup_glue_dir ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L839 )->kobject_put ( Unknown Loc ) )"
+  },
+  {
+    "id": 44,
+    "kernel boundary func name": "device_create_with_groups",
+    "risky func": "kobject_get",
+    "Risky API Class": "refCount",
+    "Is Controlled Path": 0,
+    "No. path cond": 11,
+    "call path": "( [6]nvme_init_ctrl ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1981 )->device_create_with_groups ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L1818 )->device_create_groups_vargs ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L1680 )->device_add ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L1025 )->get_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L1201 )->kobject_get ( Unknown Loc ) )"
+  },
+  {
+    "id": 45,
+    "kernel boundary func name": "__class_create",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 4,
+    "call path": "( [3]nvme_core_init ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L2083 )->__class_create ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/class.c#L239 )->kfree ( Unknown Loc ) )"
+  },
+  {
+    "id": 46,
+    "kernel boundary func name": "__class_create",
+    "risky func": "kzalloc.298",
+    "Risky API Class": "",
+    "Is Controlled Path": 1,
+    "No. path cond": 2,
+    "call path": "( [3]nvme_core_init ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L2083 )->__class_create ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/class.c#L239 )->kzalloc.298 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L634 ) )"
+  },
+  {
+    "id": 47,
+    "kernel boundary func name": "__class_create",
+    "risky func": "kobject_put",
+    "Risky API Class": "refCount",
+    "Is Controlled Path": 1,
+    "No. path cond": 5,
+    "call path": "( [6]nvme_core_init ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L2083 )->__class_create ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/class.c#L239 )->__class_register ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/class.c#L166 )->class_put ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/class.c#L116 )->kset_put ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/kobject.h#L192 )->kobject_put ( Unknown Loc ) )"
+  },
+  {
+    "id": 48,
+    "kernel boundary func name": "__class_create",
+    "risky func": "kobject_get",
+    "Risky API Class": "refCount",
+    "Is Controlled Path": 1,
+    "No. path cond": 6,
+    "call path": "( [6]nvme_core_init ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L2083 )->__class_create ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/class.c#L239 )->__class_register ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/class.c#L166 )->class_get ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/class.c#L109 )->kset_get ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/kobject.h#L187 )->kobject_get ( Unknown Loc ) )"
+  },
+  {
+    "id": 49,
+    "kernel boundary func name": "blk_mq_freeze_queue",
+    "risky func": "add_timer",
+    "Risky API Class": "timer",
+    "Is Controlled Path": 0,
+    "No. path cond": 22,
+    "call path": "( [10]nvme_revalidate_disk ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L891 )->blk_mq_freeze_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L115 )->blk_freeze_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L102 )->blk_mq_freeze_queue_start ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L81 )->blk_mq_run_hw_queues ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L955 )->blk_mq_run_hw_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L934 )->kblockd_schedule_delayed_work_on ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-core.c#L3107 )->queue_delayed_work_on ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1547 )->__queue_delayed_work ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1502 )->add_timer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1104 ) )"
+  },
+  {
+    "id": 50,
+    "kernel boundary func name": "blk_mq_freeze_queue",
+    "risky func": "mod_timer",
+    "Risky API Class": "timer",
+    "Is Controlled Path": 0,
+    "No. path cond": 23,
+    "call path": "( [11]nvme_revalidate_disk ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L891 )->blk_mq_freeze_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L115 )->blk_freeze_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L102 )->blk_mq_freeze_queue_start ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L81 )->blk_mq_run_hw_queues ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L955 )->blk_mq_run_hw_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L934 )->kblockd_schedule_delayed_work_on ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-core.c#L3107 )->queue_delayed_work_on ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1547 )->__queue_delayed_work ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1502 )->add_timer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1104 )->mod_timer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1084 ) )"
+  },
+  {
+    "id": 51,
+    "kernel boundary func name": "put_disk",
+    "risky func": "kobject_put",
+    "Risky API Class": "refCount",
+    "Is Controlled Path": 1,
+    "No. path cond": 1,
+    "call path": "( [3]nvme_free_ns ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L155 )->put_disk ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/genhd.c#L1355 )->kobject_put ( Unknown Loc ) )"
+  },
+  {
+    "id": 52,
+    "kernel boundary func name": "bdget_disk",
+    "risky func": "kobject_get",
+    "Risky API Class": "refCount",
+    "Is Controlled Path": 0,
+    "No. path cond": 6,
+    "call path": "( [5]__nvme_submit_user_cmd ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L380 )->bdget_disk ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/genhd.c#L748 )->disk_get_part ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/genhd.c#L62 )->get_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L1201 )->kobject_get ( Unknown Loc ) )"
+  },
+  {
+    "id": 53,
+    "kernel boundary func name": "bdget_disk",
+    "risky func": "kobject_put",
+    "Risky API Class": "refCount",
+    "Is Controlled Path": 1,
+    "No. path cond": 3,
+    "call path": "( [5]__nvme_submit_user_cmd ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L380 )->bdget_disk ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/genhd.c#L748 )->disk_put_part ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/genhd.h#L262 )->put_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L1211 )->kobject_put ( Unknown Loc ) )"
+  },
+  {
+    "id": 54,
+    "kernel boundary func name": "revalidate_disk",
+    "risky func": "mutex_lock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 2,
+    "call path": "( [3]nvme_validate_ns ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1730 )->revalidate_disk ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/block_dev.c#L1166 )->mutex_lock ( Unknown Loc ) )( [3]nvme_kill_queues ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L2031 )->revalidate_disk ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/block_dev.c#L1166 )->mutex_lock ( Unknown Loc ) )"
+  },
+  {
+    "id": 55,
+    "kernel boundary func name": "revalidate_disk",
+    "risky func": "mutex_unlock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 2,
+    "call path": "( [3]nvme_validate_ns ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1730 )->revalidate_disk ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/block_dev.c#L1166 )->mutex_unlock ( Unknown Loc ) )( [3]nvme_kill_queues ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L2031 )->revalidate_disk ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/block_dev.c#L1166 )->mutex_unlock ( Unknown Loc ) )"
+  },
+  {
+    "id": 56,
+    "kernel boundary func name": "revalidate_disk",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 5,
+    "call path": "( [4]nvme_validate_ns ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1730 )->revalidate_disk ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/block_dev.c#L1166 )->nvme_revalidate_disk ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L891 )->kfree ( Unknown Loc ) )( [4]nvme_kill_queues ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L2031 )->revalidate_disk ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/block_dev.c#L1166 )->nvme_revalidate_disk ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L891 )->kfree ( Unknown Loc ) )"
+  },
+  {
+    "id": 57,
+    "kernel boundary func name": "revalidate_disk",
+    "risky func": "kobject_get",
+    "Risky API Class": "refCount",
+    "Is Controlled Path": 0,
+    "No. path cond": 7,
+    "call path": "( [6]nvme_validate_ns ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1730 )->revalidate_disk ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/block_dev.c#L1166 )->bdget_disk ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/genhd.c#L748 )->disk_get_part ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/genhd.c#L62 )->get_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L1201 )->kobject_get ( Unknown Loc ) )( [6]nvme_kill_queues ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L2031 )->revalidate_disk ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/block_dev.c#L1166 )->bdget_disk ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/genhd.c#L748 )->disk_get_part ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/genhd.c#L62 )->get_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L1201 )->kobject_get ( Unknown Loc ) )"
+  },
+  {
+    "id": 58,
+    "kernel boundary func name": "revalidate_disk",
+    "risky func": "kobject_put",
+    "Risky API Class": "refCount",
+    "Is Controlled Path": 1,
+    "No. path cond": 4,
+    "call path": "( [6]nvme_validate_ns ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1730 )->revalidate_disk ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/block_dev.c#L1166 )->bdget_disk ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/genhd.c#L748 )->disk_put_part ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/genhd.h#L262 )->put_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L1211 )->kobject_put ( Unknown Loc ) )( [6]nvme_kill_queues ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L2031 )->revalidate_disk ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/block_dev.c#L1166 )->bdget_disk ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/genhd.c#L748 )->disk_put_part ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/genhd.h#L262 )->put_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L1211 )->kobject_put ( Unknown Loc ) )"
+  },
+  {
+    "id": 59,
+    "kernel boundary func name": "revalidate_disk",
+    "risky func": "add_timer",
+    "Risky API Class": "timer",
+    "Is Controlled Path": 0,
+    "No. path cond": 36,
+    "call path": "( [14]nvme_validate_ns ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1730 )->revalidate_disk ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/block_dev.c#L1166 )->nvme_revalidate_disk ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L891 )->nvme_identify_ns ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L578 )->nvme_submit_sync_cmd ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L372 )->__nvme_submit_sync_cmd ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L344 )->nvme_alloc_request ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L212 )->blk_mq_alloc_request ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L233 )->__blk_mq_run_hw_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L799 )->blk_mq_run_hw_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L934 )->kblockd_schedule_delayed_work_on ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-core.c#L3107 )->queue_delayed_work_on ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1547 )->__queue_delayed_work ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1502 )->add_timer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1104 ) )( [14]nvme_kill_queues ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L2031 )->revalidate_disk ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/block_dev.c#L1166 )->nvme_revalidate_disk ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L891 )->nvme_identify_ns ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L578 )->nvme_submit_sync_cmd ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L372 )->__nvme_submit_sync_cmd ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L344 )->nvme_alloc_request ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L212 )->blk_mq_alloc_request ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L233 )->__blk_mq_run_hw_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L799 )->blk_mq_run_hw_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L934 )->kblockd_schedule_delayed_work_on ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-core.c#L3107 )->queue_delayed_work_on ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1547 )->__queue_delayed_work ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1502 )->add_timer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1104 ) )"
+  },
+  {
+    "id": 60,
+    "kernel boundary func name": "revalidate_disk",
+    "risky func": "mod_timer",
+    "Risky API Class": "timer",
+    "Is Controlled Path": 0,
+    "No. path cond": 37,
+    "call path": "( [15]nvme_validate_ns ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1730 )->revalidate_disk ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/block_dev.c#L1166 )->nvme_revalidate_disk ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L891 )->nvme_identify_ns ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L578 )->nvme_submit_sync_cmd ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L372 )->__nvme_submit_sync_cmd ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L344 )->nvme_alloc_request ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L212 )->blk_mq_alloc_request ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L233 )->__blk_mq_run_hw_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L799 )->blk_mq_run_hw_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L934 )->kblockd_schedule_delayed_work_on ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-core.c#L3107 )->queue_delayed_work_on ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1547 )->__queue_delayed_work ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1502 )->add_timer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1104 )->mod_timer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1084 ) )( [15]nvme_kill_queues ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L2031 )->revalidate_disk ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/block_dev.c#L1166 )->nvme_revalidate_disk ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L891 )->nvme_identify_ns ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L578 )->nvme_submit_sync_cmd ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L372 )->__nvme_submit_sync_cmd ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L344 )->nvme_alloc_request ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L212 )->blk_mq_alloc_request ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L233 )->__blk_mq_run_hw_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L799 )->blk_mq_run_hw_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L934 )->kblockd_schedule_delayed_work_on ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-core.c#L3107 )->queue_delayed_work_on ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1547 )->__queue_delayed_work ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1502 )->add_timer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1104 )->mod_timer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1084 ) )"
+  },
+  {
+    "id": 61,
+    "kernel boundary func name": "alloc_disk_node",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 0,
+    "No. path cond": 2,
+    "call path": "( [3]nvme_alloc_ns ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1641 )->alloc_disk_node ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/genhd.c#L1290 )->kfree ( Unknown Loc ) )"
+  },
+  {
+    "id": 62,
+    "kernel boundary func name": "del_gendisk",
+    "risky func": "kobject_put",
+    "Risky API Class": "refCount",
+    "Is Controlled Path": 1,
+    "No. path cond": 11,
+    "call path": "( [6]nvme_ns_remove ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1708 )->del_gendisk ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/genhd.c#L639 )->device_del ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L1232 )->cleanup_device_parent ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L851 )->cleanup_glue_dir ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L839 )->kobject_put ( Unknown Loc ) )"
+  },
+  {
+    "id": 63,
+    "kernel boundary func name": "del_gendisk",
+    "risky func": "mutex_lock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 2,
+    "call path": "( [6]nvme_ns_remove ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1708 )->del_gendisk ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/genhd.c#L639 )->device_del ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L1232 )->cleanup_device_parent ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L851 )->cleanup_glue_dir ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L839 )->mutex_lock ( Unknown Loc ) )"
+  },
+  {
+    "id": 64,
+    "kernel boundary func name": "del_gendisk",
+    "risky func": "mutex_unlock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 11,
+    "call path": "( [6]nvme_ns_remove ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1708 )->del_gendisk ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/genhd.c#L639 )->device_del ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L1232 )->cleanup_device_parent ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L851 )->cleanup_glue_dir ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L839 )->mutex_unlock ( Unknown Loc ) )"
+  },
+  {
+    "id": 65,
+    "kernel boundary func name": "del_gendisk",
+    "risky func": "kobject_get",
+    "Risky API Class": "refCount",
+    "Is Controlled Path": 0,
+    "No. path cond": 7,
+    "call path": "( [7]nvme_ns_remove ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1708 )->del_gendisk ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/genhd.c#L639 )->invalidate_partition ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/genhd.c#L1407 )->bdget_disk ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/genhd.c#L748 )->disk_get_part ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/genhd.c#L62 )->get_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L1201 )->kobject_get ( Unknown Loc ) )"
+  },
+  {
+    "id": 66,
+    "kernel boundary func name": "del_gendisk",
+    "risky func": "del_timer",
+    "Risky API Class": "timer",
+    "Is Controlled Path": 0,
+    "No. path cond": 4,
+    "call path": "( [8]nvme_ns_remove ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1708 )->del_gendisk ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/genhd.c#L639 )->disk_del_events ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/genhd.c#L1856 )->disk_block_events ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/genhd.c#L1488 )->cancel_delayed_work_sync ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L3021 )->__cancel_work_timer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L2873 )->try_to_grab_pending ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1204 )->del_timer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1161 ) )"
+  },
+  {
+    "id": 67,
+    "kernel boundary func name": "device_add_disk",
+    "risky func": "kzalloc.245",
+    "Risky API Class": "",
+    "Is Controlled Path": 0,
+    "No. path cond": 8,
+    "call path": "( [4]nvme_alloc_ns ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1641 )->device_add_disk ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/genhd.c#L585 )->disk_alloc_events ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/genhd.c#L1811 )->kzalloc.245 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L634 ) )"
+  },
+  {
+    "id": 68,
+    "kernel boundary func name": "device_add_disk",
+    "risky func": "mutex_lock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 28,
+    "call path": "( [7]nvme_alloc_ns ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1641 )->device_add_disk ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/genhd.c#L585 )->register_disk ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/genhd.c#L509 )->device_add ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L1025 )->cleanup_device_parent ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L851 )->cleanup_glue_dir ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L839 )->mutex_lock ( Unknown Loc ) )"
+  },
+  {
+    "id": 69,
+    "kernel boundary func name": "device_add_disk",
+    "risky func": "mutex_unlock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 0,
+    "No. path cond": 33,
+    "call path": "( [7]nvme_alloc_ns ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1641 )->device_add_disk ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/genhd.c#L585 )->register_disk ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/genhd.c#L509 )->device_add ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L1025 )->cleanup_device_parent ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L851 )->cleanup_glue_dir ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L839 )->mutex_unlock ( Unknown Loc ) )"
+  },
+  {
+    "id": 70,
+    "kernel boundary func name": "device_add_disk",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 17,
+    "call path": "( [5]nvme_alloc_ns ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1641 )->device_add_disk ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/genhd.c#L585 )->register_disk ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/genhd.c#L509 )->device_add ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L1025 )->kfree ( Unknown Loc ) )"
+  },
+  {
+    "id": 71,
+    "kernel boundary func name": "device_add_disk",
+    "risky func": "kobject_get",
+    "Risky API Class": "refCount",
+    "Is Controlled Path": 0,
+    "No. path cond": 21,
+    "call path": "( [6]nvme_alloc_ns ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1641 )->device_add_disk ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/genhd.c#L585 )->register_disk ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/genhd.c#L509 )->device_add ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L1025 )->get_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L1201 )->kobject_get ( Unknown Loc ) )"
+  },
+  {
+    "id": 72,
+    "kernel boundary func name": "device_add_disk",
+    "risky func": "kzalloc.380",
+    "Risky API Class": "",
+    "Is Controlled Path": 1,
+    "No. path cond": 17,
+    "call path": "( [6]nvme_alloc_ns ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1641 )->device_add_disk ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/genhd.c#L585 )->register_disk ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/genhd.c#L509 )->device_add ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L1025 )->device_private_init ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L991 )->kzalloc.380 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L634 ) )"
+  },
+  {
+    "id": 73,
+    "kernel boundary func name": "device_add_disk",
+    "risky func": "kobject_put",
+    "Risky API Class": "refCount",
+    "Is Controlled Path": 1,
+    "No. path cond": 32,
+    "call path": "( [7]nvme_alloc_ns ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1641 )->device_add_disk ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/genhd.c#L585 )->register_disk ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/genhd.c#L509 )->device_add ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L1025 )->cleanup_device_parent ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L851 )->cleanup_glue_dir ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L839 )->kobject_put ( Unknown Loc ) )"
+  },
+  {
+    "id": 74,
+    "kernel boundary func name": "device_add_disk",
+    "risky func": "add_timer",
+    "Risky API Class": "timer",
+    "Is Controlled Path": 0,
+    "No. path cond": 31,
+    "call path": "( [10]nvme_alloc_ns ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1641 )->device_add_disk ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/genhd.c#L585 )->register_disk ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/genhd.c#L509 )->blkdev_put ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/block_dev.c#L1630 )->disk_unblock_events ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/genhd.c#L1548 )->__disk_unblock_events ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/genhd.c#L1513 )->queue_delayed_work.236 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/workqueue.h#L484 )->queue_delayed_work_on ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1547 )->__queue_delayed_work ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1502 )->add_timer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1104 ) )"
+  },
+  {
+    "id": 75,
+    "kernel boundary func name": "device_add_disk",
+    "risky func": "del_timer",
+    "Risky API Class": "timer",
+    "Is Controlled Path": 0,
+    "No. path cond": 27,
+    "call path": "( [9]nvme_alloc_ns ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1641 )->device_add_disk ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/genhd.c#L585 )->register_disk ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/genhd.c#L509 )->blkdev_put ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/block_dev.c#L1630 )->disk_flush_events ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/genhd.c#L1566 )->mod_delayed_work.277 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/workqueue.h#L499 )->mod_delayed_work_on ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1585 )->try_to_grab_pending ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1204 )->del_timer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1161 ) )"
+  },
+  {
+    "id": 76,
+    "kernel boundary func name": "device_add_disk",
+    "risky func": "mod_timer",
+    "Risky API Class": "timer",
+    "Is Controlled Path": 0,
+    "No. path cond": 33,
+    "call path": "( [11]nvme_alloc_ns ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1641 )->device_add_disk ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/genhd.c#L585 )->register_disk ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/genhd.c#L509 )->blkdev_put ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/block_dev.c#L1630 )->disk_unblock_events ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/genhd.c#L1548 )->__disk_unblock_events ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/genhd.c#L1513 )->queue_delayed_work.236 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/workqueue.h#L484 )->queue_delayed_work_on ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1547 )->__queue_delayed_work ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1502 )->add_timer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1104 )->mod_timer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1084 ) )"
+  },
+  {
+    "id": 77,
+    "kernel boundary func name": "blk_mq_init_queue",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 13,
+    "call path": "( [4]nvme_alloc_ns ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1641 )->blk_mq_init_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1987 )->blk_mq_init_allocated_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L2062 )->kfree ( Unknown Loc ) )"
+  },
+  {
+    "id": 78,
+    "kernel boundary func name": "blk_mq_init_queue",
+    "risky func": "mutex_lock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 4,
+    "call path": "( [4]nvme_alloc_ns ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1641 )->blk_mq_init_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1987 )->blk_mq_init_allocated_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L2062 )->mutex_lock ( Unknown Loc ) )"
+  },
+  {
+    "id": 79,
+    "kernel boundary func name": "blk_mq_init_queue",
+    "risky func": "mutex_unlock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 5,
+    "call path": "( [4]nvme_alloc_ns ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1641 )->blk_mq_init_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1987 )->blk_mq_init_allocated_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L2062 )->mutex_unlock ( Unknown Loc ) )"
+  },
+  {
+    "id": 80,
+    "kernel boundary func name": "blk_mq_init_queue",
+    "risky func": "kobject_put",
+    "Risky API Class": "refCount",
+    "Is Controlled Path": 1,
+    "No. path cond": 5,
+    "call path": "( [5]nvme_alloc_ns ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1641 )->blk_mq_init_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1987 )->blk_mq_init_allocated_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L2062 )->blk_mq_realloc_hw_ctxs ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L2003 )->kobject_put ( Unknown Loc ) )"
+  },
+  {
+    "id": 81,
+    "kernel boundary func name": "blk_mq_init_queue",
+    "risky func": "del_timer",
+    "Risky API Class": "timer",
+    "Is Controlled Path": 0,
+    "No. path cond": 7,
+    "call path": "( [8]nvme_alloc_ns ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1641 )->blk_mq_init_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1987 )->blk_cleanup_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-core.c#L544 )->blk_sync_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-core.c#L282 )->cancel_delayed_work_sync ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L3021 )->__cancel_work_timer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L2873 )->try_to_grab_pending ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1204 )->del_timer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1161 ) )"
+  },
+  {
+    "id": 82,
+    "kernel boundary func name": "blk_mq_init_queue",
+    "risky func": "add_timer",
+    "Risky API Class": "timer",
+    "Is Controlled Path": 0,
+    "No. path cond": 28,
+    "call path": "( [14]nvme_alloc_ns ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1641 )->blk_mq_init_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1987 )->blk_mq_init_allocated_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L2062 )->blk_mq_add_queue_tag_set ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1939 )->blk_mq_update_tag_set_depth ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1913 )->blk_mq_freeze_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L115 )->blk_freeze_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L102 )->blk_mq_freeze_queue_start ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L81 )->blk_mq_run_hw_queues ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L955 )->blk_mq_run_hw_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L934 )->kblockd_schedule_delayed_work_on ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-core.c#L3107 )->queue_delayed_work_on ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1547 )->__queue_delayed_work ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1502 )->add_timer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1104 ) )"
+  },
+  {
+    "id": 83,
+    "kernel boundary func name": "blk_mq_init_queue",
+    "risky func": "mod_timer",
+    "Risky API Class": "timer",
+    "Is Controlled Path": 0,
+    "No. path cond": 29,
+    "call path": "( [15]nvme_alloc_ns ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1641 )->blk_mq_init_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1987 )->blk_mq_init_allocated_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L2062 )->blk_mq_add_queue_tag_set ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1939 )->blk_mq_update_tag_set_depth ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1913 )->blk_mq_freeze_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L115 )->blk_freeze_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L102 )->blk_mq_freeze_queue_start ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L81 )->blk_mq_run_hw_queues ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L955 )->blk_mq_run_hw_queue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L934 )->kblockd_schedule_delayed_work_on ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-core.c#L3107 )->queue_delayed_work_on ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1547 )->__queue_delayed_work ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1502 )->add_timer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1104 )->mod_timer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1084 ) )"
+  }
+]

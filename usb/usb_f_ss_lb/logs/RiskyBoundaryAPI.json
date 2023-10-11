@@ -1,0 +1,11 @@
+[
+  {
+    "id": 0,
+    "kernel boundary func name": "config_group_init_type_name",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 5,
+    "call path": "( [4]source_sink_alloc_inst ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/function/f_sourcesink.c#L1249 )->config_group_init_type_name ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/configfs/item.c#L124 )->config_item_set_name ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/configfs/item.c#L65 )->kfree ( Unknown Loc ) )( [4]loopback_alloc_instance ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/function/f_loopback.c#L575 )->config_group_init_type_name ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/configfs/item.c#L124 )->config_item_set_name ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/configfs/item.c#L65 )->kfree ( Unknown Loc ) )"
+  }
+]

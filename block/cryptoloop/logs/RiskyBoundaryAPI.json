@@ -1,0 +1,20 @@
+[
+  {
+    "id": 0,
+    "kernel boundary func name": "crypto_alloc_skcipher",
+    "risky func": "kzalloc",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 2,
+    "call path": "( [5]cryptoloop_init ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/block/cryptoloop.c#L40 )->crypto_alloc_skcipher ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/skcipher.c#L336 )->crypto_alloc_tfm ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/api.c#L540 )->crypto_create_tfm ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/api.c#L458 )->kzalloc ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L634 ) )"
+  },
+  {
+    "id": 1,
+    "kernel boundary func name": "crypto_alloc_skcipher",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 4,
+    "call path": "( [5]cryptoloop_init ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/block/cryptoloop.c#L40 )->crypto_alloc_skcipher ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/skcipher.c#L336 )->crypto_alloc_tfm ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/api.c#L540 )->crypto_create_tfm ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/api.c#L458 )->kfree ( Unknown Loc ) )"
+  }
+]

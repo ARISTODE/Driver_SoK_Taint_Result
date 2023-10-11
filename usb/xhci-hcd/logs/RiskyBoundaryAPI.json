@@ -1,0 +1,156 @@
+[
+  {
+    "id": 0,
+    "kernel boundary func name": "del_timer",
+    "Risky API Class": "timer",
+    "Direct Risky Kernel API": 1,
+    "driver callers": "xhci_stop_watchdog_timer_in_irq(https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/host/xhci-ring.c#L573) | handle_cmd_completion(https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/host/xhci-ring.c#L1341) | xhci_abort_cmd_ring(https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/host/xhci-ring.c#L304) | "
+  },
+  {
+    "id": 1,
+    "kernel boundary func name": "add_timer",
+    "Risky API Class": "timer",
+    "Direct Risky Kernel API": 1,
+    "driver callers": "xhci_urb_dequeue(https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/host/xhci.c#L1586) | compliance_mode_recovery_timer_init(https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/host/xhci.c#L493) | "
+  },
+  {
+    "id": 2,
+    "kernel boundary func name": "mod_timer",
+    "Risky API Class": "timer",
+    "Direct Risky Kernel API": 1,
+    "driver callers": "xhci_get_port_status(https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/host/xhci-hub.c#L767) | compliance_mode_recovery(https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/host/xhci.c#L471) | xhci_handle_stopped_cmd_ring(https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/host/xhci-ring.c#L1258) | handle_port_status(https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/host/xhci-ring.c#L1617) | xhci_abort_cmd_ring(https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/host/xhci-ring.c#L279) | handle_cmd_completion(https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/host/xhci-ring.c#L1429) | queue_command(https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/host/xhci-ring.c#L3925) | "
+  },
+  {
+    "id": 3,
+    "kernel boundary func name": "usb_wakeup_notification",
+    "risky func": "kref_get.288",
+    "Risky API Class": "",
+    "Is Controlled Path": 1,
+    "No. path cond": 4,
+    "call path": "( [4]handle_device_notification ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/host/xhci-ring.c#L1487 )->usb_wakeup_notification ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/core/hub.c#L637 )->kick_hub_wq ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/core/hub.c#L594 )->kref_get.288 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/kref.h#L40 ) )( [4]handle_port_status ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/host/xhci-ring.c#L1507 )->usb_wakeup_notification ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/core/hub.c#L637 )->kick_hub_wq ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/core/hub.c#L594 )->kref_get.288 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/kref.h#L40 ) )"
+  },
+  {
+    "id": 4,
+    "kernel boundary func name": "usb_wakeup_notification",
+    "risky func": "kref_put.289",
+    "Risky API Class": "",
+    "Is Controlled Path": 1,
+    "No. path cond": 5,
+    "call path": "( [4]handle_device_notification ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/host/xhci-ring.c#L1487 )->usb_wakeup_notification ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/core/hub.c#L637 )->kick_hub_wq ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/core/hub.c#L594 )->kref_put.289 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/kref.h#L96 ) )( [4]handle_port_status ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/host/xhci-ring.c#L1507 )->usb_wakeup_notification ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/core/hub.c#L637 )->kick_hub_wq ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/core/hub.c#L594 )->kref_put.289 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/kref.h#L96 ) )"
+  },
+  {
+    "id": 5,
+    "kernel boundary func name": "usb_hcd_poll_rh_status",
+    "risky func": "mod_timer",
+    "Risky API Class": "timer",
+    "Is Controlled Path": 1,
+    "No. path cond": 7,
+    "call path": "( [3]compliance_mode_recovery ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/host/xhci.c#L440 )->usb_hcd_poll_rh_status ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/core/hcd.c#L755 )->mod_timer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1084 ) )( [3]handle_port_status ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/host/xhci-ring.c#L1507 )->usb_hcd_poll_rh_status ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/core/hcd.c#L755 )->mod_timer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1084 ) )"
+  },
+  {
+    "id": 6,
+    "kernel boundary func name": "free_irq",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 3,
+    "call path": "( [3]xhci_free_msi ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/host/xhci.c#L214 )->free_irq ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/irq/manage.c#L1576 )->kfree ( Unknown Loc ) )( [3]xhci_free_irq ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/host/xhci.c#L258 )->free_irq ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/irq/manage.c#L1576 )->kfree ( Unknown Loc ) )( [3]xhci_try_enable_msi ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/host/xhci.c#L369 )->free_irq ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/irq/manage.c#L1576 )->kfree ( Unknown Loc ) )"
+  },
+  {
+    "id": 7,
+    "kernel boundary func name": "pci_set_power_state",
+    "Risky API Class": "bus",
+    "Direct Risky Kernel API": 1,
+    "driver callers": "xhci_shutdown(https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/host/xhci.c#L765) | "
+  },
+  {
+    "id": 8,
+    "kernel boundary func name": "usb_hc_died",
+    "risky func": "kref_get.288",
+    "Risky API Class": "",
+    "Is Controlled Path": 1,
+    "No. path cond": 10,
+    "call path": "( [5]xhci_stop_endpoint_command_watchdog ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/host/xhci-ring.c#L840 )->usb_hc_died ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/core/hcd.c#L2454 )->usb_kick_hub_wq ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/core/hub.c#L621 )->kick_hub_wq ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/core/hub.c#L594 )->kref_get.288 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/kref.h#L40 ) )( [5]xhci_handle_command_timeout ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/host/xhci-ring.c#L1265 )->usb_hc_died ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/core/hcd.c#L2454 )->usb_kick_hub_wq ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/core/hub.c#L621 )->kick_hub_wq ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/core/hub.c#L594 )->kref_get.288 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/kref.h#L40 ) )"
+  },
+  {
+    "id": 9,
+    "kernel boundary func name": "usb_hc_died",
+    "risky func": "kref_put.289",
+    "Risky API Class": "",
+    "Is Controlled Path": 1,
+    "No. path cond": 11,
+    "call path": "( [5]xhci_stop_endpoint_command_watchdog ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/host/xhci-ring.c#L840 )->usb_hc_died ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/core/hcd.c#L2454 )->usb_kick_hub_wq ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/core/hub.c#L621 )->kick_hub_wq ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/core/hub.c#L594 )->kref_put.289 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/kref.h#L96 ) )( [5]xhci_handle_command_timeout ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/host/xhci-ring.c#L1265 )->usb_hc_died ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/core/hcd.c#L2454 )->usb_kick_hub_wq ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/core/hub.c#L621 )->kick_hub_wq ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/core/hub.c#L594 )->kref_put.289 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/kref.h#L96 ) )"
+  },
+  {
+    "id": 10,
+    "kernel boundary func name": "pci_disable_msi",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 7,
+    "call path": "( [4]xhci_cleanup_msix ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/host/xhci.c#L337 )->pci_disable_msi ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/msi.c#L914 )->free_msi_irqs ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/msi.c#L359 )->kfree ( Unknown Loc ) )( [4]xhci_setup_msi ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/host/xhci.c#L231 )->pci_disable_msi ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/msi.c#L914 )->free_msi_irqs ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/msi.c#L359 )->kfree ( Unknown Loc ) )"
+  },
+  {
+    "id": 11,
+    "kernel boundary func name": "pci_disable_msi",
+    "risky func": "msi_mask",
+    "Risky API Class": "bus",
+    "Is Controlled Path": 1,
+    "No. path cond": 8,
+    "call path": "( [4]xhci_cleanup_msix ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/host/xhci.c#L337 )->pci_disable_msi ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/msi.c#L914 )->pci_msi_shutdown ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/msi.c#L889 )->msi_mask ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/msi.c#L177 ) )( [4]xhci_setup_msi ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/host/xhci.c#L231 )->pci_disable_msi ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/msi.c#L914 )->pci_msi_shutdown ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/msi.c#L889 )->msi_mask ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/msi.c#L177 ) )"
+  },
+  {
+    "id": 12,
+    "kernel boundary func name": "pci_disable_msi",
+    "risky func": "pci_bus_read_config_word",
+    "Risky API Class": "bus",
+    "Is Controlled Path": 0,
+    "No. path cond": 9,
+    "call path": "( [7]xhci_cleanup_msix ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/host/xhci.c#L337 )->pci_disable_msi ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/msi.c#L914 )->pci_msi_shutdown ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/msi.c#L889 )->pci_intx_for_msi ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/msi.c#L401 )->pci_intx ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/pci.c#L3561 )->pci_read_config_word.108 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/pci.h#L921 )->pci_bus_read_config_word ( Unknown Loc ) )( [7]xhci_setup_msi ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/host/xhci.c#L231 )->pci_disable_msi ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/msi.c#L914 )->pci_msi_shutdown ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/msi.c#L889 )->pci_intx_for_msi ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/msi.c#L401 )->pci_intx ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/pci.c#L3561 )->pci_read_config_word.108 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/pci.h#L921 )->pci_bus_read_config_word ( Unknown Loc ) )"
+  },
+  {
+    "id": 13,
+    "kernel boundary func name": "pci_disable_msi",
+    "risky func": "pci_bus_write_config_word",
+    "Risky API Class": "bus",
+    "Is Controlled Path": 0,
+    "No. path cond": 11,
+    "call path": "( [7]xhci_cleanup_msix ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/host/xhci.c#L337 )->pci_disable_msi ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/msi.c#L914 )->pci_msi_shutdown ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/msi.c#L889 )->pci_intx_for_msi ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/msi.c#L401 )->pci_intx ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/pci.c#L3561 )->pci_write_config_word.110 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/pci.h#L934 )->pci_bus_write_config_word ( Unknown Loc ) )( [7]xhci_setup_msi ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/host/xhci.c#L231 )->pci_disable_msi ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/msi.c#L914 )->pci_msi_shutdown ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/msi.c#L889 )->pci_intx_for_msi ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/msi.c#L401 )->pci_intx ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/pci.c#L3561 )->pci_write_config_word.110 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/pci.h#L934 )->pci_bus_write_config_word ( Unknown Loc ) )"
+  },
+  {
+    "id": 14,
+    "kernel boundary func name": "pci_disable_msi",
+    "risky func": "pci_bus_write_config_dword",
+    "Risky API Class": "bus",
+    "Is Controlled Path": 0,
+    "No. path cond": 9,
+    "call path": "( [6]xhci_cleanup_msix ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/host/xhci.c#L337 )->pci_disable_msi ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/msi.c#L914 )->pci_msi_shutdown ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/msi.c#L889 )->__pci_msi_desc_mask_irq ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/msi.c#L191 )->pci_write_config_dword ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/pci.h#L938 )->pci_bus_write_config_dword ( Unknown Loc ) )( [6]xhci_setup_msi ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/host/xhci.c#L231 )->pci_disable_msi ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/msi.c#L914 )->pci_msi_shutdown ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/msi.c#L889 )->__pci_msi_desc_mask_irq ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/msi.c#L191 )->pci_write_config_dword ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/pci.h#L938 )->pci_bus_write_config_dword ( Unknown Loc ) )"
+  },
+  {
+    "id": 15,
+    "kernel boundary func name": "pci_disable_msix",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 7,
+    "call path": "( [4]xhci_cleanup_msix ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/host/xhci.c#L337 )->pci_disable_msix ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/msi.c#L1014 )->free_msi_irqs ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/msi.c#L359 )->kfree ( Unknown Loc ) )( [4]xhci_setup_msix ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/host/xhci.c#L279 )->pci_disable_msix ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/msi.c#L1014 )->free_msi_irqs ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/msi.c#L359 )->kfree ( Unknown Loc ) )"
+  },
+  {
+    "id": 16,
+    "kernel boundary func name": "pci_disable_msix",
+    "risky func": "pci_bus_read_config_word",
+    "Risky API Class": "bus",
+    "Is Controlled Path": 0,
+    "No. path cond": 8,
+    "call path": "( [7]xhci_cleanup_msix ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/host/xhci.c#L337 )->pci_disable_msix ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/msi.c#L1014 )->pci_msix_shutdown ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/msi.c#L995 )->pci_intx_for_msi ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/msi.c#L401 )->pci_intx ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/pci.c#L3561 )->pci_read_config_word.108 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/pci.h#L921 )->pci_bus_read_config_word ( Unknown Loc ) )( [7]xhci_setup_msix ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/host/xhci.c#L279 )->pci_disable_msix ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/msi.c#L1014 )->pci_msix_shutdown ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/msi.c#L995 )->pci_intx_for_msi ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/msi.c#L401 )->pci_intx ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/pci.c#L3561 )->pci_read_config_word.108 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/pci.h#L921 )->pci_bus_read_config_word ( Unknown Loc ) )"
+  },
+  {
+    "id": 17,
+    "kernel boundary func name": "pci_disable_msix",
+    "risky func": "pci_bus_write_config_word",
+    "Risky API Class": "bus",
+    "Is Controlled Path": 0,
+    "No. path cond": 10,
+    "call path": "( [7]xhci_cleanup_msix ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/host/xhci.c#L337 )->pci_disable_msix ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/msi.c#L1014 )->pci_msix_shutdown ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/msi.c#L995 )->pci_intx_for_msi ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/msi.c#L401 )->pci_intx ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/pci.c#L3561 )->pci_write_config_word.110 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/pci.h#L934 )->pci_bus_write_config_word ( Unknown Loc ) )( [7]xhci_setup_msix ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/host/xhci.c#L279 )->pci_disable_msix ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/msi.c#L1014 )->pci_msix_shutdown ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/msi.c#L995 )->pci_intx_for_msi ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/msi.c#L401 )->pci_intx ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/pci.c#L3561 )->pci_write_config_word.110 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/pci.h#L934 )->pci_bus_write_config_word ( Unknown Loc ) )"
+  }
+]

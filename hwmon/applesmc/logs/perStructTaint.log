@@ -1,0 +1,188 @@
+[
+  {
+    "struct name": "attribute",
+    "No.fields": 2,
+    "No.classified fields": 2,
+    "PTR_READ": 1,
+    "UNCLASSIFY": 1
+  },
+  {
+    "id": "0",
+    "risky": "ptr-read",
+    "acc_path": "attribute->name",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/sysfs/file.c#L475",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/sysfs/file.c#L475",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update loc (shared field)": "[ (applesmc_create_nodes)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/applesmc.c#L1125 ], [ (applesmc_create_nodes)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/applesmc.c#L1129 ], ",
+    "call path (type)": "",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]
+[
+  {
+    "struct name": "work_struct",
+    "No.fields": 3,
+    "No.classified fields": 1,
+    "FUNC_PTR": 1
+  }
+]
+[
+  {
+    "struct name": "device_attribute",
+    "No.fields": 3,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "device",
+    "No.fields": 33,
+    "No.classified fields": 1,
+    "PTR_READ": 1,
+    "PTR_WRITE": 1
+  },
+  {
+    "id": "3",
+    "risky": "ptr-read",
+    "acc_path": "device->parent",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/input/input.c#L1890",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/input/input.c#L1890",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update loc (shared field)": "[ (applesmc_create_accelerometer)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/applesmc.c#L1170 ], ",
+    "call path (type)": "",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  },
+  {
+    "id": "3",
+    "risky": "ptr-write",
+    "acc_path": "device->parent",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/platform.c#L400",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/device.h#L865 |   %2 = alloca i8*, align 8",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update loc (shared field)": "[ (applesmc_create_accelerometer)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/applesmc.c#L1170 ], ",
+    "call path (type)": "",
+    "cond_num": "6",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "struct name": "workqueue_struct",
+    "No.fields": 21,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "kobject",
+    "No.fields": 12,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "fwnode_handle",
+    "No.fields": 2,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "resource",
+    "No.fields": 8,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "platform_device",
+    "No.fields": 10,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "static_key",
+    "No.fields": 3,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "input_polled_dev",
+    "No.fields": 10,
+    "No.classified fields": 2,
+    "NUM_ARITH": 1,
+    "FUNC_PTR": 1
+  },
+  {
+    "id": "5",
+    "risky": "numeric-arith",
+    "acc_path": "input_polled_dev->poll_interval",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/input/input-polldev.c#L29",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/jiffies.h#L301",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update loc (shared field)": "[ (applesmc_create_accelerometer)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/applesmc.c#L1161 ], ",
+    "call path (type)": "",
+    "cond_num": "3",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "struct name": "input_dev",
+    "No.fields": 46,
+    "No.classified fields": 1,
+    "PTR_READ": 1
+  },
+  {
+    "id": "6",
+    "risky": "ptr-read",
+    "acc_path": "input_dev->name",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/input/input.c#L1313",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/input/input.c#L1313",
+    "drv_update loc (shared field)": "[ (applesmc_create_accelerometer)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/applesmc.c#L1168 ], ",
+    "call path (type)": "",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]
+[
+  {
+    "struct name": "property_entry",
+    "No.fields": 5,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "kmem_cache",
+    "No.fields": 0,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "platform_device_info",
+    "No.fields": 10,
+    "No.classified fields": 0
+  }
+]

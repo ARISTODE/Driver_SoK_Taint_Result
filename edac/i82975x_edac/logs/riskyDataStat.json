@@ -1,0 +1,19 @@
+{
+  "KRDU fields": 14,
+  "ptr fields": 7,
+  "func ptr fields": 2,
+  "data ptr fields": 5,
+  "PTR_WRITE": 3,
+  "PTR_READ": 4,
+  "BRANCH": 1,
+  "NUM_ARITH": 1,
+  "UNCLASSIFY": 9
+}
+{
+  "num boundary arg": 17,
+  "ARR_IDX": 2,
+  "BRANCH": 2,
+  "NUM_ARITH": 4,
+  "UNCLASSIFY": 11,
+  "RISKY_KERNEL_FUNC": 2
+}

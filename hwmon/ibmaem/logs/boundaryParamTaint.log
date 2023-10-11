@@ -1,0 +1,160 @@
+[
+  {
+    "id": "5",
+    "risky": "val-sen-branch (memcpy)",
+    "acc_path": "id",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L1129",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L147",
+    "drv caller (param)": "[ aem_init_aem1_inst | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/ibmaem.c#L616 ], ",
+    "call path (param)": " [aem_init_aem1_inst->ida_simple_remove->ida_remove->idr_remove->sub_remove->free_layer] ",
+    "cond_num": "11",
+    "isControl": "0"
+  },
+  {
+    "id": "5",
+    "risky": "numeric-arith",
+    "acc_path": "id",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L1129",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L531",
+    "drv caller (param)": "[ aem_init_aem1_inst | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/ibmaem.c#L616 ], ",
+    "call path (param)": " [aem_init_aem1_inst->ida_simple_remove->ida_remove->idr_remove->sub_remove] ",
+    "cond_num": "11",
+    "isControl": "0"
+  },
+  {
+    "id": "5",
+    "risky": "arr-idx",
+    "acc_path": "id",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L1129",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L529",
+    "drv caller (param)": "[ aem_init_aem1_inst | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/ibmaem.c#L616 ], ",
+    "call path (param)": " [aem_init_aem1_inst->ida_simple_remove->ida_remove->idr_remove->sub_remove] ",
+    "cond_num": "9",
+    "isControl": "0"
+  },
+  {
+    "id": "5",
+    "risky": "val-sen-api (kfree)",
+    "acc_path": "id",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L1129",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L881",
+    "drv caller (param)": "[ aem_init_aem1_inst | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/ibmaem.c#L616 ], ",
+    "call path (param)": " [aem_init_aem1_inst->ida_simple_remove->ida_remove->free_bitmap] ",
+    "cond_num": "3",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "id": "6",
+    "risky": "numeric-arith",
+    "acc_path": "start",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L1100",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L263",
+    "drv caller (param)": "[ aem_init_aem1_inst | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/ibmaem.c#L555 ], ",
+    "call path (param)": " [aem_init_aem1_inst->ida_simple_get->ida_get_new_above->idr_get_empty_slot->sub_alloc] ",
+    "cond_num": "12",
+    "isControl": "0"
+  },
+  {
+    "id": "6",
+    "risky": "val-sen-api (memset)",
+    "acc_path": "start",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L1100",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L965",
+    "drv caller (param)": "[ aem_init_aem1_inst | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/ibmaem.c#L555 ], ",
+    "call path (param)": " [aem_init_aem1_inst->ida_simple_get->ida_get_new_above] ",
+    "cond_num": "5",
+    "isControl": "0"
+  },
+  {
+    "id": "6",
+    "risky": "val-sen-branch (kmem_cache_free)",
+    "acc_path": "start",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L1100",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L956",
+    "drv caller (param)": "[ aem_init_aem1_inst | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/ibmaem.c#L555 ], ",
+    "call path (param)": " [aem_init_aem1_inst->ida_simple_get->ida_get_new_above] ",
+    "cond_num": "3",
+    "isControl": "0"
+  },
+  {
+    "id": "6",
+    "risky": "arr-idx",
+    "acc_path": "start",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L1100",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L955",
+    "drv caller (param)": "[ aem_init_aem1_inst | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/ibmaem.c#L555 ], ",
+    "call path (param)": " [aem_init_aem1_inst->ida_simple_get->ida_get_new_above] ",
+    "cond_num": "3",
+    "isControl": "0"
+  }
+]
+[]
+[
+  {
+    "id": "8",
+    "risky": "val-sen-api (kmalloc)",
+    "acc_path": "gfp_mask",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L1096",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L415",
+    "drv caller (param)": "[ aem_init_aem1_inst | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/ibmaem.c#L555 ], ",
+    "call path (param)": " [aem_init_aem1_inst->ida_simple_get->ida_pre_get] ",
+    "cond_num": "2",
+    "isControl": "0"
+  },
+  {
+    "id": "8",
+    "risky": "val-sen-branch (kmem_cache_alloc)",
+    "acc_path": "gfp_mask",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L1096",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L484",
+    "drv caller (param)": "[ aem_init_aem1_inst | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/ibmaem.c#L555 ], ",
+    "call path (param)": " [aem_init_aem1_inst->ida_simple_get->ida_pre_get] ",
+    "cond_num": "4",
+    "isControl": "0"
+  }
+]
+[]
+[
+  {
+    "id": "10",
+    "risky": "numeric-arith",
+    "acc_path": "m",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/time.c#L526",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/jiffies.h#L301",
+    "drv caller (param)": "[ aem_show_power | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/jiffies.h#L361 ], ",
+    "call path (param)": " [aem_show_power->__msecs_to_jiffies->_msecs_to_jiffies.17] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "[ ACTUAL_IN || PARAMETER_IN ] -> [ FORMAL_IN || PARAMETER_INm ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/jiffies.h#L301 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/jiffies.h#L301 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/jiffies.h#L301 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]
+[
+  {
+    "id": "11",
+    "risky": "val-sen-branch (memcpy)",
+    "acc_path": "timeout",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1767",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L973",
+    "drv caller (param)": "[ aem_show_power | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/ibmaem.c#L851 ], ",
+    "call path (param)": " [aem_show_power->schedule_timeout_interruptible->schedule_timeout->__mod_timer] ",
+    "cond_num": "4",
+    "isControl": "0"
+  },
+  {
+    "id": "11",
+    "risky": "numeric-arith",
+    "acc_path": "timeout",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1767",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L476",
+    "drv caller (param)": "[ aem_show_power | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/ibmaem.c#L851 ], ",
+    "call path (param)": " [aem_show_power->schedule_timeout_interruptible->schedule_timeout->__mod_timer->calc_wheel_index] ",
+    "cond_num": "14",
+    "isControl": "0"
+  }
+]
+[]

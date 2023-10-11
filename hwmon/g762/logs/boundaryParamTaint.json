@@ -1,0 +1,19 @@
+[
+  {
+    "id": "5",
+    "risky": "ptr-sen-branch (kzalloc)",
+    "acc_path": "name",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/hwmon.c#L104",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/hwmon.c#L104",
+    "drv caller (param)": "[ g762_probe | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/g762.c#L1088 ], ",
+    "call path (param)": " [g762_probe->hwmon_device_register_with_groups] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [hwmon_device_register_with_groups] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "[ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/hwmon.c#L104 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]

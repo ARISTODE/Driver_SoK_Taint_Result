@@ -1,0 +1,30 @@
+{
+  "id": 0,
+  "acc_path": "line",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/panic.c#L526 | warn_slowpath_fmt",
+  "Drv update": ""
+}
+{
+  "id": 1,
+  "acc_path": "xloops",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/lib/delay.c#L157 | __const_udelay",
+  "Drv update": ""
+}
+{
+  "id": 2,
+  "acc_path": "flags",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/locking/spinlock.c#L189 | _raw_spin_unlock_irqrestore",
+  "Drv update": ""
+}
+{
+  "id": 4,
+  "acc_path": "type",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/platform.c#L67 | platform_get_resource",
+  "Drv update": ""
+}
+{
+  "id": 5,
+  "acc_path": "num",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/platform.c#L67 | platform_get_resource",
+  "Drv update": ""
+}

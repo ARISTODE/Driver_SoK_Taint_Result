@@ -1,0 +1,143 @@
+[
+  {
+    "id": "13",
+    "risky": "val-sen-api (kmalloc)",
+    "acc_path": "size",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/slab_common.c#L1018",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/slab_common.c#L1018",
+    "drv caller (param)": "[ fsg_common_create_lun | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L415 ], ",
+    "call path (param)": " [fsg_common_create_lun->device_register->device_add->get_device_parent->class_dir_create_and_add->kzalloc.143->kmalloc_order] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [device_register->device_add->get_device_parent->class_dir_create_and_add->kzalloc.143->kmalloc_order] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]
+[
+  {
+    "id": "14",
+    "risky": "val-sen-api (kmalloc)",
+    "acc_path": "flags",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/slab_common.c#L1018",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/slab_common.c#L1018",
+    "drv caller (param)": "[ fsg_common_create_lun | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L415 ], ",
+    "call path (param)": " [fsg_common_create_lun->device_register->device_add->get_device_parent->class_dir_create_and_add->kzalloc.143->kmalloc_order] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [device_register->device_add->get_device_parent->class_dir_create_and_add->kzalloc.143->kmalloc_order] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]
+[
+  {
+    "id": "18",
+    "risky": "numeric-arith",
+    "acc_path": "nr_exclusive",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L95",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L74",
+    "drv caller (param)": "[ do_set_interface | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/function/f_mass_storage.c#L2269 ], ",
+    "call path (param)": " [do_set_interface->__wake_up->__wake_up_common] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [complete_and_exit->do_exit->ptrace_event->send_sig->send_sig_info->do_send_sig_info->send_signal->__send_signal->prepare_signal->task_clear_jobctl_pending->task_clear_jobctl_trapping->wake_up_bit->__wake_up_bit->__wake_up->__wake_up_common] ",
+    "cond_num": "3",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "id": "19",
+    "risky": "arr-idx",
+    "acc_path": "flags",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/open.c#L983",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/open.c#L886",
+    "drv caller (param)": "[ fsg_lun_open | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/function/storage_common.c#L202 ], ",
+    "call path (param)": " [fsg_lun_open->filp_open->file_open_name->build_open_flags] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [filp_open->file_open_name->build_open_flags] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "[ ACTUAL_IN || PARAMETER_INint ] -> [ FORMAL_IN || PARAMETER_INflags ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/open.c#L962 ] -> [ ACTUAL_IN || PARAMETER_INint ] -> [ FORMAL_IN || PARAMETER_INflags ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/open.c#L886 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/open.c#L886 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/open.c#L886 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]
+[
+  {
+    "id": "23",
+    "risky": "numeric-arith",
+    "acc_path": "sig",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/signal.c#L1422",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/signal.c#L911",
+    "drv caller (param)": "[ raise_exception | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/function/f_mass_storage.c#L423 ], ",
+    "call path (param)": " [raise_exception->send_sig_info->do_send_sig_info->send_signal->__send_signal->complete_signal] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [complete_and_exit->do_exit->ptrace_event->send_sig->send_sig_info->do_send_sig_info->send_signal->__send_signal->complete_signal] ",
+    "cond_num": "16",
+    "isControl": "0"
+  },
+  {
+    "id": "23",
+    "risky": "val-sen-branch (memcpy)",
+    "acc_path": "sig",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/signal.c#L1422",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/signal.c#L804",
+    "drv caller (param)": "[ raise_exception | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/function/f_mass_storage.c#L423 ], ",
+    "call path (param)": " [raise_exception->send_sig_info->do_send_sig_info->send_signal->__send_signal->prepare_signal] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [complete_and_exit->do_exit->ptrace_event->send_sig->send_sig_info->do_send_sig_info->send_signal->__send_signal->prepare_signal] ",
+    "cond_num": "9",
+    "isControl": "0"
+  },
+  {
+    "id": "23",
+    "risky": "arr-idx",
+    "acc_path": "sig",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/signal.c#L1422",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/signal.c#L911",
+    "drv caller (param)": "[ raise_exception | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/function/f_mass_storage.c#L423 ], ",
+    "call path (param)": " [raise_exception->send_sig_info->do_send_sig_info->send_signal->__send_signal->complete_signal] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [complete_and_exit->do_exit->ptrace_event->send_sig->send_sig_info->do_send_sig_info->send_signal->__send_signal->complete_signal] ",
+    "cond_num": "16",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "id": "25",
+    "risky": "numeric-arith",
+    "acc_path": "count",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/read_write.c#L555",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/read_write.c#L416",
+    "drv caller (param)": "[ do_write | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/function/f_mass_storage.c#L910 ], ",
+    "call path (param)": " [do_write->vfs_write->rw_verify_area] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [vfs_write->rw_verify_area] ",
+    "cond_num": "2",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "id": "26",
+    "risky": "numeric-arith",
+    "acc_path": "count",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/read_write.c#L471",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/read_write.c#L416",
+    "drv caller (param)": "[ do_verify | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/function/f_mass_storage.c#L1056 ], ",
+    "call path (param)": " [do_verify->vfs_read->rw_verify_area] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [vfs_write->rw_verify_area] ",
+    "cond_num": "2",
+    "isControl": "0"
+  }
+]

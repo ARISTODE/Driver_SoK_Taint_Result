@@ -1,0 +1,36 @@
+{
+  "id": 1,
+  "acc_path": "flags",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/locking/spinlock.c#L189 | _raw_spin_unlock_irqrestore",
+  "Drv update": ""
+}
+{
+  "id": 2,
+  "acc_path": "mask",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/devres.c#L335 | pcim_iomap_regions",
+  "Drv update": ""
+}
+{
+  "id": 3,
+  "acc_path": "irq",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/irq/manage.c#L1576 | free_irq",
+  "Drv update": ""
+}
+{
+  "id": 4,
+  "acc_path": "irq",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/irq/chip.c#L70 | irq_set_irq_type",
+  "Drv update": ""
+}
+{
+  "id": 5,
+  "acc_path": "type",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/irq/chip.c#L70 | irq_set_irq_type",
+  "Drv update": ""
+}
+{
+  "id": 6,
+  "acc_path": "xloops",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/lib/delay.c#L157 | __const_udelay",
+  "Drv update": ""
+}

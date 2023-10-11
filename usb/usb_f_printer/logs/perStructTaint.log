@@ -1,0 +1,138 @@
+[
+  {
+    "struct name": "config_group",
+    "No.fields": 5,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "config_item",
+    "No.fields": 8,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "module",
+    "No.fields": 46,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "class",
+    "No.fields": 15,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "static_key",
+    "No.fields": 3,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "device",
+    "No.fields": 35,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "cdev",
+    "No.fields": 6,
+    "No.classified fields": 1,
+    "PTR_READ": 1,
+    "PTR_WRITE": 1
+  },
+  {
+    "id": "0",
+    "risky": "ptr-read",
+    "acc_path": "cdev->owner",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/char_dev.c#L328",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/module.h#L493",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update loc (shared field)": "[ (printer_func_bind)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/function/f_printer.c#L1083 ], ",
+    "call path (type)": "",
+    "cond_num": "2",
+    "isControl": "0"
+  },
+  {
+    "id": "0",
+    "risky": "ptr-write",
+    "acc_path": "cdev->owner",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/char_dev.c#L328",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/char_dev.c#L326 |   %4 = alloca %struct.module.589*, align 8",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update loc (shared field)": "[ (printer_func_bind)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/function/f_printer.c#L1083 ], ",
+    "call path (type)": "",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "[ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/char_dev.c#L328 ] -> [ INST || DATA_ST || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/char_dev.c#L326 |   %4 = alloca %struct.module.589*, align 8 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]
+[
+  {
+    "struct name": "rw_semaphore",
+    "No.fields": 5,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "__wait_queue_head",
+    "No.fields": 2,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "spinlock",
+    "No.fields": 1,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "__wait_queue",
+    "No.fields": 4,
+    "No.classified fields": 1,
+    "UNCLASSIFY": 1
+  }
+]
+[
+  {
+    "struct name": "inode",
+    "No.fields": 46,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "file",
+    "No.fields": 18,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "kmem_cache",
+    "No.fields": 24,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "list_head",
+    "No.fields": 2,
+    "No.classified fields": 0
+  }
+]

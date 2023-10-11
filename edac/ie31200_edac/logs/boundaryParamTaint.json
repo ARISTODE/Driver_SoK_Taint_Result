@@ -1,0 +1,116 @@
+[
+  {
+    "id": "19",
+    "risky": "numeric-arith",
+    "acc_path": "phys_addr",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L240",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./arch/x86/include/asm/pgtable.h#L446",
+    "drv caller (param)": "[ ie31200_map_mchbar | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/ie31200_edac.c#L335 ], ",
+    "call path (param)": " [ie31200_map_mchbar->ioremap_nocache->__ioremap_caller->is_new_memtype_allowed] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [ioremap_nocache->__ioremap_caller->is_new_memtype_allowed] ",
+    "cond_num": "7",
+    "isControl": "0"
+  },
+  {
+    "id": "19",
+    "risky": "val-sen-branch (memcpy)",
+    "acc_path": "phys_addr",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L240",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L97",
+    "drv caller (param)": "[ ie31200_map_mchbar | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/ie31200_edac.c#L335 ], ",
+    "call path (param)": " [ie31200_map_mchbar->ioremap_nocache->__ioremap_caller] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [ioremap_nocache->__ioremap_caller] ",
+    "cond_num": "1",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "id": "20",
+    "risky": "numeric-arith",
+    "acc_path": "size",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L240",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L118",
+    "drv caller (param)": "[ ie31200_map_mchbar | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/ie31200_edac.c#L335 ], ",
+    "call path (param)": " [ie31200_map_mchbar->ioremap_nocache->__ioremap_caller] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [ioremap_nocache->__ioremap_caller] ",
+    "cond_num": "4",
+    "isControl": "0"
+  },
+  {
+    "id": "20",
+    "risky": "val-sen-branch (memcpy)",
+    "acc_path": "size",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L240",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L97",
+    "drv caller (param)": "[ ie31200_map_mchbar | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/ie31200_edac.c#L335 ], ",
+    "call path (param)": " [ie31200_map_mchbar->ioremap_nocache->__ioremap_caller] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [ioremap_nocache->__ioremap_caller] ",
+    "cond_num": "1",
+    "isControl": "1",
+    "t_trace": "[ ACTUAL_IN || PARAMETER_INlong unsigned int ] -> [ FORMAL_IN || PARAMETER_INsize ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L96 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L96 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L96 ] -> [ INST || DATA_ST || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L82 |   %14 = alloca i64, align 8 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L97 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]
+[
+  {
+    "id": "22",
+    "risky": "arr-idx",
+    "acc_path": "n_layers",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L306",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L180",
+    "drv caller (param)": "[ ie31200_probe1 | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/ie31200_edac.c#L395 ], ",
+    "call path (param)": " [ie31200_probe1->edac_mc_alloc->edac_align_ptr] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [edac_mc_alloc->edac_align_ptr] ",
+    "cond_num": "2",
+    "isControl": "0"
+  },
+  {
+    "id": "22",
+    "risky": "numeric-arith",
+    "acc_path": "n_layers",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L306",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L180",
+    "drv caller (param)": "[ ie31200_probe1 | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/ie31200_edac.c#L395 ], ",
+    "call path (param)": " [ie31200_probe1->edac_mc_alloc->edac_align_ptr] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [edac_mc_alloc->edac_align_ptr] ",
+    "cond_num": "2",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "id": "23",
+    "risky": "arr-idx",
+    "acc_path": "sz_pvt",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L316",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L180",
+    "drv caller (param)": "[ ie31200_probe1 | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/ie31200_edac.c#L395 ], ",
+    "call path (param)": " [ie31200_probe1->edac_mc_alloc->edac_align_ptr] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [edac_mc_alloc->edac_align_ptr] ",
+    "cond_num": "4",
+    "isControl": "0"
+  },
+  {
+    "id": "23",
+    "risky": "numeric-arith",
+    "acc_path": "sz_pvt",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L316",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L180",
+    "drv caller (param)": "[ ie31200_probe1 | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/ie31200_edac.c#L395 ], ",
+    "call path (param)": " [ie31200_probe1->edac_mc_alloc->edac_align_ptr] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [edac_mc_alloc->edac_align_ptr] ",
+    "cond_num": "4",
+    "isControl": "0"
+  }
+]

@@ -1,0 +1,70 @@
+[
+  {
+    "struct name": "pci_dev",
+    "No.fields": 90,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "bus_type",
+    "No.fields": 20,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "device_driver",
+    "No.fields": 16,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "device",
+    "No.fields": 35,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "list_head",
+    "No.fields": 2,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "spinlock",
+    "No.fields": 1,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "pci_device_id",
+    "No.fields": 7,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "resource",
+    "No.fields": 8,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "static_key",
+    "No.fields": 3,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "kmem_cache",
+    "No.fields": 24,
+    "No.classified fields": 0
+  }
+]

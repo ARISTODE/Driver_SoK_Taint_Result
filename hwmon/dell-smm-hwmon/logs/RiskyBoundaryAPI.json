@@ -1,0 +1,20 @@
+[
+  {
+    "id": 0,
+    "kernel boundary func name": "hwmon_device_register_with_groups",
+    "risky func": "kzalloc",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 0,
+    "No. path cond": 3,
+    "call path": "( [3]i8k_init_hwmon ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/dell-smm-hwmon.c#L805 )->hwmon_device_register_with_groups ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/hwmon.c#L96 )->kzalloc ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L634 ) )"
+  },
+  {
+    "id": 1,
+    "kernel boundary func name": "hwmon_device_register_with_groups",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 6,
+    "call path": "( [3]i8k_init_hwmon ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/dell-smm-hwmon.c#L805 )->hwmon_device_register_with_groups ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/hwmon.c#L96 )->kfree ( Unknown Loc ) )"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "0",
+    "risky": "numeric-arith",
+    "acc_path": "m",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/time.c#L526",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/jiffies.h#L301",
+    "drv caller (param)": "[ max6697_update_device | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/jiffies.h#L361 ], ",
+    "call path (param)": " [max6697_update_device->__msecs_to_jiffies->_msecs_to_jiffies.6] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [__msecs_to_jiffies->_msecs_to_jiffies.6] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "[ ACTUAL_IN || PARAMETER_IN ] -> [ FORMAL_IN || PARAMETER_INm ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/jiffies.h#L301 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/jiffies.h#L301 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/jiffies.h#L301 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]
+[
+  {
+    "id": "4",
+    "risky": "ptr-sen-branch (kzalloc)",
+    "acc_path": "name",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/hwmon.c#L202",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/hwmon.c#L104",
+    "drv caller (param)": "[ max6697_probe | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/max6697.c#L644 ], ",
+    "call path (param)": " [max6697_probe->devm_hwmon_device_register_with_groups->hwmon_device_register_with_groups] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [devm_hwmon_device_register_with_groups->hwmon_device_register_with_groups] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "[ ACTUAL_IN || PARAMETER_IN ] -> [ FORMAL_IN || PARAMETER_INname ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/hwmon.c#L104 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]

@@ -1,0 +1,192 @@
+[
+  {
+    "id": "0",
+    "risky": "ptr arith",
+    "acc_path": "__wait_queue->private",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/core.c#L3596",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/sched.h#L2066",
+    "call path": " [_raw_spin_unlock_irq->__raw_spin_unlock_irq->do_raw_spin_unlock->debug_spin_unlock->spin_bug->spin_dump->task_pid_nr.350] ",
+    "cond_num": "15",
+    "isControl": "0"
+  },
+  {
+    "id": "1",
+    "risky": "ptr deref",
+    "acc_path": "__wait_queue->private",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/core.c#L3596",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/compiler.h#L220",
+    "call path": " [del_gendisk->disk_del_events->disk_block_events->_raw_spin_lock_irqsave->__raw_spin_lock_irqsave->do_raw_spin_lock->__spin_lock_debug] ",
+    "cond_num": "10",
+    "isControl": "0"
+  },
+  {
+    "id": "2",
+    "risky": "sensitive op ptr memcpy",
+    "acc_path": "__wait_queue->private",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/core.c#L3596",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/compiler.h#L220",
+    "call path": " [del_gendisk->disk_del_events->disk_block_events->_raw_spin_lock_irqsave->__raw_spin_lock_irqsave->do_raw_spin_lock->__spin_lock_debug] ",
+    "cond_num": "10",
+    "isControl": "0"
+  },
+  {
+    "id": "3",
+    "risky": "inline Asm Ptr",
+    "acc_path": "__wait_queue->private",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/core.c#L3596",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./arch/x86/include/asm/atomic.h#L186",
+    "call path": " [del_gendisk->disk_del_events->disk_block_events->_raw_spin_lock_irqsave->__raw_spin_lock_irqsave->do_raw_spin_lock->__spin_lock_debug] ",
+    "cond_num": "12",
+    "isControl": "0"
+  },
+  {
+    "id": "13",
+    "risky": "inline Asm Ptr",
+    "acc_path": "list_head->next",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L2419",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./arch/x86/include/asm/bitops.h#L114",
+    "call path": " [blk_mq_init_queue->blk_mq_init_allocated_queue->blk_mq_add_queue_tag_set->blk_mq_update_tag_set_depth->blk_mq_freeze_queue->blk_freeze_queue->blk_mq_freeze_queue_start->blk_mq_run_hw_queues->blk_mq_run_hw_queue->__blk_mq_run_hw_queue->flush_busy_ctxs] ",
+    "cond_num": "26",
+    "isControl": "0"
+  },
+  {
+    "id": "14",
+    "risky": "ptr deref",
+    "acc_path": "list_head->next",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L2419",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/list.h#L102",
+    "call path": " [blk_mq_free_tag_set->blk_mq_free_rq_map->list_del_init.61->__list_del_entry.72] ",
+    "cond_num": "28",
+    "isControl": "0"
+  },
+  {
+    "id": "15",
+    "risky": "sensitive branch ptr trans sen op",
+    "acc_path": "list_head->next",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L2419",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1551",
+    "call path": " [blk_mq_alloc_tag_set->blk_mq_alloc_rq_maps->__blk_mq_alloc_rq_maps->blk_mq_init_rq_map] ",
+    "cond_num": "15",
+    "isControl": "0"
+  },
+  {
+    "id": "16",
+    "risky": "sensitive op ptr kfree",
+    "acc_path": "list_head->next",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L2419",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1782",
+    "call path": " [blk_mq_init_queue->blk_mq_init_allocated_queue->blk_mq_realloc_hw_ctxs->blk_mq_init_hctx] ",
+    "cond_num": "17",
+    "isControl": "0"
+  },
+  {
+    "id": "17",
+    "risky": "sensitive op kmalloc",
+    "acc_path": "blk_mq_tag_set->queue_depth",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1535",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L402",
+    "call path": " [blk_mq_alloc_tag_set->kzalloc_node] ",
+    "cond_num": "6",
+    "isControl": "0"
+  },
+  {
+    "id": "18",
+    "risky": "arith op",
+    "acc_path": "blk_mq_tag_set->cmd_size",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1547",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1586",
+    "call path": " [blk_mq_alloc_tag_set->blk_mq_alloc_rq_maps->__blk_mq_alloc_rq_maps->blk_mq_init_rq_map] ",
+    "cond_num": "6",
+    "isControl": "0"
+  },
+  {
+    "id": "19",
+    "risky": "sensitive branch trans sen op",
+    "acc_path": "blk_mq_tag_set->cmd_size",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1547",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1587",
+    "call path": " [blk_mq_alloc_tag_set->blk_mq_alloc_rq_maps->__blk_mq_alloc_rq_maps->blk_mq_init_rq_map] ",
+    "cond_num": "6",
+    "isControl": "0"
+  },
+  {
+    "id": "20",
+    "risky": "array idx",
+    "acc_path": "blk_mq_tag_set->cmd_size",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1547",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1598",
+    "call path": " [blk_mq_alloc_tag_set->blk_mq_alloc_rq_maps->__blk_mq_alloc_rq_maps->blk_mq_init_rq_map] ",
+    "cond_num": "9",
+    "isControl": "0"
+  },
+  {
+    "id": "21",
+    "risky": "ptr deref",
+    "acc_path": "list_head->prev",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-core.c#L1593",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/compiler.h#L220",
+    "call path": "",
+    "cond_num": "13",
+    "isControl": "0"
+  },
+  {
+    "id": "22",
+    "risky": "sensitive op ptr memcpy",
+    "acc_path": "list_head->prev",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-core.c#L1593",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/compiler.h#L220",
+    "call path": "",
+    "cond_num": "13",
+    "isControl": "0"
+  },
+  {
+    "id": "23",
+    "risky": "inline Asm Ptr",
+    "acc_path": "list_head->prev",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-core.c#L1593",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./arch/x86/include/asm/atomic64_64.h#L176",
+    "call path": "",
+    "cond_num": "13",
+    "isControl": "0"
+  },
+  {
+    "id": "24",
+    "risky": "arith op",
+    "acc_path": "blk_mq_tag_set->queue_depth",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1731",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1776",
+    "call path": " [blk_mq_init_queue->blk_mq_init_allocated_queue->blk_mq_realloc_hw_ctxs->blk_mq_init_hctx] ",
+    "cond_num": "10",
+    "isControl": "0"
+  },
+  {
+    "id": "26",
+    "risky": "ptr arith",
+    "acc_path": "blk_mq_tag_set->driver_data",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1766",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/locking/spinlock_debug.c#L28",
+    "call path": " [__raw_spin_lock_init] ",
+    "cond_num": "1",
+    "isControl": "0"
+  },
+  {
+    "id": "35",
+    "risky": "sensitive branch ptr sen op",
+    "acc_path": "llist_node->next",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/smp.c#L219",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/smp.c#L229",
+    "call path": "",
+    "cond_num": "3",
+    "isControl": "0"
+  },
+  {
+    "id": "36",
+    "risky": "sensitive op ptr memcpy",
+    "acc_path": "llist_node->next",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/smp.c#L219",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/compiler.h#L252",
+    "call path": "",
+    "cond_num": "6",
+    "isControl": "0"
+  }
+]

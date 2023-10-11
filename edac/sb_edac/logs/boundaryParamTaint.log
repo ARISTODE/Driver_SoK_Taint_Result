@@ -1,0 +1,197 @@
+[]
+[
+  {
+    "id": "11",
+    "risky": "arr-idx",
+    "acc_path": "n_layers",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L306",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L180",
+    "drv caller (param)": "[ sbridge_register_mci | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/sb_edac.c#L3193 ], ",
+    "call path (param)": " [sbridge_register_mci->edac_mc_alloc->edac_align_ptr] ",
+    "cond_num": "2",
+    "isControl": "0"
+  },
+  {
+    "id": "11",
+    "risky": "numeric-arith",
+    "acc_path": "n_layers",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L306",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L180",
+    "drv caller (param)": "[ sbridge_register_mci | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/sb_edac.c#L3193 ], ",
+    "call path (param)": " [sbridge_register_mci->edac_mc_alloc->edac_align_ptr] ",
+    "cond_num": "2",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "id": "12",
+    "risky": "arr-idx",
+    "acc_path": "sz_pvt",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L316",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L180",
+    "drv caller (param)": "[ sbridge_register_mci | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/sb_edac.c#L3193 ], ",
+    "call path (param)": " [sbridge_register_mci->edac_mc_alloc->edac_align_ptr] ",
+    "cond_num": "4",
+    "isControl": "0"
+  },
+  {
+    "id": "12",
+    "risky": "numeric-arith",
+    "acc_path": "sz_pvt",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L316",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L180",
+    "drv caller (param)": "[ sbridge_register_mci | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/sb_edac.c#L3193 ], ",
+    "call path (param)": " [sbridge_register_mci->edac_mc_alloc->edac_align_ptr] ",
+    "cond_num": "4",
+    "isControl": "0"
+  }
+]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[
+  {
+    "id": "23",
+    "risky": "ptr-sen-api (strcpy)",
+    "acc_path": "msg",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L1244",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L1095 |   %352 = getelementptr [15 x i8], [15 x i8]* @.str.54.89, i64 0, i64 0",
+    "drv caller (param)": "[ sbridge_mce_output_error | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/sb_edac.c#L3079 ], ",
+    "call path (param)": " [sbridge_mce_output_error->edac_mc_handle_error] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  },
+  {
+    "id": "23",
+    "risky": "ptr-sen-branch (strcpy)",
+    "acc_path": "msg",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L1244",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L1224",
+    "drv caller (param)": "[ sbridge_mce_output_error | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/sb_edac.c#L3079 ], ",
+    "call path (param)": " [sbridge_mce_output_error->edac_mc_handle_error] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "[ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L1244 ] -> [ INST || DATA_ST || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L1095 |   %23 = alloca i8*, align 8 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L1224 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  },
+  {
+    "id": "23",
+    "risky": "ptr-write",
+    "acc_path": "msg",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L1244",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L1165",
+    "drv caller (param)": "[ sbridge_mce_output_error | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/sb_edac.c#L3079 ], ",
+    "call path (param)": " [sbridge_mce_output_error->edac_mc_handle_error] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "[ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L1244 ] -> [ INST || DATA_ST || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L1095 |   %23 = alloca i8*, align 8 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L1165 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  },
+  {
+    "id": "23",
+    "risky": "ptr-array",
+    "acc_path": "msg",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L1244",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L1249",
+    "drv caller (param)": "[ sbridge_mce_output_error | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/sb_edac.c#L3079 ], ",
+    "call path (param)": " [sbridge_mce_output_error->edac_mc_handle_error] ",
+    "cond_num": "2",
+    "isControl": "0"
+  },
+  {
+    "id": "23",
+    "risky": "ptr-arith",
+    "acc_path": "msg",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L1244",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L1249",
+    "drv caller (param)": "[ sbridge_mce_output_error | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/sb_edac.c#L3079 ], ",
+    "call path (param)": " [sbridge_mce_output_error->edac_mc_handle_error] ",
+    "cond_num": "2",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "id": "24",
+    "risky": "ptr-sen-api (strcpy)",
+    "acc_path": "other_detail",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L1244",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L1095 |   %352 = getelementptr [15 x i8], [15 x i8]* @.str.54.89, i64 0, i64 0",
+    "drv caller (param)": "[ sbridge_mce_output_error | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/sb_edac.c#L3079 ], ",
+    "call path (param)": " [sbridge_mce_output_error->edac_mc_handle_error] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  },
+  {
+    "id": "24",
+    "risky": "ptr-sen-branch (strcpy)",
+    "acc_path": "other_detail",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L1244",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L1224",
+    "drv caller (param)": "[ sbridge_mce_output_error | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/sb_edac.c#L3079 ], ",
+    "call path (param)": " [sbridge_mce_output_error->edac_mc_handle_error] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "[ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L1244 ] -> [ INST || DATA_ST || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L1095 |   %23 = alloca i8*, align 8 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L1224 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  },
+  {
+    "id": "24",
+    "risky": "ptr-write",
+    "acc_path": "other_detail",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L1244",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L1165",
+    "drv caller (param)": "[ sbridge_mce_output_error | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/sb_edac.c#L3079 ], ",
+    "call path (param)": " [sbridge_mce_output_error->edac_mc_handle_error] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "[ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L1244 ] -> [ INST || DATA_ST || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L1095 |   %23 = alloca i8*, align 8 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L1165 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  },
+  {
+    "id": "24",
+    "risky": "ptr-array",
+    "acc_path": "other_detail",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L1244",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L1249",
+    "drv caller (param)": "[ sbridge_mce_output_error | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/sb_edac.c#L3079 ], ",
+    "call path (param)": " [sbridge_mce_output_error->edac_mc_handle_error] ",
+    "cond_num": "2",
+    "isControl": "0"
+  },
+  {
+    "id": "24",
+    "risky": "ptr-arith",
+    "acc_path": "other_detail",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L1244",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L1249",
+    "drv caller (param)": "[ sbridge_mce_output_error | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/sb_edac.c#L3079 ], ",
+    "call path (param)": " [sbridge_mce_output_error->edac_mc_handle_error] ",
+    "cond_num": "2",
+    "isControl": "0"
+  }
+]

@@ -1,0 +1,67 @@
+[]
+[
+  {
+    "id": "20",
+    "risky": "val-sen-api (kmalloc)",
+    "acc_path": "size",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/slab_common.c#L1018",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/slab_common.c#L1018",
+    "drv caller (param)": "[ setup_req | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L415 ], ",
+    "call path (param)": " [setup_req->kmalloc_order] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]
+[
+  {
+    "id": "21",
+    "risky": "val-sen-api (kmalloc)",
+    "acc_path": "flags",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/slab_common.c#L1018",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/slab_common.c#L1018",
+    "drv caller (param)": "[ setup_req | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L415 ], ",
+    "call path (param)": " [setup_req->kmalloc_order] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]
+[]
+[]
+[]
+[]
+[]
+[
+  {
+    "id": "27",
+    "risky": "numeric-arith",
+    "acc_path": "band",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/fcntl.c#L731",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/fcntl.c#L481",
+    "drv caller (param)": "[ ep0_readable | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/legacy/inode.c#L850 ], ",
+    "call path (param)": " [ep0_readable->kill_fasync->kill_fasync_rcu->send_sigio->send_sigio_to_task] ",
+    "cond_num": "16",
+    "isControl": "0"
+  },
+  {
+    "id": "27",
+    "risky": "arr-idx",
+    "acc_path": "band",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/fcntl.c#L731",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/fcntl.c#L481",
+    "drv caller (param)": "[ ep0_readable | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/legacy/inode.c#L850 ], ",
+    "call path (param)": " [ep0_readable->kill_fasync->kill_fasync_rcu->send_sigio->send_sigio_to_task] ",
+    "cond_num": "16",
+    "isControl": "0"
+  }
+]
+[]
+[]
+[]

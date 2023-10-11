@@ -1,0 +1,72 @@
+{
+  "id": 4,
+  "acc_path": "debugfs_regset32->nregs",
+  "Kernel read": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/debugfs/file.c#L1041], ",
+  "Drv update": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/dwc2/debugfs.c#L750], "
+}
+{
+  "id": 6,
+  "acc_path": "flags",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/locking/spinlock.c#L189 | _raw_spin_unlock_irqrestore",
+  "Drv update": ""
+}
+{
+  "id": 7,
+  "acc_path": "msecs",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1874 | msleep",
+  "Drv update": ""
+}
+{
+  "id": 10,
+  "acc_path": "type",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/platform.c#L67 | platform_get_resource",
+  "Drv update": ""
+}
+{
+  "id": 11,
+  "acc_path": "num",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/platform.c#L67 | platform_get_resource",
+  "Drv update": ""
+}
+{
+  "id": 12,
+  "acc_path": "xloops",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/lib/delay.c#L157 | __const_udelay",
+  "Drv update": ""
+}
+{
+  "id": 13,
+  "acc_path": "mode",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/debugfs/inode.c#L360 | debugfs_create_file",
+  "Drv update": ""
+}
+{
+  "id": 16,
+  "acc_path": "order",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/slab_common.c#L1009 | kmalloc_order",
+  "Drv update": ""
+}
+{
+  "id": 18,
+  "acc_path": "line",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/panic.c#L550 | warn_slowpath_null",
+  "Drv update": ""
+}
+{
+  "id": 19,
+  "acc_path": "line",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/panic.c#L526 | warn_slowpath_fmt",
+  "Drv update": ""
+}
+{
+  "id": 20,
+  "acc_path": "irq",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/irq/manage.c#L488 | disable_irq",
+  "Drv update": ""
+}
+{
+  "id": 21,
+  "acc_path": "mode",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/debugfs/file.c#L1082 | debugfs_create_regset32",
+  "Drv update": ""
+}

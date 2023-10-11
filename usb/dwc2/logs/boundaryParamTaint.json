@@ -1,0 +1,87 @@
+[
+  {
+    "id": "8",
+    "risky": "numeric-arith",
+    "acc_path": "expires",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1086",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L471",
+    "drv caller (param)": "[ dwc2_handle_wakeup_detected_intr | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/dwc2/core_intr.c#L382 ], ",
+    "call path (param)": " [dwc2_handle_wakeup_detected_intr->mod_timer->__mod_timer->calc_wheel_index->calc_index] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [msleep->schedule_timeout_uninterruptible->schedule_timeout->__mod_timer->calc_wheel_index->calc_index] ",
+    "cond_num": "12",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "id": "9",
+    "risky": "numeric-arith",
+    "acc_path": "num",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/platform.c#L104",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/platform.c#L75",
+    "drv caller (param)": "[ dwc2_driver_probe | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/dwc2/platform.c#L567 ], ",
+    "call path (param)": " [dwc2_driver_probe->platform_get_irq->platform_get_resource] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [platform_get_irq->platform_get_resource] ",
+    "cond_num": "2",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "id": "14",
+    "risky": "val-sen-api (kmalloc)",
+    "acc_path": "size",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/slab_common.c#L1018",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/slab_common.c#L1018",
+    "drv caller (param)": "[ dwc2_hsotg_handle_unaligned_buf_start | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L415 ], ",
+    "call path (param)": " [dwc2_hsotg_handle_unaligned_buf_start->kmalloc_order] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [seq_lseek->traverse->seq_buf_alloc->kmalloc_order] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]
+[
+  {
+    "id": "15",
+    "risky": "val-sen-api (kmalloc)",
+    "acc_path": "flags",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/slab_common.c#L1018",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/slab_common.c#L1018",
+    "drv caller (param)": "[ dwc2_hsotg_handle_unaligned_buf_start | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L415 ], ",
+    "call path (param)": " [dwc2_hsotg_handle_unaligned_buf_start->kmalloc_order] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [seq_lseek->traverse->seq_buf_alloc->kmalloc_order] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]
+[
+  {
+    "id": "17",
+    "risky": "numeric-arith",
+    "acc_path": "m",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/time.c#L526",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/jiffies.h#L301",
+    "drv caller (param)": "[ dwc2_handle_wakeup_detected_intr | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/jiffies.h#L361 ], ",
+    "call path (param)": " [dwc2_handle_wakeup_detected_intr->__msecs_to_jiffies->_msecs_to_jiffies.63] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [msleep->__msecs_to_jiffies->_msecs_to_jiffies.63] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "[ ACTUAL_IN || PARAMETER_IN ] -> [ FORMAL_IN || PARAMETER_INm ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/jiffies.h#L301 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/jiffies.h#L301 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/jiffies.h#L301 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]

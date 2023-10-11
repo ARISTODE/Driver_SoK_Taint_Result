@@ -1,0 +1,83 @@
+[
+  {
+    "id": 0,
+    "kernel boundary func name": "snd_soc_update_bits",
+    "risky func": "mutex_lock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 4,
+    "call path": "( [5]haswell_rt5640_hw_params ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/boards/haswell.c#L63 )->snd_soc_update_bits ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-io.c#L227 )->snd_soc_component_update_bits ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-io.c#L101 )->snd_soc_component_update_bits_legacy ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-io.c#L64 )->mutex_lock ( Unknown Loc ) )"
+  },
+  {
+    "id": 1,
+    "kernel boundary func name": "snd_soc_update_bits",
+    "risky func": "mutex_unlock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 5,
+    "call path": "( [5]haswell_rt5640_hw_params ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/boards/haswell.c#L63 )->snd_soc_update_bits ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-io.c#L227 )->snd_soc_component_update_bits ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-io.c#L101 )->snd_soc_component_update_bits_legacy ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-io.c#L64 )->mutex_unlock ( Unknown Loc ) )"
+  },
+  {
+    "id": 2,
+    "kernel boundary func name": "devm_snd_soc_register_card",
+    "risky func": "mutex_lock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 5,
+    "call path": "( [9]haswell_audio_probe ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/boards/haswell.c#L189 )->devm_snd_soc_register_card ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-devres.c#L103 )->snd_soc_register_card ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-core.c#L2611 )->snd_soc_instantiate_card ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-core.c#L1843 )->soc_remove_dai_links ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-core.c#L1150 )->soc_remove_link_dais ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-core.c#L1106 )->device_unregister ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L1296 )->device_del ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L1232 )->mutex_lock ( Unknown Loc ) )"
+  },
+  {
+    "id": 3,
+    "kernel boundary func name": "devm_snd_soc_register_card",
+    "risky func": "mutex_unlock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 0,
+    "No. path cond": 7,
+    "call path": "( [9]haswell_audio_probe ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/boards/haswell.c#L189 )->devm_snd_soc_register_card ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-devres.c#L103 )->snd_soc_register_card ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-core.c#L2611 )->snd_soc_instantiate_card ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-core.c#L1843 )->soc_remove_dai_links ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-core.c#L1150 )->soc_remove_link_dais ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-core.c#L1106 )->device_unregister ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L1296 )->device_del ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L1232 )->mutex_unlock ( Unknown Loc ) )"
+  },
+  {
+    "id": 4,
+    "kernel boundary func name": "devm_snd_soc_register_card",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 26,
+    "call path": "( [7]haswell_audio_probe ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/boards/haswell.c#L189 )->devm_snd_soc_register_card ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-devres.c#L103 )->snd_soc_register_card ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-core.c#L2611 )->snd_soc_instantiate_card ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-core.c#L1843 )->soc_remove_pcm_runtimes ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-core.c#L589 )->soc_free_pcm_runtime ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-core.c#L574 )->kfree ( Unknown Loc ) )"
+  },
+  {
+    "id": 5,
+    "kernel boundary func name": "devm_snd_soc_register_card",
+    "risky func": "kzalloc.104",
+    "Risky API Class": "",
+    "Is Controlled Path": 0,
+    "No. path cond": 29,
+    "call path": "( [7]haswell_audio_probe ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/boards/haswell.c#L189 )->devm_snd_soc_register_card ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-devres.c#L103 )->snd_soc_register_card ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-core.c#L2611 )->snd_soc_instantiate_card ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-core.c#L1843 )->soc_bind_dai_link ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-core.c#L988 )->soc_new_pcm_runtime ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-core.c#L552 )->kzalloc.104 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L634 ) )"
+  },
+  {
+    "id": 6,
+    "kernel boundary func name": "devm_snd_soc_register_card",
+    "risky func": "kobject_put",
+    "Risky API Class": "refCount",
+    "Is Controlled Path": 0,
+    "No. path cond": 24,
+    "call path": "( [9]haswell_audio_probe ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/boards/haswell.c#L189 )->devm_snd_soc_register_card ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-devres.c#L103 )->snd_soc_register_card ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-core.c#L2611 )->snd_soc_instantiate_card ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-core.c#L1843 )->soc_remove_dai_links ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-core.c#L1150 )->soc_remove_link_dais ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-core.c#L1106 )->device_unregister ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L1296 )->put_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L1211 )->kobject_put ( Unknown Loc ) )"
+  },
+  {
+    "id": 7,
+    "kernel boundary func name": "devm_snd_soc_register_card",
+    "risky func": "kobject_get",
+    "Risky API Class": "refCount",
+    "Is Controlled Path": 0,
+    "No. path cond": 37,
+    "call path": "( [9]haswell_audio_probe ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/boards/haswell.c#L189 )->devm_snd_soc_register_card ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-devres.c#L103 )->snd_soc_register_card ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-core.c#L2611 )->snd_soc_instantiate_card ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-core.c#L1843 )->soc_probe_link_dais ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-core.c#L1597 )->soc_post_component_init ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-core.c#L1466 )->device_add ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L1025 )->get_device_parent ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L779 )->kobject_get ( Unknown Loc ) )"
+  },
+  {
+    "id": 8,
+    "kernel boundary func name": "devm_snd_soc_register_card",
+    "risky func": "kzalloc",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 0,
+    "No. path cond": 40,
+    "call path": "( [10]haswell_audio_probe ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/boards/haswell.c#L189 )->devm_snd_soc_register_card ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-devres.c#L103 )->snd_soc_register_card ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-core.c#L2611 )->snd_soc_instantiate_card ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-core.c#L1843 )->soc_probe_link_dais ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-core.c#L1597 )->soc_post_component_init ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-core.c#L1466 )->device_add ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L1025 )->get_device_parent ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L779 )->class_dir_create_and_add ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L755 )->kzalloc ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L634 ) )"
+  }
+]

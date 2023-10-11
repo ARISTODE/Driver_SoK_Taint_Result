@@ -1,0 +1,84 @@
+{
+  "id": 0,
+  "acc_path": "snd_rawmidi->info_flags",
+  "Kernel read": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/rawmidi.c#L1434],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/rawmidi.c#L238],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/rawmidi.c#L560],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/rawmidi.c#L1410], ",
+  "Drv update": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/function/f_midi.c#L761], "
+}
+{
+  "id": 3,
+  "acc_path": "stream",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/rawmidi.c#L1751 | snd_rawmidi_set_ops",
+  "Drv update": ""
+}
+{
+  "id": 4,
+  "acc_path": "type",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/device.c#L44 | snd_device_new",
+  "Drv update": ""
+}
+{
+  "id": 5,
+  "acc_path": "device_data",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/device.c#L44 | snd_device_new",
+  "Drv update": ""
+}
+{
+  "id": 6,
+  "acc_path": "id",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/rawmidi.c#L1519 | snd_rawmidi_new",
+  "Drv update": ""
+}
+{
+  "id": 7,
+  "acc_path": "device",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/rawmidi.c#L1519 | snd_rawmidi_new",
+  "Drv update": ""
+}
+{
+  "id": 12,
+  "acc_path": "recsize",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/kfifo.c#L451 | __kfifo_in_r",
+  "Drv update": ""
+}
+{
+  "id": 14,
+  "acc_path": "count",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/rawmidi.c#L874 | snd_rawmidi_receive",
+  "Drv update": ""
+}
+{
+  "id": 15,
+  "acc_path": "idx",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/init.c#L201 | snd_card_new",
+  "Drv update": ""
+}
+{
+  "id": 16,
+  "acc_path": "extra_size",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/init.c#L201 | snd_card_new",
+  "Drv update": ""
+}
+{
+  "id": 17,
+  "acc_path": "size",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/kfifo.c#L38 | __kfifo_alloc",
+  "Drv update": ""
+}
+{
+  "id": 18,
+  "acc_path": "esize",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/kfifo.c#L38 | __kfifo_alloc",
+  "Drv update": ""
+}
+{
+  "id": 19,
+  "acc_path": "gfp_mask",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/kfifo.c#L38 | __kfifo_alloc",
+  "Drv update": ""
+}
+{
+  "id": 20,
+  "acc_path": "data",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/softirq.c#L557 | tasklet_init",
+  "Drv update": ""
+}

@@ -1,0 +1,12 @@
+{
+  "id": 0,
+  "acc_path": "size",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/devres.c#L775 | devm_kmalloc",
+  "Drv update": ""
+}
+{
+  "id": 1,
+  "acc_path": "gfp",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/devres.c#L775 | devm_kmalloc",
+  "Drv update": ""
+}

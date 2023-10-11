@@ -1,0 +1,154 @@
+[
+  {
+    "id": 0,
+    "kernel boundary func name": "destroy_workqueue",
+    "risky func": "mutex_lock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 2,
+    "call path": "( [3]applesmc_release_key_backlight ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/applesmc.c#L1228 )->destroy_workqueue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L4008 )->mutex_lock ( Unknown Loc ) )"
+  },
+  {
+    "id": 1,
+    "kernel boundary func name": "destroy_workqueue",
+    "risky func": "mutex_unlock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 7,
+    "call path": "( [3]applesmc_release_key_backlight ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/applesmc.c#L1228 )->destroy_workqueue ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L4008 )->mutex_unlock ( Unknown Loc ) )"
+  },
+  {
+    "id": 2,
+    "kernel boundary func name": "__alloc_workqueue_key",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 16,
+    "call path": "( [3]applesmc_create_key_backlight ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/applesmc.c#L1218 )->__alloc_workqueue_key ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L3895 )->kfree ( Unknown Loc ) )"
+  },
+  {
+    "id": 3,
+    "kernel boundary func name": "__alloc_workqueue_key",
+    "risky func": "mutex_lock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 0,
+    "No. path cond": 11,
+    "call path": "( [3]applesmc_create_key_backlight ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/applesmc.c#L1218 )->__alloc_workqueue_key ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L3895 )->mutex_lock ( Unknown Loc ) )"
+  },
+  {
+    "id": 4,
+    "kernel boundary func name": "__alloc_workqueue_key",
+    "risky func": "mutex_unlock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 0,
+    "No. path cond": 13,
+    "call path": "( [3]applesmc_create_key_backlight ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/applesmc.c#L1218 )->__alloc_workqueue_key ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L3895 )->mutex_unlock ( Unknown Loc ) )"
+  },
+  {
+    "id": 5,
+    "kernel boundary func name": "__alloc_workqueue_key",
+    "risky func": "kzalloc",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 28,
+    "call path": "( [4]applesmc_create_key_backlight ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/applesmc.c#L1218 )->__alloc_workqueue_key ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L3895 )->alloc_workqueue_attrs ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L3113 )->kzalloc ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L634 ) )"
+  },
+  {
+    "id": 6,
+    "kernel boundary func name": "__alloc_workqueue_key",
+    "risky func": "mod_timer",
+    "Risky API Class": "timer",
+    "Is Controlled Path": 1,
+    "No. path cond": 46,
+    "call path": "( [11]applesmc_create_key_backlight ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/applesmc.c#L1218 )->__alloc_workqueue_key ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L3895 )->alloc_and_link_pwqs ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L3848 )->apply_workqueue_attrs ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L3751 )->apply_workqueue_attrs_locked ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L3711 )->apply_wqattrs_prepare ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L3606 )->alloc_unbound_pwq ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L3494 )->get_unbound_pool ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L3308 )->create_worker ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1753 )->worker_enter_idle ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1615 )->mod_timer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1084 ) )"
+  },
+  {
+    "id": 7,
+    "kernel boundary func name": "input_unregister_polled_device",
+    "risky func": "mutex_lock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 4,
+    "call path": "( [6]applesmc_release_accelerometer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/applesmc.c#L1195 )->input_unregister_polled_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/input/input-polldev.c#L356 )->input_unregister_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/input/input.c#L2184 )->__input_unregister_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/input/input.c#L2014 )->input_disconnect_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/input/input.c#L695 )->mutex_lock ( Unknown Loc ) )"
+  },
+  {
+    "id": 8,
+    "kernel boundary func name": "input_unregister_polled_device",
+    "risky func": "mutex_unlock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 4,
+    "call path": "( [6]applesmc_release_accelerometer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/applesmc.c#L1195 )->input_unregister_polled_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/input/input-polldev.c#L356 )->input_unregister_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/input/input.c#L2184 )->__input_unregister_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/input/input.c#L2014 )->input_disconnect_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/input/input.c#L695 )->mutex_unlock ( Unknown Loc ) )"
+  },
+  {
+    "id": 9,
+    "kernel boundary func name": "input_unregister_polled_device",
+    "risky func": "mod_timer",
+    "Risky API Class": "timer",
+    "Is Controlled Path": 0,
+    "No. path cond": 22,
+    "call path": "( [10]applesmc_release_accelerometer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/applesmc.c#L1195 )->input_unregister_polled_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/input/input-polldev.c#L356 )->input_unregister_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/input/input.c#L2184 )->__input_unregister_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/input/input.c#L2014 )->input_disconnect_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/input/input.c#L695 )->input_dev_release_keys ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/input/input.c#L674 )->input_pass_event ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/input/input.c#L169 )->input_pass_values ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/input/input.c#L131 )->input_start_autorepeat ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/input/input.c#L75 )->mod_timer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1084 ) )"
+  },
+  {
+    "id": 10,
+    "kernel boundary func name": "input_unregister_polled_device",
+    "risky func": "del_timer",
+    "Risky API Class": "timer",
+    "Is Controlled Path": 0,
+    "No. path cond": 16,
+    "call path": "( [10]applesmc_release_accelerometer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/applesmc.c#L1195 )->input_unregister_polled_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/input/input-polldev.c#L356 )->input_unregister_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/input/input.c#L2184 )->__input_unregister_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/input/input.c#L2014 )->input_disconnect_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/input/input.c#L695 )->input_dev_release_keys ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/input/input.c#L674 )->input_pass_event ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/input/input.c#L169 )->input_pass_values ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/input/input.c#L131 )->input_stop_autorepeat ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/input/input.c#L86 )->del_timer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1161 ) )"
+  },
+  {
+    "id": 11,
+    "kernel boundary func name": "input_register_polled_device",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 14,
+    "call path": "( [4]applesmc_create_accelerometer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/applesmc.c#L1142 )->input_register_polled_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/input/input-polldev.c#L295 )->input_register_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/input/input.c#L2086 )->kfree ( Unknown Loc ) )"
+  },
+  {
+    "id": 12,
+    "kernel boundary func name": "input_register_polled_device",
+    "risky func": "mutex_unlock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 13,
+    "call path": "( [4]applesmc_create_accelerometer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/applesmc.c#L1142 )->input_register_polled_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/input/input-polldev.c#L295 )->input_register_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/input/input.c#L2086 )->mutex_unlock ( Unknown Loc ) )"
+  },
+  {
+    "id": 13,
+    "kernel boundary func name": "input_free_polled_device",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 3,
+    "call path": "( [3]applesmc_release_accelerometer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/applesmc.c#L1195 )->input_free_polled_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/input/input-polldev.c#L271 )->kfree ( Unknown Loc ) )( [3]applesmc_create_accelerometer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/applesmc.c#L1142 )->input_free_polled_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/input/input-polldev.c#L271 )->kfree ( Unknown Loc ) )"
+  },
+  {
+    "id": 14,
+    "kernel boundary func name": "input_allocate_polled_device",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 2,
+    "call path": "( [3]applesmc_create_accelerometer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/applesmc.c#L1142 )->input_allocate_polled_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/input/input-polldev.c#L161 )->kfree ( Unknown Loc ) )"
+  },
+  {
+    "id": 15,
+    "kernel boundary func name": "input_allocate_polled_device",
+    "risky func": "kzalloc.46",
+    "Risky API Class": "",
+    "Is Controlled Path": 1,
+    "call path": "( [3]applesmc_create_accelerometer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/applesmc.c#L1142 )->input_allocate_polled_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/input/input-polldev.c#L161 )->kzalloc.46 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L634 ) )"
+  },
+  {
+    "id": 16,
+    "kernel boundary func name": "input_allocate_polled_device",
+    "risky func": "kzalloc.125",
+    "Risky API Class": "",
+    "Is Controlled Path": 0,
+    "No. path cond": 1,
+    "call path": "( [4]applesmc_create_accelerometer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/applesmc.c#L1142 )->input_allocate_polled_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/input/input-polldev.c#L161 )->input_allocate_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/input/input.c#L1781 )->kzalloc.125 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L634 ) )"
+  }
+]

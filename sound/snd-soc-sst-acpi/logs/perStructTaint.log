@@ -1,0 +1,70 @@
+[
+  {
+    "struct name": "device_driver",
+    "No.fields": 16,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "fwnode_handle",
+    "No.fields": 2,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "device",
+    "No.fields": 33,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "resource",
+    "No.fields": 8,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "platform_device",
+    "No.fields": 10,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "acpi_device_id",
+    "No.fields": 4,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "firmware",
+    "No.fields": 4,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "property_entry",
+    "No.fields": 5,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "sst_acpi_mach",
+    "No.fields": 6,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "platform_device_info",
+    "No.fields": 10,
+    "No.classified fields": 0
+  }
+]

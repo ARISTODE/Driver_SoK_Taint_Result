@@ -1,0 +1,30 @@
+[
+  {
+    "id": "2",
+    "risky": "val-sen-api (kmalloc)",
+    "acc_path": "gfp",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/firmware_class.c#L1362",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L415",
+    "drv caller (param)": "[ sst_acpi_probe | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-acpi.c#L161 ], ",
+    "call path (param)": " [sst_acpi_probe->request_firmware_nowait->kzalloc.146] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [request_firmware_nowait->kzalloc.146] ",
+    "cond_num": "4",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "id": "3",
+    "risky": "numeric-arith",
+    "acc_path": "num",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/platform.c#L104",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/platform.c#L75",
+    "drv caller (param)": "[ sst_acpi_probe | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-acpi.c#L122 ], ",
+    "call path (param)": " [sst_acpi_probe->platform_get_irq->platform_get_resource] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [platform_get_irq->platform_get_resource] ",
+    "cond_num": "2",
+    "isControl": "0"
+  }
+]

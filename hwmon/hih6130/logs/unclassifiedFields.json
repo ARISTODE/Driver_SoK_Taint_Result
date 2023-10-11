@@ -1,0 +1,18 @@
+{
+  "id": 0,
+  "acc_path": "msecs",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1874 | msleep",
+  "Drv update": ""
+}
+{
+  "id": 1,
+  "acc_path": "num",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/i2c/i2c-core.c#L2430 | i2c_transfer",
+  "Drv update": ""
+}
+{
+  "id": 3,
+  "acc_path": "count",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/i2c/i2c-core.c#L2489 | i2c_master_send",
+  "Drv update": ""
+}

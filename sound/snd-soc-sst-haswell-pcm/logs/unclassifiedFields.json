@@ -1,0 +1,306 @@
+{
+  "id": 14,
+  "acc_path": "sst_mem_block->users",
+  "Kernel read": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L165], ",
+  "Drv update": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L579],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L543], "
+}
+{
+  "id": 17,
+  "acc_path": "sst_module->type",
+  "Kernel read": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L804], ",
+  "Drv update": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L146],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L140], "
+}
+{
+  "id": 22,
+  "acc_path": "sst_generic_ipc->pending",
+  "Kernel read": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-ipc.c#L168], ",
+  "Drv update": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L582],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L575], "
+}
+{
+  "id": 26,
+  "acc_path": "__wait_queue->flags",
+  "Kernel read": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L360],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L190],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L38],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L176],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L27],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L211],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L344],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L334],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L71],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L344], ",
+  "Drv update": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L2180], "
+}
+{
+  "id": 27,
+  "acc_path": "sst_module_template->id",
+  "Kernel read": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L502], ",
+  "Drv update": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L115], "
+}
+{
+  "id": 28,
+  "acc_path": "sst_module_template->entry",
+  "Kernel read": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L507], ",
+  "Drv update": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L116], "
+}
+{
+  "id": 29,
+  "acc_path": "sst_module_template->scratch_size",
+  "Kernel read": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L505], ",
+  "Drv update": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L118], "
+}
+{
+  "id": 30,
+  "acc_path": "sst_module_template->persistent_size",
+  "Kernel read": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L506], ",
+  "Drv update": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L117], "
+}
+{
+  "id": 31,
+  "acc_path": "format",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/pcm_misc.c#L404 | snd_pcm_format_set_silence",
+  "Drv update": ""
+}
+{
+  "id": 32,
+  "acc_path": "samples",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/pcm_misc.c#L404 | snd_pcm_format_set_silence",
+  "Drv update": ""
+}
+{
+  "id": 33,
+  "acc_path": "offset",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L865 | sst_module_runtime_alloc_blocks",
+  "Drv update": ""
+}
+{
+  "id": 34,
+  "acc_path": "id",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L534 | sst_module_runtime_new",
+  "Drv update": ""
+}
+{
+  "id": 35,
+  "acc_path": "mode",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L89 | __wake_up",
+  "Drv update": ""
+}
+{
+  "id": 37,
+  "acc_path": "flags",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/locking/spinlock.c#L189 | _raw_spin_unlock_irqrestore",
+  "Drv update": ""
+}
+{
+  "id": 38,
+  "acc_path": "xloops",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/lib/delay.c#L157 | __const_udelay",
+  "Drv update": ""
+}
+{
+  "id": 39,
+  "acc_path": "offset",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-dsp.c#L216 | sst_dsp_shim_update_bits",
+  "Drv update": ""
+}
+{
+  "id": 40,
+  "acc_path": "mask",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-dsp.c#L216 | sst_dsp_shim_update_bits",
+  "Drv update": ""
+}
+{
+  "id": 41,
+  "acc_path": "value",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-dsp.c#L216 | sst_dsp_shim_update_bits",
+  "Drv update": ""
+}
+{
+  "id": 42,
+  "acc_path": "offset",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-dsp.c#L162 | sst_dsp_shim_update_bits_unlocked",
+  "Drv update": ""
+}
+{
+  "id": 43,
+  "acc_path": "mask",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-dsp.c#L162 | sst_dsp_shim_update_bits_unlocked",
+  "Drv update": ""
+}
+{
+  "id": 44,
+  "acc_path": "value",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-dsp.c#L162 | sst_dsp_shim_update_bits_unlocked",
+  "Drv update": ""
+}
+{
+  "id": 45,
+  "acc_path": "offset",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-dsp.c#L92 | sst_dsp_shim_write",
+  "Drv update": ""
+}
+{
+  "id": 46,
+  "acc_path": "value",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-dsp.c#L92 | sst_dsp_shim_write",
+  "Drv update": ""
+}
+{
+  "id": 47,
+  "acc_path": "msecs",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1874 | msleep",
+  "Drv update": ""
+}
+{
+  "id": 49,
+  "acc_path": "timeout",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1709 | schedule_timeout",
+  "Drv update": ""
+}
+{
+  "id": 53,
+  "acc_path": "inbox_offset",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-dsp.c#L360 | sst_dsp_mailbox_init",
+  "Drv update": ""
+}
+{
+  "id": 54,
+  "acc_path": "inbox_size",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-dsp.c#L360 | sst_dsp_mailbox_init",
+  "Drv update": ""
+}
+{
+  "id": 55,
+  "acc_path": "outbox_offset",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-dsp.c#L360 | sst_dsp_mailbox_init",
+  "Drv update": ""
+}
+{
+  "id": 56,
+  "acc_path": "outbox_size",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-dsp.c#L360 | sst_dsp_mailbox_init",
+  "Drv update": ""
+}
+{
+  "id": 57,
+  "acc_path": "offset",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-dsp.c#L144 | sst_dsp_shim_read_unlocked",
+  "Drv update": ""
+}
+{
+  "id": 58,
+  "acc_path": "msg",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-dsp.c#L342 | sst_dsp_ipc_msg_tx",
+  "Drv update": ""
+}
+{
+  "id": 59,
+  "acc_path": "num_dai",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-core.c#L3032 | snd_soc_register_component",
+  "Drv update": ""
+}
+{
+  "id": 60,
+  "acc_path": "header",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-ipc.c#L206 | sst_ipc_reply_find_msg",
+  "Drv update": ""
+}
+{
+  "id": 61,
+  "acc_path": "header",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-ipc.c#L198 | sst_ipc_tx_message_nowait",
+  "Drv update": ""
+}
+{
+  "id": 62,
+  "acc_path": "tx_bytes",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-ipc.c#L198 | sst_ipc_tx_message_nowait",
+  "Drv update": ""
+}
+{
+  "id": 63,
+  "acc_path": "state",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L199 | prepare_to_wait_event",
+  "Drv update": ""
+}
+{
+  "id": 64,
+  "acc_path": "header",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-ipc.c#L190 | sst_ipc_tx_message_wait",
+  "Drv update": ""
+}
+{
+  "id": 65,
+  "acc_path": "tx_data",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-ipc.c#L190 | sst_ipc_tx_message_wait",
+  "Drv update": ""
+}
+{
+  "id": 66,
+  "acc_path": "tx_bytes",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-ipc.c#L190 | sst_ipc_tx_message_wait",
+  "Drv update": ""
+}
+{
+  "id": 67,
+  "acc_path": "rx_bytes",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-ipc.c#L190 | sst_ipc_tx_message_wait",
+  "Drv update": ""
+}
+{
+  "id": 69,
+  "acc_path": "type",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/pcm_memory.c#L282 | snd_pcm_lib_preallocate_pages_for_all",
+  "Drv update": ""
+}
+{
+  "id": 71,
+  "acc_path": "max",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/pcm_memory.c#L282 | snd_pcm_lib_preallocate_pages_for_all",
+  "Drv update": ""
+}
+{
+  "id": 72,
+  "acc_path": "offset",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L1199 | sst_dsp_get_offset",
+  "Drv update": ""
+}
+{
+  "id": 73,
+  "acc_path": "type",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L1199 | sst_dsp_get_offset",
+  "Drv update": ""
+}
+{
+  "id": 74,
+  "acc_path": "id",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L1178 | sst_module_runtime_get_from_id",
+  "Drv update": ""
+}
+{
+  "id": 75,
+  "acc_path": "id",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L1160 | sst_module_get_from_id",
+  "Drv update": ""
+}
+{
+  "id": 76,
+  "acc_path": "offset",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L1030 | sst_mem_block_register",
+  "Drv update": ""
+}
+{
+  "id": 77,
+  "acc_path": "size",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L1030 | sst_mem_block_register",
+  "Drv update": ""
+}
+{
+  "id": 78,
+  "acc_path": "type",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L1030 | sst_mem_block_register",
+  "Drv update": ""
+}
+{
+  "id": 79,
+  "acc_path": "index",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L1030 | sst_mem_block_register",
+  "Drv update": ""
+}
+{
+  "id": 80,
+  "acc_path": "type",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/memalloc.c#L172 | snd_dma_alloc_pages",
+  "Drv update": ""
+}

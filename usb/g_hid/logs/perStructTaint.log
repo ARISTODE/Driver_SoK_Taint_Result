@@ -1,0 +1,28 @@
+[
+  {
+    "struct name": "list_head",
+    "No.fields": 2,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "device",
+    "No.fields": 35,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "platform_device",
+    "No.fields": 10,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "kmem_cache",
+    "No.fields": 24,
+    "No.classified fields": 0
+  }
+]

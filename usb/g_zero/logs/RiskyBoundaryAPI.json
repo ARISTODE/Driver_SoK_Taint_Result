@@ -1,0 +1,16 @@
+[
+  {
+    "id": 0,
+    "kernel boundary func name": "del_timer",
+    "Risky API Class": "timer",
+    "Direct Risky Kernel API": 1,
+    "driver callers": "zero_resume(https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/legacy/zero.c#L200) | "
+  },
+  {
+    "id": 1,
+    "kernel boundary func name": "mod_timer",
+    "Risky API Class": "timer",
+    "Direct Risky Kernel API": 1,
+    "driver callers": "zero_suspend(https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/legacy/zero.c#L187) | "
+  }
+]

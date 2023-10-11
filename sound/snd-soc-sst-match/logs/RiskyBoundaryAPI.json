@@ -1,0 +1,11 @@
+[
+  {
+    "id": 0,
+    "kernel boundary func name": "acpi_evaluate_integer",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 4,
+    "call path": "( [4]sst_acpi_mach_match ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-match-acpi.c#L52 )->acpi_evaluate_integer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/acpi/utils.c#L283 )->acpi_evaluate_object ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/acpi/acpica/nsxfeval.c#L175 )->kfree ( Unknown Loc ) )"
+  }
+]

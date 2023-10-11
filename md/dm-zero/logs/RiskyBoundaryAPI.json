@@ -1,0 +1,11 @@
+[
+  {
+    "id": 0,
+    "kernel boundary func name": "bio_endio",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 0,
+    "No. path cond": 9,
+    "call path": "( [6]zero_map ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-zero.c#L36 )->bio_endio ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L1742 )->__bio_chain_endio ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L303 )->bio_put ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L537 )->bio_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L250 )->kfree ( Unknown Loc ) )"
+  }
+]

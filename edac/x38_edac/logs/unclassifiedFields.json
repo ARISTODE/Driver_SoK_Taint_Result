@@ -1,0 +1,84 @@
+{
+  "id": 0,
+  "acc_path": "dimm_info->grain",
+  "Kernel read": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L98],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L1179],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L1178], ",
+  "Drv update": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/x38_edac.c#L390], "
+}
+{
+  "id": 2,
+  "acc_path": "mem_ctl_info->mtype_cap",
+  "Kernel read": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L117], ",
+  "Drv update": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/x38_edac.c#L354], "
+}
+{
+  "id": 3,
+  "acc_path": "mem_ctl_info->edac_ctl_cap",
+  "Kernel read": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L118], ",
+  "Drv update": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/x38_edac.c#L356], "
+}
+{
+  "id": 4,
+  "acc_path": "mem_ctl_info->edac_cap",
+  "Kernel read": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L119], ",
+  "Drv update": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/x38_edac.c#L357], "
+}
+{
+  "id": 14,
+  "acc_path": "mc_num",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L266 | edac_mc_alloc",
+  "Drv update": ""
+}
+{
+  "id": 17,
+  "acc_path": "addr",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L335 | iounmap",
+  "Drv update": ""
+}
+{
+  "id": 20,
+  "acc_path": "type",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L1095 | edac_mc_handle_error",
+  "Drv update": ""
+}
+{
+  "id": 21,
+  "acc_path": "error_count",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L1095 | edac_mc_handle_error",
+  "Drv update": ""
+}
+{
+  "id": 22,
+  "acc_path": "page_frame_number",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L1095 | edac_mc_handle_error",
+  "Drv update": ""
+}
+{
+  "id": 23,
+  "acc_path": "offset_in_page",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L1095 | edac_mc_handle_error",
+  "Drv update": ""
+}
+{
+  "id": 24,
+  "acc_path": "syndrome",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L1095 | edac_mc_handle_error",
+  "Drv update": ""
+}
+{
+  "id": 25,
+  "acc_path": "top_layer",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L1095 | edac_mc_handle_error",
+  "Drv update": ""
+}
+{
+  "id": 26,
+  "acc_path": "mid_layer",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L1095 | edac_mc_handle_error",
+  "Drv update": ""
+}
+{
+  "id": 27,
+  "acc_path": "low_layer",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L1095 | edac_mc_handle_error",
+  "Drv update": ""
+}

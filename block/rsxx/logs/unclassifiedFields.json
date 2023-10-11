@@ -1,0 +1,168 @@
+{
+  "id": 2,
+  "acc_path": "timer_list->data",
+  "Kernel read": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1508], ",
+  "Drv update": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/block/rsxx/cregs.c#L748],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/block/rsxx/dma.c#L842], "
+}
+{
+  "id": 7,
+  "acc_path": "bio->bi_error",
+  "Kernel read": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L308],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L307],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L859], ",
+  "Drv update": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/bio.h#L418],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/block/rsxx/dev.c#L208], "
+}
+{
+  "id": 10,
+  "acc_path": "queue_limits->discard_zeroes_data",
+  "Kernel read": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-settings.c#L572],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-settings.c#L572], ",
+  "Drv update": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/block/rsxx/dev.c#L303], "
+}
+{
+  "id": 16,
+  "acc_path": "val",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/iomap.c#L128 | iowrite32be",
+  "Drv update": ""
+}
+{
+  "id": 17,
+  "acc_path": "val",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/iomap.c#L124 | iowrite32",
+  "Drv update": ""
+}
+{
+  "id": 18,
+  "acc_path": "addr",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/iomap.c#L124 | iowrite32",
+  "Drv update": ""
+}
+{
+  "id": 19,
+  "acc_path": "addr",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/iomap.c#L86 | ioread32",
+  "Drv update": ""
+}
+{
+  "id": 21,
+  "acc_path": "size",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/slab_common.c#L389 | kmem_cache_create",
+  "Drv update": ""
+}
+{
+  "id": 27,
+  "acc_path": "flags",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L811 | init_timer_key",
+  "Drv update": ""
+}
+{
+  "id": 28,
+  "acc_path": "expires",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1084 | mod_timer",
+  "Drv update": ""
+}
+{
+  "id": 29,
+  "acc_path": "id",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L1010 | ida_remove",
+  "Drv update": ""
+}
+{
+  "id": 30,
+  "acc_path": "flags",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/locking/spinlock.c#L189 | _raw_spin_unlock_irqrestore",
+  "Drv update": ""
+}
+{
+  "id": 31,
+  "acc_path": "timeout",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/completion.c#L139 | wait_for_completion_timeout",
+  "Drv update": ""
+}
+{
+  "id": 32,
+  "acc_path": "mode",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/debugfs/inode.c#L360 | debugfs_create_file",
+  "Drv update": ""
+}
+{
+  "id": 33,
+  "acc_path": "irq",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/irq/manage.c#L1576 | free_irq",
+  "Drv update": ""
+}
+{
+  "id": 34,
+  "acc_path": "flags",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L3895 | __alloc_workqueue_key",
+  "Drv update": ""
+}
+{
+  "id": 35,
+  "acc_path": "max_active",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L3895 | __alloc_workqueue_key",
+  "Drv update": ""
+}
+{
+  "id": 36,
+  "acc_path": "minors",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/genhd.c#L1284 | alloc_disk",
+  "Drv update": ""
+}
+{
+  "id": 37,
+  "acc_path": "major",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/genhd.c#L287 | register_blkdev",
+  "Drv update": ""
+}
+{
+  "id": 38,
+  "acc_path": "major",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/genhd.c#L343 | unregister_blkdev",
+  "Drv update": ""
+}
+{
+  "id": 39,
+  "acc_path": "mask",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-settings.c#L794 | blk_queue_dma_alignment",
+  "Drv update": ""
+}
+{
+  "id": 40,
+  "acc_path": "size",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-settings.c#L374 | blk_queue_physical_block_size",
+  "Drv update": ""
+}
+{
+  "id": 41,
+  "acc_path": "size",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-settings.c#L352 | blk_queue_logical_block_size",
+  "Drv update": ""
+}
+{
+  "id": 42,
+  "acc_path": "max_discard_sectors",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-settings.c#L280 | blk_queue_max_discard_sectors",
+  "Drv update": ""
+}
+{
+  "id": 43,
+  "acc_path": "max_hw_sectors",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-settings.c#L237 | blk_queue_max_hw_sectors",
+  "Drv update": ""
+}
+{
+  "id": 44,
+  "acc_path": "max_addr",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-settings.c#L190 | blk_queue_bounce_limit",
+  "Drv update": ""
+}
+{
+  "id": 47,
+  "acc_path": "start_time",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L1688 | generic_end_io_acct",
+  "Drv update": ""
+}
+{
+  "id": 49,
+  "acc_path": "sectors",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L1674 | generic_start_io_acct",
+  "Drv update": ""
+}

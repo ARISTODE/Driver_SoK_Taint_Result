@@ -1,0 +1,1072 @@
+[
+  {
+    "struct name": "cpumask",
+    "No.fields": 1,
+    "No.shared fields": 1,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "mem_section",
+    "No.fields": 2,
+    "No.shared fields": 1,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "dm_arg_set",
+    "No.fields": 2,
+    "No.shared fields": 2,
+    "No.KRDU fields": 2,
+    "No.classified fields": 2,
+    "No.unclassified fields": 0,
+    "PTR_READ": 1,
+    "PTR_WRITE": 1,
+    "NUM_ARITH": 1,
+    "UNCLASSIFY": 0
+  },
+  {
+    "id": "0",
+    "risky": "numeric-arith",
+    "acc_path": "dm_arg_set->argc",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-table.c#L812",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-table.c#L812",
+    "drv caller (param)": "[ crypt_ctr | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1847 ], ",
+    "call path (param)": " [crypt_ctr->dm_shift_arg] ",
+    "drv_update loc (shared field)": "[ (crypt_ctr) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1838 ], ",
+    "call path (type)": " [dm_shift_arg] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "[ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-table.c#L812 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  },
+  {
+    "id": "1",
+    "risky": "ptr-read",
+    "acc_path": "dm_arg_set->argv",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-table.c#L826",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-table.c#L826",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update loc (shared field)": "[ (crypt_ctr) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1839 ], ",
+    "call path (type)": "",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  },
+  {
+    "id": "1",
+    "risky": "ptr-write",
+    "acc_path": "dm_arg_set->argv",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-table.c#L826",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-table.c#L826",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update loc (shared field)": "[ (crypt_ctr) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1839 ], ",
+    "call path (type)": "",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]
+[
+  {
+    "struct name": "bio_set",
+    "No.fields": 10,
+    "No.shared fields": 0,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "bvec_iter",
+    "No.fields": 4,
+    "No.shared fields": 4,
+    "No.KRDU fields": 2,
+    "No.classified fields": 2,
+    "No.unclassified fields": 0,
+    "NUM_ARITH": 2,
+    "BRANCH": 1,
+    "UNCLASSIFY": 0
+  },
+  {
+    "id": "2",
+    "risky": "numeric-arith",
+    "acc_path": "bvec_iter->bi_sector",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-core.c#L1811",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-core.c#L1811",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update loc (shared field)": "[ (kcryptd_io_read) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1160 ], [ (crypt_map) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1922 ], [ (kcryptd_crypt_write_io_submit) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1266 ], ",
+    "call path (type)": " [generic_make_request->generic_make_request_checks->bio_check_eod->handle_bad_sector] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "[ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-core.c#L1811 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  },
+  {
+    "id": "3",
+    "risky": "numeric-arith",
+    "acc_path": "bvec_iter->bi_size",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L520",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/bvec.h#L82",
+    "drv_update loc (shared field)": "[ (crypt_alloc_buffer) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1028 ], ",
+    "call path (type)": " [mempool_alloc->io_schedule_timeout->blk_schedule_flush_plug->blk_flush_plug_list->__blk_end_request_all->__blk_end_bidi_request->blk_update_bidi_request->blk_update_request->req_bio_endio->bio_advance->bio_advance_iter.40->bvec_iter_advance.42] ",
+    "cond_num": "10",
+    "isControl": "0"
+  },
+  {
+    "id": "3",
+    "risky": "val-sen-branch (memcpy)",
+    "acc_path": "bvec_iter->bi_size",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L964",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L964",
+    "drv_update loc (shared field)": "[ (crypt_alloc_buffer) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1028 ], ",
+    "call path (type)": "",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "[ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L964 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]
+[
+  {
+    "struct name": "crypto_ahash",
+    "No.fields": 11,
+    "No.shared fields": 1,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "__wait_queue_head",
+    "No.fields": 2,
+    "No.shared fields": 2,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "mempool_s",
+    "No.fields": 8,
+    "No.shared fields": 0,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "bio_vec",
+    "No.fields": 3,
+    "No.shared fields": 3,
+    "No.KRDU fields": 3,
+    "No.classified fields": 3,
+    "No.unclassified fields": 0,
+    "PTR_READ": 1,
+    "PTR_WRITE": 1,
+    "ARR_IDX": 2,
+    "NUM_ARITH": 2,
+    "BRANCH": 2,
+    "RISKY_KERNEL_FUNC": 3,
+    "UNCLASSIFY": 0
+  },
+  {
+    "id": "4",
+    "risky": "ptr-read",
+    "acc_path": "bio_vec->bv_page",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L977",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/mm.h#L956",
+    "drv_update loc (shared field)": "[ (crypt_convert_block) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L845 ], [ (crypt_convert_block) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L844 ], [ (crypt_alloc_buffer) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1024 ], [ (crypt_free_buffer_pages) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1048 ], ",
+    "call path (type)": "",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "[ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L977 ] -> [ ACTUAL_IN || PARAMETER_IN ] -> [ FORMAL_IN || PARAMETER_INpage ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/highmem.h#L70 ] -> [ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/mm.h#L1011 ] -> [ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/mm.h#L1011 ] -> [ ACTUAL_IN || PARAMETER_IN ] -> [ FORMAL_IN || PARAMETER_INpage ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/mm.h#L956 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/mm.h#L956 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  },
+  {
+    "id": "4",
+    "risky": "ptr-write",
+    "acc_path": "bio_vec->bv_page",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/bio.h#L521",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/bio.h#L519 |   %4 = alloca %struct.page.273*, align 8",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update loc (shared field)": "[ (crypt_convert_block) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L845 ], [ (crypt_convert_block) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L844 ], [ (crypt_alloc_buffer) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1024 ], [ (crypt_free_buffer_pages) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1048 ], ",
+    "call path (type)": "",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "[ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/bio.h#L519 |   %3 = alloca %struct.page.273*, align 8 ] -> [ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/bio.h#L519 |   %4 = alloca %struct.page.273*, align 8 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  },
+  {
+    "id": "4",
+    "risky": "ptr-sen-branch (memcpy)",
+    "acc_path": "bio_vec->bv_page",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L1651",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./arch/x86/include/asm/bitops.h#L310",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update loc (shared field)": "[ (crypt_convert_block) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L845 ], [ (crypt_convert_block) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L844 ], [ (crypt_alloc_buffer) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1024 ], [ (crypt_free_buffer_pages) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1048 ], ",
+    "call path (type)": "",
+    "cond_num": "1",
+    "isControl": "0"
+  },
+  {
+    "id": "4",
+    "risky": "ptr-sen-api (memcpy)",
+    "acc_path": "bio_vec->bv_page",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L1651",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/compiler.h#L220",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update loc (shared field)": "[ (crypt_convert_block) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L845 ], [ (crypt_convert_block) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L844 ], [ (crypt_alloc_buffer) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1024 ], [ (crypt_free_buffer_pages) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1048 ], ",
+    "call path (type)": "",
+    "cond_num": "3",
+    "isControl": "0"
+  },
+  {
+    "id": "5",
+    "risky": "numeric-arith",
+    "acc_path": "bio_vec->bv_len",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L975",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/bvec.h#L81",
+    "drv_update loc (shared field)": "[ (crypt_alloc_buffer) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1025 ], [ (crypt_convert_block) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L845 ], [ (crypt_convert_block) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L844 ], ",
+    "call path (type)": " [mempool_alloc->io_schedule_timeout->blk_schedule_flush_plug->blk_flush_plug_list->__blk_end_request_all->__blk_end_bidi_request->blk_update_bidi_request->blk_update_request->req_bio_endio->bio_advance->bio_advance_iter.40->bvec_iter_advance.42] ",
+    "cond_num": "10",
+    "isControl": "0"
+  },
+  {
+    "id": "5",
+    "risky": "val-sen-branch (memcpy)",
+    "acc_path": "bio_vec->bv_len",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L975",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L980",
+    "drv_update loc (shared field)": "[ (crypt_alloc_buffer) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1025 ], [ (crypt_convert_block) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L845 ], [ (crypt_convert_block) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L844 ], ",
+    "call path (type)": "",
+    "cond_num": "2",
+    "isControl": "0"
+  },
+  {
+    "id": "5",
+    "risky": "val-sen-api (memcpy)",
+    "acc_path": "bio_vec->bv_len",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L975",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L980",
+    "drv_update loc (shared field)": "[ (crypt_alloc_buffer) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1025 ], [ (crypt_convert_block) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L845 ], [ (crypt_convert_block) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L844 ], ",
+    "call path (type)": "",
+    "cond_num": "3",
+    "isControl": "0"
+  },
+  {
+    "id": "5",
+    "risky": "arr-idx",
+    "acc_path": "bio_vec->bv_len",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L1474",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L1474",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update loc (shared field)": "[ (crypt_alloc_buffer) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1025 ], [ (crypt_convert_block) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L845 ], [ (crypt_convert_block) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L844 ], ",
+    "call path (type)": "",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "[ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L1474 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L1474 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  },
+  {
+    "id": "6",
+    "risky": "val-sen-api (memcpy)",
+    "acc_path": "bio_vec->bv_offset",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L980",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L980",
+    "drv_update loc (shared field)": "[ (crypt_alloc_buffer) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1026 ], [ (crypt_convert_block) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L845 ], [ (crypt_convert_block) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L844 ], ",
+    "call path (type)": "",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "[ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L980 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L980 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L980 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  },
+  {
+    "id": "6",
+    "risky": "arr-idx",
+    "acc_path": "bio_vec->bv_offset",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L980",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L980",
+    "drv_update loc (shared field)": "[ (crypt_alloc_buffer) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1026 ], [ (crypt_convert_block) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L845 ], [ (crypt_convert_block) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L844 ], ",
+    "call path (type)": "",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "[ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L980 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L980 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  },
+  {
+    "id": "6",
+    "risky": "numeric-arith",
+    "acc_path": "bio_vec->bv_offset",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/blkdev.h#L1403",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/blkdev.h#L1403",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update loc (shared field)": "[ (crypt_alloc_buffer) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1026 ], [ (crypt_convert_block) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L845 ], [ (crypt_convert_block) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L844 ], ",
+    "call path (type)": "",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "[ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/blkdev.h#L1403 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]
+[
+  {
+    "struct name": "bio",
+    "No.fields": 22,
+    "No.shared fields": 8,
+    "No.KRDU fields": 6,
+    "No.classified fields": 3,
+    "No.unclassified fields": 3,
+    "PTR_READ": 2,
+    "PTR_WRITE": 2,
+    "ARR_IDX": 1,
+    "NUM_ARITH": 1,
+    "BRANCH": 2,
+    "RISKY_KERNEL_FUNC": 2,
+    "UNCLASSIFY": 3
+  },
+  {
+    "id": "7",
+    "risky": "ptr-read",
+    "acc_path": "bio->bi_bdev",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-core.c#L2077",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/blkdev.h#L844",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update loc (shared field)": "[ (clone_init) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1138 ], [ (crypt_map) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1920 ], ",
+    "call path (type)": " [generic_make_request->generic_make_request_checks->bdev_get_queue] ",
+    "cond_num": "4",
+    "isControl": "0"
+  },
+  {
+    "id": "7",
+    "risky": "ptr-write",
+    "acc_path": "bio->bi_bdev",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-core.c#L1789",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-core.c#L1787 |   %3 = alloca %struct.block_device.463*, align 8",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update loc (shared field)": "[ (clone_init) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1138 ], [ (crypt_map) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1920 ], ",
+    "call path (type)": " [generic_make_request->generic_make_request_checks->blk_partition_remap] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "[ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-core.c#L1787 |   %3 = alloca %struct.block_device.463*, align 8 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  },
+  {
+    "id": "11",
+    "risky": "ptr-write",
+    "acc_path": "bio->bi_private",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L857",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L65 |   %17 = alloca i32, align 4",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update loc (shared field)": "[ (clone_init) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1136 ], ",
+    "call path (type)": " [mempool_free->__wake_up->__wake_up_common] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "[ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L857 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L857 ] -> [ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L859 ] -> [ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L860 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L860 ] -> [ ACTUAL_IN || PARAMETER_IN ] -> [ FORMAL_IN || PARAMETER_INx ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/completion.c#L36 ] -> [ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/completion.c#L33 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/completion.c#L33 ] -> [ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/completion.c#L35 ] -> [ ACTUAL_IN || PARAMETER_IN ] -> [ FORMAL_IN || PARAMETER_INq ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L105 ] -> [ ACTUAL_IN || PARAMETER_IN ] -> [ FORMAL_IN || PARAMETER_INq ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L70 ] -> [ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L70 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L70 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L70 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L70 ] -> [ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L70 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L70 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L70 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L70 ] -> [ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L70 ] -> [ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L70 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L70 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L70 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L70 ] -> [ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L70 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L70 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L70 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L70 ] -> [ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L70 ] -> [ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L70 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L70 ] -> [ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L70 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L70 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L70 ] -> [ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L70 ] -> [ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L70 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L70 ] -> [ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L73 ] -> [ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L70 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L70 ] -> [ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L71 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L71 ] -> [ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L65 |   %17 = alloca i32, align 4 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  },
+  {
+    "id": "11",
+    "risky": "ptr-read",
+    "acc_path": "bio->bi_private",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L857",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L71",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update loc (shared field)": "[ (clone_init) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1136 ], ",
+    "call path (type)": " [mempool_free->__wake_up->__wake_up_common] ",
+    "cond_num": "1",
+    "isControl": "0"
+  },
+  {
+    "id": "11",
+    "risky": "ptr-sen-api (kfree)",
+    "acc_path": "bio->bi_private",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L1089",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L1105",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update loc (shared field)": "[ (clone_init) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1136 ], ",
+    "call path (type)": "",
+    "cond_num": "1",
+    "isControl": "0"
+  },
+  {
+    "id": "11",
+    "risky": "ptr-sen-branch (kfree)",
+    "acc_path": "bio->bi_private",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L1635",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L257",
+    "drv_update loc (shared field)": "[ (clone_init) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1136 ], ",
+    "call path (type)": " [mempool_alloc->io_schedule_timeout->blk_schedule_flush_plug->blk_flush_plug_list->__blk_end_request_all->__blk_end_bidi_request->blk_update_bidi_request->blk_update_request->req_bio_endio->bio_endio->__bio_chain_endio->bio_put->bio_free] ",
+    "cond_num": "5",
+    "isControl": "0"
+  },
+  {
+    "id": "12",
+    "risky": "val-sen-branch (memcpy)",
+    "acc_path": "bio->bi_vcnt",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L1472",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L1472",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update loc (shared field)": "[ (crypt_alloc_buffer) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1023 ], ",
+    "call path (type)": "",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "[ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L1472 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L1472 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  },
+  {
+    "id": "12",
+    "risky": "val-sen-api (memcpy)",
+    "acc_path": "bio->bi_vcnt",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L675",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L675",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update loc (shared field)": "[ (crypt_alloc_buffer) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1023 ], ",
+    "call path (type)": "",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "[ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L675 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L675 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L675 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L675 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  },
+  {
+    "id": "12",
+    "risky": "arr-idx",
+    "acc_path": "bio->bi_vcnt",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L675",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L675",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update loc (shared field)": "[ (crypt_alloc_buffer) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1023 ], ",
+    "call path (type)": "",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "[ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L675 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L675 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  },
+  {
+    "id": "12",
+    "risky": "numeric-arith",
+    "acc_path": "bio->bi_vcnt",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L675",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L675",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update loc (shared field)": "[ (crypt_alloc_buffer) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1023 ], ",
+    "call path (type)": "",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "[ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L675 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]
+[
+  {
+    "struct name": "blk_plug",
+    "No.fields": 3,
+    "No.shared fields": 0,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "spinlock",
+    "No.fields": 1,
+    "No.shared fields": 1,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "list_head",
+    "No.fields": 2,
+    "No.shared fields": 2,
+    "No.KRDU fields": 2,
+    "No.classified fields": 2,
+    "No.unclassified fields": 0,
+    "PTR_READ": 2,
+    "PTR_WRITE": 2,
+    "BRANCH": 1,
+    "RISKY_KERNEL_FUNC": 2,
+    "UNCLASSIFY": 0
+  },
+  {
+    "id": "13",
+    "risky": "ptr-write",
+    "acc_path": "list_head->next",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L4832",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./arch/x86/include/asm/atomic64_64.h#L31 |   %9 = alloca i64, align 8",
+    "drv_update loc (shared field)": "[ (dmcrypt_write) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1202 ], ",
+    "call path (type)": " [mempool_alloc->io_schedule_timeout->blk_schedule_flush_plug->blk_flush_plug_list->queue_unplugged->blk_run_queue_async->mod_delayed_work->mod_delayed_work_on->try_to_grab_pending->pwq_dec_nr_in_flight->put_pwq->schedule_work.542->queue_work.543->queue_work_on->__queue_work->insert_work->set_work_pwq->set_work_data->atomic_long_set->atomic64_set] ",
+    "cond_num": "37",
+    "isControl": "0"
+  },
+  {
+    "id": "13",
+    "risky": "ptr-read",
+    "acc_path": "list_head->next",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L4832",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/compiler.h#L248",
+    "drv_update loc (shared field)": "[ (dmcrypt_write) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1202 ], ",
+    "call path (type)": " [mempool_alloc->io_schedule_timeout->blk_schedule_flush_plug->blk_flush_plug_list->queue_unplugged->blk_run_queue_async->mod_delayed_work->mod_delayed_work_on->try_to_grab_pending->pwq_dec_nr_in_flight->put_pwq->schedule_work.542->queue_work.543->queue_work_on->__queue_work->insert_work->set_work_pwq->set_work_data->atomic_long_set->atomic64_set] ",
+    "cond_num": "38",
+    "isControl": "0"
+  },
+  {
+    "id": "13",
+    "risky": "ptr-sen-api (memcpy)",
+    "acc_path": "list_head->next",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L4832",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/compiler.h#L252",
+    "drv_update loc (shared field)": "[ (dmcrypt_write) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1202 ], ",
+    "call path (type)": " [mempool_alloc->io_schedule_timeout->blk_schedule_flush_plug->blk_flush_plug_list->queue_unplugged->blk_run_queue_async->mod_delayed_work->mod_delayed_work_on->try_to_grab_pending->pwq_dec_nr_in_flight->put_pwq->schedule_work.542->queue_work.543->queue_work_on->__queue_work->insert_work->set_work_pwq->set_work_data->atomic_long_set->atomic64_set] ",
+    "cond_num": "38",
+    "isControl": "0"
+  },
+  {
+    "id": "13",
+    "risky": "ptr-sen-branch (kfree)",
+    "acc_path": "list_head->next",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L4832",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L3098",
+    "drv_update loc (shared field)": "[ (dmcrypt_write) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1202 ], ",
+    "call path (type)": " [__alloc_workqueue_key->alloc_workqueue_attrs->free_workqueue_attrs] ",
+    "cond_num": "8",
+    "isControl": "0"
+  },
+  {
+    "id": "14",
+    "risky": "ptr-read",
+    "acc_path": "list_head->prev",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/rculist.h#L102",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/compiler.h#L248",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update loc (shared field)": "[ (dmcrypt_write) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1202 ], ",
+    "call path (type)": " [__alloc_workqueue_key->alloc_and_link_pwqs->link_pwq->list_add_rcu->__list_add_rcu] ",
+    "cond_num": "3",
+    "isControl": "0"
+  },
+  {
+    "id": "14",
+    "risky": "ptr-write",
+    "acc_path": "list_head->prev",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/rculist.h#L102",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/compiler.h#L249",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update loc (shared field)": "[ (dmcrypt_write) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1202 ], ",
+    "call path (type)": " [__alloc_workqueue_key->alloc_and_link_pwqs->link_pwq->list_add_rcu->__list_add_rcu] ",
+    "cond_num": "3",
+    "isControl": "0"
+  },
+  {
+    "id": "14",
+    "risky": "ptr-sen-api (memcpy)",
+    "acc_path": "list_head->prev",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/rculist.h#L102",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/compiler.h#L252",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update loc (shared field)": "[ (dmcrypt_write) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1202 ], ",
+    "call path (type)": " [__alloc_workqueue_key->alloc_and_link_pwqs->link_pwq->list_add_rcu->__list_add_rcu] ",
+    "cond_num": "3",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "struct name": "dm_dev",
+    "No.fields": 3,
+    "No.shared fields": 2,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "dm_table",
+    "No.fields": 19,
+    "No.shared fields": 0,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "dm_target",
+    "No.fields": 16,
+    "No.shared fields": 8,
+    "No.KRDU fields": 5,
+    "No.classified fields": 2,
+    "No.unclassified fields": 3,
+    "PTR_READ": 1,
+    "NUM_ARITH": 1,
+    "RISKY_KERNEL_FUNC": 1,
+    "UNCLASSIFY": 3
+  },
+  {
+    "id": "17",
+    "risky": "val-sen-api (kmem_cache_create)",
+    "acc_path": "dm_target->per_io_data_size",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-table.c#L1050",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L114",
+    "drv_update loc (shared field)": "[ (crypt_ctr) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1794 ], ",
+    "call path (type)": " [bioset_create->__bioset_create->bio_find_or_create_slab] ",
+    "cond_num": "14",
+    "isControl": "0"
+  },
+  {
+    "id": "17",
+    "risky": "numeric-arith",
+    "acc_path": "dm_target->per_io_data_size",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-table.c#L1050",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm.c#L2503",
+    "drv_update loc (shared field)": "[ (crypt_ctr) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1794 ], ",
+    "call path (type)": "",
+    "cond_num": "10",
+    "isControl": "0"
+  },
+  {
+    "id": "18",
+    "risky": "ptr-read",
+    "acc_path": "dm_target->error",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-table.c#L767",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-table.c#L767",
+    "drv_update loc (shared field)": "[ (crypt_iv_tcw_ctr) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L652 ], [ (crypt_iv_benbi_ctr) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L432 ], [ (crypt_ctr) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1828 ], [ (crypt_ctr) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1849 ], [ (crypt_iv_essiv_ctr) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L385 ], [ (setup_essiv_cpu) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L321 ], [ (crypt_ctr_cipher) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1628 ], [ (crypt_ctr) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1801 ], [ (crypt_iv_benbi_ctr) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L437 ], [ (crypt_ctr) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1790 ], [ (crypt_ctr_cipher) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1601 ], [ (crypt_ctr_cipher) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1727 ], [ (crypt_ctr_cipher) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1716 ], [ (crypt_iv_tcw_ctr) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L638 ], [ (crypt_ctr) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1807 ], [ (setup_essiv_cpu) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L335 ], [ (crypt_ctr) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1863 ], [ (crypt_ctr) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1882 ], [ (crypt_iv_essiv_ctr) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L371 ], [ (crypt_ctr_cipher) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1581 ], [ (setup_essiv_cpu) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L327 ], [ (crypt_iv_tcw_ctr) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L644 ], [ (crypt_ctr) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1751 ], [ (crypt_iv_essiv_ctr) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L378 ], [ (crypt_ctr) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1893 ], [ (crypt_ctr_cipher) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1646 ], [ (crypt_iv_lmk_ctr) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L490 ], [ (crypt_ctr) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1759 ], [ (crypt_ctr) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1872 ], [ (crypt_ctr_cipher) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1692 ], [ (crypt_ctr) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1822 ], [ (crypt_ctr_cipher) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1699 ], [ (crypt_ctr_cipher) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1707 ], [ (crypt_ctr) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1815 ], [ (crypt_iv_lmk_ctr) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L503 ], ",
+    "call path (type)": "",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]
+[
+  {
+    "struct name": "crypto_async_request",
+    "No.fields": 5,
+    "No.shared fields": 4,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "crypto_shash",
+    "No.fields": 2,
+    "No.shared fields": 1,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "ahash_request",
+    "No.fields": 6,
+    "No.shared fields": 4,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "shash_desc",
+    "No.fields": 3,
+    "No.shared fields": 2,
+    "No.KRDU fields": 2,
+    "No.classified fields": 1,
+    "No.unclassified fields": 1,
+    "PTR_READ": 1,
+    "PTR_WRITE": 1,
+    "UNCLASSIFY": 1
+  },
+  {
+    "id": "20",
+    "risky": "ptr-read",
+    "acc_path": "shash_desc->tfm",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/shash.c#L77",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/shash.c#L77",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update loc (shared field)": "[ (crypt_iv_lmk_one) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L543 ], [ (crypt_iv_tcw_whitening) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L697 ], ",
+    "call path (type)": " [crypto_shash_update->shash_update_unaligned] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  },
+  {
+    "id": "20",
+    "risky": "ptr-write",
+    "acc_path": "shash_desc->tfm",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/shash.c#L77",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/shash.c#L74 |   %7 = alloca %struct.crypto_shash.368*, align 8",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update loc (shared field)": "[ (crypt_iv_lmk_one) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L543 ], [ (crypt_iv_tcw_whitening) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L697 ], ",
+    "call path (type)": " [crypto_shash_update->shash_update_unaligned] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "[ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/shash.c#L74 |   %7 = alloca %struct.crypto_shash.368*, align 8 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]
+[
+  {
+    "struct name": "scatterlist",
+    "No.fields": 5,
+    "No.shared fields": 2,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "crypto_tfm",
+    "No.fields": 5,
+    "No.shared fields": 1,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "crypto_alg",
+    "No.fields": 16,
+    "No.shared fields": 2,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "skcipher_request",
+    "No.fields": 6,
+    "No.shared fields": 5,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "crypto_skcipher",
+    "No.fields": 7,
+    "No.shared fields": 6,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "queue_limits",
+    "No.fields": 25,
+    "No.shared fields": 0,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "block_device",
+    "No.fields": 21,
+    "No.shared fields": 0,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "mutex",
+    "No.fields": 5,
+    "No.shared fields": 0,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "task_struct",
+    "No.fields": 155,
+    "No.shared fields": 1,
+    "No.KRDU fields": 1,
+    "No.classified fields": 1,
+    "No.unclassified fields": 0,
+    "ARR_IDX": 1,
+    "NUM_ARITH": 1,
+    "BRANCH": 1,
+    "UNCLASSIFY": 0
+  },
+  {
+    "id": "22",
+    "risky": "numeric-arith",
+    "acc_path": "task_struct->state",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/core.c#L5155",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./arch/x86/include/asm/bitops.h#L351",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update loc (shared field)": "[ (dmcrypt_write) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1215 ], ",
+    "call path (type)": "",
+    "cond_num": "1",
+    "isControl": "1",
+    "t_trace": "[ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/core.c#L5155 ] -> [ INST || UNKNOWN Edge Type || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/core.c#L5158 ] -> [ INST || UNKNOWN Edge Type || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./arch/x86/include/asm/bitops.h#L351 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  },
+  {
+    "id": "22",
+    "risky": "val-sen-branch (memcpy)",
+    "acc_path": "task_struct->state",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/core.c#L5155",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/core.c#L5167",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update loc (shared field)": "[ (dmcrypt_write) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1215 ], ",
+    "call path (type)": "",
+    "cond_num": "2",
+    "isControl": "0"
+  },
+  {
+    "id": "22",
+    "risky": "arr-idx",
+    "acc_path": "task_struct->state",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/core.c#L5155",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/core.c#L5160",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update loc (shared field)": "[ (dmcrypt_write) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1215 ], ",
+    "call path (type)": "",
+    "cond_num": "2",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "struct name": "work_struct",
+    "No.fields": 3,
+    "No.shared fields": 3,
+    "No.KRDU fields": 1,
+    "No.classified fields": 0,
+    "No.unclassified fields": 1,
+    "UNCLASSIFY": 1
+  }
+]
+[
+  {
+    "struct name": "completion",
+    "No.fields": 2,
+    "No.shared fields": 2,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "__wait_queue",
+    "No.fields": 4,
+    "No.shared fields": 4,
+    "No.KRDU fields": 3,
+    "No.classified fields": 2,
+    "No.unclassified fields": 1,
+    "PTR_READ": 1,
+    "PTR_WRITE": 1,
+    "NUM_ARITH": 1,
+    "RISKY_KERNEL_FUNC": 1,
+    "UNCLASSIFY": 1
+  },
+  {
+    "id": "24",
+    "risky": "numeric-arith",
+    "acc_path": "__wait_queue->flags",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/completion.c#L82",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/completion.c#L82",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update loc (shared field)": "[ (dmcrypt_write) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1202 ], ",
+    "call path (type)": " [wait_for_completion->wait_for_common->__wait_for_common->do_wait_for_common] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "[ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/completion.c#L82 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  },
+  {
+    "id": "25",
+    "risky": "ptr-read",
+    "acc_path": "__wait_queue->private",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/core.c#L3596",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/sched.h#L973",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update loc (shared field)": "[ (dmcrypt_write) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1202 ], ",
+    "call path (type)": " [mempool_alloc->io_schedule_timeout->blk_schedule_flush_plug->blk_flush_plug_list->queue_unplugged->blk_run_queue_async->mod_delayed_work->mod_delayed_work_on->try_to_grab_pending->pwq_dec_nr_in_flight->put_pwq->schedule_work.542->queue_work.543->queue_work_on->__queue_work->insert_work->wake_up_worker->wake_up_process->try_to_wake_up->set_task_cpu->__set_task_cpu->set_task_rq] ",
+    "cond_num": "6",
+    "isControl": "0"
+  },
+  {
+    "id": "25",
+    "risky": "ptr-write",
+    "acc_path": "__wait_queue->private",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/core.c#L3596",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/sched.h#L973",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update loc (shared field)": "[ (dmcrypt_write) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1202 ], ",
+    "call path (type)": " [mempool_alloc->io_schedule_timeout->blk_schedule_flush_plug->blk_flush_plug_list->queue_unplugged->blk_run_queue_async->mod_delayed_work->mod_delayed_work_on->try_to_grab_pending->pwq_dec_nr_in_flight->put_pwq->schedule_work.542->queue_work.543->queue_work_on->__queue_work->insert_work->wake_up_worker->wake_up_process->try_to_wake_up->set_task_cpu->__set_task_cpu->set_task_rq] ",
+    "cond_num": "6",
+    "isControl": "0"
+  },
+  {
+    "id": "25",
+    "risky": "ptr-sen-api (memcpy)",
+    "acc_path": "__wait_queue->private",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/core.c#L3596",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/compiler.h#L220",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update loc (shared field)": "[ (dmcrypt_write) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1202 ], ",
+    "call path (type)": " [mempool_alloc->io_schedule_timeout->blk_schedule_flush_plug->blk_flush_plug_list->queue_unplugged->blk_run_queue_async->mod_delayed_work->mod_delayed_work_on->try_to_grab_pending->pwq_dec_nr_in_flight->put_pwq->schedule_work.542->queue_work.543->queue_work_on->__queue_work->insert_work->wake_up_worker->wake_up_process->try_to_wake_up] ",
+    "cond_num": "4",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "struct name": "page",
+    "No.fields": 7,
+    "No.shared fields": 0,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "kmem_cache",
+    "No.fields": 0,
+    "No.shared fields": 0,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "workqueue_struct",
+    "No.fields": 0,
+    "No.shared fields": 0,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "struct name": "bio",
+    "No.fields": 22,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "dm_target",
+    "No.fields": 16,
+    "No.classified fields": 0
+  }
+]

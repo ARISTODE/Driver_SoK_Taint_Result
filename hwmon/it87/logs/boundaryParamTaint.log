@@ -1,0 +1,33 @@
+[]
+[]
+[
+  {
+    "id": "12",
+    "risky": "numeric-arith",
+    "acc_path": "start",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/resource.c#L1441",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/resource.c#L1139",
+    "drv caller (param)": "[ it87_probe | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/it87.c#L2914 ], ",
+    "call path (param)": " [it87_probe->__devm_request_region->__request_region] ",
+    "cond_num": "1",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "id": "13",
+    "risky": "numeric-arith",
+    "acc_path": "n",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/resource.c#L1441",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/resource.c#L1139",
+    "drv caller (param)": "[ it87_probe | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/it87.c#L2914 ], ",
+    "call path (param)": " [it87_probe->__devm_request_region->__request_region] ",
+    "cond_num": "1",
+    "isControl": "0"
+  }
+]
+[]
+[]
+[]
+[]
+[]

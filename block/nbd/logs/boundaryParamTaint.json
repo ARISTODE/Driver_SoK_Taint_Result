@@ -1,0 +1,68 @@
+[
+  {
+    "id": "18",
+    "risky": "val-sen-branch (loop)",
+    "acc_path": "size",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/block_dev.c#L131",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/blkdev.h#L1376",
+    "drv caller (param)": "[ nbd_size_set | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/block/nbd.c#L144 ], ",
+    "call path (param)": " [nbd_size_set->set_blocksize->blksize_bits] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [set_blocksize->blksize_bits] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "[ ACTUAL_IN || PARAMETER_INunsigned int ] -> [ FORMAL_IN || PARAMETER_INsize ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/blkdev.h#L1376 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]
+[
+  {
+    "id": "23",
+    "risky": "numeric-arith",
+    "acc_path": "nr_exclusive",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L95",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L74",
+    "drv caller (param)": "[ nbd_handle_req | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/block/nbd.c#L553 ], ",
+    "call path (param)": " [nbd_handle_req->nbd_end_request->__blk_end_request_all->__blk_end_bidi_request->blk_finish_request->__blk_put_request->freed_request->__freed_request->__wake_up->__wake_up_common] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [__wake_up->__wake_up_common] ",
+    "cond_num": "3",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "id": "31",
+    "risky": "numeric-arith",
+    "acc_path": "expires",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1086",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L471",
+    "drv caller (param)": "[ nbd_handle_req | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/block/nbd.c#L539 ], ",
+    "call path (param)": " [nbd_handle_req->nbd_send_req->sock_xmit->mod_timer->__mod_timer->calc_wheel_index->calc_index] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [mod_timer->__mod_timer->calc_wheel_index->calc_index] ",
+    "cond_num": "12",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "id": "35",
+    "risky": "arr-idx",
+    "acc_path": "action",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/kobject_uevent.c#L374",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/kobject_uevent.c#L168",
+    "drv caller (param)": "[ nbd_size_clear | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/block/nbd.c#L124 ], ",
+    "call path (param)": " [nbd_size_clear->kobject_uevent->kobject_uevent_env] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [kobject_uevent->kobject_uevent_env] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "[ ACTUAL_IN || PARAMETER_INkobject_action ] -> [ FORMAL_IN || PARAMETER_INaction ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/kobject_uevent.c#L168 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/kobject_uevent.c#L168 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]

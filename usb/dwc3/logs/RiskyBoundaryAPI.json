@@ -1,0 +1,116 @@
+[
+  {
+    "id": 0,
+    "kernel boundary func name": "devm_ioremap_resource",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 10,
+    "call path": "( [5]dwc3_probe ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/dwc3/core.c#L828 )->devm_ioremap_resource ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/devres.c#L134 )->devm_ioremap ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/devres.c#L25 )->devres_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/devres.c#L196 )->kfree ( Unknown Loc ) )"
+  },
+  {
+    "id": 1,
+    "kernel boundary func name": "seq_lseek",
+    "risky func": "mutex_lock",
+    "Risky API Class": "concurrency"
+  },
+  {
+    "id": 2,
+    "kernel boundary func name": "seq_lseek",
+    "risky func": "mutex_unlock",
+    "Risky API Class": "concurrency"
+  },
+  {
+    "id": 3,
+    "kernel boundary func name": "seq_lseek",
+    "risky func": "vmalloc",
+    "Risky API Class": "memory"
+  },
+  {
+    "id": 4,
+    "kernel boundary func name": "seq_read",
+    "risky func": "mutex_lock",
+    "Risky API Class": "concurrency"
+  },
+  {
+    "id": 5,
+    "kernel boundary func name": "seq_read",
+    "risky func": "mutex_unlock",
+    "Risky API Class": "concurrency"
+  },
+  {
+    "id": 6,
+    "kernel boundary func name": "seq_read",
+    "risky func": "vmalloc",
+    "Risky API Class": "memory"
+  },
+  {
+    "id": 7,
+    "kernel boundary func name": "request_threaded_irq",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 8,
+    "call path": "( [3]dwc3_gadget_start ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/dwc3/gadget.c#L1761 )->request_threaded_irq ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/irq/manage.c#L1634 )->kfree ( Unknown Loc ) )"
+  },
+  {
+    "id": 8,
+    "kernel boundary func name": "request_threaded_irq",
+    "risky func": "kzalloc.290",
+    "Risky API Class": "",
+    "Is Controlled Path": 1,
+    "No. path cond": 15,
+    "call path": "( [3]dwc3_gadget_start ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/dwc3/gadget.c#L1761 )->request_threaded_irq ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/irq/manage.c#L1634 )->kzalloc.290 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L634 ) )"
+  },
+  {
+    "id": 9,
+    "kernel boundary func name": "request_threaded_irq",
+    "risky func": "mask_irq",
+    "Risky API Class": "bus",
+    "Is Controlled Path": 0,
+    "No. path cond": 32,
+    "call path": "( [5]dwc3_gadget_start ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/dwc3/gadget.c#L1761 )->request_threaded_irq ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/irq/manage.c#L1634 )->__setup_irq ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/irq/manage.c#L1118 )->__irq_set_trigger ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/irq/manage.c#L656 )->mask_irq ( Unknown Loc ) )"
+  },
+  {
+    "id": 10,
+    "kernel boundary func name": "request_threaded_irq",
+    "risky func": "unmask_irq",
+    "Risky API Class": "bus",
+    "Is Controlled Path": 0,
+    "No. path cond": 35,
+    "call path": "( [5]dwc3_gadget_start ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/dwc3/gadget.c#L1761 )->request_threaded_irq ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/irq/manage.c#L1634 )->__setup_irq ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/irq/manage.c#L1118 )->__irq_set_trigger ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/irq/manage.c#L656 )->unmask_irq ( Unknown Loc ) )"
+  },
+  {
+    "id": 11,
+    "kernel boundary func name": "free_irq",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 4,
+    "call path": "( [3]dwc3_gadget_stop ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/dwc3/gadget.c#L1814 )->free_irq ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/irq/manage.c#L1576 )->kfree ( Unknown Loc ) )( [3]dwc3_gadget_start ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/dwc3/gadget.c#L1761 )->free_irq ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/irq/manage.c#L1576 )->kfree ( Unknown Loc ) )"
+  },
+  {
+    "id": 12,
+    "kernel boundary func name": "single_release",
+    "risky func": "kfree",
+    "Risky API Class": "memory"
+  },
+  {
+    "id": 13,
+    "kernel boundary func name": "single_open",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 6,
+    "call path": "( [3]dwc3_testmode_open ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/dwc3/debugfs.c#L392 )->single_open ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/seq_file.c#L566 )->kfree ( Unknown Loc ) )( [3]dwc3_link_state_open ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/dwc3/debugfs.c#L499 )->single_open ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/seq_file.c#L566 )->kfree ( Unknown Loc ) )( [3]dwc3_endpoint_open ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/dwc3/debugfs.c#L766 )->single_open ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/seq_file.c#L566 )->kfree ( Unknown Loc ) )"
+  },
+  {
+    "id": 14,
+    "kernel boundary func name": "single_open",
+    "risky func": "kzalloc.158",
+    "Risky API Class": "",
+    "Is Controlled Path": 1,
+    "No. path cond": 6,
+    "call path": "( [4]dwc3_testmode_open ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/dwc3/debugfs.c#L392 )->single_open ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/seq_file.c#L566 )->seq_open ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/seq_file.c#L61 )->kzalloc.158 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L634 ) )( [4]dwc3_link_state_open ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/dwc3/debugfs.c#L499 )->single_open ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/seq_file.c#L566 )->seq_open ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/seq_file.c#L61 )->kzalloc.158 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L634 ) )( [4]dwc3_endpoint_open ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/dwc3/debugfs.c#L766 )->single_open ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/seq_file.c#L566 )->seq_open ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/seq_file.c#L61 )->kzalloc.158 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L634 ) )"
+  }
+]

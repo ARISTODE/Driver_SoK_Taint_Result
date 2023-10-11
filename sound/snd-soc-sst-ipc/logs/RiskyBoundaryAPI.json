@@ -1,0 +1,11 @@
+[
+  {
+    "id": 0,
+    "kernel boundary func name": "kthread_create_on_node",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 8,
+    "call path": "( [3]sst_ipc_init ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-ipc.c#L270 )->kthread_create_on_node ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/kthread.c#L270 )->kfree ( Unknown Loc ) )"
+  }
+]

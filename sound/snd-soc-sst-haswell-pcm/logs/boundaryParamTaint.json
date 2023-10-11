@@ -1,0 +1,176 @@
+[
+  {
+    "id": "36",
+    "risky": "numeric-arith",
+    "acc_path": "nr_exclusive",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L95",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L74",
+    "drv caller (param)": "[ hsw_fw_ready | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L460 ], ",
+    "call path (param)": " [hsw_fw_ready->__wake_up->__wake_up_common] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [snd_pcm_lib_ioctl->snd_pcm_lib_ioctl_reset->snd_pcm_update_hw_ptr->snd_pcm_update_hw_ptr0->snd_pcm_update_state->__wake_up->__wake_up_common] ",
+    "cond_num": "3",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "id": "48",
+    "risky": "numeric-arith",
+    "acc_path": "m",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/time.c#L526",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/jiffies.h#L301",
+    "drv caller (param)": "[ sst_hsw_dsp_init | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/jiffies.h#L361 ], ",
+    "call path (param)": " [sst_hsw_dsp_init->__msecs_to_jiffies->_msecs_to_jiffies.112] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [msleep->__msecs_to_jiffies->_msecs_to_jiffies.112] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "[ ACTUAL_IN || PARAMETER_IN ] -> [ FORMAL_IN || PARAMETER_INm ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/jiffies.h#L301 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/jiffies.h#L301 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/jiffies.h#L301 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]
+[
+  {
+    "id": "50",
+    "risky": "val-sen-branch (memcpy)",
+    "acc_path": "bytes",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-dsp.c#L416",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./arch/x86/include/asm/io.h#L225",
+    "drv caller (param)": "[ hsw_notification_work | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L506 ], ",
+    "call path (param)": " [hsw_notification_work->sst_dsp_inbox_read->memcpy_fromio.156] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [sst_shim32_read64->memcpy_fromio.156] ",
+    "cond_num": "1",
+    "isControl": "0"
+  },
+  {
+    "id": "50",
+    "risky": "val-sen-api (memcpy)",
+    "acc_path": "bytes",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-dsp.c#L416",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./arch/x86/include/asm/io.h#L225",
+    "drv caller (param)": "[ hsw_notification_work | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L506 ], ",
+    "call path (param)": " [hsw_notification_work->sst_dsp_inbox_read->memcpy_fromio.156] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [sst_shim32_read64->memcpy_fromio.156] ",
+    "cond_num": "2",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "id": "51",
+    "risky": "val-sen-api (memcpy)",
+    "acc_path": "bytes",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-dsp.c#L390",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./arch/x86/include/asm/io.h#L225",
+    "drv caller (param)": "[ hsw_process_reply | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L585 ], ",
+    "call path (param)": " [hsw_process_reply->sst_dsp_inbox_read->memcpy_fromio.156] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [sst_shim32_read64->memcpy_fromio.156] ",
+    "cond_num": "2",
+    "isControl": "0"
+  },
+  {
+    "id": "51",
+    "risky": "val-sen-branch (memcpy)",
+    "acc_path": "bytes",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-dsp.c#L390",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./arch/x86/include/asm/io.h#L225",
+    "drv caller (param)": "[ hsw_process_reply | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L585 ], ",
+    "call path (param)": " [hsw_process_reply->sst_dsp_inbox_read->memcpy_fromio.156] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [sst_shim32_read64->memcpy_fromio.156] ",
+    "cond_num": "1",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "id": "52",
+    "risky": "val-sen-branch (memcpy)",
+    "acc_path": "bytes",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-dsp.c#L377",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./arch/x86/include/asm/io.h#L231",
+    "drv caller (param)": "[ hsw_tx_msg | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L2066 ], ",
+    "call path (param)": " [hsw_tx_msg->sst_dsp_outbox_write->memcpy_toio] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [sst_shim32_write64->memcpy_toio] ",
+    "cond_num": "1",
+    "isControl": "0"
+  },
+  {
+    "id": "52",
+    "risky": "val-sen-api (memcpy)",
+    "acc_path": "bytes",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-dsp.c#L377",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./arch/x86/include/asm/io.h#L231",
+    "drv caller (param)": "[ hsw_tx_msg | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L2066 ], ",
+    "call path (param)": " [hsw_tx_msg->sst_dsp_outbox_write->memcpy_toio] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [sst_shim32_write64->memcpy_toio] ",
+    "cond_num": "2",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "id": "68",
+    "risky": "numeric-arith",
+    "acc_path": "size",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/pcm_memory.c#L364",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/memalloc.c#L54",
+    "drv caller (param)": "[ hsw_pcm_hw_params | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-pcm.c#L604 ], ",
+    "call path (param)": " [hsw_pcm_hw_params->snd_pcm_lib_malloc_pages->snd_dma_alloc_pages->snd_malloc_pages] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [snd_pcm_lib_malloc_pages->snd_dma_alloc_pages->snd_malloc_pages] ",
+    "cond_num": "4",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "id": "70",
+    "risky": "numeric-arith",
+    "acc_path": "size",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/pcm_memory.c#L291",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/memalloc.c#L54",
+    "drv caller (param)": "[ hsw_pcm_new | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-pcm.c#L953 ], ",
+    "call path (param)": " [hsw_pcm_new->snd_pcm_lib_preallocate_pages_for_all->snd_pcm_lib_preallocate_pages->snd_pcm_lib_preallocate_pages1->preallocate_pcm_pages->snd_dma_alloc_pages->snd_malloc_pages] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [snd_pcm_lib_malloc_pages->snd_dma_alloc_pages->snd_malloc_pages] ",
+    "cond_num": "7",
+    "isControl": "0"
+  },
+  {
+    "id": "70",
+    "risky": "val-sen-branch (loop)",
+    "acc_path": "size",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/pcm_memory.c#L291",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/pcm_memory.c#L65",
+    "drv caller (param)": "[ hsw_pcm_new | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-pcm.c#L953 ], ",
+    "call path (param)": " [hsw_pcm_new->snd_pcm_lib_preallocate_pages_for_all->snd_pcm_lib_preallocate_pages->snd_pcm_lib_preallocate_pages1->preallocate_pcm_pages] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [snd_pcm_lib_preallocate_pages_for_all->snd_pcm_lib_preallocate_pages->snd_pcm_lib_preallocate_pages1->preallocate_pcm_pages] ",
+    "cond_num": "5",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "id": "81",
+    "risky": "numeric-arith",
+    "acc_path": "size",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/memalloc.c#L201",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/memalloc.c#L95",
+    "drv caller (param)": "[ hsw_pcm_probe | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-pcm.c#L1088 ], ",
+    "call path (param)": " [hsw_pcm_probe->snd_dma_alloc_pages->snd_malloc_dev_pages] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [snd_pcm_lib_malloc_pages->snd_dma_alloc_pages->snd_malloc_dev_pages] ",
+    "cond_num": "2",
+    "isControl": "0"
+  }
+]

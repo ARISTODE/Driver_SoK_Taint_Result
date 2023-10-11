@@ -1,0 +1,7 @@
+{
+  "bus": 1,
+  "refCount": 2,
+  "concurrency": 2,
+  "": 1,
+  "memory": 3
+}

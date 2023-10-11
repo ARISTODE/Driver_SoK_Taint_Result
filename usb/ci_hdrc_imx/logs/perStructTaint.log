@@ -1,0 +1,56 @@
+[
+  {
+    "struct name": "kobject",
+    "No.fields": 12,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "device_node",
+    "No.fields": 13,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "device",
+    "No.fields": 35,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "of_device_id",
+    "No.fields": 4,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "resource",
+    "No.fields": 8,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "platform_device",
+    "No.fields": 10,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "of_phandle_args",
+    "No.fields": 3,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "clk",
+    "No.fields": 6,
+    "No.classified fields": 0
+  }
+]

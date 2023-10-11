@@ -1,0 +1,30 @@
+{
+  "id": 1,
+  "acc_path": "devfn",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/access.c#L61 | pci_bus_write_config_dword",
+  "Drv update": ""
+}
+{
+  "id": 2,
+  "acc_path": "pos",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/access.c#L61 | pci_bus_write_config_dword",
+  "Drv update": ""
+}
+{
+  "id": 3,
+  "acc_path": "value",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/access.c#L61 | pci_bus_write_config_dword",
+  "Drv update": ""
+}
+{
+  "id": 4,
+  "acc_path": "devfn",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/access.c#L58 | pci_bus_read_config_dword",
+  "Drv update": ""
+}
+{
+  "id": 5,
+  "acc_path": "pos",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/access.c#L58 | pci_bus_read_config_dword",
+  "Drv update": ""
+}

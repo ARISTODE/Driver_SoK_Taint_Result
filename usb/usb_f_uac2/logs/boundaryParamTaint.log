@@ -1,0 +1,66 @@
+[]
+[]
+[]
+[]
+[]
+[
+  {
+    "id": "11",
+    "risky": "val-sen-branch (kfree)",
+    "acc_path": "playback_count",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/pcm.c#L818",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/pcm.c#L699",
+    "drv caller (param)": "[ snd_uac2_probe | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/function/f_uac2.c#L470 ], ",
+    "call path (param)": " [snd_uac2_probe->snd_pcm_new->_snd_pcm_new->snd_pcm_new_stream] ",
+    "cond_num": "4",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "id": "12",
+    "risky": "val-sen-branch (kfree)",
+    "acc_path": "capture_count",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/pcm.c#L818",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/pcm.c#L699",
+    "drv caller (param)": "[ snd_uac2_probe | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/function/f_uac2.c#L470 ], ",
+    "call path (param)": " [snd_uac2_probe->snd_pcm_new->_snd_pcm_new->snd_pcm_new_stream] ",
+    "cond_num": "4",
+    "isControl": "0"
+  }
+]
+[]
+[]
+[
+  {
+    "id": "15",
+    "risky": "arr-idx",
+    "acc_path": "var",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/pcm_lib.c#L1247",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/sound/pcm.h#L253",
+    "drv caller (param)": "[ uac2_pcm_open | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/function/f_uac2.c#L422 ], ",
+    "call path (param)": " [uac2_pcm_open->snd_pcm_hw_constraint_integer->constrs_interval] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "[ ACTUAL_IN || PARAMETER_INsnd_pcm_hw_param_t ] -> [ FORMAL_IN || PARAMETER_INvar ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/sound/pcm.h#L253 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/sound/pcm.h#L253 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/sound/pcm.h#L253 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  },
+  {
+    "id": "15",
+    "risky": "numeric-arith",
+    "acc_path": "var",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/pcm_lib.c#L1247",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/sound/pcm.h#L253",
+    "drv caller (param)": "[ uac2_pcm_open | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/function/f_uac2.c#L422 ], ",
+    "call path (param)": " [uac2_pcm_open->snd_pcm_hw_constraint_integer->constrs_interval] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "[ ACTUAL_IN || PARAMETER_INsnd_pcm_hw_param_t ] -> [ FORMAL_IN || PARAMETER_INvar ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/sound/pcm.h#L253 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]
+[]

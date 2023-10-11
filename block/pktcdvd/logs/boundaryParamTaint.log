@@ -1,0 +1,235 @@
+[
+  {
+    "id": "29",
+    "risky": "arr-idx",
+    "acc_path": "action",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/kobject_uevent.c#L374",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/kobject_uevent.c#L168",
+    "drv caller (param)": "[ pkt_kobj_create | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/block/pktcdvd.c#L135 ], ",
+    "call path (param)": " [pkt_kobj_create->kobject_uevent->kobject_uevent_env] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "[ ACTUAL_IN || PARAMETER_INkobject_action ] -> [ FORMAL_IN || PARAMETER_INaction ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/kobject_uevent.c#L168 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/kobject_uevent.c#L168 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]
+[]
+[]
+[]
+[]
+[]
+[]
+[
+  {
+    "id": "36",
+    "risky": "numeric-arith",
+    "acc_path": "dev",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/block_dev.c#L710",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/block_dev.c#L689",
+    "drv caller (param)": "[ pkt_open_dev | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/block/pktcdvd.c#L2199 ], ",
+    "call path (param)": " [pkt_open_dev->bdget->hash] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "[ ACTUAL_IN || PARAMETER_INdev_t ] -> [ FORMAL_IN || PARAMETER_INdev ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/block_dev.c#L689 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/block_dev.c#L689 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]
+[
+  {
+    "id": "37",
+    "risky": "val-sen-api (memcpy)",
+    "acc_path": "order",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/page_alloc.c#L3757",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/compiler.h#L252",
+    "drv caller (param)": "[ pkt_alloc_packet_data | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/block/pktcdvd.c#L565 ], ",
+    "call path (param)": " [pkt_alloc_packet_data->kzalloc->kmalloc_order->alloc_pages_node.1525->__alloc_pages_node.1531->__alloc_pages.1533->__alloc_pages_nodemask->get_page_from_freelist->buffered_rmqueue->rmqueue_bulk->__rmqueue->__rmqueue_smallest->expand->list_add.1387->__list_add.1388] ",
+    "cond_num": "21",
+    "isControl": "0"
+  },
+  {
+    "id": "37",
+    "risky": "numeric-arith",
+    "acc_path": "order",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/page_alloc.c#L3757",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/page_alloc.c#L808",
+    "drv caller (param)": "[ pkt_alloc_packet_data | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/block/pktcdvd.c#L565 ], ",
+    "call path (param)": " [pkt_alloc_packet_data->kzalloc->kmalloc_order->alloc_pages_node.1525->__alloc_pages_node.1531->__alloc_pages.1533->__alloc_pages_nodemask->__free_pages->free_hot_cold_page->free_one_page->__free_one_page] ",
+    "cond_num": "19",
+    "isControl": "0"
+  },
+  {
+    "id": "37",
+    "risky": "arr-idx",
+    "acc_path": "order",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/page_alloc.c#L3757",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/page_alloc.c#L808",
+    "drv caller (param)": "[ pkt_alloc_packet_data | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/block/pktcdvd.c#L565 ], ",
+    "call path (param)": " [pkt_alloc_packet_data->kzalloc->kmalloc_order->alloc_pages_node.1525->__alloc_pages_node.1531->__alloc_pages.1533->__alloc_pages_nodemask->__free_pages->free_hot_cold_page->free_one_page->__free_one_page] ",
+    "cond_num": "19",
+    "isControl": "0"
+  },
+  {
+    "id": "37",
+    "risky": "val-sen-branch (memcpy)",
+    "acc_path": "order",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/page_alloc.c#L3757",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/page_alloc.c#L991",
+    "drv caller (param)": "[ pkt_alloc_packet_data | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/block/pktcdvd.c#L565 ], ",
+    "call path (param)": " [pkt_alloc_packet_data->kzalloc->kmalloc_order->alloc_pages_node.1525->__alloc_pages_node.1531->__alloc_pages.1533->__alloc_pages_nodemask->__free_pages->__free_pages_ok] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "[ ACTUAL_IN || PARAMETER_INunsigned int ] -> [ FORMAL_IN || PARAMETER_INorder ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/page_alloc.c#L1227 ] -> [ INST || UNKNOWN Edge Type || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/page_alloc.c#L991 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]
+[]
+[]
+[]
+[]
+[]
+[
+  {
+    "id": "43",
+    "risky": "ptr-arith",
+    "acc_path": "element",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/mempool.c#L438",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/mempool.c#L110",
+    "drv caller (param)": "[ pkt_end_io_read_cloned | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/block/pktcdvd.c#L2342 ], ",
+    "call path (param)": " [pkt_end_io_read_cloned->mempool_free->add_element->kasan_poison_element] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [device_unregister->device_del->kobject_uevent->kobject_uevent_env->kzalloc.1192->kmalloc_order->alloc_pages_node.1525->__alloc_pages_node.1531->__alloc_pages.1533->__alloc_pages_nodemask->__alloc_pages_slowpath->should_reclaim_retry->congestion_wait->io_schedule_timeout->schedule_timeout->schedule->sched_submit_work->blk_schedule_flush_plug->blk_flush_plug_list->__blk_end_request_all->__blk_end_bidi_request->blk_update_bidi_request->blk_update_request->req_bio_endio->bio_endio->__bio_chain_endio->bio_put->bio_free->mempool_free->add_element->kasan_poison_element] ",
+    "cond_num": "5",
+    "isControl": "1",
+    "t_trace": "",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  },
+  {
+    "id": "43",
+    "risky": "ptr-sen-api (kfree)",
+    "acc_path": "element",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/mempool.c#L438",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/mempool.c#L108",
+    "drv caller (param)": "[ pkt_end_io_read_cloned | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/block/pktcdvd.c#L2342 ], ",
+    "call path (param)": " [pkt_end_io_read_cloned->mempool_free->add_element->kasan_poison_element] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [device_unregister->device_del->kobject_uevent->kobject_uevent_env->kzalloc.1192->kmalloc_order->alloc_pages_node.1525->__alloc_pages_node.1531->__alloc_pages.1533->__alloc_pages_nodemask->__alloc_pages_slowpath->should_reclaim_retry->congestion_wait->io_schedule_timeout->schedule_timeout->schedule->sched_submit_work->blk_schedule_flush_plug->blk_flush_plug_list->__blk_end_request_all->__blk_end_bidi_request->blk_update_bidi_request->blk_update_request->req_bio_endio->bio_endio->__bio_chain_endio->bio_put->bio_free->mempool_free->add_element->kasan_poison_element] ",
+    "cond_num": "4",
+    "isControl": "1",
+    "t_trace": "",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]
+[]
+[
+  {
+    "id": "45",
+    "risky": "numeric-arith",
+    "acc_path": "timeout",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/backing-dev.c#L958",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L471",
+    "drv caller (param)": "[ pkt_make_request_write | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/block/pktcdvd.c#L2411 ], ",
+    "call path (param)": " [pkt_make_request_write->congestion_wait->io_schedule_timeout->schedule_timeout->__mod_timer->calc_wheel_index->calc_index] ",
+    "cond_num": "15",
+    "isControl": "0"
+  },
+  {
+    "id": "45",
+    "risky": "val-sen-branch (memcpy)",
+    "acc_path": "timeout",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/backing-dev.c#L958",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L973",
+    "drv caller (param)": "[ pkt_make_request_write | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/block/pktcdvd.c#L2411 ], ",
+    "call path (param)": " [pkt_make_request_write->congestion_wait->io_schedule_timeout->schedule_timeout->__mod_timer] ",
+    "cond_num": "4",
+    "isControl": "0"
+  }
+]
+[]
+[]
+[]
+[]
+[
+  {
+    "id": "50",
+    "risky": "numeric-arith",
+    "acc_path": "rw",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-core.c#L1318",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-core.c#L1156",
+    "drv caller (param)": "[ pkt_generic_packet | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/block/pktcdvd.c#L706 ], ",
+    "call path (param)": " [pkt_generic_packet->blk_get_request->blk_old_get_request->get_request->__get_request] ",
+    "cond_num": "15",
+    "isControl": "0"
+  }
+]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[
+  {
+    "id": "59",
+    "risky": "val-sen-api (kmalloc)",
+    "acc_path": "gfp",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L1795",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L415",
+    "drv caller (param)": "[ pkt_make_request | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/block/pktcdvd.c#L2491 ], ",
+    "call path (param)": " [pkt_make_request->pkt_make_request_read->bio_clone->bio_clone_bioset->bio_alloc_bioset] ",
+    "cond_num": "8",
+    "isControl": "0"
+  },
+  {
+    "id": "59",
+    "risky": "val-sen-branch (kmalloc)",
+    "acc_path": "gfp",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L1795",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L484",
+    "drv caller (param)": "[ pkt_make_request | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/block/pktcdvd.c#L2491 ], ",
+    "call path (param)": " [pkt_make_request->pkt_make_request_read->bio_clone->bio_clone_bioset->bio_alloc_bioset] ",
+    "cond_num": "6",
+    "isControl": "0"
+  },
+  {
+    "id": "59",
+    "risky": "numeric-arith",
+    "acc_path": "gfp",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L1795",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/gfp.h#L382",
+    "drv caller (param)": "[ pkt_make_request | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/block/pktcdvd.c#L2491 ], ",
+    "call path (param)": " [pkt_make_request->pkt_make_request_read->bio_clone->bio_clone_bioset->bio_alloc_bioset->kmalloc_order->alloc_pages_node.1525->__alloc_pages_node.1531->__alloc_pages.1533->__alloc_pages_nodemask->gfp_zone] ",
+    "cond_num": "9",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "id": "60",
+    "risky": "val-sen-api (kmem_cache_alloc)",
+    "acc_path": "gfp_mask",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-core.c#L647",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L364",
+    "drv caller (param)": "[ pkt_setup_dev | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/block/pktcdvd.c#L2775 ], ",
+    "call path (param)": " [pkt_setup_dev->blk_alloc_queue->blk_alloc_queue_node] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "[ ACTUAL_IN || PARAMETER_INgfp_t ] -> [ FORMAL_IN || PARAMETER_INgfp_mask ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-core.c#L698 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-core.c#L698 ] -> [ INST || DATA_ST || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-core.c#L692 |   %7 = alloca i32, align 4 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L364 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]
+[]
+[]

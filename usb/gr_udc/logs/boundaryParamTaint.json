@@ -1,0 +1,15 @@
+[
+  {
+    "id": "3",
+    "risky": "numeric-arith",
+    "acc_path": "num",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/platform.c#L104",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/platform.c#L75",
+    "drv caller (param)": "[ gr_probe | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/udc/gr_udc.c#L2165 ], ",
+    "call path (param)": " [gr_probe->platform_get_irq->platform_get_resource] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [platform_get_irq->platform_get_resource] ",
+    "cond_num": "2",
+    "isControl": "0"
+  }
+]

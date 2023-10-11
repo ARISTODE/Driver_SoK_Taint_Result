@@ -1,0 +1,54 @@
+[]
+[]
+[
+  {
+    "id": "2",
+    "risky": "numeric-arith",
+    "acc_path": "phys_addr",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L240",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/resource.c#L488",
+    "drv caller (param)": "[ net2280_probe | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/udc/net2280.c#L3583 ], ",
+    "call path (param)": " [net2280_probe->ioremap_nocache->__ioremap_caller->walk_system_ram_range] ",
+    "cond_num": "4",
+    "isControl": "0"
+  },
+  {
+    "id": "2",
+    "risky": "val-sen-branch (memcpy)",
+    "acc_path": "phys_addr",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L240",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L97",
+    "drv caller (param)": "[ net2280_probe | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/udc/net2280.c#L3583 ], ",
+    "call path (param)": " [net2280_probe->ioremap_nocache->__ioremap_caller] ",
+    "cond_num": "1",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "id": "3",
+    "risky": "numeric-arith",
+    "acc_path": "size",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L240",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/resource.c#L488",
+    "drv caller (param)": "[ net2280_probe | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/udc/net2280.c#L3583 ], ",
+    "call path (param)": " [net2280_probe->ioremap_nocache->__ioremap_caller->walk_system_ram_range] ",
+    "cond_num": "4",
+    "isControl": "0"
+  },
+  {
+    "id": "3",
+    "risky": "val-sen-branch (memcpy)",
+    "acc_path": "size",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L240",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L97",
+    "drv caller (param)": "[ net2280_probe | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/udc/net2280.c#L3583 ], ",
+    "call path (param)": " [net2280_probe->ioremap_nocache->__ioremap_caller] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "[ ACTUAL_IN || PARAMETER_INlong unsigned int ] -> [ FORMAL_IN || PARAMETER_INsize ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L97 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]

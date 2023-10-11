@@ -1,0 +1,36 @@
+{
+  "id": 1,
+  "acc_path": "command",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/i2c/i2c-core.c#L2873 | i2c_smbus_read_byte_data",
+  "Drv update": ""
+}
+{
+  "id": 2,
+  "acc_path": "command",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/i2c/i2c-core.c#L2894 | i2c_smbus_write_byte_data",
+  "Drv update": ""
+}
+{
+  "id": 3,
+  "acc_path": "value",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/i2c/i2c-core.c#L2894 | i2c_smbus_write_byte_data",
+  "Drv update": ""
+}
+{
+  "id": 5,
+  "acc_path": "reg",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/regmap/regmap.c#L2359 | regmap_read",
+  "Drv update": ""
+}
+{
+  "id": 6,
+  "acc_path": "reg",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/regmap/regmap.c#L1620 | regmap_write",
+  "Drv update": ""
+}
+{
+  "id": 7,
+  "acc_path": "val",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/regmap/regmap.c#L1620 | regmap_write",
+  "Drv update": ""
+}

@@ -1,0 +1,698 @@
+[
+  {
+    "struct name": "dma_map_ops",
+    "No.fields": 16,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "blk_mq_hw_ctx",
+    "No.fields": 26,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "blk_mq_ops",
+    "No.fields": 10,
+    "No.classified fields": 8,
+    "FUNC_PTR": 8
+  }
+]
+[
+  {
+    "struct name": "blk_integrity",
+    "No.fields": 5,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "bio_vec",
+    "No.fields": 3,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "bio_integrity_payload",
+    "No.fields": 10,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "bvec_iter",
+    "No.fields": 4,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "bio",
+    "No.fields": 22,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "request",
+    "No.fields": 41,
+    "No.classified fields": 3,
+    "PTR_READ": 1,
+    "PTR_WRITE": 1,
+    "PTR_BUFFER": 1,
+    "PTR_ARITH_BASE": 1,
+    "CONTROL_SENB_RANCH": 1,
+    "SEN_API": 1,
+    "UNCLASSIFY": 1
+  },
+  {
+    "id": "9",
+    "risky": "val-sen-branch (copy_to_user)",
+    "acc_path": "request->errors",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L452",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L455",
+    "drv_update loc (shared field)": "[ (nvme_timeout)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L869 ], [ (nvme_timeout)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L889 ], ",
+    "call path (type)": "",
+    "cond_num": "2",
+    "isControl": "0"
+  },
+  {
+    "id": "10",
+    "risky": "ptr-read",
+    "acc_path": "request->end_io_data",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L482",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L487",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update loc (shared field)": "[ (nvme_timeout)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L917 ], [ (nvme_delete_queue)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L1526 ], ",
+    "call path (type)": "",
+    "cond_num": "1",
+    "isControl": "0"
+  },
+  {
+    "id": "10",
+    "risky": "ptr-write",
+    "acc_path": "request->end_io_data",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-exec.c#L25",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./arch/x86/include/asm/qspinlock.h#L15 |   %7 = alloca i8, align 1",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update loc (shared field)": "[ (nvme_timeout)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L917 ], [ (nvme_delete_queue)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L1526 ], ",
+    "call path (type)": " [nvme_uninit_ctrl->_raw_spin_unlock->__raw_spin_unlock->do_raw_spin_unlock->queued_spin_unlock->native_queued_spin_unlock] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  },
+  {
+    "id": "10",
+    "risky": "ptr-sen-api (memcpy)",
+    "acc_path": "request->end_io_data",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-exec.c#L25",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/compiler.h#L252",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update loc (shared field)": "[ (nvme_timeout)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L917 ], [ (nvme_delete_queue)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L1526 ], ",
+    "call path (type)": " [nvme_uninit_ctrl->_raw_spin_unlock->__raw_spin_unlock->do_raw_spin_unlock->queued_spin_unlock->native_queued_spin_unlock] ",
+    "cond_num": "1",
+    "isControl": "0"
+  },
+  {
+    "id": "10",
+    "risky": "ptr-array",
+    "acc_path": "request->end_io_data",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-exec.c#L25",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/locking/spinlock_debug.c#L64",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update loc (shared field)": "[ (nvme_timeout)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L917 ], [ (nvme_delete_queue)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L1526 ], ",
+    "call path (type)": " [nvme_uninit_ctrl->_raw_spin_unlock->__raw_spin_unlock->do_raw_spin_unlock->debug_spin_unlock->spin_bug->spin_dump] ",
+    "cond_num": "9",
+    "isControl": "0"
+  },
+  {
+    "id": "10",
+    "risky": "ptr-arith",
+    "acc_path": "request->end_io_data",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-exec.c#L25",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/locking/spinlock_debug.c#L64",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update loc (shared field)": "[ (nvme_timeout)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L917 ], [ (nvme_delete_queue)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L1526 ], ",
+    "call path (type)": " [nvme_uninit_ctrl->_raw_spin_unlock->__raw_spin_unlock->do_raw_spin_unlock->debug_spin_unlock->spin_bug->spin_dump] ",
+    "cond_num": "9",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "struct name": "request_queue",
+    "No.fields": 77,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "gendisk",
+    "No.fields": 20,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "blk_mq_tags",
+    "No.fields": 9,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "blk_mq_tag_set",
+    "No.fields": 12,
+    "No.classified fields": 8,
+    "PTR_READ": 2,
+    "ARR_IDX": 1,
+    "NUM_ARITH": 2,
+    "CONTROL_SENB_RANCH": 3,
+    "SEN_API": 2,
+    "UNCLASSIFY": 2
+  },
+  {
+    "id": "11",
+    "risky": "ptr-read",
+    "acc_path": "blk_mq_tag_set->ops",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1589",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1589",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update loc (shared field)": "[ (nvme_alloc_admin_tags)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L1168 ], [ (nvme_dev_add)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L1570 ], ",
+    "call path (type)": " [blk_mq_init_queue->blk_mq_init_allocated_queue->blk_mq_map_swqueue->blk_mq_init_rq_map] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "[ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1589 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1589 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  },
+  {
+    "id": "11",
+    "risky": "ptr-sen-branch (kzalloc)",
+    "acc_path": "blk_mq_tag_set->ops",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L2325",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L2325",
+    "drv caller (param)": "[ nvme_dev_add | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L1580 ], ",
+    "call path (param)": " [nvme_dev_add->blk_mq_alloc_tag_set] ",
+    "drv_update loc (shared field)": "[ (nvme_alloc_admin_tags)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L1168 ], [ (nvme_dev_add)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L1570 ], ",
+    "call path (type)": " [blk_mq_alloc_tag_set] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "[ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L2325 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L2325 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L2325 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  },
+  {
+    "id": "12",
+    "risky": "val-sen-branch (kfree)",
+    "acc_path": "blk_mq_tag_set->nr_hw_queues",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L2010",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L2010",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update loc (shared field)": "[ (nvme_alloc_admin_tags)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L1169 ], [ (nvme_dev_add)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L1571 ], ",
+    "call path (type)": " [blk_mq_init_queue->blk_mq_init_allocated_queue->blk_mq_realloc_hw_ctxs] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "[ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L2010 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  },
+  {
+    "id": "13",
+    "risky": "numeric-arith",
+    "acc_path": "blk_mq_tag_set->queue_depth",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1549",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1549",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update loc (shared field)": "[ (nvme_dev_add)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L1574 ], [ (nvme_alloc_admin_tags)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L1175 ], ",
+    "call path (type)": " [blk_mq_init_queue->blk_mq_init_allocated_queue->blk_mq_map_swqueue->blk_mq_init_rq_map] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "[ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1549 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1549 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  },
+  {
+    "id": "13",
+    "risky": "val-sen-branch (kmem_cache_alloc)",
+    "acc_path": "blk_mq_tag_set->queue_depth",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1535",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L316",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update loc (shared field)": "[ (nvme_dev_add)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L1574 ], [ (nvme_alloc_admin_tags)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L1175 ], ",
+    "call path (type)": " [blk_mq_init_queue->blk_mq_init_allocated_queue->kzalloc_node.173] ",
+    "cond_num": "26",
+    "isControl": "0"
+  },
+  {
+    "id": "13",
+    "risky": "val-sen-api (kmalloc)",
+    "acc_path": "blk_mq_tag_set->queue_depth",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1535",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L402",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update loc (shared field)": "[ (nvme_dev_add)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L1574 ], [ (nvme_alloc_admin_tags)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L1175 ], ",
+    "call path (type)": " [blk_mq_init_queue->blk_mq_init_allocated_queue->kzalloc_node.173] ",
+    "cond_num": "6",
+    "isControl": "0"
+  },
+  {
+    "id": "14",
+    "risky": "numeric-arith",
+    "acc_path": "blk_mq_tag_set->cmd_size",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1547",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1586",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update loc (shared field)": "[ (nvme_alloc_admin_tags)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L1178 ], [ (nvme_dev_add)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L1576 ], ",
+    "call path (type)": " [blk_mq_init_queue->blk_mq_init_allocated_queue->blk_mq_map_swqueue->blk_mq_init_rq_map] ",
+    "cond_num": "6",
+    "isControl": "0"
+  },
+  {
+    "id": "14",
+    "risky": "arr-idx",
+    "acc_path": "blk_mq_tag_set->cmd_size",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1547",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1598",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update loc (shared field)": "[ (nvme_alloc_admin_tags)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L1178 ], [ (nvme_dev_add)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L1576 ], ",
+    "call path (type)": " [blk_mq_init_queue->blk_mq_init_allocated_queue->blk_mq_map_swqueue->blk_mq_init_rq_map] ",
+    "cond_num": "9",
+    "isControl": "0"
+  },
+  {
+    "id": "15",
+    "risky": "val-sen-api (kzalloc)",
+    "acc_path": "blk_mq_tag_set->numa_node",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1528",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq-tag.c#L665",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update loc (shared field)": "[ (nvme_alloc_admin_tags)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L1177 ], [ (nvme_dev_add)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L1573 ], ",
+    "call path (type)": " [blk_mq_init_queue->blk_mq_init_allocated_queue->blk_mq_map_swqueue->blk_mq_init_rq_map->blk_mq_init_tags] ",
+    "cond_num": "1",
+    "isControl": "1",
+    "t_trace": "[ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1528 ] -> [ ACTUAL_IN || PARAMETER_INint ] -> [ FORMAL_IN || PARAMETER_INnode ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq-tag.c#L665 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  },
+  {
+    "id": "18",
+    "risky": "ptr-read",
+    "acc_path": "blk_mq_tag_set->driver_data",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1590",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1590",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update loc (shared field)": "[ (nvme_dev_add)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L1578 ], [ (nvme_alloc_admin_tags)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L1179 ], ",
+    "call path (type)": " [blk_mq_init_queue->blk_mq_init_allocated_queue->blk_mq_map_swqueue->blk_mq_init_rq_map] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]
+[
+  {
+    "struct name": "blk_mq_queue_data",
+    "No.fields": 3,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "kobject",
+    "No.fields": 12,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "__wait_queue_head",
+    "No.fields": 2,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "kref",
+    "No.fields": 1,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "nvme_ns",
+    "No.fields": 17,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "nvme_ctrl",
+    "No.fields": 43,
+    "No.classified fields": 2,
+    "PTR_READ": 2,
+    "PTR_WRITE": 2,
+    "PTR_BUFFER": 2,
+    "PTR_ARITH_BASE": 2,
+    "CONTROL_SENB_RANCH": 2,
+    "SEN_API": 2
+  },
+  {
+    "id": "19",
+    "risky": "ptr-write",
+    "acc_path": "nvme_ctrl->admin_q",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L503",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./arch/x86/include/asm/atomic64_64.h#L19 |   %7 = alloca i64, align 8",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update loc (shared field)": "[ (nvme_alloc_admin_tags)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L1184 ], [ (nvme_map_data)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L491 |   %11 = alloca %struct.request_queue*, align 8 ], [ (nvme_delete_queue)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L1511 |   %6 = alloca %struct.request_queue*, align 8 ], [ (nvme_alloc_admin_tags)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L1191 ], ",
+    "call path (type)": " [nvme_init_identify->nvme_identify_ctrl->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_alloc_request->blk_mq_alloc_request->blk_queue_enter->percpu_ref_tryget_live->atomic64_add_unless->atomic64_read] ",
+    "cond_num": "8",
+    "isControl": "0"
+  },
+  {
+    "id": "19",
+    "risky": "ptr-read",
+    "acc_path": "nvme_ctrl->admin_q",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L503",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./arch/x86/include/asm/atomic64_64.h#L21",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update loc (shared field)": "[ (nvme_alloc_admin_tags)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L1184 ], [ (nvme_map_data)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L491 |   %11 = alloca %struct.request_queue*, align 8 ], [ (nvme_delete_queue)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L1511 |   %6 = alloca %struct.request_queue*, align 8 ], [ (nvme_alloc_admin_tags)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L1191 ], ",
+    "call path (type)": " [nvme_init_identify->nvme_identify_ctrl->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_alloc_request->blk_mq_alloc_request->blk_queue_enter->percpu_ref_tryget_live->atomic64_add_unless->atomic64_read] ",
+    "cond_num": "9",
+    "isControl": "0"
+  },
+  {
+    "id": "19",
+    "risky": "ptr-sen-api (memcpy)",
+    "acc_path": "nvme_ctrl->admin_q",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L503",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/compiler.h#L220",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update loc (shared field)": "[ (nvme_alloc_admin_tags)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L1184 ], [ (nvme_map_data)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L491 |   %11 = alloca %struct.request_queue*, align 8 ], [ (nvme_delete_queue)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L1511 |   %6 = alloca %struct.request_queue*, align 8 ], [ (nvme_alloc_admin_tags)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L1191 ], ",
+    "call path (type)": " [nvme_init_identify->nvme_identify_ctrl->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_alloc_request->blk_mq_alloc_request->blk_queue_enter->percpu_ref_tryget_live->atomic64_add_unless->atomic64_read] ",
+    "cond_num": "9",
+    "isControl": "0"
+  },
+  {
+    "id": "19",
+    "risky": "ptr-sen-branch (memcpy)",
+    "acc_path": "nvme_ctrl->admin_q",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L503",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./arch/x86/include/asm/atomic.h#L26",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update loc (shared field)": "[ (nvme_alloc_admin_tags)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L1184 ], [ (nvme_map_data)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L491 |   %11 = alloca %struct.request_queue*, align 8 ], [ (nvme_delete_queue)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L1511 |   %6 = alloca %struct.request_queue*, align 8 ], [ (nvme_alloc_admin_tags)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L1191 ], ",
+    "call path (type)": " [nvme_init_identify->nvme_identify_ctrl->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_alloc_request->blk_mq_alloc_request->blk_queue_enter] ",
+    "cond_num": "9",
+    "isControl": "0"
+  },
+  {
+    "id": "19",
+    "risky": "ptr-array",
+    "acc_path": "nvme_ctrl->admin_q",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L503",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./arch/x86/include/asm/bitops.h#L311",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update loc (shared field)": "[ (nvme_alloc_admin_tags)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L1184 ], [ (nvme_map_data)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L491 |   %11 = alloca %struct.request_queue*, align 8 ], [ (nvme_delete_queue)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L1511 |   %6 = alloca %struct.request_queue*, align 8 ], [ (nvme_alloc_admin_tags)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L1191 ], ",
+    "call path (type)": " [nvme_init_identify->nvme_identify_ctrl->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_alloc_request->blk_mq_alloc_request->blk_queue_enter] ",
+    "cond_num": "12",
+    "isControl": "0"
+  },
+  {
+    "id": "19",
+    "risky": "ptr-arith",
+    "acc_path": "nvme_ctrl->admin_q",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L503",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./arch/x86/include/asm/bitops.h#L311",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update loc (shared field)": "[ (nvme_alloc_admin_tags)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L1184 ], [ (nvme_map_data)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L491 |   %11 = alloca %struct.request_queue*, align 8 ], [ (nvme_delete_queue)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L1511 |   %6 = alloca %struct.request_queue*, align 8 ], [ (nvme_alloc_admin_tags)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L1191 ], ",
+    "call path (type)": " [nvme_init_identify->nvme_identify_ctrl->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_alloc_request->blk_mq_alloc_request->blk_queue_enter] ",
+    "cond_num": "12",
+    "isControl": "0"
+  },
+  {
+    "id": "20",
+    "risky": "ptr-read",
+    "acc_path": "nvme_ctrl->tagset",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1120",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1120",
+    "drv caller (param)": "[ nvme_configure_admin_queue | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L1214 ], ",
+    "call path (param)": " [nvme_configure_admin_queue->nvme_disable_ctrl] ",
+    "drv_update loc (shared field)": "[ (nvme_dev_add)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L1582 ], ",
+    "call path (type)": " [nvme_disable_ctrl] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  },
+  {
+    "id": "20",
+    "risky": "ptr-write",
+    "acc_path": "nvme_ctrl->tagset",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1655",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/compiler.h#L220",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update loc (shared field)": "[ (nvme_dev_add)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L1582 ], ",
+    "call path (type)": " [nvme_uninit_ctrl->nvme_remove_namespaces->nvme_kill_queues->blk_mq_start_stopped_hw_queues->blk_mq_run_hw_queue->__blk_mq_run_hw_queue->nvme_queue_rq->nvme_process_cq->__nvme_process_cq->nvme_complete_async_event->nvme_queue_scan->schedule_work.151->queue_work.382->queue_work_on->__queue_work->insert_work->__need_more_worker] ",
+    "cond_num": "52",
+    "isControl": "0"
+  },
+  {
+    "id": "20",
+    "risky": "ptr-sen-api (memcpy)",
+    "acc_path": "nvme_ctrl->tagset",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1655",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/compiler.h#L220",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update loc (shared field)": "[ (nvme_dev_add)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L1582 ], ",
+    "call path (type)": " [nvme_uninit_ctrl->nvme_remove_namespaces->nvme_kill_queues->blk_mq_start_stopped_hw_queues->blk_mq_run_hw_queue->__blk_mq_run_hw_queue->nvme_queue_rq->nvme_process_cq->__nvme_process_cq->nvme_complete_async_event->nvme_queue_scan->schedule_work.151->queue_work.382->queue_work_on->__queue_work->insert_work->__need_more_worker] ",
+    "cond_num": "52",
+    "isControl": "0"
+  },
+  {
+    "id": "20",
+    "risky": "ptr-array",
+    "acc_path": "nvme_ctrl->tagset",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1655",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L604",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update loc (shared field)": "[ (nvme_dev_add)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L1582 ], ",
+    "call path (type)": " [nvme_uninit_ctrl->nvme_remove_namespaces->nvme_kill_queues->blk_mq_start_stopped_hw_queues->blk_mq_run_hw_queue->__blk_mq_run_hw_queue->nvme_queue_rq->nvme_process_cq->__nvme_process_cq->blk_mq_tag_to_rq] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "[ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1655 ] -> [ ACTUAL_IN || PARAMETER_IN ] -> [ FORMAL_IN || PARAMETER_INset ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1995 ] -> [ ACTUAL_IN || PARAMETER_IN ] -> [ FORMAL_IN || PARAMETER_INset ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L2120 ] -> [ ACTUAL_IN || PARAMETER_IN ] -> [ FORMAL_IN || PARAMETER_INset ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1950 ] -> [ ACTUAL_IN || PARAMETER_IN ] -> [ FORMAL_IN || PARAMETER_INset ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1917 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1917 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1917 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1917 ] -> [ INST || UNKNOWN Edge Type || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1917 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1917 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1917 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1917 ] -> [ INST || DATA_ST || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1913 |   %7 = alloca %struct.request_queue.2037*, align 8 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1917 ] -> [ INST || UNKNOWN Edge Type || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1917 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1917 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1917 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1917 ] -> [ INST || UNKNOWN Edge Type || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1917 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1917 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1917 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1917 ] -> [ INST || DATA_ST || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1913 |   %9 = alloca %struct.request_queue.2037*, align 8 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1917 ] -> [ INST || UNKNOWN Edge Type || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1918 ] -> [ ACTUAL_IN || PARAMETER_IN ] -> [ FORMAL_IN || PARAMETER_INq ] -> [ ACTUAL_IN || PARAMETER_IN ] -> [ FORMAL_IN || PARAMETER_INq ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L111 ] -> [ ACTUAL_IN || PARAMETER_IN ] -> [ FORMAL_IN || PARAMETER_INq ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L88 ] -> [ ACTUAL_IN || PARAMETER_IN ] -> [ FORMAL_IN || PARAMETER_INq ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L960 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L960 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L960 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L960 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L960 ] -> [ INST || UNKNOWN Edge Type || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L966 ] -> [ ACTUAL_IN || PARAMETER_IN ] -> [ FORMAL_IN || PARAMETER_INhctx ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L943 ] -> [ ACTUAL_IN || PARAMETER_IN ] -> [ FORMAL_IN || PARAMETER_INhctx ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L853 ] -> [ ACTUAL_IN || PARAMETER_IN ] -> [ FORMAL_IN || PARAMETER_INhctx ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L565 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L565 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L565 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L565 ] -> [ INST || DATA_ST || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L561 |   %15 = alloca %struct.nvme_queue*, align 8 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L613 ] -> [ ACTUAL_IN || PARAMETER_IN ] -> [ FORMAL_IN || PARAMETER_INnvmeq ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L722 ] -> [ ACTUAL_IN || PARAMETER_IN ] -> [ FORMAL_IN || PARAMETER_INnvmeq ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L696 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L696 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L696 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L696 ] -> [ ACTUAL_IN || PARAMETER_IN ] -> [ FORMAL_IN || PARAMETER_INtags ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L604 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L604 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L604 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  },
+  {
+    "id": "20",
+    "risky": "ptr-arith",
+    "acc_path": "nvme_ctrl->tagset",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1655",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L604",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update loc (shared field)": "[ (nvme_dev_add)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L1582 ], ",
+    "call path (type)": " [nvme_uninit_ctrl->nvme_remove_namespaces->nvme_kill_queues->blk_mq_start_stopped_hw_queues->blk_mq_run_hw_queue->__blk_mq_run_hw_queue->nvme_queue_rq->nvme_process_cq->__nvme_process_cq->blk_mq_tag_to_rq] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "[ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1655 ] -> [ ACTUAL_IN || PARAMETER_IN ] -> [ FORMAL_IN || PARAMETER_INset ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1995 ] -> [ ACTUAL_IN || PARAMETER_IN ] -> [ FORMAL_IN || PARAMETER_INset ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L2120 ] -> [ ACTUAL_IN || PARAMETER_IN ] -> [ FORMAL_IN || PARAMETER_INset ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1950 ] -> [ ACTUAL_IN || PARAMETER_IN ] -> [ FORMAL_IN || PARAMETER_INset ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1917 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1917 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1917 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1917 ] -> [ INST || UNKNOWN Edge Type || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1917 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1917 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1917 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1917 ] -> [ INST || DATA_ST || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1913 |   %7 = alloca %struct.request_queue.2037*, align 8 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1917 ] -> [ INST || UNKNOWN Edge Type || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1917 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1917 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1917 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1917 ] -> [ INST || UNKNOWN Edge Type || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1917 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1917 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1917 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1917 ] -> [ INST || DATA_ST || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1913 |   %9 = alloca %struct.request_queue.2037*, align 8 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1917 ] -> [ INST || UNKNOWN Edge Type || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1918 ] -> [ ACTUAL_IN || PARAMETER_IN ] -> [ FORMAL_IN || PARAMETER_INq ] -> [ ACTUAL_IN || PARAMETER_IN ] -> [ FORMAL_IN || PARAMETER_INq ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L111 ] -> [ ACTUAL_IN || PARAMETER_IN ] -> [ FORMAL_IN || PARAMETER_INq ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L88 ] -> [ ACTUAL_IN || PARAMETER_IN ] -> [ FORMAL_IN || PARAMETER_INq ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L960 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L960 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L960 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L960 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L960 ] -> [ INST || UNKNOWN Edge Type || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L966 ] -> [ ACTUAL_IN || PARAMETER_IN ] -> [ FORMAL_IN || PARAMETER_INhctx ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L943 ] -> [ ACTUAL_IN || PARAMETER_IN ] -> [ FORMAL_IN || PARAMETER_INhctx ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L853 ] -> [ ACTUAL_IN || PARAMETER_IN ] -> [ FORMAL_IN || PARAMETER_INhctx ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L565 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L565 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L565 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L565 ] -> [ INST || DATA_ST || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L561 |   %15 = alloca %struct.nvme_queue*, align 8 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L613 ] -> [ ACTUAL_IN || PARAMETER_IN ] -> [ FORMAL_IN || PARAMETER_INnvmeq ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L722 ] -> [ ACTUAL_IN || PARAMETER_IN ] -> [ FORMAL_IN || PARAMETER_INnvmeq ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L696 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L696 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L696 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L696 ] -> [ ACTUAL_IN || PARAMETER_IN ] -> [ FORMAL_IN || PARAMETER_INtags ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L604 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L604 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L604 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  },
+  {
+    "id": "20",
+    "risky": "ptr-sen-branch (memcpy)",
+    "acc_path": "nvme_ctrl->tagset",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1655",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1016",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update loc (shared field)": "[ (nvme_dev_add)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L1582 ], ",
+    "call path (type)": " [nvme_uninit_ctrl->nvme_remove_namespaces->nvme_kill_queues->blk_mq_start_stopped_hw_queues->blk_mq_run_hw_queue->kblockd_schedule_delayed_work_on->queue_delayed_work_on->__queue_delayed_work->add_timer->mod_timer->__mod_timer] ",
+    "cond_num": "24",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "struct name": "device",
+    "No.fields": 35,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "pci_dev",
+    "No.fields": 90,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "pci_device_id",
+    "No.fields": 7,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "resource",
+    "No.fields": 8,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "mutex",
+    "No.fields": 5,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "completion",
+    "No.fields": 2,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "work_struct",
+    "No.fields": 3,
+    "No.classified fields": 1,
+    "FUNC_PTR": 1
+  }
+]
+[
+  {
+    "struct name": "timer_list",
+    "No.fields": 5,
+    "No.classified fields": 2,
+    "FUNC_PTR": 1,
+    "UNCLASSIFY": 1
+  }
+]
+[
+  {
+    "struct name": "workqueue_struct",
+    "No.fields": 21,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "spinlock",
+    "No.fields": 1,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "cpumask",
+    "No.fields": 1,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "task_struct",
+    "No.fields": 155,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "kmem_cache",
+    "No.fields": 24,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "page",
+    "No.fields": 7,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "list_head",
+    "No.fields": 2,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "msix_entry",
+    "No.fields": 2,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "nvme_command",
+    "No.fields": 1,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "nvme_completion",
+    "No.fields": 5,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "mem_section",
+    "No.fields": 2,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "scatterlist",
+    "No.fields": 5,
+    "No.classified fields": 0
+  }
+]

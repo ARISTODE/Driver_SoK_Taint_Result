@@ -1,0 +1,29 @@
+[
+  {
+    "id": "3",
+    "risky": "numeric-arith",
+    "acc_path": "num",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/platform.c#L104",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/platform.c#L75",
+    "drv caller (param)": "[ fotg210_udc_remove | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/udc/fotg210-udc.c#L1072 ], ",
+    "call path (param)": " [fotg210_udc_remove->platform_get_irq->platform_get_resource] ",
+    "cond_num": "2",
+    "isControl": "0"
+  }
+]
+[]
+[]
+[]
+[
+  {
+    "id": "7",
+    "risky": "ptr-sen-branch (kfree)",
+    "acc_path": "dev_id",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/irq/manage.c#L1588",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/irq/manage.c#L1484",
+    "drv caller (param)": "[ fotg210_udc_remove | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/udc/fotg210-udc.c#L1072 ], ",
+    "call path (param)": " [fotg210_udc_remove->free_irq->__free_irq] ",
+    "cond_num": "3",
+    "isControl": "0"
+  }
+]

@@ -1,0 +1,66 @@
+{
+  "id": 1,
+  "acc_path": "attribute->mode",
+  "Kernel read": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/sysfs/file.c#L318],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/sysfs/file.c#L332], ",
+  "Drv update": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/applesmc.c#L1126], "
+}
+{
+  "id": 7,
+  "acc_path": "flags",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L3895 | __alloc_workqueue_key",
+  "Drv update": ""
+}
+{
+  "id": 8,
+  "acc_path": "max_active",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L3895 | __alloc_workqueue_key",
+  "Drv update": ""
+}
+{
+  "id": 9,
+  "acc_path": "xloops",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/lib/delay.c#L157 | __const_udelay",
+  "Drv update": ""
+}
+{
+  "id": 10,
+  "acc_path": "usecs",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/lib/delay.c#L171 | __udelay",
+  "Drv update": ""
+}
+{
+  "id": 11,
+  "acc_path": "axis",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/input/input.c#L491 | input_set_abs_params",
+  "Drv update": ""
+}
+{
+  "id": 12,
+  "acc_path": "min",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/input/input.c#L491 | input_set_abs_params",
+  "Drv update": ""
+}
+{
+  "id": 13,
+  "acc_path": "max",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/input/input.c#L491 | input_set_abs_params",
+  "Drv update": ""
+}
+{
+  "id": 14,
+  "acc_path": "fuzz",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/input/input.c#L491 | input_set_abs_params",
+  "Drv update": ""
+}
+{
+  "id": 15,
+  "acc_path": "flat",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/input/input.c#L491 | input_set_abs_params",
+  "Drv update": ""
+}
+{
+  "id": 16,
+  "acc_path": "msecs",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1874 | msleep",
+  "Drv update": ""
+}

@@ -1,0 +1,732 @@
+[
+  {
+    "struct name": "snd_soc_card",
+    "No.fields": 57,
+    "No.shared fields": 0,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "snd_soc_component",
+    "No.fields": 34,
+    "No.shared fields": 2,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "soc_mixer_control",
+    "No.fields": 11,
+    "No.shared fields": 1,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "__wait_queue_head",
+    "No.fields": 2,
+    "No.shared fields": 0,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "work_struct",
+    "No.fields": 3,
+    "No.shared fields": 3,
+    "No.KRDU fields": 1,
+    "No.classified fields": 0,
+    "No.unclassified fields": 1,
+    "UNCLASSIFY": 1
+  }
+]
+[
+  {
+    "struct name": "workqueue_struct",
+    "No.fields": 21,
+    "No.shared fields": 0,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "mutex",
+    "No.fields": 5,
+    "No.shared fields": 0,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "spinlock",
+    "No.fields": 1,
+    "No.shared fields": 1,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "list_head",
+    "No.fields": 2,
+    "No.shared fields": 2,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "sst_pdata",
+    "No.fields": 15,
+    "No.shared fields": 1,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "sst_ops",
+    "No.fields": 16,
+    "No.shared fields": 13,
+    "No.KRDU fields": 13,
+    "No.classified fields": 0,
+    "No.unclassified fields": 13,
+    "UNCLASSIFY": 13
+  }
+]
+[
+  {
+    "struct name": "sst_dsp",
+    "No.fields": 30,
+    "No.shared fields": 10,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "sst_mem_block",
+    "No.fields": 12,
+    "No.shared fields": 6,
+    "No.KRDU fields": 1,
+    "No.classified fields": 0,
+    "No.unclassified fields": 1,
+    "UNCLASSIFY": 1
+  }
+]
+[
+  {
+    "struct name": "sst_fw",
+    "No.fields": 7,
+    "No.shared fields": 3,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "sst_module_runtime",
+    "No.fields": 7,
+    "No.shared fields": 3,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "sst_module",
+    "No.fields": 18,
+    "No.shared fields": 10,
+    "No.KRDU fields": 5,
+    "No.classified fields": 4,
+    "No.unclassified fields": 1,
+    "PTR_READ": 1,
+    "ARR_IDX": 2,
+    "NUM_ARITH": 3,
+    "RISKY_KERNEL_FUNC": 3,
+    "UNCLASSIFY": 1
+  },
+  {
+    "id": "15",
+    "risky": "numeric-arith",
+    "acc_path": "sst_module->offset",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L832",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L832",
+    "drv caller (param)": "[ hsw_parse_module | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L164 ], ",
+    "call path (param)": " [hsw_parse_module->sst_module_alloc_blocks] ",
+    "drv_update loc (shared field)": "[ (hsw_parse_module) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L145 ], [ (hsw_parse_module) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L138 ], ",
+    "call path (type)": " [sst_module_alloc_blocks] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "[ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L832 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  },
+  {
+    "id": "15",
+    "risky": "val-sen-api (memcpy)",
+    "acc_path": "sst_module->offset",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L840",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L840",
+    "drv caller (param)": "[ hsw_parse_module | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L164 ], ",
+    "call path (param)": " [hsw_parse_module->sst_module_alloc_blocks] ",
+    "drv_update loc (shared field)": "[ (hsw_parse_module) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L145 ], [ (hsw_parse_module) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L138 ], ",
+    "call path (type)": " [sst_module_alloc_blocks] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "[ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L840 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L840 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L840 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  },
+  {
+    "id": "15",
+    "risky": "arr-idx",
+    "acc_path": "sst_module->offset",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L840",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L840",
+    "drv caller (param)": "[ hsw_parse_module | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L164 ], ",
+    "call path (param)": " [hsw_parse_module->sst_module_alloc_blocks] ",
+    "drv_update loc (shared field)": "[ (hsw_parse_module) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L145 ], [ (hsw_parse_module) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L138 ], ",
+    "call path (type)": " [sst_module_alloc_blocks] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "[ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L840 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L840 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  },
+  {
+    "id": "16",
+    "risky": "numeric-arith",
+    "acc_path": "sst_module->size",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L803",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L719",
+    "drv caller (param)": "[ hsw_parse_module | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L164 ], ",
+    "call path (param)": " [hsw_parse_module->sst_module_alloc_blocks->block_alloc_fixed] ",
+    "drv_update loc (shared field)": "[ (hsw_parse_module) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L155 ], ",
+    "call path (type)": " [sst_module_runtime_alloc_blocks->block_alloc_fixed] ",
+    "cond_num": "1",
+    "isControl": "0"
+  },
+  {
+    "id": "16",
+    "risky": "val-sen-api (memcpy)",
+    "acc_path": "sst_module->size",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L841",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L841",
+    "drv caller (param)": "[ hsw_parse_module | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L164 ], ",
+    "call path (param)": " [hsw_parse_module->sst_module_alloc_blocks] ",
+    "drv_update loc (shared field)": "[ (hsw_parse_module) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L155 ], ",
+    "call path (type)": " [sst_module_alloc_blocks] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "[ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L841 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  },
+  {
+    "id": "16",
+    "risky": "arr-idx",
+    "acc_path": "sst_module->size",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L841",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L67",
+    "drv caller (param)": "[ hsw_parse_module | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L164 ], ",
+    "call path (param)": " [hsw_parse_module->sst_module_alloc_blocks->sst_memcpy32] ",
+    "drv_update loc (shared field)": "[ (hsw_parse_module) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L155 ], ",
+    "call path (type)": " [sst_module_alloc_blocks->sst_memcpy32] ",
+    "cond_num": "2",
+    "isControl": "0"
+  },
+  {
+    "id": "18",
+    "risky": "numeric-arith",
+    "acc_path": "sst_module->data_offset",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L833",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L833",
+    "drv caller (param)": "[ hsw_parse_module | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L164 ], ",
+    "call path (param)": " [hsw_parse_module->sst_module_alloc_blocks] ",
+    "drv_update loc (shared field)": "[ (hsw_parse_module) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L157 ], ",
+    "call path (type)": " [sst_module_alloc_blocks] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "[ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L833 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L833 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  },
+  {
+    "id": "19",
+    "risky": "ptr-read",
+    "acc_path": "sst_module->data",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L840",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L840",
+    "drv caller (param)": "[ hsw_parse_module | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L164 ], ",
+    "call path (param)": " [hsw_parse_module->sst_module_alloc_blocks] ",
+    "drv_update loc (shared field)": "[ (hsw_parse_module) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L156 ], ",
+    "call path (type)": " [sst_module_alloc_blocks] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  },
+  {
+    "id": "19",
+    "risky": "ptr-sen-api (memcpy)",
+    "acc_path": "sst_module->data",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L840",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L840",
+    "drv caller (param)": "[ hsw_parse_module | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L164 ], ",
+    "call path (param)": " [hsw_parse_module->sst_module_alloc_blocks] ",
+    "drv_update loc (shared field)": "[ (hsw_parse_module) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L156 ], ",
+    "call path (type)": " [sst_module_alloc_blocks] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "[ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L840 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]
+[
+  {
+    "struct name": "kthread_worker",
+    "No.fields": 4,
+    "No.shared fields": 0,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "kthread_work",
+    "No.fields": 3,
+    "No.shared fields": 0,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "platform_device",
+    "No.fields": 10,
+    "No.shared fields": 1,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "snd_soc_platform",
+    "No.fields": 4,
+    "No.shared fields": 2,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "snd_soc_dai",
+    "No.fields": 23,
+    "No.shared fields": 1,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "snd_soc_pcm_runtime",
+    "No.fields": 25,
+    "No.shared fields": 4,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "device",
+    "No.fields": 33,
+    "No.shared fields": 3,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "firmware",
+    "No.fields": 4,
+    "No.shared fields": 0,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "static_key",
+    "No.fields": 3,
+    "No.shared fields": 0,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "snd_pcm_hw_params",
+    "No.fields": 13,
+    "No.shared fields": 2,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "snd_interval",
+    "No.fields": 6,
+    "No.shared fields": 0,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "snd_mask",
+    "No.fields": 1,
+    "No.shared fields": 1,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "snd_pcm_mmap_control",
+    "No.fields": 2,
+    "No.shared fields": 1,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "snd_pcm_runtime",
+    "No.fields": 56,
+    "No.shared fields": 7,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "snd_ctl_elem_value",
+    "No.fields": 5,
+    "No.shared fields": 1,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "snd_kcontrol",
+    "No.fields": 11,
+    "No.shared fields": 2,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "snd_pcm_str",
+    "No.fields": 7,
+    "No.shared fields": 0,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "snd_pcm",
+    "No.fields": 15,
+    "No.shared fields": 1,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "snd_pcm_substream",
+    "No.fields": 25,
+    "No.shared fields": 3,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "sst_generic_ipc",
+    "No.fields": 14,
+    "No.shared fields": 8,
+    "No.KRDU fields": 5,
+    "No.classified fields": 4,
+    "No.unclassified fields": 1,
+    "PTR_READ": 2,
+    "PTR_WRITE": 1,
+    "NUM_ARITH": 2,
+    "RISKY_KERNEL_FUNC": 2,
+    "UNCLASSIFY": 1
+  },
+  {
+    "id": "20",
+    "risky": "ptr-read",
+    "acc_path": "sst_generic_ipc->dev",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-ipc.c#L289",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-ipc.c#L289",
+    "drv caller (param)": "[ sst_hsw_dsp_init | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L2134 ], ",
+    "call path (param)": " [sst_hsw_dsp_init->sst_ipc_init] ",
+    "drv_update loc (shared field)": "[ (sst_hsw_dsp_init) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L2121 ], [ (sst_hsw_dsp_init) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L2124 ], ",
+    "call path (type)": " [sst_ipc_init] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  },
+  {
+    "id": "20",
+    "risky": "ptr-write",
+    "acc_path": "sst_generic_ipc->dev",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-ipc.c#L285",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/device.h#L865 |   %2 = alloca i8*, align 8",
+    "drv caller (param)": "[ sst_hsw_dsp_init | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L2134 ], ",
+    "call path (param)": " [sst_hsw_dsp_init->sst_ipc_init->dev_name.752] ",
+    "drv_update loc (shared field)": "[ (sst_hsw_dsp_init) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L2121 ], [ (sst_hsw_dsp_init) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L2124 ], ",
+    "call path (type)": " [sst_ipc_init->dev_name.752] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "[ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-ipc.c#L285 ] -> [ ACTUAL_IN || PARAMETER_IN ] -> [ FORMAL_IN || PARAMETER_INdev ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/device.h#L871 ] -> [ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/device.h#L868 ] -> [ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/device.h#L869 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/device.h#L869 ] -> [ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/device.h#L865 |   %2 = alloca i8*, align 8 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  },
+  {
+    "id": "21",
+    "risky": "ptr-read",
+    "acc_path": "sst_generic_ipc->dsp",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-ipc.c#L92",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-ipc.c#L92",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update loc (shared field)": "[ (sst_hsw_dsp_init) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L2149 ], ",
+    "call path (type)": " [sst_ipc_tx_message_nowait->ipc_tx_message] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  },
+  {
+    "id": "23",
+    "risky": "numeric-arith",
+    "acc_path": "sst_generic_ipc->tx_data_max_size",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-ipc.c#L132",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L421",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update loc (shared field)": "[ (sst_hsw_dsp_init) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L2131 ], ",
+    "call path (type)": " [sst_ipc_init->msg_empty_list_init->kzalloc.768] ",
+    "cond_num": "13",
+    "isControl": "0"
+  },
+  {
+    "id": "23",
+    "risky": "val-sen-api (kmalloc)",
+    "acc_path": "sst_generic_ipc->tx_data_max_size",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-ipc.c#L132",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L391",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update loc (shared field)": "[ (sst_hsw_dsp_init) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L2131 ], ",
+    "call path (type)": " [sst_ipc_init->msg_empty_list_init->kzalloc.768] ",
+    "cond_num": "8",
+    "isControl": "0"
+  },
+  {
+    "id": "24",
+    "risky": "numeric-arith",
+    "acc_path": "sst_generic_ipc->rx_data_max_size",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-ipc.c#L136",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L421",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update loc (shared field)": "[ (sst_hsw_dsp_init) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L2132 ], ",
+    "call path (type)": " [sst_ipc_init->msg_empty_list_init->kzalloc.768] ",
+    "cond_num": "15",
+    "isControl": "0"
+  },
+  {
+    "id": "24",
+    "risky": "val-sen-api (kmalloc)",
+    "acc_path": "sst_generic_ipc->rx_data_max_size",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-ipc.c#L136",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L391",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update loc (shared field)": "[ (sst_hsw_dsp_init) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L2132 ], ",
+    "call path (type)": " [sst_ipc_init->msg_empty_list_init->kzalloc.768] ",
+    "cond_num": "10",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "struct name": "ipc_message",
+    "No.fields": 11,
+    "No.shared fields": 7,
+    "No.KRDU fields": 1,
+    "No.classified fields": 1,
+    "No.unclassified fields": 0,
+    "BRANCH": 1,
+    "UNCLASSIFY": 0
+  },
+  {
+    "id": "25",
+    "risky": "val-sen-branch (memcpy)",
+    "acc_path": "ipc_message->errno",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-ipc.c#L77",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-ipc.c#L66",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update loc (shared field)": "[ (hsw_process_reply) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L592 ], [ (hsw_process_reply) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L596 ], [ (hsw_process_reply) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L616 ], [ (hsw_process_reply) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L600 ], [ (hsw_process_reply) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L612 ], [ (hsw_process_reply) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L608 ], [ (hsw_process_reply) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L628 ], [ (hsw_process_reply) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L624 ], [ (hsw_process_reply) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L604 ], [ (hsw_process_reply) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L620 ], ",
+    "call path (type)": " [sst_ipc_tx_message_nowait->ipc_tx_message->tx_wait_done] ",
+    "cond_num": "4",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "struct name": "__wait_queue",
+    "No.fields": 4,
+    "No.shared fields": 2,
+    "No.KRDU fields": 1,
+    "No.classified fields": 0,
+    "No.unclassified fields": 1,
+    "UNCLASSIFY": 1
+  }
+]
+[
+  {
+    "struct name": "snd_dma_buffer",
+    "No.fields": 5,
+    "No.shared fields": 1,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "kmem_cache",
+    "No.fields": 0,
+    "No.shared fields": 0,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "snd_sg_buf",
+    "No.fields": 6,
+    "No.shared fields": 0,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "sst_module_template",
+    "No.fields": 4,
+    "No.shared fields": 4,
+    "No.KRDU fields": 4,
+    "No.classified fields": 0,
+    "No.unclassified fields": 4,
+    "UNCLASSIFY": 4
+  }
+]

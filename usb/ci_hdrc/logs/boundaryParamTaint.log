@@ -1,0 +1,190 @@
+[]
+[]
+[]
+[
+  {
+    "id": "6",
+    "risky": "val-sen-branch (memcpy)",
+    "acc_path": "id",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L1129",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L147",
+    "drv caller (param)": "[ ci_hdrc_remove_device | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/chipidea/core.c#L866 ], ",
+    "call path (param)": " [ci_hdrc_remove_device->ida_simple_remove->ida_remove->idr_remove->sub_remove->free_layer] ",
+    "cond_num": "11",
+    "isControl": "0"
+  },
+  {
+    "id": "6",
+    "risky": "numeric-arith",
+    "acc_path": "id",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L1129",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L531",
+    "drv caller (param)": "[ ci_hdrc_remove_device | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/chipidea/core.c#L866 ], ",
+    "call path (param)": " [ci_hdrc_remove_device->ida_simple_remove->ida_remove->idr_remove->sub_remove] ",
+    "cond_num": "11",
+    "isControl": "0"
+  },
+  {
+    "id": "6",
+    "risky": "arr-idx",
+    "acc_path": "id",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L1129",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L523",
+    "drv caller (param)": "[ ci_hdrc_remove_device | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/chipidea/core.c#L866 ], ",
+    "call path (param)": " [ci_hdrc_remove_device->ida_simple_remove->ida_remove->idr_remove->sub_remove] ",
+    "cond_num": "6",
+    "isControl": "0"
+  },
+  {
+    "id": "6",
+    "risky": "val-sen-api (kfree)",
+    "acc_path": "id",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L1129",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L881",
+    "drv caller (param)": "[ ci_hdrc_remove_device | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/chipidea/core.c#L866 ], ",
+    "call path (param)": " [ci_hdrc_remove_device->ida_simple_remove->ida_remove->free_bitmap] ",
+    "cond_num": "3",
+    "isControl": "0"
+  }
+]
+[]
+[
+  {
+    "id": "8",
+    "risky": "numeric-arith",
+    "acc_path": "start",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L1100",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L985",
+    "drv caller (param)": "[ ci_hdrc_add_device | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/chipidea/core.c#L825 ], ",
+    "call path (param)": " [ci_hdrc_add_device->ida_simple_get->ida_get_new_above] ",
+    "cond_num": "7",
+    "isControl": "0"
+  },
+  {
+    "id": "8",
+    "risky": "val-sen-api (memset)",
+    "acc_path": "start",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L1100",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L965",
+    "drv caller (param)": "[ ci_hdrc_add_device | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/chipidea/core.c#L825 ], ",
+    "call path (param)": " [ci_hdrc_add_device->ida_simple_get->ida_get_new_above] ",
+    "cond_num": "5",
+    "isControl": "0"
+  },
+  {
+    "id": "8",
+    "risky": "arr-idx",
+    "acc_path": "start",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L1100",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L966",
+    "drv caller (param)": "[ ci_hdrc_add_device | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/chipidea/core.c#L825 ], ",
+    "call path (param)": " [ci_hdrc_add_device->ida_simple_get->ida_get_new_above] ",
+    "cond_num": "4",
+    "isControl": "0"
+  },
+  {
+    "id": "8",
+    "risky": "val-sen-branch (kmem_cache_free)",
+    "acc_path": "start",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L1100",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L956",
+    "drv caller (param)": "[ ci_hdrc_add_device | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/chipidea/core.c#L825 ], ",
+    "call path (param)": " [ci_hdrc_add_device->ida_simple_get->ida_get_new_above] ",
+    "cond_num": "3",
+    "isControl": "0"
+  }
+]
+[]
+[
+  {
+    "id": "10",
+    "risky": "val-sen-api (kmalloc)",
+    "acc_path": "gfp_mask",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L1096",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L495",
+    "drv caller (param)": "[ ci_hdrc_add_device | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/chipidea/core.c#L825 ], ",
+    "call path (param)": " [ci_hdrc_add_device->ida_simple_get->ida_pre_get] ",
+    "cond_num": "5",
+    "isControl": "0"
+  },
+  {
+    "id": "10",
+    "risky": "val-sen-branch (kmem_cache_alloc)",
+    "acc_path": "gfp_mask",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L1096",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L484",
+    "drv caller (param)": "[ ci_hdrc_add_device | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/chipidea/core.c#L825 ], ",
+    "call path (param)": " [ci_hdrc_add_device->ida_simple_get->ida_pre_get] ",
+    "cond_num": "4",
+    "isControl": "0"
+  }
+]
+[]
+[]
+[]
+[
+  {
+    "id": "14",
+    "risky": "numeric-arith",
+    "acc_path": "min",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1923",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/ktime.h#L55",
+    "drv caller (param)": "[ hw_wait_phy_stable | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/chipidea/core.c#L220 ], ",
+    "call path (param)": " [hw_wait_phy_stable->usleep_range->do_usleep_range->ktime_set] ",
+    "cond_num": "1",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "id": "15",
+    "risky": "numeric-arith",
+    "acc_path": "max",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1923",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1905",
+    "drv caller (param)": "[ hw_wait_phy_stable | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/chipidea/core.c#L220 ], ",
+    "call path (param)": " [hw_wait_phy_stable->usleep_range->do_usleep_range] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "[ ACTUAL_IN || PARAMETER_INlong unsigned int ] -> [ FORMAL_IN || PARAMETER_INmax ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1905 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1905 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]
+[
+  {
+    "id": "16",
+    "risky": "numeric-arith",
+    "acc_path": "m",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/time.c#L526",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/jiffies.h#L301",
+    "drv caller (param)": "[ hw_wait_reg | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/jiffies.h#L361 ], ",
+    "call path (param)": " [hw_wait_reg->__msecs_to_jiffies->_msecs_to_jiffies.43] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "[ ACTUAL_IN || PARAMETER_IN ] -> [ FORMAL_IN || PARAMETER_INm ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/jiffies.h#L301 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/jiffies.h#L301 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/jiffies.h#L301 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]
+[]
+[]
+[]
+[]
+[
+  {
+    "id": "21",
+    "risky": "numeric-arith",
+    "acc_path": "num",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/platform.c#L104",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/platform.c#L75",
+    "drv caller (param)": "[ ci_hdrc_probe | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/chipidea/core.c#L960 ], ",
+    "call path (param)": " [ci_hdrc_probe->platform_get_irq->platform_get_resource] ",
+    "cond_num": "2",
+    "isControl": "0"
+  }
+]
+[]
+[]

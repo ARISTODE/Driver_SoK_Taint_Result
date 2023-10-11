@@ -1,0 +1,206 @@
+[
+  {
+    "id": "4",
+    "risky": "numeric-arith",
+    "acc_path": "id",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L1129",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L531",
+    "drv caller (param)": "[ gprinter_put_minor | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/function/f_printer.c#L1249 ], ",
+    "call path (param)": " [gprinter_put_minor->ida_simple_remove->ida_remove->idr_remove->sub_remove] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [ida_simple_remove->ida_remove->idr_remove->sub_remove] ",
+    "cond_num": "11",
+    "isControl": "0"
+  },
+  {
+    "id": "4",
+    "risky": "val-sen-api (kfree)",
+    "acc_path": "id",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L1129",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L881",
+    "drv caller (param)": "[ gprinter_put_minor | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/function/f_printer.c#L1249 ], ",
+    "call path (param)": " [gprinter_put_minor->ida_simple_remove->ida_remove->free_bitmap] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [ida_simple_remove->ida_remove->free_bitmap] ",
+    "cond_num": "3",
+    "isControl": "0"
+  },
+  {
+    "id": "4",
+    "risky": "arr-idx",
+    "acc_path": "id",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L1129",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L529",
+    "drv caller (param)": "[ gprinter_put_minor | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/function/f_printer.c#L1249 ], ",
+    "call path (param)": " [gprinter_put_minor->ida_simple_remove->ida_remove->idr_remove->sub_remove] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [ida_simple_remove->ida_remove->idr_remove->sub_remove] ",
+    "cond_num": "9",
+    "isControl": "0"
+  },
+  {
+    "id": "4",
+    "risky": "val-sen-branch (memcpy)",
+    "acc_path": "id",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L1129",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L555",
+    "drv caller (param)": "[ gprinter_put_minor | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/function/f_printer.c#L1249 ], ",
+    "call path (param)": " [gprinter_put_minor->ida_simple_remove->ida_remove->idr_remove] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [ida_simple_remove->ida_remove->idr_remove] ",
+    "cond_num": "2",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "id": "5",
+    "risky": "val-sen-api (kmalloc)",
+    "acc_path": "size",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/slab_common.c#L1018",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/slab_common.c#L1018",
+    "drv caller (param)": "[ printer_req_alloc | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L415 ], ",
+    "call path (param)": " [printer_req_alloc->kmalloc_order] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [device_create->device_create_vargs->device_create_groups_vargs->kzalloc.34->kmalloc_order] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]
+[
+  {
+    "id": "6",
+    "risky": "val-sen-api (kmalloc)",
+    "acc_path": "flags",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/slab_common.c#L1018",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/slab_common.c#L1018",
+    "drv caller (param)": "[ printer_req_alloc | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L415 ], ",
+    "call path (param)": " [printer_req_alloc->kmalloc_order] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [device_create->device_create_vargs->device_create_groups_vargs->kzalloc.34->kmalloc_order] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]
+[
+  {
+    "id": "9",
+    "risky": "numeric-arith",
+    "acc_path": "start",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L1100",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L985",
+    "drv caller (param)": "[ gprinter_get_minor | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/function/f_printer.c#L1238 ], ",
+    "call path (param)": " [gprinter_get_minor->ida_simple_get->ida_get_new_above] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [ida_simple_get->ida_get_new_above] ",
+    "cond_num": "8",
+    "isControl": "0"
+  },
+  {
+    "id": "9",
+    "risky": "val-sen-api (memset)",
+    "acc_path": "start",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L1100",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L965",
+    "drv caller (param)": "[ gprinter_get_minor | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/function/f_printer.c#L1238 ], ",
+    "call path (param)": " [gprinter_get_minor->ida_simple_get->ida_get_new_above] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [ida_simple_get->ida_get_new_above] ",
+    "cond_num": "3",
+    "isControl": "0"
+  },
+  {
+    "id": "9",
+    "risky": "val-sen-branch (memcpy)",
+    "acc_path": "start",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L1100",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L966",
+    "drv caller (param)": "[ gprinter_get_minor | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/function/f_printer.c#L1238 ], ",
+    "call path (param)": " [gprinter_get_minor->ida_simple_get->ida_get_new_above] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [ida_simple_get->ida_get_new_above] ",
+    "cond_num": "4",
+    "isControl": "0"
+  },
+  {
+    "id": "9",
+    "risky": "arr-idx",
+    "acc_path": "start",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L1100",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L966",
+    "drv caller (param)": "[ gprinter_get_minor | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/function/f_printer.c#L1238 ], ",
+    "call path (param)": " [gprinter_get_minor->ida_simple_get->ida_get_new_above] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [ida_simple_get->ida_get_new_above] ",
+    "cond_num": "5",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "id": "11",
+    "risky": "val-sen-api (kmalloc)",
+    "acc_path": "gfp_mask",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L1096",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L391",
+    "drv caller (param)": "[ gprinter_get_minor | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/function/f_printer.c#L1238 ], ",
+    "call path (param)": " [gprinter_get_minor->ida_simple_get->ida_pre_get] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [ida_simple_get->ida_pre_get] ",
+    "cond_num": "8",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "id": "14",
+    "risky": "numeric-arith",
+    "acc_path": "nr_exclusive",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L95",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L74",
+    "drv caller (param)": "[ tx_complete | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/function/f_printer.c#L328 ], ",
+    "call path (param)": " [tx_complete->__wake_up->__wake_up_common] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [__wake_up->__wake_up_common] ",
+    "cond_num": "3",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "id": "18",
+    "risky": "numeric-arith",
+    "acc_path": "baseminor",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/char_dev.c#L218",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/char_dev.c#L124",
+    "drv caller (param)": "[ gprinter_setup | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/function/f_printer.c#L1442 ], ",
+    "call path (param)": " [gprinter_setup->alloc_chrdev_region->__register_chrdev_region] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [alloc_chrdev_region->__register_chrdev_region] ",
+    "cond_num": "5",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "id": "19",
+    "risky": "numeric-arith",
+    "acc_path": "count",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/char_dev.c#L218",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/char_dev.c#L124",
+    "drv caller (param)": "[ gprinter_setup | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/function/f_printer.c#L1442 ], ",
+    "call path (param)": " [gprinter_setup->alloc_chrdev_region->__register_chrdev_region] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [alloc_chrdev_region->__register_chrdev_region] ",
+    "cond_num": "5",
+    "isControl": "0"
+  }
+]

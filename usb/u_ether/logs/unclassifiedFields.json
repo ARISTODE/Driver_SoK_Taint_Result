@@ -1,0 +1,30 @@
+{
+  "id": 3,
+  "acc_path": "sockaddr->sa_family",
+  "Kernel read": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/core/dev.c#L6574], ",
+  "Drv update": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/function/u_ether.c#L885], "
+}
+{
+  "id": 14,
+  "acc_path": "len",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/core/skbuff.c#L1459 | skb_put",
+  "Drv update": ""
+}
+{
+  "id": 15,
+  "acc_path": "flags",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/locking/spinlock.c#L189 | _raw_spin_unlock_irqrestore",
+  "Drv update": ""
+}
+{
+  "id": 17,
+  "acc_path": "txqs",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ethernet/eth.c#L385 | alloc_etherdev_mqs",
+  "Drv update": ""
+}
+{
+  "id": 18,
+  "acc_path": "rxqs",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ethernet/eth.c#L385 | alloc_etherdev_mqs",
+  "Drv update": ""
+}

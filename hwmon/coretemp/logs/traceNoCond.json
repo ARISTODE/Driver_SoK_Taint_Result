@@ -1,0 +1,12 @@
+[
+  {
+    "id": "1",
+    "risky": "sensitive op ptr kfree",
+    "acc_path": "attribute_group->attrs",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/params.c#L697",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/slab_common.c#L1297",
+    "call path": "",
+    "cond_num": "8",
+    "isControl": "0"
+  }
+]

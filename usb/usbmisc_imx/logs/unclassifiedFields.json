@@ -1,0 +1,12 @@
+{
+  "id": 2,
+  "acc_path": "type",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/platform.c#L67 | platform_get_resource",
+  "Drv update": ""
+}
+{
+  "id": 3,
+  "acc_path": "num",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/platform.c#L67 | platform_get_resource",
+  "Drv update": ""
+}

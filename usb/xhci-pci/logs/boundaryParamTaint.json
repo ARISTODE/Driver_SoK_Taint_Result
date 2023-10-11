@@ -1,0 +1,32 @@
+[
+  {
+    "id": "3",
+    "risky": "val-sen-branch (pci_platform_power_transition)",
+    "acc_path": "state",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/pci.c#L898",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/pci.c#L795",
+    "drv caller (param)": "[ xhci_pci_remove | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/host/xhci-pci.c#L320 ], ",
+    "call path (param)": " [xhci_pci_remove->pci_set_power_state->__pci_start_power_transition] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [usb_hcd_pci_probe->pci_enable_device->pci_enable_device_flags->do_pci_enable_device->pci_set_power_state->__pci_start_power_transition] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "[ ACTUAL_IN || PARAMETER_INpci_power_t ] -> [ FORMAL_IN || PARAMETER_INstate ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/pci.c#L795 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  },
+  {
+    "id": "3",
+    "risky": "val-sen-api (pci_platform_power_transition)",
+    "acc_path": "state",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/pci.c#L912",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/pci.c#L854",
+    "drv caller (param)": "[ xhci_pci_remove | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/host/xhci-pci.c#L320 ], ",
+    "call path (param)": " [xhci_pci_remove->pci_set_power_state->__pci_complete_power_transition] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [usb_hcd_pci_probe->pci_enable_device->pci_enable_device_flags->do_pci_enable_device->pci_set_power_state->__pci_complete_power_transition] ",
+    "cond_num": "1",
+    "isControl": "0"
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "struct name": "scatterlist",
+    "No.fields": 5,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "crypto_tfm",
+    "No.fields": 5,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "skcipher_request",
+    "No.fields": 6,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "crypto_skcipher",
+    "No.fields": 7,
+    "No.classified fields": 0
+  }
+]

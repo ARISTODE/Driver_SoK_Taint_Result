@@ -1,0 +1,492 @@
+{
+  "id": 5,
+  "acc_path": "gendisk->flags",
+  "Kernel read": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/genhd.h#L247],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/genhd.h#L247],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/block_dev.c#L1339],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/block_dev.c#L1465],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/genhd.c#L596],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/genhd.c#L987],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/genhd.h#L239],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/genhd.c#L971],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/genhd.h#L239],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/genhd.c#L658],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/genhd.c#L598], ",
+  "Drv update": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/block/rbd.c#L3647], "
+}
+{
+  "id": 11,
+  "acc_path": "blk_mq_tag_set->flags",
+  "Kernel read": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1948],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1743],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1952],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L2092],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1947],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L1932], ",
+  "Drv update": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/block/rbd.c#L3655], "
+}
+{
+  "id": 15,
+  "acc_path": "queue_limits->max_sectors",
+  "Kernel read": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-settings.c#L523],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-settings.c#L523],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/blkdev.h#L891], ",
+  "Drv update": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/block/rbd.c#L3675], "
+}
+{
+  "id": 18,
+  "acc_path": "queue_limits->discard_zeroes_data",
+  "Kernel read": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-settings.c#L572],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-settings.c#L572], ",
+  "Drv update": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/block/rbd.c#L3686], "
+}
+{
+  "id": 28,
+  "acc_path": "ceph_osd_request_target->flags",
+  "Kernel read": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L2238],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L1578],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L1580],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L1582],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L1494],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L1586],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L1482],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L1654],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L381],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L2872],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L3058],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L1296],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L3535],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L1347],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L1649],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L1703],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L1655],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L1644],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L1346],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L1702],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L2792],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L1295],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L1708],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L1700],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L1349],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L1704],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L1701], ",
+  "Drv update": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/block/rbd.c#L1935],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/block/rbd.c#L1990],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/block/rbd.c#L1933], "
+}
+{
+  "id": 31,
+  "acc_path": "ceph_osd_request->r_snapid",
+  "Kernel read": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L480],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L1531],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L1484], ",
+  "Drv update": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/block/rbd.c#L1884], "
+}
+{
+  "id": 32,
+  "acc_path": "ceph_osd_request->r_data_offset",
+  "Kernel read": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L1486],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L1554], ",
+  "Drv update": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/block/rbd.c#L1892], "
+}
+{
+  "id": 33,
+  "acc_path": "ceph_object_locator->pool",
+  "Kernel read": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L1504],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osdmap.c#L1519],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L3021],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osdmap.c#L1889],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osdmap.c#L1869],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osdmap.c#L1866],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L2845],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L2862],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L1630],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L2871],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L1486],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L2845],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/ceph/osdmap.h#L77],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L1294],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L1515],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./arch/x86/include/asm/atomic64_64.h#L153],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L1658],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L1320],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/ceph/osdmap.h#L77],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L3056],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osdmap.c#L1885],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osdmap.c#L1861], ",
+  "Drv update": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/ceph/osdmap.h#L71],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/block/rbd.c#L1940],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/block/rbd.c#L5192],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/block/rbd.c#L1994], "
+}
+{
+  "id": 37,
+  "acc_path": "ceph_file_layout->pool_id",
+  "Kernel read": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L960], ",
+  "Drv update": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/block/rbd.c#L4002], "
+}
+{
+  "id": 38,
+  "acc_path": "ceph_snap_context->seq",
+  "Kernel read": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L1547],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L1486],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L1556],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L1533], ",
+  "Drv update": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/block/rbd.c#L946],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/block/rbd.c#L4558], "
+}
+{
+  "id": 40,
+  "acc_path": "snap_count",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/snapshot.c#L42 | ceph_create_snap_context",
+  "Drv update": ""
+}
+{
+  "id": 44,
+  "acc_path": "order",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/slab_common.c#L1009 | kmalloc_order",
+  "Drv update": ""
+}
+{
+  "id": 45,
+  "acc_path": "num_ops",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L505 | ceph_osdc_alloc_request",
+  "Drv update": ""
+}
+{
+  "id": 46,
+  "acc_path": "use_mempool",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L505 | ceph_osdc_alloc_request",
+  "Drv update": ""
+}
+{
+  "id": 49,
+  "acc_path": "opcode",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L626 | osd_req_op_init",
+  "Drv update": ""
+}
+{
+  "id": 50,
+  "acc_path": "flags",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L626 | osd_req_op_init",
+  "Drv update": ""
+}
+{
+  "id": 52,
+  "acc_path": "opcode",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L633 | osd_req_op_extent_init",
+  "Drv update": ""
+}
+{
+  "id": 53,
+  "acc_path": "offset",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L633 | osd_req_op_extent_init",
+  "Drv update": ""
+}
+{
+  "id": 54,
+  "acc_path": "length",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L633 | osd_req_op_extent_init",
+  "Drv update": ""
+}
+{
+  "id": 55,
+  "acc_path": "truncate_size",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L633 | osd_req_op_extent_init",
+  "Drv update": ""
+}
+{
+  "id": 56,
+  "acc_path": "truncate_seq",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L633 | osd_req_op_extent_init",
+  "Drv update": ""
+}
+{
+  "id": 57,
+  "acc_path": "gfp",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L543 | ceph_osdc_alloc_messages",
+  "Drv update": ""
+}
+{
+  "id": 61,
+  "acc_path": "data",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L3580 | ceph_osdc_watch",
+  "Drv update": ""
+}
+{
+  "id": 63,
+  "acc_path": "expected_object_size",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L781 | osd_req_op_alloc_hint_init",
+  "Drv update": ""
+}
+{
+  "id": 64,
+  "acc_path": "expected_write_size",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L781 | osd_req_op_alloc_hint_init",
+  "Drv update": ""
+}
+{
+  "id": 66,
+  "acc_path": "opcode",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L698 | osd_req_op_cls_init",
+  "Drv update": ""
+}
+{
+  "id": 69,
+  "acc_path": "which",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L265 | osd_req_op_cls_response_data_pages",
+  "Drv update": ""
+}
+{
+  "id": 70,
+  "acc_path": "length",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L265 | osd_req_op_cls_response_data_pages",
+  "Drv update": ""
+}
+{
+  "id": 71,
+  "acc_path": "alignment",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L265 | osd_req_op_cls_response_data_pages",
+  "Drv update": ""
+}
+{
+  "id": 72,
+  "acc_path": "pages_from_pool",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L265 | osd_req_op_cls_response_data_pages",
+  "Drv update": ""
+}
+{
+  "id": 73,
+  "acc_path": "own_pages",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L265 | osd_req_op_cls_response_data_pages",
+  "Drv update": ""
+}
+{
+  "id": 74,
+  "acc_path": "which",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L251 | osd_req_op_cls_request_data_pages",
+  "Drv update": ""
+}
+{
+  "id": 75,
+  "acc_path": "length",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L251 | osd_req_op_cls_request_data_pages",
+  "Drv update": ""
+}
+{
+  "id": 76,
+  "acc_path": "alignment",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L251 | osd_req_op_cls_request_data_pages",
+  "Drv update": ""
+}
+{
+  "id": 77,
+  "acc_path": "pages_from_pool",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L251 | osd_req_op_cls_request_data_pages",
+  "Drv update": ""
+}
+{
+  "id": 78,
+  "acc_path": "own_pages",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L251 | osd_req_op_cls_request_data_pages",
+  "Drv update": ""
+}
+{
+  "id": 79,
+  "acc_path": "which",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L238 | osd_req_op_cls_request_data_pagelist",
+  "Drv update": ""
+}
+{
+  "id": 80,
+  "acc_path": "which",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L217 | osd_req_op_extent_osd_data_bio",
+  "Drv update": ""
+}
+{
+  "id": 81,
+  "acc_path": "bio_length",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L217 | osd_req_op_extent_osd_data_bio",
+  "Drv update": ""
+}
+{
+  "id": 83,
+  "acc_path": "off",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/pagevec.c#L142 | ceph_copy_from_page_vector",
+  "Drv update": ""
+}
+{
+  "id": 84,
+  "acc_path": "len",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/pagevec.c#L142 | ceph_copy_from_page_vector",
+  "Drv update": ""
+}
+{
+  "id": 85,
+  "acc_path": "num_pages",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/pagevec.c#L71 | ceph_alloc_page_vector",
+  "Drv update": ""
+}
+{
+  "id": 86,
+  "acc_path": "flags",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/pagevec.c#L71 | ceph_alloc_page_vector",
+  "Drv update": ""
+}
+{
+  "id": 87,
+  "acc_path": "num_pages",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/pagevec.c#L58 | ceph_release_page_vector",
+  "Drv update": ""
+}
+{
+  "id": 89,
+  "acc_path": "len",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/pagelist.c#L53 | ceph_pagelist_append",
+  "Drv update": ""
+}
+{
+  "id": 90,
+  "acc_path": "id",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osdmap.c#L512 | ceph_pg_pool_name_by_id",
+  "Drv update": ""
+}
+{
+  "id": 91,
+  "acc_path": "size",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/slab_common.c#L389 | kmem_cache_create",
+  "Drv update": ""
+}
+{
+  "id": 94,
+  "acc_path": "which",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L193 | osd_req_op_extent_osd_data_pages",
+  "Drv update": ""
+}
+{
+  "id": 95,
+  "acc_path": "length",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L193 | osd_req_op_extent_osd_data_pages",
+  "Drv update": ""
+}
+{
+  "id": 96,
+  "acc_path": "alignment",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L193 | osd_req_op_extent_osd_data_pages",
+  "Drv update": ""
+}
+{
+  "id": 97,
+  "acc_path": "pages_from_pool",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L193 | osd_req_op_extent_osd_data_pages",
+  "Drv update": ""
+}
+{
+  "id": 98,
+  "acc_path": "own_pages",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L193 | osd_req_op_extent_osd_data_pages",
+  "Drv update": ""
+}
+{
+  "id": 99,
+  "acc_path": "nofail",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L3452 | ceph_osdc_start_request",
+  "Drv update": ""
+}
+{
+  "id": 100,
+  "acc_path": "base",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/bsearch.c#L33 | bsearch",
+  "Drv update": ""
+}
+{
+  "id": 101,
+  "acc_path": "num",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/bsearch.c#L33 | bsearch",
+  "Drv update": ""
+}
+{
+  "id": 102,
+  "acc_path": "size",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/bsearch.c#L33 | bsearch",
+  "Drv update": ""
+}
+{
+  "id": 104,
+  "acc_path": "length",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L180 | osd_req_op_raw_data_in_pages",
+  "Drv update": ""
+}
+{
+  "id": 105,
+  "acc_path": "alignment",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L180 | osd_req_op_raw_data_in_pages",
+  "Drv update": ""
+}
+{
+  "id": 106,
+  "acc_path": "pages_from_pool",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L180 | osd_req_op_raw_data_in_pages",
+  "Drv update": ""
+}
+{
+  "id": 107,
+  "acc_path": "own_pages",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/osd_client.c#L180 | osd_req_op_raw_data_in_pages",
+  "Drv update": ""
+}
+{
+  "id": 108,
+  "acc_path": "epoch",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/mon_client.c#L400 | ceph_monc_wait_osdmap",
+  "Drv update": ""
+}
+{
+  "id": 109,
+  "acc_path": "timeout",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/mon_client.c#L400 | ceph_monc_wait_osdmap",
+  "Drv update": ""
+}
+{
+  "id": 110,
+  "acc_path": "flag",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/genhd.c#L1380 | set_disk_ro",
+  "Drv update": ""
+}
+{
+  "id": 111,
+  "acc_path": "supported_features",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/ceph_common.c#L578 | ceph_create_client",
+  "Drv update": ""
+}
+{
+  "id": 112,
+  "acc_path": "required_features",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/ceph_common.c#L578 | ceph_create_client",
+  "Drv update": ""
+}
+{
+  "id": 113,
+  "acc_path": "flags",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L3895 | __alloc_workqueue_key",
+  "Drv update": ""
+}
+{
+  "id": 114,
+  "acc_path": "max_active",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L3895 | __alloc_workqueue_key",
+  "Drv update": ""
+}
+{
+  "id": 116,
+  "acc_path": "end",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L1078 | ida_simple_get",
+  "Drv update": ""
+}
+{
+  "id": 119,
+  "acc_path": "private",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ceph/ceph_common.c#L338 | ceph_parse_options",
+  "Drv update": ""
+}
+{
+  "id": 120,
+  "acc_path": "timeout",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/completion.c#L209 | wait_for_completion_interruptible_timeout",
+  "Drv update": ""
+}
+{
+  "id": 121,
+  "acc_path": "error",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-core.c#L2539 | blk_update_request",
+  "Drv update": ""
+}
+{
+  "id": 124,
+  "acc_path": "error",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L374 | blk_mq_end_request",
+  "Drv update": ""
+}
+{
+  "id": 125,
+  "acc_path": "error",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L360 | __blk_mq_end_request",
+  "Drv update": ""
+}
+{
+  "id": 126,
+  "acc_path": "minors",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/genhd.c#L1284 | alloc_disk",
+  "Drv update": ""
+}
+{
+  "id": 127,
+  "acc_path": "major",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/genhd.c#L287 | register_blkdev",
+  "Drv update": ""
+}
+{
+  "id": 128,
+  "acc_path": "major",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/genhd.c#L343 | unregister_blkdev",
+  "Drv update": ""
+}
+{
+  "id": 129,
+  "acc_path": "max_segments",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-settings.c#L309 | blk_queue_max_segments",
+  "Drv update": ""
+}
+{
+  "id": 130,
+  "acc_path": "opt",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-settings.c#L480 | blk_queue_io_opt",
+  "Drv update": ""
+}
+{
+  "id": 131,
+  "acc_path": "min",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-settings.c#L442 | blk_queue_io_min",
+  "Drv update": ""
+}
+{
+  "id": 132,
+  "acc_path": "max_size",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-settings.c#L330 | blk_queue_max_segment_size",
+  "Drv update": ""
+}
+{
+  "id": 133,
+  "acc_path": "max_discard_sectors",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-settings.c#L280 | blk_queue_max_discard_sectors",
+  "Drv update": ""
+}
+{
+  "id": 134,
+  "acc_path": "max_hw_sectors",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-settings.c#L237 | blk_queue_max_hw_sectors",
+  "Drv update": ""
+}

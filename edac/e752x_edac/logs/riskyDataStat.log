@@ -1,0 +1,20 @@
+{
+  "KRDU fields": 13,
+  "ptr fields": 6,
+  "func ptr fields": 2,
+  "data ptr fields": 4,
+  "PTR_ARITH_BASE": 2,
+  "PTR_BUFFER": 2,
+  "PTR_WRITE": 3,
+  "PTR_READ": 4,
+  "FUNC_PTR": 2,
+  "CONTROL_SENB_RANCH": 2,
+  "NUM_ARITH": 1,
+  "UNCLASSIFY": 6
+}
+{
+  "num boundary arg": 15,
+  "NUM_ARITH": 2,
+  "ARR_IDX": 2,
+  "UNCLASSIFY": 13
+}

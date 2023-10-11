@@ -1,0 +1,79 @@
+[
+  {
+    "struct name": "kmem_cache",
+    "No.fields": 0,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "__wait_queue_head",
+    "No.fields": 2,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "kobject",
+    "No.fields": 12,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "static_key",
+    "No.fields": 3,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "__wait_queue",
+    "No.fields": 4,
+    "No.classified fields": 1,
+    "UNCLASSIFY": 1
+  }
+]
+[
+  {
+    "struct name": "spinlock",
+    "No.fields": 1,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "list_head",
+    "No.fields": 2,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "task_struct",
+    "No.fields": 155,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "kthread_worker",
+    "No.fields": 4,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "kthread_work",
+    "No.fields": 3,
+    "No.classified fields": 1,
+    "FUNC_PTR": 1
+  }
+]
+[
+  {
+    "struct name": "device",
+    "No.fields": 33,
+    "No.classified fields": 0
+  }
+]

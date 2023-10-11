@@ -1,0 +1,56 @@
+[
+  {
+    "id": "2",
+    "risky": "arr-idx",
+    "acc_path": "cpu",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/lib/msr-smp.c#L169",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/smp.c#L165",
+    "drv caller (param)": "[ adjust_tjmax | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/coretemp.c#L323 ], ",
+    "call path (param)": " [adjust_tjmax->rdmsr_safe_on_cpu->smp_call_function_single->generic_exec_single] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [rdmsr_safe_on_cpu->smp_call_function_single->generic_exec_single] ",
+    "cond_num": "10",
+    "isControl": "0"
+  },
+  {
+    "id": "2",
+    "risky": "numeric-arith",
+    "acc_path": "cpu",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/lib/msr-smp.c#L169",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/smp.c#L165",
+    "drv caller (param)": "[ adjust_tjmax | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/coretemp.c#L323 ], ",
+    "call path (param)": " [adjust_tjmax->rdmsr_safe_on_cpu->smp_call_function_single->generic_exec_single] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [rdmsr_safe_on_cpu->smp_call_function_single->generic_exec_single] ",
+    "cond_num": "10",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "id": "4",
+    "risky": "arr-idx",
+    "acc_path": "cpu",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/lib/msr-smp.c#L42",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/smp.c#L165",
+    "drv caller (param)": "[ show_temp | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/coretemp.c#L176 ], ",
+    "call path (param)": " [show_temp->rdmsr_on_cpu->smp_call_function_single->generic_exec_single] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [rdmsr_safe_on_cpu->smp_call_function_single->generic_exec_single] ",
+    "cond_num": "10",
+    "isControl": "0"
+  },
+  {
+    "id": "4",
+    "risky": "numeric-arith",
+    "acc_path": "cpu",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/lib/msr-smp.c#L42",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/smp.c#L165",
+    "drv caller (param)": "[ show_temp | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/coretemp.c#L176 ], ",
+    "call path (param)": " [show_temp->rdmsr_on_cpu->smp_call_function_single->generic_exec_single] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [rdmsr_safe_on_cpu->smp_call_function_single->generic_exec_single] ",
+    "cond_num": "10",
+    "isControl": "0"
+  }
+]

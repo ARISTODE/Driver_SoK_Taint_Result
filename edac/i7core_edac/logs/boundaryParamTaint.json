@@ -1,0 +1,113 @@
+[
+  {
+    "id": "25",
+    "risky": "val-sen-api (kmalloc)",
+    "acc_path": "gfp",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/kasprintf.c#L58",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/kasprintf.c#L24",
+    "drv caller (param)": "[ i7core_register_mci | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/i7core_edac.c#L2162 ], ",
+    "call path (param)": " [i7core_register_mci->kasprintf->kvasprintf] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [kasprintf->kvasprintf] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "[ ACTUAL_IN || PARAMETER_INgfp_t ] -> [ FORMAL_IN || PARAMETER_INgfp ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/kasprintf.c#L24 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]
+[
+  {
+    "id": "27",
+    "risky": "arr-idx",
+    "acc_path": "n_layers",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L306",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L180",
+    "drv caller (param)": "[ i7core_register_mci | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/i7core_edac.c#L2138 ], ",
+    "call path (param)": " [i7core_register_mci->edac_mc_alloc->edac_align_ptr] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [edac_mc_alloc->edac_align_ptr] ",
+    "cond_num": "2",
+    "isControl": "0"
+  },
+  {
+    "id": "27",
+    "risky": "numeric-arith",
+    "acc_path": "n_layers",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L306",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L180",
+    "drv caller (param)": "[ i7core_register_mci | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/i7core_edac.c#L2138 ], ",
+    "call path (param)": " [i7core_register_mci->edac_mc_alloc->edac_align_ptr] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [edac_mc_alloc->edac_align_ptr] ",
+    "cond_num": "2",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "id": "28",
+    "risky": "arr-idx",
+    "acc_path": "sz_pvt",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L316",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L180",
+    "drv caller (param)": "[ i7core_register_mci | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/i7core_edac.c#L2138 ], ",
+    "call path (param)": " [i7core_register_mci->edac_mc_alloc->edac_align_ptr] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [edac_mc_alloc->edac_align_ptr] ",
+    "cond_num": "4",
+    "isControl": "0"
+  },
+  {
+    "id": "28",
+    "risky": "numeric-arith",
+    "acc_path": "sz_pvt",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L316",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L180",
+    "drv caller (param)": "[ i7core_register_mci | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/i7core_edac.c#L2138 ], ",
+    "call path (param)": " [i7core_register_mci->edac_mc_alloc->edac_align_ptr] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [edac_mc_alloc->edac_align_ptr] ",
+    "cond_num": "4",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "id": "29",
+    "risky": "val-sen-api (pci_get_subsys)",
+    "acc_path": "vendor",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/search.c#L330",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/search.c#L330",
+    "drv caller (param)": "[ i7core_get_onedevice | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/i7core_edac.c#L1321 ], ",
+    "call path (param)": " [i7core_get_onedevice->pci_get_device] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [pci_get_device] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]
+[
+  {
+    "id": "30",
+    "risky": "val-sen-api (pci_get_subsys)",
+    "acc_path": "device",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/search.c#L330",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/search.c#L330",
+    "drv caller (param)": "[ i7core_get_onedevice | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/i7core_edac.c#L1321 ], ",
+    "call path (param)": " [i7core_get_onedevice->pci_get_device] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [pci_get_device] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]

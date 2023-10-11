@@ -1,0 +1,12 @@
+{
+  "KRDU fields": 3,
+  "ptr fields": 1,
+  "func ptr fields": 0,
+  "data ptr fields": 1,
+  "PTR_READ": 1,
+  "UNCLASSIFY": 2
+}
+{
+  "num boundary arg": 5,
+  "UNCLASSIFY": 5
+}

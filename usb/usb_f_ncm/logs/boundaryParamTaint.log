@@ -1,0 +1,77 @@
+[]
+[
+  {
+    "id": "1",
+    "risky": "val-sen-api (kmalloc)",
+    "acc_path": "size",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/slab_common.c#L1018",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/slab_common.c#L1018",
+    "drv caller (param)": "[ ncm_bind | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L415 ], ",
+    "call path (param)": " [ncm_bind->kmalloc_order] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]
+[
+  {
+    "id": "2",
+    "risky": "val-sen-api (kmalloc)",
+    "acc_path": "flags",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/slab_common.c#L1018",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/slab_common.c#L1018",
+    "drv caller (param)": "[ ncm_bind | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L415 ], ",
+    "call path (param)": " [ncm_bind->kmalloc_order] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]
+[]
+[
+  {
+    "id": "4",
+    "risky": "arr-idx",
+    "acc_path": "clock_id",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/hrtimer.c#L1149",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/hrtimer.c#L105",
+    "drv caller (param)": "[ ncm_bind | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/function/f_ncm.c#L1449 ], ",
+    "call path (param)": " [ncm_bind->hrtimer_init->__hrtimer_init->hrtimer_clockid_to_base] ",
+    "cond_num": "2",
+    "isControl": "0"
+  }
+]
+[]
+[
+  {
+    "id": "6",
+    "risky": "arr-idx",
+    "acc_path": "crc",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/crc32.c#L196",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/crc32.c#L109",
+    "drv caller (param)": "[ ncm_unwrap_ntb | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/function/f_ncm.c#L1223 ], ",
+    "call path (param)": " [ncm_unwrap_ntb->crc32_le->crc32_le_generic->crc32_body] ",
+    "cond_num": "5",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "id": "7",
+    "risky": "numeric-arith",
+    "acc_path": "len",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/crc32.c#L196",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/crc32.c#L87",
+    "drv caller (param)": "[ ncm_unwrap_ntb | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/function/f_ncm.c#L1223 ], ",
+    "call path (param)": " [ncm_unwrap_ntb->crc32_le->crc32_le_generic->crc32_body] ",
+    "cond_num": "2",
+    "isControl": "0"
+  }
+]
+[]

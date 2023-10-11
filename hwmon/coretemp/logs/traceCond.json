@@ -1,0 +1,33 @@
+[
+  {
+    "id": "0",
+    "risky": "sensitive branch ptr trans sen op",
+    "acc_path": "attribute_group->attrs",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/params.c#L683",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/params.c#L683",
+    "call path": "",
+    "cond_num": "0",
+    "isControl": "1",
+    "drv_update loc (shared field)": "[ (create_core_attrs)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/coretemp.c#L415 ], ",
+    "t_trace": "[ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/params.c#L683 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  },
+  {
+    "id": "2",
+    "risky": "ptr deref",
+    "acc_path": "attribute_group->attrs",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/sysfs/group.c#L28",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/sysfs/group.c#L29",
+    "call path": " [platform_device_add->device_add->device_remove_attrs->device_remove_groups->sysfs_remove_groups->sysfs_remove_group->remove_files] ",
+    "cond_num": "1",
+    "isControl": "1",
+    "drv caller (param)": "",
+    "drv_update loc (shared field)": "[ (create_core_attrs)https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/coretemp.c#L415 ], ",
+    "t_trace": "[ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/sysfs/group.c#L28 ] -> [ INST || DATA_ST || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/sysfs/group.c#L21 |   %5 = alloca %struct.attribute**, align 8 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/sysfs/group.c#L29 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]

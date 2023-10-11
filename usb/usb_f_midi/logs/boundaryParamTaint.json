@@ -1,0 +1,166 @@
+[
+  {
+    "id": "8",
+    "risky": "val-sen-branch (kzalloc)",
+    "acc_path": "output_count",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/rawmidi.c#L1562",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/rawmidi.c#L1486",
+    "drv caller (param)": "[ f_midi_register_card | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/function/f_midi.c#L752 ], ",
+    "call path (param)": " [f_midi_register_card->snd_rawmidi_new->snd_rawmidi_alloc_substreams] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [snd_rawmidi_new->snd_rawmidi_alloc_substreams] ",
+    "cond_num": "3",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "id": "9",
+    "risky": "val-sen-branch (kzalloc)",
+    "acc_path": "input_count",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/rawmidi.c#L1555",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/rawmidi.c#L1486",
+    "drv caller (param)": "[ f_midi_register_card | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/function/f_midi.c#L752 ], ",
+    "call path (param)": " [f_midi_register_card->snd_rawmidi_new->snd_rawmidi_alloc_substreams] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [snd_rawmidi_new->snd_rawmidi_alloc_substreams] ",
+    "cond_num": "1",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "id": "10",
+    "risky": "ptr-sen-api (memcpy)",
+    "acc_path": "buf",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/kfifo.c#L459",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/kfifo.c#L118",
+    "drv caller (param)": "[ f_midi_do_transmit | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/function/f_midi.c#L593 ], ",
+    "call path (param)": " [f_midi_do_transmit->__kfifo_in_r->kfifo_copy_in] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [__kfifo_in_r->kfifo_copy_in] ",
+    "cond_num": "6",
+    "isControl": "0"
+  },
+  {
+    "id": "10",
+    "risky": "ptr-write",
+    "acc_path": "buf",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/kfifo.c#L459",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/kfifo.c#L117",
+    "drv caller (param)": "[ f_midi_do_transmit | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/function/f_midi.c#L593 ], ",
+    "call path (param)": " [f_midi_do_transmit->__kfifo_in_r->kfifo_copy_in] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [__kfifo_in_r->kfifo_copy_in] ",
+    "cond_num": "4",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "id": "11",
+    "risky": "val-sen-branch (memcpy)",
+    "acc_path": "len",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/kfifo.c#L459",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/kfifo.c#L117",
+    "drv caller (param)": "[ f_midi_do_transmit | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/function/f_midi.c#L593 ], ",
+    "call path (param)": " [f_midi_do_transmit->__kfifo_in_r->kfifo_copy_in] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [__kfifo_in_r->kfifo_copy_in] ",
+    "cond_num": "3",
+    "isControl": "0"
+  },
+  {
+    "id": "11",
+    "risky": "numeric-arith",
+    "acc_path": "len",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/kfifo.c#L459",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/kfifo.c#L118",
+    "drv caller (param)": "[ f_midi_do_transmit | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/function/f_midi.c#L593 ], ",
+    "call path (param)": " [f_midi_do_transmit->__kfifo_in_r->kfifo_copy_in] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [__kfifo_in_r->kfifo_copy_in] ",
+    "cond_num": "4",
+    "isControl": "0"
+  },
+  {
+    "id": "11",
+    "risky": "arr-idx",
+    "acc_path": "len",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/kfifo.c#L459",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/kfifo.c#L118",
+    "drv caller (param)": "[ f_midi_do_transmit | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/function/f_midi.c#L593 ], ",
+    "call path (param)": " [f_midi_do_transmit->__kfifo_in_r->kfifo_copy_in] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [__kfifo_in_r->kfifo_copy_in] ",
+    "cond_num": "6",
+    "isControl": "0"
+  },
+  {
+    "id": "11",
+    "risky": "val-sen-api (memcpy)",
+    "acc_path": "len",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/kfifo.c#L459",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/kfifo.c#L118",
+    "drv caller (param)": "[ f_midi_do_transmit | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/function/f_midi.c#L593 ], ",
+    "call path (param)": " [f_midi_do_transmit->__kfifo_in_r->kfifo_copy_in] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [__kfifo_in_r->kfifo_copy_in] ",
+    "cond_num": "6",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "id": "13",
+    "risky": "numeric-arith",
+    "acc_path": "count",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/rawmidi.c#L1216",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/rawmidi.c#L1158",
+    "drv caller (param)": "[ f_midi_do_transmit | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/function/f_midi.c#L569 ], ",
+    "call path (param)": " [f_midi_do_transmit->snd_rawmidi_transmit->__snd_rawmidi_transmit_ack] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [snd_rawmidi_transmit->__snd_rawmidi_transmit_ack] ",
+    "cond_num": "1",
+    "isControl": "0"
+  },
+  {
+    "id": "13",
+    "risky": "val-sen-api (memcpy)",
+    "acc_path": "count",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/rawmidi.c#L1212",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/rawmidi.c#L1095",
+    "drv caller (param)": "[ f_midi_do_transmit | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/function/f_midi.c#L569 ], ",
+    "call path (param)": " [f_midi_do_transmit->snd_rawmidi_transmit->__snd_rawmidi_transmit_peek] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [snd_rawmidi_transmit->__snd_rawmidi_transmit_peek] ",
+    "cond_num": "7",
+    "isControl": "0"
+  },
+  {
+    "id": "13",
+    "risky": "arr-idx",
+    "acc_path": "count",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/rawmidi.c#L1212",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/rawmidi.c#L1101",
+    "drv caller (param)": "[ f_midi_do_transmit | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/function/f_midi.c#L569 ], ",
+    "call path (param)": " [f_midi_do_transmit->snd_rawmidi_transmit->__snd_rawmidi_transmit_peek] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [snd_rawmidi_transmit->__snd_rawmidi_transmit_peek] ",
+    "cond_num": "11",
+    "isControl": "0"
+  },
+  {
+    "id": "13",
+    "risky": "val-sen-branch (memcpy)",
+    "acc_path": "count",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/rawmidi.c#L1212",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/rawmidi.c#L1095",
+    "drv caller (param)": "[ f_midi_do_transmit | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/function/f_midi.c#L569 ], ",
+    "call path (param)": " [f_midi_do_transmit->snd_rawmidi_transmit->__snd_rawmidi_transmit_peek] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [snd_rawmidi_transmit->__snd_rawmidi_transmit_peek] ",
+    "cond_num": "6",
+    "isControl": "0"
+  }
+]

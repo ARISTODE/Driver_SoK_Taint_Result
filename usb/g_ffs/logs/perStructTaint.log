@@ -1,0 +1,14 @@
+[
+  {
+    "struct name": "module",
+    "No.fields": 46,
+    "No.classified fields": 0
+  }
+]
+[
+  {
+    "struct name": "kmem_cache",
+    "No.fields": 0,
+    "No.classified fields": 0
+  }
+]

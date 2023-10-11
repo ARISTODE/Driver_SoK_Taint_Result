@@ -1,0 +1,804 @@
+[
+  {
+    "id": 0,
+    "kernel boundary func name": "release_firmware",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 2,
+    "call path": "( [3]sst_hsw_module_load ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L1838 )->release_firmware ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/firmware_class.c#L1293 )->kfree ( Unknown Loc ) )"
+  },
+  {
+    "id": 1,
+    "kernel boundary func name": "release_firmware",
+    "risky func": "vfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 0,
+    "No. path cond": 3,
+    "call path": "( [4]sst_hsw_module_load ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L1838 )->release_firmware ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/firmware_class.c#L1293 )->firmware_free_data ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/firmware_class.c#L372 )->vfree ( Unknown Loc ) )"
+  },
+  {
+    "id": 2,
+    "kernel boundary func name": "release_firmware",
+    "risky func": "kref_put",
+    "Risky API Class": "refCount",
+    "Is Controlled Path": 0,
+    "No. path cond": 3,
+    "call path": "( [5]sst_hsw_module_load ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L1838 )->release_firmware ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/firmware_class.c#L1293 )->firmware_free_data ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/firmware_class.c#L372 )->fw_free_buf ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/firmware_class.c#L282 )->kref_put ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/kref.h#L96 ) )"
+  },
+  {
+    "id": 3,
+    "kernel boundary func name": "sst_module_runtime_free_blocks",
+    "risky func": "mutex_lock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "call path": "( [3]sst_hsw_runtime_module_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L1491 )->sst_module_runtime_free_blocks ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L926 )->mutex_lock ( Unknown Loc ) )"
+  },
+  {
+    "id": 4,
+    "kernel boundary func name": "sst_module_runtime_free_blocks",
+    "risky func": "mutex_unlock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "call path": "( [3]sst_hsw_runtime_module_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L1491 )->sst_module_runtime_free_blocks ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L926 )->mutex_unlock ( Unknown Loc ) )"
+  },
+  {
+    "id": 5,
+    "kernel boundary func name": "sst_module_runtime_alloc_blocks",
+    "risky func": "mutex_lock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 1,
+    "call path": "( [3]sst_hsw_runtime_module_create ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L1456 )->sst_module_runtime_alloc_blocks ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L865 )->mutex_lock ( Unknown Loc ) )"
+  },
+  {
+    "id": 6,
+    "kernel boundary func name": "sst_module_runtime_alloc_blocks",
+    "risky func": "mutex_unlock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 2,
+    "call path": "( [3]sst_hsw_runtime_module_create ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L1456 )->sst_module_runtime_alloc_blocks ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L865 )->mutex_unlock ( Unknown Loc ) )"
+  },
+  {
+    "id": 7,
+    "kernel boundary func name": "sst_module_alloc_blocks",
+    "risky func": "mutex_lock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 1,
+    "call path": "( [3]hsw_parse_module ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L88 )->sst_module_alloc_blocks ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L795 )->mutex_lock ( Unknown Loc ) )"
+  },
+  {
+    "id": 8,
+    "kernel boundary func name": "sst_module_alloc_blocks",
+    "risky func": "mutex_unlock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 2,
+    "call path": "( [3]hsw_parse_module ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L88 )->sst_module_alloc_blocks ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L795 )->mutex_unlock ( Unknown Loc ) )"
+  },
+  {
+    "id": 9,
+    "kernel boundary func name": "sst_module_runtime_free",
+    "risky func": "mutex_lock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "call path": "( [3]sst_hsw_runtime_module_create ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L1456 )->sst_module_runtime_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L557 )->mutex_lock ( Unknown Loc ) )( [3]sst_hsw_runtime_module_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L1491 )->sst_module_runtime_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L557 )->mutex_lock ( Unknown Loc ) )"
+  },
+  {
+    "id": 10,
+    "kernel boundary func name": "sst_module_runtime_free",
+    "risky func": "mutex_unlock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "call path": "( [3]sst_hsw_runtime_module_create ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L1456 )->sst_module_runtime_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L557 )->mutex_unlock ( Unknown Loc ) )( [3]sst_hsw_runtime_module_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L1491 )->sst_module_runtime_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L557 )->mutex_unlock ( Unknown Loc ) )"
+  },
+  {
+    "id": 11,
+    "kernel boundary func name": "sst_module_runtime_free",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "call path": "( [3]sst_hsw_runtime_module_create ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L1456 )->sst_module_runtime_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L557 )->kfree ( Unknown Loc ) )( [3]sst_hsw_runtime_module_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L1491 )->sst_module_runtime_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L557 )->kfree ( Unknown Loc ) )"
+  },
+  {
+    "id": 12,
+    "kernel boundary func name": "sst_module_runtime_new",
+    "risky func": "kzalloc.33",
+    "Risky API Class": "",
+    "Is Controlled Path": 1,
+    "call path": "( [3]sst_hsw_runtime_module_create ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L1456 )->sst_module_runtime_new ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L534 )->kzalloc.33 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L634 ) )"
+  },
+  {
+    "id": 13,
+    "kernel boundary func name": "sst_module_runtime_new",
+    "risky func": "mutex_lock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 1,
+    "call path": "( [3]sst_hsw_runtime_module_create ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L1456 )->sst_module_runtime_new ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L534 )->mutex_lock ( Unknown Loc ) )"
+  },
+  {
+    "id": 14,
+    "kernel boundary func name": "sst_module_runtime_new",
+    "risky func": "mutex_unlock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 1,
+    "call path": "( [3]sst_hsw_runtime_module_create ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L1456 )->sst_module_runtime_new ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L534 )->mutex_unlock ( Unknown Loc ) )"
+  },
+  {
+    "id": 15,
+    "kernel boundary func name": "sst_module_free",
+    "risky func": "mutex_lock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "call path": "( [3]hsw_parse_module ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L88 )->sst_module_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L522 )->mutex_lock ( Unknown Loc ) )( [3]hsw_parse_module ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L88 )->sst_module_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L522 )->mutex_lock ( Unknown Loc ) )( [3]hsw_parse_module ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L88 )->sst_module_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L522 )->mutex_lock ( Unknown Loc ) )"
+  },
+  {
+    "id": 16,
+    "kernel boundary func name": "sst_module_free",
+    "risky func": "mutex_unlock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "call path": "( [3]hsw_parse_module ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L88 )->sst_module_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L522 )->mutex_unlock ( Unknown Loc ) )( [3]hsw_parse_module ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L88 )->sst_module_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L522 )->mutex_unlock ( Unknown Loc ) )( [3]hsw_parse_module ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L88 )->sst_module_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L522 )->mutex_unlock ( Unknown Loc ) )"
+  },
+  {
+    "id": 17,
+    "kernel boundary func name": "sst_module_free",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "call path": "( [3]hsw_parse_module ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L88 )->sst_module_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L522 )->kfree ( Unknown Loc ) )( [3]hsw_parse_module ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L88 )->sst_module_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L522 )->kfree ( Unknown Loc ) )( [3]hsw_parse_module ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L88 )->sst_module_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L522 )->kfree ( Unknown Loc ) )"
+  },
+  {
+    "id": 18,
+    "kernel boundary func name": "sst_module_new",
+    "risky func": "kzalloc.33",
+    "Risky API Class": "",
+    "Is Controlled Path": 1,
+    "call path": "( [3]hsw_parse_module ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L88 )->sst_module_new ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L492 )->kzalloc.33 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L634 ) )"
+  },
+  {
+    "id": 19,
+    "kernel boundary func name": "sst_module_new",
+    "risky func": "mutex_lock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 1,
+    "call path": "( [3]hsw_parse_module ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L88 )->sst_module_new ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L492 )->mutex_lock ( Unknown Loc ) )"
+  },
+  {
+    "id": 20,
+    "kernel boundary func name": "sst_module_new",
+    "risky func": "mutex_unlock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 1,
+    "call path": "( [3]hsw_parse_module ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L88 )->sst_module_new ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L492 )->mutex_unlock ( Unknown Loc ) )"
+  },
+  {
+    "id": 21,
+    "kernel boundary func name": "sst_fw_free_all",
+    "risky func": "dma_free_coherent.345",
+    "Risky API Class": "",
+    "Is Controlled Path": 1,
+    "No. path cond": 1,
+    "call path": "( [3]sst_hsw_dsp_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L2221 )->sst_fw_free_all ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L475 )->dma_free_coherent.345 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/dma-mapping.h#L451 ) )( [3]sst_hsw_dsp_init ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L2108 )->sst_fw_free_all ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L475 )->dma_free_coherent.345 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/dma-mapping.h#L451 ) )"
+  },
+  {
+    "id": 22,
+    "kernel boundary func name": "sst_fw_free_all",
+    "risky func": "mutex_lock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "call path": "( [3]sst_hsw_dsp_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L2221 )->sst_fw_free_all ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L475 )->mutex_lock ( Unknown Loc ) )( [3]sst_hsw_dsp_init ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L2108 )->sst_fw_free_all ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L475 )->mutex_lock ( Unknown Loc ) )"
+  },
+  {
+    "id": 23,
+    "kernel boundary func name": "sst_fw_free_all",
+    "risky func": "mutex_unlock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 1,
+    "call path": "( [3]sst_hsw_dsp_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L2221 )->sst_fw_free_all ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L475 )->mutex_unlock ( Unknown Loc ) )( [3]sst_hsw_dsp_init ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L2108 )->sst_fw_free_all ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L475 )->mutex_unlock ( Unknown Loc ) )"
+  },
+  {
+    "id": 24,
+    "kernel boundary func name": "sst_fw_free_all",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 1,
+    "call path": "( [3]sst_hsw_dsp_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L2221 )->sst_fw_free_all ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L475 )->kfree ( Unknown Loc ) )( [3]sst_hsw_dsp_init ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L2108 )->sst_fw_free_all ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L475 )->kfree ( Unknown Loc ) )"
+  },
+  {
+    "id": 25,
+    "kernel boundary func name": "sst_fw_new",
+    "risky func": "kzalloc.33",
+    "Risky API Class": "",
+    "Is Controlled Path": 1,
+    "No. path cond": 18,
+    "call path": "( [3]sst_hsw_module_load ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L1838 )->sst_fw_new ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L342 )->kzalloc.33 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L634 ) )"
+  },
+  {
+    "id": 26,
+    "kernel boundary func name": "sst_fw_new",
+    "risky func": "dma_free_coherent.345",
+    "Risky API Class": "",
+    "Is Controlled Path": 1,
+    "No. path cond": 7,
+    "call path": "( [3]sst_hsw_module_load ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L1838 )->sst_fw_new ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L342 )->dma_free_coherent.345 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/dma-mapping.h#L451 ) )"
+  },
+  {
+    "id": 27,
+    "kernel boundary func name": "sst_fw_new",
+    "risky func": "dma_alloc_coherent.351",
+    "Risky API Class": "",
+    "Is Controlled Path": 1,
+    "No. path cond": 2,
+    "call path": "( [3]sst_hsw_module_load ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L1838 )->sst_fw_new ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L342 )->dma_alloc_coherent.351 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/dma-mapping.h#L445 ) )"
+  },
+  {
+    "id": 28,
+    "kernel boundary func name": "sst_fw_new",
+    "risky func": "mutex_lock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 24,
+    "call path": "( [3]sst_hsw_module_load ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L1838 )->sst_fw_new ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L342 )->mutex_lock ( Unknown Loc ) )"
+  },
+  {
+    "id": 29,
+    "kernel boundary func name": "sst_fw_new",
+    "risky func": "mutex_unlock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 19,
+    "call path": "( [3]sst_hsw_module_load ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L1838 )->sst_fw_new ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L342 )->mutex_unlock ( Unknown Loc ) )"
+  },
+  {
+    "id": 30,
+    "kernel boundary func name": "sst_fw_new",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 7,
+    "call path": "( [6]sst_hsw_module_load ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L1838 )->sst_fw_new ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L342 )->hsw_parse_fw_image ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L179 )->hsw_parse_module ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L88 )->sst_module_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L522 )->kfree ( Unknown Loc ) )"
+  },
+  {
+    "id": 31,
+    "kernel boundary func name": "cancel_work_sync",
+    "risky func": "del_timer",
+    "Risky API Class": "timer",
+    "Is Controlled Path": 0,
+    "No. path cond": 1,
+    "call path": "( [5]sst_hsw_stream_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L1000 )->cancel_work_sync ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L2949 )->__cancel_work_timer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L2873 )->try_to_grab_pending ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1204 )->del_timer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1161 ) )"
+  },
+  {
+    "id": 32,
+    "kernel boundary func name": "sst_ipc_fini",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 3,
+    "call path": "( [3]sst_hsw_dsp_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L2221 )->sst_ipc_fini ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-ipc.c#L300 )->kfree ( Unknown Loc ) )( [3]sst_hsw_dsp_init ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L2108 )->sst_ipc_fini ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-ipc.c#L300 )->kfree ( Unknown Loc ) )"
+  },
+  {
+    "id": 33,
+    "kernel boundary func name": "sst_ipc_init",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 3,
+    "call path": "( [4]sst_hsw_dsp_init ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L2108 )->sst_ipc_init ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-ipc.c#L270 )->kthread_create_on_node ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/kthread.c#L270 )->kfree ( Unknown Loc ) )"
+  },
+  {
+    "id": 34,
+    "kernel boundary func name": "sst_ipc_init",
+    "risky func": "kzalloc.768",
+    "Risky API Class": "",
+    "Is Controlled Path": 1,
+    "No. path cond": 1,
+    "call path": "( [4]sst_hsw_dsp_init ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L2108 )->sst_ipc_init ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-ipc.c#L270 )->msg_empty_list_init ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-ipc.c#L122 )->kzalloc.768 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L634 ) )"
+  },
+  {
+    "id": 35,
+    "kernel boundary func name": "sst_dsp_boot",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 8,
+    "call path": "( [5]sst_hsw_dsp_init ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L2108 )->sst_dsp_boot ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-dsp.c#L310 )->hsw_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L686 )->iounmap ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L335 )->kfree ( Unknown Loc ) )"
+  },
+  {
+    "id": 36,
+    "kernel boundary func name": "sst_dsp_boot",
+    "risky func": "mutex_lock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 1,
+    "call path": "( [5]sst_hsw_dsp_init ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L2108 )->sst_dsp_boot ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-dsp.c#L310 )->hsw_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L686 )->sst_mem_block_unregister_all ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L1057 )->mutex_lock ( Unknown Loc ) )"
+  },
+  {
+    "id": 37,
+    "kernel boundary func name": "sst_dsp_boot",
+    "risky func": "mutex_unlock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 3,
+    "call path": "( [5]sst_hsw_dsp_init ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L2108 )->sst_dsp_boot ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-dsp.c#L310 )->hsw_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L686 )->sst_mem_block_unregister_all ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L1057 )->mutex_unlock ( Unknown Loc ) )"
+  },
+  {
+    "id": 38,
+    "kernel boundary func name": "sst_dsp_reset",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 8,
+    "call path": "( [5]sst_hsw_dsp_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L2221 )->sst_dsp_reset ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-dsp.c#L303 )->hsw_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L686 )->iounmap ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L335 )->kfree ( Unknown Loc ) )( [5]sst_hsw_dsp_init ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L2108 )->sst_dsp_reset ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-dsp.c#L303 )->hsw_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L686 )->iounmap ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L335 )->kfree ( Unknown Loc ) )( [5]sst_hsw_dsp_init ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L2108 )->sst_dsp_reset ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-dsp.c#L303 )->hsw_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L686 )->iounmap ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L335 )->kfree ( Unknown Loc ) )"
+  },
+  {
+    "id": 39,
+    "kernel boundary func name": "sst_dsp_reset",
+    "risky func": "mutex_lock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 1,
+    "call path": "( [5]sst_hsw_dsp_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L2221 )->sst_dsp_reset ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-dsp.c#L303 )->hsw_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L686 )->sst_mem_block_unregister_all ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L1057 )->mutex_lock ( Unknown Loc ) )( [5]sst_hsw_dsp_init ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L2108 )->sst_dsp_reset ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-dsp.c#L303 )->hsw_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L686 )->sst_mem_block_unregister_all ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L1057 )->mutex_lock ( Unknown Loc ) )( [5]sst_hsw_dsp_init ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L2108 )->sst_dsp_reset ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-dsp.c#L303 )->hsw_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L686 )->sst_mem_block_unregister_all ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L1057 )->mutex_lock ( Unknown Loc ) )"
+  },
+  {
+    "id": 40,
+    "kernel boundary func name": "sst_dsp_reset",
+    "risky func": "mutex_unlock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 3,
+    "call path": "( [5]sst_hsw_dsp_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L2221 )->sst_dsp_reset ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-dsp.c#L303 )->hsw_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L686 )->sst_mem_block_unregister_all ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L1057 )->mutex_unlock ( Unknown Loc ) )( [5]sst_hsw_dsp_init ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L2108 )->sst_dsp_reset ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-dsp.c#L303 )->hsw_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L686 )->sst_mem_block_unregister_all ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L1057 )->mutex_unlock ( Unknown Loc ) )( [5]sst_hsw_dsp_init ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L2108 )->sst_dsp_reset ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-dsp.c#L303 )->hsw_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L686 )->sst_mem_block_unregister_all ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L1057 )->mutex_unlock ( Unknown Loc ) )"
+  },
+  {
+    "id": 41,
+    "kernel boundary func name": "snd_soc_unregister_platform",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 0,
+    "No. path cond": 4,
+    "call path": "( [6]hsw_pcm_dev_remove ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-pcm.c#L1193 )->snd_soc_unregister_platform ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-core.c#L3218 )->snd_soc_remove_platform ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-core.c#L3181 )->snd_soc_component_cleanup ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-core.c#L3021 )->snd_soc_unregister_dais ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-core.c#L2753 )->kfree ( Unknown Loc ) )( [6]hsw_pcm_dev_probe ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-pcm.c#L1155 )->snd_soc_unregister_platform ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-core.c#L3218 )->snd_soc_remove_platform ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-core.c#L3181 )->snd_soc_component_cleanup ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-core.c#L3021 )->snd_soc_unregister_dais ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-core.c#L2753 )->kfree ( Unknown Loc ) )"
+  },
+  {
+    "id": 42,
+    "kernel boundary func name": "snd_soc_unregister_platform",
+    "risky func": "mutex_lock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 1,
+    "call path": "( [4]hsw_pcm_dev_remove ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-pcm.c#L1193 )->snd_soc_unregister_platform ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-core.c#L3218 )->snd_soc_lookup_platform ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-core.c#L3196 )->mutex_lock ( Unknown Loc ) )( [4]hsw_pcm_dev_probe ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-pcm.c#L1155 )->snd_soc_unregister_platform ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-core.c#L3218 )->snd_soc_lookup_platform ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-core.c#L3196 )->mutex_lock ( Unknown Loc ) )"
+  },
+  {
+    "id": 43,
+    "kernel boundary func name": "snd_soc_unregister_platform",
+    "risky func": "mutex_unlock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 2,
+    "call path": "( [4]hsw_pcm_dev_remove ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-pcm.c#L1193 )->snd_soc_unregister_platform ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-core.c#L3218 )->snd_soc_lookup_platform ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-core.c#L3196 )->mutex_unlock ( Unknown Loc ) )( [4]hsw_pcm_dev_probe ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-pcm.c#L1155 )->snd_soc_unregister_platform ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-core.c#L3218 )->snd_soc_lookup_platform ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-core.c#L3196 )->mutex_unlock ( Unknown Loc ) )"
+  },
+  {
+    "id": 44,
+    "kernel boundary func name": "snd_soc_register_platform",
+    "risky func": "kzalloc.313",
+    "Risky API Class": "",
+    "Is Controlled Path": 1,
+    "No. path cond": 1,
+    "call path": "( [3]hsw_pcm_dev_probe ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-pcm.c#L1155 )->snd_soc_register_platform ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-core.c#L3157 )->kzalloc.313 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L634 ) )"
+  },
+  {
+    "id": 45,
+    "kernel boundary func name": "snd_soc_register_platform",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 3,
+    "call path": "( [3]hsw_pcm_dev_probe ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-pcm.c#L1155 )->snd_soc_register_platform ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-core.c#L3157 )->kfree ( Unknown Loc ) )"
+  },
+  {
+    "id": 46,
+    "kernel boundary func name": "snd_soc_register_platform",
+    "risky func": "mutex_lock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 5,
+    "call path": "( [4]hsw_pcm_dev_probe ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-pcm.c#L1155 )->snd_soc_register_platform ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-core.c#L3157 )->snd_soc_add_platform ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-core.c#L3117 )->mutex_lock ( Unknown Loc ) )"
+  },
+  {
+    "id": 47,
+    "kernel boundary func name": "snd_soc_register_platform",
+    "risky func": "mutex_unlock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 3,
+    "call path": "( [4]hsw_pcm_dev_probe ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-pcm.c#L1155 )->snd_soc_register_platform ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-core.c#L3157 )->snd_soc_add_platform ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-core.c#L3117 )->mutex_unlock ( Unknown Loc ) )"
+  },
+  {
+    "id": 48,
+    "kernel boundary func name": "snd_soc_unregister_component",
+    "risky func": "mutex_lock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "call path": "( [3]hsw_pcm_dev_remove ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-pcm.c#L1193 )->snd_soc_unregister_component ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-core.c#L3076 )->mutex_lock ( Unknown Loc ) )"
+  },
+  {
+    "id": 49,
+    "kernel boundary func name": "snd_soc_unregister_component",
+    "risky func": "mutex_unlock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 1,
+    "call path": "( [3]hsw_pcm_dev_remove ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-pcm.c#L1193 )->snd_soc_unregister_component ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-core.c#L3076 )->mutex_unlock ( Unknown Loc ) )"
+  },
+  {
+    "id": 50,
+    "kernel boundary func name": "snd_soc_unregister_component",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 0,
+    "No. path cond": 5,
+    "call path": "( [5]hsw_pcm_dev_remove ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-pcm.c#L1193 )->snd_soc_unregister_component ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-core.c#L3076 )->snd_soc_component_cleanup ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-core.c#L3021 )->snd_soc_unregister_dais ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-core.c#L2753 )->kfree ( Unknown Loc ) )"
+  },
+  {
+    "id": 51,
+    "kernel boundary func name": "snd_soc_register_component",
+    "risky func": "kzalloc.313",
+    "Risky API Class": "",
+    "Is Controlled Path": 1,
+    "No. path cond": 6,
+    "call path": "( [3]hsw_pcm_dev_probe ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-pcm.c#L1155 )->snd_soc_register_component ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-core.c#L3032 )->kzalloc.313 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L634 ) )"
+  },
+  {
+    "id": 52,
+    "kernel boundary func name": "snd_soc_register_component",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 0,
+    "No. path cond": 5,
+    "call path": "( [5]hsw_pcm_dev_probe ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-pcm.c#L1155 )->snd_soc_register_component ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-core.c#L3032 )->snd_soc_component_cleanup ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-core.c#L3021 )->snd_soc_unregister_dais ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-core.c#L2753 )->kfree ( Unknown Loc ) )"
+  },
+  {
+    "id": 53,
+    "kernel boundary func name": "snd_soc_register_component",
+    "risky func": "mutex_lock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 3,
+    "call path": "( [4]hsw_pcm_dev_probe ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-pcm.c#L1155 )->snd_soc_register_component ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-core.c#L3032 )->snd_soc_component_add ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-core.c#L3014 )->mutex_lock ( Unknown Loc ) )"
+  },
+  {
+    "id": 54,
+    "kernel boundary func name": "snd_soc_register_component",
+    "risky func": "mutex_unlock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 3,
+    "call path": "( [4]hsw_pcm_dev_probe ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-pcm.c#L1155 )->snd_soc_register_component ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-core.c#L3032 )->snd_soc_component_add ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/soc-core.c#L3014 )->mutex_unlock ( Unknown Loc ) )"
+  },
+  {
+    "id": 55,
+    "kernel boundary func name": "snd_pcm_lib_free_pages",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 2,
+    "call path": "( [3]hsw_pcm_hw_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-pcm.c#L668 )->snd_pcm_lib_free_pages ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/pcm_memory.c#L384 )->kfree ( Unknown Loc ) )"
+  },
+  {
+    "id": 56,
+    "kernel boundary func name": "snd_pcm_lib_free_pages",
+    "risky func": "dma_free_coherent.415",
+    "Risky API Class": "",
+    "Is Controlled Path": 1,
+    "No. path cond": 4,
+    "call path": "( [5]hsw_pcm_hw_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-pcm.c#L668 )->snd_pcm_lib_free_pages ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/pcm_memory.c#L384 )->snd_dma_free_pages ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/memalloc.c#L265 )->snd_free_dev_pages ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/memalloc.c#L99 )->dma_free_coherent.415 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/dma-mapping.h#L451 ) )"
+  },
+  {
+    "id": 57,
+    "kernel boundary func name": "snd_pcm_lib_malloc_pages",
+    "risky func": "kzalloc.97",
+    "Risky API Class": "",
+    "Is Controlled Path": 1,
+    "No. path cond": 4,
+    "call path": "( [3]hsw_pcm_hw_params ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-pcm.c#L470 )->snd_pcm_lib_malloc_pages ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/pcm_memory.c#L332 )->kzalloc.97 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L634 ) )"
+  },
+  {
+    "id": 58,
+    "kernel boundary func name": "snd_pcm_lib_malloc_pages",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 6,
+    "call path": "( [4]hsw_pcm_hw_params ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-pcm.c#L470 )->snd_pcm_lib_malloc_pages ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/pcm_memory.c#L332 )->snd_pcm_lib_free_pages ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/pcm_memory.c#L384 )->kfree ( Unknown Loc ) )"
+  },
+  {
+    "id": 59,
+    "kernel boundary func name": "snd_pcm_lib_malloc_pages",
+    "risky func": "dma_alloc_coherent.425",
+    "Risky API Class": "",
+    "Is Controlled Path": 1,
+    "No. path cond": 10,
+    "call path": "( [5]hsw_pcm_hw_params ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-pcm.c#L470 )->snd_pcm_lib_malloc_pages ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/pcm_memory.c#L332 )->snd_dma_alloc_pages ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/memalloc.c#L172 )->snd_malloc_dev_pages ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/memalloc.c#L83 )->dma_alloc_coherent.425 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/dma-mapping.h#L445 ) )"
+  },
+  {
+    "id": 60,
+    "kernel boundary func name": "snd_pcm_lib_malloc_pages",
+    "risky func": "dma_free_coherent.415",
+    "Risky API Class": "",
+    "Is Controlled Path": 1,
+    "No. path cond": 6,
+    "call path": "( [6]hsw_pcm_hw_params ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-pcm.c#L470 )->snd_pcm_lib_malloc_pages ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/pcm_memory.c#L332 )->snd_pcm_lib_free_pages ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/pcm_memory.c#L384 )->snd_dma_free_pages ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/memalloc.c#L265 )->snd_free_dev_pages ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/memalloc.c#L99 )->dma_free_coherent.415 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/dma-mapping.h#L451 ) )"
+  },
+  {
+    "id": 61,
+    "kernel boundary func name": "snd_pcm_lib_preallocate_pages_for_all",
+    "risky func": "dma_alloc_coherent.425",
+    "Risky API Class": "",
+    "Is Controlled Path": 0,
+    "No. path cond": 10,
+    "call path": "( [8]hsw_pcm_new ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-pcm.c#L942 )->snd_pcm_lib_preallocate_pages_for_all ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/pcm_memory.c#L282 )->snd_pcm_lib_preallocate_pages ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/pcm_memory.c#L258 )->snd_pcm_lib_preallocate_pages1 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/pcm_memory.c#L231 )->preallocate_pcm_pages ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/pcm_memory.c#L51 )->snd_dma_alloc_pages ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/memalloc.c#L172 )->snd_malloc_dev_pages ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/memalloc.c#L83 )->dma_alloc_coherent.425 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/dma-mapping.h#L445 ) )"
+  },
+  {
+    "id": 62,
+    "kernel boundary func name": "sst_dsp_free",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 8,
+    "call path": "( [5]sst_hsw_dsp_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L2221 )->sst_dsp_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L1270 )->hsw_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L686 )->iounmap ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L335 )->kfree ( Unknown Loc ) )( [5]sst_hsw_dsp_init ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L2108 )->sst_dsp_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L1270 )->hsw_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L686 )->iounmap ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L335 )->kfree ( Unknown Loc ) )"
+  },
+  {
+    "id": 63,
+    "kernel boundary func name": "sst_dsp_free",
+    "risky func": "mutex_lock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 1,
+    "call path": "( [5]sst_hsw_dsp_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L2221 )->sst_dsp_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L1270 )->hsw_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L686 )->sst_mem_block_unregister_all ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L1057 )->mutex_lock ( Unknown Loc ) )( [5]sst_hsw_dsp_init ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L2108 )->sst_dsp_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L1270 )->hsw_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L686 )->sst_mem_block_unregister_all ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L1057 )->mutex_lock ( Unknown Loc ) )"
+  },
+  {
+    "id": 64,
+    "kernel boundary func name": "sst_dsp_free",
+    "risky func": "mutex_unlock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 3,
+    "call path": "( [5]sst_hsw_dsp_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L2221 )->sst_dsp_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L1270 )->hsw_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L686 )->sst_mem_block_unregister_all ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L1057 )->mutex_unlock ( Unknown Loc ) )( [5]sst_hsw_dsp_init ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L2108 )->sst_dsp_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L1270 )->hsw_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L686 )->sst_mem_block_unregister_all ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L1057 )->mutex_unlock ( Unknown Loc ) )"
+  },
+  {
+    "id": 65,
+    "kernel boundary func name": "sst_dsp_new",
+    "risky func": "kzalloc.33",
+    "Risky API Class": "",
+    "Is Controlled Path": 0,
+    "No. path cond": 9,
+    "call path": "( [5]sst_hsw_dsp_init ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L2108 )->sst_dsp_new ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L1215 )->hsw_init ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L615 )->sst_mem_block_register ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L1030 )->kzalloc.33 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L634 ) )"
+  },
+  {
+    "id": 66,
+    "kernel boundary func name": "sst_dsp_new",
+    "risky func": "mutex_lock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 10,
+    "call path": "( [5]sst_hsw_dsp_init ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L2108 )->sst_dsp_new ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L1215 )->hsw_init ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L615 )->sst_mem_block_register ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L1030 )->mutex_lock ( Unknown Loc ) )"
+  },
+  {
+    "id": 67,
+    "kernel boundary func name": "sst_dsp_new",
+    "risky func": "mutex_unlock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 10,
+    "call path": "( [5]sst_hsw_dsp_init ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L2108 )->sst_dsp_new ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L1215 )->hsw_init ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L615 )->sst_mem_block_register ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L1030 )->mutex_unlock ( Unknown Loc ) )"
+  },
+  {
+    "id": 68,
+    "kernel boundary func name": "sst_dsp_new",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 13,
+    "call path": "( [7]sst_hsw_dsp_init ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L2108 )->sst_dsp_new ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L1215 )->sst_dma_new ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L272 )->devm_kfree ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/devres.c#L883 )->devres_destroy ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/devres.c#L363 )->devres_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/devres.c#L196 )->kfree ( Unknown Loc ) )"
+  },
+  {
+    "id": 69,
+    "kernel boundary func name": "sst_module_runtime_get_from_id",
+    "risky func": "mutex_lock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "call path": "( [3]sst_hsw_module_enable ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L1893 )->sst_module_runtime_get_from_id ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L1178 )->mutex_lock ( Unknown Loc ) )"
+  },
+  {
+    "id": 70,
+    "kernel boundary func name": "sst_module_runtime_get_from_id",
+    "risky func": "mutex_unlock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 2,
+    "call path": "( [3]sst_hsw_module_enable ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L1893 )->sst_module_runtime_get_from_id ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L1178 )->mutex_unlock ( Unknown Loc ) )"
+  },
+  {
+    "id": 71,
+    "kernel boundary func name": "sst_module_get_from_id",
+    "risky func": "mutex_lock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "call path": "( [3]sst_hsw_runtime_module_create ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L1456 )->sst_module_get_from_id ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L1160 )->mutex_lock ( Unknown Loc ) )( [3]hsw_pcm_hw_params ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-pcm.c#L470 )->sst_module_get_from_id ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L1160 )->mutex_lock ( Unknown Loc ) )( [3]sst_hsw_module_disable ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L1961 )->sst_module_get_from_id ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L1160 )->mutex_lock ( Unknown Loc ) )( [3]sst_hsw_module_enable ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L1893 )->sst_module_get_from_id ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L1160 )->mutex_lock ( Unknown Loc ) )( [3]sst_hsw_is_module_loaded ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L1740 )->sst_module_get_from_id ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L1160 )->mutex_lock ( Unknown Loc ) )( [3]sst_hsw_is_module_active ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L1751 )->sst_module_get_from_id ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L1160 )->mutex_lock ( Unknown Loc ) )( [3]sst_hsw_init_module_state ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L1722 )->sst_module_get_from_id ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L1160 )->mutex_lock ( Unknown Loc ) )( [3]sst_hsw_module_load ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L1838 )->sst_module_get_from_id ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L1160 )->mutex_lock ( Unknown Loc ) )( [3]sst_hsw_module_load ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L1838 )->sst_module_get_from_id ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L1160 )->mutex_lock ( Unknown Loc ) )"
+  },
+  {
+    "id": 72,
+    "kernel boundary func name": "sst_module_get_from_id",
+    "risky func": "mutex_unlock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 2,
+    "call path": "( [3]sst_hsw_runtime_module_create ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L1456 )->sst_module_get_from_id ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L1160 )->mutex_unlock ( Unknown Loc ) )( [3]hsw_pcm_hw_params ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-pcm.c#L470 )->sst_module_get_from_id ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L1160 )->mutex_unlock ( Unknown Loc ) )( [3]sst_hsw_module_disable ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L1961 )->sst_module_get_from_id ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L1160 )->mutex_unlock ( Unknown Loc ) )( [3]sst_hsw_module_enable ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L1893 )->sst_module_get_from_id ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L1160 )->mutex_unlock ( Unknown Loc ) )( [3]sst_hsw_is_module_loaded ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L1740 )->sst_module_get_from_id ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L1160 )->mutex_unlock ( Unknown Loc ) )( [3]sst_hsw_is_module_active ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L1751 )->sst_module_get_from_id ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L1160 )->mutex_unlock ( Unknown Loc ) )( [3]sst_hsw_init_module_state ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L1722 )->sst_module_get_from_id ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L1160 )->mutex_unlock ( Unknown Loc ) )( [3]sst_hsw_module_load ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L1838 )->sst_module_get_from_id ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L1160 )->mutex_unlock ( Unknown Loc ) )( [3]sst_hsw_module_load ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L1838 )->sst_module_get_from_id ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L1160 )->mutex_unlock ( Unknown Loc ) )"
+  },
+  {
+    "id": 73,
+    "kernel boundary func name": "sst_block_alloc_scratch",
+    "risky func": "mutex_lock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "call path": "( [3]sst_hsw_dsp_init ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L2108 )->sst_block_alloc_scratch ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L1080 )->mutex_lock ( Unknown Loc ) )"
+  },
+  {
+    "id": 74,
+    "kernel boundary func name": "sst_block_alloc_scratch",
+    "risky func": "mutex_unlock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 7,
+    "call path": "( [3]sst_hsw_dsp_init ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L2108 )->sst_block_alloc_scratch ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L1080 )->mutex_unlock ( Unknown Loc ) )"
+  },
+  {
+    "id": 75,
+    "kernel boundary func name": "sst_mem_block_unregister_all",
+    "risky func": "mutex_lock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "call path": "( [3]hsw_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L686 )->sst_mem_block_unregister_all ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L1057 )->mutex_lock ( Unknown Loc ) )"
+  },
+  {
+    "id": 76,
+    "kernel boundary func name": "sst_mem_block_unregister_all",
+    "risky func": "mutex_unlock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 2,
+    "call path": "( [3]hsw_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L686 )->sst_mem_block_unregister_all ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L1057 )->mutex_unlock ( Unknown Loc ) )"
+  },
+  {
+    "id": 77,
+    "kernel boundary func name": "sst_mem_block_unregister_all",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 2,
+    "call path": "( [3]hsw_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L686 )->sst_mem_block_unregister_all ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L1057 )->kfree ( Unknown Loc ) )"
+  },
+  {
+    "id": 78,
+    "kernel boundary func name": "sst_mem_block_register",
+    "risky func": "kzalloc.33",
+    "Risky API Class": "",
+    "Is Controlled Path": 1,
+    "call path": "( [3]hsw_init ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L615 )->sst_mem_block_register ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L1030 )->kzalloc.33 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L634 ) )"
+  },
+  {
+    "id": 79,
+    "kernel boundary func name": "sst_mem_block_register",
+    "risky func": "mutex_lock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 1,
+    "call path": "( [3]hsw_init ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L615 )->sst_mem_block_register ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L1030 )->mutex_lock ( Unknown Loc ) )"
+  },
+  {
+    "id": 80,
+    "kernel boundary func name": "sst_mem_block_register",
+    "risky func": "mutex_unlock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 1,
+    "call path": "( [3]hsw_init ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L615 )->sst_mem_block_register ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L1030 )->mutex_unlock ( Unknown Loc ) )"
+  },
+  {
+    "id": 81,
+    "kernel boundary func name": "request_firmware",
+    "risky func": "kzalloc.466",
+    "Risky API Class": "",
+    "Is Controlled Path": 1,
+    "No. path cond": 8,
+    "call path": "( [5]sst_hsw_module_load ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L1838 )->request_firmware ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/firmware_class.c#L1221 )->_request_firmware ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/firmware_class.c#L1133 )->_request_firmware_prepare ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/firmware_class.c#L1052 )->kzalloc.466 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L634 ) )"
+  },
+  {
+    "id": 82,
+    "kernel boundary func name": "request_firmware",
+    "risky func": "kref_get",
+    "Risky API Class": "refCount",
+    "Is Controlled Path": 0,
+    "No. path cond": 17,
+    "call path": "( [6]sst_hsw_module_load ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L1838 )->request_firmware ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/firmware_class.c#L1221 )->_request_firmware ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/firmware_class.c#L1133 )->_request_firmware_prepare ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/firmware_class.c#L1052 )->fw_lookup_and_allocate_buf ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/firmware_class.c#L229 )->kref_get ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/kref.h#L40 ) )"
+  },
+  {
+    "id": 83,
+    "kernel boundary func name": "request_firmware",
+    "risky func": "mutex_lock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 12,
+    "call path": "( [6]sst_hsw_module_load ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L1838 )->request_firmware ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/firmware_class.c#L1221 )->_request_firmware ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/firmware_class.c#L1133 )->_request_firmware_prepare ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/firmware_class.c#L1052 )->sync_cached_firmware_buf ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/firmware_class.c#L1029 )->mutex_lock ( Unknown Loc ) )"
+  },
+  {
+    "id": 84,
+    "kernel boundary func name": "request_firmware",
+    "risky func": "mutex_unlock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 13,
+    "call path": "( [6]sst_hsw_module_load ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L1838 )->request_firmware ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/firmware_class.c#L1221 )->_request_firmware ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/firmware_class.c#L1133 )->_request_firmware_prepare ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/firmware_class.c#L1052 )->sync_cached_firmware_buf ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/firmware_class.c#L1029 )->mutex_unlock ( Unknown Loc ) )"
+  },
+  {
+    "id": 85,
+    "kernel boundary func name": "request_firmware",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 10,
+    "call path": "( [7]sst_hsw_module_load ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L1838 )->request_firmware ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/firmware_class.c#L1221 )->_request_firmware ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/firmware_class.c#L1133 )->_request_firmware_prepare ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/firmware_class.c#L1052 )->fw_lookup_and_allocate_buf ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/firmware_class.c#L229 )->__allocate_fw_buf ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/firmware_class.c#L188 )->kfree ( Unknown Loc ) )"
+  },
+  {
+    "id": 86,
+    "kernel boundary func name": "request_firmware",
+    "risky func": "vfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 0,
+    "No. path cond": 7,
+    "call path": "( [6]sst_hsw_module_load ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L1838 )->request_firmware ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/firmware_class.c#L1221 )->_request_firmware ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/firmware_class.c#L1133 )->release_firmware ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/firmware_class.c#L1293 )->firmware_free_data ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/firmware_class.c#L372 )->vfree ( Unknown Loc ) )"
+  },
+  {
+    "id": 87,
+    "kernel boundary func name": "request_firmware",
+    "risky func": "kref_put",
+    "Risky API Class": "refCount",
+    "Is Controlled Path": 0,
+    "No. path cond": 7,
+    "call path": "( [7]sst_hsw_module_load ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L1838 )->request_firmware ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/firmware_class.c#L1221 )->_request_firmware ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/firmware_class.c#L1133 )->release_firmware ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/firmware_class.c#L1293 )->firmware_free_data ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/firmware_class.c#L372 )->fw_free_buf ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/firmware_class.c#L282 )->kref_put ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/kref.h#L96 ) )"
+  },
+  {
+    "id": 88,
+    "kernel boundary func name": "iounmap",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 7,
+    "call path": "( [3]hsw_acpi_resource_map ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L466 )->iounmap ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L335 )->kfree ( Unknown Loc ) )( [3]hsw_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L686 )->iounmap ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L335 )->kfree ( Unknown Loc ) )( [3]hsw_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L686 )->iounmap ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L335 )->kfree ( Unknown Loc ) )"
+  },
+  {
+    "id": 89,
+    "kernel boundary func name": "snd_dma_free_pages",
+    "risky func": "dma_free_coherent.415",
+    "Risky API Class": "",
+    "Is Controlled Path": 1,
+    "No. path cond": 2,
+    "call path": "( [4]hsw_pcm_remove ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-pcm.c#L1119 )->snd_dma_free_pages ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/memalloc.c#L265 )->snd_free_dev_pages ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/memalloc.c#L99 )->dma_free_coherent.415 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/dma-mapping.h#L451 ) )( [4]hsw_pcm_remove ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-pcm.c#L1119 )->snd_dma_free_pages ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/memalloc.c#L265 )->snd_free_dev_pages ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/memalloc.c#L99 )->dma_free_coherent.415 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/dma-mapping.h#L451 ) )( [4]hsw_pcm_probe ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-pcm.c#L1055 )->snd_dma_free_pages ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/memalloc.c#L265 )->snd_free_dev_pages ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/memalloc.c#L99 )->dma_free_coherent.415 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/dma-mapping.h#L451 ) )( [4]hsw_pcm_probe ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-pcm.c#L1055 )->snd_dma_free_pages ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/memalloc.c#L265 )->snd_free_dev_pages ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/memalloc.c#L99 )->dma_free_coherent.415 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/dma-mapping.h#L451 ) )"
+  },
+  {
+    "id": 90,
+    "kernel boundary func name": "snd_dma_alloc_pages",
+    "risky func": "dma_alloc_coherent.425",
+    "Risky API Class": "",
+    "Is Controlled Path": 1,
+    "No. path cond": 5,
+    "call path": "( [4]hsw_pcm_probe ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-pcm.c#L1055 )->snd_dma_alloc_pages ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/memalloc.c#L172 )->snd_malloc_dev_pages ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/memalloc.c#L83 )->dma_alloc_coherent.425 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/dma-mapping.h#L445 ) )( [4]hsw_pcm_probe ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-pcm.c#L1055 )->snd_dma_alloc_pages ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/memalloc.c#L172 )->snd_malloc_dev_pages ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/memalloc.c#L83 )->dma_alloc_coherent.425 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/dma-mapping.h#L445 ) )"
+  }
+]

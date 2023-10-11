@@ -1,0 +1,128 @@
+[
+  {
+    "id": "17",
+    "risky": "val-sen-api (kmalloc)",
+    "acc_path": "size",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/slab_common.c#L1018",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/slab_common.c#L1018",
+    "drv caller (param)": "[ DAC960_CheckStatusBuffer | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L415 ], ",
+    "call path (param)": " [DAC960_CheckStatusBuffer->kmalloc_order] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [kmalloc_order] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]
+[
+  {
+    "id": "18",
+    "risky": "val-sen-api (kmalloc)",
+    "acc_path": "flags",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/slab_common.c#L1018",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/slab_common.c#L1018",
+    "drv caller (param)": "[ DAC960_CheckStatusBuffer | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L415 ], ",
+    "call path (param)": " [DAC960_CheckStatusBuffer->kmalloc_order] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [kmalloc_order] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]
+[
+  {
+    "id": "32",
+    "risky": "numeric-arith",
+    "acc_path": "nr_exclusive",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L95",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L74",
+    "drv caller (param)": "[ DAC960_V2_ProcessCompletedCommand | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/block/DAC960.c#L5255 ], ",
+    "call path (param)": " [DAC960_V2_ProcessCompletedCommand->complete->__wake_up_locked->__wake_up_common] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [blk_init_queue->blk_init_queue_node->blk_cleanup_queue->blk_set_queue_dying->__wake_up->__wake_up_common] ",
+    "cond_num": "3",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "id": "33",
+    "risky": "numeric-arith",
+    "acc_path": "phys_addr",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L240",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/resource.c#L488",
+    "drv caller (param)": "[ DAC960_DetectController | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/block/DAC960.c#L2788 ], ",
+    "call path (param)": " [DAC960_DetectController->ioremap_nocache->__ioremap_caller->walk_system_ram_range] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [ioremap_nocache->__ioremap_caller->walk_system_ram_range] ",
+    "cond_num": "4",
+    "isControl": "0"
+  },
+  {
+    "id": "33",
+    "risky": "val-sen-branch (memcpy)",
+    "acc_path": "phys_addr",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L240",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L97",
+    "drv caller (param)": "[ DAC960_DetectController | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/block/DAC960.c#L2788 ], ",
+    "call path (param)": " [DAC960_DetectController->ioremap_nocache->__ioremap_caller] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [ioremap_nocache->__ioremap_caller] ",
+    "cond_num": "1",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "id": "34",
+    "risky": "numeric-arith",
+    "acc_path": "size",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L240",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/resource.c#L488",
+    "drv caller (param)": "[ DAC960_DetectController | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/block/DAC960.c#L2788 ], ",
+    "call path (param)": " [DAC960_DetectController->ioremap_nocache->__ioremap_caller->walk_system_ram_range] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [ioremap_nocache->__ioremap_caller->walk_system_ram_range] ",
+    "cond_num": "4",
+    "isControl": "0"
+  },
+  {
+    "id": "34",
+    "risky": "val-sen-branch (memcpy)",
+    "acc_path": "size",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L240",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L97",
+    "drv caller (param)": "[ DAC960_DetectController | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/block/DAC960.c#L2788 ], ",
+    "call path (param)": " [DAC960_DetectController->ioremap_nocache->__ioremap_caller] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [ioremap_nocache->__ioremap_caller] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "[ ACTUAL_IN || PARAMETER_INlong unsigned int ] -> [ FORMAL_IN || PARAMETER_INsize ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L97 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]
+[
+  {
+    "id": "42",
+    "risky": "numeric-arith",
+    "acc_path": "nr_bytes",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-core.c#L2875",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-core.c#L2630",
+    "drv caller (param)": "[ DAC960_ProcessCompletedRequest | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/block/DAC960.c#L3472 ], ",
+    "call path (param)": " [DAC960_ProcessCompletedRequest->__blk_end_request->__blk_end_bidi_request->blk_update_bidi_request->blk_update_request] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [blk_init_queue->blk_init_queue_node->blk_cleanup_queue->__blk_drain_queue->msleep->schedule_timeout_uninterruptible->schedule_timeout->schedule->sched_submit_work->blk_schedule_flush_plug->blk_flush_plug_list->__blk_end_request_all->__blk_end_bidi_request->blk_update_bidi_request->blk_update_request] ",
+    "cond_num": "12",
+    "isControl": "0"
+  }
+]

@@ -1,0 +1,175 @@
+[
+  {
+    "id": "40",
+    "risky": "numeric-arith",
+    "acc_path": "m",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/time.c#L526",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/jiffies.h#L301",
+    "drv caller (param)": "[ handle_port_status | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/jiffies.h#L361 ], ",
+    "call path (param)": " [handle_port_status->__msecs_to_jiffies->_msecs_to_jiffies.705] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [__msecs_to_jiffies->_msecs_to_jiffies.705] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "[ ACTUAL_IN || PARAMETER_IN ] -> [ FORMAL_IN || PARAMETER_INm ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/jiffies.h#L301 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/jiffies.h#L301 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/jiffies.h#L301 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]
+[
+  {
+    "id": "41",
+    "risky": "val-sen-api (memcpy)",
+    "acc_path": "index",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/radix-tree.c#L745",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/compiler.h#L220",
+    "drv caller (param)": "[ xhci_dma_to_transfer_ring | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/host/xhci-mem.c#L636 ], ",
+    "call path (param)": " [xhci_dma_to_transfer_ring->radix_tree_lookup->__radix_tree_lookup->radix_tree_descend] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [radix_tree_lookup->__radix_tree_lookup->radix_tree_descend] ",
+    "cond_num": "4",
+    "isControl": "0"
+  },
+  {
+    "id": "41",
+    "risky": "arr-idx",
+    "acc_path": "index",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/radix-tree.c#L745",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/radix-tree.c#L104",
+    "drv caller (param)": "[ xhci_dma_to_transfer_ring | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/host/xhci-mem.c#L636 ], ",
+    "call path (param)": " [xhci_dma_to_transfer_ring->radix_tree_lookup->__radix_tree_lookup->radix_tree_descend] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [radix_tree_lookup->__radix_tree_lookup->radix_tree_descend] ",
+    "cond_num": "3",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "id": "42",
+    "risky": "val-sen-api (kmem_cache_alloc)",
+    "acc_path": "gfp_mask",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/radix-tree.c#L407",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/radix-tree.c#L364",
+    "drv caller (param)": "[ xhci_insert_segment_mapping | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/host/xhci-mem.c#L206 ], ",
+    "call path (param)": " [xhci_insert_segment_mapping->radix_tree_maybe_preload->__radix_tree_preload] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [radix_tree_maybe_preload->__radix_tree_preload] ",
+    "cond_num": "1",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "id": "45",
+    "risky": "numeric-arith",
+    "acc_path": "expires",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1086",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L471",
+    "drv caller (param)": "[ compliance_mode_recovery | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/host/xhci.c#L471 ], ",
+    "call path (param)": " [compliance_mode_recovery->mod_timer->__mod_timer->calc_wheel_index->calc_index] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [msleep->schedule_timeout_uninterruptible->schedule_timeout->__mod_timer->calc_wheel_index->calc_index] ",
+    "cond_num": "12",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "id": "52",
+    "risky": "val-sen-api (kmalloc)",
+    "acc_path": "size",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/slab_common.c#L1018",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/slab_common.c#L1018",
+    "drv caller (param)": "[ xhci_setup_msix | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L415 ], ",
+    "call path (param)": " [xhci_setup_msix->request_irq.21->request_threaded_irq->kzalloc.616->kmalloc_order] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [kmalloc_order] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]
+[
+  {
+    "id": "53",
+    "risky": "val-sen-api (kmalloc)",
+    "acc_path": "flags",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/slab_common.c#L1018",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/slab_common.c#L1018",
+    "drv caller (param)": "[ xhci_setup_msix | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L415 ], ",
+    "call path (param)": " [xhci_setup_msix->request_irq.21->request_threaded_irq->kzalloc.616->kmalloc_order] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [kmalloc_order] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]
+[
+  {
+    "id": "55",
+    "risky": "val-sen-api (memcpy)",
+    "acc_path": "index",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/radix-tree.c#L1582",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/compiler.h#L220",
+    "drv caller (param)": "[ xhci_remove_segment_mapping | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/host/xhci-mem.c#L222 ], ",
+    "call path (param)": " [xhci_remove_segment_mapping->radix_tree_lookup->__radix_tree_lookup->radix_tree_descend] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [radix_tree_lookup->__radix_tree_lookup->radix_tree_descend] ",
+    "cond_num": "4",
+    "isControl": "0"
+  },
+  {
+    "id": "55",
+    "risky": "arr-idx",
+    "acc_path": "index",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/radix-tree.c#L1582",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/radix-tree.c#L104",
+    "drv caller (param)": "[ xhci_remove_segment_mapping | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/host/xhci-mem.c#L222 ], ",
+    "call path (param)": " [xhci_remove_segment_mapping->radix_tree_lookup->__radix_tree_lookup->radix_tree_descend] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [radix_tree_lookup->__radix_tree_lookup->radix_tree_descend] ",
+    "cond_num": "3",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "id": "59",
+    "risky": "val-sen-branch (pci_platform_power_transition)",
+    "acc_path": "state",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/pci.c#L898",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/pci.c#L795",
+    "drv caller (param)": "[ xhci_shutdown | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/host/xhci.c#L765 ], ",
+    "call path (param)": " [xhci_shutdown->pci_set_power_state->__pci_start_power_transition] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [pci_set_power_state->__pci_start_power_transition] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "[ ACTUAL_IN || PARAMETER_INpci_power_t ] -> [ FORMAL_IN || PARAMETER_INstate ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/pci.c#L795 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  },
+  {
+    "id": "59",
+    "risky": "val-sen-api (pci_set_power_state)",
+    "acc_path": "state",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/pci.c#L912",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/pci.c#L754",
+    "drv caller (param)": "[ xhci_shutdown | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/host/xhci.c#L765 ], ",
+    "call path (param)": " [xhci_shutdown->pci_set_power_state->__pci_start_power_transition->pci_platform_power_transition] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [pci_set_power_state->__pci_start_power_transition->pci_platform_power_transition] ",
+    "cond_num": "5",
+    "isControl": "0"
+  }
+]

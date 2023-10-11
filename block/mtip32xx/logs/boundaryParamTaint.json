@@ -1,0 +1,233 @@
+[
+  {
+    "id": "30",
+    "risky": "val-sen-api (kmem_cache_alloc)",
+    "acc_path": "gfp_mask",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L899",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L626",
+    "drv caller (param)": "[ mtip_block_initialize | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/block/mtip32xx/mtip32xx.c#L3941 ], ",
+    "call path (param)": " [mtip_block_initialize->ida_get_new->ida_get_new_above->idr_get_empty_slot->idr_layer_alloc->kmem_cache_zalloc] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [ida_pre_get->__idr_pre_get->kmem_cache_zalloc] ",
+    "cond_num": "1",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "id": "35",
+    "risky": "val-sen-api (memcpy)",
+    "acc_path": "cpu",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1484",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/compiler.h#L220",
+    "drv caller (param)": "[ mtip_handle_irq | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/block/mtip32xx/mtip32xx.c#L915 ], ",
+    "call path (param)": " [mtip_handle_irq->mtip_check_surprise_removal->pci_read_config_word->pci_bus_read_config_word->_raw_spin_lock_irqsave->__raw_spin_lock_irqsave->do_raw_spin_lock->__spin_lock_debug] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [ida_pre_get->free_bitmap->_raw_spin_lock_irqsave->__raw_spin_lock_irqsave->do_raw_spin_lock->__spin_lock_debug] ",
+    "cond_num": "34",
+    "isControl": "0"
+  },
+  {
+    "id": "35",
+    "risky": "numeric-arith",
+    "acc_path": "cpu",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1484",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1063",
+    "drv caller (param)": "[ mtip_handle_irq | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/block/mtip32xx/mtip32xx.c#L915 ], ",
+    "call path (param)": " [mtip_handle_irq->queue_work_on->__queue_work->insert_work->get_pwq] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [queue_work_on->__queue_work->insert_work->get_pwq] ",
+    "cond_num": "25",
+    "isControl": "0"
+  },
+  {
+    "id": "35",
+    "risky": "arr-idx",
+    "acc_path": "cpu",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1484",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L1445",
+    "drv caller (param)": "[ mtip_handle_irq | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/block/mtip32xx/mtip32xx.c#L915 ], ",
+    "call path (param)": " [mtip_handle_irq->queue_work_on->__queue_work] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [queue_work_on->__queue_work] ",
+    "cond_num": "20",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "id": "40",
+    "risky": "numeric-arith",
+    "acc_path": "rw",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L258",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-mq.c#L172",
+    "drv caller (param)": "[ mtip_get_int_command | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/block/mtip32xx/mtip32xx.c#L179 ], ",
+    "call path (param)": " [mtip_get_int_command->blk_mq_alloc_request->__blk_mq_alloc_request->blk_mq_rq_ctx_init] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [msleep->schedule_timeout_uninterruptible->schedule_timeout->schedule->sched_submit_work->blk_schedule_flush_plug->blk_flush_plug_list->blk_mq_flush_plug_list->blk_mq_insert_requests->blk_mq_run_hw_queue->__blk_mq_run_hw_queue->mtip_queue_rq->mtip_submit_request->mtip_send_trim->mtip_exec_internal_command->mtip_get_int_command->blk_mq_alloc_request->__blk_mq_alloc_request->blk_mq_rq_ctx_init] ",
+    "cond_num": "7",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "id": "47",
+    "risky": "numeric-arith",
+    "acc_path": "m",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/time.c#L526",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/jiffies.h#L301",
+    "drv caller (param)": "[ mtip_pci_remove | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/jiffies.h#L361 ], ",
+    "call path (param)": " [mtip_pci_remove->mtip_block_remove->mtip_hw_exit->devm_free_irq->free_irq->__free_irq->synchronize_irq->schedule->sched_submit_work->blk_schedule_flush_plug->blk_flush_plug_list->blk_mq_flush_plug_list->blk_mq_insert_requests->blk_mq_run_hw_queue->__blk_mq_run_hw_queue->mtip_queue_rq->mtip_submit_request->is_se_active->__msecs_to_jiffies->_msecs_to_jiffies.1525] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [msleep->__msecs_to_jiffies->_msecs_to_jiffies.1525] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "[ ACTUAL_IN || PARAMETER_IN ] -> [ FORMAL_IN || PARAMETER_INm ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/jiffies.h#L301 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/jiffies.h#L301 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/jiffies.h#L301 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]
+[
+  {
+    "id": "50",
+    "risky": "numeric-arith",
+    "acc_path": "nr_exclusive",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L95",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L74",
+    "drv caller (param)": "[ mtip_exec_internal_command | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/block/mtip32xx/mtip32xx.c#L1135 ], ",
+    "call path (param)": " [mtip_exec_internal_command->mtip_get_int_command->blk_mq_alloc_request->__blk_mq_run_hw_queue->mtip_queue_rq->mtip_submit_request->is_se_active->__wake_up->__wake_up_common] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [complete->__wake_up_locked->__wake_up_common] ",
+    "cond_num": "3",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "id": "54",
+    "risky": "val-sen-api (kzalloc)",
+    "acc_path": "node_id",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/genhd.c#L1294",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/genhd.c#L1294",
+    "drv caller (param)": "[ mtip_block_initialize | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/block/mtip32xx/mtip32xx.c#L3931 ], ",
+    "call path (param)": " [mtip_block_initialize->alloc_disk_node] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [alloc_disk_node] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]
+[
+  {
+    "id": "70",
+    "risky": "arr-idx",
+    "acc_path": "partno",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/genhd.c#L753",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/genhd.c#L74",
+    "drv caller (param)": "[ mtip_block_initialize | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/block/mtip32xx/mtip32xx.c#L4046 ], ",
+    "call path (param)": " [mtip_block_initialize->bdget_disk->disk_get_part] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [del_gendisk->invalidate_partition->bdget_disk->disk_get_part] ",
+    "cond_num": "3",
+    "isControl": "0"
+  },
+  {
+    "id": "70",
+    "risky": "val-sen-branch (memcpy)",
+    "acc_path": "partno",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/genhd.c#L753",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/genhd.c#L73",
+    "drv caller (param)": "[ mtip_block_initialize | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/block/mtip32xx/mtip32xx.c#L4046 ], ",
+    "call path (param)": " [mtip_block_initialize->bdget_disk->disk_get_part] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [del_gendisk->invalidate_partition->bdget_disk->disk_get_part] ",
+    "cond_num": "2",
+    "isControl": "0"
+  },
+  {
+    "id": "70",
+    "risky": "val-sen-api (memcpy)",
+    "acc_path": "partno",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/genhd.c#L753",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/compiler.h#L220",
+    "drv caller (param)": "[ mtip_block_initialize | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/block/mtip32xx/mtip32xx.c#L4046 ], ",
+    "call path (param)": " [mtip_block_initialize->bdget_disk->disk_get_part] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [del_gendisk->invalidate_partition->bdget_disk->disk_get_part] ",
+    "cond_num": "4",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "id": "72",
+    "risky": "val-sen-branch (pci_platform_power_transition)",
+    "acc_path": "state",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/pci.c#L898",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/pci.c#L795",
+    "drv caller (param)": "[ mtip_pci_resume | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/block/mtip32xx/mtip32xx.c#L4681 ], ",
+    "call path (param)": " [mtip_pci_resume->pci_set_power_state->__pci_start_power_transition] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [pci_set_power_state->__pci_start_power_transition] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "[ ACTUAL_IN || PARAMETER_INpci_power_t ] -> [ FORMAL_IN || PARAMETER_INstate ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/pci.c#L795 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  },
+  {
+    "id": "72",
+    "risky": "val-sen-api (pci_platform_power_transition)",
+    "acc_path": "state",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/pci.c#L912",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/pci.c#L854",
+    "drv caller (param)": "[ mtip_pci_resume | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/block/mtip32xx/mtip32xx.c#L4681 ], ",
+    "call path (param)": " [mtip_pci_resume->pci_set_power_state->__pci_complete_power_transition] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [pci_set_power_state->__pci_complete_power_transition] ",
+    "cond_num": "1",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "id": "77",
+    "risky": "ptr-read",
+    "acc_path": "dma_handle",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/dma-mapping.c#L81",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/dma-mapping.c#L81",
+    "drv caller (param)": "[ mtip_dma_alloc | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/block/mtip32xx/mtip32xx.c#L3101 ], ",
+    "call path (param)": " [mtip_dma_alloc->dmam_alloc_coherent] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [msleep->schedule_timeout_uninterruptible->schedule_timeout->schedule->sched_submit_work->blk_schedule_flush_plug->blk_flush_plug_list->blk_mq_flush_plug_list->blk_mq_insert_requests->blk_mq_run_hw_queue->__blk_mq_run_hw_queue->mtip_queue_rq->mtip_submit_request->mtip_send_trim->dmam_alloc_coherent] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  },
+  {
+    "id": "77",
+    "risky": "ptr-write",
+    "acc_path": "dma_handle",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/dma-mapping.c#L81",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/dma-mapping.c#L81",
+    "drv caller (param)": "[ mtip_dma_alloc | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/block/mtip32xx/mtip32xx.c#L3101 ], ",
+    "call path (param)": " [mtip_dma_alloc->dmam_alloc_coherent] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [msleep->schedule_timeout_uninterruptible->schedule_timeout->schedule->sched_submit_work->blk_schedule_flush_plug->blk_flush_plug_list->blk_mq_flush_plug_list->blk_mq_insert_requests->blk_mq_run_hw_queue->__blk_mq_run_hw_queue->mtip_queue_rq->mtip_submit_request->mtip_send_trim->dmam_alloc_coherent] ",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "[ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/dma-mapping.c#L81 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]

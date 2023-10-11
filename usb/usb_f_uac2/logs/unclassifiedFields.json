@@ -1,0 +1,48 @@
+{
+  "id": 4,
+  "acc_path": "platform_device->id",
+  "Kernel read": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/platform.c#L409],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/platform.c#L440],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/platform.c#L375],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/platform.c#L357],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/platform.c#L359], ",
+  "Drv update": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/function/f_uac2.c#L529], "
+}
+{
+  "id": 6,
+  "acc_path": "size",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/pcm_memory.c#L332 | snd_pcm_lib_malloc_pages",
+  "Drv update": ""
+}
+{
+  "id": 7,
+  "acc_path": "type",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/pcm_memory.c#L282 | snd_pcm_lib_preallocate_pages_for_all",
+  "Drv update": ""
+}
+{
+  "id": 9,
+  "acc_path": "max",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/pcm_memory.c#L282 | snd_pcm_lib_preallocate_pages_for_all",
+  "Drv update": ""
+}
+{
+  "id": 10,
+  "acc_path": "device",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/pcm.c#L815 | snd_pcm_new",
+  "Drv update": ""
+}
+{
+  "id": 13,
+  "acc_path": "idx",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/init.c#L201 | snd_card_new",
+  "Drv update": ""
+}
+{
+  "id": 14,
+  "acc_path": "extra_size",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/init.c#L201 | snd_card_new",
+  "Drv update": ""
+}
+{
+  "id": 16,
+  "acc_path": "direction",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/core/pcm_lib.c#L501 | snd_pcm_set_ops",
+  "Drv update": ""
+}
