@@ -9,6 +9,8 @@
     "call path (param)": " [sst_dsp_register_poll->usleep_range->do_usleep_range->ktime_set] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [usleep_range->do_usleep_range->ktime_set] ",
+    "num condition checks": 1,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/ktime.h#L52 | ",
     "cond_num": "1",
     "isControl": "0"
   }
@@ -24,9 +26,11 @@
     "call path (param)": " [sst_dsp_register_poll->usleep_range->do_usleep_range] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [usleep_range->do_usleep_range] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "0",
     "isControl": "1",
-    "t_trace": "[ ACTUAL_IN || PARAMETER_INlong unsigned int ] -> [ FORMAL_IN || PARAMETER_INmax ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1905 ] -> ",
+    "t_trace": "[ ACTUAL_IN || PARAMETER_INlong unsigned int ] -> [ FORMAL_IN || PARAMETER_INmax ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1905 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1905 ] -> ",
     "isTrue": "-",
     "atk_reason": "",
     "defense": ""

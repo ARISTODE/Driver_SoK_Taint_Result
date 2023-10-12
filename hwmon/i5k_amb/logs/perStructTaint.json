@@ -13,18 +13,16 @@
     "id": "0",
     "risky": "ptr-read",
     "acc_path": "attribute->name",
-    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L596",
-    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L593",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L593",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L596",
     "drv caller (param)": "[ i5k_amb_hwmon_init | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/i5k_amb.c#L388 ], ",
     "call path (param)": " [i5k_amb_hwmon_init->device_create_file] ",
-    "drv_update loc (shared field)": "[ (i5k_amb_hwmon_init) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/i5k_amb.c#L297 ], [ (i5k_amb_hwmon_init) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/i5k_amb.c#L343 ], [ (i5k_amb_hwmon_init) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/i5k_amb.c#L312 ], [ (i5k_amb_hwmon_init) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/i5k_amb.c#L359 ], [ (i5k_amb_hwmon_init) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/i5k_amb.c#L327 ], [ (i5k_amb_hwmon_init) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/i5k_amb.c#L375 ], ",
+    "drv_update loc (shared field)": "[ (i5k_amb_hwmon_init) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/i5k_amb.c#L375 ], [ (i5k_amb_hwmon_init) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/i5k_amb.c#L343 ], [ (i5k_amb_hwmon_init) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/i5k_amb.c#L297 ], [ (i5k_amb_hwmon_init) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/i5k_amb.c#L359 ], [ (i5k_amb_hwmon_init) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/i5k_amb.c#L312 ], [ (i5k_amb_hwmon_init) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/i5k_amb.c#L327 ], ",
     "call path (type)": " [platform_device_add->device_add->device_create_file] ",
-    "cond_num": "0",
-    "isControl": "1",
-    "t_trace": "[ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L593 ] -> ",
-    "isTrue": "-",
-    "atk_reason": "",
-    "defense": ""
+    "num condition checks": 1,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L596 | ",
+    "cond_num": "2",
+    "isControl": "0"
   }
 ]
 [

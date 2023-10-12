@@ -5,10 +5,12 @@
     "acc_path": "m",
     "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/time.c#L526",
     "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/jiffies.h#L301",
-    "drv caller (param)": "[ handle_port_status | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/jiffies.h#L361 ], ",
-    "call path (param)": " [handle_port_status->__msecs_to_jiffies->_msecs_to_jiffies.705] ",
+    "drv caller (param)": "[ xhci_get_port_status | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/jiffies.h#L361 ], ",
+    "call path (param)": " [xhci_get_port_status->__msecs_to_jiffies->_msecs_to_jiffies.705] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [__msecs_to_jiffies->_msecs_to_jiffies.705] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "0",
     "isControl": "1",
     "t_trace": "[ ACTUAL_IN || PARAMETER_IN ] -> [ FORMAL_IN || PARAMETER_INm ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/jiffies.h#L301 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/jiffies.h#L301 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/jiffies.h#L301 ] -> ",
@@ -28,6 +30,8 @@
     "call path (param)": " [xhci_dma_to_transfer_ring->radix_tree_lookup->__radix_tree_lookup->radix_tree_descend] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [radix_tree_lookup->__radix_tree_lookup->radix_tree_descend] ",
+    "num condition checks": 1,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/compiler.h#L220 | ",
     "cond_num": "4",
     "isControl": "0"
   },
@@ -41,6 +45,8 @@
     "call path (param)": " [xhci_dma_to_transfer_ring->radix_tree_lookup->__radix_tree_lookup->radix_tree_descend] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [radix_tree_lookup->__radix_tree_lookup->radix_tree_descend] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "3",
     "isControl": "0"
   }
@@ -56,6 +62,8 @@
     "call path (param)": " [xhci_insert_segment_mapping->radix_tree_maybe_preload->__radix_tree_preload] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [radix_tree_maybe_preload->__radix_tree_preload] ",
+    "num condition checks": 1,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/radix-tree.c#L362 | ",
     "cond_num": "1",
     "isControl": "0"
   }
@@ -71,6 +79,8 @@
     "call path (param)": " [compliance_mode_recovery->mod_timer->__mod_timer->calc_wheel_index->calc_index] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [msleep->schedule_timeout_uninterruptible->schedule_timeout->__mod_timer->calc_wheel_index->calc_index] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "12",
     "isControl": "0"
   }
@@ -83,9 +93,11 @@
     "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/slab_common.c#L1018",
     "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/slab_common.c#L1018",
     "drv caller (param)": "[ xhci_setup_msix | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L415 ], ",
-    "call path (param)": " [xhci_setup_msix->request_irq.21->request_threaded_irq->kzalloc.616->kmalloc_order] ",
+    "call path (param)": " [xhci_setup_msix->pci_enable_msix_exact->pci_enable_msix_range->__pci_enable_msix_range->pci_enable_msix->msix_capability_init->populate_msi_sysfs->kzalloc.81->kmalloc_order] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [kmalloc_order] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "0",
     "isControl": "1",
     "t_trace": "",
@@ -102,9 +114,11 @@
     "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/slab_common.c#L1018",
     "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/slab_common.c#L1018",
     "drv caller (param)": "[ xhci_setup_msix | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L415 ], ",
-    "call path (param)": " [xhci_setup_msix->request_irq.21->request_threaded_irq->kzalloc.616->kmalloc_order] ",
+    "call path (param)": " [xhci_setup_msix->pci_enable_msix_exact->pci_enable_msix_range->__pci_enable_msix_range->pci_enable_msix->msix_capability_init->populate_msi_sysfs->kzalloc.81->kmalloc_order] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [kmalloc_order] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "0",
     "isControl": "1",
     "t_trace": "",
@@ -124,6 +138,8 @@
     "call path (param)": " [xhci_remove_segment_mapping->radix_tree_lookup->__radix_tree_lookup->radix_tree_descend] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [radix_tree_lookup->__radix_tree_lookup->radix_tree_descend] ",
+    "num condition checks": 1,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/compiler.h#L220 | ",
     "cond_num": "4",
     "isControl": "0"
   },
@@ -137,6 +153,8 @@
     "call path (param)": " [xhci_remove_segment_mapping->radix_tree_lookup->__radix_tree_lookup->radix_tree_descend] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [radix_tree_lookup->__radix_tree_lookup->radix_tree_descend] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "3",
     "isControl": "0"
   }
@@ -152,6 +170,8 @@
     "call path (param)": " [xhci_shutdown->pci_set_power_state->__pci_start_power_transition] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [pci_set_power_state->__pci_start_power_transition] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "0",
     "isControl": "1",
     "t_trace": "[ ACTUAL_IN || PARAMETER_INpci_power_t ] -> [ FORMAL_IN || PARAMETER_INstate ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/pci.c#L795 ] -> ",
@@ -161,15 +181,17 @@
   },
   {
     "id": "59",
-    "risky": "val-sen-api (pci_set_power_state)",
+    "risky": "val-sen-api (pci_platform_power_transition)",
     "acc_path": "state",
     "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/pci.c#L912",
-    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/pci.c#L754",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/pci.c#L854",
     "drv caller (param)": "[ xhci_shutdown | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/host/xhci.c#L765 ], ",
-    "call path (param)": " [xhci_shutdown->pci_set_power_state->__pci_start_power_transition->pci_platform_power_transition] ",
+    "call path (param)": " [xhci_shutdown->pci_set_power_state->__pci_complete_power_transition] ",
     "drv_update loc (shared field)": "",
-    "call path (type)": " [pci_set_power_state->__pci_start_power_transition->pci_platform_power_transition] ",
-    "cond_num": "5",
+    "call path (type)": " [pci_set_power_state->__pci_complete_power_transition] ",
+    "num condition checks": 1,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/pci.c#L852 | ",
+    "cond_num": "1",
     "isControl": "0"
   }
 ]

@@ -9,6 +9,8 @@
     "call path (param)": " [nvme_init_iod->kmalloc_order] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [kmalloc_order] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "0",
     "isControl": "1",
     "t_trace": "",
@@ -28,6 +30,8 @@
     "call path (param)": " [nvme_init_iod->kmalloc_order] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [kmalloc_order] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "0",
     "isControl": "1",
     "t_trace": "",
@@ -47,9 +51,11 @@
     "call path (param)": " [nvme_configure_admin_queue->nvme_enable_ctrl->nvme_wait_ready] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [nvme_enable_ctrl->nvme_wait_ready] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "0",
     "isControl": "1",
-    "t_trace": "[ ACTUAL_IN || PARAMETER_INu64 ] -> [ FORMAL_IN || PARAMETER_INcap ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1076 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1076 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1076 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1076 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1076 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1076 ] -> ",
+    "t_trace": "[ ACTUAL_IN || PARAMETER_INu64 ] -> [ FORMAL_IN || PARAMETER_INcap ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1076 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1076 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1076 ] -> ",
     "isTrue": "-",
     "atk_reason": "",
     "defense": ""
@@ -66,9 +72,11 @@
     "call path (param)": " [nvme_configure_admin_queue->nvme_enable_ctrl->nvme_wait_ready] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [nvme_enable_ctrl->nvme_wait_ready] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "0",
     "isControl": "1",
-    "t_trace": "[ ACTUAL_IN || PARAMETER_INu64 ] -> [ FORMAL_IN || PARAMETER_INcap ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1076 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1076 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1076 ] -> ",
+    "t_trace": "[ ACTUAL_IN || PARAMETER_INu64 ] -> [ FORMAL_IN || PARAMETER_INcap ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1076 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1076 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1076 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1076 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1076 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1076 ] -> ",
     "isTrue": "-",
     "atk_reason": "",
     "defense": ""
@@ -85,6 +93,8 @@
     "call path (param)": " [nvme_setup_io_queues->nvme_set_queue_count] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [nvme_set_queue_count] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "0",
     "isControl": "1",
     "t_trace": "[ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L682 ] -> [ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L663 ] -> [ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L663 ] -> [ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L679 ] -> [ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L682 ] -> [ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L661 |   %15 = alloca i32, align 4 ] -> ",
@@ -102,6 +112,8 @@
     "call path (param)": " [nvme_setup_io_queues->nvme_set_queue_count] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [nvme_set_queue_count] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "3",
     "isControl": "0"
   }
@@ -117,6 +129,8 @@
     "call path (param)": " [nvme_watchdog_timer->mod_timer->__mod_timer->calc_wheel_index->calc_index] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [nvme_uninit_ctrl->nvme_remove_namespaces->nvme_kill_queues->blk_mq_start_stopped_hw_queues->blk_mq_run_hw_queue->kblockd_schedule_delayed_work_on->queue_delayed_work_on->__queue_delayed_work->add_timer_on->internal_add_timer->__internal_add_timer->calc_wheel_index->calc_index] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "12",
     "isControl": "0"
   }
@@ -132,6 +146,8 @@
     "call path (param)": " [nvme_watchdog_timer->round_jiffies->round_jiffies_common] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [round_jiffies->round_jiffies_common] ",
+    "num condition checks": 2,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L275 | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L275 | ",
     "cond_num": "2",
     "isControl": "0"
   }
@@ -147,6 +163,8 @@
     "call path (param)": " [nvme_map_cmb->ioremap_wc->__ioremap_caller->is_new_memtype_allowed] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [ioremap_wc->__ioremap_caller->is_new_memtype_allowed] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "7",
     "isControl": "0"
   },
@@ -160,8 +178,14 @@
     "call path (param)": " [nvme_map_cmb->ioremap_wc->__ioremap_caller] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [ioremap_wc->__ioremap_caller] ",
-    "cond_num": "1",
-    "isControl": "0"
+    "num condition checks": 0,
+    "condition checks": "",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "[ ACTUAL_IN || PARAMETER_INresource_size_t ] -> [ FORMAL_IN || PARAMETER_INphys_addr ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L96 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L96 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L96 ] -> [ INST || DATA_ST || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L82 |   %14 = alloca i64, align 8 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L130 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L130 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L130 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L130 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L130 ] -> [ INST || DATA_ST || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L82 |   %7 = alloca i64, align 8 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L97 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
   }
 ]
 [
@@ -175,6 +199,8 @@
     "call path (param)": " [nvme_map_cmb->ioremap_wc->__ioremap_caller] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [ioremap_wc->__ioremap_caller] ",
+    "num condition checks": 4,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L97 | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L97 | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L100 | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L110 | ",
     "cond_num": "4",
     "isControl": "0"
   },
@@ -188,6 +214,8 @@
     "call path (param)": " [nvme_map_cmb->ioremap_wc->__ioremap_caller] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [ioremap_wc->__ioremap_caller] ",
+    "num condition checks": 1,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L97 | ",
     "cond_num": "1",
     "isControl": "1",
     "t_trace": "[ ACTUAL_IN || PARAMETER_INlong unsigned int ] -> [ FORMAL_IN || PARAMETER_INsize ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L96 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L96 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L96 ] -> [ INST || DATA_ST || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L82 |   %14 = alloca i64, align 8 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L97 ] -> ",
@@ -207,24 +235,13 @@
     "call path (param)": " [nvme_setup_io_queues->pci_enable_msi_range->__pci_enable_msi_range] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [pci_enable_msi_range->__pci_enable_msi_range] ",
+    "num condition checks": 1,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/msi.c#L1053 | ",
     "cond_num": "3",
     "isControl": "0"
   }
 ]
 [
-  {
-    "id": "50",
-    "risky": "numeric-arith",
-    "acc_path": "maxvec",
-    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/msi.c#L1108",
-    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/log2.h#L57",
-    "drv caller (param)": "[ nvme_setup_io_queues | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L1435 ], ",
-    "call path (param)": " [nvme_setup_io_queues->pci_enable_msi_range->__pci_enable_msi_range->msi_capability_init->msi_setup_entry->__roundup_pow_of_two] ",
-    "drv_update loc (shared field)": "",
-    "call path (type)": " [pci_enable_msi_range->__pci_enable_msi_range->msi_capability_init->msi_setup_entry->__roundup_pow_of_two] ",
-    "cond_num": "74",
-    "isControl": "0"
-  },
   {
     "id": "50",
     "risky": "val-sen-branch (pci_msi_vec_count)",
@@ -235,7 +252,24 @@
     "call path (param)": " [nvme_setup_io_queues->pci_enable_msi_range->__pci_enable_msi_range] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [pci_enable_msi_range->__pci_enable_msi_range] ",
+    "num condition checks": 1,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/msi.c#L1053 | ",
     "cond_num": "3",
+    "isControl": "0"
+  },
+  {
+    "id": "50",
+    "risky": "numeric-arith",
+    "acc_path": "maxvec",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/msi.c#L1108",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/log2.h#L57",
+    "drv caller (param)": "[ nvme_setup_io_queues | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/pci.c#L1435 ], ",
+    "call path (param)": " [nvme_setup_io_queues->pci_enable_msi_range->__pci_enable_msi_range->msi_capability_init->msi_setup_entry->__roundup_pow_of_two] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [pci_enable_msi_range->__pci_enable_msi_range->msi_capability_init->msi_setup_entry->__roundup_pow_of_two] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "cond_num": "74",
     "isControl": "0"
   }
 ]

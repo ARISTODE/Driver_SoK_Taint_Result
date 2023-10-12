@@ -86,6 +86,8 @@
     "call path (param)": "",
     "drv_update loc (shared field)": "[ (printer_func_bind) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/function/f_printer.c#L1083 ], ",
     "call path (type)": "",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "2",
     "isControl": "0"
   },
@@ -99,6 +101,8 @@
     "call path (param)": "",
     "drv_update loc (shared field)": "[ (printer_func_bind) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/function/f_printer.c#L1083 ], ",
     "call path (type)": "",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "0",
     "isControl": "1",
     "t_trace": "[ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/char_dev.c#L326 |   %4 = alloca %struct.module.589*, align 8 ] -> ",

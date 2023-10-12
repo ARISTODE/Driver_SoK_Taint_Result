@@ -9,6 +9,8 @@
     "call path (param)": " [loop_set_fd->set_blocksize->blksize_bits] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [set_blocksize->blksize_bits] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "0",
     "isControl": "1",
     "t_trace": "[ ACTUAL_IN || PARAMETER_INunsigned int ] -> [ FORMAL_IN || PARAMETER_INsize ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/blkdev.h#L1376 ] -> ",
@@ -28,20 +30,9 @@
     "call path (param)": " [lo_read_transfer->alloc_pages_node->__alloc_pages_node->__alloc_pages->__alloc_pages_nodemask->__free_pages->free_hot_cold_page->free_one_page->__free_one_page] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [kthread_create_on_node->kmalloc_order->alloc_pages_node.1180->__alloc_pages_node.1186->__alloc_pages.1188->__alloc_pages_nodemask->__free_pages->free_hot_cold_page->free_one_page->__free_one_page] ",
+    "num condition checks": 3,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/page_alloc.c#L795 | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/page_alloc.c#L798 | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/page_alloc.c#L804 | ",
     "cond_num": "19",
-    "isControl": "0"
-  },
-  {
-    "id": "34",
-    "risky": "val-sen-branch (memcpy)",
-    "acc_path": "order",
-    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/page_alloc.c#L3757",
-    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/page_alloc.c#L719",
-    "drv caller (param)": "[ lo_read_transfer | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/block/loop.c#L410 ], ",
-    "call path (param)": " [lo_read_transfer->alloc_pages_node->__alloc_pages_node->__alloc_pages->__alloc_pages_nodemask->__free_pages->free_hot_cold_page->free_one_page->__free_one_page->page_is_buddy] ",
-    "drv_update loc (shared field)": "",
-    "call path (type)": " [kthread_create_on_node->kmalloc_order->alloc_pages_node.1180->__alloc_pages_node.1186->__alloc_pages.1188->__alloc_pages_nodemask->__free_pages->free_hot_cold_page->free_one_page->__free_one_page->page_is_buddy] ",
-    "cond_num": "20",
     "isControl": "0"
   },
   {
@@ -54,6 +45,23 @@
     "call path (param)": " [lo_read_transfer->alloc_pages_node->__alloc_pages_node->__alloc_pages->__alloc_pages_nodemask->__free_pages->free_hot_cold_page->free_one_page->__free_one_page] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [kthread_create_on_node->kmalloc_order->alloc_pages_node.1180->__alloc_pages_node.1186->__alloc_pages.1188->__alloc_pages_nodemask->__free_pages->free_hot_cold_page->free_one_page->__free_one_page] ",
+    "num condition checks": 2,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/page_alloc.c#L858 | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/page_alloc.c#L852 | ",
+    "cond_num": "20",
+    "isControl": "0"
+  },
+  {
+    "id": "34",
+    "risky": "val-sen-branch (memcpy)",
+    "acc_path": "order",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/page_alloc.c#L3757",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/page_alloc.c#L719",
+    "drv caller (param)": "[ lo_read_transfer | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/block/loop.c#L410 ], ",
+    "call path (param)": " [lo_read_transfer->alloc_pages_node->__alloc_pages_node->__alloc_pages->__alloc_pages_nodemask->__free_pages->free_hot_cold_page->free_one_page->__free_one_page->page_is_buddy] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [kthread_create_on_node->kmalloc_order->alloc_pages_node.1180->__alloc_pages_node.1186->__alloc_pages.1188->__alloc_pages_nodemask->__free_pages->free_hot_cold_page->free_one_page->__free_one_page->page_is_buddy] ",
+    "num condition checks": 1,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/page_alloc.c#L719 | ",
     "cond_num": "20",
     "isControl": "0"
   },
@@ -67,6 +75,8 @@
     "call path (param)": " [lo_read_transfer->alloc_pages_node->__alloc_pages_node->__alloc_pages->__alloc_pages_nodemask->get_page_from_freelist->buffered_rmqueue->rmqueue_bulk->list_add.1059->__list_add.1060] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [kthread_create_on_node->kmalloc_order->alloc_pages_node.1180->__alloc_pages_node.1186->__alloc_pages.1188->__alloc_pages_nodemask->get_page_from_freelist->buffered_rmqueue->rmqueue_bulk->list_add.1059->__list_add.1060] ",
+    "num condition checks": 1,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/compiler.h#L245 | ",
     "cond_num": "21",
     "isControl": "0"
   }
@@ -82,6 +92,8 @@
     "call path (param)": " [loop_control_ioctl->idr_remove->sub_remove] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [blk_mq_init_queue->blk_alloc_queue_node->ida_simple_remove->ida_remove->idr_remove->sub_remove] ",
+    "num condition checks": 1,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L531 | ",
     "cond_num": "7",
     "isControl": "0"
   },
@@ -95,6 +107,8 @@
     "call path (param)": " [loop_control_ioctl->idr_remove->sub_remove] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [blk_mq_init_queue->blk_alloc_queue_node->ida_simple_remove->ida_remove->idr_remove->sub_remove] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "5",
     "isControl": "0"
   },
@@ -108,6 +122,8 @@
     "call path (param)": " [loop_control_ioctl->idr_remove->sub_remove] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [blk_mq_init_queue->blk_alloc_queue_node->ida_simple_remove->ida_remove->idr_remove->sub_remove] ",
+    "num condition checks": 1,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/compiler.h#L245 | ",
     "cond_num": "6",
     "isControl": "0"
   }
@@ -123,6 +139,8 @@
     "call path (param)": " [loop_add->blk_mq_init_queue->blk_alloc_queue_node->ida_simple_get->ida_get_new_above->idr_get_empty_slot->sub_alloc] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [blk_mq_init_queue->blk_alloc_queue_node->ida_simple_get->ida_get_new_above->idr_get_empty_slot->sub_alloc] ",
+    "num condition checks": 2,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L238 | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L261 | ",
     "cond_num": "9",
     "isControl": "0"
   },
@@ -136,6 +154,8 @@
     "call path (param)": " [loop_add->blk_mq_init_queue->blk_alloc_queue_node->ida_simple_get->ida_get_new_above->idr_get_empty_slot->sub_alloc] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [blk_mq_init_queue->blk_alloc_queue_node->ida_simple_get->ida_get_new_above->idr_get_empty_slot->sub_alloc] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "9",
     "isControl": "0"
   }
@@ -151,6 +171,8 @@
     "call path (param)": " [loop_add->blk_mq_init_queue->blk_alloc_queue_node->ida_simple_get->ida_pre_get->__idr_pre_get->kmem_cache_zalloc.903] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [blk_mq_init_queue->blk_alloc_queue_node->ida_simple_get->ida_pre_get->__idr_pre_get->kmem_cache_zalloc.903] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "12",
     "isControl": "0"
   }
@@ -166,6 +188,8 @@
     "call path (param)": " [handle_partial_read->bio_advance->bio_advance_iter.47->bvec_iter_advance.49] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [blk_mq_init_queue->blk_cleanup_queue->blk_mq_free_queue->blk_mq_del_queue_tag_set->blk_mq_update_tag_set_depth->blk_mq_freeze_queue->blk_freeze_queue->blk_mq_freeze_queue_start->blk_mq_run_hw_queues->blk_mq_run_hw_queue->__blk_mq_run_hw_queue->blk_mq_end_request->blk_update_request->req_bio_endio->bio_advance->bio_advance_iter.47->bvec_iter_advance.49] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "7",
     "isControl": "0"
   }
@@ -181,6 +205,8 @@
     "call path (param)": " [loop_clr_fd->kobject_uevent->kobject_uevent_env] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [kobject_uevent->kobject_uevent_env] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "0",
     "isControl": "1",
     "t_trace": "[ ACTUAL_IN || PARAMETER_INkobject_action ] -> [ FORMAL_IN || PARAMETER_INaction ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/kobject_uevent.c#L168 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/kobject_uevent.c#L168 ] -> ",
@@ -200,6 +226,8 @@
     "call path (param)": " [loop_change_fd->fget->__fget->fcheck_files->__fcheck_files] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [fget->__fget->fcheck_files->__fcheck_files] ",
+    "num condition checks": 1,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/fdtable.h#L84 | ",
     "cond_num": "2",
     "isControl": "0"
   },
@@ -213,6 +241,8 @@
     "call path (param)": " [loop_change_fd->fget->__fget->fcheck_files->__fcheck_files] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [fget->__fget->fcheck_files->__fcheck_files] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "1",
     "isControl": "0"
   },
@@ -226,6 +256,8 @@
     "call path (param)": " [loop_change_fd->fget->__fget->fcheck_files->__fcheck_files] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [fget->__fget->fcheck_files->__fcheck_files] ",
+    "num condition checks": 2,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/fdtable.h#L84 | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/compiler.h#L220 | ",
     "cond_num": "3",
     "isControl": "0"
   }

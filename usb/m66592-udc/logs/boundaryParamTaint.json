@@ -9,6 +9,8 @@
     "call path (param)": " [m66592_irq->__msecs_to_jiffies->_msecs_to_jiffies.22] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [__msecs_to_jiffies->_msecs_to_jiffies.22] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "0",
     "isControl": "1",
     "t_trace": "[ ACTUAL_IN || PARAMETER_IN ] -> [ FORMAL_IN || PARAMETER_INm ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/jiffies.h#L301 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/jiffies.h#L301 ] -> ",
@@ -28,6 +30,8 @@
     "call path (param)": " [m66592_irq->mod_timer->__mod_timer->internal_add_timer->__internal_add_timer->calc_wheel_index->calc_index] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [msleep->schedule_timeout_uninterruptible->schedule_timeout->__mod_timer->internal_add_timer->__internal_add_timer->calc_wheel_index->calc_index] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "12",
     "isControl": "0"
   }
@@ -43,6 +47,8 @@
     "call path (param)": " [m66592_remove->platform_get_irq->platform_get_resource] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [platform_get_irq->platform_get_resource] ",
+    "num condition checks": 2,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/platform.c#L72 | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/platform.c#L75 | ",
     "cond_num": "2",
     "isControl": "0"
   }

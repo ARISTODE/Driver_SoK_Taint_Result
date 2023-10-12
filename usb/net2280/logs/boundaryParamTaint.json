@@ -9,6 +9,8 @@
     "call path (param)": " [net2280_probe->ioremap_nocache->__ioremap_caller->walk_system_ram_range] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [ioremap_nocache->__ioremap_caller->walk_system_ram_range] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "4",
     "isControl": "0"
   },
@@ -22,6 +24,8 @@
     "call path (param)": " [net2280_probe->ioremap_nocache->__ioremap_caller] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [ioremap_nocache->__ioremap_caller] ",
+    "num condition checks": 1,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L97 | ",
     "cond_num": "1",
     "isControl": "0"
   }
@@ -37,6 +41,8 @@
     "call path (param)": " [net2280_probe->ioremap_nocache->__ioremap_caller->walk_system_ram_range] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [ioremap_nocache->__ioremap_caller->walk_system_ram_range] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "4",
     "isControl": "0"
   },
@@ -50,6 +56,8 @@
     "call path (param)": " [net2280_probe->ioremap_nocache->__ioremap_caller] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [ioremap_nocache->__ioremap_caller] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "0",
     "isControl": "1",
     "t_trace": "[ ACTUAL_IN || PARAMETER_INlong unsigned int ] -> [ FORMAL_IN || PARAMETER_INsize ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L97 ] -> ",

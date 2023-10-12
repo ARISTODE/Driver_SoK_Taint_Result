@@ -9,6 +9,8 @@
     "call path (param)": " [null_queue_rq->hrtimer_init->__hrtimer_init->hrtimer_clockid_to_base] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [hrtimer_init->__hrtimer_init->hrtimer_clockid_to_base] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "2",
     "isControl": "0"
   }
@@ -24,6 +26,8 @@
     "call path (param)": " [null_init->kmem_cache_create->calculate_alignment] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [kmem_cache_create->calculate_alignment] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "4",
     "isControl": "0"
   }
@@ -39,6 +43,8 @@
     "call path (param)": " [null_init->kmem_cache_create->create_cache] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [kmem_cache_create->create_cache] ",
+    "num condition checks": 2,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/slab_common.c#L334 | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/slab_common.c#L344 | ",
     "cond_num": "2",
     "isControl": "0"
   }
@@ -54,6 +60,8 @@
     "call path (param)": " [put_tag->__wake_up->__wake_up_common] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [__wake_up->__wake_up_common] ",
+    "num condition checks": 3,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L70 | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L73 | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L74 | ",
     "cond_num": "3",
     "isControl": "0"
   }
@@ -69,6 +77,8 @@
     "call path (param)": " [null_add_dev->alloc_disk_node] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [alloc_disk_node] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "0",
     "isControl": "1",
     "t_trace": "",

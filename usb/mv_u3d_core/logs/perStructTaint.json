@@ -76,6 +76,8 @@
     "call path (param)": "",
     "drv_update loc (shared field)": "[ (mv_u3d_start) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/udc/mv_u3d_core.c#L1240 ], ",
     "call path (type)": " [free_irq->__free_irq->_raw_spin_lock_irqsave->__raw_spin_lock_irqsave->do_raw_spin_lock->__spin_lock_debug] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "3",
     "isControl": "0"
   },
@@ -89,6 +91,8 @@
     "call path (param)": "",
     "drv_update loc (shared field)": "[ (mv_u3d_start) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/udc/mv_u3d_core.c#L1240 ], ",
     "call path (type)": " [free_irq->__free_irq->_raw_spin_lock_irqsave->__raw_spin_lock_irqsave->do_raw_spin_lock->__spin_lock_debug] ",
+    "num condition checks": 2,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/locking/spinlock_debug.c#L111 | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/compiler.h#L220 | ",
     "cond_num": "5",
     "isControl": "0"
   },
@@ -102,6 +106,8 @@
     "call path (param)": "",
     "drv_update loc (shared field)": "[ (mv_u3d_start) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/udc/mv_u3d_core.c#L1240 ], ",
     "call path (type)": " [free_irq->__free_irq->_raw_spin_lock_irqsave->__raw_spin_lock_irqsave->do_raw_spin_lock->__spin_lock_debug] ",
+    "num condition checks": 2,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/locking/spinlock_debug.c#L111 | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/compiler.h#L220 | ",
     "cond_num": "5",
     "isControl": "0"
   }

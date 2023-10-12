@@ -9,6 +9,8 @@
     "call path (param)": " [sst_acpi_probe->request_firmware_nowait->kzalloc.146] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [request_firmware_nowait->kzalloc.146] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "4",
     "isControl": "0"
   }
@@ -24,6 +26,8 @@
     "call path (param)": " [sst_acpi_probe->platform_get_irq->platform_get_resource] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [platform_get_irq->platform_get_resource] ",
+    "num condition checks": 2,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/platform.c#L72 | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/platform.c#L75 | ",
     "cond_num": "2",
     "isControl": "0"
   }

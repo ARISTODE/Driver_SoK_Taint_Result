@@ -9,6 +9,8 @@
     "call path (param)": " [carm_get_special->blk_get_request->blk_old_get_request->get_request->__get_request] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [blk_get_request->blk_old_get_request->get_request->__get_request] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "15",
     "isControl": "0"
   }

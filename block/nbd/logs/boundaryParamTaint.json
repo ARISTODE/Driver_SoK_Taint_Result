@@ -9,6 +9,8 @@
     "call path (param)": " [nbd_size_set->set_blocksize->blksize_bits] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [set_blocksize->blksize_bits] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "0",
     "isControl": "1",
     "t_trace": "[ ACTUAL_IN || PARAMETER_INunsigned int ] -> [ FORMAL_IN || PARAMETER_INsize ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/blkdev.h#L1376 ] -> ",
@@ -25,9 +27,11 @@
     "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L95",
     "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L74",
     "drv caller (param)": "[ nbd_handle_req | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/block/nbd.c#L553 ], ",
-    "call path (param)": " [nbd_handle_req->nbd_end_request->__blk_end_request_all->__blk_end_bidi_request->blk_finish_request->__blk_put_request->freed_request->__freed_request->__wake_up->__wake_up_common] ",
+    "call path (param)": " [nbd_handle_req->__wake_up->__wake_up_common] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [__wake_up->__wake_up_common] ",
+    "num condition checks": 3,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L70 | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L73 | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L74 | ",
     "cond_num": "3",
     "isControl": "0"
   }
@@ -40,9 +44,11 @@
     "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L1086",
     "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/timer.c#L471",
     "drv caller (param)": "[ nbd_handle_req | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/block/nbd.c#L539 ], ",
-    "call path (param)": " [nbd_handle_req->nbd_send_req->sock_xmit->mod_timer->__mod_timer->calc_wheel_index->calc_index] ",
+    "call path (param)": " [nbd_handle_req->mod_timer->__mod_timer->calc_wheel_index->calc_index] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [mod_timer->__mod_timer->calc_wheel_index->calc_index] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "12",
     "isControl": "0"
   }
@@ -58,6 +64,8 @@
     "call path (param)": " [nbd_size_clear->kobject_uevent->kobject_uevent_env] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [kobject_uevent->kobject_uevent_env] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "0",
     "isControl": "1",
     "t_trace": "[ ACTUAL_IN || PARAMETER_INkobject_action ] -> [ FORMAL_IN || PARAMETER_INaction ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/kobject_uevent.c#L168 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/kobject_uevent.c#L168 ] -> ",

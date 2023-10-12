@@ -2,7 +2,7 @@
   "id": 14,
   "acc_path": "sst_mem_block->users",
   "Kernel read": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-firmware.c#L165], ",
-  "Drv update": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L579],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L543], "
+  "Drv update": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L543],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-dsp.c#L579], "
 }
 {
   "id": 17,
@@ -14,12 +14,12 @@
   "id": 22,
   "acc_path": "sst_generic_ipc->pending",
   "Kernel read": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/common/sst-ipc.c#L168], ",
-  "Drv update": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L582],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L575], "
+  "Drv update": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L575],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L582], "
 }
 {
   "id": 26,
   "acc_path": "__wait_queue->flags",
-  "Kernel read": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L360],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L190],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L38],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L176],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L27],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L211],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L344],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L334],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L71],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L344], ",
+  "Kernel read": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L360],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L190],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L211],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L176],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L344],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L334],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L38],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L27],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L71],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L344], ",
   "Drv update": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/sound/soc/intel/haswell/sst-haswell-ipc.c#L2180], "
 }
 {

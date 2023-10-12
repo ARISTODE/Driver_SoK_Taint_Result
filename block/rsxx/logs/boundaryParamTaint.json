@@ -9,6 +9,8 @@
     "call path (param)": " [config_data_crc32->crc32_le->crc32_le_generic->crc32_body] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [crc32_le->crc32_le_generic->crc32_body] ",
+    "num condition checks": 1,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/crc32.c#L101 | ",
     "cond_num": "5",
     "isControl": "0"
   }
@@ -24,6 +26,8 @@
     "call path (param)": " [config_data_crc32->crc32_le->crc32_le_generic->crc32_body] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [crc32_le->crc32_le_generic->crc32_body] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "2",
     "isControl": "0"
   }
@@ -39,6 +43,8 @@
     "call path (param)": " [rsxx_pci_probe->__alloc_workqueue_key->alloc_and_link_pwqs->apply_workqueue_attrs->apply_workqueue_attrs_locked->apply_wqattrs_prepare->alloc_unbound_pwq->get_unbound_pool->worker_pool_assign_id->idr_alloc->idr_get_empty_slot->idr_layer_alloc->kmem_cache_zalloc] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [ida_pre_get->__idr_pre_get->kmem_cache_zalloc] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "1",
     "isControl": "0"
   }
@@ -54,6 +60,8 @@
     "call path (param)": " [rsxx_creg_init->kmem_cache_create->calculate_alignment] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [kmem_cache_create->calculate_alignment] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "4",
     "isControl": "0"
   }
@@ -69,6 +77,8 @@
     "call path (param)": " [rsxx_creg_init->kmem_cache_create->create_cache] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [kmem_cache_create->create_cache] ",
+    "num condition checks": 2,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/slab_common.c#L334 | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/slab_common.c#L344 | ",
     "cond_num": "2",
     "isControl": "0"
   }
@@ -84,6 +94,8 @@
     "call path (param)": " [rsxx_pci_probe->pci_iomap->pci_iomap_range] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [pci_iomap->pci_iomap_range] ",
+    "num condition checks": 2,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/pci_iomap.c#L36 | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/pci_iomap.c#L36 | ",
     "cond_num": "4",
     "isControl": "0"
   },
@@ -97,6 +109,8 @@
     "call path (param)": " [rsxx_pci_probe->pci_iomap->pci_iomap_range] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [pci_iomap->pci_iomap_range] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "2",
     "isControl": "0"
   }
@@ -112,6 +126,8 @@
     "call path (param)": " [rsxx_pci_probe->pci_iomap->pci_iomap_range] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [pci_iomap->pci_iomap_range] ",
+    "num condition checks": 2,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/pci_iomap.c#L36 | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/pci_iomap.c#L36 | ",
     "cond_num": "4",
     "isControl": "1",
     "t_trace": "[ ACTUAL_IN || PARAMETER_INlong unsigned int ] -> [ FORMAL_IN || PARAMETER_INmaxlen ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/pci_iomap.c#L41 ] -> [ INST || UNKNOWN Edge Type || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/pci_iomap.c#L38 ] -> ",
@@ -131,9 +147,11 @@
     "call path (param)": " [rsxx_issue_dmas->__msecs_to_jiffies->_msecs_to_jiffies.928] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [__msecs_to_jiffies->_msecs_to_jiffies.928] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "0",
     "isControl": "1",
-    "t_trace": "[ ACTUAL_IN || PARAMETER_IN ] -> [ FORMAL_IN || PARAMETER_INm ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/jiffies.h#L301 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/jiffies.h#L301 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/jiffies.h#L301 ] -> ",
+    "t_trace": "[ ACTUAL_IN || PARAMETER_IN ] -> [ FORMAL_IN || PARAMETER_INm ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/jiffies.h#L301 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/jiffies.h#L301 ] -> ",
     "isTrue": "-",
     "atk_reason": "",
     "defense": ""
@@ -145,12 +163,14 @@
     "risky": "val-sen-api (kmalloc)",
     "acc_path": "gfp_mask",
     "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-core.c#L647",
-    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L495",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L391",
     "drv caller (param)": "[ rsxx_setup_dev | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/block/rsxx/dev.c#L269 ], ",
     "call path (param)": " [rsxx_setup_dev->blk_alloc_queue->blk_alloc_queue_node->bioset_create->__bioset_create->__alloc_workqueue_key->alloc_and_link_pwqs->apply_workqueue_attrs->apply_workqueue_attrs_locked->apply_wqattrs_prepare->alloc_unbound_pwq->get_unbound_pool->create_worker->ida_simple_get->ida_pre_get] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [ida_pre_get] ",
-    "cond_num": "46",
+    "num condition checks": 1,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L487 | ",
+    "cond_num": "49",
     "isControl": "0"
   }
 ]
@@ -165,6 +185,8 @@
     "call path (param)": " [disk_stats_complete->generic_end_io_acct->part_dec_in_flight] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [generic_end_io_acct->part_dec_in_flight] ",
+    "num condition checks": 1,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/genhd.h#L390 | ",
     "cond_num": "1",
     "isControl": "0"
   }
@@ -180,6 +202,8 @@
     "call path (param)": " [disk_stats_start->generic_start_io_acct->part_inc_in_flight] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [generic_start_io_acct->part_inc_in_flight] ",
+    "num condition checks": 1,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/genhd.h#L383 | ",
     "cond_num": "1",
     "isControl": "0"
   }

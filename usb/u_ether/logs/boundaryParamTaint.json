@@ -6,9 +6,11 @@
     "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ethernet/eth.c#L388",
     "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L415",
     "drv caller (param)": "[ gether_setup_name_default | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/function/u_ether.c#L829 ], ",
-    "call path (param)": " [gether_setup_name_default->alloc_etherdev_mqs->alloc_netdev_mqs->kzalloc.316] ",
+    "call path (param)": " [gether_setup_name_default->alloc_etherdev_mqs->alloc_netdev_mqs->netif_alloc_netdev_queues->kzalloc.316] ",
     "drv_update loc (shared field)": "",
-    "call path (type)": " [alloc_etherdev_mqs->alloc_netdev_mqs->kzalloc.316] ",
+    "call path (type)": " [alloc_etherdev_mqs->alloc_netdev_mqs->netif_alloc_netdev_queues->kzalloc.316] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "14",
     "isControl": "0"
   },
@@ -19,9 +21,11 @@
     "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ethernet/eth.c#L388",
     "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L421",
     "drv caller (param)": "[ gether_setup_name_default | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/function/u_ether.c#L829 ], ",
-    "call path (param)": " [gether_setup_name_default->alloc_etherdev_mqs->alloc_netdev_mqs->kzalloc.316] ",
+    "call path (param)": " [gether_setup_name_default->alloc_etherdev_mqs->alloc_netdev_mqs->netif_alloc_netdev_queues->kzalloc.316] ",
     "drv_update loc (shared field)": "",
-    "call path (type)": " [alloc_etherdev_mqs->alloc_netdev_mqs->kzalloc.316] ",
+    "call path (type)": " [alloc_etherdev_mqs->alloc_netdev_mqs->netif_alloc_netdev_queues->kzalloc.316] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "14",
     "isControl": "0"
   }

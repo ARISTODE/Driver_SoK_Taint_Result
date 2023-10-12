@@ -65,6 +65,8 @@
     "call path (param)": " [m66592_driver_init->__platform_driver_probe->_raw_spin_unlock->__raw_spin_unlock->do_raw_spin_unlock->queued_spin_unlock->native_queued_spin_unlock] ",
     "drv_update loc (shared field)": "[ (m66592_udc_start) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/udc/m66592-udc.c#L1460 ], ",
     "call path (type)": " [del_timer_sync->try_to_del_timer_sync->lock_timer_base->_raw_spin_unlock_irqrestore->__raw_spin_unlock_irqrestore->do_raw_spin_unlock->queued_spin_unlock->native_queued_spin_unlock] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "2",
     "isControl": "0"
   },
@@ -78,6 +80,8 @@
     "call path (param)": " [m66592_driver_init->__platform_driver_probe->_raw_spin_unlock->__raw_spin_unlock->do_raw_spin_unlock->queued_spin_unlock->native_queued_spin_unlock] ",
     "drv_update loc (shared field)": "[ (m66592_udc_start) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/udc/m66592-udc.c#L1460 ], ",
     "call path (type)": " [del_timer_sync->try_to_del_timer_sync->lock_timer_base->_raw_spin_unlock_irqrestore->__raw_spin_unlock_irqrestore->do_raw_spin_unlock->queued_spin_unlock->native_queued_spin_unlock] ",
+    "num condition checks": 1,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/compiler.h#L245 | ",
     "cond_num": "3",
     "isControl": "0"
   },
@@ -91,6 +95,8 @@
     "call path (param)": " [m66592_driver_init->__platform_driver_probe->_raw_spin_unlock->__raw_spin_unlock->do_raw_spin_unlock->queued_spin_unlock->native_queued_spin_unlock] ",
     "drv_update loc (shared field)": "[ (m66592_udc_start) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/udc/m66592-udc.c#L1460 ], ",
     "call path (type)": " [del_timer_sync->try_to_del_timer_sync->lock_timer_base->_raw_spin_unlock_irqrestore->__raw_spin_unlock_irqrestore->do_raw_spin_unlock->queued_spin_unlock->native_queued_spin_unlock] ",
+    "num condition checks": 1,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/compiler.h#L245 | ",
     "cond_num": "3",
     "isControl": "0"
   }

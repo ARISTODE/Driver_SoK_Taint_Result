@@ -19,6 +19,8 @@
     "call path (param)": "",
     "drv_update loc (shared field)": "[ (applesmc_create_nodes) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/applesmc.c#L1125 ], [ (applesmc_create_nodes) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/applesmc.c#L1129 ], ",
     "call path (type)": "",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "0",
     "isControl": "1",
     "t_trace": "",
@@ -71,6 +73,8 @@
     "call path (param)": " [applesmc_create_accelerometer->input_register_polled_device] ",
     "drv_update loc (shared field)": "[ (applesmc_create_accelerometer) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/applesmc.c#L1170 ], ",
     "call path (type)": " [input_register_polled_device] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "0",
     "isControl": "1",
     "t_trace": "",
@@ -82,14 +86,20 @@
     "id": "3",
     "risky": "ptr-write",
     "acc_path": "device->parent",
-    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/platform.c#L400",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/dynamic_debug.c#L619",
     "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/device.h#L865 |   %2 = alloca i8*, align 8",
     "drv caller (param)": "",
     "call path (param)": "",
     "drv_update loc (shared field)": "[ (applesmc_create_accelerometer) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/applesmc.c#L1170 ], ",
-    "call path (type)": "",
-    "cond_num": "6",
-    "isControl": "0"
+    "call path (type)": " [__dynamic_dev_dbg->dev_name.228] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "cond_num": "0",
+    "isControl": "1",
+    "t_trace": "[ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/dynamic_debug.c#L619 ] -> [ ACTUAL_IN || PARAMETER_IN ] -> [ FORMAL_IN || PARAMETER_INdev ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/device.h#L869 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/device.h#L869 ] -> [ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/device.h#L865 |   %2 = alloca i8*, align 8 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
   }
 ]
 [
@@ -179,6 +189,8 @@
     "call path (param)": "",
     "drv_update loc (shared field)": "[ (applesmc_create_accelerometer) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/applesmc.c#L1161 ], ",
     "call path (type)": "",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "3",
     "isControl": "0"
   }
@@ -202,6 +214,8 @@
     "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/input/input.c#L1313",
     "drv_update loc (shared field)": "[ (applesmc_create_accelerometer) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/applesmc.c#L1168 ], ",
     "call path (type)": "",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "0",
     "isControl": "1",
     "t_trace": "",

@@ -9,6 +9,8 @@
     "call path (param)": " [ncm_bind->kmalloc_order] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [kmalloc_order] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "0",
     "isControl": "1",
     "t_trace": "",
@@ -28,6 +30,8 @@
     "call path (param)": " [ncm_bind->kmalloc_order] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [kmalloc_order] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "0",
     "isControl": "1",
     "t_trace": "",
@@ -47,6 +51,8 @@
     "call path (param)": " [ncm_bind->hrtimer_init->__hrtimer_init->hrtimer_clockid_to_base] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [hrtimer_init->__hrtimer_init->hrtimer_clockid_to_base] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "2",
     "isControl": "0"
   }
@@ -62,6 +68,8 @@
     "call path (param)": " [ncm_unwrap_ntb->crc32_le->crc32_le_generic->crc32_body] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [crc32_le->crc32_le_generic->crc32_body] ",
+    "num condition checks": 1,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/crc32.c#L101 | ",
     "cond_num": "5",
     "isControl": "0"
   }
@@ -77,6 +85,8 @@
     "call path (param)": " [ncm_unwrap_ntb->crc32_le->crc32_le_generic->crc32_body] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [crc32_le->crc32_le_generic->crc32_body] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "2",
     "isControl": "0"
   }

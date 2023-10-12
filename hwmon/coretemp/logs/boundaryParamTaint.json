@@ -9,6 +9,8 @@
     "call path (param)": " [adjust_tjmax->rdmsr_safe_on_cpu->smp_call_function_single->generic_exec_single] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [rdmsr_safe_on_cpu->smp_call_function_single->generic_exec_single] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "10",
     "isControl": "0"
   },
@@ -22,6 +24,8 @@
     "call path (param)": " [adjust_tjmax->rdmsr_safe_on_cpu->smp_call_function_single->generic_exec_single] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [rdmsr_safe_on_cpu->smp_call_function_single->generic_exec_single] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "10",
     "isControl": "0"
   }
@@ -37,6 +41,8 @@
     "call path (param)": " [show_temp->rdmsr_on_cpu->smp_call_function_single->generic_exec_single] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [rdmsr_safe_on_cpu->smp_call_function_single->generic_exec_single] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "10",
     "isControl": "0"
   },
@@ -50,6 +56,8 @@
     "call path (param)": " [show_temp->rdmsr_on_cpu->smp_call_function_single->generic_exec_single] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [rdmsr_safe_on_cpu->smp_call_function_single->generic_exec_single] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "10",
     "isControl": "0"
   }

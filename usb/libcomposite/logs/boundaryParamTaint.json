@@ -9,6 +9,8 @@
     "call path (param)": " [os_desc_qw_sign_store->utf8s_to_utf16s->put_utf16] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [utf8s_to_utf16s->put_utf16] ",
+    "num condition checks": 1,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/nls/nls_base.c#L119 | ",
     "cond_num": "6",
     "isControl": "0"
   }
@@ -24,6 +26,8 @@
     "call path (param)": " [alloc_ep_req->kmalloc_order] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [config_group_init_type_name->config_item_set_name->kmalloc_order] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "0",
     "isControl": "1",
     "t_trace": "",
@@ -43,6 +47,8 @@
     "call path (param)": " [alloc_ep_req->kmalloc_order] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [config_group_init_type_name->config_item_set_name->kmalloc_order] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "0",
     "isControl": "1",
     "t_trace": "",

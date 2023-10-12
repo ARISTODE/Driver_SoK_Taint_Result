@@ -9,6 +9,8 @@
     "call path (param)": " [f71805f_probe->__devm_request_region->__request_region] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [__devm_request_region->__request_region] ",
+    "num condition checks": 1,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/resource.c#L1134 | ",
     "cond_num": "1",
     "isControl": "0"
   }
@@ -24,6 +26,8 @@
     "call path (param)": " [f71805f_probe->__devm_request_region->__request_region] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [__devm_request_region->__request_region] ",
+    "num condition checks": 1,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/resource.c#L1134 | ",
     "cond_num": "1",
     "isControl": "0"
   }

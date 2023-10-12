@@ -9,6 +9,8 @@
     "call path (param)": " [setup_req->kmalloc_order] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [d_make_root->__d_alloc->kmalloc_order] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "0",
     "isControl": "1",
     "t_trace": "",
@@ -28,6 +30,8 @@
     "call path (param)": " [setup_req->kmalloc_order] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [d_make_root->__d_alloc->kmalloc_order] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "0",
     "isControl": "1",
     "t_trace": "",
@@ -47,6 +51,8 @@
     "call path (param)": " [destroy_ep_files->__wake_up->__wake_up_common] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [d_make_root->iput->iput_final->evict->wake_up_bit->__wake_up_bit->__wake_up->__wake_up_common] ",
+    "num condition checks": 3,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L70 | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L73 | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L74 | ",
     "cond_num": "3",
     "isControl": "0"
   }
@@ -62,6 +68,8 @@
     "call path (param)": " [ep0_readable->kill_fasync->kill_fasync_rcu->send_sigio->send_sigio_to_task] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [kill_fasync->kill_fasync_rcu->send_sigio->send_sigio_to_task] ",
+    "num condition checks": 1,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/fcntl.c#L478 | ",
     "cond_num": "16",
     "isControl": "0"
   },
@@ -75,6 +83,8 @@
     "call path (param)": " [ep0_readable->kill_fasync->kill_fasync_rcu->send_sigio->send_sigio_to_task] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [kill_fasync->kill_fasync_rcu->send_sigio->send_sigio_to_task] ",
+    "num condition checks": 1,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/fcntl.c#L478 | ",
     "cond_num": "16",
     "isControl": "0"
   }

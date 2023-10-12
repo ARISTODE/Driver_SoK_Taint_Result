@@ -20,7 +20,7 @@
   "id": 4,
   "acc_path": "mem_ctl_info->edac_cap",
   "Kernel read": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L119], ",
-  "Drv update": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/i5000_edac.c#L1431],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/i5000_edac.c#L1445], "
+  "Drv update": " [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/i5000_edac.c#L1445],  [https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/i5000_edac.c#L1431], "
 }
 {
   "id": 12,

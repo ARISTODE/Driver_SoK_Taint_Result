@@ -9,6 +9,8 @@
     "call path (param)": " [i82975x_init->pci_get_device] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [pci_get_device] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "0",
     "isControl": "1",
     "t_trace": "",
@@ -28,6 +30,8 @@
     "call path (param)": " [i82975x_init->pci_get_device] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [pci_get_device] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "0",
     "isControl": "1",
     "t_trace": "",
@@ -47,6 +51,8 @@
     "call path (param)": " [i82975x_probe1->ioremap_nocache->__ioremap_caller] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [ioremap_nocache->__ioremap_caller] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "11",
     "isControl": "0"
   },
@@ -60,6 +66,8 @@
     "call path (param)": " [i82975x_probe1->ioremap_nocache->__ioremap_caller] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [ioremap_nocache->__ioremap_caller] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "0",
     "isControl": "1",
     "t_trace": "[ ACTUAL_IN || PARAMETER_INresource_size_t ] -> [ FORMAL_IN || PARAMETER_INphys_addr ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L96 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L96 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L96 ] -> [ INST || DATA_ST || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L82 |   %14 = alloca i64, align 8 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L130 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L130 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L130 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L130 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L130 ] -> [ INST || DATA_ST || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L82 |   %7 = alloca i64, align 8 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L97 ] -> ",
@@ -79,6 +87,8 @@
     "call path (param)": " [i82975x_probe1->ioremap_nocache->__ioremap_caller] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [ioremap_nocache->__ioremap_caller] ",
+    "num condition checks": 4,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L97 | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L97 | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L100 | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L110 | ",
     "cond_num": "4",
     "isControl": "0"
   },
@@ -92,6 +102,8 @@
     "call path (param)": " [i82975x_probe1->ioremap_nocache->__ioremap_caller] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [ioremap_nocache->__ioremap_caller] ",
+    "num condition checks": 1,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L97 | ",
     "cond_num": "1",
     "isControl": "1",
     "t_trace": "[ ACTUAL_IN || PARAMETER_INlong unsigned int ] -> [ FORMAL_IN || PARAMETER_INsize ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L96 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L96 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L96 ] -> [ INST || DATA_ST || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L82 |   %14 = alloca i64, align 8 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L97 ] -> ",
@@ -111,6 +123,8 @@
     "call path (param)": " [i82975x_probe1->edac_mc_alloc->edac_align_ptr] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [edac_mc_alloc->edac_align_ptr] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "2",
     "isControl": "0"
   },
@@ -124,6 +138,8 @@
     "call path (param)": " [i82975x_probe1->edac_mc_alloc->edac_align_ptr] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [edac_mc_alloc->edac_align_ptr] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "2",
     "isControl": "0"
   }
@@ -139,6 +155,8 @@
     "call path (param)": " [i82975x_probe1->edac_mc_alloc->edac_align_ptr] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [edac_mc_alloc->edac_align_ptr] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "4",
     "isControl": "0"
   },
@@ -152,6 +170,8 @@
     "call path (param)": " [i82975x_probe1->edac_mc_alloc->edac_align_ptr] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [edac_mc_alloc->edac_align_ptr] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "4",
     "isControl": "0"
   }

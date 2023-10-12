@@ -9,6 +9,8 @@
     "call path (param)": " [gprinter_put_minor->ida_simple_remove->ida_remove->idr_remove->sub_remove] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [ida_simple_remove->ida_remove->idr_remove->sub_remove] ",
+    "num condition checks": 1,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L531 | ",
     "cond_num": "11",
     "isControl": "0"
   },
@@ -22,6 +24,8 @@
     "call path (param)": " [gprinter_put_minor->ida_simple_remove->ida_remove->free_bitmap] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [ida_simple_remove->ida_remove->free_bitmap] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "3",
     "isControl": "0"
   },
@@ -30,12 +34,14 @@
     "risky": "arr-idx",
     "acc_path": "id",
     "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L1129",
-    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L529",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L1036",
     "drv caller (param)": "[ gprinter_put_minor | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/function/f_printer.c#L1249 ], ",
-    "call path (param)": " [gprinter_put_minor->ida_simple_remove->ida_remove->idr_remove->sub_remove] ",
+    "call path (param)": " [gprinter_put_minor->ida_simple_remove->ida_remove] ",
     "drv_update loc (shared field)": "",
-    "call path (type)": " [ida_simple_remove->ida_remove->idr_remove->sub_remove] ",
-    "cond_num": "9",
+    "call path (type)": " [ida_simple_remove->ida_remove] ",
+    "num condition checks": 1,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L1030 | ",
+    "cond_num": "4",
     "isControl": "0"
   },
   {
@@ -48,6 +54,8 @@
     "call path (param)": " [gprinter_put_minor->ida_simple_remove->ida_remove->idr_remove] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [ida_simple_remove->ida_remove->idr_remove] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "2",
     "isControl": "0"
   }
@@ -63,6 +71,8 @@
     "call path (param)": " [printer_req_alloc->kmalloc_order] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [device_create->device_create_vargs->device_create_groups_vargs->kzalloc.34->kmalloc_order] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "0",
     "isControl": "1",
     "t_trace": "",
@@ -82,6 +92,8 @@
     "call path (param)": " [printer_req_alloc->kmalloc_order] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [device_create->device_create_vargs->device_create_groups_vargs->kzalloc.34->kmalloc_order] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "0",
     "isControl": "1",
     "t_trace": "",
@@ -101,6 +113,8 @@
     "call path (param)": " [gprinter_get_minor->ida_simple_get->ida_get_new_above] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [ida_simple_get->ida_get_new_above] ",
+    "num condition checks": 3,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L973 | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L956 | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L981 | ",
     "cond_num": "8",
     "isControl": "0"
   },
@@ -114,6 +128,8 @@
     "call path (param)": " [gprinter_get_minor->ida_simple_get->ida_get_new_above] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [ida_simple_get->ida_get_new_above] ",
+    "num condition checks": 1,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L962 | ",
     "cond_num": "3",
     "isControl": "0"
   },
@@ -127,6 +143,8 @@
     "call path (param)": " [gprinter_get_minor->ida_simple_get->ida_get_new_above] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [ida_simple_get->ida_get_new_above] ",
+    "num condition checks": 2,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L962 | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L966 | ",
     "cond_num": "4",
     "isControl": "0"
   },
@@ -140,6 +158,8 @@
     "call path (param)": " [gprinter_get_minor->ida_simple_get->ida_get_new_above] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [ida_simple_get->ida_get_new_above] ",
+    "num condition checks": 3,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L962 | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L966 | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L966 | ",
     "cond_num": "5",
     "isControl": "0"
   }
@@ -147,15 +167,17 @@
 [
   {
     "id": "11",
-    "risky": "val-sen-api (kmalloc)",
+    "risky": "val-sen-api (kmem_cache_alloc)",
     "acc_path": "gfp_mask",
     "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L1096",
-    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L391",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L626",
     "drv caller (param)": "[ gprinter_get_minor | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/function/f_printer.c#L1238 ], ",
-    "call path (param)": " [gprinter_get_minor->ida_simple_get->ida_pre_get] ",
+    "call path (param)": " [gprinter_get_minor->ida_simple_get->ida_pre_get->__idr_pre_get->kmem_cache_zalloc] ",
     "drv_update loc (shared field)": "",
-    "call path (type)": " [ida_simple_get->ida_pre_get] ",
-    "cond_num": "8",
+    "call path (type)": " [ida_simple_get->ida_pre_get->__idr_pre_get->kmem_cache_zalloc] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "cond_num": "16",
     "isControl": "0"
   }
 ]
@@ -170,6 +192,8 @@
     "call path (param)": " [tx_complete->__wake_up->__wake_up_common] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [__wake_up->__wake_up_common] ",
+    "num condition checks": 3,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L70 | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L73 | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L74 | ",
     "cond_num": "3",
     "isControl": "0"
   }
@@ -185,6 +209,8 @@
     "call path (param)": " [gprinter_setup->alloc_chrdev_region->__register_chrdev_region] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [alloc_chrdev_region->__register_chrdev_region] ",
+    "num condition checks": 2,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/char_dev.c#L120 | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/char_dev.c#L120 | ",
     "cond_num": "5",
     "isControl": "0"
   }
@@ -200,6 +226,8 @@
     "call path (param)": " [gprinter_setup->alloc_chrdev_region->__register_chrdev_region] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [alloc_chrdev_region->__register_chrdev_region] ",
+    "num condition checks": 2,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/char_dev.c#L120 | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/char_dev.c#L120 | ",
     "cond_num": "5",
     "isControl": "0"
   }

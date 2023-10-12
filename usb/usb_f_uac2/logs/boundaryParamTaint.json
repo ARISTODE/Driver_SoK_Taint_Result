@@ -9,6 +9,8 @@
     "call path (param)": " [snd_uac2_probe->snd_pcm_lib_preallocate_pages_for_all->snd_pcm_lib_preallocate_pages->snd_pcm_lib_preallocate_pages1->preallocate_pcm_pages] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [snd_pcm_lib_preallocate_pages_for_all->snd_pcm_lib_preallocate_pages->snd_pcm_lib_preallocate_pages1->preallocate_pcm_pages] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "5",
     "isControl": "0"
   }
@@ -24,6 +26,8 @@
     "call path (param)": " [snd_uac2_probe->snd_pcm_new->_snd_pcm_new->snd_pcm_new_stream] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [snd_pcm_new->_snd_pcm_new->snd_pcm_new_stream] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "6",
     "isControl": "0"
   }
@@ -39,6 +43,8 @@
     "call path (param)": " [snd_uac2_probe->snd_pcm_new->_snd_pcm_new->snd_pcm_new_stream] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [snd_pcm_new->_snd_pcm_new->snd_pcm_new_stream] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "6",
     "isControl": "0"
   }
@@ -54,6 +60,8 @@
     "call path (param)": " [uac2_pcm_open->snd_pcm_hw_constraint_integer->constrs_interval] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [snd_pcm_hw_constraint_integer->constrs_interval] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "0",
     "isControl": "1",
     "t_trace": "[ ACTUAL_IN || PARAMETER_INsnd_pcm_hw_param_t ] -> [ FORMAL_IN || PARAMETER_INvar ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/sound/pcm.h#L253 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/sound/pcm.h#L253 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/sound/pcm.h#L253 ] -> ",
@@ -71,6 +79,8 @@
     "call path (param)": " [uac2_pcm_open->snd_pcm_hw_constraint_integer->constrs_interval] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [snd_pcm_hw_constraint_integer->constrs_interval] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "0",
     "isControl": "1",
     "t_trace": "[ ACTUAL_IN || PARAMETER_INsnd_pcm_hw_param_t ] -> [ FORMAL_IN || PARAMETER_INvar ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/sound/pcm.h#L253 ] -> ",

@@ -9,6 +9,8 @@
     "call path (param)": " [crypt_iv_essiv_dtr->crypto_free_ahash->crypto_destroy_tfm->kzfree] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [kzfree] ",
+    "num condition checks": 1,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/slab_common.c#L1319 | ",
     "cond_num": "0",
     "isControl": "1",
     "t_trace": "",
@@ -26,6 +28,8 @@
     "call path (param)": " [crypt_iv_essiv_dtr->crypto_free_ahash->crypto_destroy_tfm->kzfree] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [kzfree] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "0",
     "isControl": "1",
     "t_trace": "[ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/slab_common.c#L1317 ] -> [ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/slab_common.c#L1319 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/slab_common.c#L1319 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/slab_common.c#L1319 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/slab_common.c#L1319 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/slab_common.c#L1319 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/slab_common.c#L1319 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/slab_common.c#L1319 ] -> ",
@@ -45,6 +49,8 @@
     "call path (param)": " [crypt_ctr_cipher->crypt_alloc_tfms->kzalloc->kmalloc_order] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [dm_get_device->kmalloc_order] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "0",
     "isControl": "1",
     "t_trace": "",
@@ -64,6 +70,8 @@
     "call path (param)": " [crypt_ctr_cipher->crypt_alloc_tfms->kzalloc->kmalloc_order] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [dm_get_device->kmalloc_order] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "0",
     "isControl": "1",
     "t_trace": "",
@@ -83,6 +91,8 @@
     "call path (param)": " [kcryptd_crypt_write_io_submit->__wake_up_locked->__wake_up_common] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [mempool_free->__wake_up->__wake_up_common] ",
+    "num condition checks": 3,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L70 | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L73 | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L74 | ",
     "cond_num": "3",
     "isControl": "0"
   }
@@ -98,6 +108,8 @@
     "call path (param)": " [crypt_iv_lmk_one->crypto_shash_update->shash_update_unaligned] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [crypto_shash_update->shash_update_unaligned] ",
+    "num condition checks": 2,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/shash.c#L90 | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/shash.c#L90 | ",
     "cond_num": "4",
     "isControl": "0"
   },
@@ -111,6 +123,8 @@
     "call path (param)": " [crypt_iv_lmk_one->crypto_shash_update->shash_update_unaligned] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [crypto_shash_update->shash_update_unaligned] ",
+    "num condition checks": 2,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/shash.c#L90 | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/shash.c#L90 | ",
     "cond_num": "4",
     "isControl": "0"
   }
@@ -126,6 +140,8 @@
     "call path (param)": " [crypt_iv_lmk_one->crypto_shash_update->shash_update_unaligned->shash_align_buffer_size] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [crypto_shash_update->shash_update_unaligned->shash_align_buffer_size] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "0",
     "isControl": "1",
     "t_trace": "[ ACTUAL_IN || PARAMETER_INunsigned int ] -> [ FORMAL_IN || PARAMETER_INlen ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/shash.c#L88 ] -> [ INST || UNKNOWN Edge Type || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/shash.c#L82 ] -> [ ACTUAL_IN || PARAMETER_INunsigned int ] -> [ FORMAL_IN || PARAMETER_INlen ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/shash.c#L71 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/shash.c#L71 ] -> ",
@@ -143,6 +159,8 @@
     "call path (param)": " [crypt_iv_lmk_one->crypto_shash_update->shash_update_unaligned] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [crypto_shash_update->shash_update_unaligned] ",
+    "num condition checks": 1,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/shash.c#L90 | ",
     "cond_num": "2",
     "isControl": "0"
   },
@@ -156,6 +174,8 @@
     "call path (param)": " [crypt_iv_lmk_one->crypto_shash_update->shash_update_unaligned] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [crypto_shash_update->shash_update_unaligned] ",
+    "num condition checks": 1,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/shash.c#L94 | ",
     "cond_num": "4",
     "isControl": "0"
   },
@@ -169,6 +189,8 @@
     "call path (param)": " [crypt_iv_lmk_one->crypto_shash_update->shash_update_unaligned] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [crypto_shash_update->shash_update_unaligned] ",
+    "num condition checks": 2,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/shash.c#L90 | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/shash.c#L90 | ",
     "cond_num": "3",
     "isControl": "0"
   }
@@ -184,6 +206,8 @@
     "call path (param)": " [crypt_iv_tcw_whitening->crypto_shash_final->shash_final_unaligned] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [crypto_shash_final->shash_final_unaligned] ",
+    "num condition checks": 3,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/shash.c#L124 | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/shash.c#L127 | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/shash.c#L127 | ",
     "cond_num": "4",
     "isControl": "0"
   },
@@ -197,6 +221,8 @@
     "call path (param)": " [crypt_iv_tcw_whitening->crypto_shash_final->shash_final_unaligned] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [crypto_shash_final->shash_final_unaligned] ",
+    "num condition checks": 3,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/shash.c#L124 | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/shash.c#L127 | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/shash.c#L127 | ",
     "cond_num": "4",
     "isControl": "0"
   }
@@ -212,9 +238,11 @@
     "call path (param)": " [crypt_iv_lmk_post->crypto_xor] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [crypto_xor] ",
+    "num condition checks": 1,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/algapi.c#L986 | ",
     "cond_num": "0",
     "isControl": "1",
-    "t_trace": "[ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/algapi.c#L984 ] -> [ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/algapi.c#L989 ] -> [ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/algapi.c#L983 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/algapi.c#L983 ] -> [ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/algapi.c#L984 ] -> [ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/algapi.c#L987 ] -> ",
+    "t_trace": "[ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/algapi.c#L983 ] -> [ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/algapi.c#L989 ] -> [ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/algapi.c#L984 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/algapi.c#L984 ] -> [ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/algapi.c#L983 ] -> [ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/algapi.c#L987 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/algapi.c#L987 ] -> [ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/algapi.c#L987 ] -> ",
     "isTrue": "-",
     "atk_reason": "",
     "defense": ""
@@ -229,9 +257,11 @@
     "call path (param)": " [crypt_iv_lmk_post->crypto_xor] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [crypto_xor] ",
+    "num condition checks": 1,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/algapi.c#L986 | ",
     "cond_num": "0",
     "isControl": "1",
-    "t_trace": "[ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/algapi.c#L984 ] -> [ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/algapi.c#L989 ] -> [ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/algapi.c#L983 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/algapi.c#L983 ] -> [ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/algapi.c#L984 ] -> [ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/algapi.c#L987 ] -> ",
+    "t_trace": "[ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/algapi.c#L983 ] -> [ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/algapi.c#L989 ] -> [ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/algapi.c#L984 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/algapi.c#L984 ] -> [ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/algapi.c#L983 ] -> [ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/algapi.c#L987 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/algapi.c#L987 ] -> [ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/algapi.c#L987 ] -> ",
     "isTrue": "-",
     "atk_reason": "",
     "defense": ""
@@ -248,9 +278,11 @@
     "call path (param)": " [crypt_iv_lmk_post->crypto_xor] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [crypto_xor] ",
+    "num condition checks": 1,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/algapi.c#L986 | ",
     "cond_num": "0",
     "isControl": "1",
-    "t_trace": "[ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/algapi.c#L984 ] -> [ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/algapi.c#L989 ] -> [ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/algapi.c#L983 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/algapi.c#L983 ] -> [ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/algapi.c#L984 ] -> [ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/algapi.c#L987 ] -> ",
+    "t_trace": "[ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/algapi.c#L983 ] -> [ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/algapi.c#L989 ] -> [ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/algapi.c#L984 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/algapi.c#L984 ] -> [ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/algapi.c#L983 ] -> [ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/algapi.c#L987 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/algapi.c#L987 ] -> [ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/algapi.c#L987 ] -> ",
     "isTrue": "-",
     "atk_reason": "",
     "defense": ""
@@ -265,9 +297,11 @@
     "call path (param)": " [crypt_iv_lmk_post->crypto_xor] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [crypto_xor] ",
+    "num condition checks": 1,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/algapi.c#L986 | ",
     "cond_num": "0",
     "isControl": "1",
-    "t_trace": "[ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/algapi.c#L984 ] -> [ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/algapi.c#L989 ] -> [ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/algapi.c#L983 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/algapi.c#L983 ] -> [ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/algapi.c#L984 ] -> [ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/algapi.c#L987 ] -> ",
+    "t_trace": "[ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/algapi.c#L983 ] -> [ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/algapi.c#L989 ] -> [ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/algapi.c#L984 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/algapi.c#L984 ] -> [ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/algapi.c#L983 ] -> [ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/algapi.c#L987 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/algapi.c#L987 ] -> [ INST || DATA_ALIAS || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/algapi.c#L987 ] -> ",
     "isTrue": "-",
     "atk_reason": "",
     "defense": ""
@@ -284,6 +318,8 @@
     "call path (param)": " [crypt_iv_lmk_post->crypto_xor->crypto_xor_byte] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [crypto_xor->crypto_xor_byte] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "1",
     "isControl": "1",
     "t_trace": "[ ACTUAL_IN || PARAMETER_INunsigned int ] -> [ FORMAL_IN || PARAMETER_INsize ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/crypto/algapi.c#L977 ] -> ",
@@ -295,15 +331,17 @@
 [
   {
     "id": "53",
-    "risky": "val-sen-api (kmem_cache_alloc)",
+    "risky": "val-sen-api (kmalloc)",
     "acc_path": "gfp_mask",
     "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L603",
-    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L389",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/slab_common.c#L1018",
     "drv caller (param)": "[ kcryptd_io_read | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1153 ], ",
-    "call path (param)": " [kcryptd_io_read->bio_clone_fast->bio_alloc_bioset] ",
+    "call path (param)": " [kcryptd_io_read->bio_clone_fast->bio_alloc_bioset->kmalloc_order] ",
     "drv_update loc (shared field)": "",
-    "call path (type)": " [bio_clone_fast->bio_alloc_bioset] ",
-    "cond_num": "8",
+    "call path (type)": " [dm_get_device->kmalloc_order] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "cond_num": "7",
     "isControl": "0"
   }
 ]
@@ -318,6 +356,8 @@
     "call path (param)": " [crypt_alloc_buffer->bio_alloc_bioset->bvec_alloc] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [bio_clone_fast->bio_alloc_bioset->bvec_alloc] ",
+    "num condition checks": 1,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L213 | ",
     "cond_num": "5",
     "isControl": "0"
   }
@@ -333,24 +373,13 @@
     "call path (param)": " [crypt_alloc_buffer->bio_alloc_bioset->bvec_alloc] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [bio_clone_fast->bio_alloc_bioset->bvec_alloc] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "3",
     "isControl": "0"
   }
 ]
 [
-  {
-    "id": "58",
-    "risky": "numeric-arith",
-    "acc_path": "pool_size",
-    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L1922",
-    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/mempool.c#L191",
-    "drv caller (param)": "[ crypt_ctr | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1805 ], ",
-    "call path (param)": " [crypt_ctr->mempool_create_kmalloc_pool->mempool_create->mempool_create_node] ",
-    "drv_update loc (shared field)": "",
-    "call path (type)": " [bioset_create->__bioset_create->mempool_create_slab_pool->mempool_create->mempool_create_node] ",
-    "cond_num": "5",
-    "isControl": "0"
-  },
   {
     "id": "58",
     "risky": "val-sen-api (kmalloc)",
@@ -361,7 +390,24 @@
     "call path (param)": " [crypt_ctr->mempool_create_kmalloc_pool->mempool_create->mempool_create_node] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [bioset_create->__bioset_create->mempool_create_slab_pool->mempool_create->mempool_create_node] ",
+    "num condition checks": 4,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/mempool.c#L189 | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L522 | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L521 | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L521 | ",
     "cond_num": "8",
+    "isControl": "0"
+  },
+  {
+    "id": "58",
+    "risky": "numeric-arith",
+    "acc_path": "pool_size",
+    "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/bio.c#L1922",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/mempool.c#L191",
+    "drv caller (param)": "[ crypt_ctr | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/md/dm-crypt.c#L1805 ], ",
+    "call path (param)": " [crypt_ctr->mempool_create_kmalloc_pool->mempool_create->mempool_create_node] ",
+    "drv_update loc (shared field)": "",
+    "call path (type)": " [bioset_create->__bioset_create->mempool_create_slab_pool->mempool_create->mempool_create_node] ",
+    "num condition checks": 1,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/mempool.c#L189 | ",
+    "cond_num": "5",
     "isControl": "0"
   },
   {
@@ -374,6 +420,8 @@
     "call path (param)": " [crypt_ctr->mempool_create_kmalloc_pool->mempool_create->mempool_create_node] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [bioset_create->__bioset_create->mempool_create_slab_pool->mempool_create->mempool_create_node] ",
+    "num condition checks": 2,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/mempool.c#L189 | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L521 | ",
     "cond_num": "6",
     "isControl": "0"
   }
@@ -389,6 +437,8 @@
     "call path (param)": " [crypt_ctr->bioset_create->__bioset_create->bio_find_or_create_slab] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [bioset_create->__bioset_create->bio_find_or_create_slab] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "7",
     "isControl": "0"
   },
@@ -402,6 +452,8 @@
     "call path (param)": " [crypt_ctr->bioset_create->__bioset_create] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [bioset_create->__bioset_create] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "1",
     "isControl": "0"
   }

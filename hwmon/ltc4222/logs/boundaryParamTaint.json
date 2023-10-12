@@ -9,6 +9,8 @@
     "call path (param)": " [ltc4222_get_value->regmap_bulk_read->regmap_raw_read->_regmap_raw_read->_regmap_select_page] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [regmap_bulk_read->regmap_raw_read->_regmap_raw_read->_regmap_select_page] ",
+    "num condition checks": 3,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/regmap/regmap.c#L1277 | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/regmap/regmap.c#L1264 | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/regmap/regmap.c#L1277 | ",
     "cond_num": "22",
     "isControl": "0"
   }

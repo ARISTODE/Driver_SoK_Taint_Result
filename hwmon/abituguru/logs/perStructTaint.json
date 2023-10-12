@@ -39,6 +39,8 @@
     "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/platform.c#L382",
     "drv_update loc (shared field)": "[ (abituguru_init) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/abituguru.c#L1615 ], ",
     "call path (type)": " [platform_device_add] ",
+    "num condition checks": 1,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/platform.c#L379 | ",
     "cond_num": "0",
     "isControl": "1",
     "t_trace": "",

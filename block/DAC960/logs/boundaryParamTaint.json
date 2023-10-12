@@ -9,6 +9,8 @@
     "call path (param)": " [DAC960_CheckStatusBuffer->kmalloc_order] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [kmalloc_order] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "0",
     "isControl": "1",
     "t_trace": "",
@@ -28,6 +30,8 @@
     "call path (param)": " [DAC960_CheckStatusBuffer->kmalloc_order] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [kmalloc_order] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "0",
     "isControl": "1",
     "t_trace": "",
@@ -44,9 +48,11 @@
     "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L95",
     "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L74",
     "drv caller (param)": "[ DAC960_V2_ProcessCompletedCommand | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/block/DAC960.c#L5255 ], ",
-    "call path (param)": " [DAC960_V2_ProcessCompletedCommand->complete->__wake_up_locked->__wake_up_common] ",
+    "call path (param)": " [DAC960_V2_ProcessCompletedCommand->DAC960_ProcessCompletedRequest->__blk_end_request->__blk_end_bidi_request->blk_finish_request->__blk_put_request->freed_request->__freed_request->__wake_up->__wake_up_common] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [blk_init_queue->blk_init_queue_node->blk_cleanup_queue->blk_set_queue_dying->__wake_up->__wake_up_common] ",
+    "num condition checks": 3,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L70 | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L73 | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L74 | ",
     "cond_num": "3",
     "isControl": "0"
   }
@@ -62,6 +68,8 @@
     "call path (param)": " [DAC960_DetectController->ioremap_nocache->__ioremap_caller->walk_system_ram_range] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [ioremap_nocache->__ioremap_caller->walk_system_ram_range] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "4",
     "isControl": "0"
   },
@@ -75,6 +83,8 @@
     "call path (param)": " [DAC960_DetectController->ioremap_nocache->__ioremap_caller] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [ioremap_nocache->__ioremap_caller] ",
+    "num condition checks": 1,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L97 | ",
     "cond_num": "1",
     "isControl": "0"
   }
@@ -90,6 +100,8 @@
     "call path (param)": " [DAC960_DetectController->ioremap_nocache->__ioremap_caller->walk_system_ram_range] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [ioremap_nocache->__ioremap_caller->walk_system_ram_range] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "4",
     "isControl": "0"
   },
@@ -103,6 +115,8 @@
     "call path (param)": " [DAC960_DetectController->ioremap_nocache->__ioremap_caller] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [ioremap_nocache->__ioremap_caller] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "0",
     "isControl": "1",
     "t_trace": "[ ACTUAL_IN || PARAMETER_INlong unsigned int ] -> [ FORMAL_IN || PARAMETER_INsize ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/mm/ioremap.c#L97 ] -> ",
@@ -122,6 +136,8 @@
     "call path (param)": " [DAC960_ProcessCompletedRequest->__blk_end_request->__blk_end_bidi_request->blk_update_bidi_request->blk_update_request] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [blk_init_queue->blk_init_queue_node->blk_cleanup_queue->__blk_drain_queue->msleep->schedule_timeout_uninterruptible->schedule_timeout->schedule->sched_submit_work->blk_schedule_flush_plug->blk_flush_plug_list->__blk_end_request_all->__blk_end_bidi_request->blk_update_bidi_request->blk_update_request] ",
+    "num condition checks": 2,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-core.c#L2616 | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/block/blk-core.c#L2629 | ",
     "cond_num": "12",
     "isControl": "0"
   }

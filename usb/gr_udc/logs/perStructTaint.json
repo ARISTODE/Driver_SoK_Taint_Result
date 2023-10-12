@@ -93,12 +93,14 @@
     "risky": "ptr-write",
     "acc_path": "device_driver->bus",
     "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/platform.c#L693",
-    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/compiler.h#L220",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/locking/spinlock_debug.c#L106 |   %25 = alloca i32, align 4",
     "drv caller (param)": "",
     "call path (param)": "",
     "drv_update loc (shared field)": "[ (gr_udc_start) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/udc/gr_udc.c#L1926 ], ",
     "call path (type)": " [devm_ioremap_resource->devm_ioremap->devres_add->_raw_spin_lock_irqsave->__raw_spin_lock_irqsave->do_raw_spin_lock->__spin_lock_debug] ",
-    "cond_num": "5",
+    "num condition checks": 0,
+    "condition checks": "",
+    "cond_num": "3",
     "isControl": "0"
   },
   {
@@ -111,6 +113,8 @@
     "call path (param)": "",
     "drv_update loc (shared field)": "[ (gr_udc_start) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/udc/gr_udc.c#L1926 ], ",
     "call path (type)": " [devm_ioremap_resource->devm_ioremap->devres_add->_raw_spin_lock_irqsave->__raw_spin_lock_irqsave->do_raw_spin_lock->__spin_lock_debug] ",
+    "num condition checks": 2,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/locking/spinlock_debug.c#L111 | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/compiler.h#L220 | ",
     "cond_num": "5",
     "isControl": "0"
   },
@@ -124,6 +128,8 @@
     "call path (param)": "",
     "drv_update loc (shared field)": "[ (gr_udc_start) https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/udc/gr_udc.c#L1926 ], ",
     "call path (type)": " [devm_ioremap_resource->devm_ioremap->devres_add->_raw_spin_lock_irqsave->__raw_spin_lock_irqsave->do_raw_spin_lock->debug_spin_lock_before->spin_bug->spin_dump->task_pid_nr] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "12",
     "isControl": "0"
   }

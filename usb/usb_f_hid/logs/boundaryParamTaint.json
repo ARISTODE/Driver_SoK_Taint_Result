@@ -6,9 +6,11 @@
     "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/slab_common.c#L1018",
     "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/slab_common.c#L1018",
     "drv caller (param)": "[ hidg_bind | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L415 ], ",
-    "call path (param)": " [hidg_bind->device_create->device_create_vargs->device_create_groups_vargs->kzalloc.64->kmalloc_order] ",
+    "call path (param)": " [hidg_bind->kmalloc_order] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [kmalloc_order] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "0",
     "isControl": "1",
     "t_trace": "",
@@ -25,9 +27,11 @@
     "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/slab_common.c#L1018",
     "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/mm/slab_common.c#L1018",
     "drv caller (param)": "[ hidg_bind | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L415 ], ",
-    "call path (param)": " [hidg_bind->device_create->device_create_vargs->device_create_groups_vargs->kzalloc.64->kmalloc_order] ",
+    "call path (param)": " [hidg_bind->kmalloc_order] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [kmalloc_order] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "0",
     "isControl": "1",
     "t_trace": "",
@@ -47,6 +51,8 @@
     "call path (param)": " [hidg_put_minor->ida_simple_remove->ida_remove->idr_remove->sub_remove] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [ida_simple_remove->ida_remove->idr_remove->sub_remove] ",
+    "num condition checks": 1,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L531 | ",
     "cond_num": "11",
     "isControl": "0"
   },
@@ -60,6 +66,8 @@
     "call path (param)": " [hidg_put_minor->ida_simple_remove->ida_remove->free_bitmap] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [ida_simple_remove->ida_remove->free_bitmap] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "3",
     "isControl": "0"
   },
@@ -73,6 +81,8 @@
     "call path (param)": " [hidg_put_minor->ida_simple_remove->ida_remove->idr_remove->sub_remove] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [ida_simple_remove->ida_remove->idr_remove->sub_remove] ",
+    "num condition checks": 1,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L519 | ",
     "cond_num": "6",
     "isControl": "0"
   },
@@ -86,6 +96,8 @@
     "call path (param)": " [hidg_put_minor->ida_simple_remove->ida_remove->idr_remove] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [ida_simple_remove->ida_remove->idr_remove] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "2",
     "isControl": "0"
   }
@@ -96,12 +108,14 @@
     "risky": "val-sen-branch (memcpy)",
     "acc_path": "start",
     "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L1100",
-    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L265",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L966",
     "drv caller (param)": "[ hidg_get_minor | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/function/f_hid.c#L693 ], ",
-    "call path (param)": " [hidg_get_minor->ida_simple_get->ida_get_new_above->idr_get_empty_slot->sub_alloc] ",
+    "call path (param)": " [hidg_get_minor->ida_simple_get->ida_get_new_above] ",
     "drv_update loc (shared field)": "",
-    "call path (type)": " [ida_simple_get->ida_get_new_above->idr_get_empty_slot->sub_alloc] ",
-    "cond_num": "13",
+    "call path (type)": " [ida_simple_get->ida_get_new_above] ",
+    "num condition checks": 2,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L962 | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L966 | ",
+    "cond_num": "3",
     "isControl": "0"
   },
   {
@@ -114,6 +128,8 @@
     "call path (param)": " [hidg_get_minor->ida_simple_get->ida_get_new_above] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [ida_simple_get->ida_get_new_above] ",
+    "num condition checks": 1,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L962 | ",
     "cond_num": "5",
     "isControl": "0"
   },
@@ -122,12 +138,14 @@
     "risky": "numeric-arith",
     "acc_path": "start",
     "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L1100",
-    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L263",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L242",
     "drv caller (param)": "[ hidg_get_minor | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/function/f_hid.c#L693 ], ",
     "call path (param)": " [hidg_get_minor->ida_simple_get->ida_get_new_above->idr_get_empty_slot->sub_alloc] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [ida_simple_get->ida_get_new_above->idr_get_empty_slot->sub_alloc] ",
-    "cond_num": "12",
+    "num condition checks": 1,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L238 | ",
+    "cond_num": "11",
     "isControl": "0"
   },
   {
@@ -140,7 +158,9 @@
     "call path (param)": " [hidg_get_minor->ida_simple_get->ida_get_new_above] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [ida_simple_get->ida_get_new_above] ",
-    "cond_num": "4",
+    "num condition checks": 1,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L962 | ",
+    "cond_num": "5",
     "isControl": "0"
   }
 ]
@@ -150,12 +170,14 @@
     "risky": "val-sen-api (kmalloc)",
     "acc_path": "gfp_mask",
     "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L1096",
-    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L391",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L415",
     "drv caller (param)": "[ hidg_get_minor | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/function/f_hid.c#L693 ], ",
     "call path (param)": " [hidg_get_minor->ida_simple_get->ida_pre_get] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [ida_simple_get->ida_pre_get] ",
-    "cond_num": "8",
+    "num condition checks": 0,
+    "condition checks": "",
+    "cond_num": "2",
     "isControl": "0"
   }
 ]
@@ -170,6 +192,8 @@
     "call path (param)": " [f_hidg_req_complete->__wake_up->__wake_up_common] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [__wake_up->__wake_up_common] ",
+    "num condition checks": 3,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L70 | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L73 | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/sched/wait.c#L74 | ",
     "cond_num": "3",
     "isControl": "0"
   }
@@ -185,6 +209,8 @@
     "call path (param)": " [ghid_setup->alloc_chrdev_region->__register_chrdev_region] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [alloc_chrdev_region->__register_chrdev_region] ",
+    "num condition checks": 2,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/char_dev.c#L120 | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/char_dev.c#L120 | ",
     "cond_num": "5",
     "isControl": "0"
   }
@@ -200,6 +226,8 @@
     "call path (param)": " [ghid_setup->alloc_chrdev_region->__register_chrdev_region] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [alloc_chrdev_region->__register_chrdev_region] ",
+    "num condition checks": 2,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/char_dev.c#L120 | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/char_dev.c#L120 | ",
     "cond_num": "5",
     "isControl": "0"
   }

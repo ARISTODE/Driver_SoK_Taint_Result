@@ -9,6 +9,8 @@
     "call path (param)": " [xhci_plat_probe->platform_get_irq->platform_get_resource] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [platform_get_irq->platform_get_resource] ",
+    "num condition checks": 2,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/platform.c#L72 | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/platform.c#L75 | ",
     "cond_num": "2",
     "isControl": "0"
   }

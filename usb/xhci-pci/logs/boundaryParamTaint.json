@@ -9,6 +9,8 @@
     "call path (param)": " [xhci_pci_remove->pci_set_power_state->__pci_start_power_transition] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [usb_hcd_pci_probe->pci_enable_device->pci_enable_device_flags->do_pci_enable_device->pci_set_power_state->__pci_start_power_transition] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "0",
     "isControl": "1",
     "t_trace": "[ ACTUAL_IN || PARAMETER_INpci_power_t ] -> [ FORMAL_IN || PARAMETER_INstate ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/pci.c#L795 ] -> ",
@@ -26,6 +28,8 @@
     "call path (param)": " [xhci_pci_remove->pci_set_power_state->__pci_complete_power_transition] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [usb_hcd_pci_probe->pci_enable_device->pci_enable_device_flags->do_pci_enable_device->pci_set_power_state->__pci_complete_power_transition] ",
+    "num condition checks": 1,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/pci.c#L852 | ",
     "cond_num": "1",
     "isControl": "0"
   }

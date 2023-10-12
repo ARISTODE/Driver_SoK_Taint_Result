@@ -9,6 +9,8 @@
     "call path (param)": " [aem_init_aem1_inst->hwmon_device_unregister->ida_simple_remove->ida_remove->idr_remove->sub_remove] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [ida_simple_remove->ida_remove->idr_remove->sub_remove] ",
+    "num condition checks": 1,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L531 | ",
     "cond_num": "11",
     "isControl": "0"
   },
@@ -22,6 +24,8 @@
     "call path (param)": " [aem_init_aem1_inst->hwmon_device_unregister->ida_simple_remove->ida_remove->idr_remove->sub_remove] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [ida_simple_remove->ida_remove->idr_remove->sub_remove] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "9",
     "isControl": "0"
   },
@@ -35,6 +39,8 @@
     "call path (param)": " [aem_init_aem1_inst->hwmon_device_unregister->ida_simple_remove->ida_remove->idr_remove] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [ida_simple_remove->ida_remove->idr_remove] ",
+    "num condition checks": 1,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L555 | ",
     "cond_num": "3",
     "isControl": "0"
   },
@@ -48,6 +54,8 @@
     "call path (param)": " [aem_init_aem1_inst->hwmon_device_unregister->ida_simple_remove->ida_remove->free_bitmap] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [ida_simple_remove->ida_remove->free_bitmap] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "3",
     "isControl": "0"
   }
@@ -63,6 +71,8 @@
     "call path (param)": " [aem_init_aem1_inst->ida_simple_get->ida_get_new_above->idr_get_empty_slot->sub_alloc] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [ida_simple_get->ida_get_new_above->idr_get_empty_slot->sub_alloc] ",
+    "num condition checks": 2,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L238 | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L261 | ",
     "cond_num": "12",
     "isControl": "0"
   },
@@ -76,6 +86,8 @@
     "call path (param)": " [aem_init_aem1_inst->ida_simple_get->ida_get_new_above] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [ida_simple_get->ida_get_new_above] ",
+    "num condition checks": 1,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L962 | ",
     "cond_num": "5",
     "isControl": "0"
   },
@@ -89,6 +101,8 @@
     "call path (param)": " [aem_init_aem1_inst->ida_simple_get->ida_get_new_above] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [ida_simple_get->ida_get_new_above] ",
+    "num condition checks": 2,
+    "condition checks": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L962 | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L966 | ",
     "cond_num": "3",
     "isControl": "0"
   },
@@ -102,6 +116,8 @@
     "call path (param)": " [aem_init_aem1_inst->ida_simple_get->ida_get_new_above] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [ida_simple_get->ida_get_new_above] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "3",
     "isControl": "0"
   }
@@ -112,12 +128,14 @@
     "risky": "val-sen-api (kmalloc)",
     "acc_path": "gfp_mask",
     "src": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/idr.c#L1096",
-    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L391",
+    "dst": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L415",
     "drv caller (param)": "[ aem_init_aem1_inst | https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/ibmaem.c#L555 ], ",
     "call path (param)": " [aem_init_aem1_inst->ida_simple_get->ida_pre_get] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [ida_simple_get->ida_pre_get] ",
-    "cond_num": "8",
+    "num condition checks": 0,
+    "condition checks": "",
+    "cond_num": "2",
     "isControl": "0"
   }
 ]
@@ -132,6 +150,8 @@
     "call path (param)": " [aem_show_power->__msecs_to_jiffies->_msecs_to_jiffies.17] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [__msecs_to_jiffies->_msecs_to_jiffies.17] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "0",
     "isControl": "1",
     "t_trace": "[ ACTUAL_IN || PARAMETER_IN ] -> [ FORMAL_IN || PARAMETER_INm ] -> [ INST || PARAMETER_IN || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/jiffies.h#L301 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/jiffies.h#L301 ] -> [ INST || DATA_DEF_USE || https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/jiffies.h#L301 ] -> ",
@@ -151,6 +171,8 @@
     "call path (param)": " [aem_show_power->schedule_timeout_interruptible->schedule_timeout->__mod_timer->calc_wheel_index->calc_index] ",
     "drv_update loc (shared field)": "",
     "call path (type)": " [schedule_timeout_interruptible->schedule_timeout->__mod_timer->calc_wheel_index->calc_index] ",
+    "num condition checks": 0,
+    "condition checks": "",
     "cond_num": "15",
     "isControl": "0"
   }
