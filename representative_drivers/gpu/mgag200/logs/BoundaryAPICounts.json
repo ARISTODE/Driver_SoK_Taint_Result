@@ -1,0 +1,8 @@
+{
+  "bus": 8,
+  "ioPorts": 4,
+  "concurrency": 29,
+  "refCount": 6,
+  "": 66,
+  "memory": 42
+}

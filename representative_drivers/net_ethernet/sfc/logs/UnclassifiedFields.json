@@ -1,0 +1,72 @@
+{
+  "id": 2,
+  "acc_path": "rtnl_link_stats64->rx_packets",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L909],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10486], ",
+  "Drv update": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L1804],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_nic.c#L607],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L1825], "
+}
+{
+  "id": 3,
+  "acc_path": "rtnl_link_stats64->tx_packets",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10488],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L910], ",
+  "Drv update": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L1807],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_nic.c#L608],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L1826], "
+}
+{
+  "id": 4,
+  "acc_path": "rtnl_link_stats64->rx_bytes",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L911],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10487], ",
+  "Drv update": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_nic.c#L609],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L1827],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L1810], "
+}
+{
+  "id": 5,
+  "acc_path": "rtnl_link_stats64->tx_bytes",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L912],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10489], ",
+  "Drv update": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L1813],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L1828],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_nic.c#L610], "
+}
+{
+  "id": 6,
+  "acc_path": "rtnl_link_stats64->rx_errors",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L913], ",
+  "Drv update": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L1840],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L1821],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_nic.c#L622], "
+}
+{
+  "id": 7,
+  "acc_path": "rtnl_link_stats64->tx_errors",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L914], ",
+  "Drv update": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L1822], "
+}
+{
+  "id": 8,
+  "acc_path": "rtnl_link_stats64->rx_dropped",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10450],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L915], ",
+  "Drv update": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L1816],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_nic.c#L611],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L1829], "
+}
+{
+  "id": 9,
+  "acc_path": "rtnl_link_stats64->multicast",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L918], ",
+  "Drv update": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L1818],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_nic.c#L614],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L1832], "
+}
+{
+  "id": 10,
+  "acc_path": "rtnl_link_stats64->rx_length_errors",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L921], ",
+  "Drv update": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L1833],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_nic.c#L615], "
+}
+{
+  "id": 11,
+  "acc_path": "rtnl_link_stats64->rx_crc_errors",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L923], ",
+  "Drv update": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L1819],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L1836],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_nic.c#L618], "
+}
+{
+  "id": 12,
+  "acc_path": "rtnl_link_stats64->rx_frame_errors",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L924], ",
+  "Drv update": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_nic.c#L619],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L1837], "
+}
+{
+  "id": 13,
+  "acc_path": "rtnl_link_stats64->rx_fifo_errors",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L925], ",
+  "Drv update": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L1820],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_nic.c#L621],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L1839], "
+}

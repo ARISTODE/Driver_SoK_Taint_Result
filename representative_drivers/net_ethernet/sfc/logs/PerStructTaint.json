@@ -1,0 +1,318 @@
+[
+  {
+    "struct name": "sockaddr",
+    "No.Fields": 2,
+    "No.Shared fields": 1,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "sk_buff_head",
+    "No.Fields": 3,
+    "No.Shared fields": 3,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "notifier_block",
+    "No.Fields": 3,
+    "No.Shared fields": 1,
+    "No.KRDU fields": 1,
+    "No.classified fields": 0,
+    "No.unclassified fields": 1,
+    "UNCLASSIFY": 1
+  }
+]
+[
+  {
+    "struct name": "hlist_head",
+    "No.Fields": 1,
+    "No.Shared fields": 1,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "udp_tunnel_nic_info",
+    "No.Fields": 6,
+    "No.Shared fields": 0,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "netdev_tc_txq",
+    "No.Fields": 2,
+    "No.Shared fields": 0,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "spinlock",
+    "No.Fields": 1,
+    "No.Shared fields": 1,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "ethtool_ops",
+    "No.Fields": 71,
+    "No.Shared fields": 0,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "net_device_stats",
+    "No.Fields": 23,
+    "No.Shared fields": 0,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "netdev_phys_item_id",
+    "No.Fields": 2,
+    "No.Shared fields": 2,
+    "No.KRDU fields": 1,
+    "No.classified fields": 1,
+    "No.unclassified fields": 0,
+    "BRANCH": 1,
+    "UNCLASSIFY": 0
+  },
+  {
+    "id": "1",
+    "risky": "val-sen-branch (memcpy)",
+    "acc_path": "netdev_phys_item_id->id_len",
+    "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L8947",
+    "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L8947",
+    "drv_update_loc(shared field)": "[ (efx_ef10_get_phys_port_id) https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L3759 ], [ (efx_ef100_get_phys_port_id) https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_nic.c#L661 ], ",
+    "call path (type)": " [destroy_workqueue->workqueue_sysfs_unregister->device_unregister->device_del->device_platform_notify_remove->efx_pm_suspend->efx_pm_resume->ef100_probe_main->efx_mcdi_reset->efx_mcdi_handle_assertion->efx_mcdi_read_assertion->efx_mcdi_rpc_quiet->_efx_mcdi_rpc_evb_retry->_efx_mcdi_rpc->_efx_mcdi_rpc_finish->efx_mcdi_poll->efx_mcdi_poll_reboot->efx_ef10_mem_map_size->efx_ef10_set_mac_address->efx_ef10_vport_set_mac_address->efx_net_open->efx_reset->ef100_reset->dev_close->dev_close_many->rtmsg_ifinfo->rtmsg_ifinfo_event->rtmsg_ifinfo_build_skb->rtnl_fill_ifinfo->rtnl_phys_switch_id_fill->dev_get_port_parent_id] ",
+    "total_cond_num": "2",
+    "total_cond_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L8945 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L8943 | ",
+    "isControl": "1",
+    "direct_num_cond_checks": 0,
+    "direct_cond_checks_loc": "",
+    "t_trace": "[ INST || DATA_DEF_USE || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L8947 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]
+[
+  {
+    "struct name": "rtnl_link_stats64",
+    "No.Fields": 25,
+    "No.Shared fields": 12,
+    "No.KRDU fields": 12,
+    "No.classified fields": 0,
+    "No.unclassified fields": 12,
+    "UNCLASSIFY": 12
+  }
+]
+[
+  {
+    "struct name": "net_device_ops",
+    "No.Fields": 76,
+    "No.Shared fields": 0,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "netdev_notifier_info",
+    "No.Fields": 2,
+    "No.Shared fields": 1,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "vlan_ethhdr",
+    "No.Fields": 4,
+    "No.Shared fields": 1,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "napi_struct",
+    "No.Fields": 16,
+    "No.Shared fields": 3,
+    "No.KRDU fields": 2,
+    "No.classified fields": 2,
+    "No.unclassified fields": 0,
+    "ARR_IDX": 1,
+    "": 2,
+    "BRANCH": 2,
+    "UNCLASSIFY": 0
+  },
+  {
+    "id": "14",
+    "risky": "val-sen-branch (buffer_acc)",
+    "acc_path": "napi_struct->state",
+    "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L4694",
+    "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L4694",
+    "drv_update_loc(shared field)": "[ (efx_copy_channel) https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L616 ], ",
+    "call path (type)": " [destroy_workqueue->workqueue_sysfs_unregister->device_unregister->device_del->device_platform_notify_remove->efx_pm_suspend->efx_pm_resume->ef100_probe_main->efx_mcdi_reset->efx_mcdi_handle_assertion->efx_mcdi_read_assertion->efx_mcdi_rpc_quiet->_efx_mcdi_rpc_evb_retry->_efx_mcdi_rpc->_efx_mcdi_rpc_finish->efx_mcdi_poll->efx_mcdi_poll_reboot->efx_ef10_mem_map_size->efx_ef10_set_mac_address->efx_ef10_vport_set_mac_address->efx_net_open->efx_reset->ef100_reset->dev_close->dev_close_many->rtmsg_ifinfo->rtmsg_ifinfo_event->rtmsg_ifinfo_build_skb->if_nlmsg_size->rtnl_vfinfo_size->dev_num_vf->efx_pm_freeze->efx_stop_all->efx_stop_datapath->efx_ptp_stop_datapath->efx_ptp_stop->efx_ptp_deliver_rx_queue->netif_receive_skb->netif_receive_skb_internal->enqueue_to_backlog] ",
+    "total_cond_num": "4",
+    "total_cond_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L4682 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L4694 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L4683 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L4682 | ",
+    "isControl": "1",
+    "direct_num_cond_checks": 0,
+    "direct_cond_checks_loc": "",
+    "t_trace": "[ INST || DATA_DEF_USE || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L4694 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  },
+  {
+    "id": "14",
+    "risky": "num-arith ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L6012 )",
+    "acc_path": "napi_struct->state",
+    "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L5999",
+    "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L6010",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update_loc(shared field)": "[ (efx_copy_channel) https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L616 ], ",
+    "call path (type)": "",
+    "total_cond_num": "1",
+    "total_cond_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L6000 | ",
+    "isControl": "1",
+    "direct_num_cond_checks": 0,
+    "direct_cond_checks_loc": "",
+    "t_trace": "[ INST || DATA_DEF_USE || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L5999 ] -> [ INST || UNKNOWN Edge Type || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L5999 ] -> [ INST || UNKNOWN Edge Type || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L6010 ] -> [ INST || DATA_DEF_USE || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L6010 ] -> [ INST || DATA_DEF_USE || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L6010 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  },
+  {
+    "id": "15",
+    "risky": "num-arith ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/lib/find_bit.c#L133 )",
+    "acc_path": "napi_struct->napi_id",
+    "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L1388",
+    "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3451",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update_loc(shared field)": "[ (efx_copy_channel) https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L615 ], ",
+    "call path (type)": " [msleep->schedule_timeout_uninterruptible->schedule_timeout->schedule->sched_submit_work->wq_worker_sleeping->wake_up_worker->wake_up_process->try_to_wake_up->select_task_rq->select_fallback_rq] ",
+    "total_cond_num": "5",
+    "total_cond_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L1388 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3529 | ",
+    "isControl": "0",
+    "direct_num_cond_checks": 0,
+    "direct_cond_checks_loc": "",
+    "t_trace": "[ INST || DATA_DEF_USE || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L1388 ] -> [ INST || DATA_DEF_USE || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L1388 ] -> [ INST || DATA_ST || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L1380 |   %4 = alloca %struct.task_struct.16217*, align 8 ] -> [ INST || DATA_DEF_USE || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L1388 ] -> [ ACTUAL_IN || PARAMETER_IN ] -> [ FORMAL_IN || PARAMETER_INp ] -> [ INST || PARAMETER_IN || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4358 ] -> [ ACTUAL_IN || PARAMETER_IN ] -> [ FORMAL_IN || PARAMETER_INp ] -> [ INST || PARAMETER_IN || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4209 ] -> [ ACTUAL_IN || PARAMETER_IN ] -> [ FORMAL_IN || PARAMETER_INp ] -> [ INST || PARAMETER_IN || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3530 ] -> [ ACTUAL_IN || PARAMETER_IN ] -> [ FORMAL_IN || PARAMETER_INp ] -> [ INST || PARAMETER_IN || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3459 ] -> [ INST || DATA_DEF_USE || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3459 ] -> [ INST || DATA_DEF_USE || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3459 ] -> [ INST || DATA_DEF_USE || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3459 ] -> [ INST || DATA_DEF_USE || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3459 ] -> [ INST || DATA_DEF_USE || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3459 ] -> [ INST || DATA_DEF_USE || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3459 ] -> [ INST || DATA_ST || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3435 |   %9 = alloca i32, align 4 ] -> [ INST || DATA_DEF_USE || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3451 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  },
+  {
+    "id": "15",
+    "risky": "val-sen-branch (buffer_acc)",
+    "acc_path": "napi_struct->napi_id",
+    "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L1388",
+    "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/lib/find_bit.c#L133",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update_loc(shared field)": "[ (efx_copy_channel) https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L615 ], ",
+    "call path (type)": " [msleep->schedule_timeout_uninterruptible->schedule_timeout->schedule->sched_submit_work->wq_worker_sleeping->wake_up_worker->wake_up_process->try_to_wake_up->select_task_rq->select_fallback_rq->find_next_bit.1952->_find_next_bit] ",
+    "total_cond_num": "13",
+    "total_cond_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L1388 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3529 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/find.h#L52 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/lib/find_bit.c#L133 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/find.h#L52 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/lib/find_bit.c#L133 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/find.h#L52 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/lib/find_bit.c#L133 | ",
+    "isControl": "0",
+    "direct_num_cond_checks": 0,
+    "direct_cond_checks_loc": "",
+    "t_trace": "[ INST || DATA_DEF_USE || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L1388 ] -> [ INST || DATA_DEF_USE || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L1388 ] -> [ INST || DATA_ST || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L1380 |   %4 = alloca %struct.task_struct.16217*, align 8 ] -> [ INST || DATA_DEF_USE || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L1388 ] -> [ ACTUAL_IN || PARAMETER_IN ] -> [ FORMAL_IN || PARAMETER_INp ] -> [ INST || PARAMETER_IN || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4358 ] -> [ ACTUAL_IN || PARAMETER_IN ] -> [ FORMAL_IN || PARAMETER_INp ] -> [ INST || PARAMETER_IN || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4209 ] -> [ ACTUAL_IN || PARAMETER_IN ] -> [ FORMAL_IN || PARAMETER_INp ] -> [ INST || PARAMETER_IN || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3530 ] -> [ ACTUAL_IN || PARAMETER_IN ] -> [ FORMAL_IN || PARAMETER_INp ] -> [ INST || PARAMETER_IN || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3459 ] -> [ INST || DATA_DEF_USE || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3459 ] -> [ INST || DATA_DEF_USE || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3459 ] -> [ INST || DATA_DEF_USE || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3459 ] -> [ INST || DATA_DEF_USE || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3459 ] -> [ INST || DATA_DEF_USE || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3459 ] -> [ INST || DATA_DEF_USE || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3459 ] -> [ INST || DATA_ST || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3435 |   %9 = alloca i32, align 4 ] -> [ INST || DATA_DEF_USE || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3459 ] -> [ INST || DATA_DEF_USE || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3459 ] -> [ ACTUAL_IN || PARAMETER_INlong unsigned int ] -> [ FORMAL_IN || PARAMETER_INoffset ] -> [ INST || PARAMETER_IN || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/find.h#L62 ] -> [ ACTUAL_IN || PARAMETER_INlong unsigned int ] -> [ FORMAL_IN || PARAMETER_INstart ] -> [ INST || PARAMETER_IN || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/lib/find_bit.c#L133 ] -> [ INST || DATA_ST || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/lib/find_bit.c#L131 |   %12 = alloca i64, align 8 ] -> [ INST || DATA_DEF_USE || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/lib/find_bit.c#L133 ] -> [ INST || DATA_DEF_USE || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/lib/find_bit.c#L133 ] -> [ INST || DATA_ST || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/lib/find_bit.c#L131 |   %9 = alloca i64, align 8 ] -> [ INST || DATA_DEF_USE || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/lib/find_bit.c#L133 ] -> [ INST || DATA_DEF_USE || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/lib/find_bit.c#L133 ] -> [ INST || DATA_DEF_USE || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/lib/find_bit.c#L133 ] -> [ INST || DATA_ST || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/lib/find_bit.c#L131 |   %13 = alloca i64, align 8 ] -> [ INST || DATA_DEF_USE || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/lib/find_bit.c#L133 ] -> [ INST || DATA_DEF_USE || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/lib/find_bit.c#L133 ] -> [ INST || DATA_ST || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/lib/find_bit.c#L131 |   %15 = alloca i64, align 8 ] -> [ INST || DATA_DEF_USE || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/lib/find_bit.c#L133 ] -> [ INST || UNKNOWN Edge Type || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/lib/find_bit.c#L133 ] -> [ INST || DATA_DEF_USE || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/lib/find_bit.c#L133 ] -> [ INST || DATA_DEF_USE || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/lib/find_bit.c#L133 ] -> [ INST || DATA_DEF_USE || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/lib/find_bit.c#L133 ] -> [ INST || DATA_DEF_USE || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/lib/find_bit.c#L133 ] -> [ INST || DATA_DEF_USE || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/lib/find_bit.c#L133 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  },
+  {
+    "id": "15",
+    "risky": "arr-idx",
+    "acc_path": "napi_struct->napi_id",
+    "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L1388",
+    "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/topology.h#L96",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update_loc(shared field)": "[ (efx_copy_channel) https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L615 ], ",
+    "call path (type)": " [msleep->schedule_timeout_uninterruptible->schedule_timeout->schedule->sched_submit_work->wq_worker_sleeping->wake_up_worker->wake_up_process->try_to_wake_up->select_task_rq->select_fallback_rq->cpu_to_node.1950] ",
+    "total_cond_num": "5",
+    "total_cond_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L1388 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3529 | ",
+    "isControl": "0",
+    "direct_num_cond_checks": 0,
+    "direct_cond_checks_loc": "",
+    "t_trace": "[ INST || DATA_DEF_USE || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L1388 ] -> [ INST || DATA_DEF_USE || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L1388 ] -> [ INST || DATA_ST || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L1380 |   %4 = alloca %struct.task_struct.16217*, align 8 ] -> [ INST || DATA_DEF_USE || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L1388 ] -> [ ACTUAL_IN || PARAMETER_IN ] -> [ FORMAL_IN || PARAMETER_INp ] -> [ INST || PARAMETER_IN || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4358 ] -> [ ACTUAL_IN || PARAMETER_IN ] -> [ FORMAL_IN || PARAMETER_INp ] -> [ INST || PARAMETER_IN || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4209 ] -> [ ACTUAL_IN || PARAMETER_IN ] -> [ FORMAL_IN || PARAMETER_INp ] -> [ INST || PARAMETER_IN || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3530 ] -> [ INST || DATA_DEF_USE || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3530 ] -> [ ACTUAL_IN || PARAMETER_INint ] -> [ FORMAL_IN || PARAMETER_INcpu ] -> [ INST || PARAMETER_IN || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3437 ] -> [ ACTUAL_IN || PARAMETER_INint ] -> [ FORMAL_IN || PARAMETER_INcpu ] -> [ INST || PARAMETER_IN || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/topology.h#L96 ] -> [ INST || DATA_DEF_USE || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/topology.h#L96 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]
+[
+  {
+    "struct name": "skb_shared_info",
+    "No.Fields": 14,
+    "No.Shared fields": 1,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "netdev_hw_addr_list",
+    "No.Fields": 3,
+    "No.Shared fields": 1,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "netdev_hw_addr",
+    "No.Fields": 9,
+    "No.Shared fields": 2,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "Total Bugon": 5,
+    "Controlled Bugon": 0,
+    "Uncontrolled Bugon": 5
+  },
+  {
+    "Drv caller": "[ dm_zero_exit | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/md/dm-zero.c#L80 ], ",
+    "Trans func name": "dm_unregister_target",
+    "Bugon loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/md/dm-target.c#L101",
+    "Call Path": "dm_unregister_target",
+    "Is check controlled": "false",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/md/dm-target.c#L99 | "
+  },
+  {
+    "Drv caller": "[ zero_map | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/md/dm-zero.c#L53 ], ",
+    "Trans func name": "bio_remaining_done",
+    "Bugon loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/bio.c#L1494",
+    "Call Path": "bio_endio->bio_remaining_done",
+    "Is check controlled": "false",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/bio.c#L1491 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/bio.c#L1494 | "
+  },
+  {
+    "Drv caller": "[ zero_map | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/md/dm-zero.c#L53 ], ",
+    "Trans func name": "bio_put",
+    "Bugon loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/bio.c#L739",
+    "Call Path": "bio_endio->__bio_chain_endio->bio_put",
+    "Is check controlled": "false",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/bio.c#L738 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/bio.c#L739 | "
+  },
+  {
+    "Drv caller": "[ zero_map | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/md/dm-zero.c#L53 ], ",
+    "Trans func name": "bvec_free",
+    "Bugon loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/bio.c#L160",
+    "Call Path": "bio_endio->__bio_chain_endio->bio_put->bio_alloc_cache_prune->bio_free->bvec_free",
+    "Is check controlled": "false",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/bio.c#L160 | "
+  },
+  {
+    "Drv caller": "[ zero_map | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/md/dm-zero.c#L53 ], ",
+    "Trans func name": "biovec_slab",
+    "Bugon loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/bio.c#L57",
+    "Call Path": "bio_endio->__bio_chain_endio->bio_put->bio_alloc_cache_prune->bio_free->bvec_free->biovec_slab",
+    "Is check controlled": "false",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/bio.c#L46 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/bio.c#L55 | "
+  }
+]

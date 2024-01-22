@@ -1,0 +1,80 @@
+[
+  {
+    "id": "49",
+    "risky": "num-arith ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L764 )",
+    "acc_path": "ssize_t",
+    "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L756",
+    "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L768",
+    "drv_update_loc(shared field)": "",
+    "call path (type)": "",
+    "total_cond_num": "5",
+    "total_cond_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L748 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L763 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L769 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L751 | ",
+    "isControl": "0",
+    "direct_num_cond_checks": 3,
+    "direct_cond_checks_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L763 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L769 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L769 | ",
+    "is_direct_control": 0,
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]
+[
+  {
+    "id": "49",
+    "risky": "num-arith ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L764 )",
+    "acc_path": "ssize_t",
+    "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L759",
+    "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L768",
+    "drv_update_loc(shared field)": "",
+    "call path (type)": "",
+    "total_cond_num": "5",
+    "total_cond_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L748 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L763 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L769 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L751 | ",
+    "isControl": "0",
+    "direct_num_cond_checks": 3,
+    "direct_cond_checks_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L763 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L769 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L769 | ",
+    "is_direct_control": 0,
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]
+[
+  {
+    "id": "50",
+    "risky": "num-arith ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L764 )",
+    "acc_path": "ssize_t",
+    "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L756",
+    "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L768",
+    "drv_update_loc(shared field)": "",
+    "call path (type)": "",
+    "total_cond_num": "5",
+    "total_cond_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L748 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L763 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L769 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L751 | ",
+    "isControl": "0",
+    "direct_num_cond_checks": 3,
+    "direct_cond_checks_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L763 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L769 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L769 | ",
+    "is_direct_control": 0,
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]
+[
+  {
+    "id": "50",
+    "risky": "num-arith ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L764 )",
+    "acc_path": "ssize_t",
+    "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L759",
+    "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L768",
+    "drv_update_loc(shared field)": "",
+    "call path (type)": "",
+    "total_cond_num": "5",
+    "total_cond_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L748 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L763 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L769 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L751 | ",
+    "isControl": "0",
+    "direct_num_cond_checks": 3,
+    "direct_cond_checks_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L763 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L769 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L769 | ",
+    "is_direct_control": 0,
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]

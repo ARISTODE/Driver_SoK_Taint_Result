@@ -1,0 +1,290 @@
+[
+  {
+    "type": "indirect",
+    "drv boundary func": "nullb_group_make_item",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/page_ref.h#L210",
+    "call path": " [nullb_group_make_item->null_alloc_dev->kfree->free_large_kmalloc->__free_pages->put_page_testzero.1284->page_ref_dec_and_test.1285] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nullb_group_drop_item",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/kref.h#L64",
+    "call path": " [nullb_group_drop_item->config_item_put->kref_put] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nullb_group_drop_item",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L333",
+    "call path": " [nullb_group_drop_item->config_item_put->kref_put->refcount_dec_and_test] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nullb_group_drop_item",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6511",
+    "call path": " [nullb_group_drop_item->null_del_dev->del_gendisk->blk_mq_exit_queue->blk_mq_del_queue_tag_set->blk_mq_update_tag_set_shared->blk_mq_freeze_queue->blk_freeze_queue->blk_mq_freeze_queue_wait->schedule->__schedule] ",
+    "num condition checks": 1,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6510 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nullb_group_drop_item",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/page_ref.h#L210",
+    "call path": " [nullb_group_drop_item->null_del_dev->null_free_device_storage->null_free_page->kfree->free_large_kmalloc->__free_pages->put_page_testzero.1284->page_ref_dec_and_test.1285] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nullb_group_drop_item",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L37",
+    "call path": " [nullb_group_drop_item->null_del_dev->del_gendisk->blk_mq_exit_queue->blk_mq_del_queue_tag_set->blk_mq_update_tag_set_shared->blk_mq_freeze_queue->blk_freeze_queue->blk_mq_freeze_queue_wait->schedule->__schedule->mmgrab.900] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nullb_group_drop_item",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L49",
+    "call path": " [nullb_group_drop_item->null_del_dev->del_gendisk->blk_mq_exit_queue->blk_mq_del_queue_tag_set->blk_mq_update_tag_set_shared->blk_mq_freeze_queue->blk_freeze_queue->blk_mq_freeze_queue_wait->schedule->__schedule->finish_task_switch->mmdrop_sched->mmdrop] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nullb_group_drop_item",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk.h#L492",
+    "call path": " [nullb_group_drop_item->null_del_dev->del_gendisk->blk_mq_exit_queue->blk_mq_del_queue_tag_set->blk_mq_update_tag_set_shared->blk_mq_freeze_queue->blk_freeze_queue->blk_mq_freeze_queue_wait->schedule->sched_submit_work->blk_flush_plug.918->__blk_flush_plug->blk_mq_flush_plug_list->blk_mq_plug_issue_direct->blk_mq_request_issue_directly->__blk_mq_try_issue_directly->__blk_mq_issue_directly->null_queue_rq->blk_mq_requeue_request->blk_mq_sched_requeue_request->null_complete_rq->end_cmd->blk_mq_end_request->__blk_mq_end_request->blk_mq_free_request->req_ref_put_and_test] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nullb_group_drop_item",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-mq.h#L227",
+    "call path": " [nullb_group_drop_item->null_del_dev->del_gendisk->blk_mq_exit_queue->blk_mq_del_queue_tag_set->blk_mq_update_tag_set_shared->blk_mq_freeze_queue->blk_freeze_queue->blk_mq_freeze_queue_wait->schedule->sched_submit_work->blk_flush_plug.918->__blk_flush_plug->blk_mq_flush_plug_list->blk_mq_plug_issue_direct->blk_mq_request_issue_directly->__blk_mq_try_issue_directly->blk_mq_get_driver_tag->__blk_mq_get_driver_tag->__blk_mq_inc_active_requests] ",
+    "num condition checks": 1,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-mq.h#L226 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nullb_group_drop_item",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-mq.h#L229",
+    "call path": " [nullb_group_drop_item->null_del_dev->del_gendisk->blk_mq_exit_queue->blk_mq_del_queue_tag_set->blk_mq_update_tag_set_shared->blk_mq_freeze_queue->blk_freeze_queue->blk_mq_freeze_queue_wait->schedule->sched_submit_work->blk_flush_plug.918->__blk_flush_plug->blk_mq_flush_plug_list->blk_mq_plug_issue_direct->blk_mq_request_issue_directly->__blk_mq_try_issue_directly->blk_mq_get_driver_tag->__blk_mq_get_driver_tag->__blk_mq_inc_active_requests] ",
+    "num condition checks": 1,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-mq.h#L226 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "null_submit_bio",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6511",
+    "call path": " [null_submit_bio->alloc_cmd->io_schedule->schedule->__schedule] ",
+    "num condition checks": 1,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6510 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "null_submit_bio",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L37",
+    "call path": " [null_submit_bio->alloc_cmd->io_schedule->schedule->__schedule->mmgrab.900] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "null_submit_bio",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L49",
+    "call path": " [null_submit_bio->alloc_cmd->io_schedule->schedule->__schedule->finish_task_switch->mmdrop_sched->mmdrop] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "null_submit_bio",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk.h#L492",
+    "call path": " [null_submit_bio->alloc_cmd->io_schedule->io_schedule_prepare->blk_flush_plug.918->__blk_flush_plug->blk_mq_flush_plug_list->blk_mq_plug_issue_direct->blk_mq_request_issue_directly->__blk_mq_try_issue_directly->__blk_mq_issue_directly->null_queue_rq->blk_mq_requeue_request->blk_mq_sched_requeue_request->null_complete_rq->end_cmd->blk_mq_end_request->__blk_mq_end_request->blk_mq_free_request->req_ref_put_and_test] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "null_submit_bio",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/page_ref.h#L210",
+    "call path": " [null_submit_bio->alloc_cmd->io_schedule->io_schedule_prepare->blk_flush_plug.918->__blk_flush_plug->blk_mq_flush_plug_list->blk_mq_plug_issue_direct->blk_mq_request_issue_directly->__blk_mq_try_issue_directly->__blk_mq_issue_directly->null_queue_rq->null_handle_cmd->null_handle_flush->null_make_cache_space->null_flush_cache_page->null_free_page->kfree->free_large_kmalloc->__free_pages->put_page_testzero.1284->page_ref_dec_and_test.1285] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "null_submit_bio",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-mq.h#L227",
+    "call path": " [null_submit_bio->alloc_cmd->io_schedule->io_schedule_prepare->blk_flush_plug.918->__blk_flush_plug->blk_mq_flush_plug_list->blk_mq_plug_issue_direct->blk_mq_request_issue_directly->__blk_mq_try_issue_directly->blk_mq_get_driver_tag->__blk_mq_get_driver_tag->__blk_mq_inc_active_requests] ",
+    "num condition checks": 1,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-mq.h#L226 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "null_submit_bio",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-mq.h#L229",
+    "call path": " [null_submit_bio->alloc_cmd->io_schedule->io_schedule_prepare->blk_flush_plug.918->__blk_flush_plug->blk_mq_flush_plug_list->blk_mq_plug_issue_direct->blk_mq_request_issue_directly->__blk_mq_try_issue_directly->blk_mq_get_driver_tag->__blk_mq_get_driver_tag->__blk_mq_inc_active_requests] ",
+    "num condition checks": 1,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-mq.h#L226 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nullb_device_badblocks_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/page_ref.h#L210",
+    "call path": " [nullb_device_badblocks_store->kfree->free_large_kmalloc->__free_pages->put_page_testzero.1284->page_ref_dec_and_test.1285] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nullb_device_power_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6511",
+    "call path": " [nullb_device_power_store->null_del_dev->del_gendisk->blk_mq_exit_queue->blk_mq_del_queue_tag_set->blk_mq_update_tag_set_shared->blk_mq_freeze_queue->blk_freeze_queue->blk_mq_freeze_queue_wait->schedule->__schedule] ",
+    "num condition checks": 1,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6510 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nullb_device_power_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/page_ref.h#L210",
+    "call path": " [nullb_device_power_store->null_del_dev->null_free_device_storage->null_free_page->kfree->free_large_kmalloc->__free_pages->put_page_testzero.1284->page_ref_dec_and_test.1285] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nullb_device_power_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L37",
+    "call path": " [nullb_device_power_store->null_del_dev->del_gendisk->blk_mq_exit_queue->blk_mq_del_queue_tag_set->blk_mq_update_tag_set_shared->blk_mq_freeze_queue->blk_freeze_queue->blk_mq_freeze_queue_wait->schedule->__schedule->mmgrab.900] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nullb_device_power_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L49",
+    "call path": " [nullb_device_power_store->null_del_dev->del_gendisk->blk_mq_exit_queue->blk_mq_del_queue_tag_set->blk_mq_update_tag_set_shared->blk_mq_freeze_queue->blk_freeze_queue->blk_mq_freeze_queue_wait->schedule->__schedule->finish_task_switch->mmdrop_sched->mmdrop] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nullb_device_power_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk.h#L492",
+    "call path": " [nullb_device_power_store->null_del_dev->del_gendisk->blk_mq_exit_queue->blk_mq_del_queue_tag_set->blk_mq_update_tag_set_shared->blk_mq_freeze_queue->blk_freeze_queue->blk_mq_freeze_queue_wait->schedule->sched_submit_work->blk_flush_plug.918->__blk_flush_plug->blk_mq_flush_plug_list->blk_mq_plug_issue_direct->blk_mq_request_issue_directly->__blk_mq_try_issue_directly->__blk_mq_issue_directly->null_queue_rq->blk_mq_requeue_request->blk_mq_sched_requeue_request->null_complete_rq->end_cmd->blk_mq_end_request->__blk_mq_end_request->blk_mq_free_request->req_ref_put_and_test] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nullb_device_power_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-mq.h#L227",
+    "call path": " [nullb_device_power_store->null_del_dev->del_gendisk->blk_mq_exit_queue->blk_mq_del_queue_tag_set->blk_mq_update_tag_set_shared->blk_mq_freeze_queue->blk_freeze_queue->blk_mq_freeze_queue_wait->schedule->sched_submit_work->blk_flush_plug.918->__blk_flush_plug->blk_mq_flush_plug_list->blk_mq_plug_issue_direct->blk_mq_request_issue_directly->__blk_mq_try_issue_directly->blk_mq_get_driver_tag->__blk_mq_get_driver_tag->__blk_mq_inc_active_requests] ",
+    "num condition checks": 1,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-mq.h#L226 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nullb_device_power_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-mq.h#L229",
+    "call path": " [nullb_device_power_store->null_del_dev->del_gendisk->blk_mq_exit_queue->blk_mq_del_queue_tag_set->blk_mq_update_tag_set_shared->blk_mq_freeze_queue->blk_freeze_queue->blk_mq_freeze_queue_wait->schedule->sched_submit_work->blk_flush_plug.918->__blk_flush_plug->blk_mq_flush_plug_list->blk_mq_plug_issue_direct->blk_mq_request_issue_directly->__blk_mq_try_issue_directly->blk_mq_get_driver_tag->__blk_mq_get_driver_tag->__blk_mq_inc_active_requests] ",
+    "num condition checks": 1,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-mq.h#L226 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "null_complete_rq",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk.h#L492",
+    "call path": " [null_complete_rq->end_cmd->blk_mq_end_request->__blk_mq_end_request->blk_mq_free_request->req_ref_put_and_test] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "null_queue_rq",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk.h#L492",
+    "call path": " [null_queue_rq->blk_mq_requeue_request->blk_mq_sched_requeue_request->null_complete_rq->end_cmd->blk_mq_end_request->__blk_mq_end_request->blk_mq_free_request->req_ref_put_and_test] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "null_queue_rq",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/page_ref.h#L210",
+    "call path": " [null_queue_rq->null_handle_cmd->null_handle_flush->null_make_cache_space->null_flush_cache_page->null_free_page->kfree->free_large_kmalloc->__free_pages->put_page_testzero.1284->page_ref_dec_and_test.1285] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "null_timeout_rq",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk.h#L492",
+    "call path": " [null_timeout_rq->blk_mq_complete_request->null_complete_rq->end_cmd->blk_mq_end_request->__blk_mq_end_request->blk_mq_free_request->req_ref_put_and_test] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "null_poll",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk.h#L492",
+    "call path": " [null_poll->end_cmd->blk_mq_end_request->__blk_mq_end_request->blk_mq_free_request->req_ref_put_and_test] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "null_poll",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/page_ref.h#L210",
+    "call path": " [null_poll->null_process_cmd->null_handle_memory_backed->null_handle_discard->null_free_sector->null_free_page->kfree->free_large_kmalloc->__free_pages->put_page_testzero.1284->page_ref_dec_and_test.1285] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nullb_device_release",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/page_ref.h#L210",
+    "call path": " [nullb_device_release->null_free_device_storage->null_free_page->kfree->free_large_kmalloc->__free_pages->put_page_testzero.1284->page_ref_dec_and_test.1285] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  }
+]

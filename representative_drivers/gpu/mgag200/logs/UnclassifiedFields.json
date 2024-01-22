@@ -1,0 +1,1428 @@
+{
+  "id": 1,
+  "acc_path": "drm_mode_config->max_width",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_fb_helper.c#L1937],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_mode_config.c#L125],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_connector.c#L2707], ",
+  "Drv update": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_mode.c#L829], "
+}
+{
+  "id": 4,
+  "acc_path": "drm_mode_config->preferred_depth",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_ioctl.c#L272],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_fb_helper.c#L2632], ",
+  "Drv update": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_mode.c#L831], "
+}
+{
+  "id": 5,
+  "acc_path": "drm_mode_config->helper_private",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_atomic_helper.c#L1766],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_atomic_helper.c#L2247], ",
+  "Drv update": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_mode.c#L834], "
+}
+{
+  "id": 7,
+  "acc_path": "iosys_map->is_iomem",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_fb_helper.c#L2478],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/iosys-map.h#L325],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/iosys-map.h#L325],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/iosys-map.h#L289],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/iosys-map.h#L237],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/iosys-map.h#L289],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_fb_helper.c#L2205],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/iosys-map.h#L237],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/iosys-map.h#L325],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_gem_shmem_helper.c#L304],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/iosys-map.h#L267], ",
+  "Drv update": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_mode.c#L435], "
+}
+{
+  "id": 9,
+  "acc_path": "i2c_adapter->owner",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/i2c/i2c-core-base.c#L2465],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/i2c/i2c-core-base.c#L2449], ",
+  "Drv update": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_i2c.c#L108], "
+}
+{
+  "id": 12,
+  "acc_path": "i2c_algo_bit_data->data",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/i2c/algos/i2c-algo-bit.c#L55],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/i2c/algos/i2c-algo-bit.c#L162],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/i2c/algos/i2c-algo-bit.c#L188],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/i2c/algos/i2c-algo-bit.c#L118],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/i2c/algos/i2c-algo-bit.c#L86],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/i2c/algos/i2c-algo-bit.c#L244],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/i2c/algos/i2c-algo-bit.c#L406],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/i2c/algos/i2c-algo-bit.c#L96],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/i2c/algos/i2c-algo-bit.c#L245],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/i2c/algos/i2c-algo-bit.c#L218],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/i2c/algos/i2c-algo-bit.c#L67],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/i2c/algos/i2c-algo-bit.c#L282],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/i2c/algos/i2c-algo-bit.c#L79],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/i2c/algos/i2c-algo-bit.c#L216],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/i2c/algos/i2c-algo-bit.c#L283],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/i2c/algos/i2c-algo-bit.c#L128],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/i2c/algos/i2c-algo-bit.c#L268],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/i2c/algos/i2c-algo-bit.c#L296],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/i2c/algos/i2c-algo-bit.c#L61],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/i2c/algos/i2c-algo-bit.c#L297],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/i2c/algos/i2c-algo-bit.c#L269],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/i2c/algos/i2c-algo-bit.c#L254],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/i2c/algos/i2c-algo-bit.c#L139],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/i2c/algos/i2c-algo-bit.c#L255], ",
+  "Drv update": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_i2c.c#L119], "
+}
+{
+  "id": 19,
+  "acc_path": "parent",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 20,
+  "acc_path": "driver",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/gpu/drm/drm_drv.c#L686 | __devm_drm_dev_alloc",
+  "Drv update": ""
+}
+{
+  "id": 20,
+  "acc_path": "driver",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 23,
+  "acc_path": "iter",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/gpu/drm/drm_damage_helper.c#L223 | drm_atomic_helper_damage_iter_init",
+  "Drv update": ""
+}
+{
+  "id": 23,
+  "acc_path": "iter",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_damage_helper.c#L239],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_damage_helper.c#L240],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_damage_helper.c#L241],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_damage_helper.c#L242], ",
+  "Drv update": ""
+}
+{
+  "id": 24,
+  "acc_path": "old_state",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/gpu/drm/drm_damage_helper.c#L223 | drm_atomic_helper_damage_iter_init",
+  "Drv update": ""
+}
+{
+  "id": 24,
+  "acc_path": "old_state",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 25,
+  "acc_path": "state",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/gpu/drm/drm_damage_helper.c#L223 | drm_atomic_helper_damage_iter_init",
+  "Drv update": ""
+}
+{
+  "id": 25,
+  "acc_path": "state",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 25,
+  "acc_path": "state->visible",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_damage_helper.c#L230], ",
+  "Drv update": ""
+}
+{
+  "id": 25,
+  "acc_path": "state->visible",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 25,
+  "acc_path": "state->crtc",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 25,
+  "acc_path": "state->fb",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 26,
+  "acc_path": "iter",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/gpu/drm/drm_damage_helper.c#L269 | drm_atomic_helper_damage_iter_next",
+  "Drv update": ""
+}
+{
+  "id": 27,
+  "acc_path": "rect",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/gpu/drm/drm_damage_helper.c#L269 | drm_atomic_helper_damage_iter_next",
+  "Drv update": ""
+}
+{
+  "id": 27,
+  "acc_path": "rect",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 28,
+  "acc_path": "dev",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/gpu/drm/drm_crtc.c#L354 | drm_crtc_init_with_planes",
+  "Drv update": ""
+}
+{
+  "id": 28,
+  "acc_path": "dev",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 29,
+  "acc_path": "crtc",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 30,
+  "acc_path": "primary",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/gpu/drm/drm_crtc.c#L354 | drm_crtc_init_with_planes",
+  "Drv update": ""
+}
+{
+  "id": 30,
+  "acc_path": "primary",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 31,
+  "acc_path": "cursor",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/gpu/drm/drm_crtc.c#L354 | drm_crtc_init_with_planes",
+  "Drv update": ""
+}
+{
+  "id": 31,
+  "acc_path": "cursor",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 32,
+  "acc_path": "funcs",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/gpu/drm/drm_crtc.c#L354 | drm_crtc_init_with_planes",
+  "Drv update": ""
+}
+{
+  "id": 32,
+  "acc_path": "funcs",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 33,
+  "acc_path": "name",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 34,
+  "acc_path": "connector",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/gpu/drm/drm_connector.c#L481 | drm_connector_attach_encoder",
+  "Drv update": ""
+}
+{
+  "id": 34,
+  "acc_path": "connector",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 35,
+  "acc_path": "encoder",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/gpu/drm/drm_connector.c#L481 | drm_connector_attach_encoder",
+  "Drv update": ""
+}
+{
+  "id": 35,
+  "acc_path": "encoder",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 36,
+  "acc_path": "dev",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 36,
+  "acc_path": "dev->dev",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 37,
+  "acc_path": "connector",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 38,
+  "acc_path": "funcs",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/gpu/drm/drm_connector.c#L387 | drm_connector_init_with_ddc",
+  "Drv update": ""
+}
+{
+  "id": 38,
+  "acc_path": "funcs",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 40,
+  "acc_path": "ddc",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/gpu/drm/drm_connector.c#L387 | drm_connector_init_with_ddc",
+  "Drv update": ""
+}
+{
+  "id": 40,
+  "acc_path": "ddc",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 41,
+  "acc_path": "crtc",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 43,
+  "acc_path": "crtc",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/gpu/drm/drm_color_mgmt.c#L164 | drm_crtc_enable_color_mgmt",
+  "Drv update": ""
+}
+{
+  "id": 43,
+  "acc_path": "crtc",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_color_mgmt.c#L164 |   %9 = alloca %struct.drm_device.1198*, align 8],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_color_mgmt.c#L169], ",
+  "Drv update": ""
+}
+{
+  "id": 43,
+  "acc_path": "crtc->dev",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_color_mgmt.c#L164 |   %9 = alloca %struct.drm_device.1198*, align 8],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_color_mgmt.c#L169], ",
+  "Drv update": ""
+}
+{
+  "id": 43,
+  "acc_path": "crtc->dev",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_color_mgmt.c#L170], ",
+  "Drv update": ""
+}
+{
+  "id": 43,
+  "acc_path": "crtc->dev",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 43,
+  "acc_path": "crtc->dev->mode_config",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_color_mgmt.c#L188],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_color_mgmt.c#L186],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_color_mgmt.c#L182],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_color_mgmt.c#L176],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_color_mgmt.c#L174], ",
+  "Drv update": ""
+}
+{
+  "id": 43,
+  "acc_path": "crtc->dev->mode_config",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 44,
+  "acc_path": "degamma_lut_size",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/gpu/drm/drm_color_mgmt.c#L164 | drm_crtc_enable_color_mgmt",
+  "Drv update": ""
+}
+{
+  "id": 45,
+  "acc_path": "has_ctm",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/gpu/drm/drm_color_mgmt.c#L164 | drm_crtc_enable_color_mgmt",
+  "Drv update": ""
+}
+{
+  "id": 46,
+  "acc_path": "gamma_lut_size",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/gpu/drm/drm_color_mgmt.c#L164 | drm_crtc_enable_color_mgmt",
+  "Drv update": ""
+}
+{
+  "id": 47,
+  "acc_path": "state",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/gpu/drm/drm_atomic_state_helper.c#L193 | __drm_atomic_helper_crtc_destroy_state",
+  "Drv update": ""
+}
+{
+  "id": 47,
+  "acc_path": "state",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 47,
+  "acc_path": "state->gamma_lut",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_atomic_state_helper.c#L217], ",
+  "Drv update": ""
+}
+{
+  "id": 47,
+  "acc_path": "state->gamma_lut",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_atomic_state_helper.c#L217], ",
+  "Drv update": ""
+}
+{
+  "id": 47,
+  "acc_path": "state->gamma_lut",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 48,
+  "acc_path": "crtc",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 48,
+  "acc_path": "crtc->state",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 49,
+  "acc_path": "state",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/gpu/drm/drm_atomic_state_helper.c#L133 | __drm_atomic_helper_crtc_duplicate_state",
+  "Drv update": ""
+}
+{
+  "id": 49,
+  "acc_path": "state",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 49,
+  "acc_path": "state->planes_changed",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_atomic_state_helper.c#L149],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_atomic_state_helper.c#L148],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_atomic_state_helper.c#L146],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_atomic_state_helper.c#L150],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_atomic_state_helper.c#L147],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_atomic_state_helper.c#L151], ",
+  "Drv update": ""
+}
+{
+  "id": 49,
+  "acc_path": "state->gamma_lut",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_atomic_state_helper.c#L145],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_atomic_state_helper.c#L144], ",
+  "Drv update": ""
+}
+{
+  "id": 49,
+  "acc_path": "state->planes_changed",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 49,
+  "acc_path": "state->gamma_lut",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_atomic_state_helper.c#L145], ",
+  "Drv update": ""
+}
+{
+  "id": 49,
+  "acc_path": "state->gamma_lut",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 50,
+  "acc_path": "crtc",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/gpu/drm/drm_atomic_state_helper.c#L93 | __drm_atomic_helper_crtc_reset",
+  "Drv update": ""
+}
+{
+  "id": 50,
+  "acc_path": "crtc",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_atomic_state_helper.c#L99], ",
+  "Drv update": ""
+}
+{
+  "id": 50,
+  "acc_path": "crtc->dev",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_atomic_state_helper.c#L99], ",
+  "Drv update": ""
+}
+{
+  "id": 50,
+  "acc_path": "crtc->state",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_atomic_state_helper.c#L93 |   %4 = alloca %struct.drm_crtc_state.491*, align 8], ",
+  "Drv update": ""
+}
+{
+  "id": 50,
+  "acc_path": "crtc->dev",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_atomic_state_helper.c#L99], ",
+  "Drv update": ""
+}
+{
+  "id": 50,
+  "acc_path": "crtc->state",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_atomic_state_helper.c#L97], ",
+  "Drv update": ""
+}
+{
+  "id": 50,
+  "acc_path": "crtc->dev",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 50,
+  "acc_path": "crtc->state",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 51,
+  "acc_path": "crtc_state",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/gpu/drm/drm_atomic_state_helper.c#L93 | __drm_atomic_helper_crtc_reset",
+  "Drv update": ""
+}
+{
+  "id": 51,
+  "acc_path": "crtc_state",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 52,
+  "acc_path": "state",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 52,
+  "acc_path": "state->dev",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 52,
+  "acc_path": "state->dev->mode_config",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 53,
+  "acc_path": "crtc",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/gpu/drm/drm_atomic.c#L1291 | drm_atomic_add_affected_planes",
+  "Drv update": ""
+}
+{
+  "id": 53,
+  "acc_path": "crtc",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_atomic.c#L1300],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_atomic.c#L1300], ",
+  "Drv update": ""
+}
+{
+  "id": 54,
+  "acc_path": "old_state",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 54,
+  "acc_path": "old_state->dev",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_atomic_helper.c#L1705 |   %3 = alloca %struct.drm_device.1616*, align 8],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_atomic_helper.c#L1707], ",
+  "Drv update": ""
+}
+{
+  "id": 54,
+  "acc_path": "old_state->dev",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_atomic_helper.c#L1721],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_atomic_helper.c#L1709],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_atomic_helper.c#L1713],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_atomic_helper.c#L1711],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_atomic_helper.c#L1719], ",
+  "Drv update": ""
+}
+{
+  "id": 54,
+  "acc_path": "old_state->dev",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 55,
+  "acc_path": "crtc_state",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/gpu/drm/drm_atomic_helper.c#L944 | drm_atomic_helper_check_crtc_state",
+  "Drv update": ""
+}
+{
+  "id": 55,
+  "acc_path": "crtc_state",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_atomic_helper.c#L947], ",
+  "Drv update": ""
+}
+{
+  "id": 55,
+  "acc_path": "crtc_state->enable",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_atomic_helper.c#L949], ",
+  "Drv update": ""
+}
+{
+  "id": 55,
+  "acc_path": "crtc_state->enable",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 56,
+  "acc_path": "can_disable_primary_planes",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/gpu/drm/drm_atomic_helper.c#L944 | drm_atomic_helper_check_crtc_state",
+  "Drv update": ""
+}
+{
+  "id": 57,
+  "acc_path": "plane_state",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/gpu/drm/drm_atomic_helper.c#L848 | drm_atomic_helper_check_plane_state",
+  "Drv update": ""
+}
+{
+  "id": 57,
+  "acc_path": "plane_state",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_atomic_helper.c#L915],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_atomic_helper.c#L915],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_atomic_helper.c#L879],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_atomic_helper.c#L879],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_atomic_helper.c#L890],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_atomic_helper.c#L890], ",
+  "Drv update": ""
+}
+{
+  "id": 57,
+  "acc_path": "plane_state->crtc",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_atomic_helper.c#L873],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_atomic_helper.c#L862],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_atomic_helper.c#L862], ",
+  "Drv update": ""
+}
+{
+  "id": 57,
+  "acc_path": "plane_state->fb",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_atomic_helper.c#L848 |   %14 = alloca %struct.drm_framebuffer.1553*, align 8],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_atomic_helper.c#L855], ",
+  "Drv update": ""
+}
+{
+  "id": 57,
+  "acc_path": "plane_state->visible",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_atomic_helper.c#L904], ",
+  "Drv update": ""
+}
+{
+  "id": 57,
+  "acc_path": "plane_state->crtc",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 57,
+  "acc_path": "plane_state->fb",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_atomic_helper.c#L902],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_atomic_helper.c#L902],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_atomic_helper.c#L884],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_atomic_helper.c#L884], ",
+  "Drv update": ""
+}
+{
+  "id": 57,
+  "acc_path": "plane_state->visible",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 57,
+  "acc_path": "plane_state->crtc",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 57,
+  "acc_path": "plane_state->fb",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 58,
+  "acc_path": "crtc_state",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/gpu/drm/drm_atomic_helper.c#L848 | drm_atomic_helper_check_plane_state",
+  "Drv update": ""
+}
+{
+  "id": 58,
+  "acc_path": "crtc_state",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_atomic_helper.c#L862], ",
+  "Drv update": ""
+}
+{
+  "id": 58,
+  "acc_path": "crtc_state->enable",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_atomic_helper.c#L878],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_atomic_helper.c#L897], ",
+  "Drv update": ""
+}
+{
+  "id": 58,
+  "acc_path": "crtc_state->mode",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_atomic_helper.c#L898], ",
+  "Drv update": ""
+}
+{
+  "id": 58,
+  "acc_path": "crtc_state->enable",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 58,
+  "acc_path": "crtc_state->mode",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 61,
+  "acc_path": "can_position",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/gpu/drm/drm_atomic_helper.c#L848 | drm_atomic_helper_check_plane_state",
+  "Drv update": ""
+}
+{
+  "id": 62,
+  "acc_path": "can_update_disabled",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/gpu/drm/drm_atomic_helper.c#L848 | drm_atomic_helper_check_plane_state",
+  "Drv update": ""
+}
+{
+  "id": 63,
+  "acc_path": "pdev",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/gpu/drm/drm_aperture.c#L187 | drm_aperture_remove_conflicting_pci_framebuffers",
+  "Drv update": ""
+}
+{
+  "id": 63,
+  "acc_path": "pdev",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 64,
+  "acc_path": "req_driver",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/gpu/drm/drm_aperture.c#L187 | drm_aperture_remove_conflicting_pci_framebuffers",
+  "Drv update": ""
+}
+{
+  "id": 64,
+  "acc_path": "req_driver",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 65,
+  "acc_path": "dst",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 66,
+  "acc_path": "dst_pitch",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/gpu/drm/drm_format_helper.c#L173 | drm_fb_memcpy",
+  "Drv update": ""
+}
+{
+  "id": 67,
+  "acc_path": "src",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 68,
+  "acc_path": "fb",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/gpu/drm/drm_format_helper.c#L173 | drm_fb_memcpy",
+  "Drv update": ""
+}
+{
+  "id": 68,
+  "acc_path": "fb",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 68,
+  "acc_path": "fb->format",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_format_helper.c#L173 |   %11 = alloca %struct.drm_format_info*, align 8],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_format_helper.c#L181], ",
+  "Drv update": ""
+}
+{
+  "id": 68,
+  "acc_path": "fb->format",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_format_helper.c#L188],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_format_helper.c#L187], ",
+  "Drv update": ""
+}
+{
+  "id": 68,
+  "acc_path": "fb->pitches",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 68,
+  "acc_path": "fb->format",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 69,
+  "acc_path": "clip",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/gpu/drm/drm_format_helper.c#L173 | drm_fb_memcpy",
+  "Drv update": ""
+}
+{
+  "id": 69,
+  "acc_path": "clip",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 70,
+  "acc_path": "pitch",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/gpu/drm/drm_format_helper.c#L37 | drm_fb_clip_offset",
+  "Drv update": ""
+}
+{
+  "id": 71,
+  "acc_path": "format",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/gpu/drm/drm_format_helper.c#L37 | drm_fb_clip_offset",
+  "Drv update": ""
+}
+{
+  "id": 71,
+  "acc_path": "format",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 71,
+  "acc_path": "format",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 72,
+  "acc_path": "clip",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/gpu/drm/drm_format_helper.c#L37 | drm_fb_clip_offset",
+  "Drv update": ""
+}
+{
+  "id": 72,
+  "acc_path": "clip",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 73,
+  "acc_path": "dev",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 73,
+  "acc_path": "dev->mode_config",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_fb_helper.c#L2632], ",
+  "Drv update": ""
+}
+{
+  "id": 73,
+  "acc_path": "dev->mode_config",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 73,
+  "acc_path": "dev->dev",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 73,
+  "acc_path": "dev->mode_config->preferred_depth",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_fb_helper.c#L2601 |   %4 = alloca i32, align 4],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_fb_helper.c#L2632], ",
+  "Drv update": ""
+}
+{
+  "id": 73,
+  "acc_path": "dev->mode_config->preferred_depth",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 74,
+  "acc_path": "preferred_bpp",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/gpu/drm/drm_fb_helper.c#L2601 | drm_fbdev_generic_setup",
+  "Drv update": ""
+}
+{
+  "id": 76,
+  "acc_path": "dev",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 77,
+  "acc_path": "start",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/devres.c#L579 | devm_arch_io_reserve_memtype_wc",
+  "Drv update": ""
+}
+{
+  "id": 78,
+  "acc_path": "size",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/devres.c#L579 | devm_arch_io_reserve_memtype_wc",
+  "Drv update": ""
+}
+{
+  "id": 79,
+  "acc_path": "fmt",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/printk/printk.c#L2287 | _printk",
+  "Drv update": ""
+}
+{
+  "id": 79,
+  "acc_path": "fmt",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 80,
+  "acc_path": "dev",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 81,
+  "acc_path": "fmt",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L4961 | _dev_err",
+  "Drv update": ""
+}
+{
+  "id": 81,
+  "acc_path": "fmt",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 82,
+  "acc_path": "dev",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/resource.c#L1558 | __devm_request_region",
+  "Drv update": ""
+}
+{
+  "id": 82,
+  "acc_path": "dev",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 83,
+  "acc_path": "parent",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 84,
+  "acc_path": "start",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/resource.c#L1558 | __devm_request_region",
+  "Drv update": ""
+}
+{
+  "id": 85,
+  "acc_path": "n",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/resource.c#L1558 | __devm_request_region",
+  "Drv update": ""
+}
+{
+  "id": 86,
+  "acc_path": "name",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 87,
+  "acc_path": "fmt",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/panic.c#L710 | __warn_printk",
+  "Drv update": ""
+}
+{
+  "id": 87,
+  "acc_path": "fmt",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 88,
+  "acc_path": "xloops",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/arch/x86/lib/delay.c#L207 | __const_udelay",
+  "Drv update": ""
+}
+{
+  "id": 89,
+  "acc_path": "pdev",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/rom.c#L187 | pci_unmap_rom",
+  "Drv update": ""
+}
+{
+  "id": 89,
+  "acc_path": "pdev",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 90,
+  "acc_path": "rom",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/rom.c#L187 | pci_unmap_rom",
+  "Drv update": ""
+}
+{
+  "id": 91,
+  "acc_path": "dev",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/access.c#L562 | pci_read_config_dword",
+  "Drv update": ""
+}
+{
+  "id": 91,
+  "acc_path": "dev",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 92,
+  "acc_path": "where",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/access.c#L562 | pci_read_config_dword",
+  "Drv update": ""
+}
+{
+  "id": 93,
+  "acc_path": "val",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/access.c#L562 | pci_read_config_dword",
+  "Drv update": ""
+}
+{
+  "id": 93,
+  "acc_path": "val",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 94,
+  "acc_path": "dev",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/access.c#L589 | pci_write_config_dword",
+  "Drv update": ""
+}
+{
+  "id": 94,
+  "acc_path": "dev",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 95,
+  "acc_path": "where",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/access.c#L589 | pci_write_config_dword",
+  "Drv update": ""
+}
+{
+  "id": 96,
+  "acc_path": "val",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/access.c#L589 | pci_write_config_dword",
+  "Drv update": ""
+}
+{
+  "id": 97,
+  "acc_path": "pdev",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 99,
+  "acc_path": "dev",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 100,
+  "acc_path": "base",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/devres.c#L534 | devm_arch_phys_wc_add",
+  "Drv update": ""
+}
+{
+  "id": 101,
+  "acc_path": "size",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/devres.c#L534 | devm_arch_phys_wc_add",
+  "Drv update": ""
+}
+{
+  "id": 102,
+  "acc_path": "dev",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 103,
+  "acc_path": "pdev",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 105,
+  "acc_path": "maxlen",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/devres.c#L374 | pcim_iomap",
+  "Drv update": ""
+}
+{
+  "id": 106,
+  "acc_path": "dev",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 107,
+  "acc_path": "fmt",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L4962 | _dev_warn",
+  "Drv update": ""
+}
+{
+  "id": 107,
+  "acc_path": "fmt",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 108,
+  "acc_path": "dev",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 109,
+  "acc_path": "offset",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/devres.c#L69 | devm_ioremap",
+  "Drv update": ""
+}
+{
+  "id": 110,
+  "acc_path": "size",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/devres.c#L69 | devm_ioremap",
+  "Drv update": ""
+}
+{
+  "id": 114,
+  "acc_path": "dev",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/gpu/drm/drm_encoder.c#L159 | drm_encoder_init",
+  "Drv update": ""
+}
+{
+  "id": 114,
+  "acc_path": "dev",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 115,
+  "acc_path": "encoder",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/gpu/drm/drm_encoder.c#L159 | drm_encoder_init",
+  "Drv update": ""
+}
+{
+  "id": 115,
+  "acc_path": "encoder",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 116,
+  "acc_path": "funcs",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/gpu/drm/drm_encoder.c#L159 | drm_encoder_init",
+  "Drv update": ""
+}
+{
+  "id": 116,
+  "acc_path": "funcs",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 118,
+  "acc_path": "name",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 119,
+  "acc_path": "dev",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 120,
+  "acc_path": "dev",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 120,
+  "acc_path": "dev->dev",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 121,
+  "acc_path": "flags",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/gpu/drm/drm_drv.c#L865 | drm_dev_register",
+  "Drv update": ""
+}
+{
+  "id": 123,
+  "acc_path": "pdev",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 124,
+  "acc_path": "adap",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 125,
+  "acc_path": "adap",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 125,
+  "acc_path": "adap->name",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/i2c/i2c-core-base.c#L1711],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/i2c/i2c-core-base.c#L1674], ",
+  "Drv update": ""
+}
+{
+  "id": 125,
+  "acc_path": "adap->dev",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 125,
+  "acc_path": "adap->name",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 126,
+  "acc_path": "connector",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 127,
+  "acc_path": "desc",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/gpu/drm/drm_print.c#L282 | __drm_dev_dbg",
+  "Drv update": ""
+}
+{
+  "id": 127,
+  "acc_path": "desc",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 128,
+  "acc_path": "dev",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/gpu/drm/drm_print.c#L282 | __drm_dev_dbg",
+  "Drv update": ""
+}
+{
+  "id": 128,
+  "acc_path": "dev",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 130,
+  "acc_path": "format",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/gpu/drm/drm_print.c#L282 | __drm_dev_dbg",
+  "Drv update": ""
+}
+{
+  "id": 130,
+  "acc_path": "format",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 131,
+  "acc_path": "plane",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/gpu/drm/drm_plane.c#L1448 | drm_plane_enable_fb_damage_clips",
+  "Drv update": ""
+}
+{
+  "id": 131,
+  "acc_path": "plane",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_plane.c#L1448 |   %3 = alloca %struct.drm_device.1198*, align 8],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_plane.c#L1450], ",
+  "Drv update": ""
+}
+{
+  "id": 132,
+  "acc_path": "dev",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/gpu/drm/drm_managed.c#L165 | __drmm_add_action_or_reset",
+  "Drv update": ""
+}
+{
+  "id": 132,
+  "acc_path": "dev",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 133,
+  "acc_path": "action",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 134,
+  "acc_path": "data",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/gpu/drm/drm_managed.c#L165 | __drmm_add_action_or_reset",
+  "Drv update": ""
+}
+{
+  "id": 135,
+  "acc_path": "name",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/gpu/drm/drm_managed.c#L165 | __drmm_add_action_or_reset",
+  "Drv update": ""
+}
+{
+  "id": 135,
+  "acc_path": "name",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 136,
+  "acc_path": "dev",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 137,
+  "acc_path": "plane",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 138,
+  "acc_path": "possible_crtcs",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/gpu/drm/drm_plane.c#L380 | drm_universal_plane_init",
+  "Drv update": ""
+}
+{
+  "id": 139,
+  "acc_path": "funcs",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/gpu/drm/drm_plane.c#L380 | drm_universal_plane_init",
+  "Drv update": ""
+}
+{
+  "id": 139,
+  "acc_path": "funcs",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 140,
+  "acc_path": "formats",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 142,
+  "acc_path": "format_modifiers",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 143,
+  "acc_path": "type",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/gpu/drm/drm_plane.c#L380 | drm_universal_plane_init",
+  "Drv update": ""
+}
+{
+  "id": 144,
+  "acc_path": "name",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 145,
+  "acc_path": "dev",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 145,
+  "acc_path": "dev->mode_config",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_mode_config.c#L404], ",
+  "Drv update": ""
+}
+{
+  "id": 146,
+  "acc_path": "dev",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 146,
+  "acc_path": "dev->mode_config",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 148,
+  "acc_path": "int",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/gpu/drm/mgag200/mgag200_mode.c#L715 | mgag200_vga_connector_helper_get_modes",
+  "Drv update": ""
+}
+{
+  "id": 148,
+  "acc_path": "int",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/gpu/drm/mgag200/mgag200_mode.c#L715 | mgag200_vga_connector_helper_get_modes",
+  "Drv update": ""
+}
+{
+  "id": 149,
+  "acc_path": "drm_mode_status",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/gpu/drm/mgag200/mgag200_mode.c#L543 | mgag200_crtc_helper_mode_valid",
+  "Drv update": ""
+}
+{
+  "id": 150,
+  "acc_path": "int",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/gpu/drm/mgag200/mgag200_mode.c#L573 | mgag200_crtc_helper_atomic_check",
+  "Drv update": ""
+}
+{
+  "id": 154,
+  "acc_path": "int",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/gpu/drm/mgag200/mgag200_mode.c#L573 | mgag200_crtc_helper_atomic_check",
+  "Drv update": ""
+}
+{
+  "id": 155,
+  "acc_path": "int",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/gpu/drm/mgag200/mgag200_mode.c#L573 | mgag200_crtc_helper_atomic_check",
+  "Drv update": ""
+}
+{
+  "id": 156,
+  "acc_path": "int",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/gpu/drm/mgag200/mgag200_mode.c#L573 | mgag200_crtc_helper_atomic_check",
+  "Drv update": ""
+}
+{
+  "id": 157,
+  "acc_path": "int",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/gpu/drm/mgag200/mgag200_mode.c#L573 | mgag200_crtc_helper_atomic_check",
+  "Drv update": ""
+}
+{
+  "id": 158,
+  "acc_path": "int",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/gpu/drm/mgag200/mgag200_mode.c#L573 | mgag200_crtc_helper_atomic_check",
+  "Drv update": ""
+}
+{
+  "id": 159,
+  "acc_path": "int",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/gpu/drm/mgag200/mgag200_mode.c#L573 | mgag200_crtc_helper_atomic_check",
+  "Drv update": ""
+}
+{
+  "id": 160,
+  "acc_path": "int",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/gpu/drm/mgag200/mgag200_mode.c#L573 | mgag200_crtc_helper_atomic_check",
+  "Drv update": ""
+}
+{
+  "id": 161,
+  "acc_path": "int",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/gpu/drm/mgag200/mgag200_mode.c#L573 | mgag200_crtc_helper_atomic_check",
+  "Drv update": ""
+}
+{
+  "id": 162,
+  "acc_path": "int",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/gpu/drm/mgag200/mgag200_mode.c#L573 | mgag200_crtc_helper_atomic_check",
+  "Drv update": ""
+}

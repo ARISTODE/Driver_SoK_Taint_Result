@@ -1,0 +1,112 @@
+[
+  {
+    "id": "159",
+    "risky": "val-sen-branch (kzalloc)",
+    "acc_path": "int",
+    "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1582",
+    "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1537",
+    "drv update loc (shared field)": "",
+    "call path (type)": "",
+    "num condition checks": 2,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1529 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1533 | ",
+    "cond_num": "2",
+    "cond_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1533 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1529 | ",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "id": "160",
+    "risky": "val-sen-branch (kzalloc)",
+    "acc_path": "int",
+    "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1582",
+    "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1537",
+    "drv update loc (shared field)": "",
+    "call path (type)": "",
+    "num condition checks": 2,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1529 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1533 | ",
+    "cond_num": "2",
+    "cond_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1533 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1529 | ",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "id": "168",
+    "risky": "val-sen-branch (kzalloc)",
+    "acc_path": "int",
+    "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1582",
+    "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1537",
+    "drv update loc (shared field)": "",
+    "call path (type)": "",
+    "num condition checks": 2,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1529 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1533 | ",
+    "cond_num": "2",
+    "cond_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1533 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1529 | ",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "id": "173",
+    "risky": "val-sen-branch (buffer_acc)",
+    "acc_path": "reset_type",
+    "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/arch/x86/kernel/smpboot.c#L1205",
+    "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/arch/x86/kernel/smpboot.c#L1205",
+    "drv update loc (shared field)": "",
+    "call path (type)": "",
+    "num condition checks": 0,
+    "condition checks": "",
+    "cond_num": "1",
+    "cond_loc": "",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "id": "205",
+    "risky": "val-sen-branch (kzalloc)",
+    "acc_path": "int",
+    "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1582",
+    "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1537",
+    "drv update loc (shared field)": "",
+    "call path (type)": "",
+    "num condition checks": 2,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1529 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1533 | ",
+    "cond_num": "2",
+    "cond_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1533 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1529 | ",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "id": "206",
+    "risky": "val-sen-branch (kzalloc)",
+    "acc_path": "int",
+    "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1582",
+    "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1537",
+    "drv update loc (shared field)": "",
+    "call path (type)": "",
+    "num condition checks": 2,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1529 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1533 | ",
+    "cond_num": "2",
+    "cond_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1533 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1529 | ",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "id": "221",
+    "risky": "val-sen-branch (buffer_acc)",
+    "acc_path": "reset_type",
+    "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/arch/x86/kernel/smpboot.c#L1205",
+    "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/arch/x86/kernel/smpboot.c#L1205",
+    "drv update loc (shared field)": "",
+    "call path (type)": "",
+    "num condition checks": 0,
+    "condition checks": "",
+    "cond_num": "1",
+    "cond_loc": "",
+    "isControl": "0"
+  }
+]

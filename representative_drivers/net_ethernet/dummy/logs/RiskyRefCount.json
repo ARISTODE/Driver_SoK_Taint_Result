@@ -1,0 +1,272 @@
+[
+  {
+    "type": "indirect",
+    "drv boundary func": "dummy_change_carrier",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/sched/sch_generic.c#L599",
+    "call path": " [dummy_change_carrier->netif_carrier_off] ",
+    "num condition checks": 2,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/sched/sch_generic.c#L596 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/sched/sch_generic.c#L597 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "dummy_change_carrier",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/sched/sch_generic.c#L580",
+    "call path": " [dummy_change_carrier->netif_carrier_on] ",
+    "num condition checks": 2,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/sched/sch_generic.c#L577 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/sched/sch_generic.c#L578 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "dummy_xmit",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/skbuff.h#L1210",
+    "call path": " [dummy_xmit->skb_tx_timestamp->skb_tstamp_tx->__skb_tstamp_tx->skb_orphan_frags_rx.843->skb_copy_ubufs->skb_unclone->pskb_expand_head->skb_release_data->kfree_skb_list.745->kfree_skb_list_reason->kfree_skb_reason->skb_unref] ",
+    "num condition checks": 2,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/skbuff.h#L1206 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/skbuff.h#L1208 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "dummy_xmit",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L1200",
+    "call path": " [dummy_xmit->skb_tx_timestamp->skb_tstamp_tx->__skb_tstamp_tx->skb_clone->__skb_clone] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "dummy_xmit",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L333",
+    "call path": " [dummy_xmit->skb_tx_timestamp->skb_tstamp_tx->__skb_tstamp_tx->skb_orphan_frags_rx.843->skb_copy_ubufs->skb_unclone->pskb_expand_head->skb_release_data->kfree_skb_list.745->kfree_skb_list_reason->kfree_skb_reason->skb_unref->refcount_dec_and_test.737] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "dummy_xmit",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L832",
+    "call path": " [dummy_xmit->skb_tx_timestamp->skb_tstamp_tx->__skb_tstamp_tx->skb_orphan_frags_rx.843->skb_copy_ubufs->skb_unclone->pskb_expand_head->skb_release_data->kfree_skb_list.745->kfree_skb_list_reason->kfree_skb_reason->__kfree_skb->kfree_skbmem] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "dummy_xmit",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L1865",
+    "call path": " [dummy_xmit->skb_tx_timestamp->skb_tstamp_tx->__skb_tstamp_tx->skb_orphan_frags_rx.843->skb_copy_ubufs->skb_unclone->pskb_expand_head] ",
+    "num condition checks": 6,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L1833 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L1835 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L1843 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L1861 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L1862 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L1864 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "dummy_xmit",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L267",
+    "call path": " [dummy_xmit->skb_tx_timestamp->skb_tstamp_tx->__skb_tstamp_tx->skb_orphan_frags_rx.843->skb_copy_ubufs->skb_unclone->pskb_expand_head->refcount_inc.768] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "dummy_xmit",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/skbuff.h#L1868",
+    "call path": " [dummy_xmit->skb_tx_timestamp->skb_tstamp_tx->__skb_tstamp_tx->skb_orphan_frags_rx.843->skb_copy_ubufs->skb_unclone->pskb_expand_head->skb_clone_fraglist->skb_get] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "dummy_xmit",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/page_ref.h#L210",
+    "call path": " [dummy_xmit->skb_tx_timestamp->skb_tstamp_tx->__skb_tstamp_tx->skb_orphan_frags_rx.843->skb_copy_ubufs->put_page->folio_put->folio_put_testzero->put_page_testzero->page_ref_dec_and_test] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "dummy_xmit",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/page_ref.h#L158",
+    "call path": " [dummy_xmit->skb_tx_timestamp->skb_tstamp_tx->__skb_tstamp_tx->skb_orphan_frags_rx.843->skb_copy_ubufs->skb_unclone->pskb_expand_head->skb_zcopy_downgrade_managed->__skb_zcopy_downgrade_managed->skb_frag_ref->__skb_frag_ref->get_page->folio_get->folio_ref_inc->page_ref_inc] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "dummy_init_module",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10373",
+    "call path": " [dummy_init_module->rtnl_unlock->netdev_run_todo] ",
+    "num condition checks": 4,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10357 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10362 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10363 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10364 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "dummy_init_module",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L9551",
+    "call path": " [dummy_init_module->dummy_init_one->register_netdevice->unregister_netdevice_queue->unregister_netdevice_many->net_set_todo] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "dummy_init_module",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task.h#L110",
+    "call path": " [dummy_init_module->down_write->__down_write->__down_write_common->rwsem_down_write_slowpath->rwsem_cond_wake_waiter->rwsem_mark_wake->get_task_struct] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "dummy_init_module",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/sched/sch_generic.c#L1087",
+    "call path": " [dummy_init_module->dummy_init_one->register_netdevice->unregister_netdevice_queue->unregister_netdevice_many->dev_shutdown->shutdown_scheduler_queue->qdisc_put] ",
+    "num condition checks": 2,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/sched/sch_generic.c#L1083 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/sched/sch_generic.c#L1086 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "dummy_init_module",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L267",
+    "call path": " [dummy_init_module->down_write->__down_write->__down_write_common->rwsem_down_write_slowpath->rwsem_cond_wake_waiter->rwsem_mark_wake->get_task_struct->refcount_inc] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "dummy_init_module",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L333",
+    "call path": " [dummy_init_module->dummy_init_one->register_netdevice->unregister_netdevice_queue->unregister_netdevice_many->dev_shutdown->shutdown_scheduler_queue->qdisc_put->refcount_dec_and_test.1022] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "dummy_init_module",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/skbuff.h#L1210",
+    "call path": " [dummy_init_module->dummy_init_one->free_netdev->netif_napi_del->__netif_napi_del->napi_free_frags->kfree_skb.23->kfree_skb_reason->skb_unref] ",
+    "num condition checks": 2,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/skbuff.h#L1206 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/skbuff.h#L1208 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "dummy_init_module",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L333",
+    "call path": " [dummy_init_module->dummy_init_one->free_netdev->netif_napi_del->__netif_napi_del->napi_free_frags->kfree_skb.23->kfree_skb_reason->skb_unref->refcount_dec_and_test.737] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "dummy_init_module",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L832",
+    "call path": " [dummy_init_module->dummy_init_one->free_netdev->netif_napi_del->__netif_napi_del->napi_free_frags->kfree_skb.23->kfree_skb_reason->__kfree_skb->kfree_skbmem] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "dummy_init_module",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/net/net_namespace.h#L267",
+    "call path": " [dummy_init_module->dummy_init_one->register_netdevice->rtmsg_ifinfo->rtmsg_ifinfo_event->rtmsg_ifinfo_build_skb->rtnl_fill_ifinfo->rtnl_fill_link_netnsid->peernet2id_alloc->maybe_get_net] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "dummy_init_module",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/net/net_namespace.h#L275",
+    "call path": " [dummy_init_module->dummy_init_one->register_netdevice->rtmsg_ifinfo->rtmsg_ifinfo_event->rtmsg_ifinfo_build_skb->rtnl_fill_ifinfo->rtnl_fill_link_netnsid->peernet2id_alloc->put_net] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "dummy_init_module",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L245",
+    "call path": " [dummy_init_module->dummy_init_one->register_netdevice->rtmsg_ifinfo->rtmsg_ifinfo_event->rtmsg_ifinfo_build_skb->rtnl_fill_ifinfo->rtnl_fill_link_netnsid->peernet2id_alloc->maybe_get_net->refcount_inc_not_zero] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "dummy_init_module",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L333",
+    "call path": " [dummy_init_module->dummy_init_one->register_netdevice->rtmsg_ifinfo->rtmsg_ifinfo_event->rtmsg_ifinfo_build_skb->rtnl_fill_ifinfo->rtnl_fill_link_netnsid->peernet2id_alloc->put_net->refcount_dec_and_test.485] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "dummy_init_module",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L1200",
+    "call path": " [dummy_init_module->dummy_init_one->register_netdevice->rtmsg_ifinfo->rtmsg_ifinfo_event->rtmsg_ifinfo_build_skb->rtnl_fill_ifinfo->rtnl_link_fill->rtnl_link_info_fill->dummy_xmit->skb_tx_timestamp->skb_tstamp_tx->__skb_tstamp_tx->skb_clone->__skb_clone] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "dummy_init_module",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/page_ref.h#L210",
+    "call path": " [dummy_init_module->dummy_init_one->free_netdev->netif_napi_del->__netif_napi_del->napi_free_frags->kfree_skb.23->kfree_skb_reason->__kfree_skb->skb_release_all->skb_release_data->__skb_frag_unref->put_page->folio_put->folio_put_testzero->put_page_testzero->page_ref_dec_and_test] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "dummy_init_module",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L1865",
+    "call path": " [dummy_init_module->dummy_init_one->register_netdevice->rtmsg_ifinfo->rtmsg_ifinfo_event->rtmsg_ifinfo_build_skb->rtnl_fill_ifinfo->rtnl_link_fill->rtnl_link_info_fill->dummy_xmit->skb_tx_timestamp->skb_tstamp_tx->__skb_tstamp_tx->skb_orphan_frags_rx.843->skb_copy_ubufs->skb_unclone->pskb_expand_head] ",
+    "num condition checks": 6,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L1833 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L1835 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L1843 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L1861 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L1862 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L1864 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "dummy_init_module",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L267",
+    "call path": " [dummy_init_module->dummy_init_one->register_netdevice->rtmsg_ifinfo->rtmsg_ifinfo_event->rtmsg_ifinfo_build_skb->rtnl_fill_ifinfo->rtnl_link_fill->rtnl_link_info_fill->dummy_xmit->skb_tx_timestamp->skb_tstamp_tx->__skb_tstamp_tx->skb_orphan_frags_rx.843->skb_copy_ubufs->skb_unclone->pskb_expand_head->refcount_inc.768] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "dummy_init_module",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/skbuff.h#L1868",
+    "call path": " [dummy_init_module->dummy_init_one->register_netdevice->rtmsg_ifinfo->rtmsg_ifinfo_event->rtmsg_ifinfo_build_skb->rtnl_fill_ifinfo->rtnl_link_fill->rtnl_link_info_fill->dummy_xmit->skb_tx_timestamp->skb_tstamp_tx->__skb_tstamp_tx->skb_orphan_frags_rx.843->skb_copy_ubufs->skb_unclone->pskb_expand_head->skb_clone_fraglist->skb_get] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "dummy_init_module",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/page_ref.h#L158",
+    "call path": " [dummy_init_module->dummy_init_one->register_netdevice->rtmsg_ifinfo->rtmsg_ifinfo_event->rtmsg_ifinfo_build_skb->rtnl_fill_ifinfo->rtnl_link_fill->rtnl_link_info_fill->dummy_xmit->skb_tx_timestamp->skb_tstamp_tx->__skb_tstamp_tx->skb_orphan_frags_rx.843->skb_copy_ubufs->skb_unclone->pskb_expand_head->skb_zcopy_downgrade_managed->__skb_zcopy_downgrade_managed->skb_frag_ref->__skb_frag_ref->get_page->folio_get->folio_ref_inc->page_ref_inc] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "struct name": "bio",
+    "No.Fields": 21,
+    "No.Shared fields": 1,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "dm_target",
+    "No.Fields": 18,
+    "No.Shared fields": 1,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]

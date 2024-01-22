@@ -1,0 +1,47 @@
+[
+  {
+    "Total Bugon": 5,
+    "Controlled Bugon": 0,
+    "Uncontrolled Bugon": 5
+  },
+  {
+    "Drv caller": "[ msr_init | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/arch/x86/kernel/msr.c#L262 ], ",
+    "Trans func name": "kzalloc.357",
+    "Bugon loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689",
+    "Call Path": "__register_chrdev->__register_chrdev_region->kzalloc.357",
+    "Is check controlled": "false",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | "
+  },
+  {
+    "Drv caller": "[ msr_ioctl | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/arch/x86/kernel/msr.c#L190 ], [ msr_write | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/arch/x86/kernel/msr.c#L136 ], ",
+    "Trans func name": "add_taint",
+    "Bugon loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/panic.c#L542",
+    "Call Path": "add_taint",
+    "Is check controlled": "false",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/panic.c#L540 | "
+  },
+  {
+    "Drv caller": "[ msr_open | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/arch/x86/kernel/msr.c#L212 ], ",
+    "Trans func name": "ns_capable_common",
+    "Bugon loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/capability.c#L373",
+    "Call Path": "capable->ns_capable->ns_capable_common",
+    "Is check controlled": "false",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/capability.c#L371 | "
+  },
+  {
+    "Drv caller": "[ msr_device_create | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/arch/x86/kernel/msr.c#L242 ], ",
+    "Trans func name": "kzalloc.182",
+    "Bugon loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689",
+    "Call Path": "device_create->device_create_groups_vargs->kzalloc.182",
+    "Is check controlled": "false",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | "
+  },
+  {
+    "Drv caller": "[ msr_init | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/arch/x86/kernel/msr.c#L266 ], ",
+    "Trans func name": "kzalloc",
+    "Bugon loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689",
+    "Call Path": "__class_create->__class_register->kzalloc",
+    "Is check controlled": "false",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | "
+  }
+]

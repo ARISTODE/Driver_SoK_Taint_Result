@@ -1,0 +1,245 @@
+[
+  {
+    "type": "indirect",
+    "drv boundary func": "mgag200_pci_probe",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L2007",
+    "call path": " [mgag200_pci_probe->pcim_enable_device->pci_enable_device->pci_enable_device_flags] ",
+    "num condition checks": 2,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L1990 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L2006 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "mgag200_pci_probe",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_connector.c#L799",
+    "call path": " [mgag200_pci_probe->drm_dev_register->drm_modeset_register_all->drm_connector_register_all->drm_connector_list_iter_next->__drm_connector_put_safe] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "mgag200_pci_probe",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/kref.h#L111",
+    "call path": " [mgag200_pci_probe->drm_dev_register->drm_modeset_register_all->drm_connector_register_all->drm_connector_list_iter_next->kref_get_unless_zero] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "mgag200_pci_probe",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L333",
+    "call path": " [mgag200_pci_probe->drm_dev_register->drm_modeset_register_all->drm_connector_register_all->drm_connector_list_iter_next->__drm_connector_put_safe->refcount_dec_and_test.477] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "mgag200_pci_probe",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L245",
+    "call path": " [mgag200_pci_probe->drm_dev_register->drm_modeset_register_all->drm_connector_register_all->drm_connector_list_iter_next->kref_get_unless_zero->refcount_inc_not_zero] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "mgag200_pci_probe",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L845",
+    "call path": " [mgag200_pci_probe->drm_dev_register->drm_minor_register->device_add->fw_devlink_link_device->__fw_devlink_link_to_suppliers->fw_devlink_create_devlink->device_link_add] ",
+    "num condition checks": 4,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L831 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L832 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L839 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L844 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "mgag200_pci_probe",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L916",
+    "call path": " [mgag200_pci_probe->drm_dev_register->drm_minor_register->device_add->fw_devlink_link_device->__fw_devlink_link_to_suppliers->fw_devlink_create_devlink->device_link_add] ",
+    "num condition checks": 5,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L908 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L889 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L914 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L915 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L831 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "mgag200_pci_probe",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/kref.h#L64",
+    "call path": " [mgag200_pci_probe->drm_dev_register->drm_modeset_register_all->drm_crtc_unregister_all->mgag200_crtc_reset->mgag200_crtc_atomic_destroy_state->__drm_atomic_helper_crtc_destroy_state->drm_crtc_commit_put.428->kref_put.429] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "mgag200_pci_probe",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L267",
+    "call path": " [mgag200_pci_probe->drm_dev_register->drm_minor_register->device_add->fw_devlink_link_device->__fw_devlink_link_to_suppliers->fw_devlink_create_devlink->device_link_add->refcount_inc] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "mgag200_pci_probe",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/kref.h#L45",
+    "call path": " [mgag200_pci_probe->drm_dev_register->drm_minor_register->device_add->fw_devlink_link_device->__fw_devlink_link_to_suppliers->fw_devlink_create_devlink->device_link_add->kref_get] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "mgag200_pci_probe",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L333",
+    "call path": " [mgag200_pci_probe->drm_dev_register->drm_modeset_register_all->drm_crtc_unregister_all->mgag200_crtc_reset->mgag200_crtc_atomic_destroy_state->__drm_atomic_helper_crtc_destroy_state->drm_crtc_commit_put.428->kref_put.429->refcount_dec_and_test.430] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "mgag200_pci_remove",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_connector.c#L799",
+    "call path": " [mgag200_pci_remove->drm_dev_unregister->drm_modeset_unregister_all->drm_connector_unregister_all->drm_connector_list_iter_next->__drm_connector_put_safe] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "mgag200_pci_remove",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/kref.h#L111",
+    "call path": " [mgag200_pci_remove->drm_dev_unregister->drm_modeset_unregister_all->drm_connector_unregister_all->drm_connector_list_iter_next->kref_get_unless_zero] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "mgag200_pci_remove",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L333",
+    "call path": " [mgag200_pci_remove->drm_dev_unregister->drm_modeset_unregister_all->drm_connector_unregister_all->drm_connector_list_iter_next->__drm_connector_put_safe->refcount_dec_and_test.477] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "mgag200_pci_remove",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L245",
+    "call path": " [mgag200_pci_remove->drm_dev_unregister->drm_modeset_unregister_all->drm_connector_unregister_all->drm_connector_list_iter_next->kref_get_unless_zero->refcount_inc_not_zero] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "mgag200_pci_remove",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/kref.h#L64",
+    "call path": " [mgag200_pci_remove->drm_dev_unregister->drm_modeset_unregister_all->drm_crtc_unregister_all->mgag200_crtc_reset->mgag200_crtc_atomic_destroy_state->__drm_atomic_helper_crtc_destroy_state->drm_crtc_commit_put.428->kref_put.429] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "mgag200_pci_remove",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L333",
+    "call path": " [mgag200_pci_remove->drm_dev_unregister->drm_modeset_unregister_all->drm_crtc_unregister_all->mgag200_crtc_reset->mgag200_crtc_atomic_destroy_state->__drm_atomic_helper_crtc_destroy_state->drm_crtc_commit_put.428->kref_put.429->refcount_dec_and_test.430] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "mgag200_crtc_reset",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/kref.h#L64",
+    "call path": " [mgag200_crtc_reset->mgag200_crtc_atomic_destroy_state->__drm_atomic_helper_crtc_destroy_state->drm_crtc_commit_put.428->kref_put.429] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "mgag200_crtc_reset",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L333",
+    "call path": " [mgag200_crtc_reset->mgag200_crtc_atomic_destroy_state->__drm_atomic_helper_crtc_destroy_state->drm_crtc_commit_put.428->kref_put.429->refcount_dec_and_test.430] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "mgag200_crtc_atomic_destroy_state",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/kref.h#L64",
+    "call path": " [mgag200_crtc_atomic_destroy_state->__drm_atomic_helper_crtc_destroy_state->drm_crtc_commit_put.428->kref_put.429] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "mgag200_crtc_atomic_destroy_state",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L333",
+    "call path": " [mgag200_crtc_atomic_destroy_state->__drm_atomic_helper_crtc_destroy_state->drm_crtc_commit_put.428->kref_put.429->refcount_dec_and_test.430] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "mgag200_mode_config_helper_atomic_commit_tail",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/kref.h#L64",
+    "call path": " [mgag200_mode_config_helper_atomic_commit_tail->drm_atomic_helper_commit_tail->drm_atomic_helper_commit_hw_done->drm_crtc_commit_put.354->kref_put.325] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "mgag200_mode_config_helper_atomic_commit_tail",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/kref.h#L45",
+    "call path": " [mgag200_mode_config_helper_atomic_commit_tail->drm_atomic_helper_commit_tail->drm_atomic_helper_commit_hw_done->drm_crtc_commit_get->kref_get.355] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "mgag200_mode_config_helper_atomic_commit_tail",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L333",
+    "call path": " [mgag200_mode_config_helper_atomic_commit_tail->drm_atomic_helper_commit_tail->drm_atomic_helper_commit_hw_done->drm_crtc_commit_put.354->kref_put.325->refcount_dec_and_test.326] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "mgag200_mode_config_helper_atomic_commit_tail",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L267",
+    "call path": " [mgag200_mode_config_helper_atomic_commit_tail->drm_atomic_helper_commit_tail->drm_atomic_helper_commit_hw_done->drm_crtc_commit_get->kref_get.355->refcount_inc.356] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "mgag200_mode_config_helper_atomic_commit_tail",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/kref.h#L64",
+    "call path": " [mgag200_mode_config_helper_atomic_commit_tail->drm_atomic_helper_commit_tail->drm_atomic_helper_commit_modeset_disables->disable_outputs->mgag200_crtc_reset->mgag200_crtc_atomic_destroy_state->__drm_atomic_helper_crtc_destroy_state->drm_crtc_commit_put.428->kref_put.429] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "mgag200_mode_config_helper_atomic_commit_tail",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L333",
+    "call path": " [mgag200_mode_config_helper_atomic_commit_tail->drm_atomic_helper_commit_tail->drm_atomic_helper_commit_modeset_disables->disable_outputs->mgag200_crtc_reset->mgag200_crtc_atomic_destroy_state->__drm_atomic_helper_crtc_destroy_state->drm_crtc_commit_put.428->kref_put.429->refcount_dec_and_test.430] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  }
+]

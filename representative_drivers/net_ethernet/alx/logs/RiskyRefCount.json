@@ -1,0 +1,1604 @@
+[
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_probe",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/sched/sch_generic.c#L599",
+    "call path": " [alx_probe->netif_carrier_off] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_probe",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L2007",
+    "call path": " [alx_probe->pci_enable_device_mem->pci_enable_device_flags] ",
+    "num condition checks": 2,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L1990 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L2006 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_probe",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10373",
+    "call path": " [alx_probe->register_netdev->rtnl_unlock->netdev_run_todo] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_probe",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L9551",
+    "call path": " [alx_probe->register_netdev->register_netdevice->unregister_netdevice_queue->unregister_netdevice_many->net_set_todo] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_probe",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/sched/sch_generic.c#L1087",
+    "call path": " [alx_probe->register_netdev->register_netdevice->unregister_netdevice_queue->unregister_netdevice_many->dev_shutdown->shutdown_scheduler_queue->qdisc_put] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_probe",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/skbuff.h#L1210",
+    "call path": " [alx_probe->free_netdev->netif_napi_del.53->__netif_napi_del->napi_free_frags->kfree_skb.56->kfree_skb_reason->skb_unref] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_probe",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L333",
+    "call path": " [alx_probe->register_netdev->register_netdevice->unregister_netdevice_queue->unregister_netdevice_many->dev_shutdown->shutdown_scheduler_queue->qdisc_put->refcount_dec_and_test.2349] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_probe",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L333",
+    "call path": " [alx_probe->free_netdev->netif_napi_del.53->__netif_napi_del->napi_free_frags->kfree_skb.56->kfree_skb_reason->skb_unref->refcount_dec_and_test.2003] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_probe",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L832",
+    "call path": " [alx_probe->free_netdev->netif_napi_del.53->__netif_napi_del->napi_free_frags->kfree_skb.56->kfree_skb_reason->__kfree_skb->kfree_skbmem] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_probe",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task.h#L119",
+    "call path": " [alx_probe->register_netdev->register_netdevice->alx_open->__alx_open->alx_request_irq->alx_request_msix->request_irq->request_threaded_irq->__setup_irq->put_task_struct] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_probe",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6511",
+    "call path": " [alx_probe->register_netdev->register_netdevice->alx_open->__alx_open->alx_request_irq->alx_request_msix->request_irq->request_threaded_irq->__setup_irq->wake_up_and_wait_for_irq_thread_ready->schedule->__schedule] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_probe",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L1225",
+    "call path": " [alx_probe->register_netdev->register_netdevice->alx_stop->__alx_stop->cancel_work_sync->__cancel_work_timer->try_to_grab_pending->pwq_dec_nr_in_flight] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_probe",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L333",
+    "call path": " [alx_probe->register_netdev->register_netdevice->alx_open->__alx_open->alx_request_irq->alx_request_msix->request_irq->request_threaded_irq->__setup_irq->put_task_struct->refcount_dec_and_test.919] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_probe",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L37",
+    "call path": " [alx_probe->register_netdev->register_netdevice->alx_open->__alx_open->alx_request_irq->alx_request_msix->request_irq->request_threaded_irq->__setup_irq->wake_up_and_wait_for_irq_thread_ready->schedule->__schedule->mmgrab] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_probe",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4213",
+    "call path": " [alx_probe->register_netdev->register_netdevice->alx_open->__alx_open->alx_alloc_napis->netif_napi_add->netif_napi_add_weight->napi_kthread_create->wake_up_process->try_to_wake_up] ",
+    "num condition checks": 2,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4210 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4211 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_probe",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task.h#L110",
+    "call path": " [alx_probe->register_netdev->register_netdevice->alx_open->__alx_open->alx_request_irq->alx_request_msix->request_irq->request_threaded_irq->__setup_irq->setup_irq_thread->get_task_struct] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_probe",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L267",
+    "call path": " [alx_probe->register_netdev->register_netdevice->alx_open->__alx_open->alx_request_irq->alx_request_msix->request_irq->request_threaded_irq->__setup_irq->setup_irq_thread->get_task_struct->refcount_inc.937] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_probe",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L3135",
+    "call path": " [alx_probe->register_netdev->register_netdevice->alx_open->__alx_open->alx_request_irq->alx_realloc_resources->alx_free_rings->alx_free_buffers->alx_free_txring_buf->alx_free_txbuf->dev_kfree_skb_any->__dev_kfree_skb_any->__dev_kfree_skb_irq] ",
+    "num condition checks": 2,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L3129 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L3132 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_probe",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L49",
+    "call path": " [alx_probe->register_netdev->register_netdevice->alx_open->__alx_open->alx_request_irq->alx_request_msix->request_irq->request_threaded_irq->__setup_irq->wake_up_and_wait_for_irq_thread_ready->schedule->__schedule->finish_task_switch->mmdrop_sched->mmdrop.1098] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_probe",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3693",
+    "call path": " [alx_probe->register_netdev->register_netdevice->alx_open->__alx_open->alx_alloc_napis->netif_napi_add->netif_napi_add_weight->napi_kthread_create->wake_up_process->try_to_wake_up->ttwu_queue->ttwu_do_activate] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_probe",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L333",
+    "call path": " [alx_probe->register_netdev->register_netdevice->alx_open->__alx_open->alx_request_irq->alx_realloc_resources->alx_free_rings->alx_free_buffers->alx_free_txring_buf->alx_free_txbuf->dev_kfree_skb_any->__dev_kfree_skb_any->__dev_kfree_skb_irq->refcount_dec_and_test.1630] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_probe",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L1865",
+    "call path": " [alx_probe->register_netdev->register_netdevice->rtmsg_ifinfo->rtmsg_ifinfo_event->rtmsg_ifinfo_build_skb->rtnl_fill_ifinfo->rtnl_link_fill->rtnl_link_info_fill->alx_start_xmit->alx_start_xmit_ring->alx_tso->skb_cow_head->__skb_cow->pskb_expand_head] ",
+    "num condition checks": 6,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L1833 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L1835 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L1864 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L1843 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L1861 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L1862 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_probe",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/page_ref.h#L210",
+    "call path": " [alx_probe->free_netdev->netif_napi_del.53->__netif_napi_del->napi_free_frags->kfree_skb.56->kfree_skb_reason->__kfree_skb->skb_release_all->skb_release_data->__skb_frag_unref.2011->put_page.2016->folio_put.2019->folio_put_testzero.2020->put_page_testzero.2021->page_ref_dec_and_test.2022] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_probe",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L267",
+    "call path": " [alx_probe->register_netdev->register_netdevice->rtmsg_ifinfo->rtmsg_ifinfo_event->rtmsg_ifinfo_build_skb->rtnl_fill_ifinfo->rtnl_link_fill->rtnl_link_info_fill->alx_start_xmit->alx_start_xmit_ring->alx_tso->skb_cow_head->__skb_cow->pskb_expand_head->refcount_inc.2061] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_probe",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/skbuff.h#L1868",
+    "call path": " [alx_probe->register_netdev->register_netdevice->rtmsg_ifinfo->rtmsg_ifinfo_event->rtmsg_ifinfo_build_skb->rtnl_fill_ifinfo->rtnl_link_fill->rtnl_link_info_fill->alx_start_xmit->alx_start_xmit_ring->alx_tso->skb_cow_head->__skb_cow->pskb_expand_head->skb_clone_fraglist->skb_get] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_probe",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task_stack.h#L68",
+    "call path": " [alx_probe->register_netdev->register_netdevice->alx_open->__alx_open->alx_request_irq->alx_request_msix->request_irq->request_threaded_irq->__setup_irq->wake_up_and_wait_for_irq_thread_ready->schedule->__schedule->schedule_debug->__schedule_bug->check_panic_on_warn->panic->panic_print_sys_info->show_state->show_state_filter->sched_show_task->try_get_task_stack] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_probe",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L245",
+    "call path": " [alx_probe->register_netdev->register_netdevice->alx_open->__alx_open->alx_request_irq->alx_request_msix->request_irq->request_threaded_irq->__setup_irq->wake_up_and_wait_for_irq_thread_ready->schedule->__schedule->schedule_debug->__schedule_bug->check_panic_on_warn->panic->panic_print_sys_info->show_state->show_state_filter->sched_show_task->try_get_task_stack->refcount_inc_not_zero] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_probe",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/page_ref.h#L158",
+    "call path": " [alx_probe->register_netdev->register_netdevice->rtmsg_ifinfo->rtmsg_ifinfo_event->rtmsg_ifinfo_build_skb->rtnl_fill_ifinfo->rtnl_link_fill->rtnl_link_info_fill->alx_start_xmit->alx_start_xmit_ring->alx_tso->skb_cow_head->__skb_cow->pskb_expand_head->skb_zcopy_downgrade_managed->__skb_zcopy_downgrade_managed->skb_frag_ref->__skb_frag_ref->get_page->folio_get->folio_ref_inc->page_ref_inc] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_remove",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10373",
+    "call path": " [alx_remove->unregister_netdev->rtnl_unlock->netdev_run_todo] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_remove",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L9551",
+    "call path": " [alx_remove->unregister_netdev->unregister_netdevice->unregister_netdevice_queue->unregister_netdevice_many->net_set_todo] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_remove",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/sched/sch_generic.c#L1087",
+    "call path": " [alx_remove->unregister_netdev->unregister_netdevice->unregister_netdevice_queue->unregister_netdevice_many->dev_shutdown->shutdown_scheduler_queue->qdisc_put] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_remove",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/skbuff.h#L1210",
+    "call path": " [alx_remove->free_netdev->netif_napi_del.53->__netif_napi_del->napi_free_frags->kfree_skb.56->kfree_skb_reason->skb_unref] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_remove",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L333",
+    "call path": " [alx_remove->unregister_netdev->unregister_netdevice->unregister_netdevice_queue->unregister_netdevice_many->dev_shutdown->shutdown_scheduler_queue->qdisc_put->refcount_dec_and_test.2349] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_remove",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L333",
+    "call path": " [alx_remove->free_netdev->netif_napi_del.53->__netif_napi_del->napi_free_frags->kfree_skb.56->kfree_skb_reason->skb_unref->refcount_dec_and_test.2003] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_remove",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L832",
+    "call path": " [alx_remove->free_netdev->netif_napi_del.53->__netif_napi_del->napi_free_frags->kfree_skb.56->kfree_skb_reason->__kfree_skb->kfree_skbmem] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_remove",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/sched/sch_generic.c#L599",
+    "call path": " [alx_remove->unregister_netdev->unregister_netdevice->unregister_netdevice_queue->unregister_netdevice_many->rtmsg_ifinfo_build_skb->if_nlmsg_size->rtnl_vfinfo_size->dev_num_vf->alx_resume->__alx_open->netif_carrier_off] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_remove",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4213",
+    "call path": " [alx_remove->unregister_netdev->unregister_netdevice->unregister_netdevice_queue->unregister_netdevice_many->rtmsg_ifinfo_build_skb->if_nlmsg_size->rtnl_vfinfo_size->dev_num_vf->alx_resume->__alx_open->alx_alloc_napis->netif_napi_add->netif_napi_add_weight->napi_kthread_create->wake_up_process->try_to_wake_up] ",
+    "num condition checks": 2,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4210 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4211 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_remove",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task.h#L119",
+    "call path": " [alx_remove->unregister_netdev->unregister_netdevice->unregister_netdevice_queue->unregister_netdevice_many->rtmsg_ifinfo_build_skb->if_nlmsg_size->rtnl_vfinfo_size->dev_num_vf->alx_resume->__alx_open->alx_request_irq->alx_request_msix->request_irq->request_threaded_irq->__setup_irq->put_task_struct] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_remove",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6511",
+    "call path": " [alx_remove->unregister_netdev->unregister_netdevice->unregister_netdevice_queue->unregister_netdevice_many->rtmsg_ifinfo_build_skb->if_nlmsg_size->rtnl_vfinfo_size->dev_num_vf->alx_resume->__alx_open->alx_request_irq->alx_request_msix->request_irq->request_threaded_irq->__setup_irq->wake_up_and_wait_for_irq_thread_ready->schedule->__schedule] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_remove",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L1225",
+    "call path": " [alx_remove->unregister_netdev->unregister_netdevice->unregister_netdevice_queue->unregister_netdevice_many->rtmsg_ifinfo_build_skb->if_nlmsg_size->rtnl_vfinfo_size->dev_num_vf->alx_suspend->__alx_stop->cancel_work_sync->__cancel_work_timer->try_to_grab_pending->pwq_dec_nr_in_flight] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_remove",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L3135",
+    "call path": " [alx_remove->unregister_netdev->unregister_netdevice->unregister_netdevice_queue->unregister_netdevice_many->rtmsg_ifinfo_build_skb->if_nlmsg_size->rtnl_vfinfo_size->dev_num_vf->alx_resume->__alx_open->alx_request_irq->alx_realloc_resources->alx_free_rings->alx_free_buffers->alx_free_txring_buf->alx_free_txbuf->dev_kfree_skb_any->__dev_kfree_skb_any->__dev_kfree_skb_irq] ",
+    "num condition checks": 2,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L3129 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L3132 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_remove",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L333",
+    "call path": " [alx_remove->unregister_netdev->unregister_netdevice->unregister_netdevice_queue->unregister_netdevice_many->rtmsg_ifinfo_build_skb->if_nlmsg_size->rtnl_vfinfo_size->dev_num_vf->alx_resume->__alx_open->alx_request_irq->alx_request_msix->request_irq->request_threaded_irq->__setup_irq->put_task_struct->refcount_dec_and_test.919] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_remove",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L37",
+    "call path": " [alx_remove->unregister_netdev->unregister_netdevice->unregister_netdevice_queue->unregister_netdevice_many->rtmsg_ifinfo_build_skb->if_nlmsg_size->rtnl_vfinfo_size->dev_num_vf->alx_resume->__alx_open->alx_request_irq->alx_request_msix->request_irq->request_threaded_irq->__setup_irq->wake_up_and_wait_for_irq_thread_ready->schedule->__schedule->mmgrab] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_remove",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3693",
+    "call path": " [alx_remove->unregister_netdev->unregister_netdevice->unregister_netdevice_queue->unregister_netdevice_many->rtmsg_ifinfo_build_skb->if_nlmsg_size->rtnl_vfinfo_size->dev_num_vf->alx_resume->__alx_open->alx_alloc_napis->netif_napi_add->netif_napi_add_weight->napi_kthread_create->wake_up_process->try_to_wake_up->ttwu_queue->ttwu_do_activate] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_remove",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L333",
+    "call path": " [alx_remove->unregister_netdev->unregister_netdevice->unregister_netdevice_queue->unregister_netdevice_many->rtmsg_ifinfo_build_skb->if_nlmsg_size->rtnl_vfinfo_size->dev_num_vf->alx_resume->__alx_open->alx_request_irq->alx_realloc_resources->alx_free_rings->alx_free_buffers->alx_free_txring_buf->alx_free_txbuf->dev_kfree_skb_any->__dev_kfree_skb_any->__dev_kfree_skb_irq->refcount_dec_and_test.1630] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_remove",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L1865",
+    "call path": " [alx_remove->unregister_netdev->unregister_netdevice->unregister_netdevice_queue->unregister_netdevice_many->rtmsg_ifinfo_build_skb->rtnl_fill_ifinfo->rtnl_link_fill->rtnl_link_info_fill->alx_start_xmit->alx_start_xmit_ring->alx_tso->skb_cow_head->__skb_cow->pskb_expand_head] ",
+    "num condition checks": 6,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L1833 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L1835 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L1864 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L1843 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L1861 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L1862 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_remove",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task.h#L110",
+    "call path": " [alx_remove->unregister_netdev->unregister_netdevice->unregister_netdevice_queue->unregister_netdevice_many->rtmsg_ifinfo_build_skb->if_nlmsg_size->rtnl_vfinfo_size->dev_num_vf->alx_resume->__alx_open->alx_request_irq->alx_request_msix->request_irq->request_threaded_irq->__setup_irq->setup_irq_thread->get_task_struct] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_remove",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/page_ref.h#L210",
+    "call path": " [alx_remove->free_netdev->netif_napi_del.53->__netif_napi_del->napi_free_frags->kfree_skb.56->kfree_skb_reason->__kfree_skb->skb_release_all->skb_release_data->__skb_frag_unref.2011->put_page.2016->folio_put.2019->folio_put_testzero.2020->put_page_testzero.2021->page_ref_dec_and_test.2022] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_remove",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L267",
+    "call path": " [alx_remove->unregister_netdev->unregister_netdevice->unregister_netdevice_queue->unregister_netdevice_many->rtmsg_ifinfo_build_skb->rtnl_fill_ifinfo->rtnl_link_fill->rtnl_link_info_fill->alx_start_xmit->alx_start_xmit_ring->alx_tso->skb_cow_head->__skb_cow->pskb_expand_head->refcount_inc.2061] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_remove",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L267",
+    "call path": " [alx_remove->unregister_netdev->unregister_netdevice->unregister_netdevice_queue->unregister_netdevice_many->rtmsg_ifinfo_build_skb->if_nlmsg_size->rtnl_vfinfo_size->dev_num_vf->alx_resume->__alx_open->alx_request_irq->alx_request_msix->request_irq->request_threaded_irq->__setup_irq->setup_irq_thread->get_task_struct->refcount_inc.937] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_remove",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L49",
+    "call path": " [alx_remove->unregister_netdev->unregister_netdevice->unregister_netdevice_queue->unregister_netdevice_many->rtmsg_ifinfo_build_skb->if_nlmsg_size->rtnl_vfinfo_size->dev_num_vf->alx_resume->__alx_open->alx_request_irq->alx_request_msix->request_irq->request_threaded_irq->__setup_irq->wake_up_and_wait_for_irq_thread_ready->schedule->__schedule->finish_task_switch->mmdrop_sched->mmdrop.1098] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_remove",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/skbuff.h#L1868",
+    "call path": " [alx_remove->unregister_netdev->unregister_netdevice->unregister_netdevice_queue->unregister_netdevice_many->rtmsg_ifinfo_build_skb->rtnl_fill_ifinfo->rtnl_link_fill->rtnl_link_info_fill->alx_start_xmit->alx_start_xmit_ring->alx_tso->skb_cow_head->__skb_cow->pskb_expand_head->skb_clone_fraglist->skb_get] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_remove",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/page_ref.h#L158",
+    "call path": " [alx_remove->unregister_netdev->unregister_netdevice->unregister_netdevice_queue->unregister_netdevice_many->rtmsg_ifinfo_build_skb->rtnl_fill_ifinfo->rtnl_link_fill->rtnl_link_info_fill->alx_start_xmit->alx_start_xmit_ring->alx_tso->skb_cow_head->__skb_cow->pskb_expand_head->skb_zcopy_downgrade_managed->__skb_zcopy_downgrade_managed->skb_frag_ref->__skb_frag_ref->get_page->folio_get->folio_ref_inc->page_ref_inc] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_remove",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task_stack.h#L68",
+    "call path": " [alx_remove->unregister_netdev->unregister_netdevice->unregister_netdevice_queue->unregister_netdevice_many->rtmsg_ifinfo_build_skb->if_nlmsg_size->rtnl_vfinfo_size->dev_num_vf->alx_resume->__alx_open->alx_request_irq->alx_request_msix->request_irq->request_threaded_irq->__setup_irq->wake_up_and_wait_for_irq_thread_ready->schedule->__schedule->schedule_debug->__schedule_bug->check_panic_on_warn->panic->panic_print_sys_info->show_state->show_state_filter->sched_show_task->try_get_task_stack] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_remove",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L245",
+    "call path": " [alx_remove->unregister_netdev->unregister_netdevice->unregister_netdevice_queue->unregister_netdevice_many->rtmsg_ifinfo_build_skb->if_nlmsg_size->rtnl_vfinfo_size->dev_num_vf->alx_resume->__alx_open->alx_request_irq->alx_request_msix->request_irq->request_threaded_irq->__setup_irq->wake_up_and_wait_for_irq_thread_ready->schedule->__schedule->schedule_debug->__schedule_bug->check_panic_on_warn->panic->panic_print_sys_info->show_state->show_state_filter->sched_show_task->try_get_task_stack->refcount_inc_not_zero] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_suspend",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10373",
+    "call path": " [alx_suspend->rtnl_unlock->netdev_run_todo] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_suspend",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/sched/sch_generic.c#L599",
+    "call path": " [alx_suspend->__alx_stop->alx_halt->alx_netif_stop->netif_carrier_off] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_suspend",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task.h#L119",
+    "call path": " [alx_suspend->__alx_stop->alx_free_irq->free_irq->__free_irq->put_task_struct] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_suspend",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6511",
+    "call path": " [alx_suspend->__alx_stop->alx_halt->alx_irq_disable->synchronize_irq->schedule->__schedule] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_suspend",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L1225",
+    "call path": " [alx_suspend->__alx_stop->cancel_work_sync->__cancel_work_timer->try_to_grab_pending->pwq_dec_nr_in_flight] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_suspend",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/skbuff.h#L1210",
+    "call path": " [alx_suspend->rtnl_unlock->netdev_run_todo->__rtnl_unlock->kfree_skb.1848->kfree_skb_reason->skb_unref] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_suspend",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L333",
+    "call path": " [alx_suspend->__alx_stop->alx_free_irq->free_irq->__free_irq->put_task_struct->refcount_dec_and_test.919] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_suspend",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L37",
+    "call path": " [alx_suspend->__alx_stop->alx_halt->alx_irq_disable->synchronize_irq->schedule->__schedule->mmgrab] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_suspend",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L333",
+    "call path": " [alx_suspend->rtnl_unlock->netdev_run_todo->__rtnl_unlock->kfree_skb.1848->kfree_skb_reason->skb_unref->refcount_dec_and_test.2003] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_suspend",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L832",
+    "call path": " [alx_suspend->rtnl_unlock->netdev_run_todo->__rtnl_unlock->kfree_skb.1848->kfree_skb_reason->__kfree_skb->kfree_skbmem] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_suspend",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L3135",
+    "call path": " [alx_suspend->__alx_stop->alx_free_rings->alx_free_buffers->alx_free_txring_buf->alx_free_txbuf->dev_kfree_skb_any->__dev_kfree_skb_any->__dev_kfree_skb_irq] ",
+    "num condition checks": 2,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L3129 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L3132 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_suspend",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L49",
+    "call path": " [alx_suspend->__alx_stop->alx_halt->alx_irq_disable->synchronize_irq->schedule->__schedule->finish_task_switch->mmdrop_sched->mmdrop.1098] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_suspend",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L333",
+    "call path": " [alx_suspend->__alx_stop->alx_free_rings->alx_free_buffers->alx_free_txring_buf->alx_free_txbuf->dev_kfree_skb_any->__dev_kfree_skb_any->__dev_kfree_skb_irq->refcount_dec_and_test.1630] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_suspend",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4213",
+    "call path": " [alx_suspend->__alx_stop->alx_free_rings->alx_free_buffers->alx_free_txring_buf->alx_free_txbuf->dev_kfree_skb_any->__dev_kfree_skb_any->__dev_kfree_skb_irq->raise_softirq_irqoff->wakeup_softirqd->wake_up_process->try_to_wake_up] ",
+    "num condition checks": 2,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4210 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4211 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_suspend",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3693",
+    "call path": " [alx_suspend->__alx_stop->alx_free_rings->alx_free_buffers->alx_free_txring_buf->alx_free_txbuf->dev_kfree_skb_any->__dev_kfree_skb_any->__dev_kfree_skb_irq->raise_softirq_irqoff->wakeup_softirqd->wake_up_process->try_to_wake_up->ttwu_queue->ttwu_do_activate] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_suspend",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/page_ref.h#L210",
+    "call path": " [alx_suspend->rtnl_unlock->netdev_run_todo->__rtnl_unlock->kfree_skb.1848->kfree_skb_reason->__kfree_skb->skb_release_all->skb_release_data->__skb_frag_unref.2011->put_page.2016->folio_put.2019->folio_put_testzero.2020->put_page_testzero.2021->page_ref_dec_and_test.2022] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_suspend",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task_stack.h#L68",
+    "call path": " [alx_suspend->__alx_stop->alx_halt->alx_irq_disable->synchronize_irq->schedule->__schedule->schedule_debug->__schedule_bug->check_panic_on_warn->panic->panic_print_sys_info->show_state->show_state_filter->sched_show_task->try_get_task_stack] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_suspend",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L245",
+    "call path": " [alx_suspend->__alx_stop->alx_halt->alx_irq_disable->synchronize_irq->schedule->__schedule->schedule_debug->__schedule_bug->check_panic_on_warn->panic->panic_print_sys_info->show_state->show_state_filter->sched_show_task->try_get_task_stack->refcount_inc_not_zero] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_resume",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/sched/sch_generic.c#L599",
+    "call path": " [alx_resume->__alx_open->netif_carrier_off] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_resume",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10373",
+    "call path": " [alx_resume->rtnl_unlock->netdev_run_todo] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_resume",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task.h#L119",
+    "call path": " [alx_resume->__alx_open->alx_request_irq->alx_request_msix->request_irq->request_threaded_irq->__setup_irq->put_task_struct] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_resume",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/skbuff.h#L1210",
+    "call path": " [alx_resume->__alx_open->alx_alloc_napis->alx_free_napis->netif_napi_del->__netif_napi_del->napi_free_frags->kfree_skb.56->kfree_skb_reason->skb_unref] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_resume",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4213",
+    "call path": " [alx_resume->__alx_open->alx_alloc_napis->netif_napi_add->netif_napi_add_weight->napi_kthread_create->wake_up_process->try_to_wake_up] ",
+    "num condition checks": 2,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4210 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4211 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_resume",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L333",
+    "call path": " [alx_resume->__alx_open->alx_request_irq->alx_request_msix->request_irq->request_threaded_irq->__setup_irq->put_task_struct->refcount_dec_and_test.919] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_resume",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task.h#L110",
+    "call path": " [alx_resume->__alx_open->alx_request_irq->alx_request_msix->request_irq->request_threaded_irq->__setup_irq->setup_irq_thread->get_task_struct] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_resume",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L333",
+    "call path": " [alx_resume->__alx_open->alx_alloc_napis->alx_free_napis->netif_napi_del->__netif_napi_del->napi_free_frags->kfree_skb.56->kfree_skb_reason->skb_unref->refcount_dec_and_test.2003] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_resume",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L832",
+    "call path": " [alx_resume->__alx_open->alx_alloc_napis->alx_free_napis->netif_napi_del->__netif_napi_del->napi_free_frags->kfree_skb.56->kfree_skb_reason->__kfree_skb->kfree_skbmem] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_resume",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L267",
+    "call path": " [alx_resume->__alx_open->alx_request_irq->alx_request_msix->request_irq->request_threaded_irq->__setup_irq->setup_irq_thread->get_task_struct->refcount_inc.937] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_resume",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6511",
+    "call path": " [alx_resume->__alx_open->alx_request_irq->alx_request_msix->request_irq->request_threaded_irq->__setup_irq->wake_up_and_wait_for_irq_thread_ready->schedule->__schedule] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_resume",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L3135",
+    "call path": " [alx_resume->__alx_open->alx_request_irq->alx_realloc_resources->alx_free_rings->alx_free_buffers->alx_free_txring_buf->alx_free_txbuf->dev_kfree_skb_any->__dev_kfree_skb_any->__dev_kfree_skb_irq] ",
+    "num condition checks": 2,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L3129 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L3132 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_resume",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3693",
+    "call path": " [alx_resume->__alx_open->alx_alloc_napis->netif_napi_add->netif_napi_add_weight->napi_kthread_create->wake_up_process->try_to_wake_up->ttwu_queue->ttwu_do_activate] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_resume",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L37",
+    "call path": " [alx_resume->__alx_open->alx_request_irq->alx_request_msix->request_irq->request_threaded_irq->__setup_irq->wake_up_and_wait_for_irq_thread_ready->schedule->__schedule->mmgrab] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_resume",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L333",
+    "call path": " [alx_resume->__alx_open->alx_request_irq->alx_realloc_resources->alx_free_rings->alx_free_buffers->alx_free_txring_buf->alx_free_txbuf->dev_kfree_skb_any->__dev_kfree_skb_any->__dev_kfree_skb_irq->refcount_dec_and_test.1630] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_resume",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L49",
+    "call path": " [alx_resume->__alx_open->alx_request_irq->alx_request_msix->request_irq->request_threaded_irq->__setup_irq->wake_up_and_wait_for_irq_thread_ready->schedule->__schedule->finish_task_switch->mmdrop_sched->mmdrop.1098] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_resume",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/page_ref.h#L210",
+    "call path": " [alx_resume->__alx_open->alx_alloc_napis->alx_free_napis->netif_napi_del->__netif_napi_del->napi_free_frags->kfree_skb.56->kfree_skb_reason->__kfree_skb->skb_release_all->skb_release_data->__skb_frag_unref.2011->put_page.2016->folio_put.2019->folio_put_testzero.2020->put_page_testzero.2021->page_ref_dec_and_test.2022] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_resume",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task_stack.h#L68",
+    "call path": " [alx_resume->__alx_open->alx_request_irq->alx_request_msix->request_irq->request_threaded_irq->__setup_irq->wake_up_and_wait_for_irq_thread_ready->schedule->__schedule->schedule_debug->__schedule_bug->check_panic_on_warn->panic->panic_print_sys_info->show_state->show_state_filter->sched_show_task->try_get_task_stack] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_resume",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L245",
+    "call path": " [alx_resume->__alx_open->alx_request_irq->alx_request_msix->request_irq->request_threaded_irq->__setup_irq->wake_up_and_wait_for_irq_thread_ready->schedule->__schedule->schedule_debug->__schedule_bug->check_panic_on_warn->panic->panic_print_sys_info->show_state->show_state_filter->sched_show_task->try_get_task_stack->refcount_inc_not_zero] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_open",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/sched/sch_generic.c#L599",
+    "call path": " [alx_open->__alx_open->netif_carrier_off] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_open",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task.h#L119",
+    "call path": " [alx_open->__alx_open->alx_request_irq->alx_request_msix->request_irq->request_threaded_irq->__setup_irq->put_task_struct] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_open",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4213",
+    "call path": " [alx_open->__alx_open->alx_alloc_napis->netif_napi_add->netif_napi_add_weight->napi_kthread_create->wake_up_process->try_to_wake_up] ",
+    "num condition checks": 2,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4210 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4211 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_open",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L333",
+    "call path": " [alx_open->__alx_open->alx_request_irq->alx_request_msix->request_irq->request_threaded_irq->__setup_irq->put_task_struct->refcount_dec_and_test.919] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_open",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task.h#L110",
+    "call path": " [alx_open->__alx_open->alx_request_irq->alx_request_msix->request_irq->request_threaded_irq->__setup_irq->setup_irq_thread->get_task_struct] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_open",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/skbuff.h#L1210",
+    "call path": " [alx_open->__alx_open->alx_alloc_napis->alx_free_napis->netif_napi_del->__netif_napi_del->napi_free_frags->kfree_skb.56->kfree_skb_reason->skb_unref] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_open",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L267",
+    "call path": " [alx_open->__alx_open->alx_request_irq->alx_request_msix->request_irq->request_threaded_irq->__setup_irq->setup_irq_thread->get_task_struct->refcount_inc.937] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_open",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6511",
+    "call path": " [alx_open->__alx_open->alx_request_irq->alx_request_msix->request_irq->request_threaded_irq->__setup_irq->wake_up_and_wait_for_irq_thread_ready->schedule->__schedule] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_open",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L3135",
+    "call path": " [alx_open->__alx_open->alx_request_irq->alx_realloc_resources->alx_free_rings->alx_free_buffers->alx_free_txring_buf->alx_free_txbuf->dev_kfree_skb_any->__dev_kfree_skb_any->__dev_kfree_skb_irq] ",
+    "num condition checks": 2,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L3129 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L3132 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_open",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L333",
+    "call path": " [alx_open->__alx_open->alx_alloc_napis->alx_free_napis->netif_napi_del->__netif_napi_del->napi_free_frags->kfree_skb.56->kfree_skb_reason->skb_unref->refcount_dec_and_test.2003] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_open",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L832",
+    "call path": " [alx_open->__alx_open->alx_alloc_napis->alx_free_napis->netif_napi_del->__netif_napi_del->napi_free_frags->kfree_skb.56->kfree_skb_reason->__kfree_skb->kfree_skbmem] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_open",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3693",
+    "call path": " [alx_open->__alx_open->alx_alloc_napis->netif_napi_add->netif_napi_add_weight->napi_kthread_create->wake_up_process->try_to_wake_up->ttwu_queue->ttwu_do_activate] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_open",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L37",
+    "call path": " [alx_open->__alx_open->alx_request_irq->alx_request_msix->request_irq->request_threaded_irq->__setup_irq->wake_up_and_wait_for_irq_thread_ready->schedule->__schedule->mmgrab] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_open",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L333",
+    "call path": " [alx_open->__alx_open->alx_request_irq->alx_realloc_resources->alx_free_rings->alx_free_buffers->alx_free_txring_buf->alx_free_txbuf->dev_kfree_skb_any->__dev_kfree_skb_any->__dev_kfree_skb_irq->refcount_dec_and_test.1630] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_open",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L49",
+    "call path": " [alx_open->__alx_open->alx_request_irq->alx_request_msix->request_irq->request_threaded_irq->__setup_irq->wake_up_and_wait_for_irq_thread_ready->schedule->__schedule->finish_task_switch->mmdrop_sched->mmdrop.1098] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_open",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/page_ref.h#L210",
+    "call path": " [alx_open->__alx_open->alx_alloc_napis->alx_free_napis->netif_napi_del->__netif_napi_del->napi_free_frags->kfree_skb.56->kfree_skb_reason->__kfree_skb->skb_release_all->skb_release_data->__skb_frag_unref.2011->put_page.2016->folio_put.2019->folio_put_testzero.2020->put_page_testzero.2021->page_ref_dec_and_test.2022] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_open",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task_stack.h#L68",
+    "call path": " [alx_open->__alx_open->alx_request_irq->alx_request_msix->request_irq->request_threaded_irq->__setup_irq->wake_up_and_wait_for_irq_thread_ready->schedule->__schedule->schedule_debug->__schedule_bug->check_panic_on_warn->panic->panic_print_sys_info->show_state->show_state_filter->sched_show_task->try_get_task_stack] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_open",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L245",
+    "call path": " [alx_open->__alx_open->alx_request_irq->alx_request_msix->request_irq->request_threaded_irq->__setup_irq->wake_up_and_wait_for_irq_thread_ready->schedule->__schedule->schedule_debug->__schedule_bug->check_panic_on_warn->panic->panic_print_sys_info->show_state->show_state_filter->sched_show_task->try_get_task_stack->refcount_inc_not_zero] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_stop",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/sched/sch_generic.c#L599",
+    "call path": " [alx_stop->__alx_stop->alx_halt->alx_netif_stop->netif_carrier_off] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_stop",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task.h#L119",
+    "call path": " [alx_stop->__alx_stop->alx_free_irq->free_irq->__free_irq->put_task_struct] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_stop",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6511",
+    "call path": " [alx_stop->__alx_stop->alx_halt->alx_irq_disable->synchronize_irq->schedule->__schedule] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_stop",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L1225",
+    "call path": " [alx_stop->__alx_stop->cancel_work_sync->__cancel_work_timer->try_to_grab_pending->pwq_dec_nr_in_flight] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_stop",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L333",
+    "call path": " [alx_stop->__alx_stop->alx_free_irq->free_irq->__free_irq->put_task_struct->refcount_dec_and_test.919] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_stop",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L37",
+    "call path": " [alx_stop->__alx_stop->alx_halt->alx_irq_disable->synchronize_irq->schedule->__schedule->mmgrab] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_stop",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L3135",
+    "call path": " [alx_stop->__alx_stop->alx_free_rings->alx_free_buffers->alx_free_txring_buf->alx_free_txbuf->dev_kfree_skb_any->__dev_kfree_skb_any->__dev_kfree_skb_irq] ",
+    "num condition checks": 2,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L3129 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L3132 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_stop",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/skbuff.h#L1210",
+    "call path": " [alx_stop->__alx_stop->alx_free_rings->alx_free_buffers->alx_free_txring_buf->alx_free_txbuf->dev_kfree_skb_any->__dev_kfree_skb_any->kfree_skb.56->kfree_skb_reason->skb_unref] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_stop",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L49",
+    "call path": " [alx_stop->__alx_stop->alx_halt->alx_irq_disable->synchronize_irq->schedule->__schedule->finish_task_switch->mmdrop_sched->mmdrop.1098] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_stop",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L333",
+    "call path": " [alx_stop->__alx_stop->alx_free_rings->alx_free_buffers->alx_free_txring_buf->alx_free_txbuf->dev_kfree_skb_any->__dev_kfree_skb_any->__dev_kfree_skb_irq->refcount_dec_and_test.1630] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_stop",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L333",
+    "call path": " [alx_stop->__alx_stop->alx_free_rings->alx_free_buffers->alx_free_txring_buf->alx_free_txbuf->dev_kfree_skb_any->__dev_kfree_skb_any->kfree_skb.56->kfree_skb_reason->skb_unref->refcount_dec_and_test.2003] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_stop",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L832",
+    "call path": " [alx_stop->__alx_stop->alx_free_rings->alx_free_buffers->alx_free_txring_buf->alx_free_txbuf->dev_kfree_skb_any->__dev_kfree_skb_any->kfree_skb.56->kfree_skb_reason->__kfree_skb->kfree_skbmem] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_stop",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4213",
+    "call path": " [alx_stop->__alx_stop->alx_free_rings->alx_free_buffers->alx_free_txring_buf->alx_free_txbuf->dev_kfree_skb_any->__dev_kfree_skb_any->__dev_kfree_skb_irq->raise_softirq_irqoff->wakeup_softirqd->wake_up_process->try_to_wake_up] ",
+    "num condition checks": 2,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4210 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4211 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_stop",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3693",
+    "call path": " [alx_stop->__alx_stop->alx_free_rings->alx_free_buffers->alx_free_txring_buf->alx_free_txbuf->dev_kfree_skb_any->__dev_kfree_skb_any->__dev_kfree_skb_irq->raise_softirq_irqoff->wakeup_softirqd->wake_up_process->try_to_wake_up->ttwu_queue->ttwu_do_activate] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_stop",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task_stack.h#L68",
+    "call path": " [alx_stop->__alx_stop->alx_halt->alx_irq_disable->synchronize_irq->schedule->__schedule->schedule_debug->__schedule_bug->check_panic_on_warn->panic->panic_print_sys_info->show_state->show_state_filter->sched_show_task->try_get_task_stack] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_stop",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L245",
+    "call path": " [alx_stop->__alx_stop->alx_halt->alx_irq_disable->synchronize_irq->schedule->__schedule->schedule_debug->__schedule_bug->check_panic_on_warn->panic->panic_print_sys_info->show_state->show_state_filter->sched_show_task->try_get_task_stack->refcount_inc_not_zero] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_stop",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/page_ref.h#L210",
+    "call path": " [alx_stop->__alx_stop->alx_free_rings->alx_free_buffers->alx_free_txring_buf->alx_free_txbuf->dev_kfree_skb_any->__dev_kfree_skb_any->kfree_skb.56->kfree_skb_reason->__kfree_skb->skb_release_all->skb_release_data->__skb_frag_unref.2011->put_page.2016->folio_put.2019->folio_put_testzero.2020->put_page_testzero.2021->page_ref_dec_and_test.2022] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_start_xmit",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L3135",
+    "call path": " [alx_start_xmit->alx_start_xmit_ring->dev_kfree_skb_any->__dev_kfree_skb_any->__dev_kfree_skb_irq] ",
+    "num condition checks": 2,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L3129 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L3132 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_start_xmit",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L333",
+    "call path": " [alx_start_xmit->alx_start_xmit_ring->dev_kfree_skb_any->__dev_kfree_skb_any->__dev_kfree_skb_irq->refcount_dec_and_test.1630] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_start_xmit",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L1865",
+    "call path": " [alx_start_xmit->alx_start_xmit_ring->alx_tso->skb_cow_head->__skb_cow->pskb_expand_head] ",
+    "num condition checks": 6,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L1833 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L1835 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L1864 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L1843 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L1861 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L1862 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_start_xmit",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/skbuff.h#L1210",
+    "call path": " [alx_start_xmit->alx_start_xmit_ring->dev_kfree_skb_any->__dev_kfree_skb_any->kfree_skb.56->kfree_skb_reason->skb_unref] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_start_xmit",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L267",
+    "call path": " [alx_start_xmit->alx_start_xmit_ring->alx_tso->skb_cow_head->__skb_cow->pskb_expand_head->refcount_inc.2061] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_start_xmit",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L333",
+    "call path": " [alx_start_xmit->alx_start_xmit_ring->dev_kfree_skb_any->__dev_kfree_skb_any->kfree_skb.56->kfree_skb_reason->skb_unref->refcount_dec_and_test.2003] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_start_xmit",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L832",
+    "call path": " [alx_start_xmit->alx_start_xmit_ring->dev_kfree_skb_any->__dev_kfree_skb_any->kfree_skb.56->kfree_skb_reason->__kfree_skb->kfree_skbmem] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_start_xmit",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/skbuff.h#L1868",
+    "call path": " [alx_start_xmit->alx_start_xmit_ring->alx_tso->skb_cow_head->__skb_cow->pskb_expand_head->skb_clone_fraglist->skb_get] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_start_xmit",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4213",
+    "call path": " [alx_start_xmit->alx_start_xmit_ring->dev_kfree_skb_any->__dev_kfree_skb_any->__dev_kfree_skb_irq->raise_softirq_irqoff->wakeup_softirqd->wake_up_process->try_to_wake_up] ",
+    "num condition checks": 2,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4210 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4211 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_start_xmit",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3693",
+    "call path": " [alx_start_xmit->alx_start_xmit_ring->dev_kfree_skb_any->__dev_kfree_skb_any->__dev_kfree_skb_irq->raise_softirq_irqoff->wakeup_softirqd->wake_up_process->try_to_wake_up->ttwu_queue->ttwu_do_activate] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_start_xmit",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/page_ref.h#L158",
+    "call path": " [alx_start_xmit->alx_start_xmit_ring->alx_tso->skb_cow_head->__skb_cow->pskb_expand_head->skb_zcopy_downgrade_managed->__skb_zcopy_downgrade_managed->skb_frag_ref->__skb_frag_ref->get_page->folio_get->folio_ref_inc->page_ref_inc] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_start_xmit",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/page_ref.h#L210",
+    "call path": " [alx_start_xmit->alx_start_xmit_ring->dev_kfree_skb_any->__dev_kfree_skb_any->kfree_skb.56->kfree_skb_reason->__kfree_skb->skb_release_all->skb_release_data->__skb_frag_unref.2011->put_page.2016->folio_put.2019->folio_put_testzero.2020->put_page_testzero.2021->page_ref_dec_and_test.2022] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_change_mtu",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/sched/sch_generic.c#L599",
+    "call path": " [alx_change_mtu->alx_reinit->alx_halt->alx_netif_stop->netif_carrier_off] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_change_mtu",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6511",
+    "call path": " [alx_change_mtu->alx_reinit->alx_halt->alx_irq_disable->synchronize_irq->schedule->__schedule] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_change_mtu",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L37",
+    "call path": " [alx_change_mtu->alx_reinit->alx_halt->alx_irq_disable->synchronize_irq->schedule->__schedule->mmgrab] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_change_mtu",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L3135",
+    "call path": " [alx_change_mtu->alx_reinit->alx_halt->alx_free_buffers->alx_free_txring_buf->alx_free_txbuf->dev_kfree_skb_any->__dev_kfree_skb_any->__dev_kfree_skb_irq] ",
+    "num condition checks": 2,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L3129 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L3132 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_change_mtu",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/skbuff.h#L1210",
+    "call path": " [alx_change_mtu->alx_reinit->alx_halt->alx_free_buffers->alx_free_txring_buf->alx_free_txbuf->dev_kfree_skb_any->__dev_kfree_skb_any->kfree_skb.56->kfree_skb_reason->skb_unref] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_change_mtu",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L333",
+    "call path": " [alx_change_mtu->alx_reinit->alx_halt->alx_free_buffers->alx_free_txring_buf->alx_free_txbuf->dev_kfree_skb_any->__dev_kfree_skb_any->__dev_kfree_skb_irq->refcount_dec_and_test.1630] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_change_mtu",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L333",
+    "call path": " [alx_change_mtu->alx_reinit->alx_halt->alx_free_buffers->alx_free_txring_buf->alx_free_txbuf->dev_kfree_skb_any->__dev_kfree_skb_any->kfree_skb.56->kfree_skb_reason->skb_unref->refcount_dec_and_test.2003] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_change_mtu",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L832",
+    "call path": " [alx_change_mtu->alx_reinit->alx_halt->alx_free_buffers->alx_free_txring_buf->alx_free_txbuf->dev_kfree_skb_any->__dev_kfree_skb_any->kfree_skb.56->kfree_skb_reason->__kfree_skb->kfree_skbmem] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_change_mtu",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L49",
+    "call path": " [alx_change_mtu->alx_reinit->alx_halt->alx_irq_disable->synchronize_irq->schedule->__schedule->finish_task_switch->mmdrop_sched->mmdrop.1098] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_change_mtu",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4213",
+    "call path": " [alx_change_mtu->alx_reinit->alx_halt->alx_free_buffers->alx_free_txring_buf->alx_free_txbuf->dev_kfree_skb_any->__dev_kfree_skb_any->__dev_kfree_skb_irq->raise_softirq_irqoff->wakeup_softirqd->wake_up_process->try_to_wake_up] ",
+    "num condition checks": 2,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4210 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4211 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_change_mtu",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3693",
+    "call path": " [alx_change_mtu->alx_reinit->alx_halt->alx_free_buffers->alx_free_txring_buf->alx_free_txbuf->dev_kfree_skb_any->__dev_kfree_skb_any->__dev_kfree_skb_irq->raise_softirq_irqoff->wakeup_softirqd->wake_up_process->try_to_wake_up->ttwu_queue->ttwu_do_activate] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_change_mtu",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task_stack.h#L68",
+    "call path": " [alx_change_mtu->alx_reinit->alx_halt->alx_irq_disable->synchronize_irq->schedule->__schedule->schedule_debug->__schedule_bug->check_panic_on_warn->panic->panic_print_sys_info->show_state->show_state_filter->sched_show_task->try_get_task_stack] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_change_mtu",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/page_ref.h#L210",
+    "call path": " [alx_change_mtu->alx_reinit->alx_halt->alx_free_buffers->alx_free_txring_buf->alx_free_txbuf->dev_kfree_skb_any->__dev_kfree_skb_any->kfree_skb.56->kfree_skb_reason->__kfree_skb->skb_release_all->skb_release_data->__skb_frag_unref.2011->put_page.2016->folio_put.2019->folio_put_testzero.2020->put_page_testzero.2021->page_ref_dec_and_test.2022] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_change_mtu",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L245",
+    "call path": " [alx_change_mtu->alx_reinit->alx_halt->alx_irq_disable->synchronize_irq->schedule->__schedule->schedule_debug->__schedule_bug->check_panic_on_warn->panic->panic_print_sys_info->show_state->show_state_filter->sched_show_task->try_get_task_stack->refcount_inc_not_zero] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_tx_timeout",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4213",
+    "call path": " [alx_tx_timeout->alx_schedule_reset->schedule_work->queue_work->queue_work_on->__queue_work->insert_work->wake_up_worker->wake_up_process->try_to_wake_up] ",
+    "num condition checks": 2,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4210 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4211 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_tx_timeout",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3693",
+    "call path": " [alx_tx_timeout->alx_schedule_reset->schedule_work->queue_work->queue_work_on->__queue_work->insert_work->wake_up_worker->wake_up_process->try_to_wake_up->ttwu_queue->ttwu_do_activate] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_pci_error_detected",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/sched/sch_generic.c#L599",
+    "call path": " [alx_pci_error_detected->alx_halt->alx_netif_stop->netif_carrier_off] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_pci_error_detected",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6511",
+    "call path": " [alx_pci_error_detected->alx_halt->alx_irq_disable->synchronize_irq->schedule->__schedule] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_pci_error_detected",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L37",
+    "call path": " [alx_pci_error_detected->alx_halt->alx_irq_disable->synchronize_irq->schedule->__schedule->mmgrab] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_pci_error_detected",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L3135",
+    "call path": " [alx_pci_error_detected->alx_halt->alx_free_buffers->alx_free_txring_buf->alx_free_txbuf->dev_kfree_skb_any->__dev_kfree_skb_any->__dev_kfree_skb_irq] ",
+    "num condition checks": 2,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L3129 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L3132 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_pci_error_detected",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/skbuff.h#L1210",
+    "call path": " [alx_pci_error_detected->alx_halt->alx_free_buffers->alx_free_txring_buf->alx_free_txbuf->dev_kfree_skb_any->__dev_kfree_skb_any->kfree_skb.56->kfree_skb_reason->skb_unref] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_pci_error_detected",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L333",
+    "call path": " [alx_pci_error_detected->alx_halt->alx_free_buffers->alx_free_txring_buf->alx_free_txbuf->dev_kfree_skb_any->__dev_kfree_skb_any->__dev_kfree_skb_irq->refcount_dec_and_test.1630] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_pci_error_detected",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L333",
+    "call path": " [alx_pci_error_detected->alx_halt->alx_free_buffers->alx_free_txring_buf->alx_free_txbuf->dev_kfree_skb_any->__dev_kfree_skb_any->kfree_skb.56->kfree_skb_reason->skb_unref->refcount_dec_and_test.2003] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_pci_error_detected",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L832",
+    "call path": " [alx_pci_error_detected->alx_halt->alx_free_buffers->alx_free_txring_buf->alx_free_txbuf->dev_kfree_skb_any->__dev_kfree_skb_any->kfree_skb.56->kfree_skb_reason->__kfree_skb->kfree_skbmem] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_pci_error_detected",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L49",
+    "call path": " [alx_pci_error_detected->alx_halt->alx_irq_disable->synchronize_irq->schedule->__schedule->finish_task_switch->mmdrop_sched->mmdrop.1098] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_pci_error_detected",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4213",
+    "call path": " [alx_pci_error_detected->alx_halt->alx_free_buffers->alx_free_txring_buf->alx_free_txbuf->dev_kfree_skb_any->__dev_kfree_skb_any->__dev_kfree_skb_irq->raise_softirq_irqoff->wakeup_softirqd->wake_up_process->try_to_wake_up] ",
+    "num condition checks": 2,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4210 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4211 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_pci_error_detected",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3693",
+    "call path": " [alx_pci_error_detected->alx_halt->alx_free_buffers->alx_free_txring_buf->alx_free_txbuf->dev_kfree_skb_any->__dev_kfree_skb_any->__dev_kfree_skb_irq->raise_softirq_irqoff->wakeup_softirqd->wake_up_process->try_to_wake_up->ttwu_queue->ttwu_do_activate] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_pci_error_detected",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task_stack.h#L68",
+    "call path": " [alx_pci_error_detected->alx_halt->alx_irq_disable->synchronize_irq->schedule->__schedule->schedule_debug->__schedule_bug->check_panic_on_warn->panic->panic_print_sys_info->show_state->show_state_filter->sched_show_task->try_get_task_stack] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_pci_error_detected",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/page_ref.h#L210",
+    "call path": " [alx_pci_error_detected->alx_halt->alx_free_buffers->alx_free_txring_buf->alx_free_txbuf->dev_kfree_skb_any->__dev_kfree_skb_any->kfree_skb.56->kfree_skb_reason->__kfree_skb->skb_release_all->skb_release_data->__skb_frag_unref.2011->put_page.2016->folio_put.2019->folio_put_testzero.2020->put_page_testzero.2021->page_ref_dec_and_test.2022] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_pci_error_detected",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L245",
+    "call path": " [alx_pci_error_detected->alx_halt->alx_irq_disable->synchronize_irq->schedule->__schedule->schedule_debug->__schedule_bug->check_panic_on_warn->panic->panic_print_sys_info->show_state->show_state_filter->sched_show_task->try_get_task_stack->refcount_inc_not_zero] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_pci_error_slot_reset",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L2007",
+    "call path": " [alx_pci_error_slot_reset->pci_enable_device->pci_enable_device_flags] ",
+    "num condition checks": 2,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L1990 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L2006 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_pci_error_resume",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/skbuff.h#L1210",
+    "call path": " [alx_pci_error_resume->alx_activate->alx_reinit_rings->alx_free_buffers->alx_free_txring_buf->alx_free_txbuf->dev_kfree_skb_any->__dev_kfree_skb_any->kfree_skb.56->kfree_skb_reason->skb_unref] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_pci_error_resume",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L3135",
+    "call path": " [alx_pci_error_resume->alx_activate->alx_reinit_rings->alx_free_buffers->alx_free_txring_buf->alx_free_txbuf->dev_kfree_skb_any->__dev_kfree_skb_any->__dev_kfree_skb_irq] ",
+    "num condition checks": 2,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L3129 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L3132 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_pci_error_resume",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L333",
+    "call path": " [alx_pci_error_resume->alx_activate->alx_reinit_rings->alx_free_buffers->alx_free_txring_buf->alx_free_txbuf->dev_kfree_skb_any->__dev_kfree_skb_any->kfree_skb.56->kfree_skb_reason->skb_unref->refcount_dec_and_test.2003] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_pci_error_resume",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L832",
+    "call path": " [alx_pci_error_resume->alx_activate->alx_reinit_rings->alx_free_buffers->alx_free_txring_buf->alx_free_txbuf->dev_kfree_skb_any->__dev_kfree_skb_any->kfree_skb.56->kfree_skb_reason->__kfree_skb->kfree_skbmem] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_pci_error_resume",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L333",
+    "call path": " [alx_pci_error_resume->alx_activate->alx_reinit_rings->alx_free_buffers->alx_free_txring_buf->alx_free_txbuf->dev_kfree_skb_any->__dev_kfree_skb_any->__dev_kfree_skb_irq->refcount_dec_and_test.1630] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_pci_error_resume",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4213",
+    "call path": " [alx_pci_error_resume->alx_activate->alx_reinit_rings->alx_free_buffers->alx_free_txring_buf->alx_free_txbuf->dev_kfree_skb_any->__dev_kfree_skb_any->__dev_kfree_skb_irq->raise_softirq_irqoff->wakeup_softirqd->wake_up_process->try_to_wake_up] ",
+    "num condition checks": 2,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4210 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4211 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_pci_error_resume",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3693",
+    "call path": " [alx_pci_error_resume->alx_activate->alx_reinit_rings->alx_free_buffers->alx_free_txring_buf->alx_free_txbuf->dev_kfree_skb_any->__dev_kfree_skb_any->__dev_kfree_skb_irq->raise_softirq_irqoff->wakeup_softirqd->wake_up_process->try_to_wake_up->ttwu_queue->ttwu_do_activate] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "alx_pci_error_resume",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/page_ref.h#L210",
+    "call path": " [alx_pci_error_resume->alx_activate->alx_reinit_rings->alx_free_buffers->alx_free_txring_buf->alx_free_txbuf->dev_kfree_skb_any->__dev_kfree_skb_any->kfree_skb.56->kfree_skb_reason->__kfree_skb->skb_release_all->skb_release_data->__skb_frag_unref.2011->put_page.2016->folio_put.2019->folio_put_testzero.2020->put_page_testzero.2021->page_ref_dec_and_test.2022] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  }
+]

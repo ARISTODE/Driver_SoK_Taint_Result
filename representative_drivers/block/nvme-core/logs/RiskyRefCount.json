@@ -1,0 +1,1847 @@
+[
+  {
+    "type": "direct",
+    "func": "kref_put",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/kref.h#L64",
+    "access_path": "kref->refcount"
+  },
+  {
+    "type": "direct",
+    "func": "refcount_dec_and_test",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L333",
+    "access_path": "refcount_struct"
+  },
+  {
+    "type": "direct",
+    "func": "kref_get_unless_zero",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/kref.h#L111",
+    "access_path": "kref->refcount"
+  },
+  {
+    "type": "direct",
+    "func": "refcount_inc_not_zero",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L245",
+    "access_path": "refcount_struct"
+  },
+  {
+    "type": "direct",
+    "func": "kref_get",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/kref.h#L45",
+    "access_path": "kref->refcount"
+  },
+  {
+    "type": "direct",
+    "func": "refcount_inc",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L267",
+    "access_path": "refcount_struct"
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_pr_reserve",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk.h#L492",
+    "call path": " [nvme_pr_reserve->nvme_pr_command->nvme_send_ns_head_pr_command->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->io_schedule_prepare->blk_flush_plug.2108->__blk_flush_plug->blk_mq_flush_plug_list->blk_mq_plug_issue_direct->blk_mq_end_request->__blk_mq_end_request->blk_mq_free_request->req_ref_put_and_test] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_pr_reserve",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6511",
+    "call path": " [nvme_pr_reserve->nvme_pr_command->nvme_send_ns_head_pr_command->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->schedule->__schedule] ",
+    "num condition checks": 1,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6510 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_pr_reserve",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L37",
+    "call path": " [nvme_pr_reserve->nvme_pr_command->nvme_send_ns_head_pr_command->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->schedule->__schedule->mmgrab.2087] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_pr_reserve",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/page_ref.h#L210",
+    "call path": " [nvme_pr_reserve->nvme_pr_command->nvme_send_ns_head_pr_command->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->blk_rq_map_kern->bio_copy_kern->kfree->free_large_kmalloc->__free_pages->put_page_testzero.2851->page_ref_dec_and_test.2852] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_pr_reserve",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L49",
+    "call path": " [nvme_pr_reserve->nvme_pr_command->nvme_send_ns_head_pr_command->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->schedule->__schedule->finish_task_switch->mmdrop_sched->mmdrop] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_pr_reserve",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L1225",
+    "call path": " [nvme_pr_reserve->nvme_pr_command->nvme_send_ns_head_pr_command->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->io_schedule_prepare->blk_flush_plug.2108->__blk_flush_plug->blk_mq_flush_plug_list->blk_mq_plug_issue_direct->blk_mq_request_bypass_insert->blk_mq_run_hw_queue->__blk_mq_delay_run_hw_queue->kblockd_mod_delayed_work_on->mod_delayed_work_on->try_to_grab_pending->pwq_dec_nr_in_flight] ",
+    "num condition checks": 2,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L1211 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L1215 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_pr_reserve",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4213",
+    "call path": " [nvme_pr_reserve->nvme_pr_command->nvme_send_ns_head_pr_command->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->io_schedule_prepare->blk_flush_plug.2108->__blk_flush_plug->blk_mq_flush_plug_list->rcu_read_unlock.291->__rcu_read_unlock->rcu_read_unlock_special->rcu_preempt_deferred_qs_irqrestore->rcu_report_exp_rdp->rcu_report_exp_cpu_mult->__rcu_report_exp_rnp->swake_up_one->swake_up_locked->wake_up_process->try_to_wake_up] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_pr_reserve",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3693",
+    "call path": " [nvme_pr_reserve->nvme_pr_command->nvme_send_ns_head_pr_command->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->io_schedule_prepare->blk_flush_plug.2108->__blk_flush_plug->blk_mq_flush_plug_list->rcu_read_unlock.291->__rcu_read_unlock->rcu_read_unlock_special->rcu_preempt_deferred_qs_irqrestore->rcu_report_exp_rdp->rcu_report_exp_cpu_mult->__rcu_report_exp_rnp->swake_up_one->swake_up_locked->wake_up_process->try_to_wake_up->ttwu_queue->ttwu_do_activate] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_pr_reserve",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-mq.h#L227",
+    "call path": " [nvme_pr_reserve->nvme_pr_command->nvme_send_ns_head_pr_command->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->io_schedule_prepare->blk_flush_plug.2108->__blk_flush_plug->blk_mq_flush_plug_list->blk_mq_plug_issue_direct->blk_mq_request_issue_directly->__blk_mq_try_issue_directly->blk_mq_get_driver_tag->__blk_mq_get_driver_tag->__blk_mq_inc_active_requests] ",
+    "num condition checks": 1,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-mq.h#L226 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_pr_reserve",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-mq.h#L229",
+    "call path": " [nvme_pr_reserve->nvme_pr_command->nvme_send_ns_head_pr_command->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->io_schedule_prepare->blk_flush_plug.2108->__blk_flush_plug->blk_mq_flush_plug_list->blk_mq_plug_issue_direct->blk_mq_request_issue_directly->__blk_mq_try_issue_directly->blk_mq_get_driver_tag->__blk_mq_get_driver_tag->__blk_mq_inc_active_requests] ",
+    "num condition checks": 1,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-mq.h#L226 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_pr_reserve",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task_stack.h#L68",
+    "call path": " [nvme_pr_reserve->nvme_pr_command->nvme_send_ns_head_pr_command->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->schedule->__schedule->schedule_debug->__schedule_bug->add_taint->panic->panic_print_sys_info->show_state->show_state_filter->sched_show_task->try_get_task_stack] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_pr_reserve",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L245",
+    "call path": " [nvme_pr_reserve->nvme_pr_command->nvme_send_ns_head_pr_command->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->schedule->__schedule->schedule_debug->__schedule_bug->add_taint->panic->panic_print_sys_info->show_state->show_state_filter->sched_show_task->try_get_task_stack->refcount_inc_not_zero.42] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_pr_register",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk.h#L492",
+    "call path": " [nvme_pr_register->nvme_pr_command->nvme_send_ns_head_pr_command->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->io_schedule_prepare->blk_flush_plug.2108->__blk_flush_plug->blk_mq_flush_plug_list->blk_mq_plug_issue_direct->blk_mq_end_request->__blk_mq_end_request->blk_mq_free_request->req_ref_put_and_test] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_pr_register",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6511",
+    "call path": " [nvme_pr_register->nvme_pr_command->nvme_send_ns_head_pr_command->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->schedule->__schedule] ",
+    "num condition checks": 1,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6510 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_pr_register",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L37",
+    "call path": " [nvme_pr_register->nvme_pr_command->nvme_send_ns_head_pr_command->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->schedule->__schedule->mmgrab.2087] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_pr_register",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/page_ref.h#L210",
+    "call path": " [nvme_pr_register->nvme_pr_command->nvme_send_ns_head_pr_command->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->blk_rq_map_kern->bio_copy_kern->kfree->free_large_kmalloc->__free_pages->put_page_testzero.2851->page_ref_dec_and_test.2852] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_pr_register",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L49",
+    "call path": " [nvme_pr_register->nvme_pr_command->nvme_send_ns_head_pr_command->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->schedule->__schedule->finish_task_switch->mmdrop_sched->mmdrop] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_pr_register",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L1225",
+    "call path": " [nvme_pr_register->nvme_pr_command->nvme_send_ns_head_pr_command->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->io_schedule_prepare->blk_flush_plug.2108->__blk_flush_plug->blk_mq_flush_plug_list->blk_mq_plug_issue_direct->blk_mq_request_bypass_insert->blk_mq_run_hw_queue->__blk_mq_delay_run_hw_queue->kblockd_mod_delayed_work_on->mod_delayed_work_on->try_to_grab_pending->pwq_dec_nr_in_flight] ",
+    "num condition checks": 2,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L1211 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L1215 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_pr_register",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4213",
+    "call path": " [nvme_pr_register->nvme_pr_command->nvme_send_ns_head_pr_command->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->io_schedule_prepare->blk_flush_plug.2108->__blk_flush_plug->blk_mq_flush_plug_list->rcu_read_unlock.291->__rcu_read_unlock->rcu_read_unlock_special->rcu_preempt_deferred_qs_irqrestore->rcu_report_exp_rdp->rcu_report_exp_cpu_mult->__rcu_report_exp_rnp->swake_up_one->swake_up_locked->wake_up_process->try_to_wake_up] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_pr_register",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3693",
+    "call path": " [nvme_pr_register->nvme_pr_command->nvme_send_ns_head_pr_command->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->io_schedule_prepare->blk_flush_plug.2108->__blk_flush_plug->blk_mq_flush_plug_list->rcu_read_unlock.291->__rcu_read_unlock->rcu_read_unlock_special->rcu_preempt_deferred_qs_irqrestore->rcu_report_exp_rdp->rcu_report_exp_cpu_mult->__rcu_report_exp_rnp->swake_up_one->swake_up_locked->wake_up_process->try_to_wake_up->ttwu_queue->ttwu_do_activate] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_pr_register",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-mq.h#L227",
+    "call path": " [nvme_pr_register->nvme_pr_command->nvme_send_ns_head_pr_command->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->io_schedule_prepare->blk_flush_plug.2108->__blk_flush_plug->blk_mq_flush_plug_list->blk_mq_plug_issue_direct->blk_mq_request_issue_directly->__blk_mq_try_issue_directly->blk_mq_get_driver_tag->__blk_mq_get_driver_tag->__blk_mq_inc_active_requests] ",
+    "num condition checks": 1,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-mq.h#L226 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_pr_register",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-mq.h#L229",
+    "call path": " [nvme_pr_register->nvme_pr_command->nvme_send_ns_head_pr_command->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->io_schedule_prepare->blk_flush_plug.2108->__blk_flush_plug->blk_mq_flush_plug_list->blk_mq_plug_issue_direct->blk_mq_request_issue_directly->__blk_mq_try_issue_directly->blk_mq_get_driver_tag->__blk_mq_get_driver_tag->__blk_mq_inc_active_requests] ",
+    "num condition checks": 1,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-mq.h#L226 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_pr_register",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task_stack.h#L68",
+    "call path": " [nvme_pr_register->nvme_pr_command->nvme_send_ns_head_pr_command->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->schedule->__schedule->schedule_debug->__schedule_bug->add_taint->panic->panic_print_sys_info->show_state->show_state_filter->sched_show_task->try_get_task_stack] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_pr_register",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L245",
+    "call path": " [nvme_pr_register->nvme_pr_command->nvme_send_ns_head_pr_command->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->schedule->__schedule->schedule_debug->__schedule_bug->add_taint->panic->panic_print_sys_info->show_state->show_state_filter->sched_show_task->try_get_task_stack->refcount_inc_not_zero.42] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_pr_release",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk.h#L492",
+    "call path": " [nvme_pr_release->nvme_pr_command->nvme_send_ns_head_pr_command->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->io_schedule_prepare->blk_flush_plug.2108->__blk_flush_plug->blk_mq_flush_plug_list->blk_mq_plug_issue_direct->blk_mq_end_request->__blk_mq_end_request->blk_mq_free_request->req_ref_put_and_test] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_pr_release",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6511",
+    "call path": " [nvme_pr_release->nvme_pr_command->nvme_send_ns_head_pr_command->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->schedule->__schedule] ",
+    "num condition checks": 1,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6510 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_pr_release",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L37",
+    "call path": " [nvme_pr_release->nvme_pr_command->nvme_send_ns_head_pr_command->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->schedule->__schedule->mmgrab.2087] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_pr_release",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/page_ref.h#L210",
+    "call path": " [nvme_pr_release->nvme_pr_command->nvme_send_ns_head_pr_command->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->blk_rq_map_kern->bio_copy_kern->kfree->free_large_kmalloc->__free_pages->put_page_testzero.2851->page_ref_dec_and_test.2852] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_pr_release",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L49",
+    "call path": " [nvme_pr_release->nvme_pr_command->nvme_send_ns_head_pr_command->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->schedule->__schedule->finish_task_switch->mmdrop_sched->mmdrop] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_pr_release",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L1225",
+    "call path": " [nvme_pr_release->nvme_pr_command->nvme_send_ns_head_pr_command->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->io_schedule_prepare->blk_flush_plug.2108->__blk_flush_plug->blk_mq_flush_plug_list->blk_mq_plug_issue_direct->blk_mq_request_bypass_insert->blk_mq_run_hw_queue->__blk_mq_delay_run_hw_queue->kblockd_mod_delayed_work_on->mod_delayed_work_on->try_to_grab_pending->pwq_dec_nr_in_flight] ",
+    "num condition checks": 2,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L1211 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L1215 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_pr_release",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4213",
+    "call path": " [nvme_pr_release->nvme_pr_command->nvme_send_ns_head_pr_command->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->io_schedule_prepare->blk_flush_plug.2108->__blk_flush_plug->blk_mq_flush_plug_list->rcu_read_unlock.291->__rcu_read_unlock->rcu_read_unlock_special->rcu_preempt_deferred_qs_irqrestore->rcu_report_exp_rdp->rcu_report_exp_cpu_mult->__rcu_report_exp_rnp->swake_up_one->swake_up_locked->wake_up_process->try_to_wake_up] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_pr_release",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3693",
+    "call path": " [nvme_pr_release->nvme_pr_command->nvme_send_ns_head_pr_command->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->io_schedule_prepare->blk_flush_plug.2108->__blk_flush_plug->blk_mq_flush_plug_list->rcu_read_unlock.291->__rcu_read_unlock->rcu_read_unlock_special->rcu_preempt_deferred_qs_irqrestore->rcu_report_exp_rdp->rcu_report_exp_cpu_mult->__rcu_report_exp_rnp->swake_up_one->swake_up_locked->wake_up_process->try_to_wake_up->ttwu_queue->ttwu_do_activate] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_pr_release",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-mq.h#L227",
+    "call path": " [nvme_pr_release->nvme_pr_command->nvme_send_ns_head_pr_command->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->io_schedule_prepare->blk_flush_plug.2108->__blk_flush_plug->blk_mq_flush_plug_list->blk_mq_plug_issue_direct->blk_mq_request_issue_directly->__blk_mq_try_issue_directly->blk_mq_get_driver_tag->__blk_mq_get_driver_tag->__blk_mq_inc_active_requests] ",
+    "num condition checks": 1,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-mq.h#L226 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_pr_release",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-mq.h#L229",
+    "call path": " [nvme_pr_release->nvme_pr_command->nvme_send_ns_head_pr_command->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->io_schedule_prepare->blk_flush_plug.2108->__blk_flush_plug->blk_mq_flush_plug_list->blk_mq_plug_issue_direct->blk_mq_request_issue_directly->__blk_mq_try_issue_directly->blk_mq_get_driver_tag->__blk_mq_get_driver_tag->__blk_mq_inc_active_requests] ",
+    "num condition checks": 1,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-mq.h#L226 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_pr_release",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task_stack.h#L68",
+    "call path": " [nvme_pr_release->nvme_pr_command->nvme_send_ns_head_pr_command->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->schedule->__schedule->schedule_debug->__schedule_bug->add_taint->panic->panic_print_sys_info->show_state->show_state_filter->sched_show_task->try_get_task_stack] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_pr_release",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L245",
+    "call path": " [nvme_pr_release->nvme_pr_command->nvme_send_ns_head_pr_command->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->schedule->__schedule->schedule_debug->__schedule_bug->add_taint->panic->panic_print_sys_info->show_state->show_state_filter->sched_show_task->try_get_task_stack->refcount_inc_not_zero.42] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_pr_preempt",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk.h#L492",
+    "call path": " [nvme_pr_preempt->nvme_pr_command->nvme_send_ns_head_pr_command->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->io_schedule_prepare->blk_flush_plug.2108->__blk_flush_plug->blk_mq_flush_plug_list->blk_mq_plug_issue_direct->blk_mq_end_request->__blk_mq_end_request->blk_mq_free_request->req_ref_put_and_test] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_pr_preempt",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6511",
+    "call path": " [nvme_pr_preempt->nvme_pr_command->nvme_send_ns_head_pr_command->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->schedule->__schedule] ",
+    "num condition checks": 1,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6510 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_pr_preempt",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L37",
+    "call path": " [nvme_pr_preempt->nvme_pr_command->nvme_send_ns_head_pr_command->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->schedule->__schedule->mmgrab.2087] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_pr_preempt",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/page_ref.h#L210",
+    "call path": " [nvme_pr_preempt->nvme_pr_command->nvme_send_ns_head_pr_command->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->blk_rq_map_kern->bio_copy_kern->kfree->free_large_kmalloc->__free_pages->put_page_testzero.2851->page_ref_dec_and_test.2852] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_pr_preempt",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L49",
+    "call path": " [nvme_pr_preempt->nvme_pr_command->nvme_send_ns_head_pr_command->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->schedule->__schedule->finish_task_switch->mmdrop_sched->mmdrop] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_pr_preempt",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L1225",
+    "call path": " [nvme_pr_preempt->nvme_pr_command->nvme_send_ns_head_pr_command->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->io_schedule_prepare->blk_flush_plug.2108->__blk_flush_plug->blk_mq_flush_plug_list->blk_mq_plug_issue_direct->blk_mq_request_bypass_insert->blk_mq_run_hw_queue->__blk_mq_delay_run_hw_queue->kblockd_mod_delayed_work_on->mod_delayed_work_on->try_to_grab_pending->pwq_dec_nr_in_flight] ",
+    "num condition checks": 2,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L1211 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L1215 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_pr_preempt",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4213",
+    "call path": " [nvme_pr_preempt->nvme_pr_command->nvme_send_ns_head_pr_command->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->io_schedule_prepare->blk_flush_plug.2108->__blk_flush_plug->blk_mq_flush_plug_list->rcu_read_unlock.291->__rcu_read_unlock->rcu_read_unlock_special->rcu_preempt_deferred_qs_irqrestore->rcu_report_exp_rdp->rcu_report_exp_cpu_mult->__rcu_report_exp_rnp->swake_up_one->swake_up_locked->wake_up_process->try_to_wake_up] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_pr_preempt",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3693",
+    "call path": " [nvme_pr_preempt->nvme_pr_command->nvme_send_ns_head_pr_command->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->io_schedule_prepare->blk_flush_plug.2108->__blk_flush_plug->blk_mq_flush_plug_list->rcu_read_unlock.291->__rcu_read_unlock->rcu_read_unlock_special->rcu_preempt_deferred_qs_irqrestore->rcu_report_exp_rdp->rcu_report_exp_cpu_mult->__rcu_report_exp_rnp->swake_up_one->swake_up_locked->wake_up_process->try_to_wake_up->ttwu_queue->ttwu_do_activate] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_pr_preempt",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-mq.h#L227",
+    "call path": " [nvme_pr_preempt->nvme_pr_command->nvme_send_ns_head_pr_command->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->io_schedule_prepare->blk_flush_plug.2108->__blk_flush_plug->blk_mq_flush_plug_list->blk_mq_plug_issue_direct->blk_mq_request_issue_directly->__blk_mq_try_issue_directly->blk_mq_get_driver_tag->__blk_mq_get_driver_tag->__blk_mq_inc_active_requests] ",
+    "num condition checks": 1,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-mq.h#L226 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_pr_preempt",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-mq.h#L229",
+    "call path": " [nvme_pr_preempt->nvme_pr_command->nvme_send_ns_head_pr_command->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->io_schedule_prepare->blk_flush_plug.2108->__blk_flush_plug->blk_mq_flush_plug_list->blk_mq_plug_issue_direct->blk_mq_request_issue_directly->__blk_mq_try_issue_directly->blk_mq_get_driver_tag->__blk_mq_get_driver_tag->__blk_mq_inc_active_requests] ",
+    "num condition checks": 1,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-mq.h#L226 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_pr_preempt",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task_stack.h#L68",
+    "call path": " [nvme_pr_preempt->nvme_pr_command->nvme_send_ns_head_pr_command->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->schedule->__schedule->schedule_debug->__schedule_bug->add_taint->panic->panic_print_sys_info->show_state->show_state_filter->sched_show_task->try_get_task_stack] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_pr_preempt",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L245",
+    "call path": " [nvme_pr_preempt->nvme_pr_command->nvme_send_ns_head_pr_command->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->schedule->__schedule->schedule_debug->__schedule_bug->add_taint->panic->panic_print_sys_info->show_state->show_state_filter->sched_show_task->try_get_task_stack->refcount_inc_not_zero.42] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_pr_clear",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk.h#L492",
+    "call path": " [nvme_pr_clear->nvme_pr_command->nvme_send_ns_head_pr_command->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->io_schedule_prepare->blk_flush_plug.2108->__blk_flush_plug->blk_mq_flush_plug_list->blk_mq_plug_issue_direct->blk_mq_end_request->__blk_mq_end_request->blk_mq_free_request->req_ref_put_and_test] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_pr_clear",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6511",
+    "call path": " [nvme_pr_clear->nvme_pr_command->nvme_send_ns_head_pr_command->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->schedule->__schedule] ",
+    "num condition checks": 1,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6510 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_pr_clear",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L37",
+    "call path": " [nvme_pr_clear->nvme_pr_command->nvme_send_ns_head_pr_command->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->schedule->__schedule->mmgrab.2087] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_pr_clear",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/page_ref.h#L210",
+    "call path": " [nvme_pr_clear->nvme_pr_command->nvme_send_ns_head_pr_command->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->blk_rq_map_kern->bio_copy_kern->kfree->free_large_kmalloc->__free_pages->put_page_testzero.2851->page_ref_dec_and_test.2852] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_pr_clear",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L49",
+    "call path": " [nvme_pr_clear->nvme_pr_command->nvme_send_ns_head_pr_command->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->schedule->__schedule->finish_task_switch->mmdrop_sched->mmdrop] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_pr_clear",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L1225",
+    "call path": " [nvme_pr_clear->nvme_pr_command->nvme_send_ns_head_pr_command->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->io_schedule_prepare->blk_flush_plug.2108->__blk_flush_plug->blk_mq_flush_plug_list->blk_mq_plug_issue_direct->blk_mq_request_bypass_insert->blk_mq_run_hw_queue->__blk_mq_delay_run_hw_queue->kblockd_mod_delayed_work_on->mod_delayed_work_on->try_to_grab_pending->pwq_dec_nr_in_flight] ",
+    "num condition checks": 2,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L1211 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L1215 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_pr_clear",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4213",
+    "call path": " [nvme_pr_clear->nvme_pr_command->nvme_send_ns_head_pr_command->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->io_schedule_prepare->blk_flush_plug.2108->__blk_flush_plug->blk_mq_flush_plug_list->rcu_read_unlock.291->__rcu_read_unlock->rcu_read_unlock_special->rcu_preempt_deferred_qs_irqrestore->rcu_report_exp_rdp->rcu_report_exp_cpu_mult->__rcu_report_exp_rnp->swake_up_one->swake_up_locked->wake_up_process->try_to_wake_up] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_pr_clear",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3693",
+    "call path": " [nvme_pr_clear->nvme_pr_command->nvme_send_ns_head_pr_command->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->io_schedule_prepare->blk_flush_plug.2108->__blk_flush_plug->blk_mq_flush_plug_list->rcu_read_unlock.291->__rcu_read_unlock->rcu_read_unlock_special->rcu_preempt_deferred_qs_irqrestore->rcu_report_exp_rdp->rcu_report_exp_cpu_mult->__rcu_report_exp_rnp->swake_up_one->swake_up_locked->wake_up_process->try_to_wake_up->ttwu_queue->ttwu_do_activate] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_pr_clear",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-mq.h#L227",
+    "call path": " [nvme_pr_clear->nvme_pr_command->nvme_send_ns_head_pr_command->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->io_schedule_prepare->blk_flush_plug.2108->__blk_flush_plug->blk_mq_flush_plug_list->blk_mq_plug_issue_direct->blk_mq_request_issue_directly->__blk_mq_try_issue_directly->blk_mq_get_driver_tag->__blk_mq_get_driver_tag->__blk_mq_inc_active_requests] ",
+    "num condition checks": 1,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-mq.h#L226 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_pr_clear",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-mq.h#L229",
+    "call path": " [nvme_pr_clear->nvme_pr_command->nvme_send_ns_head_pr_command->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->io_schedule_prepare->blk_flush_plug.2108->__blk_flush_plug->blk_mq_flush_plug_list->blk_mq_plug_issue_direct->blk_mq_request_issue_directly->__blk_mq_try_issue_directly->blk_mq_get_driver_tag->__blk_mq_get_driver_tag->__blk_mq_inc_active_requests] ",
+    "num condition checks": 1,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-mq.h#L226 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_pr_clear",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task_stack.h#L68",
+    "call path": " [nvme_pr_clear->nvme_pr_command->nvme_send_ns_head_pr_command->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->schedule->__schedule->schedule_debug->__schedule_bug->add_taint->panic->panic_print_sys_info->show_state->show_state_filter->sched_show_task->try_get_task_stack] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_pr_clear",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L245",
+    "call path": " [nvme_pr_clear->nvme_pr_command->nvme_send_ns_head_pr_command->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->schedule->__schedule->schedule_debug->__schedule_bug->add_taint->panic->panic_print_sys_info->show_state->show_state_filter->sched_show_task->try_get_task_stack->refcount_inc_not_zero.42] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_open",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/kref.h#L64",
+    "call path": " [nvme_open->nvme_ns_open->nvme_put_ns->kref_put] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_open",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/kref.h#L111",
+    "call path": " [nvme_open->nvme_ns_open->nvme_get_ns->kref_get_unless_zero] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_open",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L333",
+    "call path": " [nvme_open->nvme_ns_open->nvme_put_ns->kref_put->refcount_dec_and_test] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_open",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L245",
+    "call path": " [nvme_open->nvme_ns_open->nvme_get_ns->kref_get_unless_zero->refcount_inc_not_zero] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_release",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/kref.h#L64",
+    "call path": " [nvme_release->nvme_ns_release->nvme_put_ns->kref_put] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_release",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L333",
+    "call path": " [nvme_release->nvme_ns_release->nvme_put_ns->kref_put->refcount_dec_and_test] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_report_zones",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk.h#L492",
+    "call path": " [nvme_report_zones->nvme_ns_report_zones->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->io_schedule_prepare->blk_flush_plug.2108->__blk_flush_plug->blk_mq_flush_plug_list->blk_mq_plug_issue_direct->blk_mq_end_request->__blk_mq_end_request->blk_mq_free_request->req_ref_put_and_test] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_report_zones",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6511",
+    "call path": " [nvme_report_zones->nvme_ns_report_zones->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->schedule->__schedule] ",
+    "num condition checks": 1,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6510 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_report_zones",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/page_ref.h#L210",
+    "call path": " [nvme_report_zones->nvme_ns_report_zones->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->blk_rq_map_kern->bio_copy_kern->kfree->free_large_kmalloc->__free_pages->put_page_testzero.2851->page_ref_dec_and_test.2852] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_report_zones",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L37",
+    "call path": " [nvme_report_zones->nvme_ns_report_zones->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->schedule->__schedule->mmgrab.2087] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_report_zones",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L49",
+    "call path": " [nvme_report_zones->nvme_ns_report_zones->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->schedule->__schedule->finish_task_switch->mmdrop_sched->mmdrop] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_report_zones",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L1225",
+    "call path": " [nvme_report_zones->nvme_ns_report_zones->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->io_schedule_prepare->blk_flush_plug.2108->__blk_flush_plug->blk_mq_flush_plug_list->blk_mq_plug_issue_direct->blk_mq_request_bypass_insert->blk_mq_run_hw_queue->__blk_mq_delay_run_hw_queue->kblockd_mod_delayed_work_on->mod_delayed_work_on->try_to_grab_pending->pwq_dec_nr_in_flight] ",
+    "num condition checks": 2,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L1211 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L1215 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_report_zones",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4213",
+    "call path": " [nvme_report_zones->nvme_ns_report_zones->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->io_schedule_prepare->blk_flush_plug.2108->__blk_flush_plug->blk_mq_flush_plug_list->rcu_read_unlock.291->__rcu_read_unlock->rcu_read_unlock_special->rcu_preempt_deferred_qs_irqrestore->rcu_report_exp_rdp->rcu_report_exp_cpu_mult->__rcu_report_exp_rnp->swake_up_one->swake_up_locked->wake_up_process->try_to_wake_up] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_report_zones",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3693",
+    "call path": " [nvme_report_zones->nvme_ns_report_zones->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->io_schedule_prepare->blk_flush_plug.2108->__blk_flush_plug->blk_mq_flush_plug_list->rcu_read_unlock.291->__rcu_read_unlock->rcu_read_unlock_special->rcu_preempt_deferred_qs_irqrestore->rcu_report_exp_rdp->rcu_report_exp_cpu_mult->__rcu_report_exp_rnp->swake_up_one->swake_up_locked->wake_up_process->try_to_wake_up->ttwu_queue->ttwu_do_activate] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_report_zones",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-mq.h#L227",
+    "call path": " [nvme_report_zones->nvme_ns_report_zones->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->io_schedule_prepare->blk_flush_plug.2108->__blk_flush_plug->blk_mq_flush_plug_list->blk_mq_plug_issue_direct->blk_mq_request_issue_directly->__blk_mq_try_issue_directly->blk_mq_get_driver_tag->__blk_mq_get_driver_tag->__blk_mq_inc_active_requests] ",
+    "num condition checks": 1,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-mq.h#L226 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_report_zones",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-mq.h#L229",
+    "call path": " [nvme_report_zones->nvme_ns_report_zones->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->io_schedule_prepare->blk_flush_plug.2108->__blk_flush_plug->blk_mq_flush_plug_list->blk_mq_plug_issue_direct->blk_mq_request_issue_directly->__blk_mq_try_issue_directly->blk_mq_get_driver_tag->__blk_mq_get_driver_tag->__blk_mq_inc_active_requests] ",
+    "num condition checks": 1,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-mq.h#L226 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_report_zones",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task_stack.h#L68",
+    "call path": " [nvme_report_zones->nvme_ns_report_zones->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->schedule->__schedule->schedule_debug->__schedule_bug->add_taint->panic->panic_print_sys_info->show_state->show_state_filter->sched_show_task->try_get_task_stack] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_report_zones",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L245",
+    "call path": " [nvme_report_zones->nvme_ns_report_zones->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->schedule->__schedule->schedule_debug->__schedule_bug->add_taint->panic->panic_print_sys_info->show_state->show_state_filter->sched_show_task->try_get_task_stack->refcount_inc_not_zero.42] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_ns_head_submit_bio",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk.h#L492",
+    "call path": " [nvme_ns_head_submit_bio->submit_bio_noacct->submit_bio_noacct_nocheck->__submit_bio_noacct_mq->__submit_bio->blk_mq_submit_bio->blk_mq_free_request->req_ref_put_and_test] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_ns_head_submit_bio",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6511",
+    "call path": " [nvme_ns_head_submit_bio->submit_bio_noacct->submit_bio_noacct_nocheck->__submit_bio_noacct_mq->__submit_bio->blk_mq_submit_bio->bio_integrity_prep->kmalloc_large->__kmalloc_large_node->alloc_pages_node.3079->__alloc_pages_node.3081->__alloc_pages->get_page_from_freelist->rmqueue->rmqueue_pcplist->__rmqueue_pcplist->rmqueue_bulk->check_pcp_refill->check_new_pages->check_new_page->check_new_page_bad->bad_page->add_taint->panic->console_unblank->console_lock->msleep->schedule_timeout_uninterruptible->schedule_timeout->schedule->__schedule] ",
+    "num condition checks": 1,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6510 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_ns_head_submit_bio",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L37",
+    "call path": " [nvme_ns_head_submit_bio->submit_bio_noacct->submit_bio_noacct_nocheck->__submit_bio_noacct_mq->__submit_bio->blk_mq_submit_bio->bio_integrity_prep->kmalloc_large->__kmalloc_large_node->alloc_pages_node.3079->__alloc_pages_node.3081->__alloc_pages->get_page_from_freelist->rmqueue->rmqueue_pcplist->__rmqueue_pcplist->rmqueue_bulk->check_pcp_refill->check_new_pages->check_new_page->check_new_page_bad->bad_page->add_taint->panic->console_unblank->console_lock->msleep->schedule_timeout_uninterruptible->schedule_timeout->schedule->__schedule->mmgrab.2087] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_ns_head_submit_bio",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-mq.h#L227",
+    "call path": " [nvme_ns_head_submit_bio->submit_bio_noacct->submit_bio_noacct_nocheck->__submit_bio_noacct_mq->__submit_bio->blk_mq_submit_bio->bio_integrity_prep->kmalloc_large->__kmalloc_large_node->alloc_pages_node.3079->__alloc_pages_node.3081->__alloc_pages->get_page_from_freelist->rmqueue->rmqueue_pcplist->__rmqueue_pcplist->rmqueue_bulk->check_pcp_refill->check_new_pages->check_new_page->check_new_page_bad->bad_page->add_taint->panic->console_unblank->console_lock->msleep->schedule_timeout_uninterruptible->schedule_timeout->schedule->sched_submit_work->blk_flush_plug.2108->__blk_flush_plug->blk_mq_flush_plug_list->blk_mq_plug_issue_direct->blk_mq_request_issue_directly->__blk_mq_try_issue_directly->blk_mq_get_driver_tag->__blk_mq_get_driver_tag->__blk_mq_inc_active_requests] ",
+    "num condition checks": 1,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-mq.h#L226 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_ns_head_submit_bio",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-mq.h#L229",
+    "call path": " [nvme_ns_head_submit_bio->submit_bio_noacct->submit_bio_noacct_nocheck->__submit_bio_noacct_mq->__submit_bio->blk_mq_submit_bio->bio_integrity_prep->kmalloc_large->__kmalloc_large_node->alloc_pages_node.3079->__alloc_pages_node.3081->__alloc_pages->get_page_from_freelist->rmqueue->rmqueue_pcplist->__rmqueue_pcplist->rmqueue_bulk->check_pcp_refill->check_new_pages->check_new_page->check_new_page_bad->bad_page->add_taint->panic->console_unblank->console_lock->msleep->schedule_timeout_uninterruptible->schedule_timeout->schedule->sched_submit_work->blk_flush_plug.2108->__blk_flush_plug->blk_mq_flush_plug_list->blk_mq_plug_issue_direct->blk_mq_request_issue_directly->__blk_mq_try_issue_directly->blk_mq_get_driver_tag->__blk_mq_get_driver_tag->__blk_mq_inc_active_requests] ",
+    "num condition checks": 1,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-mq.h#L226 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_ns_head_submit_bio",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/page_ref.h#L210",
+    "call path": " [nvme_ns_head_submit_bio->submit_bio_noacct->submit_bio_noacct_nocheck->__submit_bio_noacct_mq->__submit_bio->blk_mq_submit_bio->bio_integrity_prep->bio_integrity_alloc->__bio_integrity_free->kfree->free_large_kmalloc->__free_pages->put_page_testzero.2851->page_ref_dec_and_test.2852] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_ns_head_submit_bio",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L49",
+    "call path": " [nvme_ns_head_submit_bio->submit_bio_noacct->submit_bio_noacct_nocheck->__submit_bio_noacct_mq->__submit_bio->blk_mq_submit_bio->bio_integrity_prep->kmalloc_large->__kmalloc_large_node->alloc_pages_node.3079->__alloc_pages_node.3081->__alloc_pages->get_page_from_freelist->rmqueue->rmqueue_pcplist->__rmqueue_pcplist->rmqueue_bulk->check_pcp_refill->check_new_pages->check_new_page->check_new_page_bad->bad_page->add_taint->panic->console_unblank->console_lock->msleep->schedule_timeout_uninterruptible->schedule_timeout->schedule->__schedule->finish_task_switch->mmdrop_sched->mmdrop] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_ns_head_submit_bio",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4213",
+    "call path": " [nvme_ns_head_submit_bio->submit_bio_noacct->submit_bio_noacct_nocheck->__submit_bio_noacct_mq->__submit_bio->blk_queue_exit->percpu_ref_put.122->percpu_ref_put_many.123->rcu_read_unlock.117->__rcu_read_unlock->rcu_read_unlock_special->rcu_preempt_deferred_qs_irqrestore->rcu_report_exp_rdp->rcu_report_exp_cpu_mult->__rcu_report_exp_rnp->swake_up_one->swake_up_locked->wake_up_process->try_to_wake_up] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_ns_head_submit_bio",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L1225",
+    "call path": " [nvme_ns_head_submit_bio->submit_bio_noacct->submit_bio_noacct_nocheck->__submit_bio_noacct_mq->__submit_bio->blk_mq_submit_bio->bio_integrity_prep->kmalloc_large->__kmalloc_large_node->alloc_pages_node.3079->__alloc_pages_node.3081->__alloc_pages->get_page_from_freelist->rmqueue->rmqueue_pcplist->__rmqueue_pcplist->rmqueue_bulk->check_pcp_refill->check_new_pages->check_new_page->check_new_page_bad->bad_page->add_taint->panic->console_unblank->console_lock->msleep->schedule_timeout_uninterruptible->schedule_timeout->schedule->sched_submit_work->blk_flush_plug.2108->__blk_flush_plug->blk_mq_flush_plug_list->blk_mq_plug_issue_direct->blk_mq_request_bypass_insert->blk_mq_run_hw_queue->__blk_mq_delay_run_hw_queue->kblockd_mod_delayed_work_on->mod_delayed_work_on->try_to_grab_pending->pwq_dec_nr_in_flight] ",
+    "num condition checks": 2,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L1211 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L1215 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_ns_head_submit_bio",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3693",
+    "call path": " [nvme_ns_head_submit_bio->submit_bio_noacct->submit_bio_noacct_nocheck->__submit_bio_noacct_mq->__submit_bio->blk_queue_exit->percpu_ref_put.122->percpu_ref_put_many.123->rcu_read_unlock.117->__rcu_read_unlock->rcu_read_unlock_special->rcu_preempt_deferred_qs_irqrestore->rcu_report_exp_rdp->rcu_report_exp_cpu_mult->__rcu_report_exp_rnp->swake_up_one->swake_up_locked->wake_up_process->try_to_wake_up->ttwu_queue->ttwu_do_activate] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_ns_head_submit_bio",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task_stack.h#L68",
+    "call path": " [nvme_ns_head_submit_bio->submit_bio_noacct->submit_bio_noacct_nocheck->__submit_bio_noacct_mq->__submit_bio->blk_mq_submit_bio->bio_integrity_prep->kmalloc_large->__kmalloc_large_node->alloc_pages_node.3079->__alloc_pages_node.3081->__alloc_pages->get_page_from_freelist->rmqueue->rmqueue_pcplist->__rmqueue_pcplist->rmqueue_bulk->check_pcp_refill->check_new_pages->check_new_page->check_new_page_bad->bad_page->add_taint->panic->panic_print_sys_info->show_state->show_state_filter->sched_show_task->try_get_task_stack] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_ns_head_submit_bio",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L245",
+    "call path": " [nvme_ns_head_submit_bio->submit_bio_noacct->submit_bio_noacct_nocheck->__submit_bio_noacct_mq->__submit_bio->blk_mq_submit_bio->bio_integrity_prep->kmalloc_large->__kmalloc_large_node->alloc_pages_node.3079->__alloc_pages_node.3081->__alloc_pages->get_page_from_freelist->rmqueue->rmqueue_pcplist->__rmqueue_pcplist->rmqueue_bulk->check_pcp_refill->check_new_pages->check_new_page->check_new_page_bad->bad_page->add_taint->panic->panic_print_sys_info->show_state->show_state_filter->sched_show_task->try_get_task_stack->refcount_inc_not_zero.42] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_ns_head_open",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/kref.h#L111",
+    "call path": " [nvme_ns_head_open->nvme_tryget_ns_head->kref_get_unless_zero] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_ns_head_open",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L245",
+    "call path": " [nvme_ns_head_open->nvme_tryget_ns_head->kref_get_unless_zero->refcount_inc_not_zero] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_ns_head_release",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/kref.h#L64",
+    "call path": " [nvme_ns_head_release->nvme_put_ns_head->kref_put] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_ns_head_release",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L333",
+    "call path": " [nvme_ns_head_release->nvme_put_ns_head->kref_put->refcount_dec_and_test] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_ns_head_report_zones",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk.h#L492",
+    "call path": " [nvme_ns_head_report_zones->nvme_ns_report_zones->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->io_schedule_prepare->blk_flush_plug.2108->__blk_flush_plug->blk_mq_flush_plug_list->blk_mq_plug_issue_direct->blk_mq_end_request->__blk_mq_end_request->blk_mq_free_request->req_ref_put_and_test] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_ns_head_report_zones",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6511",
+    "call path": " [nvme_ns_head_report_zones->nvme_ns_report_zones->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->schedule->__schedule] ",
+    "num condition checks": 1,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6510 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_ns_head_report_zones",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/page_ref.h#L210",
+    "call path": " [nvme_ns_head_report_zones->nvme_ns_report_zones->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->blk_rq_map_kern->bio_copy_kern->kfree->free_large_kmalloc->__free_pages->put_page_testzero.2851->page_ref_dec_and_test.2852] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_ns_head_report_zones",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L37",
+    "call path": " [nvme_ns_head_report_zones->nvme_ns_report_zones->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->schedule->__schedule->mmgrab.2087] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_ns_head_report_zones",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L49",
+    "call path": " [nvme_ns_head_report_zones->nvme_ns_report_zones->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->schedule->__schedule->finish_task_switch->mmdrop_sched->mmdrop] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_ns_head_report_zones",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L1225",
+    "call path": " [nvme_ns_head_report_zones->nvme_ns_report_zones->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->io_schedule_prepare->blk_flush_plug.2108->__blk_flush_plug->blk_mq_flush_plug_list->blk_mq_plug_issue_direct->blk_mq_request_bypass_insert->blk_mq_run_hw_queue->__blk_mq_delay_run_hw_queue->kblockd_mod_delayed_work_on->mod_delayed_work_on->try_to_grab_pending->pwq_dec_nr_in_flight] ",
+    "num condition checks": 2,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L1211 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L1215 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_ns_head_report_zones",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4213",
+    "call path": " [nvme_ns_head_report_zones->nvme_ns_report_zones->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->io_schedule_prepare->blk_flush_plug.2108->__blk_flush_plug->blk_mq_flush_plug_list->rcu_read_unlock.291->__rcu_read_unlock->rcu_read_unlock_special->rcu_preempt_deferred_qs_irqrestore->rcu_report_exp_rdp->rcu_report_exp_cpu_mult->__rcu_report_exp_rnp->swake_up_one->swake_up_locked->wake_up_process->try_to_wake_up] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_ns_head_report_zones",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3693",
+    "call path": " [nvme_ns_head_report_zones->nvme_ns_report_zones->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->io_schedule_prepare->blk_flush_plug.2108->__blk_flush_plug->blk_mq_flush_plug_list->rcu_read_unlock.291->__rcu_read_unlock->rcu_read_unlock_special->rcu_preempt_deferred_qs_irqrestore->rcu_report_exp_rdp->rcu_report_exp_cpu_mult->__rcu_report_exp_rnp->swake_up_one->swake_up_locked->wake_up_process->try_to_wake_up->ttwu_queue->ttwu_do_activate] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_ns_head_report_zones",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-mq.h#L227",
+    "call path": " [nvme_ns_head_report_zones->nvme_ns_report_zones->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->io_schedule_prepare->blk_flush_plug.2108->__blk_flush_plug->blk_mq_flush_plug_list->blk_mq_plug_issue_direct->blk_mq_request_issue_directly->__blk_mq_try_issue_directly->blk_mq_get_driver_tag->__blk_mq_get_driver_tag->__blk_mq_inc_active_requests] ",
+    "num condition checks": 1,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-mq.h#L226 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_ns_head_report_zones",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-mq.h#L229",
+    "call path": " [nvme_ns_head_report_zones->nvme_ns_report_zones->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->io_schedule_prepare->blk_flush_plug.2108->__blk_flush_plug->blk_mq_flush_plug_list->blk_mq_plug_issue_direct->blk_mq_request_issue_directly->__blk_mq_try_issue_directly->blk_mq_get_driver_tag->__blk_mq_get_driver_tag->__blk_mq_inc_active_requests] ",
+    "num condition checks": 1,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-mq.h#L226 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_ns_head_report_zones",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task_stack.h#L68",
+    "call path": " [nvme_ns_head_report_zones->nvme_ns_report_zones->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->schedule->__schedule->schedule_debug->__schedule_bug->add_taint->panic->panic_print_sys_info->show_state->show_state_filter->sched_show_task->try_get_task_stack] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_ns_head_report_zones",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L245",
+    "call path": " [nvme_ns_head_report_zones->nvme_ns_report_zones->nvme_submit_sync_cmd->__nvme_submit_sync_cmd->nvme_execute_rq->blk_execute_rq->blk_rq_poll_completion->blk_mq_poll->blk_mq_poll_hybrid->io_schedule->schedule->__schedule->schedule_debug->__schedule_bug->add_taint->panic->panic_print_sys_info->show_state->show_state_filter->sched_show_task->try_get_task_stack->refcount_inc_not_zero.42] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_ns_head_chr_open",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/kref.h#L111",
+    "call path": " [nvme_ns_head_chr_open->nvme_tryget_ns_head->kref_get_unless_zero] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_ns_head_chr_open",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L245",
+    "call path": " [nvme_ns_head_chr_open->nvme_tryget_ns_head->kref_get_unless_zero->refcount_inc_not_zero] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_ns_head_chr_release",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/kref.h#L64",
+    "call path": " [nvme_ns_head_chr_release->nvme_put_ns_head->kref_put] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_ns_head_chr_release",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L333",
+    "call path": " [nvme_ns_head_chr_release->nvme_put_ns_head->kref_put->refcount_dec_and_test] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_ns_head_chr_uring_cmd",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk.h#L492",
+    "call path": " [nvme_ns_head_chr_uring_cmd->nvme_ns_uring_cmd->nvme_uring_cmd_io->nvme_alloc_user_request->blk_mq_alloc_request->__blk_mq_alloc_requests->msleep->schedule_timeout_uninterruptible->schedule_timeout->schedule->sched_submit_work->blk_flush_plug.2108->__blk_flush_plug->blk_mq_flush_plug_list->blk_mq_plug_issue_direct->blk_mq_end_request->__blk_mq_end_request->blk_mq_free_request->req_ref_put_and_test] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_ns_head_chr_uring_cmd",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6511",
+    "call path": " [nvme_ns_head_chr_uring_cmd->nvme_ns_uring_cmd->nvme_uring_cmd_io->nvme_alloc_user_request->blk_mq_alloc_request->__blk_mq_alloc_requests->msleep->schedule_timeout_uninterruptible->schedule_timeout->schedule->__schedule] ",
+    "num condition checks": 1,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6510 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_ns_head_chr_uring_cmd",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L37",
+    "call path": " [nvme_ns_head_chr_uring_cmd->nvme_ns_uring_cmd->nvme_uring_cmd_io->nvme_alloc_user_request->blk_mq_alloc_request->__blk_mq_alloc_requests->msleep->schedule_timeout_uninterruptible->schedule_timeout->schedule->__schedule->mmgrab.2087] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_ns_head_chr_uring_cmd",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/page_ref.h#L210",
+    "call path": " [nvme_ns_head_chr_uring_cmd->nvme_ns_uring_cmd->nvme_uring_cmd_io->nvme_map_user_request->blk_rq_unmap_user->bio_uncopy_user->kfree->free_large_kmalloc->__free_pages->put_page_testzero.2851->page_ref_dec_and_test.2852] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_ns_head_chr_uring_cmd",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L49",
+    "call path": " [nvme_ns_head_chr_uring_cmd->nvme_ns_uring_cmd->nvme_uring_cmd_io->nvme_alloc_user_request->blk_mq_alloc_request->__blk_mq_alloc_requests->msleep->schedule_timeout_uninterruptible->schedule_timeout->schedule->__schedule->finish_task_switch->mmdrop_sched->mmdrop] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_ns_head_chr_uring_cmd",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/page_ref.h#L210",
+    "call path": " [nvme_ns_head_chr_uring_cmd->nvme_ns_uring_cmd->nvme_uring_cmd_io->nvme_map_user_request->blk_rq_map_user_io->blk_rq_map_user_iov->bio_map_user_iov->put_page->folio_put->folio_put_testzero->put_page_testzero->page_ref_dec_and_test] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_ns_head_chr_uring_cmd",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4213",
+    "call path": " [nvme_ns_head_chr_uring_cmd->nvme_ns_uring_cmd->nvme_uring_cmd_io->nvme_alloc_user_request->blk_mq_alloc_request->blk_queue_exit->percpu_ref_put.122->percpu_ref_put_many.123->rcu_read_unlock.117->__rcu_read_unlock->rcu_read_unlock_special->rcu_preempt_deferred_qs_irqrestore->rcu_report_exp_rdp->rcu_report_exp_cpu_mult->__rcu_report_exp_rnp->swake_up_one->swake_up_locked->wake_up_process->try_to_wake_up] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_ns_head_chr_uring_cmd",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-mq.h#L227",
+    "call path": " [nvme_ns_head_chr_uring_cmd->nvme_ns_uring_cmd->nvme_uring_cmd_io->nvme_alloc_user_request->blk_mq_alloc_request->__blk_mq_alloc_requests->msleep->schedule_timeout_uninterruptible->schedule_timeout->schedule->sched_submit_work->blk_flush_plug.2108->__blk_flush_plug->blk_mq_flush_plug_list->blk_mq_plug_issue_direct->blk_mq_request_issue_directly->__blk_mq_try_issue_directly->blk_mq_get_driver_tag->__blk_mq_get_driver_tag->__blk_mq_inc_active_requests] ",
+    "num condition checks": 1,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-mq.h#L226 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_ns_head_chr_uring_cmd",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-mq.h#L229",
+    "call path": " [nvme_ns_head_chr_uring_cmd->nvme_ns_uring_cmd->nvme_uring_cmd_io->nvme_alloc_user_request->blk_mq_alloc_request->__blk_mq_alloc_requests->msleep->schedule_timeout_uninterruptible->schedule_timeout->schedule->sched_submit_work->blk_flush_plug.2108->__blk_flush_plug->blk_mq_flush_plug_list->blk_mq_plug_issue_direct->blk_mq_request_issue_directly->__blk_mq_try_issue_directly->blk_mq_get_driver_tag->__blk_mq_get_driver_tag->__blk_mq_inc_active_requests] ",
+    "num condition checks": 1,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-mq.h#L226 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_ns_head_chr_uring_cmd",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L1225",
+    "call path": " [nvme_ns_head_chr_uring_cmd->nvme_ns_uring_cmd->nvme_uring_cmd_io->nvme_alloc_user_request->blk_mq_alloc_request->__blk_mq_alloc_requests->msleep->schedule_timeout_uninterruptible->schedule_timeout->schedule->sched_submit_work->blk_flush_plug.2108->__blk_flush_plug->blk_mq_flush_plug_list->blk_mq_plug_issue_direct->blk_mq_request_bypass_insert->blk_mq_run_hw_queue->__blk_mq_delay_run_hw_queue->kblockd_mod_delayed_work_on->mod_delayed_work_on->try_to_grab_pending->pwq_dec_nr_in_flight] ",
+    "num condition checks": 2,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L1211 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L1215 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_ns_head_chr_uring_cmd",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3693",
+    "call path": " [nvme_ns_head_chr_uring_cmd->nvme_ns_uring_cmd->nvme_uring_cmd_io->nvme_alloc_user_request->blk_mq_alloc_request->blk_queue_exit->percpu_ref_put.122->percpu_ref_put_many.123->rcu_read_unlock.117->__rcu_read_unlock->rcu_read_unlock_special->rcu_preempt_deferred_qs_irqrestore->rcu_report_exp_rdp->rcu_report_exp_cpu_mult->__rcu_report_exp_rnp->swake_up_one->swake_up_locked->wake_up_process->try_to_wake_up->ttwu_queue->ttwu_do_activate] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_ns_head_chr_uring_cmd",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task_stack.h#L68",
+    "call path": " [nvme_ns_head_chr_uring_cmd->nvme_ns_uring_cmd->nvme_uring_cmd_io->nvme_alloc_user_request->blk_mq_alloc_request->__blk_mq_alloc_requests->msleep->schedule_timeout_uninterruptible->schedule_timeout->schedule->__schedule->schedule_debug->__schedule_bug->add_taint->panic->panic_print_sys_info->show_state->show_state_filter->sched_show_task->try_get_task_stack] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_ns_head_chr_uring_cmd",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L245",
+    "call path": " [nvme_ns_head_chr_uring_cmd->nvme_ns_uring_cmd->nvme_uring_cmd_io->nvme_alloc_user_request->blk_mq_alloc_request->__blk_mq_alloc_requests->msleep->schedule_timeout_uninterruptible->schedule_timeout->schedule->__schedule->schedule_debug->__schedule_bug->add_taint->panic->panic_print_sys_info->show_state->show_state_filter->sched_show_task->try_get_task_stack->refcount_inc_not_zero.42] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_ns_chr_open",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/kref.h#L64",
+    "call path": " [nvme_ns_chr_open->nvme_ns_open->nvme_put_ns->kref_put] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_ns_chr_open",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/kref.h#L111",
+    "call path": " [nvme_ns_chr_open->nvme_ns_open->nvme_get_ns->kref_get_unless_zero] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_ns_chr_open",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L333",
+    "call path": " [nvme_ns_chr_open->nvme_ns_open->nvme_put_ns->kref_put->refcount_dec_and_test] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_ns_chr_open",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L245",
+    "call path": " [nvme_ns_chr_open->nvme_ns_open->nvme_get_ns->kref_get_unless_zero->refcount_inc_not_zero] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_ns_chr_release",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/kref.h#L64",
+    "call path": " [nvme_ns_chr_release->nvme_ns_release->nvme_put_ns->kref_put] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_ns_chr_release",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L333",
+    "call path": " [nvme_ns_chr_release->nvme_ns_release->nvme_put_ns->kref_put->refcount_dec_and_test] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_ns_chr_uring_cmd",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk.h#L492",
+    "call path": " [nvme_ns_chr_uring_cmd->nvme_ns_uring_cmd->nvme_uring_cmd_io->nvme_alloc_user_request->blk_mq_alloc_request->__blk_mq_alloc_requests->msleep->schedule_timeout_uninterruptible->schedule_timeout->schedule->sched_submit_work->blk_flush_plug.2108->__blk_flush_plug->blk_mq_flush_plug_list->blk_mq_plug_issue_direct->blk_mq_end_request->__blk_mq_end_request->blk_mq_free_request->req_ref_put_and_test] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_ns_chr_uring_cmd",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6511",
+    "call path": " [nvme_ns_chr_uring_cmd->nvme_ns_uring_cmd->nvme_uring_cmd_io->nvme_alloc_user_request->blk_mq_alloc_request->__blk_mq_alloc_requests->msleep->schedule_timeout_uninterruptible->schedule_timeout->schedule->__schedule] ",
+    "num condition checks": 1,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6510 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_ns_chr_uring_cmd",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L37",
+    "call path": " [nvme_ns_chr_uring_cmd->nvme_ns_uring_cmd->nvme_uring_cmd_io->nvme_alloc_user_request->blk_mq_alloc_request->__blk_mq_alloc_requests->msleep->schedule_timeout_uninterruptible->schedule_timeout->schedule->__schedule->mmgrab.2087] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_ns_chr_uring_cmd",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/page_ref.h#L210",
+    "call path": " [nvme_ns_chr_uring_cmd->nvme_ns_uring_cmd->nvme_uring_cmd_io->nvme_map_user_request->blk_rq_unmap_user->bio_uncopy_user->kfree->free_large_kmalloc->__free_pages->put_page_testzero.2851->page_ref_dec_and_test.2852] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_ns_chr_uring_cmd",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L49",
+    "call path": " [nvme_ns_chr_uring_cmd->nvme_ns_uring_cmd->nvme_uring_cmd_io->nvme_alloc_user_request->blk_mq_alloc_request->__blk_mq_alloc_requests->msleep->schedule_timeout_uninterruptible->schedule_timeout->schedule->__schedule->finish_task_switch->mmdrop_sched->mmdrop] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_ns_chr_uring_cmd",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/page_ref.h#L210",
+    "call path": " [nvme_ns_chr_uring_cmd->nvme_ns_uring_cmd->nvme_uring_cmd_io->nvme_map_user_request->blk_rq_map_user_io->blk_rq_map_user_iov->bio_map_user_iov->put_page->folio_put->folio_put_testzero->put_page_testzero->page_ref_dec_and_test] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_ns_chr_uring_cmd",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4213",
+    "call path": " [nvme_ns_chr_uring_cmd->nvme_ns_uring_cmd->nvme_uring_cmd_io->nvme_alloc_user_request->blk_mq_alloc_request->blk_queue_exit->percpu_ref_put.122->percpu_ref_put_many.123->rcu_read_unlock.117->__rcu_read_unlock->rcu_read_unlock_special->rcu_preempt_deferred_qs_irqrestore->rcu_report_exp_rdp->rcu_report_exp_cpu_mult->__rcu_report_exp_rnp->swake_up_one->swake_up_locked->wake_up_process->try_to_wake_up] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_ns_chr_uring_cmd",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-mq.h#L227",
+    "call path": " [nvme_ns_chr_uring_cmd->nvme_ns_uring_cmd->nvme_uring_cmd_io->nvme_alloc_user_request->blk_mq_alloc_request->__blk_mq_alloc_requests->msleep->schedule_timeout_uninterruptible->schedule_timeout->schedule->sched_submit_work->blk_flush_plug.2108->__blk_flush_plug->blk_mq_flush_plug_list->blk_mq_plug_issue_direct->blk_mq_request_issue_directly->__blk_mq_try_issue_directly->blk_mq_get_driver_tag->__blk_mq_get_driver_tag->__blk_mq_inc_active_requests] ",
+    "num condition checks": 1,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-mq.h#L226 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_ns_chr_uring_cmd",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-mq.h#L229",
+    "call path": " [nvme_ns_chr_uring_cmd->nvme_ns_uring_cmd->nvme_uring_cmd_io->nvme_alloc_user_request->blk_mq_alloc_request->__blk_mq_alloc_requests->msleep->schedule_timeout_uninterruptible->schedule_timeout->schedule->sched_submit_work->blk_flush_plug.2108->__blk_flush_plug->blk_mq_flush_plug_list->blk_mq_plug_issue_direct->blk_mq_request_issue_directly->__blk_mq_try_issue_directly->blk_mq_get_driver_tag->__blk_mq_get_driver_tag->__blk_mq_inc_active_requests] ",
+    "num condition checks": 1,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-mq.h#L226 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_ns_chr_uring_cmd",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L1225",
+    "call path": " [nvme_ns_chr_uring_cmd->nvme_ns_uring_cmd->nvme_uring_cmd_io->nvme_alloc_user_request->blk_mq_alloc_request->__blk_mq_alloc_requests->msleep->schedule_timeout_uninterruptible->schedule_timeout->schedule->sched_submit_work->blk_flush_plug.2108->__blk_flush_plug->blk_mq_flush_plug_list->blk_mq_plug_issue_direct->blk_mq_request_bypass_insert->blk_mq_run_hw_queue->__blk_mq_delay_run_hw_queue->kblockd_mod_delayed_work_on->mod_delayed_work_on->try_to_grab_pending->pwq_dec_nr_in_flight] ",
+    "num condition checks": 2,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L1211 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L1215 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_ns_chr_uring_cmd",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3693",
+    "call path": " [nvme_ns_chr_uring_cmd->nvme_ns_uring_cmd->nvme_uring_cmd_io->nvme_alloc_user_request->blk_mq_alloc_request->blk_queue_exit->percpu_ref_put.122->percpu_ref_put_many.123->rcu_read_unlock.117->__rcu_read_unlock->rcu_read_unlock_special->rcu_preempt_deferred_qs_irqrestore->rcu_report_exp_rdp->rcu_report_exp_cpu_mult->__rcu_report_exp_rnp->swake_up_one->swake_up_locked->wake_up_process->try_to_wake_up->ttwu_queue->ttwu_do_activate] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_ns_chr_uring_cmd",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task_stack.h#L68",
+    "call path": " [nvme_ns_chr_uring_cmd->nvme_ns_uring_cmd->nvme_uring_cmd_io->nvme_alloc_user_request->blk_mq_alloc_request->__blk_mq_alloc_requests->msleep->schedule_timeout_uninterruptible->schedule_timeout->schedule->__schedule->schedule_debug->__schedule_bug->add_taint->panic->panic_print_sys_info->show_state->show_state_filter->sched_show_task->try_get_task_stack] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_ns_chr_uring_cmd",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L245",
+    "call path": " [nvme_ns_chr_uring_cmd->nvme_ns_uring_cmd->nvme_uring_cmd_io->nvme_alloc_user_request->blk_mq_alloc_request->__blk_mq_alloc_requests->msleep->schedule_timeout_uninterruptible->schedule_timeout->schedule->__schedule->schedule_debug->__schedule_bug->add_taint->panic->panic_print_sys_info->show_state->show_state_filter->sched_show_task->try_get_task_stack->refcount_inc_not_zero.42] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_sysfs_delete",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/kref.h#L64",
+    "call path": " [nvme_sysfs_delete->nvme_delete_ctrl_sync->nvme_do_delete_ctrl->nvme_remove_namespaces->nvme_ns_remove->nvme_put_ns->kref_put] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_sysfs_delete",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6511",
+    "call path": " [nvme_sysfs_delete->nvme_delete_ctrl_sync->nvme_change_ctrl_state->nvme_stop_failfast_work->cancel_delayed_work_sync->__cancel_work_timer->schedule->__schedule] ",
+    "num condition checks": 1,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6510 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_sysfs_delete",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L1225",
+    "call path": " [nvme_sysfs_delete->nvme_delete_ctrl_sync->nvme_change_ctrl_state->nvme_stop_failfast_work->cancel_delayed_work_sync->__cancel_work_timer->schedule->sched_submit_work->blk_flush_plug.2108->__blk_flush_plug->blk_mq_flush_plug_list->blk_mq_plug_issue_direct->blk_mq_request_bypass_insert->blk_mq_run_hw_queue->__blk_mq_delay_run_hw_queue->kblockd_mod_delayed_work_on->mod_delayed_work_on->try_to_grab_pending->pwq_dec_nr_in_flight] ",
+    "num condition checks": 2,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L1211 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L1215 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_sysfs_delete",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task.h#L110",
+    "call path": " [nvme_sysfs_delete->nvme_delete_ctrl_sync->nvme_change_ctrl_state->nvme_kick_requeue_lists->up_read->__up_read->rwsem_wake->rwsem_mark_wake->get_task_struct] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_sysfs_delete",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task.h#L119",
+    "call path": " [nvme_sysfs_delete->nvme_delete_ctrl_sync->nvme_change_ctrl_state->nvme_kick_requeue_lists->up_read->__up_read->rwsem_wake->rwsem_mark_wake->wake_q_add_safe->put_task_struct.1986] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_sysfs_delete",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L333",
+    "call path": " [nvme_sysfs_delete->nvme_delete_ctrl_sync->nvme_do_delete_ctrl->nvme_remove_namespaces->nvme_ns_remove->nvme_put_ns->kref_put->refcount_dec_and_test] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_sysfs_delete",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L37",
+    "call path": " [nvme_sysfs_delete->nvme_delete_ctrl_sync->nvme_change_ctrl_state->nvme_stop_failfast_work->cancel_delayed_work_sync->__cancel_work_timer->schedule->__schedule->mmgrab.2087] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_sysfs_delete",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task.h#L110",
+    "call path": " [nvme_sysfs_delete->nvme_delete_ctrl_sync->nvme_change_ctrl_state->nvme_kick_requeue_lists->up_read->__up_read->rwsem_wake->rwsem_mark_wake->wake_q_add->get_task_struct.1983] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_sysfs_delete",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L267",
+    "call path": " [nvme_sysfs_delete->nvme_delete_ctrl_sync->nvme_change_ctrl_state->nvme_kick_requeue_lists->up_read->__up_read->rwsem_wake->rwsem_mark_wake->get_task_struct->refcount_inc.1255] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_sysfs_delete",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4213",
+    "call path": " [nvme_sysfs_delete->nvme_delete_ctrl_sync->nvme_change_ctrl_state->nvme_stop_failfast_work->cancel_delayed_work_sync->__cancel_work_timer->schedule->sched_submit_work->wq_worker_sleeping->wake_up_worker->wake_up_process->try_to_wake_up] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_sysfs_delete",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L333",
+    "call path": " [nvme_sysfs_delete->nvme_delete_ctrl_sync->nvme_change_ctrl_state->nvme_kick_requeue_lists->up_read->__up_read->rwsem_wake->rwsem_mark_wake->wake_q_add_safe->put_task_struct.1986->refcount_dec_and_test.1987] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_sysfs_delete",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L2774",
+    "call path": " [nvme_sysfs_delete->nvme_delete_ctrl_sync->nvme_do_delete_ctrl->nvme_remove_namespaces->nvme_ns_remove->del_gendisk->blk_flush_integrity->__flush_workqueue->flush_workqueue_prep_pwqs] ",
+    "num condition checks": 1,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L2772 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_sysfs_delete",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L2787",
+    "call path": " [nvme_sysfs_delete->nvme_delete_ctrl_sync->nvme_do_delete_ctrl->nvme_remove_namespaces->nvme_ns_remove->del_gendisk->blk_flush_integrity->__flush_workqueue->flush_workqueue_prep_pwqs] ",
+    "num condition checks": 1,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L2787 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_sysfs_delete",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L267",
+    "call path": " [nvme_sysfs_delete->nvme_delete_ctrl_sync->nvme_change_ctrl_state->nvme_kick_requeue_lists->up_read->__up_read->rwsem_wake->rwsem_mark_wake->wake_q_add->get_task_struct.1983->refcount_inc.2008] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_sysfs_delete",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/skbuff.h#L1868",
+    "call path": " [nvme_sysfs_delete->nvme_delete_ctrl_sync->nvme_change_ctrl_state->nvme_kick_requeue_lists->disk_uevent->kobject_uevent->kobject_uevent_env->kobject_uevent_net_broadcast->uevent_net_broadcast_untagged->skb_get] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_sysfs_delete",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L49",
+    "call path": " [nvme_sysfs_delete->nvme_delete_ctrl_sync->nvme_change_ctrl_state->nvme_stop_failfast_work->cancel_delayed_work_sync->__cancel_work_timer->schedule->__schedule->finish_task_switch->mmdrop_sched->mmdrop] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_sysfs_delete",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3693",
+    "call path": " [nvme_sysfs_delete->nvme_delete_ctrl_sync->nvme_change_ctrl_state->nvme_stop_failfast_work->cancel_delayed_work_sync->__cancel_work_timer->schedule->sched_submit_work->wq_worker_sleeping->wake_up_worker->wake_up_process->try_to_wake_up->ttwu_queue->ttwu_do_activate] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_sysfs_delete",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L267",
+    "call path": " [nvme_sysfs_delete->nvme_delete_ctrl_sync->nvme_change_ctrl_state->nvme_kick_requeue_lists->disk_uevent->kobject_uevent->kobject_uevent_env->kobject_uevent_net_broadcast->uevent_net_broadcast_untagged->skb_get->refcount_inc.2604] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_sysfs_delete",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/page_ref.h#L210",
+    "call path": " [nvme_sysfs_delete->nvme_delete_ctrl_sync->nvme_change_ctrl_state->nvme_kick_requeue_lists->disk_uevent->kobject_uevent->kobject_uevent_env->kfree->free_large_kmalloc->__free_pages->put_page_testzero.2851->page_ref_dec_and_test.2852] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_sysfs_delete",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk.h#L492",
+    "call path": " [nvme_sysfs_delete->nvme_delete_ctrl_sync->nvme_change_ctrl_state->nvme_stop_failfast_work->cancel_delayed_work_sync->__cancel_work_timer->schedule->sched_submit_work->blk_flush_plug.2108->__blk_flush_plug->blk_mq_flush_plug_list->blk_mq_plug_issue_direct->blk_mq_end_request->__blk_mq_end_request->blk_mq_free_request->req_ref_put_and_test] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_sysfs_delete",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task_stack.h#L68",
+    "call path": " [nvme_sysfs_delete->nvme_delete_ctrl_sync->nvme_change_ctrl_state->nvme_stop_failfast_work->cancel_delayed_work_sync->__cancel_work_timer->schedule->__schedule->schedule_debug->__schedule_bug->add_taint->panic->panic_print_sys_info->show_state->show_state_filter->sched_show_task->try_get_task_stack] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_sysfs_delete",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-mq.h#L227",
+    "call path": " [nvme_sysfs_delete->nvme_delete_ctrl_sync->nvme_change_ctrl_state->nvme_stop_failfast_work->cancel_delayed_work_sync->__cancel_work_timer->schedule->sched_submit_work->blk_flush_plug.2108->__blk_flush_plug->blk_mq_flush_plug_list->blk_mq_plug_issue_direct->blk_mq_request_issue_directly->__blk_mq_try_issue_directly->blk_mq_get_driver_tag->__blk_mq_get_driver_tag->__blk_mq_inc_active_requests] ",
+    "num condition checks": 1,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-mq.h#L226 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_sysfs_delete",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-mq.h#L229",
+    "call path": " [nvme_sysfs_delete->nvme_delete_ctrl_sync->nvme_change_ctrl_state->nvme_stop_failfast_work->cancel_delayed_work_sync->__cancel_work_timer->schedule->sched_submit_work->blk_flush_plug.2108->__blk_flush_plug->blk_mq_flush_plug_list->blk_mq_plug_issue_direct->blk_mq_request_issue_directly->__blk_mq_try_issue_directly->blk_mq_get_driver_tag->__blk_mq_get_driver_tag->__blk_mq_inc_active_requests] ",
+    "num condition checks": 1,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-mq.h#L226 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_sysfs_delete",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L245",
+    "call path": " [nvme_sysfs_delete->nvme_delete_ctrl_sync->nvme_change_ctrl_state->nvme_stop_failfast_work->cancel_delayed_work_sync->__cancel_work_timer->schedule->__schedule->schedule_debug->__schedule_bug->add_taint->panic->panic_print_sys_info->show_state->show_state_filter->sched_show_task->try_get_task_stack->refcount_inc_not_zero.42] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_sysfs_rescan",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4213",
+    "call path": " [nvme_sysfs_rescan->nvme_queue_scan->queue_work->queue_work_on->__queue_work->insert_work->wake_up_worker->wake_up_process->try_to_wake_up] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_sysfs_rescan",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3693",
+    "call path": " [nvme_sysfs_rescan->nvme_queue_scan->queue_work->queue_work_on->__queue_work->insert_work->wake_up_worker->wake_up_process->try_to_wake_up->ttwu_queue->ttwu_do_activate] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_sysfs_reset",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6511",
+    "call path": " [nvme_sysfs_reset->nvme_reset_ctrl_sync->nvme_reset_ctrl->nvme_change_ctrl_state->nvme_stop_failfast_work->cancel_delayed_work_sync->__cancel_work_timer->schedule->__schedule] ",
+    "num condition checks": 1,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6510 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_sysfs_reset",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L1225",
+    "call path": " [nvme_sysfs_reset->nvme_reset_ctrl_sync->nvme_reset_ctrl->nvme_change_ctrl_state->nvme_stop_failfast_work->cancel_delayed_work_sync->__cancel_work_timer->schedule->sched_submit_work->blk_flush_plug.2108->__blk_flush_plug->blk_mq_flush_plug_list->blk_mq_plug_issue_direct->blk_mq_request_bypass_insert->blk_mq_run_hw_queue->__blk_mq_delay_run_hw_queue->kblockd_mod_delayed_work_on->mod_delayed_work_on->try_to_grab_pending->pwq_dec_nr_in_flight] ",
+    "num condition checks": 2,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L1211 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L1215 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_sysfs_reset",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task.h#L110",
+    "call path": " [nvme_sysfs_reset->nvme_reset_ctrl_sync->nvme_reset_ctrl->nvme_change_ctrl_state->nvme_kick_requeue_lists->up_read->__up_read->rwsem_wake->rwsem_mark_wake->get_task_struct] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_sysfs_reset",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task.h#L119",
+    "call path": " [nvme_sysfs_reset->nvme_reset_ctrl_sync->nvme_reset_ctrl->nvme_change_ctrl_state->nvme_kick_requeue_lists->up_read->__up_read->rwsem_wake->rwsem_mark_wake->wake_q_add_safe->put_task_struct.1986] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_sysfs_reset",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4213",
+    "call path": " [nvme_sysfs_reset->nvme_reset_ctrl_sync->flush_work->__flush_work->start_flush_work->rcu_read_unlock.1094->__rcu_read_unlock->rcu_read_unlock_special->rcu_preempt_deferred_qs_irqrestore->rcu_report_exp_rdp->rcu_report_exp_cpu_mult->__rcu_report_exp_rnp->swake_up_one->swake_up_locked->wake_up_process->try_to_wake_up] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_sysfs_reset",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L37",
+    "call path": " [nvme_sysfs_reset->nvme_reset_ctrl_sync->nvme_reset_ctrl->nvme_change_ctrl_state->nvme_stop_failfast_work->cancel_delayed_work_sync->__cancel_work_timer->schedule->__schedule->mmgrab.2087] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_sysfs_reset",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task.h#L110",
+    "call path": " [nvme_sysfs_reset->nvme_reset_ctrl_sync->nvme_reset_ctrl->nvme_change_ctrl_state->nvme_kick_requeue_lists->up_read->__up_read->rwsem_wake->rwsem_mark_wake->wake_q_add->get_task_struct.1983] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_sysfs_reset",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L267",
+    "call path": " [nvme_sysfs_reset->nvme_reset_ctrl_sync->nvme_reset_ctrl->nvme_change_ctrl_state->nvme_kick_requeue_lists->up_read->__up_read->rwsem_wake->rwsem_mark_wake->get_task_struct->refcount_inc.1255] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_sysfs_reset",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L333",
+    "call path": " [nvme_sysfs_reset->nvme_reset_ctrl_sync->nvme_reset_ctrl->nvme_change_ctrl_state->nvme_kick_requeue_lists->up_read->__up_read->rwsem_wake->rwsem_mark_wake->wake_q_add_safe->put_task_struct.1986->refcount_dec_and_test.1987] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_sysfs_reset",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L267",
+    "call path": " [nvme_sysfs_reset->nvme_reset_ctrl_sync->nvme_reset_ctrl->nvme_change_ctrl_state->nvme_kick_requeue_lists->up_read->__up_read->rwsem_wake->rwsem_mark_wake->wake_q_add->get_task_struct.1983->refcount_inc.2008] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_sysfs_reset",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/skbuff.h#L1868",
+    "call path": " [nvme_sysfs_reset->nvme_reset_ctrl_sync->nvme_reset_ctrl->nvme_change_ctrl_state->nvme_kick_requeue_lists->disk_uevent->kobject_uevent->kobject_uevent_env->kobject_uevent_net_broadcast->uevent_net_broadcast_untagged->skb_get] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_sysfs_reset",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3693",
+    "call path": " [nvme_sysfs_reset->nvme_reset_ctrl_sync->flush_work->__flush_work->start_flush_work->rcu_read_unlock.1094->__rcu_read_unlock->rcu_read_unlock_special->rcu_preempt_deferred_qs_irqrestore->rcu_report_exp_rdp->rcu_report_exp_cpu_mult->__rcu_report_exp_rnp->swake_up_one->swake_up_locked->wake_up_process->try_to_wake_up->ttwu_queue->ttwu_do_activate] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_sysfs_reset",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L49",
+    "call path": " [nvme_sysfs_reset->nvme_reset_ctrl_sync->nvme_reset_ctrl->nvme_change_ctrl_state->nvme_stop_failfast_work->cancel_delayed_work_sync->__cancel_work_timer->schedule->__schedule->finish_task_switch->mmdrop_sched->mmdrop] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_sysfs_reset",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L267",
+    "call path": " [nvme_sysfs_reset->nvme_reset_ctrl_sync->nvme_reset_ctrl->nvme_change_ctrl_state->nvme_kick_requeue_lists->disk_uevent->kobject_uevent->kobject_uevent_env->kobject_uevent_net_broadcast->uevent_net_broadcast_untagged->skb_get->refcount_inc.2604] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_sysfs_reset",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/page_ref.h#L210",
+    "call path": " [nvme_sysfs_reset->nvme_reset_ctrl_sync->nvme_reset_ctrl->nvme_change_ctrl_state->nvme_kick_requeue_lists->disk_uevent->kobject_uevent->kobject_uevent_env->kfree->free_large_kmalloc->__free_pages->put_page_testzero.2851->page_ref_dec_and_test.2852] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_sysfs_reset",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk.h#L492",
+    "call path": " [nvme_sysfs_reset->nvme_reset_ctrl_sync->nvme_reset_ctrl->nvme_change_ctrl_state->nvme_stop_failfast_work->cancel_delayed_work_sync->__cancel_work_timer->schedule->sched_submit_work->blk_flush_plug.2108->__blk_flush_plug->blk_mq_flush_plug_list->blk_mq_plug_issue_direct->blk_mq_end_request->__blk_mq_end_request->blk_mq_free_request->req_ref_put_and_test] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_sysfs_reset",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-mq.h#L227",
+    "call path": " [nvme_sysfs_reset->nvme_reset_ctrl_sync->nvme_reset_ctrl->nvme_change_ctrl_state->nvme_stop_failfast_work->cancel_delayed_work_sync->__cancel_work_timer->schedule->sched_submit_work->blk_flush_plug.2108->__blk_flush_plug->blk_mq_flush_plug_list->blk_mq_plug_issue_direct->blk_mq_request_issue_directly->__blk_mq_try_issue_directly->blk_mq_get_driver_tag->__blk_mq_get_driver_tag->__blk_mq_inc_active_requests] ",
+    "num condition checks": 1,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-mq.h#L226 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_sysfs_reset",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-mq.h#L229",
+    "call path": " [nvme_sysfs_reset->nvme_reset_ctrl_sync->nvme_reset_ctrl->nvme_change_ctrl_state->nvme_stop_failfast_work->cancel_delayed_work_sync->__cancel_work_timer->schedule->sched_submit_work->blk_flush_plug.2108->__blk_flush_plug->blk_mq_flush_plug_list->blk_mq_plug_issue_direct->blk_mq_request_issue_directly->__blk_mq_try_issue_directly->blk_mq_get_driver_tag->__blk_mq_get_driver_tag->__blk_mq_inc_active_requests] ",
+    "num condition checks": 1,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-mq.h#L226 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_sysfs_reset",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task_stack.h#L68",
+    "call path": " [nvme_sysfs_reset->nvme_reset_ctrl_sync->nvme_reset_ctrl->nvme_change_ctrl_state->nvme_stop_failfast_work->cancel_delayed_work_sync->__cancel_work_timer->schedule->__schedule->schedule_debug->__schedule_bug->add_taint->panic->panic_print_sys_info->show_state->show_state_filter->sched_show_task->try_get_task_stack] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_sysfs_reset",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L245",
+    "call path": " [nvme_sysfs_reset->nvme_reset_ctrl_sync->nvme_reset_ctrl->nvme_change_ctrl_state->nvme_stop_failfast_work->cancel_delayed_work_sync->__cancel_work_timer->schedule->__schedule->schedule_debug->__schedule_bug->add_taint->panic->panic_print_sys_info->show_state->show_state_filter->sched_show_task->try_get_task_stack->refcount_inc_not_zero.42] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_dev_uring_cmd",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk.h#L492",
+    "call path": " [nvme_dev_uring_cmd->nvme_uring_cmd_io->nvme_alloc_user_request->blk_mq_alloc_request->__blk_mq_alloc_requests->msleep->schedule_timeout_uninterruptible->schedule_timeout->schedule->sched_submit_work->blk_flush_plug.2108->__blk_flush_plug->blk_mq_flush_plug_list->blk_mq_plug_issue_direct->blk_mq_end_request->__blk_mq_end_request->blk_mq_free_request->req_ref_put_and_test] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_dev_uring_cmd",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6511",
+    "call path": " [nvme_dev_uring_cmd->nvme_uring_cmd_io->nvme_alloc_user_request->blk_mq_alloc_request->__blk_mq_alloc_requests->msleep->schedule_timeout_uninterruptible->schedule_timeout->schedule->__schedule] ",
+    "num condition checks": 1,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6510 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_dev_uring_cmd",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L37",
+    "call path": " [nvme_dev_uring_cmd->nvme_uring_cmd_io->nvme_alloc_user_request->blk_mq_alloc_request->__blk_mq_alloc_requests->msleep->schedule_timeout_uninterruptible->schedule_timeout->schedule->__schedule->mmgrab.2087] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_dev_uring_cmd",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/page_ref.h#L210",
+    "call path": " [nvme_dev_uring_cmd->nvme_uring_cmd_io->nvme_map_user_request->blk_rq_unmap_user->bio_uncopy_user->kfree->free_large_kmalloc->__free_pages->put_page_testzero.2851->page_ref_dec_and_test.2852] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_dev_uring_cmd",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L49",
+    "call path": " [nvme_dev_uring_cmd->nvme_uring_cmd_io->nvme_alloc_user_request->blk_mq_alloc_request->__blk_mq_alloc_requests->msleep->schedule_timeout_uninterruptible->schedule_timeout->schedule->__schedule->finish_task_switch->mmdrop_sched->mmdrop] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_dev_uring_cmd",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/page_ref.h#L210",
+    "call path": " [nvme_dev_uring_cmd->nvme_uring_cmd_io->nvme_map_user_request->blk_rq_map_user_io->blk_rq_map_user_iov->bio_map_user_iov->put_page->folio_put->folio_put_testzero->put_page_testzero->page_ref_dec_and_test] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_dev_uring_cmd",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4213",
+    "call path": " [nvme_dev_uring_cmd->nvme_uring_cmd_io->nvme_alloc_user_request->blk_mq_alloc_request->blk_queue_exit->percpu_ref_put.122->percpu_ref_put_many.123->rcu_read_unlock.117->__rcu_read_unlock->rcu_read_unlock_special->rcu_preempt_deferred_qs_irqrestore->rcu_report_exp_rdp->rcu_report_exp_cpu_mult->__rcu_report_exp_rnp->swake_up_one->swake_up_locked->wake_up_process->try_to_wake_up] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_dev_uring_cmd",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-mq.h#L227",
+    "call path": " [nvme_dev_uring_cmd->nvme_uring_cmd_io->nvme_alloc_user_request->blk_mq_alloc_request->__blk_mq_alloc_requests->msleep->schedule_timeout_uninterruptible->schedule_timeout->schedule->sched_submit_work->blk_flush_plug.2108->__blk_flush_plug->blk_mq_flush_plug_list->blk_mq_plug_issue_direct->blk_mq_request_issue_directly->__blk_mq_try_issue_directly->blk_mq_get_driver_tag->__blk_mq_get_driver_tag->__blk_mq_inc_active_requests] ",
+    "num condition checks": 1,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-mq.h#L226 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_dev_uring_cmd",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-mq.h#L229",
+    "call path": " [nvme_dev_uring_cmd->nvme_uring_cmd_io->nvme_alloc_user_request->blk_mq_alloc_request->__blk_mq_alloc_requests->msleep->schedule_timeout_uninterruptible->schedule_timeout->schedule->sched_submit_work->blk_flush_plug.2108->__blk_flush_plug->blk_mq_flush_plug_list->blk_mq_plug_issue_direct->blk_mq_request_issue_directly->__blk_mq_try_issue_directly->blk_mq_get_driver_tag->__blk_mq_get_driver_tag->__blk_mq_inc_active_requests] ",
+    "num condition checks": 1,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-mq.h#L226 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_dev_uring_cmd",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L1225",
+    "call path": " [nvme_dev_uring_cmd->nvme_uring_cmd_io->nvme_alloc_user_request->blk_mq_alloc_request->__blk_mq_alloc_requests->msleep->schedule_timeout_uninterruptible->schedule_timeout->schedule->sched_submit_work->blk_flush_plug.2108->__blk_flush_plug->blk_mq_flush_plug_list->blk_mq_plug_issue_direct->blk_mq_request_bypass_insert->blk_mq_run_hw_queue->__blk_mq_delay_run_hw_queue->kblockd_mod_delayed_work_on->mod_delayed_work_on->try_to_grab_pending->pwq_dec_nr_in_flight] ",
+    "num condition checks": 2,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L1211 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L1215 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_dev_uring_cmd",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3693",
+    "call path": " [nvme_dev_uring_cmd->nvme_uring_cmd_io->nvme_alloc_user_request->blk_mq_alloc_request->blk_queue_exit->percpu_ref_put.122->percpu_ref_put_many.123->rcu_read_unlock.117->__rcu_read_unlock->rcu_read_unlock_special->rcu_preempt_deferred_qs_irqrestore->rcu_report_exp_rdp->rcu_report_exp_cpu_mult->__rcu_report_exp_rnp->swake_up_one->swake_up_locked->wake_up_process->try_to_wake_up->ttwu_queue->ttwu_do_activate] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_dev_uring_cmd",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task_stack.h#L68",
+    "call path": " [nvme_dev_uring_cmd->nvme_uring_cmd_io->nvme_alloc_user_request->blk_mq_alloc_request->__blk_mq_alloc_requests->msleep->schedule_timeout_uninterruptible->schedule_timeout->schedule->__schedule->schedule_debug->__schedule_bug->add_taint->panic->panic_print_sys_info->show_state->show_state_filter->sched_show_task->try_get_task_stack] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "nvme_dev_uring_cmd",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L245",
+    "call path": " [nvme_dev_uring_cmd->nvme_uring_cmd_io->nvme_alloc_user_request->blk_mq_alloc_request->__blk_mq_alloc_requests->msleep->schedule_timeout_uninterruptible->schedule_timeout->schedule->__schedule->schedule_debug->__schedule_bug->add_taint->panic->panic_print_sys_info->show_state->show_state_filter->sched_show_task->try_get_task_stack->refcount_inc_not_zero.42] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  }
+]

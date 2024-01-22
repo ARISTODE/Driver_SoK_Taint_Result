@@ -1,0 +1,47 @@
+[
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L582",
+    "Drv func": "msr_read",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/arch/x86/kernel/msr.c#L53"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L468",
+    "Drv func": "msr_read",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/arch/x86/kernel/msr.c#L53"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L759",
+    "Drv func": "msr_read",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/arch/x86/kernel/msr.c#L53"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L756",
+    "Drv func": "msr_read",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/arch/x86/kernel/msr.c#L53"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L582",
+    "Drv func": "msr_write",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/arch/x86/kernel/msr.c#L109"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L468",
+    "Drv func": "msr_write",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/arch/x86/kernel/msr.c#L109"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L759",
+    "Drv func": "msr_write",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/arch/x86/kernel/msr.c#L109"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L756",
+    "Drv func": "msr_write",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/arch/x86/kernel/msr.c#L109"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/char_dev.c#L414",
+    "Drv func": "msr_open",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/arch/x86/kernel/msr.c#L207"
+  }
+]

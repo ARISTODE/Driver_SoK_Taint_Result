@@ -1,0 +1,235 @@
+[
+  {
+    "id": 0,
+    "kernel boundary func name": "__unregister_chrdev",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 2,
+    "call path": "( [3]msr_exit ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/arch/x86/kernel/msr.c#L288 )->__unregister_chrdev ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/char_dev.c#L335 )->kfree ( Unknown Loc ) )( [3]msr_init ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/arch/x86/kernel/msr.c#L258 )->__unregister_chrdev ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/char_dev.c#L335 )->kfree ( Unknown Loc ) )"
+  },
+  {
+    "id": 1,
+    "kernel boundary func name": "__unregister_chrdev",
+    "risky func": "mutex_lock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "call path": "( [4]msr_exit ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/arch/x86/kernel/msr.c#L288 )->__unregister_chrdev ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/char_dev.c#L335 )->__unregister_chrdev_region ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/char_dev.c#L172 )->mutex_lock ( Unknown Loc ) )( [4]msr_init ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/arch/x86/kernel/msr.c#L258 )->__unregister_chrdev ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/char_dev.c#L335 )->__unregister_chrdev_region ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/char_dev.c#L172 )->mutex_lock ( Unknown Loc ) )"
+  },
+  {
+    "id": 2,
+    "kernel boundary func name": "__unregister_chrdev",
+    "risky func": "mutex_unlock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 5,
+    "call path": "( [4]msr_exit ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/arch/x86/kernel/msr.c#L288 )->__unregister_chrdev ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/char_dev.c#L335 )->__unregister_chrdev_region ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/char_dev.c#L172 )->mutex_unlock ( Unknown Loc ) )( [4]msr_init ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/arch/x86/kernel/msr.c#L258 )->__unregister_chrdev ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/char_dev.c#L335 )->__unregister_chrdev_region ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/char_dev.c#L172 )->mutex_unlock ( Unknown Loc ) )"
+  },
+  {
+    "id": 3,
+    "kernel boundary func name": "__unregister_chrdev",
+    "risky func": "kobject_put",
+    "Risky API Class": "refCount",
+    "Is Controlled Path": 1,
+    "No. path cond": 2,
+    "call path": "( [4]msr_exit ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/arch/x86/kernel/msr.c#L288 )->__unregister_chrdev ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/char_dev.c#L335 )->cdev_del ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/char_dev.c#L594 )->kobject_put ( Unknown Loc ) )( [4]msr_init ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/arch/x86/kernel/msr.c#L258 )->__unregister_chrdev ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/char_dev.c#L335 )->cdev_del ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/char_dev.c#L594 )->kobject_put ( Unknown Loc ) )"
+  },
+  {
+    "id": 4,
+    "kernel boundary func name": "__register_chrdev",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 3,
+    "call path": "( [3]msr_init ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/arch/x86/kernel/msr.c#L258 )->__register_chrdev ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/char_dev.c#L268 )->kfree ( Unknown Loc ) )"
+  },
+  {
+    "id": 5,
+    "kernel boundary func name": "__register_chrdev",
+    "risky func": "kobject_put",
+    "Risky API Class": "refCount",
+    "Is Controlled Path": 1,
+    "No. path cond": 3,
+    "call path": "( [3]msr_init ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/arch/x86/kernel/msr.c#L258 )->__register_chrdev ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/char_dev.c#L268 )->kobject_put ( Unknown Loc ) )"
+  },
+  {
+    "id": 6,
+    "kernel boundary func name": "__register_chrdev",
+    "risky func": "mutex_lock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 2,
+    "call path": "( [4]msr_init ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/arch/x86/kernel/msr.c#L258 )->__register_chrdev ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/char_dev.c#L268 )->__unregister_chrdev_region ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/char_dev.c#L172 )->mutex_lock ( Unknown Loc ) )"
+  },
+  {
+    "id": 7,
+    "kernel boundary func name": "__register_chrdev",
+    "risky func": "mutex_unlock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 4,
+    "call path": "( [4]msr_init ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/arch/x86/kernel/msr.c#L258 )->__register_chrdev ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/char_dev.c#L268 )->__unregister_chrdev_region ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/char_dev.c#L172 )->mutex_unlock ( Unknown Loc ) )"
+  },
+  {
+    "id": 8,
+    "kernel boundary func name": "__register_chrdev",
+    "risky func": "kzalloc.357",
+    "Risky API Class": "",
+    "Is Controlled Path": 1,
+    "No. path cond": 1,
+    "call path": "( [4]msr_init ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/arch/x86/kernel/msr.c#L258 )->__register_chrdev ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/char_dev.c#L268 )->__register_chrdev_region ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/char_dev.c#L97 )->kzalloc.357 ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L687 ) )"
+  },
+  {
+    "id": 9,
+    "kernel boundary func name": "__register_chrdev",
+    "risky func": "kobject_get",
+    "Risky API Class": "refCount",
+    "Is Controlled Path": 0,
+    "No. path cond": 5,
+    "call path": "( [4]msr_init ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/arch/x86/kernel/msr.c#L258 )->__register_chrdev ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/char_dev.c#L268 )->cdev_add ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/char_dev.c#L479 )->kobject_get ( Unknown Loc ) )"
+  },
+  {
+    "id": 10,
+    "kernel boundary func name": "device_destroy",
+    "risky func": "kobject_put",
+    "Risky API Class": "refCount",
+    "Is Controlled Path": 1,
+    "No. path cond": 12,
+    "call path": "( [4]msr_device_destroy ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/arch/x86/kernel/msr.c#L247 )->device_destroy ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L4454 )->put_device ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L3768 )->kobject_put ( Unknown Loc ) )"
+  },
+  {
+    "id": 11,
+    "kernel boundary func name": "device_destroy",
+    "risky func": "mutex_lock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 11,
+    "call path": "( [6]msr_device_destroy ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/arch/x86/kernel/msr.c#L247 )->device_destroy ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L4454 )->device_unregister ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L3892 )->device_del ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L3807 )->device_lock ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/device.h#L834 )->mutex_lock ( Unknown Loc ) )"
+  },
+  {
+    "id": 12,
+    "kernel boundary func name": "device_destroy",
+    "risky func": "mutex_unlock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 9,
+    "call path": "( [6]msr_device_destroy ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/arch/x86/kernel/msr.c#L247 )->device_destroy ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L4454 )->device_unregister ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L3892 )->device_del ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L3807 )->device_unlock ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/device.h#L849 )->mutex_unlock ( Unknown Loc ) )"
+  },
+  {
+    "id": 13,
+    "kernel boundary func name": "device_destroy",
+    "risky func": "kobject_get",
+    "Risky API Class": "refCount",
+    "Is Controlled Path": 1,
+    "No. path cond": 5,
+    "call path": "( [6]msr_device_destroy ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/arch/x86/kernel/msr.c#L247 )->device_destroy ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L4454 )->class_find_device_by_devt ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/device/class.h#L164 )->class_find_device ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/class.c#L404 )->get_device ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L3758 )->kobject_get ( Unknown Loc ) )"
+  },
+  {
+    "id": 14,
+    "kernel boundary func name": "device_destroy",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 10,
+    "call path": "( [6]msr_device_destroy ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/arch/x86/kernel/msr.c#L247 )->device_destroy ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L4454 )->device_unregister ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L3892 )->device_del ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L3807 )->device_remove_attrs ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L2927 )->kfree ( Unknown Loc ) )"
+  },
+  {
+    "id": 15,
+    "kernel boundary func name": "device_create",
+    "risky func": "kzalloc.182",
+    "Risky API Class": "",
+    "Is Controlled Path": 1,
+    "No. path cond": 14,
+    "call path": "( [4]msr_device_create ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/arch/x86/kernel/msr.c#L238 )->device_create ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L4388 )->device_create_groups_vargs ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L4324 )->kzalloc.182 ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L687 ) )"
+  },
+  {
+    "id": 16,
+    "kernel boundary func name": "device_create",
+    "risky func": "kobject_put",
+    "Risky API Class": "refCount",
+    "Is Controlled Path": 1,
+    "No. path cond": 14,
+    "call path": "( [5]msr_device_create ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/arch/x86/kernel/msr.c#L238 )->device_create ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L4388 )->device_create_groups_vargs ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L4324 )->put_device ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L3768 )->kobject_put ( Unknown Loc ) )"
+  },
+  {
+    "id": 17,
+    "kernel boundary func name": "device_create",
+    "risky func": "mutex_lock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 24,
+    "call path": "( [5]msr_device_create ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/arch/x86/kernel/msr.c#L238 )->device_create ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L4388 )->device_create_groups_vargs ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L4324 )->device_add ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L3545 )->mutex_lock ( Unknown Loc ) )"
+  },
+  {
+    "id": 18,
+    "kernel boundary func name": "device_create",
+    "risky func": "mutex_unlock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 14,
+    "call path": "( [5]msr_device_create ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/arch/x86/kernel/msr.c#L238 )->device_create ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L4388 )->device_create_groups_vargs ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L4324 )->device_add ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L3545 )->mutex_unlock ( Unknown Loc ) )"
+  },
+  {
+    "id": 19,
+    "kernel boundary func name": "device_create",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 28,
+    "call path": "( [5]msr_device_create ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/arch/x86/kernel/msr.c#L238 )->device_create ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L4388 )->device_create_groups_vargs ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L4324 )->device_add ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L3545 )->kfree ( Unknown Loc ) )"
+  },
+  {
+    "id": 20,
+    "kernel boundary func name": "device_create",
+    "risky func": "kobject_get",
+    "Risky API Class": "refCount",
+    "Is Controlled Path": 1,
+    "No. path cond": 50,
+    "call path": "( [6]msr_device_create ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/arch/x86/kernel/msr.c#L238 )->device_create ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L4388 )->device_create_groups_vargs ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L4324 )->device_add ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L3545 )->get_device ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L3758 )->kobject_get ( Unknown Loc ) )"
+  },
+  {
+    "id": 21,
+    "kernel boundary func name": "device_create",
+    "risky func": "kref_get",
+    "Risky API Class": "refCount",
+    "Is Controlled Path": 0,
+    "No. path cond": 55,
+    "call path": "( [9]msr_device_create ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/arch/x86/kernel/msr.c#L238 )->device_create ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L4388 )->device_create_groups_vargs ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L4324 )->device_add ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L3545 )->fw_devlink_link_device ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L2233 )->__fw_devlink_link_to_consumers ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L2132 )->fw_devlink_create_devlink ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L2023 )->device_link_add ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L768 )->kref_get ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/kref.h#L43 ) )"
+  },
+  {
+    "id": 22,
+    "kernel boundary func name": "__class_create",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 2,
+    "call path": "( [3]msr_init ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/arch/x86/kernel/msr.c#L258 )->__class_create ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/class.c#L231 )->kfree ( Unknown Loc ) )"
+  },
+  {
+    "id": 23,
+    "kernel boundary func name": "__class_create",
+    "risky func": "kzalloc",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 0,
+    "No. path cond": 2,
+    "call path": "( [4]msr_init ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/arch/x86/kernel/msr.c#L258 )->__class_create ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/class.c#L231 )->__class_register ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/class.c#L153 )->kzalloc ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L687 ) )"
+  },
+  {
+    "id": 24,
+    "kernel boundary func name": "__class_create",
+    "risky func": "kobject_get",
+    "Risky API Class": "refCount",
+    "Is Controlled Path": 1,
+    "No. path cond": 6,
+    "call path": "( [6]msr_init ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/arch/x86/kernel/msr.c#L258 )->__class_create ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/class.c#L231 )->__class_register ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/class.c#L153 )->class_get ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/class.c#L108 )->kset_get ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/kobject.h#L191 )->kobject_get ( Unknown Loc ) )"
+  },
+  {
+    "id": 25,
+    "kernel boundary func name": "__class_create",
+    "risky func": "kobject_put",
+    "Risky API Class": "refCount",
+    "Is Controlled Path": 1,
+    "No. path cond": 5,
+    "call path": "( [6]msr_init ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/arch/x86/kernel/msr.c#L258 )->__class_create ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/class.c#L231 )->__class_register ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/class.c#L153 )->class_put ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/class.c#L115 )->kset_put ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/kobject.h#L196 )->kobject_put ( Unknown Loc ) )"
+  }
+]

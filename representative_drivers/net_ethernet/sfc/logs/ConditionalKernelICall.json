@@ -1,0 +1,2920 @@
+[
+  {
+    "No. entry": 583
+  },
+  {
+    "Drv func": "efx_pm_resume",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L1251 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L1254"
+  },
+  {
+    "Drv func": "efx_probe_interrupts",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L258 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L297 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L305"
+  },
+  {
+    "Drv func": "efx_fini_io",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L1157 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L1158"
+  },
+  {
+    "Drv func": "efx_pci_shutdown",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L1185 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L1189"
+  },
+  {
+    "Drv func": "efx_fini_io",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L1150 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L1151"
+  },
+  {
+    "Drv func": "efx_init_io",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L1085 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L1090"
+  },
+  {
+    "Drv func": "ef100_remap_bar",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L67 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L73"
+  },
+  {
+    "Drv func": "ef100_check_design_params",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_nic.c#L960 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_nic.c#L960"
+  },
+  {
+    "Drv func": "ef100_probe_main",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_nic.c#L1081 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_nic.c#L1081"
+  },
+  {
+    "Drv func": "efx_pci_remove",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L888 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L888"
+  },
+  {
+    "Drv func": "efx_mcdi_drv_attach",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L1472 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L1472"
+  },
+  {
+    "Drv func": "efx_reset",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L864 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L865"
+  },
+  {
+    "Drv func": "efx_ptp_set_ts_config",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1905 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1905"
+  },
+  {
+    "Drv func": "efx_do_xdp",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx.c#L294 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx.c#L294 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx.c#L294 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx.c#L294"
+  },
+  {
+    "Drv func": "efx_init_module",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L1316 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L1320 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L1323"
+  },
+  {
+    "Drv func": "efx_wanted_parallelism",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L98 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L98"
+  },
+  {
+    "Drv func": "efx_set_xdp_channels",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L809 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L809"
+  },
+  {
+    "Drv func": "efx_remove_eventq",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L500 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L500"
+  },
+  {
+    "Drv func": "efx_fini_port",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L162 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L162"
+  },
+  {
+    "Drv func": "efx_change_mtu",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L304 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L304"
+  },
+  {
+    "Drv func": "efx_set_xdp_tx_queue",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L774 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L774"
+  },
+  {
+    "Drv func": "efx_mcdi_rx_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_functions.c#L311 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_functions.c#L311"
+  },
+  {
+    "Drv func": "efx_ethtool_set_link_ksettings",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ethtool_common.c#L631 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ethtool_common.c#L631"
+  },
+  {
+    "Drv func": "efx_remove_port",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L175 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L175"
+  },
+  {
+    "Drv func": "efx_mcdi_alloc_vis",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_functions.c#L53 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_functions.c#L53"
+  },
+  {
+    "Drv func": "efx_probe_eventq",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L429 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L429"
+  },
+  {
+    "Drv func": "efx_ef10_dimension_resources",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L1176 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L1176"
+  },
+  {
+    "Drv func": "efx_test_interrupts",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/selftest.c#L138 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/selftest.c#L138"
+  },
+  {
+    "Drv func": "efx_ethtool_set_pauseparam",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ethtool_common.c#L217 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ethtool_common.c#L217"
+  },
+  {
+    "Drv func": "ef100_pci_probe",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100.c#L515 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100.c#L515"
+  },
+  {
+    "Drv func": "efx_attach_reps",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L1423 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L1423"
+  },
+  {
+    "Drv func": "efx_start_eventq",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L465 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L465"
+  },
+  {
+    "Drv func": "efx_fini_tx_queue",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/tx_common.c#L101 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/tx_common.c#L101"
+  },
+  {
+    "Drv func": "efx_init_port",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L141 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L141"
+  },
+  {
+    "Drv func": "_efx_mcdi_rpc",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L845 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L845"
+  },
+  {
+    "Drv func": "efx_mcdi_display_error",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L1090 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L1090"
+  },
+  {
+    "Drv func": "efx_probe_channel",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L645 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L645"
+  },
+  {
+    "Drv func": "_efx_mcdi_rpc",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L828 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L828"
+  },
+  {
+    "Drv func": "efx_ef10_tx_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L2374 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L2374"
+  },
+  {
+    "Drv func": "efx_mcdi_mac_init_stats",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_port_common.c#L1245 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_port_common.c#L1245"
+  },
+  {
+    "Drv func": "efx_test_interrupts",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/selftest.c#L143 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/selftest.c#L143"
+  },
+  {
+    "Drv func": "efx_ef10_get_timer_workarounds",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L254 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L254"
+  },
+  {
+    "Drv func": "efx_start_datapath",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L401 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L401"
+  },
+  {
+    "Drv func": "ef100_pci_parse_ef100_entry",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100.c#L74 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100.c#L74"
+  },
+  {
+    "Drv func": "efx_filter_rfs_work",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L912 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L912"
+  },
+  {
+    "Drv func": "efx_remove_tx_queue",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/tx_common.c#L131 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/tx_common.c#L131"
+  },
+  {
+    "Drv func": "efx_remove_channel",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L747 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L747"
+  },
+  {
+    "Drv func": "efx_mcdi_abandon",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L1296 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L1296"
+  },
+  {
+    "Drv func": "efx_init_tx_queue",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/tx_common.c#L71 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/tx_common.c#L71"
+  },
+  {
+    "Drv func": "efx_detach_reps",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L1404 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L1404"
+  },
+  {
+    "Drv func": "efx_fini_eventq",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L491 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L491"
+  },
+  {
+    "Drv func": "efx_ef10_dimension_resources",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L1173 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L1173"
+  },
+  {
+    "Drv func": "efx_allocate_msix_channels",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L237 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L237"
+  },
+  {
+    "Drv func": "efx_ethtool_set_pauseparam",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ethtool_common.c#L210 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ethtool_common.c#L210"
+  },
+  {
+    "Drv func": "_efx_mcdi_rpc_finish",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L722 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L722"
+  },
+  {
+    "Drv func": "efx_mcdi_window_mode_to_stride",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_functions.c#L411 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_functions.c#L411"
+  },
+  {
+    "Drv func": "ef100_pci_walk_xilinx_table",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100.c#L197 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100.c#L197"
+  },
+  {
+    "Drv func": "efx_mcdi_filter_insert_def",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L884 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L884"
+  },
+  {
+    "Drv func": "efx_mcdi_process_event",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L1341 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L1341"
+  },
+  {
+    "Drv func": "efx_ef10_process_timer_config",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L285 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L285"
+  },
+  {
+    "Drv func": "efx_ef10_link_piobufs",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L802 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L802"
+  },
+  {
+    "Drv func": "efx_pci_probe",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L1111 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L1111"
+  },
+  {
+    "Drv func": "efx_ef10_get_timer_workarounds",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L251 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L251"
+  },
+  {
+    "Drv func": "efx_dissociate",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L250 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L250"
+  },
+  {
+    "Drv func": "efx_remove_nic",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L320 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L320"
+  },
+  {
+    "Drv func": "efx_ef10_dimension_resources",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L1182 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L1182"
+  },
+  {
+    "Drv func": "efx_ef10_dimension_resources",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L1249 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L1249"
+  },
+  {
+    "Drv func": "efx_ptp_get_ts_info",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1889 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1889 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1889 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1891"
+  },
+  {
+    "Drv func": "efx_ef10_handle_rx_abort",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L2702 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L2702"
+  },
+  {
+    "Drv func": "efx_ef10_alloc_piobufs",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L763 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L763"
+  },
+  {
+    "Drv func": "efx_filter_rfs_work",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L903 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L903"
+  },
+  {
+    "Drv func": "efx_mcdi_pf_rx_push_rss_config",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L2263 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L2263"
+  },
+  {
+    "Drv func": "efx_ethtool_self_test",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ethtool_common.c#L173 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ethtool_common.c#L173"
+  },
+  {
+    "Drv func": "efx_test_interrupts",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/selftest.c#L153 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/selftest.c#L153"
+  },
+  {
+    "Drv func": "efx_mcdi_filter_remove_old",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L679 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L679"
+  },
+  {
+    "Drv func": "ef100_ev_process",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_nic.c#L295 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_nic.c#L295"
+  },
+  {
+    "Drv func": "efx_mcdi_process_event",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L1350 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L1350"
+  },
+  {
+    "Drv func": "efx_mcdi_filter_table_down",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L1493 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L1493"
+  },
+  {
+    "Drv func": "efx_ef10_handle_rx_bad_lbits",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L2690 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L2690"
+  },
+  {
+    "Drv func": "efx_mcdi_filter_insert_addr_list",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L777 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L777"
+  },
+  {
+    "Drv func": "efx_ef10_handle_driver_event",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L3058 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L3058"
+  },
+  {
+    "Drv func": "efx_mcdi_nvram_test_all",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L1762 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L1762"
+  },
+  {
+    "Drv func": "efx_ef10_ev_process",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L3158 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L3158"
+  },
+  {
+    "Drv func": "efx_ef10_dimension_resources",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L1179 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L1179"
+  },
+  {
+    "Drv func": "efx_probe_nic",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L270 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L270"
+  },
+  {
+    "Drv func": "efx_probe_all",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L364 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L364"
+  },
+  {
+    "Drv func": "efx_init_eventq",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L450 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L450"
+  },
+  {
+    "Drv func": "efx_init_irq_moderation",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L445 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L445"
+  },
+  {
+    "Drv func": "efx_ptp_pps_worker",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1469 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1474"
+  },
+  {
+    "Drv func": "efx_ef10_handle_tx_event",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L3031 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L3031"
+  },
+  {
+    "Drv func": "efx_xdp_setup_prog",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L621 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L621"
+  },
+  {
+    "Drv func": "ef100_process_design_param",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_nic.c#L883 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_nic.c#L883"
+  },
+  {
+    "Drv func": "ef100_process_design_param",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_nic.c#L943 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_nic.c#L943"
+  },
+  {
+    "Drv func": "efx_ethtool_set_pauseparam",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ethtool_common.c#L235 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ethtool_common.c#L235"
+  },
+  {
+    "Drv func": "ef100_process_design_param",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_nic.c#L869 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_nic.c#L869"
+  },
+  {
+    "Drv func": "efx_mcdi_phy_check_fcntl",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_port_common.c#L396 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_port_common.c#L396"
+  },
+  {
+    "Drv func": "efx_dequeue_buffers",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/tx_common.c#L224 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/tx_common.c#L224"
+  },
+  {
+    "Drv func": "ptp_event_failure",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1929 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1929"
+  },
+  {
+    "Drv func": "efx_probe_interrupts",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L309 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L309"
+  },
+  {
+    "Drv func": "ptp_event_fault",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1988 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1988"
+  },
+  {
+    "Drv func": "ptp_event_rx",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1975 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1975"
+  },
+  {
+    "Drv func": "efx_ptp_event",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L2042 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L2042"
+  },
+  {
+    "Drv func": "efx_ptp_event",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L2017 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L2017"
+  },
+  {
+    "Drv func": "efx_ef100_init_datapath_caps",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_nic.c#L205 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_nic.c#L205"
+  },
+  {
+    "Drv func": "ef100_get_warm_boot_count",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_nic.c#L56 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_nic.c#L56"
+  },
+  {
+    "Drv func": "efx_mcdi_wol_filter_set",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L1979 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L1979"
+  },
+  {
+    "Drv func": "efx_mcdi_process_event",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L1384 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L1384"
+  },
+  {
+    "Drv func": "efx_associate",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L235 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L235"
+  },
+  {
+    "Drv func": "efx_mcdi_process_event",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L1318 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L1318"
+  },
+  {
+    "Drv func": "efx_mcdi_filter_add_vlan",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L1584 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L1584"
+  },
+  {
+    "Drv func": "efx_ef100_ev_test_generate",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_nic.c#L708 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_nic.c#L708"
+  },
+  {
+    "Drv func": "ef100_pci_parse_xilinx_cap",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100.c#L330 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100.c#L330"
+  },
+  {
+    "Drv func": "ef100_check_design_params",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_nic.c#L981 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_nic.c#L981"
+  },
+  {
+    "Drv func": "efx_realloc_channels",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L937 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L937"
+  },
+  {
+    "Drv func": "efx_mcdi_process_event",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L1346 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L1346"
+  },
+  {
+    "Drv func": "ef100_pci_walk_xilinx_table",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100.c#L245 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100.c#L245"
+  },
+  {
+    "Drv func": "efx_selftest_async_work",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/selftest.c#L794 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/selftest.c#L794"
+  },
+  {
+    "Drv func": "ef100_pci_parse_ef100_entry",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100.c#L79 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100.c#L79"
+  },
+  {
+    "Drv func": "ef100_pci_parse_ef100_entry",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100.c#L86 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100.c#L86"
+  },
+  {
+    "Drv func": "ef100_probe_netdev",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L423 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L423"
+  },
+  {
+    "Drv func": "ef100_pci_find_func_ctrl_window",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100.c#L411 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100.c#L411"
+  },
+  {
+    "Drv func": "ef100_pci_find_func_ctrl_window",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100.c#L375 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100.c#L375"
+  },
+  {
+    "Drv func": "__ef100_rx_packet",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_rx.c#L77 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_rx.c#L77"
+  },
+  {
+    "Drv func": "efx_probe_interrupts",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L274 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L274"
+  },
+  {
+    "Drv func": "efx_ef10_init_nic",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L1347 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L1347"
+  },
+  {
+    "Drv func": "efx_do_xdp",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx.c#L331 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx.c#L331"
+  },
+  {
+    "Drv func": "efx_allocate_msix_channels",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L202 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L202"
+  },
+  {
+    "Drv func": "efx_mcdi_read_assertion",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L1827 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L1827"
+  },
+  {
+    "Drv func": "efx_nic_init_interrupt",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/nic.c#L88 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/nic.c#L88"
+  },
+  {
+    "Drv func": "efx_ef100_init_datapath_caps",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_nic.c#L168 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_nic.c#L168"
+  },
+  {
+    "Drv func": "ef100_pci_find_func_ctrl_window",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100.c#L383 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100.c#L383"
+  },
+  {
+    "Drv func": "efx_mcdi_filter_table_probe",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L1331 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L1331"
+  },
+  {
+    "Drv func": "efx_reset_up",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L756 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L756"
+  },
+  {
+    "Drv func": "efx_mcdi_filter_rx_push_exclusive_rss_config",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L2099 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L2099"
+  },
+  {
+    "Drv func": "efx_selftest",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/selftest.c#L732 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/selftest.c#L732"
+  },
+  {
+    "Drv func": "efx_ptp_event",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L2036 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L2036"
+  },
+  {
+    "Drv func": "efx_probe_vpd_strings",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L910 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L915"
+  },
+  {
+    "Drv func": "efx_probe_interrupts",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L284 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L284"
+  },
+  {
+    "Drv func": "efx_ef10_init_nic",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L1350 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L1350"
+  },
+  {
+    "Drv func": "ef100_process_design_param",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_nic.c#L906 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_nic.c#L906"
+  },
+  {
+    "Drv func": "efx_check_disabled",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.h#L66 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.h#L66"
+  },
+  {
+    "Drv func": "efx_init_rx_queue",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L263 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L263"
+  },
+  {
+    "Drv func": "efx_allocate_msix_channels",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L192 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L192"
+  },
+  {
+    "Drv func": "_efx_mcdi_rpc_finish",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L721 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L721"
+  },
+  {
+    "Drv func": "efx_probe_channels",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L727 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L727"
+  },
+  {
+    "Drv func": "ef100_pci_parse_xilinx_cap",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100.c#L319 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100.c#L319"
+  },
+  {
+    "Drv func": "efx_io_resume",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L1271 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L1271"
+  },
+  {
+    "Drv func": "_efx_mcdi_rpc",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L845 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L845"
+  },
+  {
+    "Drv func": "efx_fini_dmaq",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_functions.c#L384 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_functions.c#L384"
+  },
+  {
+    "Drv func": "efx_probe_interrupts",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L281 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L281"
+  },
+  {
+    "Drv func": "efx_nic_init_interrupt",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/nic.c#L116 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/nic.c#L116"
+  },
+  {
+    "Drv func": "efx_allocate_msix_channels",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L205 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L205"
+  },
+  {
+    "Drv func": "ef100_pci_parse_xilinx_cap",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100.c#L301 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100.c#L301"
+  },
+  {
+    "Drv func": "efx_ptp_handle_no_channel",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L858 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L858"
+  },
+  {
+    "Drv func": "efx_ef10_link_piobufs",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L851 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L851"
+  },
+  {
+    "Drv func": "efx_rx_packet__check_len",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx.c#L59 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx.c#L59"
+  },
+  {
+    "Drv func": "efx_reset_up",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L767 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L767"
+  },
+  {
+    "Drv func": "efx_pci_remove",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L867 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L873"
+  },
+  {
+    "Drv func": "efx_fini_io",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L1143 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L1143"
+  },
+  {
+    "Drv func": "efx_do_xdp",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx.c#L317 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx.c#L317"
+  },
+  {
+    "Drv func": "ef100_pci_parse_xilinx_cap",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100.c#L341 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100.c#L341"
+  },
+  {
+    "Drv func": "efx_ef10_link_piobufs",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L796 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L796"
+  },
+  {
+    "Drv func": "efx_ef10_init_datapath_caps",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L121 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L121"
+  },
+  {
+    "Drv func": "efx_mcdi_nvram_test_all",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L1765 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L1765"
+  },
+  {
+    "Drv func": "efx_ef10_poll_bist",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L3420 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L3420"
+  },
+  {
+    "Drv func": "efx_ef10_poll_bist",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L3423 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L3423"
+  },
+  {
+    "Drv func": "efx_test_eventq_irq",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/selftest.c#L235 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/selftest.c#L235"
+  },
+  {
+    "Drv func": "efx_ef10_probe",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L613 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L613"
+  },
+  {
+    "Drv func": "efx_mcdi_get_board_cfg",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L1570 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L1570"
+  },
+  {
+    "Drv func": "efx_stop_port",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L505 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L505"
+  },
+  {
+    "Drv func": "efx_mcdi_wol_filter_get_magic",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L2014 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L2014"
+  },
+  {
+    "Drv func": "efx_mcdi_reset",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L1925 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L1926"
+  },
+  {
+    "Drv func": "efx_pci_probe",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L1134 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L1134"
+  },
+  {
+    "Drv func": "efx_ptp_stop",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1434 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1443"
+  },
+  {
+    "Drv func": "efx_ef10_del_vlan",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L499 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L499"
+  },
+  {
+    "Drv func": "efx_ptp_process_events",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1263 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1267 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1269 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1272 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1278"
+  },
+  {
+    "Drv func": "efx_dequeue_buffer",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/tx_common.c#L179 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/tx_common.c#L180 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/tx_common.c#L179 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/tx_common.c#L186"
+  },
+  {
+    "Drv func": "efx_ptp_xmit_skb_mc",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1165 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1147 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1153 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1174"
+  },
+  {
+    "Drv func": "efx_begin_loopback",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/selftest.c#L418 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/selftest.c#L422 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/selftest.c#L429"
+  },
+  {
+    "Drv func": "efx_do_xdp",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx.c#L298 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx.c#L328 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx.c#L330"
+  },
+  {
+    "Drv func": "efx_do_xdp",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx.c#L298 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx.c#L314 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx.c#L316"
+  },
+  {
+    "Drv func": "ef100_pci_walk_xilinx_table",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100.c#L224 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100.c#L224"
+  },
+  {
+    "Drv func": "efx_rx_packet__check_len",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx.c#L50 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx.c#L58"
+  },
+  {
+    "Drv func": "ef100_pci_parse_continue_entry",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100.c#L138 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100.c#L138"
+  },
+  {
+    "Drv func": "ptp_event_rx",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1944 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1947 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1953 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1973"
+  },
+  {
+    "Drv func": "ef100_remap_bar",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L68 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L68"
+  },
+  {
+    "Drv func": "__ef100_rx_packet",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_rx.c#L70 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_rx.c#L75 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_rx.c#L87 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_rx.c#L70 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_rx.c#L87 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_rx.c#L106"
+  },
+  {
+    "Drv func": "efx_ptp_xmit_skb_mc",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1147 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1153 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1154"
+  },
+  {
+    "Drv func": "__ef100_rx_packet",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_rx.c#L70 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_rx.c#L70 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_rx.c#L75 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_rx.c#L76"
+  },
+  {
+    "Drv func": "efx_dequeue_buffer",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/tx_common.c#L167 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/tx_common.c#L195 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/tx_common.c#L196"
+  },
+  {
+    "Drv func": "ef100_remove_netdev",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L322 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L326"
+  },
+  {
+    "Drv func": "efx_do_xdp",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx.c#L269 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx.c#L264 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx.c#L281"
+  },
+  {
+    "Drv func": "efx_reuse_page",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L54 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L59"
+  },
+  {
+    "Drv func": "efx_unmap_rx_buffer",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L323 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L326"
+  },
+  {
+    "Drv func": "efx_enqueue_skb_tso",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/tx_tso.c#L437 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/tx_tso.c#L438"
+  },
+  {
+    "Drv func": "efx_link_status_changed",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L271 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L271"
+  },
+  {
+    "Drv func": "efx_enable_interrupts",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L1068 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L1069"
+  },
+  {
+    "Drv func": "efx_nic_fini_interrupt",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/nic.c#L161 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/nic.c#L159 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/nic.c#L168"
+  },
+  {
+    "Drv func": "_efx_mcdi_rpc_evb_retry",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L878 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L878"
+  },
+  {
+    "Drv func": "efx_mcdi_await_completion",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L432 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L432"
+  },
+  {
+    "Drv func": "efx_ptp_process_times",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L957 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L966"
+  },
+  {
+    "Drv func": "efx_mcdi_display_error",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L1090 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L1090"
+  },
+  {
+    "Drv func": "efx_do_xdp",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx.c#L298 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx.c#L341"
+  },
+  {
+    "Drv func": "efx_start_port",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L486 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L486"
+  },
+  {
+    "Drv func": "efx_remove_rx_queue",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L306 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L306"
+  },
+  {
+    "Drv func": "efx_ptp_remove",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1643 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1648"
+  },
+  {
+    "Drv func": "efx_nic_init_interrupt",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/nic.c#L123 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/nic.c#L115 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/nic.c#L123 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/nic.c#L110 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/nic.c#L125"
+  },
+  {
+    "Drv func": "efx_flush_copy_buffer",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/tx.c#L189 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/tx.c#L190"
+  },
+  {
+    "Drv func": "efx_memcpy_toio_aligned_cb",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/tx.c#L171 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/tx.c#L174"
+  },
+  {
+    "Drv func": "efx_ef10_dimension_resources",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L1288 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L1288"
+  },
+  {
+    "Drv func": "efx_probe_all",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L338 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L338"
+  },
+  {
+    "Drv func": "efx_io_resume",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L1275 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L1275"
+  },
+  {
+    "Drv func": "efx_mcdi_get_workarounds",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L2127 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L2127"
+  },
+  {
+    "Drv func": "efx_pci_remove",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L867 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L876"
+  },
+  {
+    "Drv func": "ef100_register_netdev",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L286 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L291 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L298"
+  },
+  {
+    "Drv func": "efx_init_rx_queue",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L226 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L226"
+  },
+  {
+    "Drv func": "efx_mcdi_ev_cpl",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L576 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L576"
+  },
+  {
+    "Drv func": "efx_ef10_poll_bist",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L3417 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L3417"
+  },
+  {
+    "Drv func": "kzalloc",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689"
+  },
+  {
+    "Drv func": "efx_fini_rx_queue",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L280 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L280"
+  },
+  {
+    "Drv func": "ef100_pci_walk_xilinx_table",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100.c#L211 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100.c#L211"
+  },
+  {
+    "Drv func": "efx_mcdi_filter_insert_locked",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L402 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L448 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L462 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L441 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L462"
+  },
+  {
+    "Drv func": "efx_rps_hash_add",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L745 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L752 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L752"
+  },
+  {
+    "Drv func": "kmalloc_array",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L601 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L603 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L603 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L604 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L604"
+  },
+  {
+    "Drv func": "ef100_update_stats",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_nic.c#L633 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_nic.c#L633"
+  },
+  {
+    "Drv func": "efx_probe_rx_queue",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L200 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L200"
+  },
+  {
+    "Drv func": "efx_init_rx_buffers",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L423 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L381 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L385 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L388"
+  },
+  {
+    "Drv func": "efx_nic_fini_interrupt",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/nic.c#L163 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/nic.c#L164"
+  },
+  {
+    "Drv func": "ef100_remove_netdev",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L322 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L345"
+  },
+  {
+    "Drv func": "efx_ptp_drop_time_expired_events",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1202 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1202"
+  },
+  {
+    "Drv func": "netif_tx_wake_all_queues",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/netdevice.h#L3269 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/netdevice.h#L3271"
+  },
+  {
+    "Drv func": "efx_start_datapath",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L417 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L418"
+  },
+  {
+    "Drv func": "efx_mcdi_complete_async",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L533 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L534"
+  },
+  {
+    "Drv func": "efx_soft_disable_interrupts",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L1044 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L1045"
+  },
+  {
+    "Drv func": "efx_mcdi_release",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L475 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L480"
+  },
+  {
+    "Drv func": "efx_mcdi_await_completion",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L432 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L432"
+  },
+  {
+    "Drv func": "efx_fini_dmaq",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_functions.c#L379 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_functions.c#L379"
+  },
+  {
+    "Drv func": "efx_ef10_dimension_resources",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L1258 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L1258"
+  },
+  {
+    "Drv func": "efx_ethtool_self_test",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ethtool_common.c#L159 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ethtool_common.c#L160"
+  },
+  {
+    "Drv func": "efx_mcdi_poll",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L379 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L381"
+  },
+  {
+    "Drv func": "efx_ef10_init_datapath_caps",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L170 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L170"
+  },
+  {
+    "Drv func": "ef100_reset",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_nic.c#L467 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_nic.c#L471 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_nic.c#L473 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_nic.c#L478"
+  },
+  {
+    "Drv func": "ef100_remove_netdev",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L322 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L329"
+  },
+  {
+    "Drv func": "efx_ethtool_set_ringparam",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ethtool.c#L189 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ethtool.c#L189"
+  },
+  {
+    "Drv func": "efx_mcdi_read_response_header",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L325 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L325"
+  },
+  {
+    "Drv func": "efx_ef10_dimension_resources",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L1272 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L1272"
+  },
+  {
+    "Drv func": "ef100_pci_walk_xilinx_table",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100.c#L202 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100.c#L202"
+  },
+  {
+    "Drv func": "ef100_probe_netdev",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L360 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L368 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L382"
+  },
+  {
+    "Drv func": "efx_fini_rx_recycle_ring",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L157 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L161 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L165"
+  },
+  {
+    "Drv func": "efx_enqueue_skb_copy",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/tx.c#L112 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/tx.c#L115"
+  },
+  {
+    "Drv func": "efx_stop_datapath",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L446 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L446 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L446"
+  },
+  {
+    "Drv func": "efx_net_open",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L527 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L531 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L531 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L539 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L529 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L539 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L540"
+  },
+  {
+    "Drv func": "efx_reset",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L866 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L866"
+  },
+  {
+    "Drv func": "efx_init_io",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L1100 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L1108"
+  },
+  {
+    "Drv func": "ef100_pci_parse_continue_entry",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100.c#L149 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100.c#L149"
+  },
+  {
+    "Drv func": "efx_phc_gettime",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L2211 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L2217"
+  },
+  {
+    "Drv func": "efx_ef10_del_vlan_internal",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L472 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L475"
+  },
+  {
+    "Drv func": "efx_mcdi_proxy_wait",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L787 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L787"
+  },
+  {
+    "Drv func": "efx_enqueue_skb_tso",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/tx_tso.c#L431 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/tx_tso.c#L431"
+  },
+  {
+    "Drv func": "efx_detach_reps",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L1405 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L1407 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L1412"
+  },
+  {
+    "Drv func": "efx_mcdi_proxy_wait",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L781 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L781"
+  },
+  {
+    "Drv func": "efx_test_interrupts",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/selftest.c#L160 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/selftest.c#L155"
+  },
+  {
+    "Drv func": "efx_ef10_handle_rx_wrong_queue",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L2676 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L2676"
+  },
+  {
+    "Drv func": "_efx_mcdi_rpc_async",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L989 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L989"
+  },
+  {
+    "Drv func": "efx_mcdi_sensor_event",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_mon.c#L128 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_mon.c#L128"
+  },
+  {
+    "Drv func": "efx_soft_disable_interrupts",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L1047 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L1048 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L1049"
+  },
+  {
+    "Drv func": "kzalloc",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689"
+  },
+  {
+    "Drv func": "ef100_pci_remove",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100.c#L441 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100.c#L441"
+  },
+  {
+    "Drv func": "efx_ethtool_self_test",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ethtool_common.c#L162 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ethtool_common.c#L162"
+  },
+  {
+    "Drv func": "ef100_register_netdev",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L286 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L290"
+  },
+  {
+    "Drv func": "ef100_register_netdev",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L305 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L305"
+  },
+  {
+    "Drv func": "efx_mcdi_process_event",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L1396 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L1396"
+  },
+  {
+    "Drv func": "efx_ptp_start_datapath",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L2283 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L2283"
+  },
+  {
+    "Drv func": "efx_register_netdev",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L719 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L726 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L733"
+  },
+  {
+    "Drv func": "efx_stop_channels",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L1171 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L1171"
+  },
+  {
+    "Drv func": "efx_pm_resume",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L1255 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L1251 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L1259 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L1263"
+  },
+  {
+    "Drv func": "ef100_unregister_netdev",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L311 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L314"
+  },
+  {
+    "Drv func": "efx_stop_eventq",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L479 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L482"
+  },
+  {
+    "Drv func": "efx_mcdi_mac_init_stats",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_port_common.c#L1240 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_port_common.c#L1240"
+  },
+  {
+    "Drv func": "efx_do_xdp",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx.c#L274 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx.c#L274"
+  },
+  {
+    "Drv func": "efx_fini_dmaq",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_functions.c#L379 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_functions.c#L379"
+  },
+  {
+    "Drv func": "efx_mcdi_poll_once",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L343 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L348"
+  },
+  {
+    "Drv func": "efx_nic_copy_stats",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/nic.c#L510 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/nic.c#L512"
+  },
+  {
+    "Drv func": "efx_ptp_synchronize",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1061 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1062"
+  },
+  {
+    "Drv func": "efx_mcdi_filter_table_remove",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L1514 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L1517 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L1520"
+  },
+  {
+    "Drv func": "efx_rwsem_assert_write_locked",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.h#L233 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.h#L234"
+  },
+  {
+    "Drv func": "efx_mcdi_mac_pull_stats",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_port_common.c#L1223 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_port_common.c#L1226"
+  },
+  {
+    "Drv func": "efx_start_all",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L557 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L562"
+  },
+  {
+    "Drv func": "efx_mcdi_complete_sync",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L455 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L458"
+  },
+  {
+    "Drv func": "efx_mcdi_window_mode_to_stride",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_functions.c#L406 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_functions.c#L406"
+  },
+  {
+    "Drv func": "efx_mcdi_proxy_abort",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L752 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L755"
+  },
+  {
+    "Drv func": "efx_probe_vpd_strings",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L924 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L927"
+  },
+  {
+    "Drv func": "efx_mcdi_release",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L467 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L490"
+  },
+  {
+    "Drv func": "efx_do_xdp",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx.c#L294 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx.c#L294"
+  },
+  {
+    "Drv func": "efx_do_xdp",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx.c#L294 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx.c#L294"
+  },
+  {
+    "Drv func": "efx_mcdi_acquire_sync",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L422 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L422"
+  },
+  {
+    "Drv func": "efx_mcdi_pf_rx_push_rss_config",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L2250 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L2250"
+  },
+  {
+    "Drv func": "efx_test_phy",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/selftest.c#L265 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/selftest.c#L265"
+  },
+  {
+    "Drv func": "ef100_update_stats",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_nic.c#L633 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_nic.c#L633 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_nic.c#L633"
+  },
+  {
+    "Drv func": "efx_handle_drain_event",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L1302 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L1303"
+  },
+  {
+    "Drv func": "ef100_pci_parse_xilinx_cap",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100.c#L309 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100.c#L309"
+  },
+  {
+    "Drv func": "efx_ef10_add_vlan",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L421 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L435 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L442 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L447"
+  },
+  {
+    "Drv func": "efx_filter_rfs_work",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L919 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L919"
+  },
+  {
+    "Drv func": "ef100_remove_netdev",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L322 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L327"
+  },
+  {
+    "Drv func": "efx_copy_channel",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L607 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L607"
+  },
+  {
+    "Drv func": "_efx_mcdi_rpc_finish",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L690 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L700"
+  },
+  {
+    "Drv func": "efx_reset_up",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L748 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L748 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L748"
+  },
+  {
+    "Drv func": "efx_wait_for_link",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/selftest.c#L585 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/selftest.c#L586"
+  },
+  {
+    "Drv func": "efx_stop_port",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L507 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L507 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L507"
+  },
+  {
+    "Drv func": "efx_mcdi_filter_table_restore",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L1455 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L1455"
+  },
+  {
+    "Drv func": "efx_ethtool_set_rxfh_context",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ethtool_common.c#L1284 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ethtool_common.c#L1287 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ethtool_common.c#L1287 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ethtool_common.c#L1290"
+  },
+  {
+    "Drv func": "efx_stop_channels",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L1173 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L1173"
+  },
+  {
+    "Drv func": "ef100_probe_netdev",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L360 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L368 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L391 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L395 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L401 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L411 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L387 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L414 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L421"
+  },
+  {
+    "Drv func": "ptp_event_rx",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1944 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1947 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1953 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1969 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1969"
+  },
+  {
+    "Drv func": "efx_ptp_probe",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1526 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1533 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1541 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1546"
+  },
+  {
+    "Drv func": "efx_pm_thaw",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L1199 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L1201 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L1206"
+  },
+  {
+    "Drv func": "ef100_pci_parse_continue_entry",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100.c#L128 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100.c#L128"
+  },
+  {
+    "Drv func": "_efx_mcdi_rpc_finish",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L665 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L665"
+  },
+  {
+    "Drv func": "ef100_pci_find_func_ctrl_window",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100.c#L392 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100.c#L392"
+  },
+  {
+    "Drv func": "efx_filter_rfs",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L1011 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L1011 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L1011 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L1016"
+  },
+  {
+    "Drv func": "efx_mac_reconfigure",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L148 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L151"
+  },
+  {
+    "Drv func": "efx_mcdi_filter_remove_unsafe",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L708 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L714"
+  },
+  {
+    "Drv func": "efx_mcdi_read_assertion",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L1818 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L1818"
+  },
+  {
+    "Drv func": "ef100_filter_table_up",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_nic.c#L386 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_nic.c#L390 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_nic.c#L395"
+  },
+  {
+    "Drv func": "efx_nic_init_interrupt",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/nic.c#L141 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/nic.c#L142 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/nic.c#L144"
+  },
+  {
+    "Drv func": "efx_ptp_remove",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1643 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1649 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1650"
+  },
+  {
+    "Drv func": "__ef100_rx_packet",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_rx.c#L107 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_rx.c#L107"
+  },
+  {
+    "Drv func": "ef100_pci_parse_xilinx_cap",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100.c#L293 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100.c#L293"
+  },
+  {
+    "Drv func": "efx_mcdi_filter_insert_locked",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L382 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L383"
+  },
+  {
+    "Drv func": "efx_copy_channel",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L607 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L607 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L607"
+  },
+  {
+    "Drv func": "ef100_remove_netdev",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L322 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L341"
+  },
+  {
+    "Drv func": "efx_init_rx_buffers",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L423 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L381 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L382"
+  },
+  {
+    "Drv func": "efx_test_interrupts",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/selftest.c#L162 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/selftest.c#L162"
+  },
+  {
+    "Drv func": "efx_mcdi_poll_once",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L343 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L346"
+  },
+  {
+    "Drv func": "efx_mcdi_tx_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_functions.c#L187 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_functions.c#L187"
+  },
+  {
+    "Drv func": "efx_pci_probe",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L1086 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L1090 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L1096 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L1103"
+  },
+  {
+    "Drv func": "efx_associate",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L210 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L210"
+  },
+  {
+    "Drv func": "efx_probe_port",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L121 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L121"
+  },
+  {
+    "Drv func": "efx_pci_probe_main",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L942 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L947"
+  },
+  {
+    "Drv func": "efx_test_eventq_irq",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/selftest.c#L239 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/selftest.c#L239"
+  },
+  {
+    "Drv func": "efx_mcdi_filter_rfs_expire_one",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L1793 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L1793 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L1796"
+  },
+  {
+    "Drv func": "efx_mcdi_read_response_header",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L322 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L322"
+  },
+  {
+    "Drv func": "efx_ef10_del_vlan_internal",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L472 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L473"
+  },
+  {
+    "Drv func": "efx_do_xdp",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx.c#L294 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx.c#L294"
+  },
+  {
+    "Drv func": "efx_ef10_set_udp_tnl_ports",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L3862 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L3869"
+  },
+  {
+    "Drv func": "efx_ptp_remove",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1655 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1657"
+  },
+  {
+    "Drv func": "efx_do_xdp",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx.c#L298 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx.c#L327"
+  },
+  {
+    "Drv func": "ef100_probe_netdev",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L360 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L368 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L387 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L391 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L395 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L400"
+  },
+  {
+    "Drv func": "efx_reset",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L869 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L869"
+  },
+  {
+    "Drv func": "_efx_mcdi_rpc_async",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L991 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L1002"
+  },
+  {
+    "Drv func": "efx_mcdi_filter_table_restore",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L1420 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L1420"
+  },
+  {
+    "Drv func": "efx_mcdi_poll",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L379 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L383"
+  },
+  {
+    "Drv func": "efx_init_io",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L1124 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L1124"
+  },
+  {
+    "Drv func": "ef100_process_design_param",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_nic.c#L928 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_nic.c#L928"
+  },
+  {
+    "Drv func": "efx_ptp_synchronize",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1060 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1060"
+  },
+  {
+    "Drv func": "efx_start_all",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L557 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L560"
+  },
+  {
+    "Drv func": "efx_mcdi_filter_rfs_expire_one",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L1835 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L1835 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L1837"
+  },
+  {
+    "Drv func": "efx_ef10_poll_bist",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L3414 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L3414"
+  },
+  {
+    "Drv func": "efx_mcdi_bist",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_port_common.c#L777 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_port_common.c#L781 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_port_common.c#L784"
+  },
+  {
+    "Drv func": "efx_pm_thaw",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L1199 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L1201 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L1204"
+  },
+  {
+    "Drv func": "efx_pci_probe_main",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L957 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L957"
+  },
+  {
+    "Drv func": "efx_wait_for_bist_end",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L669 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L670 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L672"
+  },
+  {
+    "Drv func": "ef100_pci_parse_continue_entry",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100.c#L167 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100.c#L167"
+  },
+  {
+    "Drv func": "efx_rx_deliver",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx.c#L239 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx.c#L234 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx.c#L244"
+  },
+  {
+    "Drv func": "ef100_remove_netdev",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L322 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L348"
+  },
+  {
+    "Drv func": "efx_ptp_drop_time_expired_events",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1190 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1194"
+  },
+  {
+    "Drv func": "efx_register_netdev",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L751 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L751"
+  },
+  {
+    "Drv func": "ptp_event_rx",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1944 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1947 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1952"
+  },
+  {
+    "Drv func": "efx_register_netdev",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L719 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L726 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L731"
+  },
+  {
+    "Drv func": "efx_test_loopback",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/selftest.c#L559 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/selftest.c#L559 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/selftest.c#L562"
+  },
+  {
+    "Drv func": "efx_xdp_setup_prog",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L627 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L627"
+  },
+  {
+    "Drv func": "efx_mcdi_filter_remove_unsafe",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L708 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L711"
+  },
+  {
+    "Drv func": "ef100_probe_netdev",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L360 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L368 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L387 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L391 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L395 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L398"
+  },
+  {
+    "Drv func": "_ef100_pci_get_config_bits_with_width",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100.c#L262 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100.c#L262"
+  },
+  {
+    "Drv func": "efx_schedule_slow_fill",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L357 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L357"
+  },
+  {
+    "Drv func": "efx_ptp_stop",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1434 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1446"
+  },
+  {
+    "Drv func": "efx_test_eventq_irq",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/selftest.c#L244 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/selftest.c#L244"
+  },
+  {
+    "Drv func": "efx_mcdi_filter_insert_locked",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L535 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L536"
+  },
+  {
+    "Drv func": "efx_ptp_match_rx",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1225 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1230"
+  },
+  {
+    "Drv func": "_efx_mcdi_rpc_finish",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L738 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L738 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L739"
+  },
+  {
+    "Drv func": "efx_mcdi_filter_table_restore",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L1387 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L1387 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L1390"
+  },
+  {
+    "Drv func": "efx_mcdi_filter_rfs_expire_one",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L1835 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L1835 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L1839"
+  },
+  {
+    "Drv func": "ef100_remove_netdev",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L322 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L343"
+  },
+  {
+    "Drv func": "efx_mcdi_filter_remove_internal",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L637 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L637 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L639"
+  },
+  {
+    "Drv func": "efx_stop_all",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L576 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L579 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L586"
+  },
+  {
+    "Drv func": "efx_pm_resume",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L1251 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L1253"
+  },
+  {
+    "Drv func": "efx_fini_channels",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L590 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L591 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L592"
+  },
+  {
+    "Drv func": "efx_do_xdp",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx.c#L264 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx.c#L269 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx.c#L273"
+  },
+  {
+    "Drv func": "efx_mcdi_proxy_wait",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L781 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L781"
+  },
+  {
+    "Drv func": "efx_mcdi_nvram_info",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L1679 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L1679"
+  },
+  {
+    "Drv func": "efx_mcdi_filter_table_restore",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L1387 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L1387 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L1391"
+  },
+  {
+    "Drv func": "efx_pm_resume",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L1255 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L1251 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L1259 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L1261"
+  },
+  {
+    "Drv func": "efx_start_all",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L537 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L537 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L537 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L552"
+  },
+  {
+    "Drv func": "efx_ptp_remove",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1655 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1656"
+  },
+  {
+    "Drv func": "efx_pci_probe_main",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L942 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L949"
+  },
+  {
+    "Drv func": "efx_probe_tx_queue",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/tx_common.c#L33 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/tx_common.c#L33"
+  },
+  {
+    "Drv func": "efx_ef10_probe",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L580 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L575 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L583"
+  },
+  {
+    "Drv func": "ef100_reset",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_nic.c#L467 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_nic.c#L468"
+  },
+  {
+    "Drv func": "ef100_ev_process",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_nic.c#L300 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_nic.c#L300"
+  },
+  {
+    "Drv func": "efx_stop_all",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L576 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L579 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L584"
+  },
+  {
+    "Drv func": "efx_device_attach_if_not_resetting",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.h#L224 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.h#L224 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.h#L225"
+  },
+  {
+    "Drv func": "efx_mcdi_fini",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L138 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L145"
+  },
+  {
+    "Drv func": "efx_fini_io",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L1145 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L1146"
+  },
+  {
+    "Drv func": "efx_ef10_init_datapath_caps",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L175 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L175"
+  },
+  {
+    "Drv func": "efx_start_datapath",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L406 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L406"
+  },
+  {
+    "Drv func": "efx_change_mtu",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L298 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L298"
+  },
+  {
+    "Drv func": "efx_ptp_set_ts_config",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1912 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1912"
+  },
+  {
+    "Drv func": "efx_mcdi_process_event",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L1324 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L1324"
+  },
+  {
+    "Drv func": "kmalloc_array",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L603 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L601 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L603 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L605"
+  },
+  {
+    "Drv func": "efx_ef10_try_update_nic_stats_vf",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L1911 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L1912"
+  },
+  {
+    "Drv func": "efx_fini_dmaq",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_functions.c#L379 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_functions.c#L379 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_functions.c#L379"
+  },
+  {
+    "Drv func": "efx_dequeue_buffer",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/tx_common.c#L154 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/tx_common.c#L158 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/tx_common.c#L162"
+  },
+  {
+    "Drv func": "efx_filter_rfs_work",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L885 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L889"
+  },
+  {
+    "Drv func": "efx_mcdi_nvram_types",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L1618 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L1618"
+  },
+  {
+    "Drv func": "efx_register_netdev",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L719 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L725"
+  },
+  {
+    "Drv func": "efx_ethtool_self_test",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ethtool_common.c#L159 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ethtool_common.c#L170 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ethtool_common.c#L171"
+  },
+  {
+    "Drv func": "ef100_probe_netdev",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L360 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L367"
+  },
+  {
+    "Drv func": "efx_test_loopback",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/selftest.c#L551 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/selftest.c#L552"
+  },
+  {
+    "Drv func": "efx_mac_reconfigure",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L148 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L149"
+  },
+  {
+    "Drv func": "efx_init_io",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L1097 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L1097"
+  },
+  {
+    "Drv func": "efx_mcdi_ev_death",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L1238 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L1236 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L1240"
+  },
+  {
+    "Drv func": "efx_ef10_dimension_resources",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L1257 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L1263"
+  },
+  {
+    "Drv func": "efx_probe_nic",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L261 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L261"
+  },
+  {
+    "Drv func": "efx_mcdi_poll",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L362 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L367"
+  },
+  {
+    "Drv func": "efx_set_mac_address",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L178 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L178"
+  },
+  {
+    "Drv func": "efx_mcdi_filter_rfs_expire_one",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L1793 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L1793 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L1802 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L1807 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L1809 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L1797 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L1810"
+  },
+  {
+    "Drv func": "efx_ef10_set_udp_tnl_ports",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L3855 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L3855"
+  },
+  {
+    "Drv func": "efx_ef10_link_piobufs",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L860 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L860"
+  },
+  {
+    "Drv func": "efx_init_irq_moderation",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L436 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L436 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L436"
+  },
+  {
+    "Drv func": "efx_ef10_del_vlan",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L492 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L495"
+  },
+  {
+    "Drv func": "efx_link_status_changed",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L252 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L255 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L258 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L261"
+  },
+  {
+    "Drv func": "efx_ef10_probe",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L575 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L580 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L585 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L588"
+  },
+  {
+    "Drv func": "efx_init_module",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L1316 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L1320 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L1324 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L1327"
+  },
+  {
+    "Drv func": "efx_ef10_run_bist",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L3433 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L3433"
+  },
+  {
+    "Drv func": "efx_unregister_netdev",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L776 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L779 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L783"
+  },
+  {
+    "Drv func": "efx_fini_struct",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L1068 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L1069"
+  },
+  {
+    "Drv func": "efx_pci_probe",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L1054 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L1060"
+  },
+  {
+    "Drv func": "efx_ethtool_get_rxfh_context",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ethtool_common.c#L1250 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ethtool_common.c#L1253"
+  },
+  {
+    "Drv func": "efx_ef10_ev_test_generate",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L3233 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L3233"
+  },
+  {
+    "Drv func": "efx_destroy_reset_workqueue",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L137 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L138"
+  },
+  {
+    "Drv func": "efx_unregister_netdev",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L776 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L779 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L782"
+  },
+  {
+    "Drv func": "efx_ef10_add_vlan",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L421 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L435 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L442 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L446"
+  },
+  {
+    "Drv func": "efx_ef10_handle_driver_generated_event",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L3087 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L3087"
+  },
+  {
+    "Drv func": "efx_ef10_filter_table_probe",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L2557 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L2559"
+  },
+  {
+    "Drv func": "efx_mcdi_filter_del_vlan",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L1645 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L1645"
+  },
+  {
+    "Drv func": "efx_ef10_vport_set_mac_address",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L3296 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L3296"
+  },
+  {
+    "Drv func": "efx_init_struct",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L1039 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L1045"
+  },
+  {
+    "Drv func": "efx_selftest_async_work",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/selftest.c#L798 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/selftest.c#L798"
+  },
+  {
+    "Drv func": "efx_ef10_add_vlan",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L421 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L435 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L442 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L444"
+  },
+  {
+    "Drv func": "efx_ef10_init_datapath_caps",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L148 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L148"
+  },
+  {
+    "Drv func": "efx_ptp_process_times",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L993 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L993"
+  },
+  {
+    "Drv func": "efx_ethtool_self_test",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ethtool_common.c#L154 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ethtool_common.c#L154"
+  },
+  {
+    "Drv func": "efx_ef10_udp_tnl_set_port",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L3913 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L3917"
+  },
+  {
+    "Drv func": "efx_ef10_probe_multicast_chaining",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L2527 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L2527"
+  },
+  {
+    "Drv func": "efx_mcdi_release",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L467 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L472"
+  },
+  {
+    "Drv func": "efx_enqueue_skb_tso",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/tx_tso.c#L434 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/tx_tso.c#L434"
+  },
+  {
+    "Drv func": "efx_filter_rfs",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L999 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L1001"
+  },
+  {
+    "Drv func": "efx_ethtool_set_link_ksettings",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ethtool_common.c#L629 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ethtool_common.c#L629 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ethtool_common.c#L638"
+  },
+  {
+    "Drv func": "efx_mcdi_pf_rx_push_rss_config",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L2257 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L2257"
+  },
+  {
+    "Drv func": "efx_mcdi_complete_async",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L507 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L512"
+  },
+  {
+    "Drv func": "efx_ef10_init_datapath_caps",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L162 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L162"
+  },
+  {
+    "Drv func": "efx_mcdi_poll",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L362 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L363"
+  },
+  {
+    "Drv func": "efx_rx_mk_skb",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx.c#L92 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx.c#L108"
+  },
+  {
+    "Drv func": "efx_xmit_done_single",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/tx.c#L574 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/tx.c#L574"
+  },
+  {
+    "Drv func": "efx_rps_hash_del",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L770 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L772 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L779 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L782"
+  },
+  {
+    "Drv func": "efx_associate",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L203 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L203"
+  },
+  {
+    "Drv func": "efx_ethtool_set_link_ksettings",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ethtool_common.c#L629 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ethtool_common.c#L629 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ethtool_common.c#L636"
+  },
+  {
+    "Drv func": "efx_mcdi_filter_table_restore",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L1460 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L1460"
+  },
+  {
+    "Drv func": "efx_probe_rx_queue",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L208 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L212 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L213"
+  },
+  {
+    "Drv func": "efx_probe_filters",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L823 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L824"
+  },
+  {
+    "Drv func": "_efx_mcdi_rpc_finish",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L670 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L670"
+  },
+  {
+    "Drv func": "efx_detach_reps",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L1405 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L1407 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L1409"
+  },
+  {
+    "Drv func": "efx_remove_filters",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L841 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L843"
+  },
+  {
+    "Drv func": "efx_set_mac_address",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L177 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L187 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L198"
+  },
+  {
+    "Drv func": "efx_pci_probe",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L1118 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L1118"
+  },
+  {
+    "Drv func": "efx_ptp_deliver_rx_queue",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L849 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L851"
+  },
+  {
+    "Drv func": "efx_register_netdev",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L767 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L767"
+  },
+  {
+    "Drv func": "efx_ef10_init_nic",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L1313 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L1320 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L1329 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L1329"
+  },
+  {
+    "Drv func": "efx_mcdi_filter_table_remove",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L1514 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L1517 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L1521"
+  },
+  {
+    "Drv func": "efx_ef10_remove",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L952 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L953"
+  },
+  {
+    "Drv func": "efx_filter_rfs_work",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L867 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L868"
+  },
+  {
+    "Drv func": "efx_mcdi_phy_get_fecparam",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_port_common.c#L652 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_port_common.c#L652"
+  },
+  {
+    "Drv func": "efx_mcdi_get_phy_cfg",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_port_common.c#L51 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_port_common.c#L51"
+  },
+  {
+    "Drv func": "efx_ptp_process_times",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1008 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1008"
+  },
+  {
+    "Drv func": "efx_wanted_parallelism",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L98 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L98"
+  },
+  {
+    "Drv func": "efx_mcdi_filter_insert_addr_list",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L805 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L805"
+  },
+  {
+    "Drv func": "efx_set_channels",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L982 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L984"
+  },
+  {
+    "Drv func": "efx_init_io",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L1082 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L1082"
+  },
+  {
+    "Drv func": "efx_mcdi_acquire_sync",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L422 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L422"
+  },
+  {
+    "Drv func": "_efx_mcdi_rpc_async",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L991 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L1004 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L1017"
+  },
+  {
+    "Drv func": "efx_test_eventq_irq",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/selftest.c#L216 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/selftest.c#L197"
+  },
+  {
+    "Drv func": "efx_init_rx_buffers",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L423 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L381 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L385 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L391 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L393"
+  },
+  {
+    "Drv func": "efx_allocate_msix_channels",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L161 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L161"
+  },
+  {
+    "Drv func": "kmalloc_array",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L601 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L603 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L603 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L604 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L604 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L604"
+  },
+  {
+    "Drv func": "efx_fini_rx_queue",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L298 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L299"
+  },
+  {
+    "Drv func": "efx_pci_remove",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L867 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L871"
+  },
+  {
+    "Drv func": "ef100_remove_netdev",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L322 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L325"
+  },
+  {
+    "Drv func": "efx_mcdi_get_workarounds",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L2127 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L2127"
+  },
+  {
+    "Drv func": "efx_mcdi_filter_remove_old",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L675 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L675"
+  },
+  {
+    "Drv func": "efx_alloc_rss_context_entry",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L568 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L580 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L580"
+  },
+  {
+    "Drv func": "__efx_filter_rfs_expire",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L1059 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L1059"
+  },
+  {
+    "Drv func": "efx_io_error_detected",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L1212 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L1215"
+  },
+  {
+    "Drv func": "efx_link_status_changed",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L252 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L255 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L258 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L259"
+  },
+  {
+    "Drv func": "efx_attach_reps",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L1424 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L1426 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L1429"
+  },
+  {
+    "Drv func": "efx_reset_work",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L890 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L890 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L891 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L895 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L898"
+  },
+  {
+    "Drv func": "efx_ethtool_set_rxfh_context",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ethtool_common.c#L1284 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ethtool_common.c#L1287 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ethtool_common.c#L1287 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ethtool_common.c#L1292 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ethtool_common.c#L1293 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ethtool_common.c#L1299 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ethtool_common.c#L1306"
+  },
+  {
+    "Drv func": "ef100_probe_netdev",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L360 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L368 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L387 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L395 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L401 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L391 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L404"
+  },
+  {
+    "Drv func": "efx_init_io",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L1100 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L1109 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L1116"
+  },
+  {
+    "Drv func": "efx_associate",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L224 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L224"
+  },
+  {
+    "Drv func": "efx_wait_for_bist_end",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L675 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L675"
+  },
+  {
+    "Drv func": "efx_ef10_set_udp_tnl_ports",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L3859 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L3859"
+  },
+  {
+    "Drv func": "efx_ptp_rx",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1709 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1709"
+  },
+  {
+    "Drv func": "efx_mcdi_filter_insert_def",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L884 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L884"
+  },
+  {
+    "Drv func": "efx_ethtool_get_rxnfc",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ethtool_common.c#L854 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ethtool_common.c#L863"
+  },
+  {
+    "Drv func": "ef100_reset",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_nic.c#L467 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_nic.c#L471 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_nic.c#L473 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_nic.c#L476"
+  },
+  {
+    "Drv func": "efx_xdp_setup_prog",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L636 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L637"
+  },
+  {
+    "Drv func": "ef100_update_stats",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_nic.c#L641 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_nic.c#L648"
+  },
+  {
+    "Drv func": "efx_mcdi_filter_table_probe_matches",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L1289 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L1289"
+  },
+  {
+    "Drv func": "efx_stop_all",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L573 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L573 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L573"
+  },
+  {
+    "Drv func": "efx_ef10_dimension_resources",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L1257 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L1267 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L1268"
+  },
+  {
+    "Drv func": "efx_reconfigure_port",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L650 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L650 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L650"
+  },
+  {
+    "Drv func": "efx_mcdi_filter_insert_def",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L922 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L922"
+  },
+  {
+    "Drv func": "efx_start_all",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L531 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L531 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L531"
+  },
+  {
+    "Drv func": "ef100_register_netdev",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L286 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L291 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L295"
+  },
+  {
+    "Drv func": "efx_set_mac_address",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L177 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L187 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L196"
+  },
+  {
+    "Drv func": "efx_remove_filters",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L841 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L842"
+  },
+  {
+    "Drv func": "efx_ef10_dimension_resources",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L1227 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L1227"
+  },
+  {
+    "Drv func": "efx_ptp_get_ts_config",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1921 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1921"
+  },
+  {
+    "Drv func": "count_online_cores",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L62 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L62"
+  },
+  {
+    "Drv func": "_efx_mcdi_rpc_async",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L991 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L1010 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L1004 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L1010 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L1013"
+  },
+  {
+    "Drv func": "efx_mcdi_loopback_modes",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_port_common.c#L108 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_port_common.c#L108"
+  },
+  {
+    "Drv func": "efx_ef10_set_mac_address",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L3354 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L3354"
+  },
+  {
+    "Drv func": "efx_probe_all",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L344 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L344"
+  },
+  {
+    "Drv func": "efx_ptp_probe_channel",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1636 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1636"
+  },
+  {
+    "Drv func": "efx_mcdi_rx_restore_rss_contexts",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L2214 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L2214"
+  },
+  {
+    "Drv func": "efx_allocate_msix_channels",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L171 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L171"
+  },
+  {
+    "Drv func": "ef100_check_design_params",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_nic.c#L985 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_nic.c#L985"
+  },
+  {
+    "Drv func": "efx_reset_down",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L712 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L712 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L712"
+  },
+  {
+    "Drv func": "efx_allocate_msix_channels",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L175 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L175"
+  },
+  {
+    "Drv func": "efx_mcdi_proxy_wait",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L791 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L791"
+  },
+  {
+    "Drv func": "efx_allocate_msix_channels",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L164 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L164"
+  },
+  {
+    "Drv func": "efx_allocate_msix_channels",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L168 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L168"
+  },
+  {
+    "Drv func": "ef100_phy_probe",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_nic.c#L369 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_nic.c#L369"
+  },
+  {
+    "Drv func": "efx_allocate_msix_channels",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L180 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L180"
+  },
+  {
+    "Drv func": "efx_mcdi_tx_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_functions.c#L223 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_functions.c#L223"
+  },
+  {
+    "Drv func": "efx_ethtool_set_ringparam",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ethtool.c#L197 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ethtool.c#L197"
+  },
+  {
+    "Drv func": "efx_mcdi_ev_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_functions.c#L127 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_functions.c#L127"
+  },
+  {
+    "Drv func": "efx_selftest",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/selftest.c#L715 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/selftest.c#L729 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/selftest.c#L718 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/selftest.c#L744"
+  },
+  {
+    "Drv func": "efx_realloc_channels",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L924 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L926 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L926 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_channels.c#L929"
+  },
+  {
+    "Drv func": "_efx_mcdi_rpc_async",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L989 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L989 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L989"
+  },
+  {
+    "Drv func": "efx_ptp_event",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L2004 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L2004"
+  },
+  {
+    "Drv func": "efx_xmit_done",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/tx_common.c#L273 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/tx_common.c#L273 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/tx_common.c#L274 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/tx_common.c#L277 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/tx_common.c#L278"
+  },
+  {
+    "Drv func": "efx_rps_hash_add",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L745 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L752 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L752 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L752"
+  },
+  {
+    "Drv func": "efx_ef10_add_vlan",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L427 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L427"
+  },
+  {
+    "Drv func": "efx_mcdi_filter_table_restore",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L1413 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L1413"
+  },
+  {
+    "Drv func": "efx_ef10_add_vlan",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L421 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L435 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L442 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L443"
+  },
+  {
+    "Drv func": "efx_watchdog",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L731 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L731"
+  },
+  {
+    "Drv func": "efx_ef10_dimension_resources",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L1151 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L1151"
+  },
+  {
+    "Drv func": "efx_wait_for_link",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/selftest.c#L585 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/selftest.c#L588 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/selftest.c#L589"
+  },
+  {
+    "Drv func": "ef100_net_open",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L123 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L127 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L135 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L131 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L143 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L149 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L119 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L139 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L153 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L158 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L167 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef100_netdev.c#L175"
+  },
+  {
+    "Drv func": "efx_test_loopbacks",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/selftest.c#L633 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/selftest.c#L632 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/selftest.c#L638"
+  },
+  {
+    "Drv func": "efx_reset",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L832 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L832"
+  },
+  {
+    "Drv func": "efx_ptp_process_times",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L992 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1006 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1006 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1025"
+  },
+  {
+    "Drv func": "efx_pm_thaw",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L1199 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L1217"
+  },
+  {
+    "Drv func": "efx_mcdi_filter_insert_locked",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L441 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L448 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L462 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L402 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L462 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L462"
+  },
+  {
+    "Drv func": "efx_ef10_udp_tnl_set_port",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L3913 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L3925"
+  },
+  {
+    "Drv func": "efx_mcdi_filter_mark_one_old",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L1534 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L1534"
+  },
+  {
+    "Drv func": "efx_io_slot_reset",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L1250 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L1250"
+  },
+  {
+    "Drv func": "efx_init_port",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L149 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L149 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L152"
+  },
+  {
+    "Drv func": "efx_ptp_probe",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1572 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1577 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1580 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ptp.c#L1583"
+  },
+  {
+    "Drv func": "efx_test_loopbacks",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/selftest.c#L632 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/selftest.c#L633 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/selftest.c#L641"
+  },
+  {
+    "Drv func": "efx_link_status_changed",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L266 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L266"
+  },
+  {
+    "Drv func": "efx_mcdi_filter_table_probe_matches",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L1285 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L1285"
+  },
+  {
+    "Drv func": "efx_probe_nic",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L297 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L299 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L300"
+  },
+  {
+    "Drv func": "efx_mcdi_filter_insert_locked",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L550 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L551"
+  },
+  {
+    "Drv func": "_efx_mcdi_rpc",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L834 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi.c#L834"
+  },
+  {
+    "Drv func": "efx_selftest",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/selftest.c#L715 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/selftest.c#L729 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/selftest.c#L718 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/selftest.c#L748"
+  },
+  {
+    "Drv func": "efx_pm_resume",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L1251 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L1255 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L1257"
+  },
+  {
+    "Drv func": "efx_filter_rfs_work",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L896 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L896"
+  },
+  {
+    "Drv func": "efx_wait_for_link",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/selftest.c#L585 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/selftest.c#L588 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/selftest.c#L591"
+  },
+  {
+    "Drv func": "efx_mcdi_filter_insert_locked",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L483 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L496 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/mcdi_filters.c#L497"
+  },
+  {
+    "Drv func": "efx_ef10_init_nic",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L1313 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L1320 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L1329 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L1329 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/ef10.c#L1329"
+  },
+  {
+    "Drv func": "efx_alloc_rss_context_entry",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L568 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L580 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L580 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/rx_common.c#L580"
+  }
+]

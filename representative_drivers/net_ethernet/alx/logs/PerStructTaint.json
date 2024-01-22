@@ -1,0 +1,498 @@
+[
+  {
+    "struct name": "in6_addr",
+    "No.Fields": 1,
+    "No.Shared fields": 0,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "ifreq",
+    "No.Fields": 2,
+    "No.Shared fields": 0,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "ethtool_stats",
+    "No.Fields": 3,
+    "No.Shared fields": 0,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "ethtool_link_settings",
+    "No.Fields": 16,
+    "No.Shared fields": 5,
+    "No.KRDU fields": 5,
+    "No.classified fields": 0,
+    "No.unclassified fields": 5,
+    "UNCLASSIFY": 5
+  }
+]
+[
+  {
+    "struct name": "ethtool_link_ksettings",
+    "No.Fields": 3,
+    "No.Shared fields": 2,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "ethtool_pauseparam",
+    "No.Fields": 4,
+    "No.Shared fields": 0,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "ethtool_ops",
+    "No.Fields": 71,
+    "No.Shared fields": 0,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "pci_device_id",
+    "No.Fields": 8,
+    "No.Shared fields": 1,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "kobject",
+    "No.Fields": 12,
+    "No.Shared fields": 0,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "device",
+    "No.Fields": 44,
+    "No.Shared fields": 3,
+    "No.KRDU fields": 1,
+    "No.classified fields": 1,
+    "No.unclassified fields": 0,
+    "PTR_READ": 1,
+    "BRANCH": 1,
+    "RISKY_KERNEL_FUNC": 1,
+    "UNCLASSIFY": 0
+  },
+  {
+    "id": "5",
+    "risky": "ptr-sen-api (kobject_put)",
+    "acc_path": "device->parent",
+    "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L4593",
+    "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L3772",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update_loc(shared field)": "[ (alx_probe) https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1765 ], ",
+    "call path (type)": " [alloc_etherdev_mqs->alloc_netdev_mqs->free_netdev->put_device] ",
+    "total_cond_num": "14",
+    "total_cond_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L4584 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L3771 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L4572 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L4596 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L4578 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L4584 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L4602 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L4587 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L4604 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L4607 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L4611 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L4622 | ",
+    "isControl": "0",
+    "direct_num_cond_checks": 1,
+    "direct_cond_checks_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L3771 | ",
+    "is_direct_control": 0,
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  },
+  {
+    "id": "5",
+    "risky": "ptr-read",
+    "acc_path": "device->parent",
+    "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L3239",
+    "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L936",
+    "drv_update_loc(shared field)": "[ (alx_probe) https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1765 ], ",
+    "call path (type)": "",
+    "total_cond_num": "18",
+    "total_cond_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L3234 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L996 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L971 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L996 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L961 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L975 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L971 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L961 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L3238 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L3237 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L966 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L981 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L957 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L998 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L975 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L954 | ",
+    "isControl": "0",
+    "direct_num_cond_checks": 4,
+    "direct_cond_checks_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L966 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L998 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L975 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L954 | ",
+    "is_direct_control": 0,
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": "",
+    "dbg_addr": "  %168 = bitcast %struct.atomic_t* %167 to i32*, !dbg !194128"
+  }
+]
+[
+  {
+    "struct name": "static_key",
+    "No.Fields": 2,
+    "No.Shared fields": 0,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "pci_dev",
+    "No.Fields": 115,
+    "No.Shared fields": 7,
+    "No.KRDU fields": 1,
+    "No.classified fields": 0,
+    "No.unclassified fields": 1,
+    "UNCLASSIFY": 1
+  }
+]
+[
+  {
+    "struct name": "workqueue_struct",
+    "No.Fields": 21,
+    "No.Shared fields": 0,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "work_struct",
+    "No.Fields": 3,
+    "No.Shared fields": 3,
+    "No.KRDU fields": 1,
+    "No.classified fields": 0,
+    "No.unclassified fields": 1,
+    "UNCLASSIFY": 1
+  }
+]
+[
+  {
+    "struct name": "netdev_queue",
+    "No.Fields": 14,
+    "No.Shared fields": 5,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "spinlock",
+    "No.Fields": 1,
+    "No.Shared fields": 1,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "net_device_ops",
+    "No.Fields": 76,
+    "No.Shared fields": 0,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "napi_struct",
+    "No.Fields": 16,
+    "No.Shared fields": 0,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "netdev_hw_addr_list",
+    "No.Fields": 3,
+    "No.Shared fields": 1,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "netdev_hw_addr",
+    "No.Fields": 9,
+    "No.Shared fields": 2,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "sk_buff",
+    "No.Fields": 25,
+    "No.Shared fields": 10,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "rtnl_link_stats64",
+    "No.Fields": 25,
+    "No.Shared fields": 16,
+    "No.KRDU fields": 16,
+    "No.classified fields": 0,
+    "No.unclassified fields": 16,
+    "UNCLASSIFY": 16
+  }
+]
+[
+  {
+    "struct name": "bio_vec",
+    "No.Fields": 3,
+    "No.Shared fields": 3,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "page",
+    "No.Fields": 5,
+    "No.Shared fields": 0,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "iphdr",
+    "No.Fields": 10,
+    "No.Shared fields": 0,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "sockaddr",
+    "No.Fields": 2,
+    "No.Shared fields": 1,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "list_head",
+    "No.Fields": 2,
+    "No.Shared fields": 2,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "net_device",
+    "No.Fields": 134,
+    "No.Shared fields": 21,
+    "No.KRDU fields": 9,
+    "No.classified fields": 3,
+    "No.unclassified fields": 6,
+    "PTR_READ": 1,
+    "": 2,
+    "BRANCH": 1,
+    "RISKY_KERNEL_FUNC": 1,
+    "UNCLASSIFY": 6
+  },
+  {
+    "id": "25",
+    "risky": "num-arith ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L2130 )",
+    "acc_path": "net_device->mtu",
+    "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L2130",
+    "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L2130",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update_loc(shared field)": "[ (alx_change_mtu) https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1180 ], ",
+    "call path (type)": "",
+    "total_cond_num": "3",
+    "total_cond_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L2130 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L2130 | ",
+    "isControl": "0",
+    "direct_num_cond_checks": 0,
+    "direct_cond_checks_loc": "",
+    "is_direct_control": 1,
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  },
+  {
+    "id": "29",
+    "risky": "ptr-read",
+    "acc_path": "net_device->ethtool_ops",
+    "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1111",
+    "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1119",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update_loc(shared field)": "[ (alx_probe) https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1785 ], ",
+    "call path (type)": "",
+    "total_cond_num": "4",
+    "total_cond_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1115 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1115 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1115 | ",
+    "isControl": "0",
+    "direct_num_cond_checks": 0,
+    "direct_cond_checks_loc": "",
+    "is_direct_control": 1,
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": "",
+    "dbg_addr": "  %47 = bitcast {}** %46 to i32 (%struct.net_device.10716*)**, !dbg !194103"
+  },
+  {
+    "id": "29",
+    "risky": "ptr-sen-branch ( senapi: buffer_acc)",
+    "acc_path": "net_device->ethtool_ops",
+    "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1111",
+    "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1116",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update_loc(shared field)": "[ (alx_probe) https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1785 ], ",
+    "call path (type)": "",
+    "total_cond_num": "5",
+    "total_cond_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1115 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1132 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1115 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1115 | ",
+    "isControl": "0",
+    "direct_num_cond_checks": 1,
+    "direct_cond_checks_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1116 | ",
+    "is_direct_control": 0,
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  },
+  {
+    "id": "32",
+    "risky": "num-arith ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/sched/sch_generic.c#L548 )",
+    "acc_path": "net_device->watchdog_timeo",
+    "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/sched/sch_generic.c#L546",
+    "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/sched/sch_generic.c#L549",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update_loc(shared field)": "[ (alx_probe) https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1787 ], ",
+    "call path (type)": " [netif_device_attach->__netdev_watchdog_up] ",
+    "total_cond_num": "2",
+    "total_cond_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/sched/sch_generic.c#L545 | ",
+    "isControl": "0",
+    "direct_num_cond_checks": 0,
+    "direct_cond_checks_loc": "",
+    "is_direct_control": 1,
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  },
+  {
+    "id": "32",
+    "risky": "val-sen-api (mod_time)",
+    "acc_path": "net_device->watchdog_timeo",
+    "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/sched/sch_generic.c#L546",
+    "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/sched/sch_generic.c#L549",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update_loc(shared field)": "[ (alx_probe) https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1787 ], ",
+    "call path (type)": " [netif_device_attach->__netdev_watchdog_up] ",
+    "total_cond_num": "2",
+    "total_cond_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/sched/sch_generic.c#L545 | ",
+    "isControl": "0",
+    "direct_num_cond_checks": 0,
+    "direct_cond_checks_loc": "",
+    "is_direct_control": 1,
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]
+[
+  {
+    "struct name": "tcphdr",
+    "No.Fields": 17,
+    "No.Shared fields": 0,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "mdio_if_info",
+    "No.Fields": 6,
+    "No.Shared fields": 6,
+    "No.KRDU fields": 6,
+    "No.classified fields": 1,
+    "No.unclassified fields": 5,
+    "": 1,
+    "UNCLASSIFY": 5
+  },
+  {
+    "id": "33",
+    "risky": "num-arith ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L316 )",
+    "acc_path": "mdio_if_info->prtad",
+    "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L276",
+    "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L313",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update_loc(shared field)": "[ (alx_probe) https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1841 ], ",
+    "call path (type)": "",
+    "total_cond_num": "5",
+    "total_cond_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L322 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L200 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L323 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L274 | ",
+    "isControl": "0",
+    "direct_num_cond_checks": 0,
+    "direct_cond_checks_loc": "",
+    "is_direct_control": 1,
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]

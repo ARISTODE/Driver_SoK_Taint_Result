@@ -1,0 +1,609 @@
+[
+  {
+    "struct name": "kobject",
+    "No.Fields": 12,
+    "No.Shared fields": 0,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "module",
+    "No.Fields": 48,
+    "No.Shared fields": 0,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "drm_mode_config_funcs",
+    "No.Fields": 9,
+    "No.Shared fields": 0,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "drm_mode_config_helper_funcs",
+    "No.Fields": 2,
+    "No.Shared fields": 0,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "drm_format_info",
+    "No.Fields": 11,
+    "No.Shared fields": 3,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "drm_connector_helper_funcs",
+    "No.Fields": 10,
+    "No.Shared fields": 0,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "__drm_crtcs_state",
+    "No.Fields": 7,
+    "No.Shared fields": 0,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "__drm_planes_state",
+    "No.Fields": 4,
+    "No.Shared fields": 0,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "drm_crtc_helper_funcs",
+    "No.Fields": 16,
+    "No.Shared fields": 0,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "drm_plane_helper_funcs",
+    "No.Fields": 7,
+    "No.Shared fields": 0,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "mutex",
+    "No.Fields": 4,
+    "No.Shared fields": 0,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "drm_encoder",
+    "No.Fields": 12,
+    "No.Shared fields": 1,
+    "No.KRDU fields": 1,
+    "No.classified fields": 1,
+    "No.unclassified fields": 0,
+    "BRANCH": 1,
+    "UNCLASSIFY": 0
+  },
+  {
+    "id": "0",
+    "risky": "val-sen-branch (buffer_acc)",
+    "acc_path": "drm_encoder->possible_crtcs",
+    "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_mode_config.c#L624",
+    "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_mode_config.c#L624",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update_loc(shared field)": "[ (mgag200_g200eh3_pipeline_init) https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh3.c#L136 ], [ (mgag200_g200ew3_pipeline_init) https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ew3.c#L145 ], [ (mgag200_g200er_pipeline_init) https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200er.c#L270 ], [ (mgag200_g200ev_pipeline_init) https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ev.c#L271 ], [ (mgag200_g200wb_pipeline_init) https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L279 ], [ (mgag200_g200_pipeline_init) https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L233 ], [ (mgag200_g200eh_pipeline_init) https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh.c#L232 ], [ (mgag200_g200se_pipeline_init) https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200se.c#L402 ], ",
+    "call path (type)": " [drm_dev_register->drm_mode_config_validate->validate_encoder_possible_crtcs] ",
+    "total_cond_num": "2",
+    "total_cond_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_mode_config.c#L624 | ",
+    "isControl": "0",
+    "direct_num_cond_checks": 0,
+    "direct_cond_checks_loc": "",
+    "is_direct_control": 1,
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]
+[
+  {
+    "struct name": "drm_display_mode",
+    "No.Fields": 34,
+    "No.Shared fields": 10,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "drm_connector",
+    "No.Fields": 65,
+    "No.Shared fields": 2,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "drm_plane",
+    "No.Fields": 27,
+    "No.Shared fields": 4,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "drm_mode_config",
+    "No.Fields": 104,
+    "No.Shared fields": 5,
+    "No.KRDU fields": 5,
+    "No.classified fields": 2,
+    "No.unclassified fields": 3,
+    "BRANCH": 2,
+    "RISKY_KERNEL_FUNC": 1,
+    "UNCLASSIFY": 3
+  },
+  {
+    "id": "2",
+    "risky": "val-sen-branch (buffer_acc)",
+    "acc_path": "drm_mode_config->max_height",
+    "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_fb_helper.c#L1757",
+    "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_fb_helper.c#L1757",
+    "drv_update_loc(shared field)": "[ (mgag200_mode_config_init) https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_mode.c#L830 ], ",
+    "call path (type)": "",
+    "total_cond_num": "3",
+    "total_cond_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_fb_helper.c#L1745 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_fb_helper.c#L1745 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_fb_helper.c#L1745 | ",
+    "isControl": "0",
+    "direct_num_cond_checks": 0,
+    "direct_cond_checks_loc": "",
+    "is_direct_control": 1,
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  },
+  {
+    "id": "3",
+    "risky": "ptr-sen-api (kmalloc)",
+    "acc_path": "drm_mode_config->funcs",
+    "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_atomic.c#L184",
+    "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L636",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update_loc(shared field)": "[ (mgag200_mode_config_init) https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_mode.c#L833 ], ",
+    "call path (type)": " [drm_atomic_helper_page_flip->drm_atomic_state_alloc->drm_atomic_state_init->kcalloc] ",
+    "total_cond_num": "9",
+    "total_cond_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_atomic.c#L177 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_atomic.c#L175 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_atomic.c#L151 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_atomic.c#L140 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_atomic.c#L171 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_atomic.c#L136 | ",
+    "isControl": "0",
+    "direct_num_cond_checks": 0,
+    "direct_cond_checks_loc": "",
+    "is_direct_control": 1,
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]
+[
+  {
+    "struct name": "drm_crtc_funcs",
+    "No.Fields": 24,
+    "No.Shared fields": 1,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "drm_rect",
+    "No.Fields": 4,
+    "No.Shared fields": 0,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "drm_crtc_state",
+    "No.Fields": 27,
+    "No.Shared fields": 7,
+    "No.KRDU fields": 1,
+    "No.classified fields": 1,
+    "No.unclassified fields": 0,
+    "": 1,
+    "UNCLASSIFY": 0
+  },
+  {
+    "id": "6",
+    "risky": "num-arith ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_color_mgmt.c#L335 )",
+    "acc_path": "drm_crtc_state->planes_changed",
+    "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_color_mgmt.c#L335",
+    "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_color_mgmt.c#L335",
+    "drv_update_loc(shared field)": "[ (mgag200_primary_plane_helper_atomic_check) https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_mode.c#L485 ], ",
+    "call path (type)": "",
+    "total_cond_num": "3",
+    "total_cond_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_color_mgmt.c#L324 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_color_mgmt.c#L308 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_color_mgmt.c#L302 | ",
+    "isControl": "1",
+    "direct_num_cond_checks": 1,
+    "direct_cond_checks_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/drm_color_mgmt.c#L302 | ",
+    "is_direct_control": 0,
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]
+[
+  {
+    "struct name": "drm_atomic_state",
+    "No.Fields": 15,
+    "No.Shared fields": 3,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "drm_property_blob",
+    "No.Fields": 6,
+    "No.Shared fields": 2,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "drm_plane_state",
+    "No.Fields": 26,
+    "No.Shared fields": 3,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "drm_framebuffer",
+    "No.Fields": 16,
+    "No.Shared fields": 2,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "drm_crtc",
+    "No.Fields": 32,
+    "No.Shared fields": 5,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "drm_driver",
+    "No.Fields": 28,
+    "No.Shared fields": 0,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "drm_device",
+    "No.Fields": 37,
+    "No.Shared fields": 2,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "drm_shadow_plane_state",
+    "No.Fields": 3,
+    "No.Shared fields": 1,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "iosys_map",
+    "No.Fields": 2,
+    "No.Shared fields": 2,
+    "No.KRDU fields": 1,
+    "No.classified fields": 0,
+    "No.unclassified fields": 1,
+    "UNCLASSIFY": 1
+  }
+]
+[
+  {
+    "struct name": "device",
+    "No.Fields": 44,
+    "No.Shared fields": 3,
+    "No.KRDU fields": 1,
+    "No.classified fields": 1,
+    "No.unclassified fields": 0,
+    "BRANCH": 1,
+    "RISKY_KERNEL_FUNC": 1,
+    "UNCLASSIFY": 0
+  },
+  {
+    "id": "8",
+    "risky": "ptr-sen-branch ( senapi: buffer_acc)",
+    "acc_path": "device->parent",
+    "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L3431",
+    "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L3431",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update_loc(shared field)": "[ (mgag200_i2c_init) https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_i2c.c#L110 ], ",
+    "call path (type)": " [drm_dev_unregister->drm_minor_unregister->device_del->device_remove_class_symlinks] ",
+    "total_cond_num": "1",
+    "total_cond_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L3428 | ",
+    "isControl": "1",
+    "direct_num_cond_checks": 0,
+    "direct_cond_checks_loc": "",
+    "is_direct_control": 1,
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  },
+  {
+    "id": "8",
+    "risky": "ptr-sen-api (kobject_put)",
+    "acc_path": "device->parent",
+    "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L3584",
+    "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L3772",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update_loc(shared field)": "[ (mgag200_i2c_init) https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_i2c.c#L110 ], ",
+    "call path (type)": " [drm_dev_unregister->drm_minor_unregister->device_del->put_device] ",
+    "total_cond_num": "4",
+    "total_cond_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L3674 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L3577 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L3771 | ",
+    "isControl": "0",
+    "direct_num_cond_checks": 1,
+    "direct_cond_checks_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L3771 | ",
+    "is_direct_control": 0,
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]
+[
+  {
+    "struct name": "resource",
+    "No.Fields": 8,
+    "No.Shared fields": 2,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "i2c_adapter",
+    "No.Fields": 20,
+    "No.Shared fields": 5,
+    "No.KRDU fields": 3,
+    "No.classified fields": 2,
+    "No.unclassified fields": 1,
+    "BRANCH": 2,
+    "UNCLASSIFY": 1
+  },
+  {
+    "id": "10",
+    "risky": "val-sen-branch (kfree)",
+    "acc_path": "i2c_adapter->class",
+    "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/i2c/i2c-core-base.c#L2368",
+    "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/i2c/i2c-core-base.c#L2368",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update_loc(shared field)": "[ (mgag200_i2c_init) https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_i2c.c#L109 ], ",
+    "call path (type)": "",
+    "total_cond_num": "4",
+    "total_cond_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/i2c/i2c-core-base.c#L2359 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/i2c/i2c-core-base.c#L2355 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/i2c/i2c-core-base.c#L2355 | ",
+    "isControl": "0",
+    "direct_num_cond_checks": 1,
+    "direct_cond_checks_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/i2c/i2c-core-base.c#L2359 | ",
+    "is_direct_control": 0,
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  },
+  {
+    "id": "11",
+    "risky": "ptr-sen-branch ( senapi: buffer_acc)",
+    "acc_path": "i2c_adapter->algo_data",
+    "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/i2c/algos/i2c-algo-bit.c#L402",
+    "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/i2c/algos/i2c-algo-bit.c#L408",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update_loc(shared field)": "[ (mgag200_i2c_init) https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_i2c.c#L115 ], ",
+    "call path (type)": "",
+    "total_cond_num": "4",
+    "total_cond_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/i2c/algos/i2c-algo-bit.c#L405 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/i2c/algos/i2c-algo-bit.c#L407 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/i2c/algos/i2c-algo-bit.c#L407 | ",
+    "isControl": "0",
+    "direct_num_cond_checks": 0,
+    "direct_cond_checks_loc": "",
+    "is_direct_control": 1,
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]
+[
+  {
+    "struct name": "pci_device_id",
+    "No.Fields": 8,
+    "No.Shared fields": 1,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "pci_driver",
+    "No.Fields": 17,
+    "No.Shared fields": 0,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "i2c_algo_bit_data",
+    "No.Fields": 10,
+    "No.Shared fields": 7,
+    "No.KRDU fields": 7,
+    "No.classified fields": 2,
+    "No.unclassified fields": 5,
+    "": 2,
+    "UNCLASSIFY": 5
+  },
+  {
+    "id": "17",
+    "risky": "num-arith ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/i2c/algos/i2c-algo-bit.c#L163 )",
+    "acc_path": "i2c_algo_bit_data->udelay",
+    "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/i2c/algos/i2c-algo-bit.c#L163",
+    "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/i2c/algos/i2c-algo-bit.c#L163",
+    "drv_update_loc(shared field)": "[ (mgag200_i2c_init) https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_i2c.c#L117 ], ",
+    "call path (type)": "",
+    "total_cond_num": "3",
+    "total_cond_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/i2c/algos/i2c-algo-bit.c#L163 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/i2c/algos/i2c-algo-bit.c#L163 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/i2c/algos/i2c-algo-bit.c#L160 | ",
+    "isControl": "0",
+    "direct_num_cond_checks": 0,
+    "direct_cond_checks_loc": "",
+    "is_direct_control": 1,
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  },
+  {
+    "id": "18",
+    "risky": "num-arith ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/i2c/algos/i2c-algo-bit.c#L92 )",
+    "acc_path": "i2c_algo_bit_data->timeout",
+    "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/i2c/algos/i2c-algo-bit.c#L92",
+    "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/i2c/algos/i2c-algo-bit.c#L92",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update_loc(shared field)": "[ (mgag200_i2c_init) https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_i2c.c#L118 ], ",
+    "call path (type)": " [i2c_bit_add_bus->__i2c_bit_add_bus->test_bus->sclhi] ",
+    "total_cond_num": "1",
+    "total_cond_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/i2c/algos/i2c-algo-bit.c#L86 | ",
+    "isControl": "1",
+    "direct_num_cond_checks": 0,
+    "direct_cond_checks_loc": "",
+    "is_direct_control": 1,
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]
+[
+  {
+    "struct name": "drm_color_lut",
+    "No.Fields": 4,
+    "No.Shared fields": 0,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "drm_atomic_helper_damage_iter",
+    "No.Fields": 5,
+    "No.Shared fields": 0,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "pci_dev",
+    "No.Fields": 0,
+    "No.Shared fields": 0,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]

@@ -1,0 +1,983 @@
+[
+  {
+    "type": "indirect",
+    "drv boundary func": "fsg_alloc_inst",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L845",
+    "call path": " [fsg_alloc_inst->fsg_common_create_lun->device_register->device_add->fw_devlink_link_device->__fw_devlink_link_to_suppliers->fw_devlink_create_devlink->device_link_add] ",
+    "num condition checks": 1,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L844 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "fsg_alloc_inst",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L916",
+    "call path": " [fsg_alloc_inst->fsg_common_create_lun->device_register->device_add->fw_devlink_link_device->__fw_devlink_link_to_suppliers->fw_devlink_create_devlink->device_link_add] ",
+    "num condition checks": 5,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L908 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L889 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L914 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L915 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L831 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "fsg_alloc_inst",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L267",
+    "call path": " [fsg_alloc_inst->fsg_common_create_lun->device_register->device_add->fw_devlink_link_device->__fw_devlink_link_to_suppliers->fw_devlink_create_devlink->device_link_add->refcount_inc] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "fsg_alloc_inst",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/kref.h#L45",
+    "call path": " [fsg_alloc_inst->fsg_common_create_lun->device_register->device_add->fw_devlink_link_device->__fw_devlink_link_to_suppliers->fw_devlink_create_devlink->device_link_add->kref_get] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "forced_eject_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task.h#L110",
+    "call path": " [forced_eject_store->fsg_store_forced_eject->fsg_store_file->up_write->__up_write->rwsem_wake->rwsem_mark_wake->get_task_struct.425] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "forced_eject_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task.h#L119",
+    "call path": " [forced_eject_store->fsg_store_forced_eject->fsg_store_file->up_write->__up_write->rwsem_wake->rwsem_mark_wake->wake_q_add_safe->put_task_struct.804] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "forced_eject_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task.h#L110",
+    "call path": " [forced_eject_store->fsg_store_forced_eject->fsg_store_file->up_write->__up_write->rwsem_wake->rwsem_mark_wake->wake_q_add->get_task_struct.801] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "forced_eject_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L267",
+    "call path": " [forced_eject_store->fsg_store_forced_eject->fsg_store_file->up_write->__up_write->rwsem_wake->rwsem_mark_wake->get_task_struct.425->refcount_inc.426] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "forced_eject_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4213",
+    "call path": " [forced_eject_store->fsg_store_forced_eject->fsg_store_file->up_write->__up_write->rwsem_wake->wake_up_q->wake_up_process->try_to_wake_up] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "forced_eject_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L333",
+    "call path": " [forced_eject_store->fsg_store_forced_eject->fsg_store_file->up_write->__up_write->rwsem_wake->rwsem_mark_wake->wake_q_add_safe->put_task_struct.804->refcount_dec_and_test.805] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "forced_eject_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6511",
+    "call path": " [forced_eject_store->fsg_store_forced_eject->fsg_store_file->down_write->__down_write->__down_write_common->rwsem_down_write_slowpath->schedule->__schedule] ",
+    "num condition checks": 1,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6510 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "forced_eject_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L267",
+    "call path": " [forced_eject_store->fsg_store_forced_eject->fsg_store_file->up_write->__up_write->rwsem_wake->rwsem_mark_wake->wake_q_add->get_task_struct.801->refcount_inc.827] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "forced_eject_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L37",
+    "call path": " [forced_eject_store->fsg_store_forced_eject->fsg_store_file->down_write->__down_write->__down_write_common->rwsem_down_write_slowpath->schedule->__schedule->mmgrab.899] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "forced_eject_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3693",
+    "call path": " [forced_eject_store->fsg_store_forced_eject->fsg_store_file->up_write->__up_write->rwsem_wake->wake_up_q->wake_up_process->try_to_wake_up->ttwu_queue->ttwu_do_activate] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "forced_eject_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L49",
+    "call path": " [forced_eject_store->fsg_store_forced_eject->fsg_store_file->down_write->__down_write->__down_write_common->rwsem_down_write_slowpath->schedule->__schedule->finish_task_switch->mmdrop_sched->mmdrop.901] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "file_show",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task.h#L110",
+    "call path": " [file_show->fsg_show_file->up_read->__up_read->rwsem_wake->rwsem_mark_wake->get_task_struct.425] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "file_show",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task.h#L119",
+    "call path": " [file_show->fsg_show_file->up_read->__up_read->rwsem_wake->rwsem_mark_wake->wake_q_add_safe->put_task_struct.804] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "file_show",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task.h#L110",
+    "call path": " [file_show->fsg_show_file->up_read->__up_read->rwsem_wake->rwsem_mark_wake->wake_q_add->get_task_struct.801] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "file_show",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L267",
+    "call path": " [file_show->fsg_show_file->up_read->__up_read->rwsem_wake->rwsem_mark_wake->get_task_struct.425->refcount_inc.426] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "file_show",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4213",
+    "call path": " [file_show->fsg_show_file->up_read->__up_read->rwsem_wake->wake_up_q->wake_up_process->try_to_wake_up] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "file_show",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L333",
+    "call path": " [file_show->fsg_show_file->up_read->__up_read->rwsem_wake->rwsem_mark_wake->wake_q_add_safe->put_task_struct.804->refcount_dec_and_test.805] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "file_show",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6511",
+    "call path": " [file_show->fsg_show_file->down_read->rwsem_down_read_slowpath->schedule_preempt_disabled->schedule->__schedule] ",
+    "num condition checks": 1,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6510 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "file_show",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L267",
+    "call path": " [file_show->fsg_show_file->up_read->__up_read->rwsem_wake->rwsem_mark_wake->wake_q_add->get_task_struct.801->refcount_inc.827] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "file_show",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L37",
+    "call path": " [file_show->fsg_show_file->down_read->rwsem_down_read_slowpath->schedule_preempt_disabled->schedule->__schedule->mmgrab.899] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "file_show",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3693",
+    "call path": " [file_show->fsg_show_file->up_read->__up_read->rwsem_wake->wake_up_q->wake_up_process->try_to_wake_up->ttwu_queue->ttwu_do_activate] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "file_show",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L49",
+    "call path": " [file_show->fsg_show_file->down_read->rwsem_down_read_slowpath->schedule_preempt_disabled->schedule->__schedule->finish_task_switch->mmdrop_sched->mmdrop.901] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "file_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task.h#L110",
+    "call path": " [file_store->fsg_store_file->up_write->__up_write->rwsem_wake->rwsem_mark_wake->get_task_struct.425] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "file_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task.h#L119",
+    "call path": " [file_store->fsg_store_file->up_write->__up_write->rwsem_wake->rwsem_mark_wake->wake_q_add_safe->put_task_struct.804] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "file_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task.h#L110",
+    "call path": " [file_store->fsg_store_file->up_write->__up_write->rwsem_wake->rwsem_mark_wake->wake_q_add->get_task_struct.801] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "file_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L267",
+    "call path": " [file_store->fsg_store_file->up_write->__up_write->rwsem_wake->rwsem_mark_wake->get_task_struct.425->refcount_inc.426] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "file_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4213",
+    "call path": " [file_store->fsg_store_file->up_write->__up_write->rwsem_wake->wake_up_q->wake_up_process->try_to_wake_up] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "file_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L333",
+    "call path": " [file_store->fsg_store_file->up_write->__up_write->rwsem_wake->rwsem_mark_wake->wake_q_add_safe->put_task_struct.804->refcount_dec_and_test.805] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "file_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6511",
+    "call path": " [file_store->fsg_store_file->down_write->__down_write->__down_write_common->rwsem_down_write_slowpath->schedule->__schedule] ",
+    "num condition checks": 1,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6510 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "file_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L267",
+    "call path": " [file_store->fsg_store_file->up_write->__up_write->rwsem_wake->rwsem_mark_wake->wake_q_add->get_task_struct.801->refcount_inc.827] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "file_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L37",
+    "call path": " [file_store->fsg_store_file->down_write->__down_write->__down_write_common->rwsem_down_write_slowpath->schedule->__schedule->mmgrab.899] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "file_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3693",
+    "call path": " [file_store->fsg_store_file->up_write->__up_write->rwsem_wake->wake_up_q->wake_up_process->try_to_wake_up->ttwu_queue->ttwu_do_activate] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "file_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L49",
+    "call path": " [file_store->fsg_store_file->down_write->__down_write->__down_write_common->rwsem_down_write_slowpath->schedule->__schedule->finish_task_switch->mmdrop_sched->mmdrop.901] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "ro_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task.h#L110",
+    "call path": " [ro_store->fsg_store_ro->up_read->__up_read->rwsem_wake->rwsem_mark_wake->get_task_struct.425] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "ro_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task.h#L119",
+    "call path": " [ro_store->fsg_store_ro->up_read->__up_read->rwsem_wake->rwsem_mark_wake->wake_q_add_safe->put_task_struct.804] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "ro_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task.h#L110",
+    "call path": " [ro_store->fsg_store_ro->up_read->__up_read->rwsem_wake->rwsem_mark_wake->wake_q_add->get_task_struct.801] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "ro_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L267",
+    "call path": " [ro_store->fsg_store_ro->up_read->__up_read->rwsem_wake->rwsem_mark_wake->get_task_struct.425->refcount_inc.426] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "ro_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4213",
+    "call path": " [ro_store->fsg_store_ro->up_read->__up_read->rwsem_wake->wake_up_q->wake_up_process->try_to_wake_up] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "ro_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L333",
+    "call path": " [ro_store->fsg_store_ro->up_read->__up_read->rwsem_wake->rwsem_mark_wake->wake_q_add_safe->put_task_struct.804->refcount_dec_and_test.805] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "ro_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6511",
+    "call path": " [ro_store->fsg_store_ro->down_read->rwsem_down_read_slowpath->schedule_preempt_disabled->schedule->__schedule] ",
+    "num condition checks": 1,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6510 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "ro_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L267",
+    "call path": " [ro_store->fsg_store_ro->up_read->__up_read->rwsem_wake->rwsem_mark_wake->wake_q_add->get_task_struct.801->refcount_inc.827] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "ro_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L37",
+    "call path": " [ro_store->fsg_store_ro->down_read->rwsem_down_read_slowpath->schedule_preempt_disabled->schedule->__schedule->mmgrab.899] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "ro_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3693",
+    "call path": " [ro_store->fsg_store_ro->up_read->__up_read->rwsem_wake->wake_up_q->wake_up_process->try_to_wake_up->ttwu_queue->ttwu_do_activate] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "ro_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L49",
+    "call path": " [ro_store->fsg_store_ro->down_read->rwsem_down_read_slowpath->schedule_preempt_disabled->schedule->__schedule->finish_task_switch->mmdrop_sched->mmdrop.901] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "fsg_lun_opts_forced_eject_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task.h#L110",
+    "call path": " [fsg_lun_opts_forced_eject_store->fsg_store_forced_eject->fsg_store_file->up_write->__up_write->rwsem_wake->rwsem_mark_wake->get_task_struct.425] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "fsg_lun_opts_forced_eject_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task.h#L119",
+    "call path": " [fsg_lun_opts_forced_eject_store->fsg_store_forced_eject->fsg_store_file->up_write->__up_write->rwsem_wake->rwsem_mark_wake->wake_q_add_safe->put_task_struct.804] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "fsg_lun_opts_forced_eject_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task.h#L110",
+    "call path": " [fsg_lun_opts_forced_eject_store->fsg_store_forced_eject->fsg_store_file->up_write->__up_write->rwsem_wake->rwsem_mark_wake->wake_q_add->get_task_struct.801] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "fsg_lun_opts_forced_eject_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L267",
+    "call path": " [fsg_lun_opts_forced_eject_store->fsg_store_forced_eject->fsg_store_file->up_write->__up_write->rwsem_wake->rwsem_mark_wake->get_task_struct.425->refcount_inc.426] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "fsg_lun_opts_forced_eject_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4213",
+    "call path": " [fsg_lun_opts_forced_eject_store->fsg_store_forced_eject->fsg_store_file->up_write->__up_write->rwsem_wake->wake_up_q->wake_up_process->try_to_wake_up] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "fsg_lun_opts_forced_eject_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L333",
+    "call path": " [fsg_lun_opts_forced_eject_store->fsg_store_forced_eject->fsg_store_file->up_write->__up_write->rwsem_wake->rwsem_mark_wake->wake_q_add_safe->put_task_struct.804->refcount_dec_and_test.805] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "fsg_lun_opts_forced_eject_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6511",
+    "call path": " [fsg_lun_opts_forced_eject_store->fsg_store_forced_eject->fsg_store_file->down_write->__down_write->__down_write_common->rwsem_down_write_slowpath->schedule->__schedule] ",
+    "num condition checks": 1,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6510 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "fsg_lun_opts_forced_eject_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L267",
+    "call path": " [fsg_lun_opts_forced_eject_store->fsg_store_forced_eject->fsg_store_file->up_write->__up_write->rwsem_wake->rwsem_mark_wake->wake_q_add->get_task_struct.801->refcount_inc.827] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "fsg_lun_opts_forced_eject_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L37",
+    "call path": " [fsg_lun_opts_forced_eject_store->fsg_store_forced_eject->fsg_store_file->down_write->__down_write->__down_write_common->rwsem_down_write_slowpath->schedule->__schedule->mmgrab.899] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "fsg_lun_opts_forced_eject_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3693",
+    "call path": " [fsg_lun_opts_forced_eject_store->fsg_store_forced_eject->fsg_store_file->up_write->__up_write->rwsem_wake->wake_up_q->wake_up_process->try_to_wake_up->ttwu_queue->ttwu_do_activate] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "fsg_lun_opts_forced_eject_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L49",
+    "call path": " [fsg_lun_opts_forced_eject_store->fsg_store_forced_eject->fsg_store_file->down_write->__down_write->__down_write_common->rwsem_down_write_slowpath->schedule->__schedule->finish_task_switch->mmdrop_sched->mmdrop.901] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "fsg_lun_opts_cdrom_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task.h#L110",
+    "call path": " [fsg_lun_opts_cdrom_store->fsg_store_cdrom->up_read->__up_read->rwsem_wake->rwsem_mark_wake->get_task_struct.425] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "fsg_lun_opts_cdrom_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task.h#L119",
+    "call path": " [fsg_lun_opts_cdrom_store->fsg_store_cdrom->up_read->__up_read->rwsem_wake->rwsem_mark_wake->wake_q_add_safe->put_task_struct.804] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "fsg_lun_opts_cdrom_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task.h#L110",
+    "call path": " [fsg_lun_opts_cdrom_store->fsg_store_cdrom->up_read->__up_read->rwsem_wake->rwsem_mark_wake->wake_q_add->get_task_struct.801] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "fsg_lun_opts_cdrom_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L267",
+    "call path": " [fsg_lun_opts_cdrom_store->fsg_store_cdrom->up_read->__up_read->rwsem_wake->rwsem_mark_wake->get_task_struct.425->refcount_inc.426] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "fsg_lun_opts_cdrom_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4213",
+    "call path": " [fsg_lun_opts_cdrom_store->fsg_store_cdrom->up_read->__up_read->rwsem_wake->wake_up_q->wake_up_process->try_to_wake_up] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "fsg_lun_opts_cdrom_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L333",
+    "call path": " [fsg_lun_opts_cdrom_store->fsg_store_cdrom->up_read->__up_read->rwsem_wake->rwsem_mark_wake->wake_q_add_safe->put_task_struct.804->refcount_dec_and_test.805] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "fsg_lun_opts_cdrom_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6511",
+    "call path": " [fsg_lun_opts_cdrom_store->fsg_store_cdrom->down_read->rwsem_down_read_slowpath->schedule_preempt_disabled->schedule->__schedule] ",
+    "num condition checks": 1,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6510 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "fsg_lun_opts_cdrom_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L267",
+    "call path": " [fsg_lun_opts_cdrom_store->fsg_store_cdrom->up_read->__up_read->rwsem_wake->rwsem_mark_wake->wake_q_add->get_task_struct.801->refcount_inc.827] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "fsg_lun_opts_cdrom_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L37",
+    "call path": " [fsg_lun_opts_cdrom_store->fsg_store_cdrom->down_read->rwsem_down_read_slowpath->schedule_preempt_disabled->schedule->__schedule->mmgrab.899] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "fsg_lun_opts_cdrom_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3693",
+    "call path": " [fsg_lun_opts_cdrom_store->fsg_store_cdrom->up_read->__up_read->rwsem_wake->wake_up_q->wake_up_process->try_to_wake_up->ttwu_queue->ttwu_do_activate] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "fsg_lun_opts_cdrom_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L49",
+    "call path": " [fsg_lun_opts_cdrom_store->fsg_store_cdrom->down_read->rwsem_down_read_slowpath->schedule_preempt_disabled->schedule->__schedule->finish_task_switch->mmdrop_sched->mmdrop.901] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "fsg_lun_opts_ro_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task.h#L110",
+    "call path": " [fsg_lun_opts_ro_store->fsg_store_ro->up_read->__up_read->rwsem_wake->rwsem_mark_wake->get_task_struct.425] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "fsg_lun_opts_ro_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task.h#L119",
+    "call path": " [fsg_lun_opts_ro_store->fsg_store_ro->up_read->__up_read->rwsem_wake->rwsem_mark_wake->wake_q_add_safe->put_task_struct.804] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "fsg_lun_opts_ro_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task.h#L110",
+    "call path": " [fsg_lun_opts_ro_store->fsg_store_ro->up_read->__up_read->rwsem_wake->rwsem_mark_wake->wake_q_add->get_task_struct.801] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "fsg_lun_opts_ro_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L267",
+    "call path": " [fsg_lun_opts_ro_store->fsg_store_ro->up_read->__up_read->rwsem_wake->rwsem_mark_wake->get_task_struct.425->refcount_inc.426] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "fsg_lun_opts_ro_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4213",
+    "call path": " [fsg_lun_opts_ro_store->fsg_store_ro->up_read->__up_read->rwsem_wake->wake_up_q->wake_up_process->try_to_wake_up] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "fsg_lun_opts_ro_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L333",
+    "call path": " [fsg_lun_opts_ro_store->fsg_store_ro->up_read->__up_read->rwsem_wake->rwsem_mark_wake->wake_q_add_safe->put_task_struct.804->refcount_dec_and_test.805] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "fsg_lun_opts_ro_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6511",
+    "call path": " [fsg_lun_opts_ro_store->fsg_store_ro->down_read->rwsem_down_read_slowpath->schedule_preempt_disabled->schedule->__schedule] ",
+    "num condition checks": 1,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6510 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "fsg_lun_opts_ro_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L267",
+    "call path": " [fsg_lun_opts_ro_store->fsg_store_ro->up_read->__up_read->rwsem_wake->rwsem_mark_wake->wake_q_add->get_task_struct.801->refcount_inc.827] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "fsg_lun_opts_ro_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L37",
+    "call path": " [fsg_lun_opts_ro_store->fsg_store_ro->down_read->rwsem_down_read_slowpath->schedule_preempt_disabled->schedule->__schedule->mmgrab.899] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "fsg_lun_opts_ro_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3693",
+    "call path": " [fsg_lun_opts_ro_store->fsg_store_ro->up_read->__up_read->rwsem_wake->wake_up_q->wake_up_process->try_to_wake_up->ttwu_queue->ttwu_do_activate] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "fsg_lun_opts_ro_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L49",
+    "call path": " [fsg_lun_opts_ro_store->fsg_store_ro->down_read->rwsem_down_read_slowpath->schedule_preempt_disabled->schedule->__schedule->finish_task_switch->mmdrop_sched->mmdrop.901] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "fsg_lun_opts_file_show",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task.h#L110",
+    "call path": " [fsg_lun_opts_file_show->fsg_show_file->up_read->__up_read->rwsem_wake->rwsem_mark_wake->get_task_struct.425] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "fsg_lun_opts_file_show",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task.h#L119",
+    "call path": " [fsg_lun_opts_file_show->fsg_show_file->up_read->__up_read->rwsem_wake->rwsem_mark_wake->wake_q_add_safe->put_task_struct.804] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "fsg_lun_opts_file_show",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task.h#L110",
+    "call path": " [fsg_lun_opts_file_show->fsg_show_file->up_read->__up_read->rwsem_wake->rwsem_mark_wake->wake_q_add->get_task_struct.801] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "fsg_lun_opts_file_show",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L267",
+    "call path": " [fsg_lun_opts_file_show->fsg_show_file->up_read->__up_read->rwsem_wake->rwsem_mark_wake->get_task_struct.425->refcount_inc.426] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "fsg_lun_opts_file_show",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4213",
+    "call path": " [fsg_lun_opts_file_show->fsg_show_file->up_read->__up_read->rwsem_wake->wake_up_q->wake_up_process->try_to_wake_up] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "fsg_lun_opts_file_show",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L333",
+    "call path": " [fsg_lun_opts_file_show->fsg_show_file->up_read->__up_read->rwsem_wake->rwsem_mark_wake->wake_q_add_safe->put_task_struct.804->refcount_dec_and_test.805] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "fsg_lun_opts_file_show",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6511",
+    "call path": " [fsg_lun_opts_file_show->fsg_show_file->down_read->rwsem_down_read_slowpath->schedule_preempt_disabled->schedule->__schedule] ",
+    "num condition checks": 1,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6510 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "fsg_lun_opts_file_show",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L267",
+    "call path": " [fsg_lun_opts_file_show->fsg_show_file->up_read->__up_read->rwsem_wake->rwsem_mark_wake->wake_q_add->get_task_struct.801->refcount_inc.827] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "fsg_lun_opts_file_show",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L37",
+    "call path": " [fsg_lun_opts_file_show->fsg_show_file->down_read->rwsem_down_read_slowpath->schedule_preempt_disabled->schedule->__schedule->mmgrab.899] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "fsg_lun_opts_file_show",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3693",
+    "call path": " [fsg_lun_opts_file_show->fsg_show_file->up_read->__up_read->rwsem_wake->wake_up_q->wake_up_process->try_to_wake_up->ttwu_queue->ttwu_do_activate] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "fsg_lun_opts_file_show",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L49",
+    "call path": " [fsg_lun_opts_file_show->fsg_show_file->down_read->rwsem_down_read_slowpath->schedule_preempt_disabled->schedule->__schedule->finish_task_switch->mmdrop_sched->mmdrop.901] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "fsg_lun_opts_file_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task.h#L110",
+    "call path": " [fsg_lun_opts_file_store->fsg_store_file->up_write->__up_write->rwsem_wake->rwsem_mark_wake->get_task_struct.425] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "fsg_lun_opts_file_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task.h#L119",
+    "call path": " [fsg_lun_opts_file_store->fsg_store_file->up_write->__up_write->rwsem_wake->rwsem_mark_wake->wake_q_add_safe->put_task_struct.804] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "fsg_lun_opts_file_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task.h#L110",
+    "call path": " [fsg_lun_opts_file_store->fsg_store_file->up_write->__up_write->rwsem_wake->rwsem_mark_wake->wake_q_add->get_task_struct.801] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "fsg_lun_opts_file_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L267",
+    "call path": " [fsg_lun_opts_file_store->fsg_store_file->up_write->__up_write->rwsem_wake->rwsem_mark_wake->get_task_struct.425->refcount_inc.426] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "fsg_lun_opts_file_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4213",
+    "call path": " [fsg_lun_opts_file_store->fsg_store_file->up_write->__up_write->rwsem_wake->wake_up_q->wake_up_process->try_to_wake_up] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "fsg_lun_opts_file_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L333",
+    "call path": " [fsg_lun_opts_file_store->fsg_store_file->up_write->__up_write->rwsem_wake->rwsem_mark_wake->wake_q_add_safe->put_task_struct.804->refcount_dec_and_test.805] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "fsg_lun_opts_file_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6511",
+    "call path": " [fsg_lun_opts_file_store->fsg_store_file->down_write->__down_write->__down_write_common->rwsem_down_write_slowpath->schedule->__schedule] ",
+    "num condition checks": 1,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6510 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "fsg_lun_opts_file_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L267",
+    "call path": " [fsg_lun_opts_file_store->fsg_store_file->up_write->__up_write->rwsem_wake->rwsem_mark_wake->wake_q_add->get_task_struct.801->refcount_inc.827] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "fsg_lun_opts_file_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L37",
+    "call path": " [fsg_lun_opts_file_store->fsg_store_file->down_write->__down_write->__down_write_common->rwsem_down_write_slowpath->schedule->__schedule->mmgrab.899] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "fsg_lun_opts_file_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3693",
+    "call path": " [fsg_lun_opts_file_store->fsg_store_file->up_write->__up_write->rwsem_wake->wake_up_q->wake_up_process->try_to_wake_up->ttwu_queue->ttwu_do_activate] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "fsg_lun_opts_file_store",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L49",
+    "call path": " [fsg_lun_opts_file_store->fsg_store_file->down_write->__down_write->__down_write_common->rwsem_down_write_slowpath->schedule->__schedule->finish_task_switch->mmdrop_sched->mmdrop.901] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "fsg_lun_make",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L845",
+    "call path": " [fsg_lun_make->fsg_common_create_lun->device_register->device_add->fw_devlink_link_device->__fw_devlink_link_to_suppliers->fw_devlink_create_devlink->device_link_add] ",
+    "num condition checks": 1,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L844 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "fsg_lun_make",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L916",
+    "call path": " [fsg_lun_make->fsg_common_create_lun->device_register->device_add->fw_devlink_link_device->__fw_devlink_link_to_suppliers->fw_devlink_create_devlink->device_link_add] ",
+    "num condition checks": 5,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L908 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L889 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L914 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L915 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L831 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "fsg_lun_make",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L267",
+    "call path": " [fsg_lun_make->fsg_common_create_lun->device_register->device_add->fw_devlink_link_device->__fw_devlink_link_to_suppliers->fw_devlink_create_devlink->device_link_add->refcount_inc] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "fsg_lun_make",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/kref.h#L45",
+    "call path": " [fsg_lun_make->fsg_common_create_lun->device_register->device_add->fw_devlink_link_device->__fw_devlink_link_to_suppliers->fw_devlink_create_devlink->device_link_add->kref_get] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "fsg_lun_drop",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/kref.h#L64",
+    "call path": " [fsg_lun_drop->config_item_put->kref_put.297] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "fsg_lun_drop",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L333",
+    "call path": " [fsg_lun_drop->config_item_put->kref_put.297->refcount_dec_and_test.298] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  }
+]

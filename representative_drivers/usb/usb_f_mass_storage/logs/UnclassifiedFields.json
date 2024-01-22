@@ -1,0 +1,48 @@
+{
+  "id": 1,
+  "acc_path": "device->groups",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L2940],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L4678],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L2916],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L2878], ",
+  "Drv update": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_mass_storage.c#L2890], "
+}
+{
+  "id": 38,
+  "acc_path": "ssize_t",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/function/f_mass_storage.c#L2654 | forced_eject_store",
+  "Drv update": ""
+}
+{
+  "id": 39,
+  "acc_path": "ssize_t",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/function/f_mass_storage.c#L2611 | nofua_show",
+  "Drv update": ""
+}
+{
+  "id": 40,
+  "acc_path": "ssize_t",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/function/f_mass_storage.c#L2654 | forced_eject_store",
+  "Drv update": ""
+}
+{
+  "id": 41,
+  "acc_path": "ssize_t",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/function/f_mass_storage.c#L2611 | nofua_show",
+  "Drv update": ""
+}
+{
+  "id": 42,
+  "acc_path": "ssize_t",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/function/f_mass_storage.c#L2654 | forced_eject_store",
+  "Drv update": ""
+}
+{
+  "id": 43,
+  "acc_path": "ssize_t",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/function/f_mass_storage.c#L2611 | nofua_show",
+  "Drv update": ""
+}
+{
+  "id": 44,
+  "acc_path": "ssize_t",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/usb/gadget/function/f_mass_storage.c#L2654 | forced_eject_store",
+  "Drv update": ""
+}

@@ -1,0 +1,236 @@
+[
+  {
+    "struct name": "mutex",
+    "No.Fields": 4,
+    "No.Shared fields": 0,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "dmi_system_id",
+    "No.Fields": 4,
+    "No.Shared fields": 0,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "device",
+    "No.Fields": 44,
+    "No.Shared fields": 2,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "acpi_device_pnp",
+    "No.Fields": 9,
+    "No.Shared fields": 2,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "device_attribute",
+    "No.Fields": 3,
+    "No.Shared fields": 3,
+    "No.KRDU fields": 2,
+    "No.classified fields": 0,
+    "No.unclassified fields": 2,
+    "UNCLASSIFY": 2
+  }
+]
+[
+  {
+    "struct name": "attribute",
+    "No.Fields": 2,
+    "No.Shared fields": 2,
+    "No.KRDU fields": 2,
+    "No.classified fields": 0,
+    "No.unclassified fields": 2,
+    "UNCLASSIFY": 2
+  }
+]
+[
+  {
+    "struct name": "kobject",
+    "No.Fields": 12,
+    "No.Shared fields": 1,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
+    "struct name": "acpi_object_list",
+    "No.Fields": 2,
+    "No.Shared fields": 2,
+    "No.KRDU fields": 2,
+    "No.classified fields": 1,
+    "No.unclassified fields": 1,
+    "BRANCH": 1,
+    "UNCLASSIFY": 1
+  },
+  {
+    "id": "4",
+    "risky": "val-sen-branch (buffer_acc)",
+    "acc_path": "acpi_object_list->count",
+    "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/acpi/utils.c#L696",
+    "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/acpi/acpica/nsxfeval.c#L228",
+    "drv_update_loc(shared field)": "[ (set_acpi_trip) https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/hwmon/acpi_power_meter.c#L261 ], [ (set_avg_interval) https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/hwmon/acpi_power_meter.c#L146 ], [ (set_cap) https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/hwmon/acpi_power_meter.c#L219 ], ",
+    "call path (type)": " [hwmon_device_unregister->device_unregister->device_del->device_platform_notify_remove->acpi_power_meter_resume->read_capabilities->acpi_evaluate_object] ",
+    "total_cond_num": "1",
+    "total_cond_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/acpi/acpica/nsxfeval.c#L228 | ",
+    "isControl": "1",
+    "direct_num_cond_checks": 1,
+    "direct_cond_checks_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/acpi/acpica/nsxfeval.c#L228 | ",
+    "is_direct_control": 0,
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  },
+  {
+    "id": "5",
+    "risky": "type-conf",
+    "risky_locs": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/hwmon/acpi_power_meter.c#L261 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/acpi/utils.c#L696 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/hwmon/acpi_power_meter.c#L146 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/hwmon/acpi_power_meter.c#L219 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/acpi/acpica/nsxfeval.c#L260 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/acpi/utils.c#L468 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/acpi/utils.c#L669 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/acpi/utils.c#L599 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/acpi/bus.c#L207 | ",
+    "acc_path": "acpi_object_list->pointer"
+  }
+]
+[
+  {
+    "struct name": "acpi_buffer",
+    "No.Fields": 2,
+    "No.Shared fields": 2,
+    "No.KRDU fields": 2,
+    "No.classified fields": 2,
+    "No.unclassified fields": 0,
+    "PTR_READ": 1,
+    "": 1,
+    "BRANCH": 2,
+    "RISKY_KERNEL_FUNC": 1,
+    "UNCLASSIFY": 0
+  },
+  {
+    "id": "6",
+    "risky": "val-sen-branch (buffer_acc)",
+    "acc_path": "acpi_buffer->length",
+    "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/acpi/acpica/nsxfeval.c#L63",
+    "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/acpi/acpica/nsxfeval.c#L96",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update_loc(shared field)": "[ (read_capabilities) https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/hwmon/acpi_power_meter.c#L768 ], ",
+    "call path (type)": "",
+    "total_cond_num": "5",
+    "total_cond_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/acpi/acpica/nsxfeval.c#L59 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/acpi/acpica/nsxfeval.c#L92 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/acpi/acpica/nsxfeval.c#L86 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/acpi/acpica/nsxfeval.c#L78 | ",
+    "isControl": "0",
+    "direct_num_cond_checks": 1,
+    "direct_cond_checks_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/acpi/acpica/nsxfeval.c#L59 | ",
+    "is_direct_control": 0,
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  },
+  {
+    "id": "6",
+    "risky": "num-arith ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/acpi/utils.c#L163 )",
+    "acc_path": "acpi_buffer->length",
+    "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/acpi/utils.c#L60",
+    "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/acpi/utils.c#L60",
+    "drv caller (param)": "[ read_capabilities | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/hwmon/acpi_power_meter.c#L771 ], ",
+    "call path (param)": " [read_capabilities->acpi_extract_package] ",
+    "drv_update_loc(shared field)": "[ (read_capabilities) https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/hwmon/acpi_power_meter.c#L768 ], ",
+    "call path (type)": " [hwmon_device_unregister->device_unregister->device_del->device_platform_notify_remove->acpi_power_meter_resume->read_capabilities->acpi_extract_package] ",
+    "total_cond_num": "8",
+    "total_cond_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/acpi/utils.c#L55 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/acpi/utils.c#L50 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/acpi/utils.c#L44 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/acpi/utils.c#L50 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/acpi/utils.c#L50 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/acpi/utils.c#L45 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/acpi/utils.c#L44 | ",
+    "isControl": "0",
+    "direct_num_cond_checks": 2,
+    "direct_cond_checks_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/acpi/utils.c#L50 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/acpi/utils.c#L50 | ",
+    "is_direct_control": 0,
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  },
+  {
+    "id": "7",
+    "risky": "ptr-read",
+    "acc_path": "acpi_buffer->pointer",
+    "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/acpi/utils.c#L427",
+    "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/acpi/utils.c#L429",
+    "drv_update_loc(shared field)": "[ (read_capabilities) https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/hwmon/acpi_power_meter.c#L769 ], ",
+    "call path (type)": "",
+    "total_cond_num": "3",
+    "total_cond_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/acpi/utils.c#L429 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/acpi/utils.c#L424 | ",
+    "isControl": "0",
+    "direct_num_cond_checks": 1,
+    "direct_cond_checks_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/acpi/utils.c#L429 | ",
+    "is_direct_control": 0,
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": "",
+    "dbg_addr": "  %25 = bitcast %union.acpi_object* %24 to i32*, !dbg !69197"
+  },
+  {
+    "id": "7",
+    "risky": "ptr-sen-api (kfree)",
+    "acc_path": "acpi_buffer->pointer",
+    "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/acpi/utils.c#L427",
+    "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/acpi/utils.c#L443",
+    "drv_update_loc(shared field)": "[ (read_capabilities) https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/hwmon/acpi_power_meter.c#L769 ], ",
+    "call path (type)": "",
+    "total_cond_num": "2",
+    "total_cond_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/acpi/utils.c#L424 | ",
+    "isControl": "0",
+    "direct_num_cond_checks": 0,
+    "direct_cond_checks_loc": "",
+    "is_direct_control": 1,
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  },
+  {
+    "id": "7",
+    "risky": "ptr-sen-branch ( senapi: buffer_acc)",
+    "acc_path": "acpi_buffer->pointer",
+    "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/acpi/acpica/nsxfeval.c#L108",
+    "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/acpi/acpica/nsxfeval.c#L108",
+    "drv caller (param)": "",
+    "call path (param)": "",
+    "drv_update_loc(shared field)": "[ (read_capabilities) https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/hwmon/acpi_power_meter.c#L769 ], ",
+    "call path (type)": "",
+    "total_cond_num": "4",
+    "total_cond_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/acpi/acpica/nsxfeval.c#L78 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/acpi/acpica/nsxfeval.c#L96 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/acpi/acpica/nsxfeval.c#L92 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/acpi/acpica/nsxfeval.c#L86 | ",
+    "isControl": "0",
+    "direct_num_cond_checks": 0,
+    "direct_cond_checks_loc": "",
+    "is_direct_control": 1,
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]
+[
+  {
+    "struct name": "acpi_device",
+    "No.Fields": 24,
+    "No.Shared fields": 4,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]

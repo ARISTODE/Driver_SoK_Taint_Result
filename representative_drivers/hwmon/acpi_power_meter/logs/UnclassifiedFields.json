@@ -1,0 +1,570 @@
+{
+  "id": 2,
+  "acc_path": "attribute->name",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L3019],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L3016],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/sysfs/file.c#L420],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/sysfs/file.c#L329],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/sysfs/file.c#L333],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/sysfs/file.c#L491],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/sysfs/file.c#L298],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/sysfs/file.c#L547],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/sysfs/file.c#L508],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/sysfs/file.c#L450],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/sysfs/file.c#L294],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/sysfs/file.c#L581], ",
+  "Drv update": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/hwmon/acpi_power_meter.c#L634],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/hwmon/acpi_power_meter.c#L647], "
+}
+{
+  "id": 3,
+  "acc_path": "attribute->mode",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L3019],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/hwmon/hwmon.c#L101],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L3016],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/sysfs/file.c#L398],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/sysfs/file.c#L355],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/sysfs/file.c#L568], ",
+  "Drv update": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/hwmon/acpi_power_meter.c#L635],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/hwmon/acpi_power_meter.c#L640], "
+}
+{
+  "id": 8,
+  "acc_path": "driver",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/acpi/bus.c#L986 | acpi_bus_unregister_driver",
+  "Drv update": ""
+}
+{
+  "id": 8,
+  "acc_path": "driver",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 9,
+  "acc_path": "driver",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/acpi/bus.c#L966 | acpi_bus_register_driver",
+  "Drv update": ""
+}
+{
+  "id": 9,
+  "acc_path": "driver",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/acpi/bus.c#L970], ",
+  "Drv update": ""
+}
+{
+  "id": 11,
+  "acc_path": "kobj",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/kobject.c#L722 | kobject_put",
+  "Drv update": ""
+}
+{
+  "id": 11,
+  "acc_path": "kobj",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 12,
+  "acc_path": "handle",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/acpi/scan.c#L612 | acpi_get_acpi_dev",
+  "Drv update": ""
+}
+{
+  "id": 13,
+  "acc_path": "device_class",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/acpi/event.c#L94 | acpi_bus_generate_netlink_event",
+  "Drv update": ""
+}
+{
+  "id": 13,
+  "acc_path": "device_class",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 14,
+  "acc_path": "bus_id",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/acpi/event.c#L94 | acpi_bus_generate_netlink_event",
+  "Drv update": ""
+}
+{
+  "id": 14,
+  "acc_path": "bus_id",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 15,
+  "acc_path": "type",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/acpi/event.c#L94 | acpi_bus_generate_netlink_event",
+  "Drv update": ""
+}
+{
+  "id": 16,
+  "acc_path": "data",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/acpi/event.c#L94 | acpi_bus_generate_netlink_event",
+  "Drv update": ""
+}
+{
+  "id": 17,
+  "acc_path": "fmt",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/panic.c#L710 | __warn_printk",
+  "Drv update": ""
+}
+{
+  "id": 17,
+  "acc_path": "fmt",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 18,
+  "acc_path": "name",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/kobject.c#L781 | kobject_create_and_add",
+  "Drv update": ""
+}
+{
+  "id": 18,
+  "acc_path": "name",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 19,
+  "acc_path": "parent",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/lib/kobject.c#L781 | kobject_create_and_add",
+  "Drv update": ""
+}
+{
+  "id": 19,
+  "acc_path": "parent",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 20,
+  "acc_path": "dev",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 21,
+  "acc_path": "m",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/time/time.c#L552 | __msecs_to_jiffies",
+  "Drv update": ""
+}
+{
+  "id": 22,
+  "acc_path": "dev",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L3010 | device_create_file",
+  "Drv update": ""
+}
+{
+  "id": 23,
+  "acc_path": "attr",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L3010 | device_create_file",
+  "Drv update": ""
+}
+{
+  "id": 23,
+  "acc_path": "attr",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L3016],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L3019],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L3016],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L3019],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L3022], ",
+  "Drv update": ""
+}
+{
+  "id": 23,
+  "acc_path": "attr->attr",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L3016],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L3019],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L3016],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L3019],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L3022], ",
+  "Drv update": ""
+}
+{
+  "id": 23,
+  "acc_path": "attr->attr",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L3016],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L3019], ",
+  "Drv update": ""
+}
+{
+  "id": 23,
+  "acc_path": "attr->attr->name",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L3016],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L3019], ",
+  "Drv update": ""
+}
+{
+  "id": 23,
+  "acc_path": "attr->attr->mode",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L3019],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L3016], ",
+  "Drv update": ""
+}
+{
+  "id": 23,
+  "acc_path": "attr->show",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 23,
+  "acc_path": "attr->store",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 23,
+  "acc_path": "attr->attr->name",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L3019],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L3016], ",
+  "Drv update": ""
+}
+{
+  "id": 23,
+  "acc_path": "attr->attr->mode",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 23,
+  "acc_path": "attr->attr->name",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 24,
+  "acc_path": "dev",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 25,
+  "acc_path": "kobj",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/sysfs/symlink.c#L143 | sysfs_remove_link",
+  "Drv update": ""
+}
+{
+  "id": 25,
+  "acc_path": "kobj",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 26,
+  "acc_path": "name",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/sysfs/symlink.c#L143 | sysfs_remove_link",
+  "Drv update": ""
+}
+{
+  "id": 26,
+  "acc_path": "name",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 27,
+  "acc_path": "kobj",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/sysfs/symlink.c#L89 | sysfs_create_link",
+  "Drv update": ""
+}
+{
+  "id": 27,
+  "acc_path": "kobj",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 28,
+  "acc_path": "target",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/sysfs/symlink.c#L89 | sysfs_create_link",
+  "Drv update": ""
+}
+{
+  "id": 28,
+  "acc_path": "target",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 29,
+  "acc_path": "name",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/sysfs/symlink.c#L89 | sysfs_create_link",
+  "Drv update": ""
+}
+{
+  "id": 29,
+  "acc_path": "name",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 30,
+  "acc_path": "kobj",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/sysfs/file.c#L180 | sysfs_notify",
+  "Drv update": ""
+}
+{
+  "id": 30,
+  "acc_path": "kobj",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 31,
+  "acc_path": "dir",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/sysfs/file.c#L180 | sysfs_notify",
+  "Drv update": ""
+}
+{
+  "id": 31,
+  "acc_path": "dir",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 32,
+  "acc_path": "attr",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/fs/sysfs/file.c#L180 | sysfs_notify",
+  "Drv update": ""
+}
+{
+  "id": 32,
+  "acc_path": "attr",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 33,
+  "acc_path": "dev",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 34,
+  "acc_path": "fmt",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L4964 | _dev_info",
+  "Drv update": ""
+}
+{
+  "id": 34,
+  "acc_path": "fmt",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 36,
+  "acc_path": "handle",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/acpi/acpica/nsxfeval.c#L163 | acpi_evaluate_object",
+  "Drv update": ""
+}
+{
+  "id": 37,
+  "acc_path": "pathname",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/acpi/acpica/nsxfeval.c#L163 | acpi_evaluate_object",
+  "Drv update": ""
+}
+{
+  "id": 37,
+  "acc_path": "pathname",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 38,
+  "acc_path": "external_params",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/acpi/acpica/nsxfeval.c#L163 | acpi_evaluate_object",
+  "Drv update": ""
+}
+{
+  "id": 38,
+  "acc_path": "external_params->count",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 39,
+  "acc_path": "return_buffer",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/acpi/acpica/nsxfeval.c#L163 | acpi_evaluate_object",
+  "Drv update": ""
+}
+{
+  "id": 39,
+  "acc_path": "return_buffer",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 39,
+  "acc_path": "return_buffer->length",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 39,
+  "acc_path": "return_buffer->length",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 40,
+  "acc_path": "dev",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L3034 | device_remove_file",
+  "Drv update": ""
+}
+{
+  "id": 40,
+  "acc_path": "dev",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L3038], ",
+  "Drv update": ""
+}
+{
+  "id": 41,
+  "acc_path": "attr",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L3034 | device_remove_file",
+  "Drv update": ""
+}
+{
+  "id": 41,
+  "acc_path": "attr",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L3038], ",
+  "Drv update": ""
+}
+{
+  "id": 42,
+  "acc_path": "dev",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 43,
+  "acc_path": "fmt",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L4961 | _dev_err",
+  "Drv update": ""
+}
+{
+  "id": 43,
+  "acc_path": "fmt",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 44,
+  "acc_path": "dev",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 45,
+  "acc_path": "fmt",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/base/core.c#L4962 | _dev_warn",
+  "Drv update": ""
+}
+{
+  "id": 45,
+  "acc_path": "fmt",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 46,
+  "acc_path": "handle",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/acpi/utils.c#L247 | acpi_evaluate_integer",
+  "Drv update": ""
+}
+{
+  "id": 47,
+  "acc_path": "pathname",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 48,
+  "acc_path": "arguments",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 49,
+  "acc_path": "data",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/acpi/utils.c#L273], ",
+  "Drv update": ""
+}
+{
+  "id": 50,
+  "acc_path": "handle",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/acpi/utils.c#L572 | acpi_evaluation_failure_warn",
+  "Drv update": ""
+}
+{
+  "id": 51,
+  "acc_path": "name",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/acpi/utils.c#L572 | acpi_evaluation_failure_warn",
+  "Drv update": ""
+}
+{
+  "id": 51,
+  "acc_path": "name",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 54,
+  "acc_path": "format",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/acpi/utils.c#L32 | acpi_extract_package",
+  "Drv update": ""
+}
+{
+  "id": 54,
+  "acc_path": "format->pointer",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/acpi/utils.c#L32 |   %26 = alloca i8*, align 8],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/acpi/utils.c#L50],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/acpi/utils.c#L67], ",
+  "Drv update": ""
+}
+{
+  "id": 54,
+  "acc_path": "format->pointer",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/acpi/utils.c#L79],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/acpi/utils.c#L222],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/acpi/utils.c#L113],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/acpi/utils.c#L119],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/acpi/utils.c#L196],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/acpi/utils.c#L125],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/acpi/utils.c#L171],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/acpi/utils.c#L99],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/acpi/utils.c#L91], ",
+  "Drv update": ""
+}
+{
+  "id": 55,
+  "acc_path": "buffer",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/acpi/utils.c#L142],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/acpi/utils.c#L148],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/acpi/utils.c#L151], ",
+  "Drv update": ""
+}
+{
+  "id": 55,
+  "acc_path": "buffer->length",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/acpi/utils.c#L142],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/acpi/utils.c#L148],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/acpi/utils.c#L151], ",
+  "Drv update": ""
+}
+{
+  "id": 55,
+  "acc_path": "buffer->length",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 56,
+  "acc_path": "int",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/acpi_power_meter.c#L930 | acpi_power_meter_resume",
+  "Drv update": ""
+}
+{
+  "id": 56,
+  "acc_path": "int",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/acpi_power_meter.c#L930 | acpi_power_meter_resume",
+  "Drv update": ""
+}
+{
+  "id": 56,
+  "acc_path": "int",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/acpi_power_meter.c#L930 | acpi_power_meter_resume",
+  "Drv update": ""
+}
+{
+  "id": 56,
+  "acc_path": "int",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/acpi_power_meter.c#L930 | acpi_power_meter_resume",
+  "Drv update": ""
+}
+{
+  "id": 56,
+  "acc_path": "int",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/acpi_power_meter.c#L930 | acpi_power_meter_resume",
+  "Drv update": ""
+}
+{
+  "id": 56,
+  "acc_path": "int",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/acpi_power_meter.c#L930 | acpi_power_meter_resume",
+  "Drv update": ""
+}
+{
+  "id": 56,
+  "acc_path": "int",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/acpi_power_meter.c#L930 | acpi_power_meter_resume",
+  "Drv update": ""
+}
+{
+  "id": 56,
+  "acc_path": "int",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/hwmon/acpi_power_meter.c#L930 | acpi_power_meter_resume",
+  "Drv update": ""
+}

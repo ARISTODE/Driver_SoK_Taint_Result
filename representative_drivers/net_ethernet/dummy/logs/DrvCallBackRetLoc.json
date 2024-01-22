@@ -1,0 +1,257 @@
+[
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L3007",
+    "Drv func": "dummy_setup",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/dummy.c#L113"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10120",
+    "Drv func": "dummy_setup",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/dummy.c#L113"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10118",
+    "Drv func": "dummy_setup",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/dummy.c#L113"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L8471",
+    "Drv func": "dummy_setup",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/dummy.c#L113"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10863",
+    "Drv func": "dummy_setup",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/dummy.c#L113"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10637",
+    "Drv func": "dummy_setup",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/dummy.c#L113"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10369",
+    "Drv func": "dummy_setup",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/dummy.c#L113"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L3522",
+    "Drv func": "dummy_validate",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/dummy.c#L138"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L8873",
+    "Drv func": "dummy_change_carrier",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/dummy.c#L82"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L721",
+    "Drv func": "dummy_get_drvinfo",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/dummy.c#L102"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1266",
+    "Drv func": "dummy_dev_init",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/dummy.c#L68"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1186",
+    "Drv func": "dummy_dev_init",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/dummy.c#L68"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1119",
+    "Drv func": "dummy_dev_init",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/dummy.c#L68"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1606",
+    "Drv func": "dummy_dev_init",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/dummy.c#L68"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1067",
+    "Drv func": "dummy_dev_init",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/dummy.c#L68"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1595",
+    "Drv func": "dummy_dev_init",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/dummy.c#L68"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1582",
+    "Drv func": "dummy_dev_init",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/dummy.c#L68"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L639",
+    "Drv func": "dummy_dev_init",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/dummy.c#L68"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L1482",
+    "Drv func": "dummy_dev_init",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/dummy.c#L68"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L1432",
+    "Drv func": "dummy_dev_init",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/dummy.c#L68"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1188",
+    "Drv func": "dummy_dev_init",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/dummy.c#L68"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L1429",
+    "Drv func": "dummy_dev_init",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/dummy.c#L68"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L1516",
+    "Drv func": "dummy_dev_init",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/dummy.c#L68"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L2790",
+    "Drv func": "dummy_dev_init",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/dummy.c#L68"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L752",
+    "Drv func": "dummy_dev_init",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/dummy.c#L68"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L759",
+    "Drv func": "dummy_dev_init",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/dummy.c#L68"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1372",
+    "Drv func": "dummy_dev_init",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/dummy.c#L68"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1264",
+    "Drv func": "dummy_dev_init",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/dummy.c#L68"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L9994",
+    "Drv func": "dummy_dev_init",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/dummy.c#L68"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1501",
+    "Drv func": "dummy_dev_init",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/dummy.c#L68"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L2163",
+    "Drv func": "dummy_dev_init",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/dummy.c#L68"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1578",
+    "Drv func": "dummy_dev_init",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/dummy.c#L68"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L3007",
+    "Drv func": "dummy_dev_uninit",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/dummy.c#L77"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10120",
+    "Drv func": "dummy_dev_uninit",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/dummy.c#L77"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10118",
+    "Drv func": "dummy_dev_uninit",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/dummy.c#L77"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L8471",
+    "Drv func": "dummy_dev_uninit",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/dummy.c#L77"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10863",
+    "Drv func": "dummy_dev_uninit",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/dummy.c#L77"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10637",
+    "Drv func": "dummy_dev_uninit",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/dummy.c#L77"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10369",
+    "Drv func": "dummy_dev_uninit",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/dummy.c#L77"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/netdevice.h#L4853",
+    "Drv func": "dummy_xmit",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/dummy.c#L59"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L709",
+    "Drv func": "dummy_xmit",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/dummy.c#L59"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L701",
+    "Drv func": "dummy_xmit",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/dummy.c#L59"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L5589",
+    "Drv func": "dummy_xmit",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/dummy.c#L59"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L3007",
+    "Drv func": "set_multicast_list",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/dummy.c#L49"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10120",
+    "Drv func": "set_multicast_list",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/dummy.c#L49"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10118",
+    "Drv func": "set_multicast_list",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/dummy.c#L49"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L8471",
+    "Drv func": "set_multicast_list",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/dummy.c#L49"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10863",
+    "Drv func": "set_multicast_list",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/dummy.c#L49"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10637",
+    "Drv func": "set_multicast_list",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/dummy.c#L49"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10369",
+    "Drv func": "set_multicast_list",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/dummy.c#L49"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10435",
+    "Drv func": "dummy_get_stats64",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/dummy.c#L53"
+  }
+]

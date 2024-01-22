@@ -1,0 +1,490 @@
+[
+  {
+    "No. entry": 97
+  },
+  {
+    "Drv func": "get_all_munits",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L100 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L104 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L110 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L114"
+  },
+  {
+    "Drv func": "get_all_munits",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L100 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L110 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L104 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L120"
+  },
+  {
+    "Drv func": "get_all_munits",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L100 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L104 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L110 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L124"
+  },
+  {
+    "Drv func": "get_all_munits",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L100 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L104 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L110 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L128"
+  },
+  {
+    "Drv func": "skx_sad_decode",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L283 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L286 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L287 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L287 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L296"
+  },
+  {
+    "Drv func": "skx_tad_decode",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L411 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L414 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L414 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L426"
+  },
+  {
+    "Drv func": "skx_get_hi_lo",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L294 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L299 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L305"
+  },
+  {
+    "Drv func": "skx_get_dimm_config",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L189 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L191"
+  },
+  {
+    "Drv func": "skx_rir_decode",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L477 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L480 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L481 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L481 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L499"
+  },
+  {
+    "Drv func": "skx_get_dimm_config",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L189 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L192"
+  },
+  {
+    "Drv func": "skx_get_all_bus_mappings",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L251 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L255 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L260"
+  },
+  {
+    "Drv func": "skx_get_dimm_config",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L193 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L195"
+  },
+  {
+    "Drv func": "skx_remove",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L705 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L724 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L725"
+  },
+  {
+    "Drv func": "skx_remove",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L705 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L726 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L727"
+  },
+  {
+    "Drv func": "get_all_munits",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L100 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L104 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L110 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L138"
+  },
+  {
+    "Drv func": "skx_remove",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L705 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L722 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L723"
+  },
+  {
+    "Drv func": "skx_get_all_bus_mappings",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L251 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L255 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L256"
+  },
+  {
+    "Drv func": "skx_tad_decode",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L411 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L413"
+  },
+  {
+    "Drv func": "skx_register_mci",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L466 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L476"
+  },
+  {
+    "Drv func": "skx_remove",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L705 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L728 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L729"
+  },
+  {
+    "Drv func": "skx_get_nvdimm_info",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L437 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L437"
+  },
+  {
+    "Drv func": "skx_mce_check_error",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L671 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L679"
+  },
+  {
+    "Drv func": "skx_get_hi_lo",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L294 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L305 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L299 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L311 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L312"
+  },
+  {
+    "Drv func": "skx_get_nvdimm_info",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L415 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L426 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L410 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L420 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L427"
+  },
+  {
+    "Drv func": "skx_mad_decode",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L573 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L573"
+  },
+  {
+    "Drv func": "skx_rir_decode",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L477 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L480 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L481 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L481 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L506 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L506"
+  },
+  {
+    "Drv func": "skx_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L682 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L684 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L686 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L687 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L687"
+  },
+  {
+    "Drv func": "skx_mce_check_error",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L671 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L681"
+  },
+  {
+    "Drv func": "skx_mce_check_error",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L671 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L685"
+  },
+  {
+    "Drv func": "skx_sad_decode",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L283 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L284"
+  },
+  {
+    "Drv func": "setup_skx_debug",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L619 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L622 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L624"
+  },
+  {
+    "Drv func": "skx_get_nvdimm_info",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L410 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L415 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L416"
+  },
+  {
+    "Drv func": "skx_adxl_decode",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L127 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L127"
+  },
+  {
+    "Drv func": "skx_get_nvdimm_info",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L411 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L410 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L411"
+  },
+  {
+    "Drv func": "skx_sad_decode",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L286 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L283 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L316 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L287 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L330 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L287 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L333 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L344 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L344"
+  },
+  {
+    "Drv func": "skx_tad_decode",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L411 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L417 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L417"
+  },
+  {
+    "Drv func": "skx_get_all_bus_mappings",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L251 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L255 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L260 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L263"
+  },
+  {
+    "Drv func": "skx_get_hi_lo",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L294 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L299 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L300"
+  },
+  {
+    "Drv func": "get_all_munits",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L100 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L104"
+  },
+  {
+    "Drv func": "skx_mce_output_error",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L619 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L619"
+  },
+  {
+    "Drv func": "skx_sad_decode",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L370 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L370"
+  },
+  {
+    "Drv func": "skx_adxl_get",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L62 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L78 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L79 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L82 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L82"
+  },
+  {
+    "Drv func": "skx_remove",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L707 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L711 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L712"
+  },
+  {
+    "Drv func": "skx_get_src_id",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L201 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L202"
+  },
+  {
+    "Drv func": "skx_get_hi_lo",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L294 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L299 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L305 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L306"
+  },
+  {
+    "Drv func": "skx_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L694 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L730"
+  },
+  {
+    "Drv func": "skx_register_mci",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L466 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L478 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L493 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L500"
+  },
+  {
+    "Drv func": "skx_remove",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L717 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L718 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L719"
+  },
+  {
+    "Drv func": "skx_get_hi_lo",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L295 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L294 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L295"
+  },
+  {
+    "Drv func": "skx_unregister_mci",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L520 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L528 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L528"
+  },
+  {
+    "Drv func": "skx_adxl_get",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L62 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L91 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L97 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L99"
+  },
+  {
+    "Drv func": "skx_sad_decode",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L277 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L277"
+  },
+  {
+    "Drv func": "skx_get_dimm_attr",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L333 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L333"
+  },
+  {
+    "Drv func": "debugfs_u64_set",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L602 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L602"
+  },
+  {
+    "Drv func": "skx_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L720 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L721"
+  },
+  {
+    "Drv func": "skx_adxl_decode",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L153 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L153 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L165 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L131 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L166"
+  },
+  {
+    "Drv func": "skx_tad_decode",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L411 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L445 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L414 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L414 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L445"
+  },
+  {
+    "Drv func": "skx_unregister_mci",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L520 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L530"
+  },
+  {
+    "Drv func": "skx_remove",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L705 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L731"
+  },
+  {
+    "Drv func": "skx_get_dimm_info",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L372 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L372"
+  },
+  {
+    "Drv func": "skx_adxl_get",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L62 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L78 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L79 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L80"
+  },
+  {
+    "Drv func": "get_all_munits",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L100 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L104 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L105"
+  },
+  {
+    "Drv func": "skx_rir_decode",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L477 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L487 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L487"
+  },
+  {
+    "Drv func": "skx_get_hi_lo",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L294 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L299"
+  },
+  {
+    "Drv func": "skx_unregister_mci",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L520 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L526"
+  },
+  {
+    "Drv func": "skx_get_dimm_config",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L189 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L205 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L205 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L206"
+  },
+  {
+    "Drv func": "skx_adxl_decode",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L131 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L132 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L132"
+  },
+  {
+    "Drv func": "skx_sad_decode",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L283 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L292 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L292"
+  },
+  {
+    "Drv func": "skx_rir_decode",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L477 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L478"
+  },
+  {
+    "Drv func": "skx_unregister_mci",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L520 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L529"
+  },
+  {
+    "Drv func": "skx_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L664 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L670 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L676 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L677 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L674 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L677"
+  },
+  {
+    "Drv func": "skx_get_hi_lo",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L294 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L305 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L299 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L311 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L317"
+  },
+  {
+    "Drv func": "skx_get_hi_lo",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L294 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L305 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L299 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L311 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L320 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L320"
+  },
+  {
+    "Drv func": "skx_get_node_id",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L214 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L215"
+  },
+  {
+    "Drv func": "skx_sad_decode",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L322 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L326 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L326"
+  },
+  {
+    "Drv func": "skx_exit",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L740 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L740"
+  },
+  {
+    "Drv func": "skx_get_hi_lo",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L299 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L305 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L294 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L311"
+  },
+  {
+    "Drv func": "skx_get_all_bus_mappings",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L251 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L255 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L277 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L260 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L277"
+  },
+  {
+    "Drv func": "skx_mce_check_error",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L671 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L684"
+  },
+  {
+    "Drv func": "skx_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L696 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L694 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L699 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L701 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L701"
+  },
+  {
+    "Drv func": "skx_remove",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L703 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L703"
+  },
+  {
+    "Drv func": "skx_register_mci",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L466 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L469 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L469"
+  },
+  {
+    "Drv func": "get_all_munits",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L100 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L104 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L110 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L139 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L140 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L142 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L143"
+  },
+  {
+    "Drv func": "skx_mce_check_error",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L671 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L688"
+  },
+  {
+    "Drv func": "skx_get_nvdimm_info",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L415 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L410 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L420 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L421"
+  },
+  {
+    "Drv func": "skx_get_all_bus_mappings",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L251 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L255 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L260 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L261"
+  },
+  {
+    "Drv func": "skx_unregister_mci",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L520 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L523 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L523"
+  },
+  {
+    "Drv func": "skx_tad_decode",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L411 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L412"
+  },
+  {
+    "Drv func": "skx_adxl_get",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L57 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L58"
+  },
+  {
+    "Drv func": "skx_sad_decode",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L286 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L287 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L287 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L283 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L316 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L317 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L318 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L318"
+  },
+  {
+    "Drv func": "skx_adxl_get",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L62 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L74 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L74 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L109"
+  },
+  {
+    "Drv func": "skx_register_mci",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L478 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L493 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L500 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L466 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L501 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L501"
+  },
+  {
+    "Drv func": "skx_mce_check_error",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L671 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L686"
+  },
+  {
+    "Drv func": "skx_get_all_bus_mappings",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L251 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L260 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L255 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L262"
+  },
+  {
+    "Drv func": "skx_adxl_get",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L62 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L74 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L74 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L105"
+  },
+  {
+    "Drv func": "skx_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L654 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_base.c#L654"
+  },
+  {
+    "Drv func": "skx_adxl_get",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L107 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/skx_common.c#L108"
+  }
+]

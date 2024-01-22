@@ -1,0 +1,462 @@
+{
+  "id": 15,
+  "acc_path": "blk_mq_tag_set->driver_data",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-mq.c#L3635], ",
+  "Drv update": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/nvme/host/core.c#L5017],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/nvme/host/core.c#L4959], "
+}
+{
+  "id": 18,
+  "acc_path": "blk_zone->type",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-zoned.c#L511],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-zoned.c#L531], ",
+  "Drv update": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/nvme/host/zns.c#L164], "
+}
+{
+  "id": 19,
+  "acc_path": "blk_zone->cond",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-zoned.c#L174], ",
+  "Drv update": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/nvme/host/zns.c#L165], "
+}
+{
+  "id": 27,
+  "acc_path": "request->__sector",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/blk-mq.h#L1037],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/blk-mq.h#L1037],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/blk-mq.h#L1037],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-mq.c#L826],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-mq.c#L754],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-mq.c#L934],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/blk-mq.h#L1037],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/blk-mq.h#L1037], ",
+  "Drv update": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/nvme/host/core.c#L376], "
+}
+{
+  "id": 34,
+  "acc_path": "device->groups",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L2916],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L2878],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L2940],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L4678], ",
+  "Drv update": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/nvme/host/core.c#L5194],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/nvme/host/core.c#L3007],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/nvme/host/core.c#L5196], "
+}
+{
+  "id": 44,
+  "acc_path": "gendisk->nr_zones",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-zoned.c#L197],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/blk-zoned.c#L201], ",
+  "Drv update": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/nvme/host/multipath.c#L842], "
+}
+{
+  "id": 327,
+  "acc_path": "int",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L2210 | nvme_pr_reserve",
+  "Drv update": ""
+}
+{
+  "id": 328,
+  "acc_path": "int",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L2196 | nvme_pr_register",
+  "Drv update": ""
+}
+{
+  "id": 329,
+  "acc_path": "int",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L2238 | nvme_pr_release",
+  "Drv update": ""
+}
+{
+  "id": 330,
+  "acc_path": "int",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L2223 | nvme_pr_preempt",
+  "Drv update": ""
+}
+{
+  "id": 331,
+  "acc_path": "int",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L2231 | nvme_pr_clear",
+  "Drv update": ""
+}
+{
+  "id": 332,
+  "acc_path": "ssize_t",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/multipath.c#L784 | ana_grpid_show",
+  "Drv update": ""
+}
+{
+  "id": 333,
+  "acc_path": "ssize_t",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/multipath.c#L784 | ana_grpid_show",
+  "Drv update": ""
+}
+{
+  "id": 335,
+  "acc_path": "int",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L2275 | nvme_report_zones",
+  "Drv update": ""
+}
+{
+  "id": 335,
+  "acc_path": "int",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L2275 | nvme_report_zones",
+  "Drv update": ""
+}
+{
+  "id": 335,
+  "acc_path": "int",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L2275 | nvme_report_zones",
+  "Drv update": ""
+}
+{
+  "id": 336,
+  "acc_path": "ssize_t",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/multipath.c#L784 | ana_grpid_show",
+  "Drv update": ""
+}
+{
+  "id": 337,
+  "acc_path": "ssize_t",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/multipath.c#L784 | ana_grpid_show",
+  "Drv update": ""
+}
+{
+  "id": 338,
+  "acc_path": "ssize_t",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/multipath.c#L784 | ana_grpid_show",
+  "Drv update": ""
+}
+{
+  "id": 339,
+  "acc_path": "ssize_t",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/multipath.c#L784 | ana_grpid_show",
+  "Drv update": ""
+}
+{
+  "id": 341,
+  "acc_path": "int",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1683 | nvme_getgeo",
+  "Drv update": ""
+}
+{
+  "id": 341,
+  "acc_path": "int",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L1683 | nvme_getgeo",
+  "Drv update": ""
+}
+{
+  "id": 342,
+  "acc_path": "int",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L2275 | nvme_report_zones",
+  "Drv update": ""
+}
+{
+  "id": 342,
+  "acc_path": "int",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L2275 | nvme_report_zones",
+  "Drv update": ""
+}
+{
+  "id": 342,
+  "acc_path": "int",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/core.c#L2275 | nvme_report_zones",
+  "Drv update": ""
+}
+{
+  "id": 343,
+  "acc_path": "int",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/multipath.c#L428 | nvme_ns_head_chr_open",
+  "Drv update": ""
+}
+{
+  "id": 344,
+  "acc_path": "int",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/multipath.c#L428 | nvme_ns_head_chr_open",
+  "Drv update": ""
+}
+{
+  "id": 345,
+  "acc_path": "int",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/ioctl.c#L786 | nvme_ns_head_chr_uring_cmd",
+  "Drv update": ""
+}
+{
+  "id": 347,
+  "acc_path": "ssize_t",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/multipath.c#L784 | ana_grpid_show",
+  "Drv update": ""
+}
+{
+  "id": 348,
+  "acc_path": "int",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/multipath.c#L428 | nvme_ns_head_chr_open",
+  "Drv update": ""
+}
+{
+  "id": 349,
+  "acc_path": "int",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/multipath.c#L428 | nvme_ns_head_chr_open",
+  "Drv update": ""
+}
+{
+  "id": 350,
+  "acc_path": "int",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/ioctl.c#L786 | nvme_ns_head_chr_uring_cmd",
+  "Drv update": ""
+}
+{
+  "id": 351,
+  "acc_path": "ssize_t",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/multipath.c#L784 | ana_grpid_show",
+  "Drv update": ""
+}
+{
+  "id": 352,
+  "acc_path": "ssize_t",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/multipath.c#L765 | nvme_subsys_iopolicy_store",
+  "Drv update": ""
+}
+{
+  "id": 353,
+  "acc_path": "ssize_t",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/multipath.c#L784 | ana_grpid_show",
+  "Drv update": ""
+}
+{
+  "id": 354,
+  "acc_path": "ssize_t",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/multipath.c#L784 | ana_grpid_show",
+  "Drv update": ""
+}
+{
+  "id": 355,
+  "acc_path": "ssize_t",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/multipath.c#L784 | ana_grpid_show",
+  "Drv update": ""
+}
+{
+  "id": 356,
+  "acc_path": "ssize_t",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/multipath.c#L784 | ana_grpid_show",
+  "Drv update": ""
+}
+{
+  "id": 357,
+  "acc_path": "ssize_t",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/multipath.c#L784 | ana_grpid_show",
+  "Drv update": ""
+}
+{
+  "id": 359,
+  "acc_path": "ssize_t",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/multipath.c#L784 | ana_grpid_show",
+  "Drv update": ""
+}
+{
+  "id": 360,
+  "acc_path": "ssize_t",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/multipath.c#L784 | ana_grpid_show",
+  "Drv update": ""
+}
+{
+  "id": 361,
+  "acc_path": "ssize_t",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/multipath.c#L784 | ana_grpid_show",
+  "Drv update": ""
+}
+{
+  "id": 362,
+  "acc_path": "ssize_t",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/multipath.c#L784 | ana_grpid_show",
+  "Drv update": ""
+}
+{
+  "id": 363,
+  "acc_path": "ssize_t",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/multipath.c#L765 | nvme_subsys_iopolicy_store",
+  "Drv update": ""
+}
+{
+  "id": 364,
+  "acc_path": "ssize_t",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/multipath.c#L784 | ana_grpid_show",
+  "Drv update": ""
+}
+{
+  "id": 365,
+  "acc_path": "ssize_t",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/multipath.c#L765 | nvme_subsys_iopolicy_store",
+  "Drv update": ""
+}
+{
+  "id": 366,
+  "acc_path": "ssize_t",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/multipath.c#L784 | ana_grpid_show",
+  "Drv update": ""
+}
+{
+  "id": 367,
+  "acc_path": "ssize_t",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/multipath.c#L765 | nvme_subsys_iopolicy_store",
+  "Drv update": ""
+}
+{
+  "id": 368,
+  "acc_path": "ssize_t",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/multipath.c#L784 | ana_grpid_show",
+  "Drv update": ""
+}
+{
+  "id": 369,
+  "acc_path": "ssize_t",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/multipath.c#L784 | ana_grpid_show",
+  "Drv update": ""
+}
+{
+  "id": 370,
+  "acc_path": "ssize_t",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/multipath.c#L784 | ana_grpid_show",
+  "Drv update": ""
+}
+{
+  "id": 371,
+  "acc_path": "ssize_t",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/multipath.c#L784 | ana_grpid_show",
+  "Drv update": ""
+}
+{
+  "id": 372,
+  "acc_path": "ssize_t",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/multipath.c#L784 | ana_grpid_show",
+  "Drv update": ""
+}
+{
+  "id": 373,
+  "acc_path": "ssize_t",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/multipath.c#L784 | ana_grpid_show",
+  "Drv update": ""
+}
+{
+  "id": 374,
+  "acc_path": "ssize_t",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/multipath.c#L784 | ana_grpid_show",
+  "Drv update": ""
+}
+{
+  "id": 375,
+  "acc_path": "ssize_t",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/multipath.c#L784 | ana_grpid_show",
+  "Drv update": ""
+}
+{
+  "id": 376,
+  "acc_path": "ssize_t",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/multipath.c#L784 | ana_grpid_show",
+  "Drv update": ""
+}
+{
+  "id": 377,
+  "acc_path": "ssize_t",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/multipath.c#L765 | nvme_subsys_iopolicy_store",
+  "Drv update": ""
+}
+{
+  "id": 378,
+  "acc_path": "ssize_t",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/multipath.c#L784 | ana_grpid_show",
+  "Drv update": ""
+}
+{
+  "id": 379,
+  "acc_path": "ssize_t",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/multipath.c#L784 | ana_grpid_show",
+  "Drv update": ""
+}
+{
+  "id": 380,
+  "acc_path": "ssize_t",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/multipath.c#L784 | ana_grpid_show",
+  "Drv update": ""
+}
+{
+  "id": 381,
+  "acc_path": "ssize_t",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/multipath.c#L784 | ana_grpid_show",
+  "Drv update": ""
+}
+{
+  "id": 382,
+  "acc_path": "ssize_t",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/multipath.c#L765 | nvme_subsys_iopolicy_store",
+  "Drv update": ""
+}
+{
+  "id": 383,
+  "acc_path": "ssize_t",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/multipath.c#L765 | nvme_subsys_iopolicy_store",
+  "Drv update": ""
+}
+{
+  "id": 384,
+  "acc_path": "int",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/multipath.c#L24 | nvme_set_iopolicy",
+  "Drv update": ""
+}
+{
+  "id": 384,
+  "acc_path": "int",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/multipath.c#L24 | nvme_set_iopolicy",
+  "Drv update": ""
+}
+{
+  "id": 384,
+  "acc_path": "int",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/multipath.c#L24 | nvme_set_iopolicy",
+  "Drv update": ""
+}
+{
+  "id": 384,
+  "acc_path": "int",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/multipath.c#L24 | nvme_set_iopolicy",
+  "Drv update": ""
+}
+{
+  "id": 384,
+  "acc_path": "int",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/multipath.c#L24 | nvme_set_iopolicy",
+  "Drv update": ""
+}
+{
+  "id": 385,
+  "acc_path": "int",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/multipath.c#L24 | nvme_set_iopolicy",
+  "Drv update": ""
+}
+{
+  "id": 385,
+  "acc_path": "int",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/multipath.c#L24 | nvme_set_iopolicy",
+  "Drv update": ""
+}
+{
+  "id": 385,
+  "acc_path": "int",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/multipath.c#L24 | nvme_set_iopolicy",
+  "Drv update": ""
+}
+{
+  "id": 385,
+  "acc_path": "int",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/multipath.c#L24 | nvme_set_iopolicy",
+  "Drv update": ""
+}
+{
+  "id": 385,
+  "acc_path": "int",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/multipath.c#L24 | nvme_set_iopolicy",
+  "Drv update": ""
+}
+{
+  "id": 386,
+  "acc_path": "int",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/multipath.c#L428 | nvme_ns_head_chr_open",
+  "Drv update": ""
+}
+{
+  "id": 387,
+  "acc_path": "int",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/multipath.c#L428 | nvme_ns_head_chr_open",
+  "Drv update": ""
+}
+{
+  "id": 388,
+  "acc_path": "int",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/nvme/host/ioctl.c#L786 | nvme_ns_head_chr_uring_cmd",
+  "Drv update": ""
+}

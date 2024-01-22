@@ -1,0 +1,76 @@
+[
+  {
+    "id": "56",
+    "risky": "val-sen-branch (buffer_acc)",
+    "acc_path": "int",
+    "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L621",
+    "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L659",
+    "drv_update_loc(shared field)": "",
+    "call path (type)": "",
+    "total_cond_num": "6",
+    "total_cond_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L659 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L601 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L664 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L590 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L640 | ",
+    "isControl": "0",
+    "direct_num_cond_checks": 3,
+    "direct_cond_checks_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L659 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L601 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L640 | ",
+    "is_direct_control": 0,
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  },
+  {
+    "id": "56",
+    "risky": "num-arith ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L659 )",
+    "acc_path": "int",
+    "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L621",
+    "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L654",
+    "drv_update_loc(shared field)": "",
+    "call path (type)": "",
+    "total_cond_num": "6",
+    "total_cond_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L659 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L601 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L664 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L590 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L640 | ",
+    "isControl": "0",
+    "direct_num_cond_checks": 3,
+    "direct_cond_checks_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L659 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L601 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L640 | ",
+    "is_direct_control": 0,
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]
+[
+  {
+    "id": "56",
+    "risky": "val-sen-branch (buffer_acc)",
+    "acc_path": "int",
+    "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L634",
+    "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L659",
+    "drv_update_loc(shared field)": "",
+    "call path (type)": "",
+    "total_cond_num": "6",
+    "total_cond_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L659 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L601 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L664 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L590 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L640 | ",
+    "isControl": "0",
+    "direct_num_cond_checks": 3,
+    "direct_cond_checks_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L659 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L601 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L640 | ",
+    "is_direct_control": 0,
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  },
+  {
+    "id": "56",
+    "risky": "num-arith ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L659 )",
+    "acc_path": "int",
+    "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L634",
+    "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L654",
+    "drv_update_loc(shared field)": "",
+    "call path (type)": "",
+    "total_cond_num": "6",
+    "total_cond_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L659 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L601 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L664 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L590 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L640 | ",
+    "isControl": "0",
+    "direct_num_cond_checks": 3,
+    "direct_cond_checks_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L659 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L601 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L640 | ",
+    "is_direct_control": 0,
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]

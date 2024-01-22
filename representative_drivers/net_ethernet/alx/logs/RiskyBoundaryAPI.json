@@ -1,0 +1,668 @@
+[
+  {
+    "id": 0,
+    "kernel boundary func name": "cancel_work_sync",
+    "risky func": "del_timer",
+    "Risky API Class": "timer",
+    "Is Controlled Path": 1,
+    "No. path cond": 1,
+    "call path": "( [5]__alx_stop ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1258 )->cancel_work_sync ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L3197 )->__cancel_work_timer ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L3115 )->try_to_grab_pending ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L1261 )->del_timer ( Unknown Loc ) )( [5]__alx_stop ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1258 )->cancel_work_sync ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L3197 )->__cancel_work_timer ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L3115 )->try_to_grab_pending ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L1261 )->del_timer ( Unknown Loc ) )"
+  },
+  {
+    "id": 1,
+    "kernel boundary func name": "alloc_etherdev_mqs",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 12,
+    "call path": "( [14]alx_probe ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1715 )->alloc_etherdev_mqs ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethernet/eth.c#L391 )->alloc_netdev_mqs ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10557 )->free_netdev ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10687 )->netif_napi_del.53 ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/netdevice.h#L2624 )->__netif_napi_del ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L6472 )->napi_free_frags ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/netdevice.h#L3843 )->kfree_skb.56 ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/skbuff.h#L1223 )->kfree_skb_reason ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L885 )->__kfree_skb ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L868 )->skb_release_all ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L852 )->skb_release_data ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L766 )->skb_free_head ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L753 )->kfree ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/mm/slab_common.c#L988 ) )"
+  },
+  {
+    "id": 2,
+    "kernel boundary func name": "alloc_etherdev_mqs",
+    "risky func": "kobject_put",
+    "Risky API Class": "refCount",
+    "Is Controlled Path": 1,
+    "No. path cond": 16,
+    "call path": "( [6]alx_probe ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1715 )->alloc_etherdev_mqs ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethernet/eth.c#L391 )->alloc_netdev_mqs ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10557 )->free_netdev ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10687 )->put_device ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L3768 )->kobject_put ( Unknown Loc ) )"
+  },
+  {
+    "id": 3,
+    "kernel boundary func name": "netif_device_attach",
+    "risky func": "mod_timer",
+    "Risky API Class": "timer",
+    "Is Controlled Path": 1,
+    "No. path cond": 4,
+    "call path": "( [4]alx_pci_error_resume ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L2013 )->netif_device_attach ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L3180 )->__netdev_watchdog_up ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/sched/sch_generic.c#L543 )->mod_timer ( Unknown Loc ) )( [4]alx_resume ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1927 )->netif_device_attach ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L3180 )->__netdev_watchdog_up ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/sched/sch_generic.c#L543 )->mod_timer ( Unknown Loc ) )"
+  },
+  {
+    "id": 4,
+    "kernel boundary func name": "netif_set_real_num_tx_queues",
+    "risky func": "mutex_lock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 9,
+    "call path": "( [5]__alx_open ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1202 )->netif_set_real_num_tx_queues ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L2881 )->netif_reset_xps_queues_gt ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L2476 )->netif_reset_xps_queues ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L2458 )->mutex_lock ( Unknown Loc ) )"
+  },
+  {
+    "id": 5,
+    "kernel boundary func name": "netif_set_real_num_tx_queues",
+    "risky func": "mutex_unlock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 9,
+    "call path": "( [5]__alx_open ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1202 )->netif_set_real_num_tx_queues ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L2881 )->netif_reset_xps_queues_gt ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L2476 )->netif_reset_xps_queues ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L2458 )->mutex_unlock ( Unknown Loc ) )"
+  },
+  {
+    "id": 6,
+    "kernel boundary func name": "netif_set_real_num_tx_queues",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 21,
+    "call path": "( [12]__alx_open ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1202 )->netif_set_real_num_tx_queues ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L2881 )->qdisc_reset_all_tx_gt ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/net/sch_generic.h#L723 )->qdisc_reset ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/sched/sch_generic.c#L1015 )->__skb_queue_purge ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/skbuff.h#L3124 )->kfree_skb.2289 ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/skbuff.h#L1223 )->kfree_skb_reason ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L885 )->__kfree_skb ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L868 )->skb_release_all ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L852 )->skb_release_data ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L766 )->skb_free_head ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L753 )->kfree ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/mm/slab_common.c#L988 ) )"
+  },
+  {
+    "id": 7,
+    "kernel boundary func name": "rtnl_lock",
+    "risky func": "mutex_lock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "call path": "( [3]alx_resume ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1927 )->rtnl_lock ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L72 )->mutex_lock ( Unknown Loc ) )( [3]alx_suspend ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1909 )->rtnl_lock ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L72 )->mutex_lock ( Unknown Loc ) )"
+  },
+  {
+    "id": 8,
+    "kernel boundary func name": "netif_carrier_on",
+    "risky func": "mod_timer",
+    "Risky API Class": "timer",
+    "Is Controlled Path": 1,
+    "No. path cond": 5,
+    "call path": "( [4]alx_netif_start ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1192 )->netif_carrier_on ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/sched/sch_generic.c#L575 )->__netdev_watchdog_up ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/sched/sch_generic.c#L543 )->mod_timer ( Unknown Loc ) )"
+  },
+  {
+    "id": 9,
+    "kernel boundary func name": "kfree",
+    "Risky API Class": "memory",
+    "Direct Risky Kernel API": 1,
+    "driver callers": "alx_free_rings(https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L698) | alx_free_napis(https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L721) | alx_free_rings(https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L701) | alx_free_napis(https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L723) | alx_free_napis(https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L722) | "
+  },
+  {
+    "id": 10,
+    "kernel boundary func name": "rtnl_unlock",
+    "risky func": "kobject_put",
+    "Risky API Class": "refCount",
+    "Is Controlled Path": 0,
+    "No. path cond": 11,
+    "call path": "( [6]alx_resume ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1927 )->rtnl_unlock ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L144 )->netdev_run_todo ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10317 )->free_netdev ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10687 )->put_device ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L3768 )->kobject_put ( Unknown Loc ) )( [6]alx_suspend ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1909 )->rtnl_unlock ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L144 )->netdev_run_todo ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10317 )->free_netdev ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10687 )->put_device ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L3768 )->kobject_put ( Unknown Loc ) )"
+  },
+  {
+    "id": 11,
+    "kernel boundary func name": "rtnl_unlock",
+    "risky func": "mutex_unlock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 12,
+    "call path": "( [5]alx_resume ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1927 )->rtnl_unlock ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L144 )->netdev_run_todo ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10317 )->__rtnl_unlock ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L94 )->mutex_unlock ( Unknown Loc ) )( [5]alx_suspend ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1909 )->rtnl_unlock ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L144 )->netdev_run_todo ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10317 )->__rtnl_unlock ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L94 )->mutex_unlock ( Unknown Loc ) )"
+  },
+  {
+    "id": 12,
+    "kernel boundary func name": "rtnl_unlock",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 15,
+    "call path": "( [11]alx_resume ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1927 )->rtnl_unlock ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L144 )->netdev_run_todo ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10317 )->__rtnl_unlock ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L94 )->kfree_skb.1848 ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/skbuff.h#L1223 )->kfree_skb_reason ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L885 )->__kfree_skb ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L868 )->skb_release_all ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L852 )->skb_release_data ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L766 )->skb_free_head ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L753 )->kfree ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/mm/slab_common.c#L988 ) )( [11]alx_suspend ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1909 )->rtnl_unlock ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L144 )->netdev_run_todo ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10317 )->__rtnl_unlock ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L94 )->kfree_skb.1848 ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/skbuff.h#L1223 )->kfree_skb_reason ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L885 )->__kfree_skb ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L868 )->skb_release_all ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L852 )->skb_release_data ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L766 )->skb_free_head ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L753 )->kfree ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/mm/slab_common.c#L988 ) )"
+  },
+  {
+    "id": 13,
+    "kernel boundary func name": "rtnl_unlock",
+    "risky func": "mutex_lock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 6,
+    "call path": "( [6]alx_resume ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1927 )->rtnl_unlock ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L144 )->netdev_run_todo ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10317 )->netdev_wait_allrefs_any ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10226 )->rtnl_lock ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L72 )->mutex_lock ( Unknown Loc ) )( [6]alx_suspend ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1909 )->rtnl_unlock ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L144 )->netdev_run_todo ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10317 )->netdev_wait_allrefs_any ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10226 )->rtnl_lock ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L72 )->mutex_lock ( Unknown Loc ) )"
+  },
+  {
+    "id": 14,
+    "kernel boundary func name": "free_netdev",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 5,
+    "call path": "( [12]alx_remove ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1888 )->free_netdev ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10687 )->netif_napi_del.53 ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/netdevice.h#L2624 )->__netif_napi_del ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L6472 )->napi_free_frags ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/netdevice.h#L3843 )->kfree_skb.56 ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/skbuff.h#L1223 )->kfree_skb_reason ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L885 )->__kfree_skb ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L868 )->skb_release_all ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L852 )->skb_release_data ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L766 )->skb_free_head ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L753 )->kfree ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/mm/slab_common.c#L988 ) )( [12]alx_probe ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1715 )->free_netdev ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10687 )->netif_napi_del.53 ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/netdevice.h#L2624 )->__netif_napi_del ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L6472 )->napi_free_frags ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/netdevice.h#L3843 )->kfree_skb.56 ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/skbuff.h#L1223 )->kfree_skb_reason ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L885 )->__kfree_skb ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L868 )->skb_release_all ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L852 )->skb_release_data ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L766 )->skb_free_head ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L753 )->kfree ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/mm/slab_common.c#L988 ) )"
+  },
+  {
+    "id": 15,
+    "kernel boundary func name": "free_netdev",
+    "risky func": "kobject_put",
+    "Risky API Class": "refCount",
+    "Is Controlled Path": 1,
+    "No. path cond": 9,
+    "call path": "( [4]alx_remove ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1888 )->free_netdev ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10687 )->put_device ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L3768 )->kobject_put ( Unknown Loc ) )( [4]alx_probe ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1715 )->free_netdev ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10687 )->put_device ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L3768 )->kobject_put ( Unknown Loc ) )"
+  },
+  {
+    "id": 16,
+    "kernel boundary func name": "pci_enable_device",
+    "Risky API Class": "bus",
+    "Direct Risky Kernel API": 1,
+    "driver callers": "alx_pci_error_slot_reset(https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1997) | "
+  },
+  {
+    "id": 17,
+    "kernel boundary func name": "pci_enable_device_mem",
+    "Risky API Class": "bus",
+    "Direct Risky Kernel API": 1,
+    "driver callers": "alx_probe(https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1723) | "
+  },
+  {
+    "id": 18,
+    "kernel boundary func name": "pci_unregister_driver",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 1,
+    "call path": "( [4]alx_driver_exit ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L2061 )->pci_unregister_driver ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci-driver.c#L1456 )->pci_free_dynids ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci-driver.c#L81 )->kfree ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/mm/slab_common.c#L988 ) )"
+  },
+  {
+    "id": 19,
+    "kernel boundary func name": "free_irq",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 13,
+    "call path": "( [3]alx_free_irq ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1019 )->free_irq ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/irq/manage.c#L2018 )->kfree ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/mm/slab_common.c#L988 ) )( [3]alx_free_irq ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1019 )->free_irq ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/irq/manage.c#L2018 )->kfree ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/mm/slab_common.c#L988 ) )( [3]alx_request_msix ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L853 )->free_irq ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/irq/manage.c#L2018 )->kfree ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/mm/slab_common.c#L988 ) )( [3]alx_request_msix ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L853 )->free_irq ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/irq/manage.c#L2018 )->kfree ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/mm/slab_common.c#L988 ) )"
+  },
+  {
+    "id": 20,
+    "kernel boundary func name": "free_irq",
+    "risky func": "mutex_lock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 4,
+    "call path": "( [4]alx_free_irq ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1019 )->free_irq ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/irq/manage.c#L2018 )->__free_irq ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/irq/manage.c#L1866 )->mutex_lock ( Unknown Loc ) )( [4]alx_free_irq ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1019 )->free_irq ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/irq/manage.c#L2018 )->__free_irq ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/irq/manage.c#L1866 )->mutex_lock ( Unknown Loc ) )( [4]alx_request_msix ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L853 )->free_irq ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/irq/manage.c#L2018 )->__free_irq ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/irq/manage.c#L1866 )->mutex_lock ( Unknown Loc ) )( [4]alx_request_msix ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L853 )->free_irq ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/irq/manage.c#L2018 )->__free_irq ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/irq/manage.c#L1866 )->mutex_lock ( Unknown Loc ) )"
+  },
+  {
+    "id": 21,
+    "kernel boundary func name": "free_irq",
+    "risky func": "mutex_unlock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 13,
+    "call path": "( [4]alx_free_irq ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1019 )->free_irq ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/irq/manage.c#L2018 )->__free_irq ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/irq/manage.c#L1866 )->mutex_unlock ( Unknown Loc ) )( [4]alx_free_irq ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1019 )->free_irq ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/irq/manage.c#L2018 )->__free_irq ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/irq/manage.c#L1866 )->mutex_unlock ( Unknown Loc ) )( [4]alx_request_msix ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L853 )->free_irq ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/irq/manage.c#L2018 )->__free_irq ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/irq/manage.c#L1866 )->mutex_unlock ( Unknown Loc ) )( [4]alx_request_msix ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L853 )->free_irq ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/irq/manage.c#L2018 )->__free_irq ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/irq/manage.c#L1866 )->mutex_unlock ( Unknown Loc ) )"
+  },
+  {
+    "id": 22,
+    "kernel boundary func name": "napi_gro_receive",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 43,
+    "call path": "( [14]alx_clean_rx_irq ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L217 )->napi_gro_receive ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/gro.c#L648 )->dev_gro_receive ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/gro.c#L482 )->napi_gro_complete ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/gro.c#L293 )->gro_normal_one ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/net/gro.h#L441 )->gro_normal_list.1804 ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/net/gro.h#L429 )->netif_receive_skb_list_internal ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L5701 )->enqueue_to_backlog ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L4667 )->kfree_skb_reason ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L885 )->__kfree_skb ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L868 )->skb_release_all ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L852 )->skb_release_data ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L766 )->skb_free_head ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L753 )->kfree ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/mm/slab_common.c#L988 ) )"
+  },
+  {
+    "id": 23,
+    "kernel boundary func name": "napi_complete_done",
+    "risky func": "hrtimer_start.1564",
+    "Risky API Class": "",
+    "Is Controlled Path": 0,
+    "No. path cond": 7,
+    "call path": "( [3]alx_poll ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L297 )->napi_complete_done ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L6037 )->hrtimer_start.1564 ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/hrtimer.h#L415 ) )"
+  },
+  {
+    "id": 24,
+    "kernel boundary func name": "napi_complete_done",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 42,
+    "call path": "( [11]alx_poll ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L297 )->napi_complete_done ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L6037 )->gro_normal_list ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/net/gro.h#L429 )->netif_receive_skb_list_internal ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L5701 )->enqueue_to_backlog ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L4667 )->kfree_skb_reason ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L885 )->__kfree_skb ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L868 )->skb_release_all ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L852 )->skb_release_data ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L766 )->skb_free_head ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L753 )->kfree ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/mm/slab_common.c#L988 ) )"
+  },
+  {
+    "id": 25,
+    "kernel boundary func name": "unregister_netdev",
+    "risky func": "mutex_lock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 23,
+    "call path": "( [7]alx_remove ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1888 )->unregister_netdev ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10902 )->rtnl_unlock ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L144 )->netdev_run_todo ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10317 )->netdev_wait_allrefs_any ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10226 )->rtnl_lock ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L72 )->mutex_lock ( Unknown Loc ) )"
+  },
+  {
+    "id": 26,
+    "kernel boundary func name": "unregister_netdev",
+    "risky func": "kobject_put",
+    "Risky API Class": "refCount",
+    "Is Controlled Path": 0,
+    "No. path cond": 11,
+    "call path": "( [7]alx_remove ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1888 )->unregister_netdev ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10902 )->rtnl_unlock ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L144 )->netdev_run_todo ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10317 )->free_netdev ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10687 )->put_device ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L3768 )->kobject_put ( Unknown Loc ) )"
+  },
+  {
+    "id": 27,
+    "kernel boundary func name": "unregister_netdev",
+    "risky func": "mutex_unlock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 95,
+    "call path": "( [6]alx_remove ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1888 )->unregister_netdev ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10902 )->rtnl_unlock ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L144 )->netdev_run_todo ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10317 )->__rtnl_unlock ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L94 )->mutex_unlock ( Unknown Loc ) )"
+  },
+  {
+    "id": 28,
+    "kernel boundary func name": "unregister_netdev",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 80,
+    "call path": "( [12]alx_remove ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1888 )->unregister_netdev ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10902 )->rtnl_unlock ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L144 )->netdev_run_todo ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10317 )->__rtnl_unlock ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L94 )->kfree_skb.1848 ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/skbuff.h#L1223 )->kfree_skb_reason ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L885 )->__kfree_skb ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L868 )->skb_release_all ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L852 )->skb_release_data ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L766 )->skb_free_head ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L753 )->kfree ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/mm/slab_common.c#L988 ) )"
+  },
+  {
+    "id": 29,
+    "kernel boundary func name": "unregister_netdev",
+    "risky func": "del_timer",
+    "Risky API Class": "timer",
+    "Is Controlled Path": 0,
+    "No. path cond": 22,
+    "call path": "( [15]alx_remove ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1888 )->unregister_netdev ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10902 )->unregister_netdevice ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/netdevice.h#L3043 )->unregister_netdevice_queue ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10767 )->unregister_netdevice_many ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10789 )->rtmsg_ifinfo_build_skb ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L3925 )->if_nlmsg_size ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L1044 )->rtnl_vfinfo_size ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L941 )->dev_num_vf ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/device.h#L977 )->alx_suspend ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1909 )->__alx_stop ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1258 )->cancel_work_sync ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L3197 )->__cancel_work_timer ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L3115 )->try_to_grab_pending ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L1261 )->del_timer ( Unknown Loc ) )"
+  },
+  {
+    "id": 30,
+    "kernel boundary func name": "unregister_netdev",
+    "risky func": "mod_timer",
+    "Risky API Class": "timer",
+    "Is Controlled Path": 0,
+    "No. path cond": 79,
+    "call path": "( [13]alx_remove ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1888 )->unregister_netdev ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10902 )->unregister_netdevice ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/netdevice.h#L3043 )->unregister_netdevice_queue ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10767 )->unregister_netdevice_many ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10789 )->rtmsg_ifinfo_build_skb ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L3925 )->if_nlmsg_size ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L1044 )->rtnl_vfinfo_size ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L941 )->dev_num_vf ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/device.h#L977 )->alx_resume ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1927 )->netif_device_attach ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L3180 )->__netdev_watchdog_up ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/sched/sch_generic.c#L543 )->mod_timer ( Unknown Loc ) )"
+  },
+  {
+    "id": 31,
+    "kernel boundary func name": "unregister_netdev",
+    "risky func": "kzalloc.911",
+    "Risky API Class": "",
+    "Is Controlled Path": 1,
+    "No. path cond": 98,
+    "call path": "( [16]alx_remove ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1888 )->unregister_netdev ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10902 )->unregister_netdevice ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/netdevice.h#L3043 )->unregister_netdevice_queue ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10767 )->unregister_netdevice_many ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10789 )->rtmsg_ifinfo_build_skb ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L3925 )->if_nlmsg_size ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L1044 )->rtnl_vfinfo_size ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L941 )->dev_num_vf ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/device.h#L977 )->alx_resume ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1927 )->__alx_open ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1202 )->alx_request_irq ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L975 )->alx_request_msix ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L853 )->request_irq ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/interrupt.h#L165 )->request_threaded_irq ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/irq/manage.c#L2138 )->kzalloc.911 ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L687 ) )"
+  },
+  {
+    "id": 32,
+    "kernel boundary func name": "unregister_netdev",
+    "risky func": "pci_msi_unmask",
+    "Risky API Class": "bus",
+    "Is Controlled Path": 0,
+    "No. path cond": 85,
+    "call path": "( [16]alx_remove ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1888 )->unregister_netdev ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10902 )->unregister_netdevice ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/netdevice.h#L3043 )->unregister_netdevice_queue ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10767 )->unregister_netdevice_many ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10789 )->rtmsg_ifinfo_build_skb ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L3925 )->if_nlmsg_size ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L1044 )->rtnl_vfinfo_size ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L941 )->dev_num_vf ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/device.h#L977 )->alx_suspend ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1909 )->__alx_stop ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1258 )->alx_free_irq ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1019 )->pci_free_irq_vectors ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L1058 )->pci_disable_msi ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L763 )->pci_msi_shutdown ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L742 )->pci_msi_unmask ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L40 ) )"
+  },
+  {
+    "id": 33,
+    "kernel boundary func name": "unregister_netdev",
+    "risky func": "pci_msi_vec_count",
+    "Risky API Class": "bus",
+    "Is Controlled Path": 0,
+    "No. path cond": 86,
+    "call path": "( [16]alx_remove ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1888 )->unregister_netdev ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10902 )->unregister_netdevice ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/netdevice.h#L3043 )->unregister_netdevice_queue ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10767 )->unregister_netdevice_many ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10789 )->rtmsg_ifinfo_build_skb ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L3925 )->if_nlmsg_size ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L1044 )->rtnl_vfinfo_size ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L941 )->dev_num_vf ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/device.h#L977 )->alx_resume ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1927 )->__alx_open ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1202 )->alx_enable_msix ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L830 )->pci_alloc_irq_vectors ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/pci.h#L1953 )->pci_alloc_irq_vectors_affinity ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L1005 )->__pci_enable_msi_range ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L864 )->pci_msi_vec_count ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L727 ) )"
+  },
+  {
+    "id": 34,
+    "kernel boundary func name": "unregister_netdev",
+    "risky func": "pci_bus_write_config_word",
+    "Risky API Class": "bus",
+    "Is Controlled Path": 0,
+    "No. path cond": 87,
+    "call path": "( [19]alx_remove ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1888 )->unregister_netdev ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10902 )->unregister_netdevice ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/netdevice.h#L3043 )->unregister_netdevice_queue ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10767 )->unregister_netdevice_many ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10789 )->rtmsg_ifinfo_build_skb ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L3925 )->if_nlmsg_size ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L1044 )->rtnl_vfinfo_size ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L941 )->dev_num_vf ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/device.h#L977 )->alx_suspend ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1909 )->__alx_stop ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1258 )->alx_free_irq ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1019 )->pci_free_irq_vectors ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L1058 )->pci_disable_msix ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L852 )->pci_msix_shutdown ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L830 )->pci_intx_for_msi ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L235 )->pci_intx ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L4605 )->pci_write_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L581 )->pci_bus_write_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L70 ) )"
+  },
+  {
+    "id": 35,
+    "kernel boundary func name": "unregister_netdev",
+    "risky func": "pci_bus_read_config_word",
+    "Risky API Class": "bus",
+    "Is Controlled Path": 0,
+    "No. path cond": 85,
+    "call path": "( [19]alx_remove ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1888 )->unregister_netdev ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10902 )->unregister_netdevice ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/netdevice.h#L3043 )->unregister_netdevice_queue ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10767 )->unregister_netdevice_many ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10789 )->rtmsg_ifinfo_build_skb ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L3925 )->if_nlmsg_size ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L1044 )->rtnl_vfinfo_size ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L941 )->dev_num_vf ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/device.h#L977 )->alx_suspend ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1909 )->__alx_stop ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1258 )->alx_free_irq ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1019 )->pci_free_irq_vectors ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L1058 )->pci_disable_msix ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L852 )->pci_msix_shutdown ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L830 )->pci_intx_for_msi ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L235 )->pci_intx ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L4605 )->pci_read_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L552 )->pci_bus_read_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L67 ) )"
+  },
+  {
+    "id": 36,
+    "kernel boundary func name": "unregister_netdev",
+    "risky func": "pci_msi_mask",
+    "Risky API Class": "bus",
+    "Is Controlled Path": 0,
+    "No. path cond": 94,
+    "call path": "( [17]alx_remove ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1888 )->unregister_netdev ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10902 )->unregister_netdevice ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/netdevice.h#L3043 )->unregister_netdevice_queue ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10767 )->unregister_netdevice_many ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10789 )->rtmsg_ifinfo_build_skb ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L3925 )->if_nlmsg_size ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L1044 )->rtnl_vfinfo_size ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L941 )->dev_num_vf ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/device.h#L977 )->alx_resume ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1927 )->__alx_open ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1202 )->alx_enable_msix ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L830 )->pci_alloc_irq_vectors ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/pci.h#L1953 )->pci_alloc_irq_vectors_affinity ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L1005 )->__pci_enable_msi_range ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L864 )->msi_capability_init ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L430 )->pci_msi_mask ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L35 ) )"
+  },
+  {
+    "id": 37,
+    "kernel boundary func name": "unregister_netdev",
+    "risky func": "mask_irq",
+    "Risky API Class": "bus",
+    "Is Controlled Path": 0,
+    "No. path cond": 117,
+    "call path": "( [18]alx_remove ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1888 )->unregister_netdev ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10902 )->unregister_netdevice ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/netdevice.h#L3043 )->unregister_netdevice_queue ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10767 )->unregister_netdevice_many ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10789 )->rtmsg_ifinfo_build_skb ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L3925 )->if_nlmsg_size ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L1044 )->rtnl_vfinfo_size ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L941 )->dev_num_vf ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/device.h#L977 )->alx_resume ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1927 )->__alx_open ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1202 )->alx_request_irq ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L975 )->alx_request_msix ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L853 )->request_irq ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/interrupt.h#L165 )->request_threaded_irq ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/irq/manage.c#L2138 )->__setup_irq ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/irq/manage.c#L1497 )->__irq_set_trigger ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/irq/manage.c#L946 )->mask_irq ( Unknown Loc ) )"
+  },
+  {
+    "id": 38,
+    "kernel boundary func name": "unregister_netdev",
+    "risky func": "unmask_irq",
+    "Risky API Class": "bus",
+    "Is Controlled Path": 0,
+    "No. path cond": 120,
+    "call path": "( [18]alx_remove ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1888 )->unregister_netdev ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10902 )->unregister_netdevice ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/netdevice.h#L3043 )->unregister_netdevice_queue ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10767 )->unregister_netdevice_many ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10789 )->rtmsg_ifinfo_build_skb ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L3925 )->if_nlmsg_size ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L1044 )->rtnl_vfinfo_size ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L941 )->dev_num_vf ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/device.h#L977 )->alx_resume ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1927 )->__alx_open ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1202 )->alx_request_irq ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L975 )->alx_request_msix ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L853 )->request_irq ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/interrupt.h#L165 )->request_threaded_irq ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/irq/manage.c#L2138 )->__setup_irq ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/irq/manage.c#L1497 )->__irq_set_trigger ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/irq/manage.c#L946 )->unmask_irq ( Unknown Loc ) )"
+  },
+  {
+    "id": 39,
+    "kernel boundary func name": "unregister_netdev",
+    "risky func": "pci_bus_write_config_dword",
+    "Risky API Class": "bus",
+    "Is Controlled Path": 0,
+    "No. path cond": 87,
+    "call path": "( [19]alx_remove ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1888 )->unregister_netdev ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10902 )->unregister_netdevice ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/netdevice.h#L3043 )->unregister_netdevice_queue ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10767 )->unregister_netdevice_many ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10789 )->rtmsg_ifinfo_build_skb ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L3925 )->if_nlmsg_size ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L1044 )->rtnl_vfinfo_size ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L941 )->dev_num_vf ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/device.h#L977 )->alx_suspend ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1909 )->__alx_stop ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1258 )->alx_free_irq ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1019 )->pci_free_irq_vectors ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L1058 )->pci_disable_msi ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L763 )->pci_msi_shutdown ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L742 )->pci_msi_unmask ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L40 )->pci_msi_update_mask ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L19 )->pci_write_config_dword ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L589 )->pci_bus_write_config_dword ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L71 ) )"
+  },
+  {
+    "id": 40,
+    "kernel boundary func name": "unregister_netdev",
+    "risky func": "pci_bus_read_config_dword",
+    "Risky API Class": "bus",
+    "Is Controlled Path": 0,
+    "No. path cond": 100,
+    "call path": "( [20]alx_remove ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1888 )->unregister_netdev ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10902 )->unregister_netdevice ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/netdevice.h#L3043 )->unregister_netdevice_queue ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10767 )->unregister_netdevice_many ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10789 )->rtmsg_ifinfo_build_skb ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L3925 )->if_nlmsg_size ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L1044 )->rtnl_vfinfo_size ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L941 )->dev_num_vf ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/device.h#L977 )->alx_resume ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1927 )->__alx_open ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1202 )->alx_enable_msix ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L830 )->pci_alloc_irq_vectors ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/pci.h#L1953 )->pci_alloc_irq_vectors_affinity ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L1005 )->__pci_enable_msix_range ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L928 )->__pci_enable_msix ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L795 )->msix_capability_init ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L611 )->msix_map_region ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L484 )->pci_read_config_dword ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L562 )->pci_bus_read_config_dword ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L68 ) )"
+  },
+  {
+    "id": 41,
+    "kernel boundary func name": "register_netdev",
+    "risky func": "kobject_put",
+    "Risky API Class": "refCount",
+    "Is Controlled Path": 0,
+    "No. path cond": 12,
+    "call path": "( [7]alx_probe ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1715 )->register_netdev ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10184 )->rtnl_unlock ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L144 )->netdev_run_todo ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10317 )->free_netdev ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10687 )->put_device ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L3768 )->kobject_put ( Unknown Loc ) )"
+  },
+  {
+    "id": 42,
+    "kernel boundary func name": "register_netdev",
+    "risky func": "mutex_lock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 52,
+    "call path": "( [7]alx_probe ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1715 )->register_netdev ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10184 )->rtnl_unlock ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L144 )->netdev_run_todo ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10317 )->netdev_wait_allrefs_any ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10226 )->rtnl_lock ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L72 )->mutex_lock ( Unknown Loc ) )"
+  },
+  {
+    "id": 43,
+    "kernel boundary func name": "register_netdev",
+    "risky func": "mutex_unlock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 124,
+    "call path": "( [6]alx_probe ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1715 )->register_netdev ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10184 )->rtnl_unlock ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L144 )->netdev_run_todo ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10317 )->__rtnl_unlock ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L94 )->mutex_unlock ( Unknown Loc ) )"
+  },
+  {
+    "id": 44,
+    "kernel boundary func name": "register_netdev",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 109,
+    "call path": "( [12]alx_probe ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1715 )->register_netdev ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10184 )->rtnl_unlock ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L144 )->netdev_run_todo ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10317 )->__rtnl_unlock ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L94 )->kfree_skb.1848 ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/skbuff.h#L1223 )->kfree_skb_reason ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L885 )->__kfree_skb ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L868 )->skb_release_all ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L852 )->skb_release_data ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L766 )->skb_free_head ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L753 )->kfree ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/mm/slab_common.c#L988 ) )"
+  },
+  {
+    "id": 45,
+    "kernel boundary func name": "register_netdev",
+    "risky func": "kzalloc.911",
+    "Risky API Class": "",
+    "Is Controlled Path": 1,
+    "No. path cond": 127,
+    "call path": "( [10]alx_probe ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1715 )->register_netdev ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10184 )->register_netdevice ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L9960 )->alx_open ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1351 )->__alx_open ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1202 )->alx_request_irq ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L975 )->alx_request_msix ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L853 )->request_irq ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/interrupt.h#L165 )->request_threaded_irq ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/irq/manage.c#L2138 )->kzalloc.911 ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L687 ) )"
+  },
+  {
+    "id": 46,
+    "kernel boundary func name": "register_netdev",
+    "risky func": "pci_msi_unmask",
+    "Risky API Class": "bus",
+    "Is Controlled Path": 0,
+    "No. path cond": 114,
+    "call path": "( [11]alx_probe ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1715 )->register_netdev ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10184 )->register_netdevice ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L9960 )->alx_open ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1351 )->__alx_open ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1202 )->alx_enable_msix ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L830 )->pci_alloc_irq_vectors ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/pci.h#L1953 )->pci_alloc_irq_vectors_affinity ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L1005 )->__pci_enable_msi_range ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L864 )->msi_capability_init ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L430 )->pci_msi_unmask ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L40 ) )"
+  },
+  {
+    "id": 47,
+    "kernel boundary func name": "register_netdev",
+    "risky func": "del_timer",
+    "Risky API Class": "timer",
+    "Is Controlled Path": 0,
+    "No. path cond": 51,
+    "call path": "( [9]alx_probe ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1715 )->register_netdev ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10184 )->register_netdevice ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L9960 )->alx_stop ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1363 )->__alx_stop ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1258 )->cancel_work_sync ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L3197 )->__cancel_work_timer ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L3115 )->try_to_grab_pending ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L1261 )->del_timer ( Unknown Loc ) )"
+  },
+  {
+    "id": 48,
+    "kernel boundary func name": "register_netdev",
+    "risky func": "pci_msi_vec_count",
+    "Risky API Class": "bus",
+    "Is Controlled Path": 0,
+    "No. path cond": 115,
+    "call path": "( [10]alx_probe ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1715 )->register_netdev ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10184 )->register_netdevice ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L9960 )->alx_open ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1351 )->__alx_open ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1202 )->alx_enable_msix ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L830 )->pci_alloc_irq_vectors ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/pci.h#L1953 )->pci_alloc_irq_vectors_affinity ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L1005 )->__pci_enable_msi_range ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L864 )->pci_msi_vec_count ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L727 ) )"
+  },
+  {
+    "id": 49,
+    "kernel boundary func name": "register_netdev",
+    "risky func": "pci_bus_write_config_word",
+    "Risky API Class": "bus",
+    "Is Controlled Path": 0,
+    "No. path cond": 116,
+    "call path": "( [11]alx_probe ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1715 )->register_netdev ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10184 )->register_netdevice ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L9960 )->alx_open ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1351 )->__alx_open ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1202 )->alx_enable_msix ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L830 )->pci_alloc_irq_vectors ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/pci.h#L1953 )->pci_alloc_irq_vectors_affinity ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L1005 )->pci_intx ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L4605 )->pci_write_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L581 )->pci_bus_write_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L70 ) )"
+  },
+  {
+    "id": 50,
+    "kernel boundary func name": "register_netdev",
+    "risky func": "pci_bus_read_config_word",
+    "Risky API Class": "bus",
+    "Is Controlled Path": 0,
+    "No. path cond": 114,
+    "call path": "( [11]alx_probe ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1715 )->register_netdev ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10184 )->register_netdevice ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L9960 )->alx_open ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1351 )->__alx_open ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1202 )->alx_enable_msix ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L830 )->pci_alloc_irq_vectors ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/pci.h#L1953 )->pci_alloc_irq_vectors_affinity ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L1005 )->pci_intx ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L4605 )->pci_read_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L552 )->pci_bus_read_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L67 ) )"
+  },
+  {
+    "id": 51,
+    "kernel boundary func name": "register_netdev",
+    "risky func": "pci_msi_mask",
+    "Risky API Class": "bus",
+    "Is Controlled Path": 0,
+    "No. path cond": 123,
+    "call path": "( [11]alx_probe ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1715 )->register_netdev ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10184 )->register_netdevice ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L9960 )->alx_open ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1351 )->__alx_open ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1202 )->alx_enable_msix ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L830 )->pci_alloc_irq_vectors ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/pci.h#L1953 )->pci_alloc_irq_vectors_affinity ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L1005 )->__pci_enable_msi_range ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L864 )->msi_capability_init ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L430 )->pci_msi_mask ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L35 ) )"
+  },
+  {
+    "id": 52,
+    "kernel boundary func name": "register_netdev",
+    "risky func": "mask_irq",
+    "Risky API Class": "bus",
+    "Is Controlled Path": 0,
+    "No. path cond": 146,
+    "call path": "( [12]alx_probe ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1715 )->register_netdev ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10184 )->register_netdevice ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L9960 )->alx_open ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1351 )->__alx_open ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1202 )->alx_request_irq ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L975 )->alx_request_msix ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L853 )->request_irq ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/interrupt.h#L165 )->request_threaded_irq ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/irq/manage.c#L2138 )->__setup_irq ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/irq/manage.c#L1497 )->__irq_set_trigger ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/irq/manage.c#L946 )->mask_irq ( Unknown Loc ) )"
+  },
+  {
+    "id": 53,
+    "kernel boundary func name": "register_netdev",
+    "risky func": "unmask_irq",
+    "Risky API Class": "bus",
+    "Is Controlled Path": 0,
+    "No. path cond": 149,
+    "call path": "( [12]alx_probe ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1715 )->register_netdev ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10184 )->register_netdevice ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L9960 )->alx_open ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1351 )->__alx_open ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1202 )->alx_request_irq ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L975 )->alx_request_msix ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L853 )->request_irq ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/interrupt.h#L165 )->request_threaded_irq ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/irq/manage.c#L2138 )->__setup_irq ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/irq/manage.c#L1497 )->__irq_set_trigger ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/irq/manage.c#L946 )->unmask_irq ( Unknown Loc ) )"
+  },
+  {
+    "id": 54,
+    "kernel boundary func name": "register_netdev",
+    "risky func": "pci_bus_write_config_dword",
+    "Risky API Class": "bus",
+    "Is Controlled Path": 0,
+    "No. path cond": 116,
+    "call path": "( [14]alx_probe ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1715 )->register_netdev ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10184 )->register_netdevice ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L9960 )->alx_open ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1351 )->__alx_open ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1202 )->alx_enable_msix ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L830 )->pci_alloc_irq_vectors ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/pci.h#L1953 )->pci_alloc_irq_vectors_affinity ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L1005 )->__pci_enable_msi_range ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L864 )->msi_capability_init ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L430 )->pci_msi_unmask ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L40 )->pci_msi_update_mask ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L19 )->pci_write_config_dword ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L589 )->pci_bus_write_config_dword ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L71 ) )"
+  },
+  {
+    "id": 55,
+    "kernel boundary func name": "register_netdev",
+    "risky func": "pci_bus_read_config_dword",
+    "Risky API Class": "bus",
+    "Is Controlled Path": 0,
+    "No. path cond": 129,
+    "call path": "( [14]alx_probe ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1715 )->register_netdev ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10184 )->register_netdevice ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L9960 )->alx_open ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1351 )->__alx_open ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1202 )->alx_enable_msix ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L830 )->pci_alloc_irq_vectors ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/pci.h#L1953 )->pci_alloc_irq_vectors_affinity ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L1005 )->__pci_enable_msix_range ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L928 )->__pci_enable_msix ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L795 )->msix_capability_init ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L611 )->msix_map_region ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L484 )->pci_read_config_dword ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L562 )->pci_bus_read_config_dword ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L68 ) )"
+  },
+  {
+    "id": 56,
+    "kernel boundary func name": "register_netdev",
+    "risky func": "mod_timer",
+    "Risky API Class": "timer",
+    "Is Controlled Path": 0,
+    "No. path cond": 108,
+    "call path": "( [13]alx_probe ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1715 )->register_netdev ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10184 )->register_netdevice ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L9960 )->rtmsg_ifinfo ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L3976 )->rtmsg_ifinfo_event ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L3961 )->rtmsg_ifinfo_build_skb ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L3925 )->if_nlmsg_size ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L1044 )->rtnl_vfinfo_size ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L941 )->dev_num_vf ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/device.h#L977 )->alx_resume ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1927 )->netif_device_attach ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L3180 )->__netdev_watchdog_up ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/sched/sch_generic.c#L543 )->mod_timer ( Unknown Loc ) )"
+  },
+  {
+    "id": 57,
+    "kernel boundary func name": "pci_disable_pcie_error_reporting",
+    "risky func": "pci_bus_read_config_word",
+    "Risky API Class": "bus",
+    "Is Controlled Path": 0,
+    "No. path cond": 5,
+    "call path": "( [9]alx_remove ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1888 )->pci_disable_pcie_error_reporting ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pcie/aer.c#L242 )->pcie_capability_clear_word.529 ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/pci.h#L1259 )->pcie_capability_clear_and_set_word.531 ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/pci.h#L1232 )->pcie_capability_clear_and_set_word_locked ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L511 )->pcie_capability_clear_and_set_word_unlocked ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L494 )->pcie_capability_read_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L407 )->pci_read_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L552 )->pci_bus_read_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L67 ) )( [9]alx_probe ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1715 )->pci_disable_pcie_error_reporting ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pcie/aer.c#L242 )->pcie_capability_clear_word.529 ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/pci.h#L1259 )->pcie_capability_clear_and_set_word.531 ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/pci.h#L1232 )->pcie_capability_clear_and_set_word_locked ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L511 )->pcie_capability_clear_and_set_word_unlocked ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L494 )->pcie_capability_read_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L407 )->pci_read_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L552 )->pci_bus_read_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L67 ) )"
+  },
+  {
+    "id": 58,
+    "kernel boundary func name": "pci_disable_pcie_error_reporting",
+    "risky func": "pci_bus_write_config_word",
+    "Risky API Class": "bus",
+    "Is Controlled Path": 0,
+    "No. path cond": 6,
+    "call path": "( [9]alx_remove ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1888 )->pci_disable_pcie_error_reporting ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pcie/aer.c#L242 )->pcie_capability_clear_word.529 ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/pci.h#L1259 )->pcie_capability_clear_and_set_word.531 ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/pci.h#L1232 )->pcie_capability_clear_and_set_word_locked ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L511 )->pcie_capability_clear_and_set_word_unlocked ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L494 )->pcie_capability_write_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L470 )->pci_write_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L581 )->pci_bus_write_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L70 ) )( [9]alx_probe ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1715 )->pci_disable_pcie_error_reporting ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pcie/aer.c#L242 )->pcie_capability_clear_word.529 ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/pci.h#L1259 )->pcie_capability_clear_and_set_word.531 ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/pci.h#L1232 )->pcie_capability_clear_and_set_word_locked ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L511 )->pcie_capability_clear_and_set_word_unlocked ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L494 )->pcie_capability_write_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L470 )->pci_write_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L581 )->pci_bus_write_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L70 ) )"
+  },
+  {
+    "id": 59,
+    "kernel boundary func name": "pci_write_config_word",
+    "risky func": "pci_bus_write_config_word",
+    "Risky API Class": "bus",
+    "Is Controlled Path": 1,
+    "No. path cond": 1,
+    "call path": "( [3]alx_reset_pcie ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/hw.c#L560 )->pci_write_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L581 )->pci_bus_write_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L70 ) )"
+  },
+  {
+    "id": 60,
+    "kernel boundary func name": "pci_read_config_word",
+    "risky func": "pci_bus_read_config_word",
+    "Risky API Class": "bus",
+    "Is Controlled Path": 1,
+    "No. path cond": 1,
+    "call path": "( [3]alx_reset_pcie ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/hw.c#L560 )->pci_read_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L552 )->pci_bus_read_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L67 ) )"
+  },
+  {
+    "id": 61,
+    "kernel boundary func name": "pci_enable_pcie_error_reporting",
+    "risky func": "pci_bus_read_config_word",
+    "Risky API Class": "bus",
+    "Is Controlled Path": 0,
+    "No. path cond": 5,
+    "call path": "( [9]alx_probe ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1715 )->pci_enable_pcie_error_reporting ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pcie/aer.c#L230 )->pcie_capability_set_word.532 ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/pci.h#L1247 )->pcie_capability_clear_and_set_word.531 ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/pci.h#L1232 )->pcie_capability_clear_and_set_word_locked ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L511 )->pcie_capability_clear_and_set_word_unlocked ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L494 )->pcie_capability_read_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L407 )->pci_read_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L552 )->pci_bus_read_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L67 ) )"
+  },
+  {
+    "id": 62,
+    "kernel boundary func name": "pci_enable_pcie_error_reporting",
+    "risky func": "pci_bus_write_config_word",
+    "Risky API Class": "bus",
+    "Is Controlled Path": 0,
+    "No. path cond": 6,
+    "call path": "( [9]alx_probe ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1715 )->pci_enable_pcie_error_reporting ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pcie/aer.c#L230 )->pcie_capability_set_word.532 ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/pci.h#L1247 )->pcie_capability_clear_and_set_word.531 ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/pci.h#L1232 )->pcie_capability_clear_and_set_word_locked ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L511 )->pcie_capability_clear_and_set_word_unlocked ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L494 )->pcie_capability_write_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L470 )->pci_write_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L581 )->pci_bus_write_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L70 ) )"
+  },
+  {
+    "id": 63,
+    "kernel boundary func name": "pci_free_irq_vectors",
+    "risky func": "pci_msi_unmask",
+    "Risky API Class": "bus",
+    "Is Controlled Path": 0,
+    "No. path cond": 8,
+    "call path": "( [5]alx_free_irq ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1019 )->pci_free_irq_vectors ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L1058 )->pci_disable_msi ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L763 )->pci_msi_shutdown ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L742 )->pci_msi_unmask ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L40 ) )( [5]alx_realloc_resources ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L952 )->pci_free_irq_vectors ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L1058 )->pci_disable_msi ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L763 )->pci_msi_shutdown ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L742 )->pci_msi_unmask ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L40 ) )( [5]alx_request_irq ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L975 )->pci_free_irq_vectors ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L1058 )->pci_disable_msi ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L763 )->pci_msi_shutdown ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L742 )->pci_msi_unmask ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L40 ) )( [5]__alx_open ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1202 )->pci_free_irq_vectors ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L1058 )->pci_disable_msi ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L763 )->pci_msi_shutdown ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L742 )->pci_msi_unmask ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L40 ) )"
+  },
+  {
+    "id": 64,
+    "kernel boundary func name": "pci_free_irq_vectors",
+    "risky func": "pci_bus_write_config_word",
+    "Risky API Class": "bus",
+    "Is Controlled Path": 0,
+    "No. path cond": 10,
+    "call path": "( [8]alx_free_irq ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1019 )->pci_free_irq_vectors ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L1058 )->pci_disable_msix ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L852 )->pci_msix_shutdown ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L830 )->pci_intx_for_msi ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L235 )->pci_intx ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L4605 )->pci_write_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L581 )->pci_bus_write_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L70 ) )( [8]alx_realloc_resources ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L952 )->pci_free_irq_vectors ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L1058 )->pci_disable_msix ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L852 )->pci_msix_shutdown ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L830 )->pci_intx_for_msi ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L235 )->pci_intx ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L4605 )->pci_write_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L581 )->pci_bus_write_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L70 ) )( [8]alx_request_irq ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L975 )->pci_free_irq_vectors ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L1058 )->pci_disable_msix ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L852 )->pci_msix_shutdown ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L830 )->pci_intx_for_msi ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L235 )->pci_intx ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L4605 )->pci_write_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L581 )->pci_bus_write_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L70 ) )( [8]__alx_open ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1202 )->pci_free_irq_vectors ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L1058 )->pci_disable_msix ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L852 )->pci_msix_shutdown ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L830 )->pci_intx_for_msi ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L235 )->pci_intx ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L4605 )->pci_write_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L581 )->pci_bus_write_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L70 ) )"
+  },
+  {
+    "id": 65,
+    "kernel boundary func name": "pci_free_irq_vectors",
+    "risky func": "pci_bus_read_config_word",
+    "Risky API Class": "bus",
+    "Is Controlled Path": 0,
+    "No. path cond": 8,
+    "call path": "( [8]alx_free_irq ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1019 )->pci_free_irq_vectors ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L1058 )->pci_disable_msix ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L852 )->pci_msix_shutdown ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L830 )->pci_intx_for_msi ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L235 )->pci_intx ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L4605 )->pci_read_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L552 )->pci_bus_read_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L67 ) )( [8]alx_realloc_resources ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L952 )->pci_free_irq_vectors ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L1058 )->pci_disable_msix ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L852 )->pci_msix_shutdown ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L830 )->pci_intx_for_msi ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L235 )->pci_intx ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L4605 )->pci_read_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L552 )->pci_bus_read_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L67 ) )( [8]alx_request_irq ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L975 )->pci_free_irq_vectors ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L1058 )->pci_disable_msix ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L852 )->pci_msix_shutdown ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L830 )->pci_intx_for_msi ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L235 )->pci_intx ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L4605 )->pci_read_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L552 )->pci_bus_read_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L67 ) )( [8]__alx_open ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1202 )->pci_free_irq_vectors ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L1058 )->pci_disable_msix ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L852 )->pci_msix_shutdown ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L830 )->pci_intx_for_msi ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L235 )->pci_intx ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L4605 )->pci_read_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L552 )->pci_bus_read_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L67 ) )"
+  },
+  {
+    "id": 66,
+    "kernel boundary func name": "pci_free_irq_vectors",
+    "risky func": "pci_bus_write_config_dword",
+    "Risky API Class": "bus",
+    "Is Controlled Path": 0,
+    "No. path cond": 10,
+    "call path": "( [8]alx_free_irq ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1019 )->pci_free_irq_vectors ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L1058 )->pci_disable_msi ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L763 )->pci_msi_shutdown ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L742 )->pci_msi_unmask ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L40 )->pci_msi_update_mask ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L19 )->pci_write_config_dword ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L589 )->pci_bus_write_config_dword ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L71 ) )( [8]alx_realloc_resources ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L952 )->pci_free_irq_vectors ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L1058 )->pci_disable_msi ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L763 )->pci_msi_shutdown ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L742 )->pci_msi_unmask ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L40 )->pci_msi_update_mask ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L19 )->pci_write_config_dword ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L589 )->pci_bus_write_config_dword ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L71 ) )( [8]alx_request_irq ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L975 )->pci_free_irq_vectors ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L1058 )->pci_disable_msi ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L763 )->pci_msi_shutdown ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L742 )->pci_msi_unmask ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L40 )->pci_msi_update_mask ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L19 )->pci_write_config_dword ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L589 )->pci_bus_write_config_dword ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L71 ) )( [8]__alx_open ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1202 )->pci_free_irq_vectors ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L1058 )->pci_disable_msi ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L763 )->pci_msi_shutdown ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L742 )->pci_msi_unmask ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L40 )->pci_msi_update_mask ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L19 )->pci_write_config_dword ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L589 )->pci_bus_write_config_dword ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L71 ) )"
+  },
+  {
+    "id": 67,
+    "kernel boundary func name": "pci_disable_device",
+    "Risky API Class": "bus",
+    "Direct Risky Kernel API": 1,
+    "driver callers": "alx_remove(https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1901) | alx_pci_error_detected(https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1980) | alx_probe(https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1884) | "
+  },
+  {
+    "id": 68,
+    "kernel boundary func name": "pci_set_master",
+    "risky func": "pci_bus_write_config_word",
+    "Risky API Class": "bus",
+    "Is Controlled Path": 0,
+    "No. path cond": 4,
+    "call path": "( [5]alx_pci_error_slot_reset ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1987 )->pci_set_master ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L4435 )->__pci_set_master ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L4372 )->pci_write_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L581 )->pci_bus_write_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L70 ) )( [5]alx_probe ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1715 )->pci_set_master ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L4435 )->__pci_set_master ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L4372 )->pci_write_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L581 )->pci_bus_write_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L70 ) )"
+  },
+  {
+    "id": 69,
+    "kernel boundary func name": "pci_set_master",
+    "risky func": "pci_bus_read_config_word",
+    "Risky API Class": "bus",
+    "Is Controlled Path": 1,
+    "No. path cond": 1,
+    "call path": "( [5]alx_pci_error_slot_reset ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1987 )->pci_set_master ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L4435 )->__pci_set_master ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L4372 )->pci_read_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L552 )->pci_bus_read_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L67 ) )( [5]alx_probe ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1715 )->pci_set_master ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L4435 )->__pci_set_master ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L4372 )->pci_read_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L552 )->pci_bus_read_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L67 ) )"
+  },
+  {
+    "id": 70,
+    "kernel boundary func name": "pci_set_master",
+    "risky func": "pci_bus_read_config_byte",
+    "Risky API Class": "bus",
+    "Is Controlled Path": 1,
+    "No. path cond": 2,
+    "call path": "( [5]alx_pci_error_slot_reset ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1987 )->pci_set_master ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L4435 )->pcibios_set_master ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L4409 )->pci_read_config_byte ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L542 )->pci_bus_read_config_byte ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L66 ) )( [5]alx_probe ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1715 )->pci_set_master ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L4435 )->pcibios_set_master ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L4409 )->pci_read_config_byte ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L542 )->pci_bus_read_config_byte ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L66 ) )"
+  },
+  {
+    "id": 71,
+    "kernel boundary func name": "pci_set_master",
+    "risky func": "pci_bus_write_config_byte",
+    "Risky API Class": "bus",
+    "Is Controlled Path": 0,
+    "No. path cond": 4,
+    "call path": "( [5]alx_pci_error_slot_reset ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1987 )->pci_set_master ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L4435 )->pcibios_set_master ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L4409 )->pci_write_config_byte ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L573 )->pci_bus_write_config_byte ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L69 ) )( [5]alx_probe ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1715 )->pci_set_master ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L4435 )->pcibios_set_master ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L4409 )->pci_write_config_byte ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L573 )->pci_bus_write_config_byte ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L69 ) )"
+  },
+  {
+    "id": 72,
+    "kernel boundary func name": "pcie_set_readrq",
+    "risky func": "pci_bus_read_config_word",
+    "Risky API Class": "bus",
+    "Is Controlled Path": 0,
+    "No. path cond": 11,
+    "call path": "( [8]alx_configure_basic ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/hw.c#L931 )->pcie_set_readrq ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L6021 )->pcie_capability_clear_and_set_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/pci.h#L1232 )->pcie_capability_clear_and_set_word_locked ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L511 )->pcie_capability_clear_and_set_word_unlocked ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L494 )->pcie_capability_read_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L407 )->pci_read_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L552 )->pci_bus_read_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L67 ) )"
+  },
+  {
+    "id": 73,
+    "kernel boundary func name": "pcie_set_readrq",
+    "risky func": "pci_bus_write_config_word",
+    "Risky API Class": "bus",
+    "Is Controlled Path": 0,
+    "No. path cond": 12,
+    "call path": "( [8]alx_configure_basic ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/hw.c#L931 )->pcie_set_readrq ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L6021 )->pcie_capability_clear_and_set_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/pci.h#L1232 )->pcie_capability_clear_and_set_word_locked ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L511 )->pcie_capability_clear_and_set_word_unlocked ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L494 )->pcie_capability_write_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L470 )->pci_write_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L581 )->pci_bus_write_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L70 ) )"
+  },
+  {
+    "id": 74,
+    "kernel boundary func name": "pcie_get_readrq",
+    "risky func": "pci_bus_read_config_word",
+    "Risky API Class": "bus",
+    "Is Controlled Path": 0,
+    "No. path cond": 3,
+    "call path": "( [5]alx_configure_basic ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/hw.c#L931 )->pcie_get_readrq ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L6003 )->pcie_capability_read_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L407 )->pci_read_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L552 )->pci_bus_read_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L67 ) )"
+  }
+]

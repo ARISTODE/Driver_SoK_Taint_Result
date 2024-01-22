@@ -1,0 +1,360 @@
+[
+  {
+    "id": "6",
+    "risky": "val-sen-branch (norm_branch)",
+    "acc_path": "datasync",
+    "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/sync.c#L202",
+    "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/sync.c#L186",
+    "drv caller (param)": "[ fsg_lun_fsync_sub | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/storage_common.c#L290 ], ",
+    "call path (param)": " [fsg_lun_fsync_sub->vfs_fsync->vfs_fsync_range] ",
+    "drv update loc (shared field)": "",
+    "call path (type)": " [vfs_fsync->vfs_fsync_range] ",
+    "num condition checks": 1,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/sync.c#L184 | ",
+    "cond_num": "2",
+    "cond_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/sync.c#L184 | ",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "id": "9",
+    "risky": "val-sen-branch (norm_branch)",
+    "acc_path": "state",
+    "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/wait.c#L311",
+    "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/signal.h#L421",
+    "drv caller (param)": "[ sleep_thread | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_mass_storage.c#L580 ], ",
+    "call path (param)": " [sleep_thread->prepare_to_wait_event->signal_pending_state.718] ",
+    "drv update loc (shared field)": "",
+    "call path (type)": " [wait_for_completion->wait_for_common->__wait_for_common->do_wait_for_common->signal_pending_state.718] ",
+    "num condition checks": 2,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/signal.h#L418 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/signal.h#L416 | ",
+    "cond_num": "3",
+    "cond_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/signal.h#L416 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/signal.h#L418 | ",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "id": "13",
+    "risky": "val-sen-branch (norm_branch)",
+    "acc_path": "count",
+    "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L446",
+    "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L408",
+    "drv caller (param)": "[ do_verify | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_mass_storage.c#L1004 ], ",
+    "call path (param)": " [do_verify->kernel_read->__kernel_read] ",
+    "drv update loc (shared field)": "",
+    "call path (type)": " [kernel_read->__kernel_read] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "cond_num": "1",
+    "cond_loc": "",
+    "isControl": "0"
+  },
+  {
+    "id": "13",
+    "risky": "num-arith ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L368 )",
+    "acc_path": "count",
+    "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L443",
+    "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L368",
+    "drv caller (param)": "[ do_verify | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_mass_storage.c#L1004 ], ",
+    "call path (param)": " [do_verify->kernel_read->rw_verify_area] ",
+    "drv update loc (shared field)": "",
+    "call path (type)": " [kernel_read->rw_verify_area] ",
+    "num condition checks": 3,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L357 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L360 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L363 | ",
+    "cond_num": "4",
+    "cond_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L363 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L360 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L357 | ",
+    "isControl": "0"
+  },
+  {
+    "id": "13",
+    "risky": "num-arith ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L368 )",
+    "acc_path": "count",
+    "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L443",
+    "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L368",
+    "drv caller (param)": "[ do_verify | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_mass_storage.c#L1004 ], ",
+    "call path (param)": " [do_verify->kernel_read->rw_verify_area] ",
+    "drv update loc (shared field)": "",
+    "call path (type)": " [kernel_read->rw_verify_area] ",
+    "num condition checks": 3,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L357 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L360 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L363 | ",
+    "cond_num": "4",
+    "cond_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L363 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L360 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L357 | ",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "id": "14",
+    "risky": "ptr-sen-branch (norm_branch)",
+    "acc_path": "pos",
+    "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L446",
+    "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L368",
+    "drv caller (param)": "[ do_verify | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_mass_storage.c#L1004 ], ",
+    "call path (param)": " [do_verify->kernel_read->rw_verify_area] ",
+    "drv update loc (shared field)": "",
+    "call path (type)": " [kernel_read->rw_verify_area] ",
+    "num condition checks": 3,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L357 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L360 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L363 | ",
+    "cond_num": "5",
+    "cond_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L363 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L360 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L357 | ",
+    "isControl": "0"
+  },
+  {
+    "id": "14",
+    "risky": "ptr-read",
+    "acc_path": "pos",
+    "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L446",
+    "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L361",
+    "drv caller (param)": "[ do_verify | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_mass_storage.c#L1004 ], ",
+    "call path (param)": " [do_verify->kernel_read->rw_verify_area] ",
+    "drv update loc (shared field)": "",
+    "call path (type)": " [kernel_read->rw_verify_area] ",
+    "num condition checks": 2,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L357 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L360 | ",
+    "cond_num": "4",
+    "cond_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L360 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L357 | ",
+    "isControl": "0"
+  },
+  {
+    "id": "14",
+    "risky": "ptr-write",
+    "acc_path": "pos",
+    "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L446",
+    "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L431",
+    "drv caller (param)": "[ do_verify | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_mass_storage.c#L1004 ], ",
+    "call path (param)": " [do_verify->kernel_read->__kernel_read] ",
+    "drv update loc (shared field)": "",
+    "call path (type)": " [kernel_read->__kernel_read] ",
+    "num condition checks": 2,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L429 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L430 | ",
+    "cond_num": "2",
+    "cond_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L430 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L429 | ",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "id": "20",
+    "risky": "val-sen-branch (norm_branch)",
+    "acc_path": "nr_exclusive",
+    "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/wait.c#L160",
+    "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/wait.c#L110",
+    "drv caller (param)": "[ bulk_out_complete | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_mass_storage.c#L443 ], ",
+    "call path (param)": " [bulk_out_complete->__wake_up->__wake_up_common_lock->__wake_up_common] ",
+    "drv update loc (shared field)": "",
+    "call path (type)": " [__wake_up->__wake_up_common_lock->__wake_up_common] ",
+    "num condition checks": 5,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/wait.c#L100 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/wait.c#L104 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/wait.c#L108 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/wait.c#L110 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/wait.c#L110 | ",
+    "cond_num": "6",
+    "cond_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/wait.c#L110 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/wait.c#L110 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/wait.c#L108 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/wait.c#L104 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/wait.c#L100 | ",
+    "isControl": "0"
+  },
+  {
+    "id": "20",
+    "risky": "num-arith ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/wait.c#L110 )",
+    "acc_path": "nr_exclusive",
+    "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/wait.c#L160",
+    "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/wait.c#L110",
+    "drv caller (param)": "[ bulk_out_complete | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_mass_storage.c#L443 ], ",
+    "call path (param)": " [bulk_out_complete->__wake_up->__wake_up_common_lock->__wake_up_common] ",
+    "drv update loc (shared field)": "",
+    "call path (type)": " [__wake_up->__wake_up_common_lock->__wake_up_common] ",
+    "num condition checks": 5,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/wait.c#L100 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/wait.c#L104 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/wait.c#L108 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/wait.c#L110 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/wait.c#L110 | ",
+    "cond_num": "6",
+    "cond_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/wait.c#L110 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/wait.c#L110 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/wait.c#L108 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/wait.c#L104 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/wait.c#L100 | ",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "id": "22",
+    "risky": "val-sen-branch (norm_branch)",
+    "acc_path": "flags",
+    "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/locking/spinlock.c#L194",
+    "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/spinlock_api_smp.h#L151",
+    "drv caller (param)": "[ __raise_exception | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_mass_storage.c#L384 ], ",
+    "call path (param)": " [__raise_exception->send_sig_info->do_send_sig_info->lock_task_sighand.375->__lock_task_sighand->_raw_spin_unlock_irqrestore->__raw_spin_unlock_irqrestore] ",
+    "drv update loc (shared field)": "",
+    "call path (type)": " [kthread_complete_and_exit->complete->swake_up_locked->wake_up_process->try_to_wake_up->_raw_spin_unlock_irqrestore->__raw_spin_unlock_irqrestore] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "cond_num": "1",
+    "cond_loc": "",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "id": "23",
+    "risky": "ptr-sen-branch (norm_branch)",
+    "acc_path": "fmt",
+    "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/lib/dynamic_debug.c#L898",
+    "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/lib/dynamic_debug.c#L884",
+    "drv caller (param)": "[ received_cbw | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_mass_storage.c#L2203 ], ",
+    "call path (param)": " [received_cbw->fsg_set_halt->__dynamic_dev_dbg] ",
+    "drv update loc (shared field)": "",
+    "call path (type)": " [device_unregister->device_del->driver_deferred_probe_del->__dynamic_dev_dbg] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "cond_num": "0",
+    "cond_loc": "",
+    "isControl": "1",
+    "t_trace": "[ INST || DATA_ALIAS || https://github.com/ksplit/lvd-linux/tree/ksplit-latest/lib/dynamic_debug.c#L884 ] -> ",
+    "isTrue": "-",
+    "atk_reason": "",
+    "defense": ""
+  }
+]
+[
+  {
+    "id": "33",
+    "risky": "val-sen-branch (norm_branch)",
+    "acc_path": "sig",
+    "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/signal.c#L1640",
+    "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/signal.c#L923",
+    "drv caller (param)": "[ __raise_exception | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_mass_storage.c#L381 ], ",
+    "call path (param)": " [__raise_exception->send_sig_info->do_send_sig_info->send_signal_locked->__send_signal_locked->prepare_signal] ",
+    "drv update loc (shared field)": "",
+    "call path (type)": " [send_sig_info->do_send_sig_info->send_signal_locked->__send_signal_locked->prepare_signal] ",
+    "num condition checks": 3,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/signal.c#L916 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/signal.c#L923 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/signal.c#L923 | ",
+    "cond_num": "6",
+    "cond_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/signal.c#L1299 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/signal.c#L923 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/signal.c#L923 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/signal.c#L916 | ",
+    "isControl": "0"
+  },
+  {
+    "id": "33",
+    "risky": "num-arith ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/signal.c#L923 )",
+    "acc_path": "sig",
+    "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/signal.c#L1640",
+    "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/signal.c#L923",
+    "drv caller (param)": "[ __raise_exception | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_mass_storage.c#L381 ], ",
+    "call path (param)": " [__raise_exception->send_sig_info->do_send_sig_info->send_signal_locked->__send_signal_locked->prepare_signal] ",
+    "drv update loc (shared field)": "",
+    "call path (type)": " [send_sig_info->do_send_sig_info->send_signal_locked->__send_signal_locked->prepare_signal] ",
+    "num condition checks": 3,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/signal.c#L916 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/signal.c#L923 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/signal.c#L923 | ",
+    "cond_num": "6",
+    "cond_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/signal.c#L1299 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/signal.c#L923 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/signal.c#L923 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/signal.c#L916 | ",
+    "isControl": "0"
+  },
+  {
+    "id": "33",
+    "risky": "arr-idx",
+    "acc_path": "sig",
+    "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/signal.c#L1640",
+    "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/signal.c#L1043",
+    "drv caller (param)": "[ __raise_exception | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_mass_storage.c#L381 ], ",
+    "call path (param)": " [__raise_exception->send_sig_info->do_send_sig_info->send_signal_locked->__send_signal_locked->complete_signal] ",
+    "drv update loc (shared field)": "",
+    "call path (type)": " [send_sig_info->do_send_sig_info->send_signal_locked->__send_signal_locked->complete_signal] ",
+    "num condition checks": 3,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/signal.c#L1043 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/signal.c#L1043 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/signal.c#L1043 | ",
+    "cond_num": "5",
+    "cond_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/signal.c#L1299 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/signal.c#L1043 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/signal.c#L1043 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/signal.c#L1043 | ",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "id": "35",
+    "risky": "val-sen-branch (norm_branch)",
+    "acc_path": "count",
+    "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L558",
+    "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L533",
+    "drv caller (param)": "[ do_write | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_mass_storage.c#L866 ], ",
+    "call path (param)": " [do_write->kernel_write->__kernel_write] ",
+    "drv update loc (shared field)": "",
+    "call path (type)": " [kernel_write->__kernel_write] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "cond_num": "1",
+    "cond_loc": "",
+    "isControl": "0"
+  },
+  {
+    "id": "35",
+    "risky": "num-arith ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L368 )",
+    "acc_path": "count",
+    "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L553",
+    "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L368",
+    "drv caller (param)": "[ do_write | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_mass_storage.c#L866 ], ",
+    "call path (param)": " [do_write->kernel_write->rw_verify_area] ",
+    "drv update loc (shared field)": "",
+    "call path (type)": " [kernel_read->rw_verify_area] ",
+    "num condition checks": 3,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L357 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L360 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L363 | ",
+    "cond_num": "4",
+    "cond_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L363 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L360 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L357 | ",
+    "isControl": "0"
+  },
+  {
+    "id": "35",
+    "risky": "num-arith ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L368 )",
+    "acc_path": "count",
+    "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L553",
+    "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L368",
+    "drv caller (param)": "[ do_write | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_mass_storage.c#L866 ], ",
+    "call path (param)": " [do_write->kernel_write->rw_verify_area] ",
+    "drv update loc (shared field)": "",
+    "call path (type)": " [kernel_read->rw_verify_area] ",
+    "num condition checks": 3,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L357 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L360 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L363 | ",
+    "cond_num": "4",
+    "cond_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L363 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L360 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L357 | ",
+    "isControl": "0"
+  }
+]
+[
+  {
+    "id": "36",
+    "risky": "ptr-sen-branch (norm_branch)",
+    "acc_path": "pos",
+    "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L558",
+    "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L363",
+    "drv caller (param)": "[ do_write | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_mass_storage.c#L866 ], ",
+    "call path (param)": " [do_write->kernel_write->rw_verify_area] ",
+    "drv update loc (shared field)": "",
+    "call path (type)": " [kernel_read->rw_verify_area] ",
+    "num condition checks": 2,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L357 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L360 | ",
+    "cond_num": "4",
+    "cond_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L360 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L357 | ",
+    "isControl": "0"
+  },
+  {
+    "id": "36",
+    "risky": "ptr-write",
+    "acc_path": "pos",
+    "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L558",
+    "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L516",
+    "drv caller (param)": "[ do_write | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_mass_storage.c#L866 ], ",
+    "call path (param)": " [do_write->kernel_write->__kernel_write->__kernel_write_iter] ",
+    "drv update loc (shared field)": "",
+    "call path (type)": " [kernel_write->__kernel_write->__kernel_write_iter] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "cond_num": "2",
+    "cond_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L519 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L518 | ",
+    "isControl": "0"
+  },
+  {
+    "id": "36",
+    "risky": "ptr-read",
+    "acc_path": "pos",
+    "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L558",
+    "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L516",
+    "drv caller (param)": "[ do_write | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_mass_storage.c#L866 ], ",
+    "call path (param)": " [do_write->kernel_write->__kernel_write->__kernel_write_iter] ",
+    "drv update loc (shared field)": "",
+    "call path (type)": " [kernel_write->__kernel_write->__kernel_write_iter] ",
+    "num condition checks": 2,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L512 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L516 | ",
+    "cond_num": "4",
+    "cond_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L518 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L516 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L519 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/read_write.c#L512 | ",
+    "isControl": "0"
+  }
+]

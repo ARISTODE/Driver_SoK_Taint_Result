@@ -1,0 +1,23 @@
+[
+  {
+    "No. entry": 3
+  },
+  {
+    "Lock Name": "rtnl_lock",
+    "Lock loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L1774",
+    "Loop loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L1779",
+    "loop form": "list iteration/container_of"
+  },
+  {
+    "Lock Name": "_raw_spin_lock",
+    "Lock loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/netdevice.h#L4427",
+    "Loop loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/netdevice.h#L4432",
+    "loop form": "list iteration/container_of"
+  },
+  {
+    "Lock Name": "rtnl_lock",
+    "Lock loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L1727",
+    "Loop loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L1733",
+    "loop form": "list iteration/container_of"
+  }
+]

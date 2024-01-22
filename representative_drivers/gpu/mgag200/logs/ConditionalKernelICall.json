@@ -1,0 +1,820 @@
+[
+  {
+    "No. entry": 163
+  },
+  {
+    "Drv func": "mgag200_g200_device_create",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L410 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L418 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L422 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L429 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L437 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L441 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L444"
+  },
+  {
+    "Drv func": "mgag200_g200eh_device_create",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh.c#L285 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh.c#L296 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh.c#L301 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh.c#L309 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh.c#L313 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh.c#L292 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh.c#L316"
+  },
+  {
+    "Drv func": "mgag200_g200wb_device_create",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L334 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L345 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L350 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L358 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L362 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L341 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L365"
+  },
+  {
+    "Drv func": "mgag200_g200er_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200er.c#L251 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200er.c#L256"
+  },
+  {
+    "Drv func": "mgag200_g200wb_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L260 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L265"
+  },
+  {
+    "Drv func": "mgag200_g200_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L214 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L219"
+  },
+  {
+    "Drv func": "mgag200_g200_interpret_bios",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L288 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L294 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L300 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L311 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L311 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L290 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L315 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L320 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L323"
+  },
+  {
+    "Drv func": "mgag200_g200_pixpllc_atomic_check",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L87 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L128"
+  },
+  {
+    "Drv func": "mgag200_g200_init_refclk",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L377 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L381 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L388"
+  },
+  {
+    "Drv func": "mgag200_crtc_helper_atomic_check",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_mode.c#L597 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_mode.c#L597 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_mode.c#L598 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_mode.c#L599"
+  },
+  {
+    "Drv func": "mgag200_g200se_init_unique_rev_id",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200se.c#L464 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200se.c#L467"
+  },
+  {
+    "Drv func": "mgag200_g200eh_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh.c#L213 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh.c#L218"
+  },
+  {
+    "Drv func": "mgag200_g200ew3_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ew3.c#L126 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ew3.c#L135 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ew3.c#L146"
+  },
+  {
+    "Drv func": "mgag200_g200er_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200er.c#L251 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200er.c#L260 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200er.c#L271"
+  },
+  {
+    "Drv func": "mgag200_g200ev_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ev.c#L252 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ev.c#L261 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ev.c#L272"
+  },
+  {
+    "Drv func": "mgag200_g200wb_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L260 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L269 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L280"
+  },
+  {
+    "Drv func": "mgag200_g200_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L214 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L223 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L234"
+  },
+  {
+    "Drv func": "mgag200_g200se_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200se.c#L383 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200se.c#L392 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200se.c#L403"
+  },
+  {
+    "Drv func": "mgag200_g200_init_refclk",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L377 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L381 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L383"
+  },
+  {
+    "Drv func": "mgag200_crtc_set_gamma",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_mode.c#L76 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_mode.c#L100 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_mode.c#L100"
+  },
+  {
+    "Drv func": "mgag200_crtc_set_gamma_linear",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_mode.c#L38 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_mode.c#L62 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_mode.c#L62"
+  },
+  {
+    "Drv func": "mgag200_device_preinit",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_drv.c#L125 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_drv.c#L131"
+  },
+  {
+    "Drv func": "mgag200_set_startadd",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_mode.c#L161 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_mode.c#L161"
+  },
+  {
+    "Drv func": "mgag200_device_preinit",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_drv.c#L125 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_drv.c#L141 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_drv.c#L132 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_drv.c#L149"
+  },
+  {
+    "Drv func": "mgag200_init_pci_options",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_drv.c#L32 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_drv.c#L37"
+  },
+  {
+    "Drv func": "mgag200_g200_init_refclk",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L377 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L393"
+  },
+  {
+    "Drv func": "mgag200_bmc_disable_vidrst",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_bmc.c#L43 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_bmc.c#L46"
+  },
+  {
+    "Drv func": "mgag200_g200wb_pixpllc_atomic_update",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L195 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L199 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L202"
+  },
+  {
+    "Drv func": "mgag200_g200_interpret_bios",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L288 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L294 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L311 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L311 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L290 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L315 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L300 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L316"
+  },
+  {
+    "Drv func": "mgag200_set_format_regs",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_mode.c#L346 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_mode.c#L364 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_mode.c#L364"
+  },
+  {
+    "Drv func": "mgag200_set_startadd",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_mode.c#L154 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_mode.c#L155 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_mode.c#L155 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_mode.c#L155"
+  },
+  {
+    "Drv func": "mgag200_g200wb_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L260 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L269 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L288 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L282 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L289"
+  },
+  {
+    "Drv func": "mgag200_g200wb_pixpllc_atomic_update",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L115 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L144"
+  },
+  {
+    "Drv func": "mgag200_g200eh_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh.c#L213 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh.c#L222 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh.c#L233"
+  },
+  {
+    "Drv func": "mgag200_g200ew3_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ew3.c#L126 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ew3.c#L135 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ew3.c#L143"
+  },
+  {
+    "Drv func": "mgag200_g200_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L214 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L223 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L231"
+  },
+  {
+    "Drv func": "mgag200_g200eh_pixpllc_atomic_update",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh.c#L116 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh.c#L137"
+  },
+  {
+    "Drv func": "mgag200_g200se_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200se.c#L383 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200se.c#L392 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200se.c#L405 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200se.c#L411 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200se.c#L420 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200se.c#L421"
+  },
+  {
+    "Drv func": "mgag200_g200eh_pixpllc_atomic_update",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh.c#L153 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh.c#L157 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh.c#L160"
+  },
+  {
+    "Drv func": "mgag200_g200wb_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L260 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L269 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L282 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L288 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L297 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L298"
+  },
+  {
+    "Drv func": "mgag200_crtc_reset",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_mode.c#L676 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_mode.c#L679"
+  },
+  {
+    "Drv func": "mgag200_g200eh3_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh3.c#L117 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh3.c#L126 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh3.c#L134"
+  },
+  {
+    "Drv func": "mgag200_g200eh_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh.c#L213 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh.c#L222 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh.c#L230"
+  },
+  {
+    "Drv func": "mgag200_g200eh_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh.c#L213 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh.c#L222 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh.c#L229"
+  },
+  {
+    "Drv func": "mgag200_g200ev_device_create",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ev.c#L324 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ev.c#L335 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ev.c#L340 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ev.c#L348 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ev.c#L352 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ev.c#L331 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ev.c#L355"
+  },
+  {
+    "Drv func": "mgag200_g200eh3_device_create",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh3.c#L190 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh3.c#L201 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh3.c#L206 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh3.c#L214 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh3.c#L218 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh3.c#L197 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh3.c#L221"
+  },
+  {
+    "Drv func": "mgag200_pci_probe",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_drv.c#L220 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_drv.c#L223"
+  },
+  {
+    "Drv func": "mgag200_g200wb_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L260 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L269 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L277"
+  },
+  {
+    "Drv func": "mgag200_g200se_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200se.c#L383 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200se.c#L392 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200se.c#L400"
+  },
+  {
+    "Drv func": "mgag200_g200se_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200se.c#L383 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200se.c#L392 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200se.c#L399"
+  },
+  {
+    "Drv func": "mgag200_g200eh3_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh3.c#L117 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh3.c#L126 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh3.c#L139 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh3.c#L145 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh3.c#L150"
+  },
+  {
+    "Drv func": "mgag200_g200ew3_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ew3.c#L126 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ew3.c#L127"
+  },
+  {
+    "Drv func": "mgag200_g200eh3_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh3.c#L117 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh3.c#L124"
+  },
+  {
+    "Drv func": "mgag200_pci_probe",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_drv.c#L220 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_drv.c#L224 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_drv.c#L227 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_drv.c#L255"
+  },
+  {
+    "Drv func": "mgag200_crtc_atomic_duplicate_state",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_mode.c#L688 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_mode.c#L692 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_mode.c#L694"
+  },
+  {
+    "Drv func": "mgag200_g200er_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200er.c#L251 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200er.c#L260 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200er.c#L279 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200er.c#L273 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200er.c#L280"
+  },
+  {
+    "Drv func": "mgag200_g200ew3_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ew3.c#L126 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ew3.c#L135 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ew3.c#L148 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ew3.c#L154 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ew3.c#L159"
+  },
+  {
+    "Drv func": "mgag200_g200ew3_device_create",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ew3.c#L210 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ew3.c#L221 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ew3.c#L226 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ew3.c#L234 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ew3.c#L238 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ew3.c#L217 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ew3.c#L241"
+  },
+  {
+    "Drv func": "mgag200_g200ew3_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ew3.c#L126 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ew3.c#L133"
+  },
+  {
+    "Drv func": "mgag200_g200ev_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ev.c#L252 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ev.c#L261 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ev.c#L274 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ev.c#L280 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ev.c#L285"
+  },
+  {
+    "Drv func": "mgag200_g200ew3_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ew3.c#L126 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ew3.c#L135 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ew3.c#L148 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ew3.c#L154 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ew3.c#L163 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ew3.c#L170 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ew3.c#L171"
+  },
+  {
+    "Drv func": "mgag200_g200eh_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh.c#L213 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh.c#L222 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh.c#L223"
+  },
+  {
+    "Drv func": "mgag200_primary_plane_helper_atomic_update",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_mode.c#L506 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_mode.c#L509"
+  },
+  {
+    "Drv func": "mgag200_g200eh3_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh3.c#L117 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh3.c#L126 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh3.c#L127"
+  },
+  {
+    "Drv func": "mgag200_g200se_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200se.c#L383 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200se.c#L390"
+  },
+  {
+    "Drv func": "mgag200_g200wb_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L260 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L267"
+  },
+  {
+    "Drv func": "mgag200_g200er_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200er.c#L251 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200er.c#L260 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200er.c#L268"
+  },
+  {
+    "Drv func": "mgag200_g200wb_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L260 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L261"
+  },
+  {
+    "Drv func": "mgag200_g200se_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200se.c#L383 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200se.c#L392 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200se.c#L411 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200se.c#L405 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200se.c#L412"
+  },
+  {
+    "Drv func": "mgag200_g200ev_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ev.c#L252 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ev.c#L261 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ev.c#L274 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ev.c#L280 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ev.c#L289 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ev.c#L295"
+  },
+  {
+    "Drv func": "mgag200_g200er_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200er.c#L251 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200er.c#L260 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200er.c#L273 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200er.c#L279 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200er.c#L288 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200er.c#L294"
+  },
+  {
+    "Drv func": "mgag200_g200wb_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L260 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L269 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L282 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L288 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L293"
+  },
+  {
+    "Drv func": "mgag200_g200se_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200se.c#L383 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200se.c#L392 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200se.c#L405 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200se.c#L411 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200se.c#L416"
+  },
+  {
+    "Drv func": "mgag200_g200eh_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh.c#L213 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh.c#L220"
+  },
+  {
+    "Drv func": "mgag200_g200er_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200er.c#L260 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200er.c#L251 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200er.c#L267"
+  },
+  {
+    "Drv func": "mgag200_g200wb_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L260 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L269 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L282 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L288 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L297 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L303"
+  },
+  {
+    "Drv func": "mgag200_g200wb_pixpllc_atomic_update",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L115 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L152"
+  },
+  {
+    "Drv func": "mgag200_g200se_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200se.c#L383 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200se.c#L392 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200se.c#L405 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200se.c#L411 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200se.c#L420 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200se.c#L426"
+  },
+  {
+    "Drv func": "mgag200_g200se_init_pci_options",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200se.c#L22 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200se.c#L23"
+  },
+  {
+    "Drv func": "mgag200_g200er_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200er.c#L251 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200er.c#L260 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200er.c#L261"
+  },
+  {
+    "Drv func": "mgag200_g200wb_pixpllc_atomic_update",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L115 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L159"
+  },
+  {
+    "Drv func": "mgag200_g200eh_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh.c#L213 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh.c#L214"
+  },
+  {
+    "Drv func": "mgag200_g200er_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200er.c#L251 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200er.c#L260 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200er.c#L273 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200er.c#L279 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200er.c#L284"
+  },
+  {
+    "Drv func": "mgag200_g200_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L214 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L223 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L230"
+  },
+  {
+    "Drv func": "mgag200_g200wb_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L260 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L269 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L276"
+  },
+  {
+    "Drv func": "mgag200_g200_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L214 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L223 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L236 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L242 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L247"
+  },
+  {
+    "Drv func": "mgag200_set_format_regs",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_mode.c#L346 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_mode.c#L364 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_mode.c#L364"
+  },
+  {
+    "Drv func": "mgag200_g200er_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200er.c#L251 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200er.c#L258"
+  },
+  {
+    "Drv func": "mgag200_primary_plane_helper_atomic_update",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_mode.c#L518 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_mode.c#L518 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_mode.c#L506 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_mode.c#L522"
+  },
+  {
+    "Drv func": "mgag200_g200er_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200er.c#L251 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200er.c#L252"
+  },
+  {
+    "Drv func": "mgag200_g200eh3_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh3.c#L117 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh3.c#L122"
+  },
+  {
+    "Drv func": "mgag200_g200ew3_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ew3.c#L135 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ew3.c#L126 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ew3.c#L142"
+  },
+  {
+    "Drv func": "mgag200_g200_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L214 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L221"
+  },
+  {
+    "Drv func": "mgag200_crtc_reset",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_mode.c#L676 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_mode.c#L677"
+  },
+  {
+    "Drv func": "mgag200_g200_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L214 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L223 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L236 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L242 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L251 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L257"
+  },
+  {
+    "Drv func": "mgag200_g200eh_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh.c#L213 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh.c#L222 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh.c#L235 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh.c#L241 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh.c#L250 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh.c#L256"
+  },
+  {
+    "Drv func": "mgag200_g200ev_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ev.c#L252 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ev.c#L261 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ev.c#L269"
+  },
+  {
+    "Drv func": "mgag200_g200se_04_pixpllc_atomic_check",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200se.c#L258 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200se.c#L259"
+  },
+  {
+    "Drv func": "mgag200_g200wb_pixpllc_atomic_update",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L115 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L167"
+  },
+  {
+    "Drv func": "mgag200_g200er_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200er.c#L251 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200er.c#L260 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200er.c#L273 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200er.c#L274"
+  },
+  {
+    "Drv func": "mgag200_g200ew3_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ew3.c#L126 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ew3.c#L131"
+  },
+  {
+    "Drv func": "mgag200_g200ev_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ev.c#L252 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ev.c#L259"
+  },
+  {
+    "Drv func": "mgag200_g200eh3_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh3.c#L117 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh3.c#L126 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh3.c#L139 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh3.c#L145 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh3.c#L154 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh3.c#L160"
+  },
+  {
+    "Drv func": "mgag200_g200ev_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ev.c#L261 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ev.c#L252 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ev.c#L268"
+  },
+  {
+    "Drv func": "mgag200_g200ew3_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ew3.c#L126 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ew3.c#L135 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ew3.c#L136"
+  },
+  {
+    "Drv func": "mgag200_g200eh3_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh3.c#L126 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh3.c#L117 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh3.c#L133"
+  },
+  {
+    "Drv func": "mgag200_pci_probe",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_drv.c#L220 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_drv.c#L227 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_drv.c#L224 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_drv.c#L258 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_drv.c#L263 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_drv.c#L270"
+  },
+  {
+    "Drv func": "mgag200_device_preinit",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_drv.c#L125 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_drv.c#L132 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_drv.c#L141 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_drv.c#L148"
+  },
+  {
+    "Drv func": "mgag200_bmc_disable_vidrst",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_bmc.c#L57 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_bmc.c#L60"
+  },
+  {
+    "Drv func": "mgag200_g200eh_pixpllc_atomic_update",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh.c#L116 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh.c#L131"
+  },
+  {
+    "Drv func": "mgag200_g200se_00_pixpllc_atomic_check",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200se.c#L157 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200se.c#L158"
+  },
+  {
+    "Drv func": "mgag200_g200er_device_create",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200er.c#L330 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200er.c#L323 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200er.c#L335 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200er.c#L343 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200er.c#L347 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200er.c#L350"
+  },
+  {
+    "Drv func": "mgag200_g200ev_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ev.c#L252 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ev.c#L261 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ev.c#L274 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ev.c#L280 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ev.c#L289 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ev.c#L296 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ev.c#L297"
+  },
+  {
+    "Drv func": "mgag200_g200_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L223 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L236 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L242 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L251 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L258 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L214 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L259"
+  },
+  {
+    "Drv func": "mgag200_g200_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L214 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L223 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L224"
+  },
+  {
+    "Drv func": "mgag200_g200_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L214 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L223 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L242 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L236 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L243"
+  },
+  {
+    "Drv func": "mgag200_device_preinit",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_drv.c#L132 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_drv.c#L141 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_drv.c#L125 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_drv.c#L151"
+  },
+  {
+    "Drv func": "mgag200_mode_config_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_mode.c#L824 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_mode.c#L825"
+  },
+  {
+    "Drv func": "mgag200_pci_probe",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_drv.c#L220 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_drv.c#L227 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_drv.c#L224 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_drv.c#L258 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_drv.c#L262"
+  },
+  {
+    "Drv func": "mgag200_g200se_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200se.c#L383 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200se.c#L392 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200se.c#L405 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200se.c#L406"
+  },
+  {
+    "Drv func": "mgag200_g200wb_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L260 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L269 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L282 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L283"
+  },
+  {
+    "Drv func": "mgag200_g200_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L214 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L215"
+  },
+  {
+    "Drv func": "mgag200_g200se_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200se.c#L392 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200se.c#L405 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200se.c#L411 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200se.c#L420 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200se.c#L427 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200se.c#L383 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200se.c#L428"
+  },
+  {
+    "Drv func": "mgag200_g200se_device_create",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200se.c#L502 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200se.c#L510 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200se.c#L513 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200se.c#L540 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200se.c#L548 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200se.c#L494 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200se.c#L552 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200se.c#L506 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200se.c#L555"
+  },
+  {
+    "Drv func": "mgag200_g200ev_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ev.c#L252 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ev.c#L253"
+  },
+  {
+    "Drv func": "mgag200_g200ew3_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ew3.c#L126 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ew3.c#L135 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ew3.c#L148 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ew3.c#L154 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ew3.c#L163 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ew3.c#L169"
+  },
+  {
+    "Drv func": "mgag200_g200wb_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L269 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L282 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L288 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L297 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L304 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L260 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L305"
+  },
+  {
+    "Drv func": "mgag200_g200eh3_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh3.c#L117 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh3.c#L126 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh3.c#L137"
+  },
+  {
+    "Drv func": "mgag200_g200_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L214 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L223 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L236 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L242 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L251 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L252"
+  },
+  {
+    "Drv func": "mgag200_set_startadd",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_mode.c#L161 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_mode.c#L161"
+  },
+  {
+    "Drv func": "mgag200_g200eh_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh.c#L222 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh.c#L235 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh.c#L241 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh.c#L250 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh.c#L257 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh.c#L213 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh.c#L258"
+  },
+  {
+    "Drv func": "mgag200_g200se_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200se.c#L383 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200se.c#L392 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200se.c#L393"
+  },
+  {
+    "Drv func": "mgag200_g200eh3_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh3.c#L117 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh3.c#L118"
+  },
+  {
+    "Drv func": "mgag200_g200wb_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L260 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L269 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200wb.c#L270"
+  },
+  {
+    "Drv func": "mgag200_g200ev_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ev.c#L252 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ev.c#L261 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ev.c#L274 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ev.c#L275"
+  },
+  {
+    "Drv func": "mgag200_g200ev_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ev.c#L252 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ev.c#L257"
+  },
+  {
+    "Drv func": "mgag200_g200er_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200er.c#L251 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200er.c#L260 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200er.c#L273 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200er.c#L279 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200er.c#L288 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200er.c#L289"
+  },
+  {
+    "Drv func": "mgag200_g200ew3_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ew3.c#L126 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ew3.c#L135 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ew3.c#L148 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ew3.c#L149"
+  },
+  {
+    "Drv func": "mgag200_g200ev_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ev.c#L252 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ev.c#L261 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ev.c#L262"
+  },
+  {
+    "Drv func": "mgag200_g200eh3_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh3.c#L117 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh3.c#L126 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh3.c#L139 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh3.c#L145 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh3.c#L154 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh3.c#L161 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh3.c#L162"
+  },
+  {
+    "Drv func": "mgag200_g200eh_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh.c#L213 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh.c#L222 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh.c#L235 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh.c#L241 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh.c#L250 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh.c#L251"
+  },
+  {
+    "Drv func": "mgag200_g200_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L214 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L223 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L236 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L237"
+  },
+  {
+    "Drv func": "mgag200_device_preinit",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_drv.c#L125 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_drv.c#L132 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_drv.c#L141 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_drv.c#L142"
+  },
+  {
+    "Drv func": "mgag200_g200ev_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ev.c#L252 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ev.c#L261 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ev.c#L274 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ev.c#L280 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ev.c#L289 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ev.c#L290"
+  },
+  {
+    "Drv func": "mgag200_g200se_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200se.c#L383 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200se.c#L384"
+  },
+  {
+    "Drv func": "mgag200_init_pci_options",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_drv.c#L32 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_drv.c#L38 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_drv.c#L39"
+  },
+  {
+    "Drv func": "mgag200_g200eh_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh.c#L213 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh.c#L222 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh.c#L235 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh.c#L236"
+  },
+  {
+    "Drv func": "mgag200_g200_init_pci_options",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L22 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L23"
+  },
+  {
+    "Drv func": "mgag200_g200er_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200er.c#L251 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200er.c#L260 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200er.c#L273 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200er.c#L279 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200er.c#L288 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200er.c#L295 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200er.c#L296"
+  },
+  {
+    "Drv func": "mgag200_g200ew3_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ew3.c#L126 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ew3.c#L135 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ew3.c#L148 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ew3.c#L154 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ew3.c#L163 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ew3.c#L164"
+  },
+  {
+    "Drv func": "mgag200_g200eh_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh.c#L213 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh.c#L222 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh.c#L241 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh.c#L235 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh.c#L242"
+  },
+  {
+    "Drv func": "mgag200_g200eh3_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh3.c#L117 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh3.c#L126 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh3.c#L145 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh3.c#L139 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh3.c#L146"
+  },
+  {
+    "Drv func": "mgag200_init_pci_options",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_drv.c#L32 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_drv.c#L33"
+  },
+  {
+    "Drv func": "mgag200_g200se_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200se.c#L383 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200se.c#L388"
+  },
+  {
+    "Drv func": "mgag200_device_preinit",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_drv.c#L125 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_drv.c#L126"
+  },
+  {
+    "Drv func": "mgag200_g200eh3_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh3.c#L117 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh3.c#L126 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh3.c#L139 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh3.c#L140"
+  },
+  {
+    "Drv func": "mgag200_g200_pixpllc_atomic_check",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L87 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200.c#L88"
+  },
+  {
+    "Drv func": "mgag200_g200ew3_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ew3.c#L126 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ew3.c#L135 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ew3.c#L154 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ew3.c#L148 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ew3.c#L155"
+  },
+  {
+    "Drv func": "mgag200_set_startadd",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_mode.c#L154 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_mode.c#L155 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_mode.c#L155 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_mode.c#L155"
+  },
+  {
+    "Drv func": "mgag200_g200eh_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh.c#L213 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh.c#L222 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh.c#L235 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh.c#L241 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh.c#L246"
+  },
+  {
+    "Drv func": "mgag200_g200ev_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ev.c#L252 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ev.c#L261 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ev.c#L280 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ev.c#L274 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200ev.c#L281"
+  },
+  {
+    "Drv func": "mgag200_g200eh3_pipeline_init",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh3.c#L117 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh3.c#L126 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh3.c#L139 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh3.c#L145 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh3.c#L154 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_g200eh3.c#L155"
+  },
+  {
+    "Drv func": "mgag200_device_preinit",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_drv.c#L125 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_drv.c#L132 | ",
+    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/gpu/drm/mgag200/mgag200_drv.c#L140"
+  }
+]
