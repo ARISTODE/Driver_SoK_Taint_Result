@@ -1,0 +1,324 @@
+[
+  {
+    "id": 0,
+    "kernel boundary func name": "kvfree",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 8,
+    "call path": "( [3]ffs_build_sg_list ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L775 )->kvfree ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/mm/util.c#L622 )->kfree ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/mm/slab_common.c#L988 ) )( [3]ffs_build_sg_list ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L775 )->kvfree ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/mm/util.c#L622 )->kfree ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/mm/slab_common.c#L988 ) )"
+  },
+  {
+    "id": 1,
+    "kernel boundary func name": "kvfree",
+    "risky func": "vfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 1,
+    "call path": "( [3]ffs_build_sg_list ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L775 )->kvfree ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/mm/util.c#L622 )->vfree ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/mm/vmalloc.c#L2785 ) )( [3]ffs_build_sg_list ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L775 )->kvfree ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/mm/util.c#L622 )->vfree ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/mm/vmalloc.c#L2785 ) )"
+  },
+  {
+    "id": 2,
+    "kernel boundary func name": "kvfree",
+    "risky func": "mutex_lock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 12,
+    "call path": "( [9]ffs_build_sg_list ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L775 )->kvfree ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/mm/util.c#L622 )->vfree ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/mm/vmalloc.c#L2785 )->__vfree ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/mm/vmalloc.c#L2760 )->__vunmap ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/mm/vmalloc.c#L2680 )->vm_remove_mappings ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/mm/vmalloc.c#L2630 )->vm_unmap_aliases ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/mm/vmalloc.c#L2195 )->_vm_unmap_aliases ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/mm/vmalloc.c#L2142 )->mutex_lock ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/locking/mutex.c#L281 ) )( [9]ffs_build_sg_list ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L775 )->kvfree ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/mm/util.c#L622 )->vfree ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/mm/vmalloc.c#L2785 )->__vfree ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/mm/vmalloc.c#L2760 )->__vunmap ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/mm/vmalloc.c#L2680 )->vm_remove_mappings ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/mm/vmalloc.c#L2630 )->vm_unmap_aliases ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/mm/vmalloc.c#L2195 )->_vm_unmap_aliases ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/mm/vmalloc.c#L2142 )->mutex_lock ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/locking/mutex.c#L281 ) )"
+  },
+  {
+    "id": 3,
+    "kernel boundary func name": "kvfree",
+    "risky func": "mutex_unlock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 13,
+    "call path": "( [9]ffs_build_sg_list ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L775 )->kvfree ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/mm/util.c#L622 )->vfree ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/mm/vmalloc.c#L2785 )->__vfree ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/mm/vmalloc.c#L2760 )->__vunmap ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/mm/vmalloc.c#L2680 )->vm_remove_mappings ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/mm/vmalloc.c#L2630 )->vm_unmap_aliases ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/mm/vmalloc.c#L2195 )->_vm_unmap_aliases ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/mm/vmalloc.c#L2142 )->mutex_unlock ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/locking/mutex.c#L537 ) )( [9]ffs_build_sg_list ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L775 )->kvfree ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/mm/util.c#L622 )->vfree ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/mm/vmalloc.c#L2785 )->__vfree ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/mm/vmalloc.c#L2760 )->__vunmap ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/mm/vmalloc.c#L2680 )->vm_remove_mappings ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/mm/vmalloc.c#L2630 )->vm_unmap_aliases ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/mm/vmalloc.c#L2195 )->_vm_unmap_aliases ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/mm/vmalloc.c#L2142 )->mutex_unlock ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/locking/mutex.c#L537 ) )"
+  },
+  {
+    "id": 4,
+    "kernel boundary func name": "kfree",
+    "Risky API Class": "memory",
+    "Direct Risky Kernel API": 1,
+    "driver callers": "ffs_data_clear(https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L1824) | _ffs_free_dev(https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L3746) | ffs_free_inst(https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L3562) | ffs_epfiles_destroy(https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L1960) | ffs_func_unbind(https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L3636) | ffs_data_put(https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L1723) | __ffs_epfile_read_data(https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L945) | ffs_alloc_inst(https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L3587) | __ffs_epfile_read_buffered(https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L907) | ffs_user_copy_worker(https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L853) | ffs_data_new(https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L1772) | ffs_ep0_read(https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L607) | ffs_ep0_write(https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L460) | ffs_fs_free_fc(https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L1611) | ffs_data_clear(https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L1822) | __ffs_data_got_strings(https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L2665) | ffs_epfile_read_iter(https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L1255) | __ffs_data_got_strings(https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L2745) | ffs_user_copy_worker(https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L851) | ffs_epfile_read_iter(https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L1274) | ffs_epfile_write_iter(https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L1227) | __ffs_data_got_strings(https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L2648) | ffs_epfile_read_iter(https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L1275) | ffs_data_clear(https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L1823) | __ffs_epfile_read_buffered(https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L895) | ffs_free_buffer(https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L825) | __ffs_epfile_read_buffer_free(https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L876) | __ffs_data_got_descs(https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L2613) | __ffs_data_got_strings(https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L2747) | ffs_free(https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L3600) | ffs_data_put(https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L1722) | _ffs_alloc_dev(https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L3693) | "
+  },
+  {
+    "id": 5,
+    "kernel boundary func name": "vfree",
+    "Risky API Class": "memory",
+    "Direct Risky Kernel API": 1,
+    "driver callers": "ffs_build_sg_list(https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L798) | ffs_build_sg_list(https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L789) | ffs_free_buffer(https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L823) | "
+  },
+  {
+    "id": 6,
+    "kernel boundary func name": "mutex_lock",
+    "Risky API Class": "concurrency",
+    "Direct Risky Kernel API": 1,
+    "driver callers": "ffs_dev_lock(https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/u_fs.h#L60) | functionfs_unbind(https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L1902) | "
+  },
+  {
+    "id": 7,
+    "kernel boundary func name": "mutex_unlock",
+    "Risky API Class": "concurrency",
+    "Direct Risky Kernel API": 1,
+    "driver callers": "ffs_dev_unlock(https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/u_fs.h#L65) | ffs_epfile_io(https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L1152) | ffs_ep0_read(https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L606) | ffs_ep0_write(https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L387) | ffs_ep0_write(https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L468) | __ffs_ep0_read_events(https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L502) | ffs_ep0_poll(https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L695) | functionfs_unbind(https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L1907) | "
+  },
+  {
+    "id": 8,
+    "kernel boundary func name": "vmalloc",
+    "Risky API Class": "memory",
+    "Direct Risky Kernel API": 1,
+    "driver callers": "ffs_build_sg_list(https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L782) | "
+  },
+  {
+    "id": 9,
+    "kernel boundary func name": "memdup_user",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 2,
+    "call path": "( [3]ffs_prepare_buffer ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L3875 )->memdup_user ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/mm/util.c#L170 )->kfree ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/mm/slab_common.c#L988 ) )"
+  },
+  {
+    "id": 10,
+    "kernel boundary func name": "destroy_workqueue",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 1,
+    "call path": "( [3]ffs_data_put ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L1710 )->destroy_workqueue ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L4411 )->kfree ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/mm/slab_common.c#L988 ) )"
+  },
+  {
+    "id": 11,
+    "kernel boundary func name": "destroy_workqueue",
+    "risky func": "mutex_lock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 8,
+    "call path": "( [5]ffs_data_put ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L1710 )->destroy_workqueue ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L4411 )->drain_workqueue ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L2962 )->__flush_workqueue ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L2800 )->mutex_lock ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/locking/mutex.c#L281 ) )"
+  },
+  {
+    "id": 12,
+    "kernel boundary func name": "destroy_workqueue",
+    "risky func": "mutex_unlock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 9,
+    "call path": "( [5]ffs_data_put ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L1710 )->destroy_workqueue ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L4411 )->drain_workqueue ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L2962 )->__flush_workqueue ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L2800 )->mutex_unlock ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/locking/mutex.c#L537 ) )"
+  },
+  {
+    "id": 13,
+    "kernel boundary func name": "drain_workqueue",
+    "risky func": "mutex_lock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 8,
+    "call path": "( [4]ffs_func_unbind ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L3603 )->drain_workqueue ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L2962 )->__flush_workqueue ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L2800 )->mutex_lock ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/locking/mutex.c#L281 ) )"
+  },
+  {
+    "id": 14,
+    "kernel boundary func name": "drain_workqueue",
+    "risky func": "mutex_unlock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 9,
+    "call path": "( [4]ffs_func_unbind ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L3603 )->drain_workqueue ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L2962 )->__flush_workqueue ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L2800 )->mutex_unlock ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/locking/mutex.c#L537 ) )"
+  },
+  {
+    "id": 15,
+    "kernel boundary func name": "alloc_workqueue",
+    "risky func": "kzalloc.703",
+    "Risky API Class": "",
+    "Is Controlled Path": 0,
+    "No. path cond": 16,
+    "call path": "( [3]ffs_data_new ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L1762 )->alloc_workqueue ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L4292 )->kzalloc.703 ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L687 ) )"
+  },
+  {
+    "id": 16,
+    "kernel boundary func name": "alloc_workqueue",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 13,
+    "call path": "( [4]ffs_data_new ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L1762 )->alloc_workqueue ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L4292 )->free_workqueue_attrs ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L3377 )->kfree ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/mm/slab_common.c#L988 ) )"
+  },
+  {
+    "id": 17,
+    "kernel boundary func name": "alloc_workqueue",
+    "risky func": "mutex_lock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 38,
+    "call path": "( [6]ffs_data_new ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L1762 )->alloc_workqueue ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L4292 )->destroy_workqueue ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L4411 )->drain_workqueue ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L2962 )->__flush_workqueue ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L2800 )->mutex_lock ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/locking/mutex.c#L281 ) )"
+  },
+  {
+    "id": 18,
+    "kernel boundary func name": "alloc_workqueue",
+    "risky func": "mutex_unlock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 14,
+    "call path": "( [6]ffs_data_new ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L1762 )->alloc_workqueue ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L4292 )->destroy_workqueue ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L4411 )->drain_workqueue ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L2962 )->__flush_workqueue ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L2800 )->mutex_unlock ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/locking/mutex.c#L537 ) )"
+  },
+  {
+    "id": 19,
+    "kernel boundary func name": "alloc_workqueue",
+    "risky func": "mod_timer",
+    "Risky API Class": "timer",
+    "Is Controlled Path": 0,
+    "No. path cond": 45,
+    "call path": "( [11]ffs_data_new ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L1762 )->alloc_workqueue ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L4292 )->alloc_and_link_pwqs ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L4208 )->apply_workqueue_attrs ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L4109 )->apply_workqueue_attrs_locked ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L4063 )->apply_wqattrs_prepare ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L3957 )->alloc_unbound_pwq ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L3838 )->get_unbound_pool ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L3635 )->create_worker ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L1929 )->worker_enter_idle ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L1795 )->mod_timer ( Unknown Loc ) )"
+  },
+  {
+    "id": 20,
+    "kernel boundary func name": "config_group_init_type_name",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 3,
+    "call path": "( [4]ffs_alloc_inst ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L3572 )->config_group_init_type_name ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/configfs/item.c#L92 )->config_item_set_name ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/configfs/item.c#L49 )->kfree ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/mm/slab_common.c#L988 ) )"
+  },
+  {
+    "id": 21,
+    "kernel boundary func name": "logfc",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 4,
+    "call path": "( [3]ffs_fs_get_tree ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L1569 )->logfc ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/fs_context.c#L406 )->kfree ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/mm/slab_common.c#L988 ) )( [3]ffs_fs_parse_param ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L1518 )->logfc ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/fs_context.c#L406 )->kfree ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/mm/slab_common.c#L988 ) )"
+  },
+  {
+    "id": 22,
+    "kernel boundary func name": "get_tree_nodev",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 14,
+    "call path": "( [7]ffs_fs_get_tree ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L1569 )->get_tree_nodev ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/super.c#L1226 )->vfs_get_super ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/super.c#L1171 )->deactivate_locked_super ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/super.c#L327 )->put_super ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/super.c#L308 )->__put_super ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/super.c#L286 )->kfree ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/mm/slab_common.c#L988 ) )"
+  },
+  {
+    "id": 23,
+    "kernel boundary func name": "get_tree_nodev",
+    "risky func": "kzalloc.504",
+    "Risky API Class": "",
+    "Is Controlled Path": 0,
+    "No. path cond": 7,
+    "call path": "( [6]ffs_fs_get_tree ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L1569 )->get_tree_nodev ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/super.c#L1226 )->vfs_get_super ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/super.c#L1171 )->sget_fc ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/super.c#L563 )->alloc_super ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/super.c#L199 )->kzalloc.504 ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L687 ) )"
+  },
+  {
+    "id": 24,
+    "kernel boundary func name": "get_tree_nodev",
+    "risky func": "mutex_lock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 54,
+    "call path": "( [12]ffs_fs_get_tree ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L1569 )->get_tree_nodev ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/super.c#L1226 )->vfs_get_super ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/super.c#L1171 )->deactivate_locked_super ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/super.c#L327 )->ffs_fs_kill_sb ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L1641 )->kill_litter_super ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/super.c#L1122 )->kill_anon_super ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/super.c#L1114 )->generic_shutdown_super ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/super.c#L468 )->destroy_workqueue ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L4411 )->drain_workqueue ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L2962 )->__flush_workqueue ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L2800 )->mutex_lock ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/locking/mutex.c#L281 ) )"
+  },
+  {
+    "id": 25,
+    "kernel boundary func name": "get_tree_nodev",
+    "risky func": "mutex_unlock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 30,
+    "call path": "( [12]ffs_fs_get_tree ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L1569 )->get_tree_nodev ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/super.c#L1226 )->vfs_get_super ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/super.c#L1171 )->deactivate_locked_super ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/super.c#L327 )->ffs_fs_kill_sb ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L1641 )->kill_litter_super ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/super.c#L1122 )->kill_anon_super ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/super.c#L1114 )->generic_shutdown_super ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/super.c#L468 )->destroy_workqueue ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L4411 )->drain_workqueue ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L2962 )->__flush_workqueue ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L2800 )->mutex_unlock ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/locking/mutex.c#L537 ) )"
+  },
+  {
+    "id": 26,
+    "kernel boundary func name": "get_tree_nodev",
+    "risky func": "kzalloc.703",
+    "Risky API Class": "",
+    "Is Controlled Path": 0,
+    "No. path cond": 32,
+    "call path": "( [8]ffs_fs_get_tree ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L1569 )->get_tree_nodev ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/super.c#L1226 )->vfs_get_super ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/super.c#L1171 )->reconfigure_super ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/super.c#L902 )->ffs_fs_get_tree ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L1569 )->ffs_data_new ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L1762 )->alloc_workqueue ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L4292 )->kzalloc.703 ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L687 ) )"
+  },
+  {
+    "id": 27,
+    "kernel boundary func name": "get_tree_nodev",
+    "risky func": "kref_put",
+    "Risky API Class": "refCount",
+    "Is Controlled Path": 0,
+    "No. path cond": 14,
+    "call path": "( [10]ffs_fs_get_tree ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L1569 )->get_tree_nodev ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/super.c#L1226 )->vfs_get_super ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/super.c#L1171 )->deactivate_locked_super ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/super.c#L327 )->ffs_fs_kill_sb ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L1641 )->ffs_data_closed ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L1727 )->ffs_data_reset ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L1827 )->ffs_data_clear ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L1791 )->eventfd_ctx_put ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/eventfd.c#L115 )->kref_put ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/kref.h#L62 ) )"
+  },
+  {
+    "id": 28,
+    "kernel boundary func name": "get_tree_nodev",
+    "risky func": "mod_timer",
+    "Risky API Class": "timer",
+    "Is Controlled Path": 0,
+    "No. path cond": 61,
+    "call path": "( [16]ffs_fs_get_tree ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L1569 )->get_tree_nodev ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/super.c#L1226 )->vfs_get_super ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/super.c#L1171 )->reconfigure_super ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/super.c#L902 )->ffs_fs_get_tree ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L1569 )->ffs_data_new ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L1762 )->alloc_workqueue ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L4292 )->alloc_and_link_pwqs ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L4208 )->apply_workqueue_attrs ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L4109 )->apply_workqueue_attrs_locked ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L4063 )->apply_wqattrs_prepare ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L3957 )->alloc_unbound_pwq ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L3838 )->get_unbound_pool ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L3635 )->create_worker ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L1929 )->worker_enter_idle ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L1795 )->mod_timer ( Unknown Loc ) )"
+  },
+  {
+    "id": 29,
+    "kernel boundary func name": "kill_litter_super",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 13,
+    "call path": "( [6]ffs_fs_kill_sb ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L1641 )->kill_litter_super ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/super.c#L1122 )->kill_anon_super ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/super.c#L1114 )->generic_shutdown_super ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/super.c#L468 )->destroy_workqueue ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L4411 )->kfree ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/mm/slab_common.c#L988 ) )"
+  },
+  {
+    "id": 30,
+    "kernel boundary func name": "kill_litter_super",
+    "risky func": "mutex_lock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 21,
+    "call path": "( [8]ffs_fs_kill_sb ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L1641 )->kill_litter_super ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/super.c#L1122 )->kill_anon_super ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/super.c#L1114 )->generic_shutdown_super ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/super.c#L468 )->destroy_workqueue ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L4411 )->drain_workqueue ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L2962 )->__flush_workqueue ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L2800 )->mutex_lock ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/locking/mutex.c#L281 ) )"
+  },
+  {
+    "id": 31,
+    "kernel boundary func name": "kill_litter_super",
+    "risky func": "mutex_unlock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 22,
+    "call path": "( [8]ffs_fs_kill_sb ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L1641 )->kill_litter_super ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/super.c#L1122 )->kill_anon_super ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/super.c#L1114 )->generic_shutdown_super ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/super.c#L468 )->destroy_workqueue ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L4411 )->drain_workqueue ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L2962 )->__flush_workqueue ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L2800 )->mutex_unlock ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/locking/mutex.c#L537 ) )"
+  },
+  {
+    "id": 32,
+    "kernel boundary func name": "kill_litter_super",
+    "risky func": "kref_put",
+    "Risky API Class": "refCount",
+    "Is Controlled Path": 0,
+    "No. path cond": 13,
+    "call path": "( [10]ffs_fs_kill_sb ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L1641 )->kill_litter_super ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/super.c#L1122 )->kill_anon_super ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/super.c#L1114 )->generic_shutdown_super ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/super.c#L468 )->ffs_fs_kill_sb ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L1641 )->ffs_data_closed ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L1727 )->ffs_data_reset ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L1827 )->ffs_data_clear ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L1791 )->eventfd_ctx_put ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/eventfd.c#L115 )->kref_put ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/kref.h#L62 ) )"
+  },
+  {
+    "id": 33,
+    "kernel boundary func name": "d_make_root",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 7,
+    "call path": "( [5]ffs_sb_fill ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L1465 )->d_make_root ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/dcache.c#L2064 )->d_alloc_anon ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/dcache.c#L1866 )->__d_alloc ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/dcache.c#L1763 )->kfree ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/mm/slab_common.c#L988 ) )"
+  },
+  {
+    "id": 34,
+    "kernel boundary func name": "d_alloc_name",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
+    "Is Controlled Path": 1,
+    "No. path cond": 6,
+    "call path": "( [5]ffs_sb_create_file ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L1427 )->d_alloc_name ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/dcache.c#L1905 )->d_alloc ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/dcache.c#L1847 )->__d_alloc ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/dcache.c#L1763 )->kfree ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/mm/slab_common.c#L988 ) )"
+  },
+  {
+    "id": 35,
+    "kernel boundary func name": "eventfd_ctx_put",
+    "risky func": "kref_put",
+    "Risky API Class": "refCount",
+    "Is Controlled Path": 1,
+    "call path": "( [3]ffs_data_clear ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L1791 )->eventfd_ctx_put ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/eventfd.c#L115 )->kref_put ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/kref.h#L62 ) )"
+  },
+  {
+    "id": 36,
+    "kernel boundary func name": "eventfd_ctx_fdget",
+    "risky func": "kref_get",
+    "Risky API Class": "refCount",
+    "Is Controlled Path": 0,
+    "No. path cond": 2,
+    "call path": "( [4]__ffs_data_got_descs ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L2485 )->eventfd_ctx_fdget ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/eventfd.c#L380 )->eventfd_ctx_fileget ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/eventfd.c#L401 )->kref_get ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/kref.h#L43 ) )"
+  }
+]
