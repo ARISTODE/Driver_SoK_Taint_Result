@@ -1,7 +1,9 @@
 {
   "Num kernel  boundary func": 59,
   "Num boundary parameters": 92,
-  "Num non-struct boundary parameters": 92,
+  "Num classified boundary parameters": 25,
+  "Num boundary parameter fields": 23,
+  "Num classified boundary parameter fields": 4,
   "Num drv callbacks": 26,
   "Num shared struct": 30,
   "Shared fields": 89,
@@ -9,9 +11,7 @@
   "ptr fields": 85,
   "func ptr fields": 7,
   "data ptr fields": 78,
+  "RISKY_KERNEL_FUNC": 1,
   "": 3,
-  "RISKY_KERNEL_FUNC": 2,
-  "BRANCH": 2,
-  "PTR_READ": 2,
-  "UNCLASSIFY": 34
+  "UNCLASSIFY": 36
 }

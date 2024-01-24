@@ -6,15 +6,13 @@
   "Num shared struct": 56,
   "Shared fields": 115,
   "KRDU fields": 45,
-  "ptr fields": 19,
-  "func ptr fields": 4,
-  "data ptr fields": 15,
-  "PTR_WRITE": 10,
-  "PTR_READ": 7,
-  "DIV_BY_ZERO": 1,
-  "UNCLASSIFY": 10,
-  "RISKY_KERNEL_FUNC": 12,
+  "ptr fields": 292,
+  "func ptr fields": 10,
+  "data ptr fields": 282,
+  "DIV_BY_ZERO": 3,
+  "BRANCH": 12,
+  "RISKY_KERNEL_FUNC": 7,
   "": 12,
-  "ARR_IDX": 5,
-  "BRANCH": 34
+  "ARR_IDX": 11,
+  "UNCLASSIFY": 27
 }

@@ -305,12 +305,12 @@
     "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/nvme/host/multipath.c#L24"
   },
   {
-    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/params.c#L585",
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/params.c#L567",
     "Drv func": "nvme_set_iopolicy",
     "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/nvme/host/multipath.c#L24"
   },
   {
-    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/params.c#L567",
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/params.c#L585",
     "Drv func": "nvme_set_iopolicy",
     "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/nvme/host/multipath.c#L24"
   },
@@ -330,12 +330,12 @@
     "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/nvme/host/multipath.c#L38"
   },
   {
-    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/params.c#L585",
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/params.c#L567",
     "Drv func": "nvme_get_iopolicy",
     "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/nvme/host/multipath.c#L38"
   },
   {
-    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/params.c#L567",
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/params.c#L585",
     "Drv func": "nvme_get_iopolicy",
     "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/nvme/host/multipath.c#L38"
   },

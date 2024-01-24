@@ -1,30 +1,5 @@
 [
   {
-    "No. entry": 5
-  },
-  {
-    "Drv func": "dummy_init_one",
-    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/dummy.c#L166 | ",
-    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/dummy.c#L170"
-  },
-  {
-    "Drv func": "dummy_init_one",
-    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/dummy.c#L166 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/dummy.c#L171 | ",
-    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/dummy.c#L176"
-  },
-  {
-    "Drv func": "dummy_change_carrier",
-    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/dummy.c#L84 | ",
-    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/dummy.c#L87"
-  },
-  {
-    "Drv func": "dummy_change_carrier",
-    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/dummy.c#L84 | ",
-    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/dummy.c#L85"
-  },
-  {
-    "Drv func": "dummy_init_module",
-    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/dummy.c#L187 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/dummy.c#L194 | ",
-    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/dummy.c#L195"
+    "No. entry": 0
   }
 ]

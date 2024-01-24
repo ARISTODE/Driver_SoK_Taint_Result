@@ -4,17 +4,17 @@
     "drv boundary func": "zero_map",
     "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/bio.c#L1496",
     "call path": " [zero_map->bio_endio->bio_remaining_done] ",
-    "num condition checks": 2,
-    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/bio.c#L1491 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/bio.c#L1494 | ",
-    "is controlled": false
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
   },
   {
     "type": "indirect",
     "drv boundary func": "zero_map",
     "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/bio.c#L740",
     "call path": " [zero_map->bio_endio->__bio_chain_endio->bio_put] ",
-    "num condition checks": 2,
-    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/bio.c#L738 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/block/bio.c#L739 | ",
-    "is controlled": false
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
   }
 ]

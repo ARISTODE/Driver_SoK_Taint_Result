@@ -25,12 +25,7 @@
     "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1888"
   },
   {
-    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L4815",
-    "Drv func": "alx_suspend",
-    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1909"
-  },
-  {
-    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L560",
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L550",
     "Drv func": "alx_suspend",
     "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1909"
   },
@@ -70,6 +65,11 @@
     "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1909"
   },
   {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/device.h#L980",
+    "Drv func": "alx_suspend",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1909"
+  },
+  {
     "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci-driver.c#L1294",
     "Drv func": "alx_suspend",
     "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1909"
@@ -81,11 +81,6 @@
   },
   {
     "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L4178",
-    "Drv func": "alx_suspend",
-    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1909"
-  },
-  {
-    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/device.h#L980",
     "Drv func": "alx_suspend",
     "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1909"
   },
@@ -105,7 +100,7 @@
     "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1909"
   },
   {
-    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L550",
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L560",
     "Drv func": "alx_suspend",
     "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1909"
   },
@@ -116,6 +111,11 @@
   },
   {
     "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci-driver.c#L1000",
+    "Drv func": "alx_suspend",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1909"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L4815",
     "Drv func": "alx_suspend",
     "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1909"
   },
@@ -160,12 +160,7 @@
     "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1909"
   },
   {
-    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L4815",
-    "Drv func": "alx_resume",
-    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1927"
-  },
-  {
-    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L560",
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L550",
     "Drv func": "alx_resume",
     "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1927"
   },
@@ -205,6 +200,11 @@
     "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1927"
   },
   {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/device.h#L980",
+    "Drv func": "alx_resume",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1927"
+  },
+  {
     "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci-driver.c#L1294",
     "Drv func": "alx_resume",
     "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1927"
@@ -216,11 +216,6 @@
   },
   {
     "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L4178",
-    "Drv func": "alx_resume",
-    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1927"
-  },
-  {
-    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/device.h#L980",
     "Drv func": "alx_resume",
     "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1927"
   },
@@ -240,7 +235,7 @@
     "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1927"
   },
   {
-    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L550",
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L560",
     "Drv func": "alx_resume",
     "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1927"
   },
@@ -251,6 +246,11 @@
   },
   {
     "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci-driver.c#L1000",
+    "Drv func": "alx_resume",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1927"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L4815",
     "Drv func": "alx_resume",
     "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1927"
   },
@@ -315,66 +315,6 @@
     "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/ethtool.c#L272"
   },
   {
-    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1595",
-    "Drv func": "alx_get_msglevel",
-    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/ethtool.c#L272"
-  },
-  {
-    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L1429",
-    "Drv func": "alx_get_msglevel",
-    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/ethtool.c#L272"
-  },
-  {
-    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L1432",
-    "Drv func": "alx_get_msglevel",
-    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/ethtool.c#L272"
-  },
-  {
-    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L1516",
-    "Drv func": "alx_get_msglevel",
-    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/ethtool.c#L272"
-  },
-  {
-    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L9994",
-    "Drv func": "alx_get_msglevel",
-    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/ethtool.c#L272"
-  },
-  {
-    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L1482",
-    "Drv func": "alx_get_msglevel",
-    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/ethtool.c#L272"
-  },
-  {
-    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1578",
-    "Drv func": "alx_get_msglevel",
-    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/ethtool.c#L272"
-  },
-  {
-    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L2790",
-    "Drv func": "alx_get_msglevel",
-    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/ethtool.c#L272"
-  },
-  {
-    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1606",
-    "Drv func": "alx_get_msglevel",
-    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/ethtool.c#L272"
-  },
-  {
-    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L639",
-    "Drv func": "alx_get_msglevel",
-    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/ethtool.c#L272"
-  },
-  {
-    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L752",
-    "Drv func": "alx_get_msglevel",
-    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/ethtool.c#L272"
-  },
-  {
-    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1372",
-    "Drv func": "alx_get_msglevel",
-    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/ethtool.c#L272"
-  },
-  {
     "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1188",
     "Drv func": "alx_get_msglevel",
     "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/ethtool.c#L272"
@@ -395,12 +335,72 @@
     "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/ethtool.c#L272"
   },
   {
-    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L2163",
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L639",
+    "Drv func": "alx_get_msglevel",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/ethtool.c#L272"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L1429",
+    "Drv func": "alx_get_msglevel",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/ethtool.c#L272"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L1516",
+    "Drv func": "alx_get_msglevel",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/ethtool.c#L272"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L1432",
+    "Drv func": "alx_get_msglevel",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/ethtool.c#L272"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1595",
+    "Drv func": "alx_get_msglevel",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/ethtool.c#L272"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L9994",
+    "Drv func": "alx_get_msglevel",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/ethtool.c#L272"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L1482",
+    "Drv func": "alx_get_msglevel",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/ethtool.c#L272"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L2790",
+    "Drv func": "alx_get_msglevel",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/ethtool.c#L272"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1606",
+    "Drv func": "alx_get_msglevel",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/ethtool.c#L272"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L752",
+    "Drv func": "alx_get_msglevel",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/ethtool.c#L272"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1372",
     "Drv func": "alx_get_msglevel",
     "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/ethtool.c#L272"
   },
   {
     "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1501",
+    "Drv func": "alx_get_msglevel",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/ethtool.c#L272"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L2163",
+    "Drv func": "alx_get_msglevel",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/ethtool.c#L272"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1578",
     "Drv func": "alx_get_msglevel",
     "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/ethtool.c#L272"
   },
@@ -425,12 +425,12 @@
     "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/ethtool.c#L212"
   },
   {
-    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L2685",
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L2713",
     "Drv func": "alx_set_pauseparam",
     "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/ethtool.c#L227"
   },
   {
-    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L2713",
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L2685",
     "Drv func": "alx_set_pauseparam",
     "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/ethtool.c#L227"
   },
@@ -480,6 +480,11 @@
     "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/ethtool.c#L313"
   },
   {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L2093",
+    "Drv func": "alx_get_sset_count",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/ethtool.c#L313"
+  },
+  {
     "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L2196",
     "Drv func": "alx_get_sset_count",
     "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/ethtool.c#L313"
@@ -505,21 +510,11 @@
     "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/ethtool.c#L313"
   },
   {
-    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L2093",
-    "Drv func": "alx_get_sset_count",
-    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/ethtool.c#L313"
-  },
-  {
     "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L8636",
     "Drv func": "alx_get_sset_count",
     "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/ethtool.c#L313"
   },
   {
-    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L617",
-    "Drv func": "alx_get_link_ksettings",
-    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/ethtool.c#L128"
-  },
-  {
     "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L565",
     "Drv func": "alx_get_link_ksettings",
     "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/ethtool.c#L128"
@@ -531,6 +526,11 @@
   },
   {
     "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L666",
+    "Drv func": "alx_get_link_ksettings",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/ethtool.c#L128"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L617",
     "Drv func": "alx_get_link_ksettings",
     "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/ethtool.c#L128"
   },
@@ -540,11 +540,6 @@
     "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/ethtool.c#L128"
   },
   {
-    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L617",
-    "Drv func": "alx_set_link_ksettings",
-    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/ethtool.c#L179"
-  },
-  {
     "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L565",
     "Drv func": "alx_set_link_ksettings",
     "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/ethtool.c#L179"
@@ -556,6 +551,11 @@
   },
   {
     "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L666",
+    "Drv func": "alx_set_link_ksettings",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/ethtool.c#L179"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L617",
     "Drv func": "alx_set_link_ksettings",
     "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/ethtool.c#L179"
   },
@@ -585,66 +585,6 @@
     "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1351"
   },
   {
-    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1595",
-    "Drv func": "alx_open",
-    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1351"
-  },
-  {
-    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L1429",
-    "Drv func": "alx_open",
-    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1351"
-  },
-  {
-    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L1432",
-    "Drv func": "alx_open",
-    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1351"
-  },
-  {
-    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L1516",
-    "Drv func": "alx_open",
-    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1351"
-  },
-  {
-    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L9994",
-    "Drv func": "alx_open",
-    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1351"
-  },
-  {
-    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L1482",
-    "Drv func": "alx_open",
-    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1351"
-  },
-  {
-    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1578",
-    "Drv func": "alx_open",
-    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1351"
-  },
-  {
-    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L2790",
-    "Drv func": "alx_open",
-    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1351"
-  },
-  {
-    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1606",
-    "Drv func": "alx_open",
-    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1351"
-  },
-  {
-    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L639",
-    "Drv func": "alx_open",
-    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1351"
-  },
-  {
-    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L752",
-    "Drv func": "alx_open",
-    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1351"
-  },
-  {
-    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1372",
-    "Drv func": "alx_open",
-    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1351"
-  },
-  {
     "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1188",
     "Drv func": "alx_open",
     "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1351"
@@ -665,12 +605,72 @@
     "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1351"
   },
   {
-    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L2163",
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L639",
+    "Drv func": "alx_open",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1351"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L1429",
+    "Drv func": "alx_open",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1351"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L1516",
+    "Drv func": "alx_open",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1351"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L1432",
+    "Drv func": "alx_open",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1351"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1595",
+    "Drv func": "alx_open",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1351"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L9994",
+    "Drv func": "alx_open",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1351"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L1482",
+    "Drv func": "alx_open",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1351"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L2790",
+    "Drv func": "alx_open",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1351"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1606",
+    "Drv func": "alx_open",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1351"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L752",
+    "Drv func": "alx_open",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1351"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1372",
     "Drv func": "alx_open",
     "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1351"
   },
   {
     "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1501",
+    "Drv func": "alx_open",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1351"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L2163",
+    "Drv func": "alx_open",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1351"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1578",
     "Drv func": "alx_open",
     "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1351"
   },
@@ -695,66 +695,6 @@
     "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1363"
   },
   {
-    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1595",
-    "Drv func": "alx_stop",
-    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1363"
-  },
-  {
-    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L1429",
-    "Drv func": "alx_stop",
-    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1363"
-  },
-  {
-    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L1432",
-    "Drv func": "alx_stop",
-    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1363"
-  },
-  {
-    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L1516",
-    "Drv func": "alx_stop",
-    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1363"
-  },
-  {
-    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L9994",
-    "Drv func": "alx_stop",
-    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1363"
-  },
-  {
-    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L1482",
-    "Drv func": "alx_stop",
-    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1363"
-  },
-  {
-    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1578",
-    "Drv func": "alx_stop",
-    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1363"
-  },
-  {
-    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L2790",
-    "Drv func": "alx_stop",
-    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1363"
-  },
-  {
-    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1606",
-    "Drv func": "alx_stop",
-    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1363"
-  },
-  {
-    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L639",
-    "Drv func": "alx_stop",
-    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1363"
-  },
-  {
-    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L752",
-    "Drv func": "alx_stop",
-    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1363"
-  },
-  {
-    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1372",
-    "Drv func": "alx_stop",
-    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1363"
-  },
-  {
     "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1188",
     "Drv func": "alx_stop",
     "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1363"
@@ -775,12 +715,72 @@
     "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1363"
   },
   {
-    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L2163",
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L639",
+    "Drv func": "alx_stop",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1363"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L1429",
+    "Drv func": "alx_stop",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1363"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L1516",
+    "Drv func": "alx_stop",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1363"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L1432",
+    "Drv func": "alx_stop",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1363"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1595",
+    "Drv func": "alx_stop",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1363"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L9994",
+    "Drv func": "alx_stop",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1363"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L1482",
+    "Drv func": "alx_stop",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1363"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L2790",
+    "Drv func": "alx_stop",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1363"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1606",
+    "Drv func": "alx_stop",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1363"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L752",
+    "Drv func": "alx_stop",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1363"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1372",
     "Drv func": "alx_stop",
     "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1363"
   },
   {
     "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1501",
+    "Drv func": "alx_stop",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1363"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L2163",
+    "Drv func": "alx_stop",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1363"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1578",
     "Drv func": "alx_stop",
     "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1363"
   },
@@ -790,12 +790,12 @@
     "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1574"
   },
   {
-    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L701",
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L709",
     "Drv func": "alx_start_xmit",
     "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1574"
   },
   {
-    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L709",
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L701",
     "Drv func": "alx_start_xmit",
     "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1574"
   },
@@ -815,6 +815,16 @@
     "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L593"
   },
   {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L8471",
+    "Drv func": "alx_set_rx_mode",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L593"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10637",
+    "Drv func": "alx_set_rx_mode",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L593"
+  },
+  {
     "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10118",
     "Drv func": "alx_set_rx_mode",
     "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L593"
@@ -825,24 +835,9 @@
     "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L593"
   },
   {
-    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10637",
-    "Drv func": "alx_set_rx_mode",
-    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L593"
-  },
-  {
-    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L8471",
-    "Drv func": "alx_set_rx_mode",
-    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L593"
-  },
-  {
     "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10369",
     "Drv func": "alx_set_rx_mode",
     "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L593"
-  },
-  {
-    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L8806",
-    "Drv func": "alx_set_mac_address",
-    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L598"
   },
   {
     "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev_addr_lists.c#L341",
@@ -851,6 +846,11 @@
   },
   {
     "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev_addr_lists.c#L329",
+    "Drv func": "alx_set_mac_address",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L598"
+  },
+  {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L8806",
     "Drv func": "alx_set_mac_address",
     "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L598"
   },
@@ -885,6 +885,11 @@
     "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1175"
   },
   {
+    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L2093",
+    "Drv func": "alx_change_mtu",
+    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1175"
+  },
+  {
     "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L2196",
     "Drv func": "alx_change_mtu",
     "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1175"
@@ -906,11 +911,6 @@
   },
   {
     "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L741",
-    "Drv func": "alx_change_mtu",
-    "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1175"
-  },
-  {
-    "Ret loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L2093",
     "Drv func": "alx_change_mtu",
     "Drv func loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1175"
   },

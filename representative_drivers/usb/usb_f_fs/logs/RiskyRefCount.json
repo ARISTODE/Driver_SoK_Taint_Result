@@ -66,9 +66,9 @@
     "drv boundary func": "ffs_alloc_inst",
     "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4213",
     "call path": " [ffs_alloc_inst->ffs_dev_lock->mutex_lock->__mutex_lock_slowpath->__mutex_lock->schedule_preempt_disabled->schedule->sched_submit_work->wq_worker_sleeping->wake_up_worker->wake_up_process->try_to_wake_up] ",
-    "num condition checks": 2,
-    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4210 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4211 | ",
-    "is controlled": false
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
   },
   {
     "type": "indirect",
@@ -84,9 +84,9 @@
     "drv boundary func": "ffs_alloc_inst",
     "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6511",
     "call path": " [ffs_alloc_inst->ffs_dev_lock->mutex_lock->__mutex_lock_slowpath->__mutex_lock->schedule_preempt_disabled->schedule->__schedule] ",
-    "num condition checks": 4,
-    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6485 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6486 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6510 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6485 | ",
-    "is controlled": false
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
   },
   {
     "type": "indirect",
@@ -138,9 +138,9 @@
     "drv boundary func": "ffs_ep0_read",
     "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6511",
     "call path": " [ffs_ep0_read->do_wait_intr_irq->schedule->__schedule] ",
-    "num condition checks": 4,
-    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6485 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6486 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6510 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6485 | ",
-    "is controlled": false
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
   },
   {
     "type": "indirect",
@@ -183,9 +183,9 @@
     "drv boundary func": "ffs_ep0_read",
     "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4213",
     "call path": " [ffs_ep0_read->do_wait_intr_irq->schedule->sched_submit_work->wq_worker_sleeping->wake_up_worker->wake_up_process->try_to_wake_up] ",
-    "num condition checks": 2,
-    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4210 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4211 | ",
-    "is controlled": false
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
   },
   {
     "type": "indirect",
@@ -273,9 +273,9 @@
     "drv boundary func": "ffs_ep0_write",
     "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4213",
     "call path": " [ffs_ep0_write->mutex_unlock->__mutex_unlock_slowpath->wake_up_q->wake_up_process->try_to_wake_up] ",
-    "num condition checks": 2,
-    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4210 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4211 | ",
-    "is controlled": false
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
   },
   {
     "type": "indirect",
@@ -300,9 +300,9 @@
     "drv boundary func": "ffs_ep0_write",
     "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/inode.c#L1809",
     "call path": " [ffs_ep0_write->ffs_epfiles_create->ffs_epfiles_destroy->d_delete->dentry_unlink_inode->iput] ",
-    "num condition checks": 3,
-    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/inode.c#L1808 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/inode.c#L1807 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/inode.c#L1808 | ",
-    "is controlled": false
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
   },
   {
     "type": "indirect",
@@ -327,9 +327,9 @@
     "drv boundary func": "ffs_ep0_write",
     "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6511",
     "call path": " [ffs_ep0_write->ffs_mutex_lock->mutex_lock_interruptible->__mutex_lock_interruptible_slowpath->__mutex_lock->schedule_preempt_disabled->schedule->__schedule] ",
-    "num condition checks": 4,
-    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6485 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6486 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6510 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6485 | ",
-    "is controlled": false
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
   },
   {
     "type": "indirect",
@@ -354,9 +354,9 @@
     "drv boundary func": "ffs_ep0_write",
     "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/posix_acl.h#L57",
     "call path": " [ffs_ep0_write->ffs_epfiles_create->ffs_epfiles_destroy->d_delete->dentry_unlink_inode->iput->iput_final->evict->destroy_inode->__destroy_inode->posix_acl_release] ",
-    "num condition checks": 1,
-    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/posix_acl.h#L57 | ",
-    "is controlled": false
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
   },
   {
     "type": "indirect",
@@ -417,9 +417,9 @@
     "drv boundary func": "ffs_ep0_poll",
     "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4213",
     "call path": " [ffs_ep0_poll->mutex_unlock->__mutex_unlock_slowpath->wake_up_q->wake_up_process->try_to_wake_up] ",
-    "num condition checks": 2,
-    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4210 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4211 | ",
-    "is controlled": false
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
   },
   {
     "type": "indirect",
@@ -444,9 +444,9 @@
     "drv boundary func": "ffs_ep0_poll",
     "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6511",
     "call path": " [ffs_ep0_poll->ffs_mutex_lock->mutex_lock_interruptible->__mutex_lock_interruptible_slowpath->__mutex_lock->schedule_preempt_disabled->schedule->__schedule] ",
-    "num condition checks": 4,
-    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6485 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6486 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6510 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6485 | ",
-    "is controlled": false
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
   },
   {
     "type": "indirect",
@@ -525,9 +525,9 @@
     "drv boundary func": "ffs_ep0_open",
     "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/inode.c#L1809",
     "call path": " [ffs_ep0_open->ffs_data_opened->ffs_data_reset->ffs_data_clear->ffs_epfiles_destroy->d_delete->dentry_unlink_inode->iput] ",
-    "num condition checks": 3,
-    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/inode.c#L1808 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/inode.c#L1807 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/inode.c#L1808 | ",
-    "is controlled": false
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
   },
   {
     "type": "indirect",
@@ -570,9 +570,9 @@
     "drv boundary func": "ffs_ep0_open",
     "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4213",
     "call path": " [ffs_ep0_open->ffs_data_opened->ffs_data_reset->ffs_data_clear->ffs_closed->ffs_dev_lock->mutex_lock->__mutex_lock_slowpath->__mutex_lock->schedule_preempt_disabled->schedule->sched_submit_work->wq_worker_sleeping->wake_up_worker->wake_up_process->try_to_wake_up] ",
-    "num condition checks": 2,
-    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4210 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4211 | ",
-    "is controlled": false
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
   },
   {
     "type": "indirect",
@@ -588,9 +588,9 @@
     "drv boundary func": "ffs_ep0_open",
     "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6511",
     "call path": " [ffs_ep0_open->ffs_data_opened->ffs_data_reset->ffs_data_clear->ffs_closed->ffs_dev_lock->mutex_lock->__mutex_lock_slowpath->__mutex_lock->schedule_preempt_disabled->schedule->__schedule] ",
-    "num condition checks": 4,
-    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6485 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6486 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6510 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6485 | ",
-    "is controlled": false
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
   },
   {
     "type": "indirect",
@@ -615,9 +615,9 @@
     "drv boundary func": "ffs_ep0_open",
     "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/posix_acl.h#L57",
     "call path": " [ffs_ep0_open->ffs_data_opened->ffs_data_reset->ffs_data_clear->ffs_epfiles_destroy->d_delete->dentry_unlink_inode->iput->iput_final->evict->destroy_inode->__destroy_inode->posix_acl_release] ",
-    "num condition checks": 1,
-    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/posix_acl.h#L57 | ",
-    "is controlled": false
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
   },
   {
     "type": "indirect",
@@ -696,9 +696,9 @@
     "drv boundary func": "ffs_ep0_release",
     "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/inode.c#L1809",
     "call path": " [ffs_ep0_release->ffs_data_closed->ffs_data_reset->ffs_data_clear->ffs_epfiles_destroy->d_delete->dentry_unlink_inode->iput] ",
-    "num condition checks": 3,
-    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/inode.c#L1808 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/inode.c#L1807 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/inode.c#L1808 | ",
-    "is controlled": false
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
   },
   {
     "type": "indirect",
@@ -759,9 +759,9 @@
     "drv boundary func": "ffs_ep0_release",
     "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4213",
     "call path": " [ffs_ep0_release->ffs_data_closed->ffs_data_reset->ffs_data_clear->ffs_closed->ffs_dev_lock->mutex_lock->__mutex_lock_slowpath->__mutex_lock->schedule_preempt_disabled->schedule->sched_submit_work->wq_worker_sleeping->wake_up_worker->wake_up_process->try_to_wake_up] ",
-    "num condition checks": 2,
-    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4210 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4211 | ",
-    "is controlled": false
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
   },
   {
     "type": "indirect",
@@ -831,18 +831,18 @@
     "drv boundary func": "ffs_ep0_release",
     "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6511",
     "call path": " [ffs_ep0_release->ffs_data_closed->ffs_data_reset->ffs_data_clear->ffs_closed->ffs_dev_lock->mutex_lock->__mutex_lock_slowpath->__mutex_lock->schedule_preempt_disabled->schedule->__schedule] ",
-    "num condition checks": 4,
-    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6485 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6486 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6510 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6485 | ",
-    "is controlled": false
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
   },
   {
     "type": "indirect",
     "drv boundary func": "ffs_ep0_release",
     "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/posix_acl.h#L57",
     "call path": " [ffs_ep0_release->ffs_data_closed->ffs_data_reset->ffs_data_clear->ffs_epfiles_destroy->d_delete->dentry_unlink_inode->iput->iput_final->evict->destroy_inode->__destroy_inode->posix_acl_release] ",
-    "num condition checks": 1,
-    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/posix_acl.h#L57 | ",
-    "is controlled": false
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
   },
   {
     "type": "indirect",
@@ -930,9 +930,9 @@
     "drv boundary func": "ffs_fs_kill_sb",
     "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/inode.c#L1809",
     "call path": " [ffs_fs_kill_sb->kill_litter_super->kill_anon_super->generic_shutdown_super->shrink_dcache_for_umount->do_one_tree->dput->dentry_kill->__dentry_kill->dentry_unlink_inode->iput] ",
-    "num condition checks": 3,
-    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/inode.c#L1808 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/inode.c#L1807 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/inode.c#L1808 | ",
-    "is controlled": false
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
   },
   {
     "type": "indirect",
@@ -993,9 +993,9 @@
     "drv boundary func": "ffs_fs_kill_sb",
     "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4213",
     "call path": " [ffs_fs_kill_sb->kill_litter_super->kill_anon_super->generic_shutdown_super->destroy_workqueue->kthread_stop->kthread_unpark->wake_up_state->try_to_wake_up] ",
-    "num condition checks": 2,
-    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4210 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4211 | ",
-    "is controlled": false
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
   },
   {
     "type": "indirect",
@@ -1065,18 +1065,18 @@
     "drv boundary func": "ffs_fs_kill_sb",
     "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/posix_acl.h#L57",
     "call path": " [ffs_fs_kill_sb->kill_litter_super->kill_anon_super->generic_shutdown_super->shrink_dcache_for_umount->do_one_tree->dput->dentry_kill->__dentry_kill->dentry_unlink_inode->iput->iput_final->evict->destroy_inode->__destroy_inode->posix_acl_release] ",
-    "num condition checks": 1,
-    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/posix_acl.h#L57 | ",
-    "is controlled": false
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
   },
   {
     "type": "indirect",
     "drv boundary func": "ffs_fs_kill_sb",
     "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6511",
     "call path": " [ffs_fs_kill_sb->kill_litter_super->kill_anon_super->generic_shutdown_super->destroy_workqueue->drain_workqueue->__flush_workqueue->mutex_lock->__mutex_lock_slowpath->__mutex_lock->schedule_preempt_disabled->schedule->__schedule] ",
-    "num condition checks": 4,
-    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6485 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6486 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6510 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6485 | ",
-    "is controlled": false
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
   },
   {
     "type": "indirect",
@@ -1144,15 +1144,6 @@
   {
     "type": "indirect",
     "drv boundary func": "ffs_fs_free_fc",
-    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/kref.h#L64",
-    "call path": " [ffs_fs_free_fc->ffs_data_put->ffs_data_clear->eventfd_ctx_put->kref_put] ",
-    "num condition checks": 0,
-    "condition checks": "",
-    "is controlled": true
-  },
-  {
-    "type": "indirect",
-    "drv boundary func": "ffs_fs_free_fc",
     "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task.h#L110",
     "call path": " [ffs_fs_free_fc->ffs_data_put->destroy_workqueue->kthread_stop->get_task_struct] ",
     "num condition checks": 0,
@@ -1171,8 +1162,8 @@
   {
     "type": "indirect",
     "drv boundary func": "ffs_fs_free_fc",
-    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L333",
-    "call path": " [ffs_fs_free_fc->ffs_data_put->ffs_data_clear->eventfd_ctx_put->kref_put->refcount_dec_and_test.162] ",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/kref.h#L64",
+    "call path": " [ffs_fs_free_fc->ffs_data_put->ffs_data_clear->eventfd_ctx_put->kref_put] ",
     "num condition checks": 0,
     "condition checks": "",
     "is controlled": true
@@ -1199,10 +1190,10 @@
     "type": "indirect",
     "drv boundary func": "ffs_fs_free_fc",
     "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4213",
-    "call path": " [ffs_fs_free_fc->ffs_data_put->ffs_data_clear->ffs_closed->ffs_dev_lock->mutex_lock->__mutex_lock_slowpath->__mutex_lock->schedule_preempt_disabled->schedule->sched_submit_work->wq_worker_sleeping->wake_up_worker->wake_up_process->try_to_wake_up] ",
-    "num condition checks": 2,
-    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4210 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4211 | ",
-    "is controlled": false
+    "call path": " [ffs_fs_free_fc->ffs_data_put->destroy_workqueue->kthread_stop->kthread_unpark->wake_up_state->try_to_wake_up] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
   },
   {
     "type": "indirect",
@@ -1225,17 +1216,17 @@
   {
     "type": "indirect",
     "drv boundary func": "ffs_fs_free_fc",
-    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/inode.c#L1809",
-    "call path": " [ffs_fs_free_fc->ffs_data_put->ffs_data_clear->ffs_epfiles_destroy->d_delete->dentry_unlink_inode->iput] ",
-    "num condition checks": 3,
-    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/inode.c#L1808 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/inode.c#L1807 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/inode.c#L1808 | ",
-    "is controlled": false
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L333",
+    "call path": " [ffs_fs_free_fc->ffs_data_put->ffs_data_clear->eventfd_ctx_put->kref_put->refcount_dec_and_test.162] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
   },
   {
     "type": "indirect",
     "drv boundary func": "ffs_fs_free_fc",
     "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task.h#L110",
-    "call path": " [ffs_fs_free_fc->ffs_data_put->ffs_data_clear->ffs_closed->ffs_dev_unlock->mutex_unlock->__mutex_unlock_slowpath->wake_q_add->get_task_struct.1230] ",
+    "call path": " [ffs_fs_free_fc->ffs_data_put->destroy_workqueue->drain_workqueue->__flush_workqueue->mutex_unlock->__mutex_unlock_slowpath->wake_q_add->get_task_struct.1230] ",
     "num condition checks": 0,
     "condition checks": "",
     "is controlled": true
@@ -1244,7 +1235,43 @@
     "type": "indirect",
     "drv boundary func": "ffs_fs_free_fc",
     "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task.h#L119",
-    "call path": " [ffs_fs_free_fc->ffs_data_put->ffs_data_clear->ffs_closed->ffs_dev_unlock->mutex_unlock->__mutex_unlock_slowpath->wake_up_q->put_task_struct.1233] ",
+    "call path": " [ffs_fs_free_fc->ffs_data_put->destroy_workqueue->drain_workqueue->__flush_workqueue->mutex_unlock->__mutex_unlock_slowpath->wake_up_q->put_task_struct.1233] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "ffs_fs_free_fc",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/inode.c#L1809",
+    "call path": " [ffs_fs_free_fc->ffs_data_put->ffs_data_clear->ffs_epfiles_destroy->d_delete->dentry_unlink_inode->iput] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "ffs_fs_free_fc",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3693",
+    "call path": " [ffs_fs_free_fc->ffs_data_put->destroy_workqueue->kthread_stop->kthread_unpark->wake_up_state->try_to_wake_up->ttwu_queue->ttwu_do_activate] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "ffs_fs_free_fc",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L267",
+    "call path": " [ffs_fs_free_fc->ffs_data_put->destroy_workqueue->drain_workqueue->__flush_workqueue->mutex_unlock->__mutex_unlock_slowpath->wake_q_add->get_task_struct.1230->refcount_inc.1256] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "ffs_fs_free_fc",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L333",
+    "call path": " [ffs_fs_free_fc->ffs_data_put->destroy_workqueue->drain_workqueue->__flush_workqueue->mutex_unlock->__mutex_unlock_slowpath->wake_up_q->put_task_struct.1233->refcount_dec_and_test.1234] ",
     "num condition checks": 0,
     "condition checks": "",
     "is controlled": true
@@ -1261,44 +1288,26 @@
   {
     "type": "indirect",
     "drv boundary func": "ffs_fs_free_fc",
-    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3693",
-    "call path": " [ffs_fs_free_fc->ffs_data_put->ffs_data_clear->ffs_closed->ffs_dev_lock->mutex_lock->__mutex_lock_slowpath->__mutex_lock->schedule_preempt_disabled->schedule->sched_submit_work->wq_worker_sleeping->wake_up_worker->wake_up_process->try_to_wake_up->ttwu_queue->ttwu_do_activate] ",
-    "num condition checks": 0,
-    "condition checks": "",
-    "is controlled": true
-  },
-  {
-    "type": "indirect",
-    "drv boundary func": "ffs_fs_free_fc",
-    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L267",
-    "call path": " [ffs_fs_free_fc->ffs_data_put->ffs_data_clear->ffs_closed->ffs_dev_unlock->mutex_unlock->__mutex_unlock_slowpath->wake_q_add->get_task_struct.1230->refcount_inc.1256] ",
-    "num condition checks": 0,
-    "condition checks": "",
-    "is controlled": true
-  },
-  {
-    "type": "indirect",
-    "drv boundary func": "ffs_fs_free_fc",
-    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L333",
-    "call path": " [ffs_fs_free_fc->ffs_data_put->ffs_data_clear->ffs_closed->ffs_dev_unlock->mutex_unlock->__mutex_unlock_slowpath->wake_up_q->put_task_struct.1233->refcount_dec_and_test.1234] ",
-    "num condition checks": 0,
-    "condition checks": "",
-    "is controlled": true
-  },
-  {
-    "type": "indirect",
-    "drv boundary func": "ffs_fs_free_fc",
     "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6511",
-    "call path": " [ffs_fs_free_fc->ffs_data_put->ffs_data_clear->ffs_closed->ffs_dev_lock->mutex_lock->__mutex_lock_slowpath->__mutex_lock->schedule_preempt_disabled->schedule->__schedule] ",
-    "num condition checks": 4,
-    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6485 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6486 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6510 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6485 | ",
-    "is controlled": false
+    "call path": " [ffs_fs_free_fc->ffs_data_put->destroy_workqueue->drain_workqueue->__flush_workqueue->mutex_lock->__mutex_lock_slowpath->__mutex_lock->schedule_preempt_disabled->schedule->__schedule] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
   },
   {
     "type": "indirect",
     "drv boundary func": "ffs_fs_free_fc",
     "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L37",
-    "call path": " [ffs_fs_free_fc->ffs_data_put->ffs_data_clear->ffs_closed->ffs_dev_lock->mutex_lock->__mutex_lock_slowpath->__mutex_lock->schedule_preempt_disabled->schedule->__schedule->mmgrab.1336] ",
+    "call path": " [ffs_fs_free_fc->ffs_data_put->destroy_workqueue->drain_workqueue->__flush_workqueue->mutex_lock->__mutex_lock_slowpath->__mutex_lock->schedule_preempt_disabled->schedule->__schedule->mmgrab.1336] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "ffs_fs_free_fc",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L49",
+    "call path": " [ffs_fs_free_fc->ffs_data_put->destroy_workqueue->drain_workqueue->__flush_workqueue->mutex_lock->__mutex_lock_slowpath->__mutex_lock->schedule_preempt_disabled->schedule->__schedule->finish_task_switch->mmdrop_sched->mmdrop.1338] ",
     "num condition checks": 0,
     "condition checks": "",
     "is controlled": true
@@ -1308,15 +1317,6 @@
     "drv boundary func": "ffs_fs_free_fc",
     "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/posix_acl.h#L57",
     "call path": " [ffs_fs_free_fc->ffs_data_put->ffs_data_clear->ffs_epfiles_destroy->d_delete->dentry_unlink_inode->iput->iput_final->evict->destroy_inode->__destroy_inode->posix_acl_release] ",
-    "num condition checks": 1,
-    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/posix_acl.h#L57 | ",
-    "is controlled": false
-  },
-  {
-    "type": "indirect",
-    "drv boundary func": "ffs_fs_free_fc",
-    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L49",
-    "call path": " [ffs_fs_free_fc->ffs_data_put->ffs_data_clear->ffs_closed->ffs_dev_lock->mutex_lock->__mutex_lock_slowpath->__mutex_lock->schedule_preempt_disabled->schedule->__schedule->finish_task_switch->mmdrop_sched->mmdrop.1338] ",
     "num condition checks": 0,
     "condition checks": "",
     "is controlled": true
@@ -1334,7 +1334,7 @@
     "type": "indirect",
     "drv boundary func": "ffs_fs_free_fc",
     "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task_stack.h#L68",
-    "call path": " [ffs_fs_free_fc->ffs_data_put->ffs_data_clear->ffs_closed->ffs_dev_lock->mutex_lock->__mutex_lock_slowpath->__mutex_lock->schedule_preempt_disabled->schedule->__schedule->schedule_debug->__schedule_bug->check_panic_on_warn->panic->panic_print_sys_info->show_state->show_state_filter->sched_show_task->try_get_task_stack] ",
+    "call path": " [ffs_fs_free_fc->ffs_data_put->destroy_workqueue->drain_workqueue->__flush_workqueue->mutex_lock->__mutex_lock_slowpath->__mutex_lock->schedule_preempt_disabled->schedule->__schedule->schedule_debug->__schedule_bug->check_panic_on_warn->panic->panic_print_sys_info->show_state->show_state_filter->sched_show_task->try_get_task_stack] ",
     "num condition checks": 0,
     "condition checks": "",
     "is controlled": true
@@ -1343,7 +1343,7 @@
     "type": "indirect",
     "drv boundary func": "ffs_fs_free_fc",
     "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L245",
-    "call path": " [ffs_fs_free_fc->ffs_data_put->ffs_data_clear->ffs_closed->ffs_dev_lock->mutex_lock->__mutex_lock_slowpath->__mutex_lock->schedule_preempt_disabled->schedule->__schedule->schedule_debug->__schedule_bug->check_panic_on_warn->panic->panic_print_sys_info->show_state->show_state_filter->sched_show_task->try_get_task_stack->refcount_inc_not_zero.1323] ",
+    "call path": " [ffs_fs_free_fc->ffs_data_put->destroy_workqueue->drain_workqueue->__flush_workqueue->mutex_lock->__mutex_lock_slowpath->__mutex_lock->schedule_preempt_disabled->schedule->__schedule->schedule_debug->__schedule_bug->check_panic_on_warn->panic->panic_print_sys_info->show_state->show_state_filter->sched_show_task->try_get_task_stack->refcount_inc_not_zero.1323] ",
     "num condition checks": 0,
     "condition checks": "",
     "is controlled": true
@@ -1378,15 +1378,6 @@
   {
     "type": "indirect",
     "drv boundary func": "ffs_fs_get_tree",
-    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/kref.h#L64",
-    "call path": " [ffs_fs_get_tree->get_tree_nodev->vfs_get_super->deactivate_locked_super->ffs_fs_kill_sb->ffs_data_closed->ffs_data_reset->ffs_data_clear->eventfd_ctx_put->kref_put] ",
-    "num condition checks": 0,
-    "condition checks": "",
-    "is controlled": true
-  },
-  {
-    "type": "indirect",
-    "drv boundary func": "ffs_fs_get_tree",
     "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task.h#L110",
     "call path": " [ffs_fs_get_tree->get_tree_nodev->vfs_get_super->deactivate_locked_super->ffs_fs_kill_sb->kill_litter_super->kill_anon_super->generic_shutdown_super->destroy_workqueue->kthread_stop->get_task_struct] ",
     "num condition checks": 0,
@@ -1405,8 +1396,8 @@
   {
     "type": "indirect",
     "drv boundary func": "ffs_fs_get_tree",
-    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L1734",
-    "call path": " [ffs_fs_get_tree->get_tree_nodev->vfs_get_super->deactivate_locked_super->ffs_fs_kill_sb->ffs_data_closed] ",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/kref.h#L64",
+    "call path": " [ffs_fs_get_tree->get_tree_nodev->vfs_get_super->deactivate_locked_super->ffs_fs_kill_sb->ffs_data_closed->ffs_data_reset->ffs_data_clear->eventfd_ctx_put->kref_put] ",
     "num condition checks": 0,
     "condition checks": "",
     "is controlled": true
@@ -1414,8 +1405,8 @@
   {
     "type": "indirect",
     "drv boundary func": "ffs_fs_get_tree",
-    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L333",
-    "call path": " [ffs_fs_get_tree->get_tree_nodev->vfs_get_super->deactivate_locked_super->ffs_fs_kill_sb->ffs_data_closed->ffs_data_reset->ffs_data_clear->eventfd_ctx_put->kref_put->refcount_dec_and_test.162] ",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/usb/gadget/function/f_fs.c#L1734",
+    "call path": " [ffs_fs_get_tree->get_tree_nodev->vfs_get_super->deactivate_locked_super->ffs_fs_kill_sb->ffs_data_closed] ",
     "num condition checks": 0,
     "condition checks": "",
     "is controlled": true
@@ -1443,9 +1434,9 @@
     "drv boundary func": "ffs_fs_get_tree",
     "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4213",
     "call path": " [ffs_fs_get_tree->get_tree_nodev->vfs_get_super->deactivate_locked_super->ffs_fs_kill_sb->kill_litter_super->kill_anon_super->generic_shutdown_super->destroy_workqueue->kthread_stop->kthread_unpark->wake_up_state->try_to_wake_up] ",
-    "num condition checks": 2,
-    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4210 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4211 | ",
-    "is controlled": false
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
   },
   {
     "type": "indirect",
@@ -1468,8 +1459,8 @@
   {
     "type": "indirect",
     "drv boundary func": "ffs_fs_get_tree",
-    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/dcache.c#L368",
-    "call path": " [ffs_fs_get_tree->get_tree_nodev->vfs_get_super->deactivate_locked_super->ffs_fs_kill_sb->kill_litter_super->kill_anon_super->generic_shutdown_super->shrink_dcache_for_umount->do_one_tree->dput->dentry_kill->__dentry_kill->dentry_free] ",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L333",
+    "call path": " [ffs_fs_get_tree->get_tree_nodev->vfs_get_super->deactivate_locked_super->ffs_fs_kill_sb->ffs_data_closed->ffs_data_reset->ffs_data_clear->eventfd_ctx_put->kref_put->refcount_dec_and_test.162] ",
     "num condition checks": 0,
     "condition checks": "",
     "is controlled": true
@@ -1477,11 +1468,11 @@
   {
     "type": "indirect",
     "drv boundary func": "ffs_fs_get_tree",
-    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/inode.c#L1809",
-    "call path": " [ffs_fs_get_tree->get_tree_nodev->vfs_get_super->deactivate_locked_super->ffs_fs_kill_sb->kill_litter_super->kill_anon_super->generic_shutdown_super->shrink_dcache_for_umount->do_one_tree->dput->dentry_kill->__dentry_kill->dentry_unlink_inode->iput] ",
-    "num condition checks": 3,
-    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/inode.c#L1808 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/inode.c#L1807 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/inode.c#L1808 | ",
-    "is controlled": false
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/dcache.c#L368",
+    "call path": " [ffs_fs_get_tree->get_tree_nodev->vfs_get_super->deactivate_locked_super->ffs_fs_kill_sb->kill_litter_super->kill_anon_super->generic_shutdown_super->shrink_dcache_for_umount->do_one_tree->dput->dentry_kill->__dentry_kill->dentry_free] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
   },
   {
     "type": "indirect",
@@ -1497,6 +1488,15 @@
     "drv boundary func": "ffs_fs_get_tree",
     "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/task.h#L119",
     "call path": " [ffs_fs_get_tree->get_tree_nodev->vfs_get_super->deactivate_locked_super->ffs_fs_kill_sb->kill_litter_super->kill_anon_super->generic_shutdown_super->destroy_workqueue->drain_workqueue->__flush_workqueue->mutex_unlock->__mutex_unlock_slowpath->wake_up_q->put_task_struct.1233] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "ffs_fs_get_tree",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/inode.c#L1809",
+    "call path": " [ffs_fs_get_tree->get_tree_nodev->vfs_get_super->deactivate_locked_super->ffs_fs_kill_sb->kill_litter_super->kill_anon_super->generic_shutdown_super->shrink_dcache_for_umount->do_one_tree->dput->dentry_kill->__dentry_kill->dentry_unlink_inode->iput] ",
     "num condition checks": 0,
     "condition checks": "",
     "is controlled": true
@@ -1533,9 +1533,9 @@
     "drv boundary func": "ffs_fs_get_tree",
     "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6511",
     "call path": " [ffs_fs_get_tree->get_tree_nodev->vfs_get_super->deactivate_locked_super->ffs_fs_kill_sb->kill_litter_super->kill_anon_super->generic_shutdown_super->destroy_workqueue->drain_workqueue->__flush_workqueue->mutex_lock->__mutex_lock_slowpath->__mutex_lock->schedule_preempt_disabled->schedule->__schedule] ",
-    "num condition checks": 4,
-    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6485 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6486 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6510 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6485 | ",
-    "is controlled": false
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
   },
   {
     "type": "indirect",
@@ -1549,17 +1549,17 @@
   {
     "type": "indirect",
     "drv boundary func": "ffs_fs_get_tree",
-    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/posix_acl.h#L57",
-    "call path": " [ffs_fs_get_tree->get_tree_nodev->vfs_get_super->deactivate_locked_super->ffs_fs_kill_sb->kill_litter_super->kill_anon_super->generic_shutdown_super->shrink_dcache_for_umount->do_one_tree->dput->dentry_kill->__dentry_kill->dentry_unlink_inode->iput->iput_final->evict->destroy_inode->__destroy_inode->posix_acl_release] ",
-    "num condition checks": 1,
-    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/posix_acl.h#L57 | ",
-    "is controlled": false
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L49",
+    "call path": " [ffs_fs_get_tree->get_tree_nodev->vfs_get_super->deactivate_locked_super->ffs_fs_kill_sb->kill_litter_super->kill_anon_super->generic_shutdown_super->destroy_workqueue->drain_workqueue->__flush_workqueue->mutex_lock->__mutex_lock_slowpath->__mutex_lock->schedule_preempt_disabled->schedule->__schedule->finish_task_switch->mmdrop_sched->mmdrop.1338] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
   },
   {
     "type": "indirect",
     "drv boundary func": "ffs_fs_get_tree",
-    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/sched/mm.h#L49",
-    "call path": " [ffs_fs_get_tree->get_tree_nodev->vfs_get_super->deactivate_locked_super->ffs_fs_kill_sb->kill_litter_super->kill_anon_super->generic_shutdown_super->destroy_workqueue->drain_workqueue->__flush_workqueue->mutex_lock->__mutex_lock_slowpath->__mutex_lock->schedule_preempt_disabled->schedule->__schedule->finish_task_switch->mmdrop_sched->mmdrop.1338] ",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/posix_acl.h#L57",
+    "call path": " [ffs_fs_get_tree->get_tree_nodev->vfs_get_super->deactivate_locked_super->ffs_fs_kill_sb->kill_litter_super->kill_anon_super->generic_shutdown_super->shrink_dcache_for_umount->do_one_tree->dput->dentry_kill->__dentry_kill->dentry_unlink_inode->iput->iput_final->evict->destroy_inode->__destroy_inode->posix_acl_release] ",
     "num condition checks": 0,
     "condition checks": "",
     "is controlled": true
@@ -1614,9 +1614,9 @@
     "drv boundary func": "ffs_epfile_read_iter",
     "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6511",
     "call path": " [ffs_epfile_read_iter->ffs_epfile_io->ffs_alloc_buffer->ffs_build_sg_list->kvmalloc_array->kvmalloc->kvmalloc_node->__vmalloc_node_range->__get_vm_area_node->alloc_vmap_area->purge_vmap_area_lazy->mutex_lock->__mutex_lock_slowpath->__mutex_lock->schedule_preempt_disabled->schedule->__schedule] ",
-    "num condition checks": 4,
-    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6485 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6486 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6510 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6485 | ",
-    "is controlled": false
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
   },
   {
     "type": "indirect",
@@ -1659,9 +1659,9 @@
     "drv boundary func": "ffs_epfile_read_iter",
     "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4213",
     "call path": " [ffs_epfile_read_iter->ffs_epfile_io->ffs_alloc_buffer->ffs_build_sg_list->kvmalloc_array->kvmalloc->kvmalloc_node->__vmalloc_node_range->__get_vm_area_node->alloc_vmap_area->purge_vmap_area_lazy->mutex_lock->__mutex_lock_slowpath->__mutex_lock->schedule_preempt_disabled->schedule->sched_submit_work->wq_worker_sleeping->wake_up_worker->wake_up_process->try_to_wake_up] ",
-    "num condition checks": 2,
-    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4210 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4211 | ",
-    "is controlled": false
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
   },
   {
     "type": "indirect",
@@ -1713,9 +1713,9 @@
     "drv boundary func": "ffs_epfile_write_iter",
     "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6511",
     "call path": " [ffs_epfile_write_iter->ffs_epfile_io->ffs_alloc_buffer->ffs_build_sg_list->kvmalloc_array->kvmalloc->kvmalloc_node->__vmalloc_node_range->__get_vm_area_node->alloc_vmap_area->purge_vmap_area_lazy->mutex_lock->__mutex_lock_slowpath->__mutex_lock->schedule_preempt_disabled->schedule->__schedule] ",
-    "num condition checks": 4,
-    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6485 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6486 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6510 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6485 | ",
-    "is controlled": false
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
   },
   {
     "type": "indirect",
@@ -1758,9 +1758,9 @@
     "drv boundary func": "ffs_epfile_write_iter",
     "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4213",
     "call path": " [ffs_epfile_write_iter->ffs_epfile_io->ffs_alloc_buffer->ffs_build_sg_list->kvmalloc_array->kvmalloc->kvmalloc_node->__vmalloc_node_range->__get_vm_area_node->alloc_vmap_area->purge_vmap_area_lazy->mutex_lock->__mutex_lock_slowpath->__mutex_lock->schedule_preempt_disabled->schedule->sched_submit_work->wq_worker_sleeping->wake_up_worker->wake_up_process->try_to_wake_up] ",
-    "num condition checks": 2,
-    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4210 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4211 | ",
-    "is controlled": false
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
   },
   {
     "type": "indirect",
@@ -1812,9 +1812,9 @@
     "drv boundary func": "ffs_epfile_ioctl",
     "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6511",
     "call path": " [ffs_epfile_ioctl->schedule->__schedule] ",
-    "num condition checks": 4,
-    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6485 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6486 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6510 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6485 | ",
-    "is controlled": false
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
   },
   {
     "type": "indirect",
@@ -1839,9 +1839,9 @@
     "drv boundary func": "ffs_epfile_ioctl",
     "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4213",
     "call path": " [ffs_epfile_ioctl->schedule->sched_submit_work->wq_worker_sleeping->wake_up_worker->wake_up_process->try_to_wake_up] ",
-    "num condition checks": 2,
-    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4210 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4211 | ",
-    "is controlled": false
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
   },
   {
     "type": "indirect",
@@ -1911,9 +1911,9 @@
     "drv boundary func": "ffs_epfile_open",
     "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/inode.c#L1809",
     "call path": " [ffs_epfile_open->ffs_data_opened->ffs_data_reset->ffs_data_clear->ffs_epfiles_destroy->d_delete->dentry_unlink_inode->iput] ",
-    "num condition checks": 3,
-    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/inode.c#L1808 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/inode.c#L1807 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/inode.c#L1808 | ",
-    "is controlled": false
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
   },
   {
     "type": "indirect",
@@ -1956,9 +1956,9 @@
     "drv boundary func": "ffs_epfile_open",
     "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4213",
     "call path": " [ffs_epfile_open->ffs_data_opened->ffs_data_reset->ffs_data_clear->ffs_closed->ffs_dev_lock->mutex_lock->__mutex_lock_slowpath->__mutex_lock->schedule_preempt_disabled->schedule->sched_submit_work->wq_worker_sleeping->wake_up_worker->wake_up_process->try_to_wake_up] ",
-    "num condition checks": 2,
-    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4210 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4211 | ",
-    "is controlled": false
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
   },
   {
     "type": "indirect",
@@ -1974,9 +1974,9 @@
     "drv boundary func": "ffs_epfile_open",
     "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6511",
     "call path": " [ffs_epfile_open->ffs_data_opened->ffs_data_reset->ffs_data_clear->ffs_closed->ffs_dev_lock->mutex_lock->__mutex_lock_slowpath->__mutex_lock->schedule_preempt_disabled->schedule->__schedule] ",
-    "num condition checks": 4,
-    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6485 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6486 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6510 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6485 | ",
-    "is controlled": false
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
   },
   {
     "type": "indirect",
@@ -2001,9 +2001,9 @@
     "drv boundary func": "ffs_epfile_open",
     "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/posix_acl.h#L57",
     "call path": " [ffs_epfile_open->ffs_data_opened->ffs_data_reset->ffs_data_clear->ffs_epfiles_destroy->d_delete->dentry_unlink_inode->iput->iput_final->evict->destroy_inode->__destroy_inode->posix_acl_release] ",
-    "num condition checks": 1,
-    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/posix_acl.h#L57 | ",
-    "is controlled": false
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
   },
   {
     "type": "indirect",
@@ -2082,9 +2082,9 @@
     "drv boundary func": "ffs_epfile_release",
     "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/inode.c#L1809",
     "call path": " [ffs_epfile_release->ffs_data_closed->ffs_data_reset->ffs_data_clear->ffs_epfiles_destroy->d_delete->dentry_unlink_inode->iput] ",
-    "num condition checks": 3,
-    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/inode.c#L1808 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/inode.c#L1807 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/fs/inode.c#L1808 | ",
-    "is controlled": false
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
   },
   {
     "type": "indirect",
@@ -2145,9 +2145,9 @@
     "drv boundary func": "ffs_epfile_release",
     "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4213",
     "call path": " [ffs_epfile_release->ffs_data_closed->ffs_data_reset->ffs_data_clear->ffs_closed->ffs_dev_lock->mutex_lock->__mutex_lock_slowpath->__mutex_lock->schedule_preempt_disabled->schedule->sched_submit_work->wq_worker_sleeping->wake_up_worker->wake_up_process->try_to_wake_up] ",
-    "num condition checks": 2,
-    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4210 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L4211 | ",
-    "is controlled": false
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
   },
   {
     "type": "indirect",
@@ -2217,18 +2217,18 @@
     "drv boundary func": "ffs_epfile_release",
     "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6511",
     "call path": " [ffs_epfile_release->ffs_data_closed->ffs_data_reset->ffs_data_clear->ffs_closed->ffs_dev_lock->mutex_lock->__mutex_lock_slowpath->__mutex_lock->schedule_preempt_disabled->schedule->__schedule] ",
-    "num condition checks": 4,
-    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6485 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6486 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6510 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L6485 | ",
-    "is controlled": false
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
   },
   {
     "type": "indirect",
     "drv boundary func": "ffs_epfile_release",
     "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/posix_acl.h#L57",
     "call path": " [ffs_epfile_release->ffs_data_closed->ffs_data_reset->ffs_data_clear->ffs_epfiles_destroy->d_delete->dentry_unlink_inode->iput->iput_final->evict->destroy_inode->__destroy_inode->posix_acl_release] ",
-    "num condition checks": 1,
-    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/posix_acl.h#L57 | ",
-    "is controlled": false
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
   },
   {
     "type": "indirect",

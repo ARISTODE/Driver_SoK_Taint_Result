@@ -1,20 +1,5 @@
 [
   {
-    "No. entry": 3
-  },
-  {
-    "Lock name": "rtnl_lock",
-    "Lock Inst Loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10240",
-    "Cond Loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10239 | "
-  },
-  {
-    "Lock name": "rtnl_lock",
-    "Lock Inst Loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L1215",
-    "Cond Loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L1212 | "
-  },
-  {
-    "Lock name": "rtnl_lock",
-    "Lock Inst Loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L898",
-    "Cond Loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L890 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L890 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L891 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx_common.c#L895 | "
+    "No. entry": 0
   }
 ]

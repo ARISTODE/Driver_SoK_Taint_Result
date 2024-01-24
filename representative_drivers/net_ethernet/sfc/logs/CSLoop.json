@@ -1,6 +1,12 @@
 [
   {
-    "No. entry": 3
+    "No. entry": 4
+  },
+  {
+    "Lock Name": "rtnl_lock",
+    "Lock loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L1727",
+    "Loop loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L1733",
+    "loop form": "list iteration/container_of"
   },
   {
     "Lock Name": "rtnl_lock",
@@ -16,8 +22,8 @@
   },
   {
     "Lock Name": "rtnl_lock",
-    "Lock loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L1727",
-    "Loop loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L1733",
+    "Lock loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L713",
+    "Loop loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/sfc/efx.c#L737",
     "loop form": "list iteration/container_of"
   }
 ]

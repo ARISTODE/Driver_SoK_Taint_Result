@@ -7,13 +7,13 @@
 {
   "id": 1,
   "acc_path": "ethtool_link_settings->duplex",
-  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L633],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L485],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L407], ",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L485],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L633],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L407], ",
   "Drv update": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/ethtool.c#L168], "
 }
 {
   "id": 2,
   "acc_path": "ethtool_link_settings->port",
-  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L501],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L409], ",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L409],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L501], ",
   "Drv update": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/ethtool.c#L147], "
 }
 {
@@ -26,12 +26,18 @@
   "id": 4,
   "acc_path": "ethtool_link_settings->autoneg",
   "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L445],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L413], ",
-  "Drv update": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/ethtool.c#L153],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/ethtool.c#L151], "
+  "Drv update": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/ethtool.c#L151],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/ethtool.c#L153], "
+}
+{
+  "id": 5,
+  "acc_path": "device->parent",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L969],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L1161],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L1012],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L3239],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L3584],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci-driver.c#L1637],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L1969],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L3393],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L1410],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L1033],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L789],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L1130],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L1200],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L11215],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L1866],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L1111],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L3012],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L978],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L1869],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L4794],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L1656],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L1032],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L1871],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L1322],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L977],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/lib/dynamic_debug.c#L929],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L332],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L11211],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L1869],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L11216],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L1349],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L2782],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L725],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/lib/dynamic_debug.c#L925],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L2781],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L779],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L4592],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L2903],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L723],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L3392],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L3431],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L1415],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L1134],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L1004],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L1111],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L1169],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L3013],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/lib/dynamic_debug.c#L928],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L1409],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L778],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L788],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L970],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L1864],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L722],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L1113],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L5043],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L1001],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L1412],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L3809],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L11198],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L1013],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L3238],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L945],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L722],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/lib/dynamic_debug.c#L922],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L333],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/dd.c#L1202],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L944],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L1006],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci-driver.c#L1636],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L2925],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L11213],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci-driver.c#L1638], ",
+  "Drv update": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1765], "
 }
 {
   "id": 6,
   "acc_path": "pci_dev->dev_flags",
-  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L5117],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L5591],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L5523],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L1446],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L5597],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L237],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L4755],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L5527],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L4777],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L4831],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L5086],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L375], ",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L5591],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L5523],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L1446],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L4777],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L5117],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L4755],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L5527],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L5597],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L237],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L5086],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L4831],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/msi/msi.c#L375], ",
   "Drv update": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1790], "
 }
 {
@@ -133,13 +139,13 @@
 {
   "id": 24,
   "acc_path": "net_device->netdev_ops",
-  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L3575],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L693],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L9044],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L4132],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L1001],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L1348],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L1368],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L1369],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L1145],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L8448],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L2405],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L8927],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L9034],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/sched/sch_generic.c#L545],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L5192],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L8886],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L1419],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L2390],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10863],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10862],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/netdevice.h#L4864],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L3574],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L658],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L5085],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L1117],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L4179],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L53],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L2676],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L4180],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L4709],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L4715],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L1294],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L4517],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10117],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L5190],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10005],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L638],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10118],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L4930],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L5191],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L667],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L4534],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L5145],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L4695],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L4993],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L4167],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L5002],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L2596],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L5082],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L1349],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L5068],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L5189],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L4933],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L2582],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L5073],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L4561],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L9726],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L5150],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10430],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L638],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L5158],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L658],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L700],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L2339],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L639],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L8156],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L8904],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L8167],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/sched/sch_generic.c#L528],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L8633],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L8794],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L5161],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L8867],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L5222],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10004],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L9993],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L4420],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L8312],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L9709],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L50],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L4294],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L9710],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L4935],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L1506],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L4560],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L9725],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L4312],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L9994],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L1161],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L1401], ",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L9044],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10863],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L1117],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L1506],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L1161],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L693],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L4294],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L8312],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L8886],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L1294],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L1368],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L4993],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L667],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L8794],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10430],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L4179],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L5222],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L4180],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L4695],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L5145],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L9034],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L2676],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L4709],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10005],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L638],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L4715],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L8448],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L4517],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L4312],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L1348],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L4560],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L2339],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L4930],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L1369],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L658],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L700],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L4167],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10862],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L4935],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L4933],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L2390],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L2405],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L4420],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L5073],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L2582],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L8867],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L5189],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L5082],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10004],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L4534],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L1419],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L5085],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/netdevice.h#L4864],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10117],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L53],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L1401],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L5002],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L2596],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L1001],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L5161],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L638],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L1349],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/sched/sch_generic.c#L545],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L4561],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L5150],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L5068],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L1145],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L658],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L3574],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L5158],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L8156],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L8904],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L8167],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/sched/sch_generic.c#L528],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L8633],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10118],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L9994],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L9993],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L3575],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L639],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L9710],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L9726],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L9725],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L4132],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L50],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L9709],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L8927],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L5192],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L5191],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L5190], ",
   "Drv update": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1784], "
 }
 {
   "id": 26,
   "acc_path": "net_device->hw_features",
-  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L100],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10025],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L149],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L276],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10002],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10039],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L334],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10031],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10038],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10028],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L335],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10020],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L150],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/netdevice.h#L4899], ",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L276],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L149],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10025],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L150],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10002],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/netdevice.h#L4899],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L335],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10039],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L100],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10038],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10028],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10031],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L334],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10020], ",
   "Drv update": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1824], "
 }
 {
@@ -151,8 +157,14 @@
 {
   "id": 28,
   "acc_path": "net_device->max_mtu",
-  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L8653],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L8653],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L1772], ",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/rtnetlink.c#L1772],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L8653],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L8653], ",
   "Drv update": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1069], "
+}
+{
+  "id": 29,
+  "acc_path": "net_device->ethtool_ops",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L2229],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1484],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1741],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1588],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L716],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L449],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L666],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L662],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1858],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1981],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10532],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L9976],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1406],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1111],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L2252],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1773],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1758],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L2364],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L2080],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1490],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L565],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1575],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L2420],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L589],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L617],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1412],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L2630],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L2821],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L2037],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1885],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L445],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1876],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1065],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L2670],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1855],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1067],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L944],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1715],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1870],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L2891],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L2207],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1171],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L958],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1785],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1640],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1788],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L2451],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1764],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1501],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L2544],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1718],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L531],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1810],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L2528],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L2513],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L2555],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1250],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1758],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L2221],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L2202],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L2790],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1657],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1224],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1463],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L2514],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L2215],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L167],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L974],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1804],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1064],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1729],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1091],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1804],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L2615],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1715],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1498],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1442],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1448],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1643],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1430],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1744],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1425],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L199],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10657],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1362],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L705],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L698],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L2327],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L2685],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L3006],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L2789],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L3007],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1468],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L2817],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1845],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L2885],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L1228],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L2491],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L2480],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L2682],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L2654],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L2701],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/ethtool/ioctl.c#L2713], ",
+  "Drv update": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1785], "
 }
 {
   "id": 30,
@@ -175,14 +187,20 @@
 {
   "id": 35,
   "acc_path": "mdio_if_info->mode_support",
-  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L367],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L196],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L549],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L553],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L558], ",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L196],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L367],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L549],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L553],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L558], ",
   "Drv update": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1844], "
 }
 {
   "id": 36,
   "acc_path": "mdio_if_info->dev",
-  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L153],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L594],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L207],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L198],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L234],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L34],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L405],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L40],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L378],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L502],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L430],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L118],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L114],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L483],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L70],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L110],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L81],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L369],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L447],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L242],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L259],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L41],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L311],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L100],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L588],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L324],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L413],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L276], ",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L153],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L34],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L40],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L405],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L594],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L378],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L502],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L430],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L118],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L114],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L81],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L369],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L447],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L242],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L100],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L207],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L234],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L198],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L483],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L110],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L70],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L588],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L324],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L413],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L276],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L41],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L311],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/mdio.c#L259], ",
   "Drv update": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1843], "
+}
+{
+  "id": 39,
+  "acc_path": "work",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/workqueue.c#L3197 | cancel_work_sync",
+  "Drv update": ""
 }
 {
   "id": 39,
@@ -235,6 +253,12 @@
 {
   "id": 44,
   "acc_path": "dst",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ethtool/ioctl.c#L361 | ethtool_convert_legacy_u32_to_link_mode",
+  "Drv update": ""
+}
+{
+  "id": 44,
+  "acc_path": "dst",
   "Kernel read": "",
   "Drv update": ""
 }
@@ -242,6 +266,12 @@
   "id": 45,
   "acc_path": "legacy_u32",
   "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ethtool/ioctl.c#L361 | ethtool_convert_legacy_u32_to_link_mode",
+  "Drv update": ""
+}
+{
+  "id": 49,
+  "acc_path": "skb",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ethernet/eth.c#L155 | eth_type_trans",
   "Drv update": ""
 }
 {
@@ -260,6 +290,12 @@
   "id": 49,
   "acc_path": "skb->data",
   "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 50,
+  "acc_path": "dev",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/ethernet/eth.c#L155 | eth_type_trans",
   "Drv update": ""
 }
 {
@@ -296,6 +332,12 @@
   "id": 52,
   "acc_path": "n",
   "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 53,
+  "acc_path": "dev",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/core/dev.c#L3180 | netif_device_attach",
   "Drv update": ""
 }
 {
@@ -343,6 +385,12 @@
 {
   "id": 55,
   "acc_path": "dev",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/core/dev.c#L3165 | netif_device_detach",
+  "Drv update": ""
+}
+{
+  "id": 55,
+  "acc_path": "dev",
   "Kernel read": "",
   "Drv update": ""
 }
@@ -374,6 +422,12 @@
   "id": 57,
   "acc_path": "rxq",
   "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/core/dev.c#L2933 | netif_set_real_num_rx_queues",
+  "Drv update": ""
+}
+{
+  "id": 58,
+  "acc_path": "dev",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/core/dev.c#L2881 | netif_set_real_num_tx_queues",
   "Drv update": ""
 }
 {
@@ -481,6 +535,12 @@
 {
   "id": 66,
   "acc_path": "dev",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/sched/sch_generic.c#L575 | netif_carrier_on",
+  "Drv update": ""
+}
+{
+  "id": 66,
+  "acc_path": "dev",
   "Kernel read": "",
   "Drv update": ""
 }
@@ -494,6 +554,12 @@
   "id": 66,
   "acc_path": "dev->state",
   "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 67,
+  "acc_path": "skb",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/core/skbuff.c#L2154 | skb_put",
   "Drv update": ""
 }
 {
@@ -517,12 +583,6 @@
 {
   "id": 67,
   "acc_path": "skb->len",
-  "Kernel read": "",
-  "Drv update": ""
-}
-{
-  "id": 67,
-  "acc_path": "skb->tail",
   "Kernel read": "",
   "Drv update": ""
 }
@@ -595,6 +655,12 @@
 {
   "id": 75,
   "acc_path": "dev",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/core/dev.c#L10687 | free_netdev",
+  "Drv update": ""
+}
+{
+  "id": 75,
+  "acc_path": "dev",
   "Kernel read": "",
   "Drv update": ""
 }
@@ -631,7 +697,19 @@
 {
   "id": 82,
   "acc_path": "drv",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/pci-driver.c#L1456 | pci_unregister_driver",
+  "Drv update": ""
+}
+{
+  "id": 82,
+  "acc_path": "drv",
   "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 83,
+  "acc_path": "drv",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/pci-driver.c#L1427 | __pci_register_driver",
   "Drv update": ""
 }
 {
@@ -811,6 +889,12 @@
 {
   "id": 96,
   "acc_path": "dev",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/core/dev.c#L9798 | netdev_update_features",
+  "Drv update": ""
+}
+{
+  "id": 96,
+  "acc_path": "dev",
   "Kernel read": "",
   "Drv update": ""
 }
@@ -835,13 +919,31 @@
 {
   "id": 104,
   "acc_path": "napi",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/core/gro.c#L648 | napi_gro_receive",
+  "Drv update": ""
+}
+{
+  "id": 104,
+  "acc_path": "napi",
   "Kernel read": "",
   "Drv update": ""
 }
 {
   "id": 105,
   "acc_path": "skb",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/core/gro.c#L648 | napi_gro_receive",
+  "Drv update": ""
+}
+{
+  "id": 105,
+  "acc_path": "skb",
   "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 106,
+  "acc_path": "n",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/core/dev.c#L6037 | napi_complete_done",
   "Drv update": ""
 }
 {
@@ -902,6 +1004,12 @@
   "id": 111,
   "acc_path": "dev",
   "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 112,
+  "acc_path": "dev",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/net/core/dev.c#L10184 | register_netdev",
   "Drv update": ""
 }
 {
@@ -1081,6 +1189,12 @@
 {
   "id": 127,
   "acc_path": "dev",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/msi/msi.c#L1058 | pci_free_irq_vectors",
+  "Drv update": ""
+}
+{
+  "id": 127,
+  "acc_path": "dev",
   "Kernel read": "",
   "Drv update": ""
 }
@@ -1117,6 +1231,12 @@
 {
   "id": 130,
   "acc_path": "dev",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/pci.c#L4435 | pci_set_master",
+  "Drv update": ""
+}
+{
+  "id": 130,
+  "acc_path": "dev",
   "Kernel read": "",
   "Drv update": ""
 }
@@ -1142,12 +1262,6 @@
   "id": 131,
   "acc_path": "dev->dev",
   "Kernel read": "",
-  "Drv update": ""
-}
-{
-  "id": 132,
-  "acc_path": "rq",
-  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/pci.c#L6021 | pcie_set_readrq",
   "Drv update": ""
 }
 {
@@ -1319,7 +1433,13 @@
   "Drv update": ""
 }
 {
-  "id": 136,
+  "id": 135,
+  "acc_path": "int",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/net/ethernet/atheros/alx/main.c#L1909 | alx_suspend",
+  "Drv update": ""
+}
+{
+  "id": 135,
   "acc_path": "int",
   "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/net/ethernet/atheros/alx/main.c#L1909 | alx_suspend",
   "Drv update": ""
@@ -1466,6 +1586,36 @@
   "id": 136,
   "acc_path": "int",
   "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/net/ethernet/atheros/alx/main.c#L1909 | alx_suspend",
+  "Drv update": ""
+}
+{
+  "id": 136,
+  "acc_path": "int",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/net/ethernet/atheros/alx/main.c#L1909 | alx_suspend",
+  "Drv update": ""
+}
+{
+  "id": 136,
+  "acc_path": "int",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/net/ethernet/atheros/alx/main.c#L1909 | alx_suspend",
+  "Drv update": ""
+}
+{
+  "id": 136,
+  "acc_path": "int",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/net/ethernet/atheros/alx/main.c#L1909 | alx_suspend",
+  "Drv update": ""
+}
+{
+  "id": 137,
+  "acc_path": "u32",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/net/ethernet/atheros/alx/ethtool.c#L272 | alx_get_msglevel",
+  "Drv update": ""
+}
+{
+  "id": 137,
+  "acc_path": "u32",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/net/ethernet/atheros/alx/ethtool.c#L272 | alx_get_msglevel",
   "Drv update": ""
 }
 {
@@ -1643,6 +1793,18 @@
   "Drv update": ""
 }
 {
+  "id": 139,
+  "acc_path": "int",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/net/ethernet/atheros/alx/ethtool.c#L313 | alx_get_sset_count",
+  "Drv update": ""
+}
+{
+  "id": 139,
+  "acc_path": "int",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/net/ethernet/atheros/alx/ethtool.c#L313 | alx_get_sset_count",
+  "Drv update": ""
+}
+{
   "id": 140,
   "acc_path": "int",
   "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/net/ethernet/atheros/alx/ethtool.c#L128 | alx_get_link_ksettings",
@@ -1800,6 +1962,30 @@
 }
 {
   "id": 142,
+  "acc_path": "u32",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/net/ethernet/atheros/alx/ethtool.c#L272 | alx_get_msglevel",
+  "Drv update": ""
+}
+{
+  "id": 142,
+  "acc_path": "u32",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/net/ethernet/atheros/alx/ethtool.c#L272 | alx_get_msglevel",
+  "Drv update": ""
+}
+{
+  "id": 142,
+  "acc_path": "u32",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/net/ethernet/atheros/alx/ethtool.c#L272 | alx_get_msglevel",
+  "Drv update": ""
+}
+{
+  "id": 143,
+  "acc_path": "u32",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/net/ethernet/atheros/alx/ethtool.c#L272 | alx_get_msglevel",
+  "Drv update": ""
+}
+{
+  "id": 143,
   "acc_path": "u32",
   "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/net/ethernet/atheros/alx/ethtool.c#L272 | alx_get_msglevel",
   "Drv update": ""
@@ -1952,6 +2138,18 @@
   "id": 145,
   "acc_path": "int",
   "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/net/ethernet/atheros/alx/main.c#L598 | alx_set_mac_address",
+  "Drv update": ""
+}
+{
+  "id": 147,
+  "acc_path": "int",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/net/ethernet/atheros/alx/ethtool.c#L313 | alx_get_sset_count",
+  "Drv update": ""
+}
+{
+  "id": 147,
+  "acc_path": "int",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/net/ethernet/atheros/alx/ethtool.c#L313 | alx_get_sset_count",
   "Drv update": ""
 }
 {
@@ -2018,5 +2216,11 @@
   "id": 149,
   "acc_path": "pci_ers_result_t",
   "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/net/ethernet/atheros/alx/main.c#L1987 | alx_pci_error_slot_reset",
+  "Drv update": ""
+}
+{
+  "id": 150,
+  "acc_path": "netdev_features_t",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/net/ethernet/atheros/alx/main.c#L1100 | alx_fix_features",
   "Drv update": ""
 }

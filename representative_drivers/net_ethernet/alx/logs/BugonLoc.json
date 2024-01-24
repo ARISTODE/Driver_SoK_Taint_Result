@@ -1,8 +1,8 @@
 [
   {
     "Total Bugon": 91,
-    "Controlled Bugon": 71,
-    "Uncontrolled Bugon": 20
+    "Controlled Bugon": 84,
+    "Uncontrolled Bugon": 7
   },
   {
     "Drv caller": "[ __alx_stop | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1265 ], [ __alx_stop | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1264 ], ",
@@ -29,9 +29,8 @@
     "Drv caller": "[ __alx_stop | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1265 ], [ __alx_stop | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1264 ], ",
     "Trans func name": "select_fallback_rq",
     "Bugon loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3485",
-    "Call Path": "cancel_work_sync->__cancel_work_timer->__flush_work->start_flush_work->insert_wq_barrier->insert_work->wake_up_worker->wake_up_process->try_to_wake_up->select_task_rq->select_fallback_rq",
-    "Is check controlled": "false",
-    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3467 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3459 | "
+    "Check": "No check",
+    "Call Path": "cancel_work_sync->__cancel_work_timer->__flush_work->start_flush_work->insert_wq_barrier->insert_work->wake_up_worker->wake_up_process->try_to_wake_up->select_task_rq->select_fallback_rq"
   },
   {
     "Drv caller": "[ alx_probe | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1758 ], ",
@@ -47,15 +46,14 @@
     "Bugon loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10730",
     "Call Path": "alloc_etherdev_mqs->alloc_netdev_mqs->free_netdev",
     "Is check controlled": "false",
-    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10697 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10725 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10730 | "
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10725 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10697 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10730 | "
   },
   {
     "Drv caller": "[ alx_probe | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1758 ], ",
     "Trans func name": "netif_alloc_rx_queues",
     "Bugon loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L9858",
-    "Call Path": "alloc_etherdev_mqs->alloc_netdev_mqs->netif_alloc_rx_queues",
-    "Is check controlled": "false",
-    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L9858 | "
+    "Check": "No check",
+    "Call Path": "alloc_etherdev_mqs->alloc_netdev_mqs->netif_alloc_rx_queues"
   },
   {
     "Drv caller": "[ alx_probe | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1758 ], ",
@@ -82,17 +80,15 @@
     "Drv caller": "[ alx_pci_error_resume | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L2024 ], [ alx_resume | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1946 ], ",
     "Trans func name": "select_fallback_rq",
     "Bugon loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3485",
-    "Call Path": "netif_device_attach->netif_tx_wake_all_queues.161->netif_tx_wake_queue->__netif_schedule->__netif_reschedule->raise_softirq_irqoff->wakeup_softirqd->wake_up_process->try_to_wake_up->select_task_rq->select_fallback_rq",
-    "Is check controlled": "false",
-    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3467 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3459 | "
+    "Check": "No check",
+    "Call Path": "netif_device_attach->netif_tx_wake_all_queues.161->netif_tx_wake_queue->__netif_schedule->__netif_reschedule->raise_softirq_irqoff->wakeup_softirqd->wake_up_process->try_to_wake_up->select_task_rq->select_fallback_rq"
   },
   {
     "Drv caller": "[ alx_clean_tx_irq | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L202 ], ",
     "Trans func name": "select_fallback_rq",
     "Bugon loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3485",
-    "Call Path": "netif_tx_wake_queue->__netif_schedule->__netif_reschedule->raise_softirq_irqoff->wakeup_softirqd->wake_up_process->try_to_wake_up->select_task_rq->select_fallback_rq",
-    "Is check controlled": "false",
-    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3467 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3459 | "
+    "Check": "No check",
+    "Call Path": "netif_tx_wake_queue->__netif_schedule->__netif_reschedule->raise_softirq_irqoff->wakeup_softirqd->wake_up_process->try_to_wake_up->select_task_rq->select_fallback_rq"
   },
   {
     "Drv caller": "[ alx_clean_rx_irq | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L260 ], ",
@@ -122,7 +118,7 @@
     "Bugon loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10730",
     "Call Path": "rtnl_unlock->netdev_run_todo->free_netdev",
     "Is check controlled": "false",
-    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10697 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10725 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10730 | "
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10725 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10697 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10730 | "
   },
   {
     "Drv caller": "[ alx_remove | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1905 ], [ alx_probe | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1879 ], ",
@@ -130,7 +126,7 @@
     "Bugon loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10730",
     "Call Path": "free_netdev",
     "Is check controlled": "false",
-    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10697 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10725 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10730 | "
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10725 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10697 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10730 | "
   },
   {
     "Drv caller": "[ alx_pci_error_slot_reset | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1997 ], ",
@@ -178,9 +174,8 @@
     "Drv caller": "[ alx_irq_disable | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L948 ], [ alx_irq_disable | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L945 ], ",
     "Trans func name": "select_fallback_rq",
     "Bugon loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3485",
-    "Call Path": "synchronize_irq->schedule->sched_submit_work->wq_worker_sleeping->wake_up_worker->wake_up_process->try_to_wake_up->select_task_rq->select_fallback_rq",
-    "Is check controlled": "false",
-    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3467 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3459 | "
+    "Check": "No check",
+    "Call Path": "synchronize_irq->schedule->sched_submit_work->wq_worker_sleeping->wake_up_worker->wake_up_process->try_to_wake_up->select_task_rq->select_fallback_rq"
   },
   {
     "Drv caller": "[ alx_clean_rx_irq | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L278 ], ",
@@ -200,9 +195,8 @@
     "Drv caller": "[ alx_clean_rx_irq | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L278 ], ",
     "Trans func name": "__netif_receive_skb_core",
     "Bugon loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L5402",
-    "Call Path": "napi_gro_receive->dev_gro_receive->napi_gro_complete->gro_normal_one->gro_normal_list.1804->netif_receive_skb_list_internal->__netif_receive_skb_list->__netif_receive_skb_list_core->__netif_receive_skb_core",
-    "Is check controlled": "false",
-    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L5390 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L5385 | "
+    "Check": "No check",
+    "Call Path": "napi_gro_receive->dev_gro_receive->napi_gro_complete->gro_normal_one->gro_normal_list.1804->netif_receive_skb_list_internal->__netif_receive_skb_list->__netif_receive_skb_list_core->__netif_receive_skb_core"
   },
   {
     "Drv caller": "[ alx_clean_rx_irq | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L278 ], ",
@@ -215,9 +209,8 @@
     "Drv caller": "[ alx_clean_rx_irq | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L278 ], ",
     "Trans func name": "__pskb_pull_tail",
     "Bugon loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L2389",
-    "Call Path": "napi_gro_receive->dev_gro_receive->napi_gro_complete->gro_normal_one->gro_normal_list.1804->netif_receive_skb_list_internal->__netif_receive_skb_list->__netif_receive_skb_list_core->__netif_receive_skb_core->skb_vlan_untag->pskb_may_pull.2052->__pskb_pull_tail",
-    "Is check controlled": "false",
-    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L2389 | "
+    "Check": "No check",
+    "Call Path": "napi_gro_receive->dev_gro_receive->napi_gro_complete->gro_normal_one->gro_normal_list.1804->netif_receive_skb_list_internal->__netif_receive_skb_list->__netif_receive_skb_list_core->__netif_receive_skb_core->skb_vlan_untag->pskb_may_pull.2052->__pskb_pull_tail"
   },
   {
     "Drv caller": "[ alx_clean_rx_irq | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L278 ], ",
@@ -244,9 +237,8 @@
     "Drv caller": "[ alx_clean_rx_irq | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L278 ], ",
     "Trans func name": "select_fallback_rq",
     "Bugon loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3485",
-    "Call Path": "napi_gro_receive->dev_gro_receive->napi_gro_complete->gro_normal_one->gro_normal_list.1804->netif_receive_skb_list_internal->enqueue_to_backlog->napi_schedule_rps->__napi_schedule_irqoff->____napi_schedule->wake_up_process->try_to_wake_up->select_task_rq->select_fallback_rq",
-    "Is check controlled": "false",
-    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3467 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3459 | "
+    "Check": "No check",
+    "Call Path": "napi_gro_receive->dev_gro_receive->napi_gro_complete->gro_normal_one->gro_normal_list.1804->netif_receive_skb_list_internal->enqueue_to_backlog->napi_schedule_rps->__napi_schedule_irqoff->____napi_schedule->wake_up_process->try_to_wake_up->select_task_rq->select_fallback_rq"
   },
   {
     "Drv caller": "[ alx_clean_rx_irq | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L278 ], ",
@@ -301,102 +293,99 @@
     "Drv caller": "[ alx_poll | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L314 ], ",
     "Trans func name": "__netif_receive_skb_core",
     "Bugon loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L5402",
-    "Call Path": "napi_complete_done->napi_gro_flush->__napi_gro_flush_chain->napi_gro_complete->gro_normal_one->gro_normal_list.1804->netif_receive_skb_list_internal->__netif_receive_skb_list->__netif_receive_skb_list_core->__netif_receive_skb_core",
-    "Is check controlled": "false",
-    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L5390 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L5385 | "
+    "Check": "No check",
+    "Call Path": "napi_complete_done->gro_normal_list->netif_receive_skb_list_internal->__netif_receive_skb_list->__netif_receive_skb_list_core->__netif_receive_skb_core"
   },
   {
     "Drv caller": "[ alx_poll | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L314 ], ",
     "Trans func name": "select_fallback_rq",
     "Bugon loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3485",
-    "Call Path": "napi_complete_done->napi_gro_flush->__napi_gro_flush_chain->napi_gro_complete->gro_normal_one->gro_normal_list.1804->netif_receive_skb_list_internal->enqueue_to_backlog->napi_schedule_rps->__napi_schedule_irqoff->____napi_schedule->wake_up_process->try_to_wake_up->select_task_rq->select_fallback_rq",
-    "Is check controlled": "false",
-    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3467 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3459 | "
+    "Check": "No check",
+    "Call Path": "napi_complete_done->gro_normal_list->netif_receive_skb_list_internal->enqueue_to_backlog->napi_schedule_rps->__napi_schedule_irqoff->____napi_schedule->wake_up_process->try_to_wake_up->select_task_rq->select_fallback_rq"
   },
   {
     "Drv caller": "[ alx_poll | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L314 ], ",
     "Trans func name": "skb_pull_rcsum",
     "Bugon loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L4010",
     "Check": "No check",
-    "Call Path": "napi_complete_done->napi_gro_flush->__napi_gro_flush_chain->napi_gro_complete->gro_normal_one->gro_normal_list.1804->netif_receive_skb_list_internal->__netif_receive_skb_list->__netif_receive_skb_list_core->__netif_receive_skb_core->skb_vlan_untag->skb_pull_rcsum"
+    "Call Path": "napi_complete_done->gro_normal_list->netif_receive_skb_list_internal->__netif_receive_skb_list->__netif_receive_skb_list_core->__netif_receive_skb_core->skb_vlan_untag->skb_pull_rcsum"
   },
   {
     "Drv caller": "[ alx_poll | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L314 ], ",
     "Trans func name": "__pskb_pull_tail",
     "Bugon loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L2389",
-    "Call Path": "napi_complete_done->napi_gro_flush->__napi_gro_flush_chain->napi_gro_complete->gro_normal_one->gro_normal_list.1804->netif_receive_skb_list_internal->__netif_receive_skb_list->__netif_receive_skb_list_core->__netif_receive_skb_core->skb_vlan_untag->pskb_may_pull.2052->__pskb_pull_tail",
-    "Is check controlled": "false",
-    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L2389 | "
+    "Check": "No check",
+    "Call Path": "napi_complete_done->gro_normal_list->netif_receive_skb_list_internal->__netif_receive_skb_list->__netif_receive_skb_list_core->__netif_receive_skb_core->skb_vlan_untag->pskb_may_pull.2052->__pskb_pull_tail"
   },
   {
     "Drv caller": "[ alx_poll | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L314 ], ",
     "Trans func name": "__skb_pull.2086",
     "Bugon loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/skbuff.h#L2626",
     "Check": "No check",
-    "Call Path": "napi_complete_done->napi_gro_flush->__napi_gro_flush_chain->napi_gro_complete->gro_normal_one->gro_normal_list.1804->netif_receive_skb_list_internal->__netif_receive_skb_list->__netif_receive_skb_list_core->__netif_receive_skb_core->skb_vlan_untag->skb_pull_rcsum->__skb_pull.2086"
+    "Call Path": "napi_complete_done->gro_normal_list->netif_receive_skb_list_internal->__netif_receive_skb_list->__netif_receive_skb_list_core->__netif_receive_skb_core->skb_vlan_untag->skb_pull_rcsum->__skb_pull.2086"
   },
   {
     "Drv caller": "[ alx_poll | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L314 ], ",
     "Trans func name": "pskb_expand_head",
     "Bugon loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/skbuff.c#L1824 |   unreachable",
     "Check": "No check",
-    "Call Path": "napi_complete_done->napi_gro_flush->__napi_gro_flush_chain->napi_gro_complete->gro_normal_one->gro_normal_list.1804->netif_receive_skb_list_internal->__netif_receive_skb_list->__netif_receive_skb_list_core->__netif_receive_skb_core->skb_vlan_untag->pskb_may_pull.2052->__pskb_pull_tail->pskb_expand_head"
+    "Call Path": "napi_complete_done->gro_normal_list->netif_receive_skb_list_internal->__netif_receive_skb_list->__netif_receive_skb_list_core->__netif_receive_skb_core->skb_vlan_untag->pskb_may_pull.2052->__pskb_pull_tail->pskb_expand_head"
   },
   {
     "Drv caller": "[ alx_poll | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L314 ], ",
     "Trans func name": "__skb_pull",
     "Bugon loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/skbuff.h#L2626",
     "Check": "No check",
-    "Call Path": "napi_complete_done->napi_gro_flush->__napi_gro_flush_chain->napi_gro_complete->gro_normal_one->gro_normal_list.1804->netif_receive_skb_list_internal->__netif_receive_skb_list->__netif_receive_skb_list_core->__netif_receive_skb_core->do_xdp_generic->netif_receive_generic_xdp->bpf_prog_run_generic_xdp->__skb_pull"
+    "Call Path": "napi_complete_done->gro_normal_list->netif_receive_skb_list_internal->__netif_receive_skb_list->__netif_receive_skb_list_core->__netif_receive_skb_core->do_xdp_generic->netif_receive_generic_xdp->bpf_prog_run_generic_xdp->__skb_pull"
   },
   {
     "Drv caller": "[ alx_poll | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L314 ], ",
     "Trans func name": "__skb_pull.2235",
     "Bugon loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/skbuff.h#L2626",
     "Check": "No check",
-    "Call Path": "napi_complete_done->napi_gro_flush->__napi_gro_flush_chain->napi_gro_complete->gro_normal_one->gro_normal_list.1804->netif_receive_skb_list_internal->__netif_receive_skb_list->__netif_receive_skb_list_core->__netif_receive_skb_core->do_xdp_generic->netif_receive_generic_xdp->bpf_prog_run_generic_xdp->eth_type_trans->skb_pull_inline.2228->__skb_pull.2235"
+    "Call Path": "napi_complete_done->gro_normal_list->netif_receive_skb_list_internal->__netif_receive_skb_list->__netif_receive_skb_list_core->__netif_receive_skb_core->do_xdp_generic->netif_receive_generic_xdp->bpf_prog_run_generic_xdp->eth_type_trans->skb_pull_inline.2228->__skb_pull.2235"
   },
   {
     "Drv caller": "[ alx_poll | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L314 ], ",
     "Trans func name": "dql_queued",
     "Bugon loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/dynamic_queue_limits.h#L77",
     "Check": "No check",
-    "Call Path": "napi_complete_done->napi_gro_flush->__napi_gro_flush_chain->napi_gro_complete->gro_normal_one->gro_normal_list.1804->netif_receive_skb_list_internal->__netif_receive_skb_list->__netif_receive_skb_list_core->__netif_receive_skb_core->do_xdp_generic->generic_xdp_tx->netdev_start_xmit->__netdev_start_xmit->alx_start_xmit->alx_start_xmit_ring->netdev_tx_sent_queue->dql_queued"
+    "Call Path": "napi_complete_done->gro_normal_list->netif_receive_skb_list_internal->__netif_receive_skb_list->__netif_receive_skb_list_core->__netif_receive_skb_core->do_xdp_generic->generic_xdp_tx->netdev_start_xmit->__netdev_start_xmit->alx_start_xmit->alx_start_xmit_ring->netdev_tx_sent_queue->dql_queued"
   },
   {
     "Drv caller": "[ alx_poll | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L314 ], ",
     "Trans func name": "__pick_next_task",
     "Bugon loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L5886",
     "Check": "No check",
-    "Call Path": "napi_complete_done->napi_gro_flush->__napi_gro_flush_chain->napi_gro_complete->gro_normal_one->gro_normal_list.1804->netif_receive_skb_list_internal->__netif_receive_skb_list->__netif_receive_skb_list_core->__netif_receive_skb_core->migrate_enable->__set_cpus_allowed_ptr->__set_cpus_allowed_ptr_locked->affine_move_task->schedule->__schedule->pick_next_task->__pick_next_task"
+    "Call Path": "napi_complete_done->gro_normal_list->netif_receive_skb_list_internal->__netif_receive_skb_list->__netif_receive_skb_list_core->__netif_receive_skb_core->migrate_enable->__set_cpus_allowed_ptr->__set_cpus_allowed_ptr_locked->affine_move_task->schedule->__schedule->pick_next_task->__pick_next_task"
   },
   {
     "Drv caller": "[ alx_poll | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L314 ], ",
     "Trans func name": "dma_map_page_attrs",
     "Bugon loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/dma/mapping.c#L150",
     "Check": "No check",
-    "Call Path": "napi_complete_done->napi_gro_flush->__napi_gro_flush_chain->napi_gro_complete->gro_normal_one->gro_normal_list.1804->netif_receive_skb_list_internal->__netif_receive_skb_list->__netif_receive_skb_list_core->__netif_receive_skb_core->do_xdp_generic->generic_xdp_tx->netdev_start_xmit->__netdev_start_xmit->alx_start_xmit->alx_start_xmit_ring->alx_map_tx_skb->dma_map_single_attrs->dma_map_page_attrs"
+    "Call Path": "napi_complete_done->gro_normal_list->netif_receive_skb_list_internal->__netif_receive_skb_list->__netif_receive_skb_list_core->__netif_receive_skb_core->do_xdp_generic->generic_xdp_tx->netdev_start_xmit->__netdev_start_xmit->alx_start_xmit->alx_start_xmit_ring->alx_map_tx_skb->dma_map_single_attrs->dma_map_page_attrs"
   },
   {
     "Drv caller": "[ alx_poll | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L314 ], ",
     "Trans func name": "check_panic_on_warn",
     "Bugon loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/panic.c#L230 |   unreachable",
     "Check": "No check",
-    "Call Path": "napi_complete_done->napi_gro_flush->__napi_gro_flush_chain->napi_gro_complete->gro_normal_one->gro_normal_list.1804->netif_receive_skb_list_internal->__netif_receive_skb_list->__netif_receive_skb_list_core->__netif_receive_skb_core->migrate_enable->__set_cpus_allowed_ptr->__set_cpus_allowed_ptr_locked->affine_move_task->schedule->__schedule->schedule_debug->__schedule_bug->check_panic_on_warn"
+    "Call Path": "napi_complete_done->gro_normal_list->netif_receive_skb_list_internal->__netif_receive_skb_list->__netif_receive_skb_list_core->__netif_receive_skb_core->migrate_enable->__set_cpus_allowed_ptr->__set_cpus_allowed_ptr_locked->affine_move_task->schedule->__schedule->schedule_debug->__schedule_bug->check_panic_on_warn"
   },
   {
     "Drv caller": "[ alx_poll | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L314 ], ",
     "Trans func name": "add_taint",
     "Bugon loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/panic.c#L542",
     "Check": "No check",
-    "Call Path": "napi_complete_done->napi_gro_flush->__napi_gro_flush_chain->napi_gro_complete->gro_normal_one->gro_normal_list.1804->netif_receive_skb_list_internal->__netif_receive_skb_list->__netif_receive_skb_list_core->__netif_receive_skb_core->migrate_enable->__set_cpus_allowed_ptr->__set_cpus_allowed_ptr_locked->affine_move_task->schedule->__schedule->schedule_debug->__schedule_bug->add_taint"
+    "Call Path": "napi_complete_done->gro_normal_list->netif_receive_skb_list_internal->__netif_receive_skb_list->__netif_receive_skb_list_core->__netif_receive_skb_core->migrate_enable->__set_cpus_allowed_ptr->__set_cpus_allowed_ptr_locked->affine_move_task->schedule->__schedule->schedule_debug->__schedule_bug->add_taint"
   },
   {
     "Drv caller": "[ alx_poll | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L314 ], ",
     "Trans func name": "dma_unmap_page_attrs",
     "Bugon loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/dma/mapping.c#L172",
     "Check": "No check",
-    "Call Path": "napi_complete_done->napi_gro_flush->__napi_gro_flush_chain->napi_gro_complete->gro_normal_one->gro_normal_list.1804->netif_receive_skb_list_internal->__netif_receive_skb_list->__netif_receive_skb_list_core->__netif_receive_skb_core->do_xdp_generic->generic_xdp_tx->netdev_start_xmit->__netdev_start_xmit->alx_start_xmit->alx_start_xmit_ring->alx_map_tx_skb->alx_free_txbuf->dma_unmap_single_attrs->dma_unmap_page_attrs"
+    "Call Path": "napi_complete_done->gro_normal_list->netif_receive_skb_list_internal->__netif_receive_skb_list->__netif_receive_skb_list_core->__netif_receive_skb_core->do_xdp_generic->generic_xdp_tx->netdev_start_xmit->__netdev_start_xmit->alx_start_xmit->alx_start_xmit_ring->alx_map_tx_skb->alx_free_txbuf->dma_unmap_single_attrs->dma_unmap_page_attrs"
   },
   {
     "Drv caller": "[ alx_probe | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1732 ], ",
@@ -418,7 +407,7 @@
     "Bugon loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10730",
     "Call Path": "unregister_netdev->rtnl_unlock->netdev_run_todo->free_netdev",
     "Is check controlled": "false",
-    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10697 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10725 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10730 | "
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10725 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10697 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10730 | "
   },
   {
     "Drv caller": "[ alx_remove | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1896 ], ",
@@ -480,9 +469,8 @@
     "Drv caller": "[ alx_remove | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1896 ], ",
     "Trans func name": "select_fallback_rq",
     "Bugon loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3485",
-    "Call Path": "unregister_netdev->unregister_netdevice->unregister_netdevice_queue->unregister_netdevice_many->rtmsg_ifinfo_build_skb->if_nlmsg_size->rtnl_vfinfo_size->dev_num_vf->alx_resume->__alx_open->alx_alloc_napis->netif_napi_add->netif_napi_add_weight->napi_kthread_create->wake_up_process->try_to_wake_up->select_task_rq->select_fallback_rq",
-    "Is check controlled": "false",
-    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3467 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3459 | "
+    "Check": "No check",
+    "Call Path": "unregister_netdev->unregister_netdevice->unregister_netdevice_queue->unregister_netdevice_many->rtmsg_ifinfo_build_skb->if_nlmsg_size->rtnl_vfinfo_size->dev_num_vf->alx_resume->__alx_open->alx_alloc_napis->netif_napi_add->netif_napi_add_weight->napi_kthread_create->wake_up_process->try_to_wake_up->select_task_rq->select_fallback_rq"
   },
   {
     "Drv caller": "[ alx_remove | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1896 ], ",
@@ -539,21 +527,7 @@
     "Bugon loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10730",
     "Call Path": "register_netdev->rtnl_unlock->netdev_run_todo->free_netdev",
     "Is check controlled": "false",
-    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10697 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10725 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10730 | "
-  },
-  {
-    "Drv caller": "[ alx_probe | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1862 ], ",
-    "Trans func name": "__dynamic_netdev_dbg",
-    "Bugon loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/lib/dynamic_debug.c#L908 |   unreachable",
-    "Check": "No check",
-    "Call Path": "register_netdev->register_netdevice->__netdev_update_features->netdev_fix_features->__dynamic_netdev_dbg"
-  },
-  {
-    "Drv caller": "[ alx_probe | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1862 ], ",
-    "Trans func name": "unregister_netdevice_many",
-    "Bugon loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10789 |   unreachable",
-    "Check": "No check",
-    "Call Path": "register_netdev->register_netdevice->unregister_netdevice_queue->unregister_netdevice_many"
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10725 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10697 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10730 | "
   },
   {
     "Drv caller": "[ alx_probe | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1862 ], ",
@@ -568,6 +542,20 @@
     "Bugon loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L259",
     "Check": "No check",
     "Call Path": "register_netdev->register_netdevice->netdev_name_node_head_alloc->netdev_name_node_alloc"
+  },
+  {
+    "Drv caller": "[ alx_probe | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1862 ], ",
+    "Trans func name": "__dynamic_netdev_dbg",
+    "Bugon loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/lib/dynamic_debug.c#L908 |   unreachable",
+    "Check": "No check",
+    "Call Path": "register_netdev->register_netdevice->__netdev_update_features->netdev_fix_features->__dynamic_netdev_dbg"
+  },
+  {
+    "Drv caller": "[ alx_probe | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1862 ], ",
+    "Trans func name": "unregister_netdevice_many",
+    "Bugon loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/net/core/dev.c#L10789 |   unreachable",
+    "Check": "No check",
+    "Call Path": "register_netdev->register_netdevice->unregister_netdevice_queue->unregister_netdevice_many"
   },
   {
     "Drv caller": "[ alx_probe | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1862 ], ",
@@ -636,9 +624,8 @@
     "Drv caller": "[ alx_probe | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1862 ], ",
     "Trans func name": "select_fallback_rq",
     "Bugon loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3485",
-    "Call Path": "register_netdev->register_netdevice->alx_open->__alx_open->alx_alloc_napis->netif_napi_add->netif_napi_add_weight->napi_kthread_create->wake_up_process->try_to_wake_up->select_task_rq->select_fallback_rq",
-    "Is check controlled": "false",
-    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3467 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/sched/core.c#L3459 | "
+    "Check": "No check",
+    "Call Path": "register_netdev->register_netdevice->alx_open->__alx_open->alx_alloc_napis->netif_napi_add->netif_napi_add_weight->napi_kthread_create->wake_up_process->try_to_wake_up->select_task_rq->select_fallback_rq"
   },
   {
     "Drv caller": "[ alx_probe | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/net/ethernet/atheros/alx/main.c#L1862 ], ",

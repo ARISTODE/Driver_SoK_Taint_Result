@@ -1,15 +1,5 @@
 [
   {
-    "No. entry": 2
-  },
-  {
-    "Drv func": "zero_map",
-    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/md/dm-zero.c#L38 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/md/dm-zero.c#L40 | ",
-    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/md/dm-zero.c#L44"
-  },
-  {
-    "Drv func": "dm_zero_init",
-    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/md/dm-zero.c#L72 | ",
-    "Call site loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/md/dm-zero.c#L73"
+    "No. entry": 0
   }
 ]

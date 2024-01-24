@@ -1,15 +1,5 @@
 [
   {
-    "No. entry": 2
-  },
-  {
-    "Lock name": "_raw_spin_lock_irq",
-    "Lock Inst Loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/lib/xarray.c#L39",
-    "Cond Loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/lib/xarray.c#L38 | "
-  },
-  {
-    "Lock name": "_raw_spin_lock",
-    "Lock Inst Loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/lib/xarray.c#L43",
-    "Cond Loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/lib/xarray.c#L38 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/lib/xarray.c#L40 | "
+    "No. entry": 0
   }
 ]

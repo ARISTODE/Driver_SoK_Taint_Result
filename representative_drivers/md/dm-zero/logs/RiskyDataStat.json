@@ -1,7 +1,9 @@
 {
   "Num kernel  boundary func": 5,
   "Num boundary parameters": 5,
-  "Num non-struct boundary parameters": 5,
+  "Num classified boundary parameters": 0,
+  "Num boundary parameter fields": 0,
+  "Num classified boundary parameter fields": 0,
   "Num drv callbacks": 2,
   "Num shared struct": 2,
   "Shared fields": 2,

@@ -4,28 +4,9 @@
     "No.Fields": 25,
     "No.Shared fields": 13,
     "No.KRDU fields": 1,
-    "No.classified fields": 1,
-    "No.unclassified fields": 0,
-    "BRANCH": 1,
-    "UNCLASSIFY": 0
-  },
-  {
-    "id": "0",
-    "risky": "val-sen-branch (buffer_acc)",
-    "acc_path": "mce->kflags",
-    "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/arch/x86/kernel/cpu/mce/core.c#L1584",
-    "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/arch/x86/kernel/cpu/mce/core.c#L1584",
-    "drv_update_loc(shared field)": "[ (sbridge_mce_check_error) https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/sb_edac.c#L3311 ], ",
-    "call path (type)": "",
-    "total_cond_num": "1",
-    "total_cond_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/arch/x86/kernel/cpu/mce/core.c#L1565 | ",
-    "isControl": "1",
-    "direct_num_cond_checks": 0,
-    "direct_cond_checks_loc": "",
-    "is_direct_control": 1,
-    "isTrue": "-",
-    "atk_reason": "",
-    "defense": ""
+    "No.classified fields": 0,
+    "No.unclassified fields": 1,
+    "UNCLASSIFY": 1
   }
 ]
 [
@@ -45,29 +26,10 @@
     "No.Fields": 15,
     "No.Shared fields": 3,
     "No.KRDU fields": 2,
-    "No.classified fields": 2,
-    "No.unclassified fields": 0,
+    "No.classified fields": 1,
+    "No.unclassified fields": 1,
     "": 1,
-    "BRANCH": 2,
-    "UNCLASSIFY": 0
-  },
-  {
-    "id": "2",
-    "risky": "val-sen-branch (buffer_acc)",
-    "acc_path": "dimm_info->nr_pages",
-    "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/edac_mc.c#L1038",
-    "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/edac_mc.c#L1038",
-    "drv_update_loc(shared field)": "[ (__populate_dimms) https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/sb_edac.c#L1667 ], ",
-    "call path (type)": " [edac_mc_handle_error] ",
-    "total_cond_num": "0",
-    "total_cond_loc": "",
-    "isControl": "1",
-    "direct_num_cond_checks": 0,
-    "direct_cond_checks_loc": "",
-    "is_direct_control": 1,
-    "isTrue": "-",
-    "atk_reason": "",
-    "defense": ""
+    "UNCLASSIFY": 1
   },
   {
     "id": "2",
@@ -75,14 +37,14 @@
     "acc_path": "dimm_info->nr_pages",
     "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/edac_mc.c#L766",
     "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/edac_mc.c#L766",
-    "drv_update_loc(shared field)": "[ (__populate_dimms) https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/sb_edac.c#L1667 ], ",
-    "call path (type)": "",
     "total_cond_num": "2",
     "total_cond_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/edac_mc.c#L764 | ",
     "isControl": "0",
     "direct_num_cond_checks": 0,
     "direct_cond_checks_loc": "",
-    "is_direct_control": 1,
+    "isDirectControl": 1,
+    "drv_update_loc(shared field)": "[ (__populate_dimms) https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/sb_edac.c#L1667 ], ",
+    "call path (type)": "",
     "isTrue": "-",
     "atk_reason": "",
     "defense": ""
@@ -105,30 +67,9 @@
     "No.Fields": 41,
     "No.Shared fields": 14,
     "No.KRDU fields": 8,
-    "No.classified fields": 3,
-    "No.unclassified fields": 5,
-    "BRANCH": 3,
-    "UNCLASSIFY": 5
-  },
-  {
-    "id": "7",
-    "risky": "ptr-sen-branch ( senapi: buffer_acc)",
-    "acc_path": "mem_ctl_info->pdev",
-    "src": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/edac_mc.c#L528",
-    "dst": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/edac_mc.c#L535",
-    "drv caller (param)": "",
-    "call path (param)": "",
-    "drv_update_loc(shared field)": "[ (sbridge_register_mci) https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/sb_edac.c#L3529 ], ",
-    "call path (type)": " [edac_mc_add_mc_with_groups->add_mc_to_global_list] ",
-    "total_cond_num": "2",
-    "total_cond_loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/edac_mc.c#L532 | ",
-    "isControl": "0",
-    "direct_num_cond_checks": 0,
-    "direct_cond_checks_loc": "",
-    "is_direct_control": 1,
-    "isTrue": "-",
-    "atk_reason": "",
-    "defense": ""
+    "No.classified fields": 0,
+    "No.unclassified fields": 8,
+    "UNCLASSIFY": 8
   }
 ]
 [
