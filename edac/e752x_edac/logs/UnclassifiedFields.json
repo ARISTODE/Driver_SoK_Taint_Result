@@ -1,0 +1,858 @@
+{
+  "id": 0,
+  "acc_path": "dimm_info->grain",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/edac_mc.c#L105],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/edac_mc.c#L1029],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/edac_mc.c#L1030], ",
+  "Drv update": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L1130], "
+}
+{
+  "id": 1,
+  "acc_path": "dimm_info->nr_pages",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/edac_mc.c#L766],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/edac_mc.c#L1038],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/edac_mc.c#L94],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/edac_mc.c#L104], ",
+  "Drv update": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L1129], "
+}
+{
+  "id": 2,
+  "acc_path": "csrow_info->first_page",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/edac_mc.c#L771],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/edac_mc.c#L779],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/edac_mc.c#L112],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/edac_mc.c#L776], ",
+  "Drv update": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L1106], "
+}
+{
+  "id": 3,
+  "acc_path": "csrow_info->last_page",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/edac_mc.c#L771],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/edac_mc.c#L113],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/edac_mc.c#L777], ",
+  "Drv update": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L1107], "
+}
+{
+  "id": 4,
+  "acc_path": "mem_ctl_info->mtype_cap",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/edac_mc.c#L123], ",
+  "Drv update": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L1298], "
+}
+{
+  "id": 5,
+  "acc_path": "mem_ctl_info->edac_ctl_cap",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/edac_mc.c#L124], ",
+  "Drv update": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L1300], "
+}
+{
+  "id": 6,
+  "acc_path": "mem_ctl_info->edac_cap",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/edac_mc.c#L125], ",
+  "Drv update": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L1335],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L1337],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L1121],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L1118], "
+}
+{
+  "id": 9,
+  "acc_path": "mem_ctl_info->pdev",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/edac_mc.c#L131],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/edac_mc.c#L528],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/edac_mc.c#L438],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/edac_mc.c#L548], ",
+  "Drv update": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L1304], "
+}
+{
+  "id": 10,
+  "acc_path": "mem_ctl_info->mod_name",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/edac_mc.c#L548],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/edac_mc.c#L132],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/edac_mc.c#L713],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/edac_mc.c#L665],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/edac_mc.c#L670],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/edac_mc.c#L635], ",
+  "Drv update": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L1303], "
+}
+{
+  "id": 11,
+  "acc_path": "mem_ctl_info->ctl_name",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/edac_mc.c#L548],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/edac_mc.c#L665],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/edac_mc.c#L713],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/edac_mc.c#L132], ",
+  "Drv update": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L1317], "
+}
+{
+  "id": 12,
+  "acc_path": "mem_ctl_info->dev_name",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/edac_mc.c#L665],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/edac_mc.c#L713],  [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/edac_mc.c#L548], ",
+  "Drv update": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L1318], "
+}
+{
+  "id": 13,
+  "acc_path": "fmt",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/kernel/printk/printk.c#L2287 | _printk",
+  "Drv update": ""
+}
+{
+  "id": 13,
+  "acc_path": "fmt",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 14,
+  "acc_path": "dev",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/access.c#L542 | pci_read_config_byte",
+  "Drv update": ""
+}
+{
+  "id": 14,
+  "acc_path": "dev",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 15,
+  "acc_path": "where",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/access.c#L542 | pci_read_config_byte",
+  "Drv update": ""
+}
+{
+  "id": 16,
+  "acc_path": "val",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 20,
+  "acc_path": "dev",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/access.c#L573 | pci_write_config_byte",
+  "Drv update": ""
+}
+{
+  "id": 20,
+  "acc_path": "dev",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 21,
+  "acc_path": "where",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/access.c#L573 | pci_write_config_byte",
+  "Drv update": ""
+}
+{
+  "id": 22,
+  "acc_path": "val",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/access.c#L573 | pci_write_config_byte",
+  "Drv update": ""
+}
+{
+  "id": 23,
+  "acc_path": "dev",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/access.c#L562 | pci_read_config_dword",
+  "Drv update": ""
+}
+{
+  "id": 23,
+  "acc_path": "dev",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 25,
+  "acc_path": "val",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 26,
+  "acc_path": "dev",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/access.c#L552 | pci_read_config_word",
+  "Drv update": ""
+}
+{
+  "id": 26,
+  "acc_path": "dev",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 28,
+  "acc_path": "val",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 29,
+  "acc_path": "dev",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 30,
+  "acc_path": "bus",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 35,
+  "acc_path": "dev",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/access.c#L581 | pci_write_config_word",
+  "Drv update": ""
+}
+{
+  "id": 35,
+  "acc_path": "dev",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 37,
+  "acc_path": "val",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/access.c#L581 | pci_write_config_word",
+  "Drv update": ""
+}
+{
+  "id": 41,
+  "acc_path": "dev",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/access.c#L589 | pci_write_config_dword",
+  "Drv update": ""
+}
+{
+  "id": 41,
+  "acc_path": "dev",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 43,
+  "acc_path": "val",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/access.c#L589 | pci_write_config_dword",
+  "Drv update": ""
+}
+{
+  "id": 44,
+  "acc_path": "dev",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 47,
+  "acc_path": "from",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 49,
+  "acc_path": "dev",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 50,
+  "acc_path": "drv",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/pci-driver.c#L1456 | pci_unregister_driver",
+  "Drv update": ""
+}
+{
+  "id": 50,
+  "acc_path": "drv",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 51,
+  "acc_path": "drv",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/pci-driver.c#L1427 | __pci_register_driver",
+  "Drv update": ""
+}
+{
+  "id": 51,
+  "acc_path": "drv",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 52,
+  "acc_path": "owner",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/pci-driver.c#L1427 | __pci_register_driver",
+  "Drv update": ""
+}
+{
+  "id": 52,
+  "acc_path": "owner",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 53,
+  "acc_path": "mod_name",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/pci-driver.c#L1427 | __pci_register_driver",
+  "Drv update": ""
+}
+{
+  "id": 53,
+  "acc_path": "mod_name",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 54,
+  "acc_path": "type",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L943 | edac_mc_handle_error",
+  "Drv update": ""
+}
+{
+  "id": 55,
+  "acc_path": "mci",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L943 | edac_mc_handle_error",
+  "Drv update": ""
+}
+{
+  "id": 55,
+  "acc_path": "mci",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 55,
+  "acc_path": "mci->mtype_cap",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 55,
+  "acc_path": "mci->edac_ctl_cap",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 55,
+  "acc_path": "mci->edac_cap",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 55,
+  "acc_path": "mci->pdev",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 55,
+  "acc_path": "mci->mod_name",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 55,
+  "acc_path": "mci->ctl_name",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 55,
+  "acc_path": "mci->dev_name",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 55,
+  "acc_path": "mci->mtype_cap",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 55,
+  "acc_path": "mci->edac_ctl_cap",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 55,
+  "acc_path": "mci->edac_cap",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 55,
+  "acc_path": "mci->pdev",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 55,
+  "acc_path": "mci->mod_name",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 55,
+  "acc_path": "mci->ctl_name",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 55,
+  "acc_path": "mci->dev_name",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 55,
+  "acc_path": "mci->edac_check",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 55,
+  "acc_path": "mci->ctl_page_to_phys",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 55,
+  "acc_path": "mci->pdev",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 55,
+  "acc_path": "mci->mod_name",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 55,
+  "acc_path": "mci->ctl_name",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 55,
+  "acc_path": "mci->dev_name",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 56,
+  "acc_path": "error_count",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L943 | edac_mc_handle_error",
+  "Drv update": ""
+}
+{
+  "id": 57,
+  "acc_path": "page_frame_number",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L943 | edac_mc_handle_error",
+  "Drv update": ""
+}
+{
+  "id": 58,
+  "acc_path": "offset_in_page",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L943 | edac_mc_handle_error",
+  "Drv update": ""
+}
+{
+  "id": 59,
+  "acc_path": "syndrome",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L943 | edac_mc_handle_error",
+  "Drv update": ""
+}
+{
+  "id": 63,
+  "acc_path": "msg",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 64,
+  "acc_path": "other_detail",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 65,
+  "acc_path": "mci",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L753 | edac_mc_find_csrow_by_page",
+  "Drv update": ""
+}
+{
+  "id": 65,
+  "acc_path": "mci",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 65,
+  "acc_path": "mci->mtype_cap",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 65,
+  "acc_path": "mci->edac_ctl_cap",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 65,
+  "acc_path": "mci->edac_cap",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 65,
+  "acc_path": "mci->pdev",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 65,
+  "acc_path": "mci->mod_name",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 65,
+  "acc_path": "mci->ctl_name",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 65,
+  "acc_path": "mci->dev_name",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 65,
+  "acc_path": "mci->mtype_cap",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 65,
+  "acc_path": "mci->edac_ctl_cap",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 65,
+  "acc_path": "mci->edac_cap",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 65,
+  "acc_path": "mci->pdev",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 65,
+  "acc_path": "mci->mod_name",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 65,
+  "acc_path": "mci->ctl_name",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 65,
+  "acc_path": "mci->dev_name",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 65,
+  "acc_path": "mci->edac_check",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 65,
+  "acc_path": "mci->ctl_page_to_phys",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 65,
+  "acc_path": "mci->pdev",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 65,
+  "acc_path": "mci->mod_name",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 65,
+  "acc_path": "mci->ctl_name",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 65,
+  "acc_path": "mci->dev_name",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 67,
+  "acc_path": "dev",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 68,
+  "acc_path": "mci",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L600 | edac_mc_add_mc_with_groups",
+  "Drv update": ""
+}
+{
+  "id": 68,
+  "acc_path": "mci",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 68,
+  "acc_path": "mci->mtype_cap",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 68,
+  "acc_path": "mci->edac_ctl_cap",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 68,
+  "acc_path": "mci->edac_cap",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 68,
+  "acc_path": "mci->ctl_name",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/edac_mc.c#L665], ",
+  "Drv update": ""
+}
+{
+  "id": 68,
+  "acc_path": "mci->dev_name",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/edac_mc.c#L665], ",
+  "Drv update": ""
+}
+{
+  "id": 68,
+  "acc_path": "mci->mtype_cap",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 68,
+  "acc_path": "mci->edac_ctl_cap",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 68,
+  "acc_path": "mci->edac_cap",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 68,
+  "acc_path": "mci->ctl_name",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/edac_mc.c#L665], ",
+  "Drv update": ""
+}
+{
+  "id": 68,
+  "acc_path": "mci->dev_name",
+  "Kernel read": " [https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/edac_mc.c#L665], ",
+  "Drv update": ""
+}
+{
+  "id": 68,
+  "acc_path": "mci->edac_check",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 68,
+  "acc_path": "mci->ctl_page_to_phys",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 68,
+  "acc_path": "mci->pdev",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 68,
+  "acc_path": "mci->mod_name",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 68,
+  "acc_path": "mci->ctl_name",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 68,
+  "acc_path": "mci->dev_name",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 69,
+  "acc_path": "groups",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L600 | edac_mc_add_mc_with_groups",
+  "Drv update": ""
+}
+{
+  "id": 69,
+  "acc_path": "groups",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 70,
+  "acc_path": "mci",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L405 | edac_mc_free",
+  "Drv update": ""
+}
+{
+  "id": 70,
+  "acc_path": "mci",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 70,
+  "acc_path": "mci->mtype_cap",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 70,
+  "acc_path": "mci->edac_ctl_cap",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 70,
+  "acc_path": "mci->edac_cap",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 70,
+  "acc_path": "mci->pdev",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 70,
+  "acc_path": "mci->mod_name",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 70,
+  "acc_path": "mci->ctl_name",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 70,
+  "acc_path": "mci->dev_name",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 70,
+  "acc_path": "mci->mtype_cap",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 70,
+  "acc_path": "mci->edac_ctl_cap",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 70,
+  "acc_path": "mci->edac_cap",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 70,
+  "acc_path": "mci->pdev",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 70,
+  "acc_path": "mci->mod_name",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 70,
+  "acc_path": "mci->ctl_name",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 70,
+  "acc_path": "mci->dev_name",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 70,
+  "acc_path": "mci->edac_check",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 70,
+  "acc_path": "mci->ctl_page_to_phys",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 70,
+  "acc_path": "mci->pdev",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 70,
+  "acc_path": "mci->mod_name",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 70,
+  "acc_path": "mci->ctl_name",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 70,
+  "acc_path": "mci->dev_name",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 71,
+  "acc_path": "mc_num",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L334 | edac_mc_alloc",
+  "Drv update": ""
+}
+{
+  "id": 73,
+  "acc_path": "layers",
+  "Kernel read": "",
+  "Drv update": ""
+}
+{
+  "id": 75,
+  "acc_path": "int",
+  "Kernel read": "https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/e752x_edac.c#L1385 | e752x_init_one",
+  "Drv update": ""
+}

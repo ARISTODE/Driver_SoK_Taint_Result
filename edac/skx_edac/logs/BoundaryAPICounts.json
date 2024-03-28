@@ -1,6 +1,6 @@
 {
-  "": 1,
   "memory": 3,
-  "concurrency": 6,
-  "bus": 2
+  "bus": 3,
+  "": 2,
+  "concurrency": 6
 }

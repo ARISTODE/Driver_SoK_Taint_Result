@@ -1,7 +1,7 @@
 {
-  "bus": 4,
   "": 2,
-  "memory": 4,
+  "refCount": 10,
   "concurrency": 8,
-  "refCount": 7
+  "memory": 4,
+  "bus": 6
 }

@@ -1,0 +1,73 @@
+{
+  "Struct": "attribute_group",
+  "No.Fields": 5,
+  "No.KRDU fields": 0,
+  "No.classified fields": 0,
+  "No.unclassified fields": 0
+}
+{
+  "Struct": "device",
+  "No.Fields": 118,
+  "No.KRDU fields": 6,
+  "No.classified fields": 3,
+  "No.unclassified fields": 3,
+  "CONTROL_VAR": "3"
+}
+{
+  "Struct": "pci_bus",
+  "No.Fields": 25,
+  "No.KRDU fields": 0,
+  "No.classified fields": 0,
+  "No.unclassified fields": 0
+}
+{
+  "Struct": "mem_ctl_info",
+  "No.Fields": 85,
+  "No.KRDU fields": 11,
+  "No.classified fields": 2,
+  "No.unclassified fields": 9,
+  "CONTROL_VAR": "2"
+}
+{
+  "Struct": "module",
+  "No.Fields": 48,
+  "No.KRDU fields": 0,
+  "No.classified fields": 0,
+  "No.unclassified fields": 0
+}
+{
+  "Struct": "notifier_block",
+  "No.Fields": 3,
+  "No.KRDU fields": 0,
+  "No.classified fields": 0,
+  "No.unclassified fields": 0
+}
+{
+  "Struct": "edac_mc_layer",
+  "No.Fields": 3,
+  "No.KRDU fields": 0,
+  "No.classified fields": 0,
+  "No.unclassified fields": 0
+}
+{
+  "Struct": "pci_driver",
+  "No.Fields": 17,
+  "No.KRDU fields": 0,
+  "No.classified fields": 0,
+  "No.unclassified fields": 0
+}
+{
+  "Struct": "pci_dev",
+  "No.Fields": 115,
+  "No.KRDU fields": 0,
+  "No.classified fields": 0,
+  "No.unclassified fields": 0
+}
+{
+  "Shared Struct": 9,
+  "Shared Fields": 419,
+  "KRDU Fields": 17,
+  "Classified Fields": 5,
+  "Non-Classified Fields": 12,
+  "CONTROL_VAR": 5
+}

@@ -1,5 +1,5 @@
 {
-  "concurrency": 4,
-  "memory": 5,
-  "bus": 3
+  "bus": 6,
+  "memory": 3,
+  "concurrency": 4
 }

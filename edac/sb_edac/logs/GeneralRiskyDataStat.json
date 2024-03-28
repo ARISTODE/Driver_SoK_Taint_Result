@@ -1,0 +1,23 @@
+{
+  "Num kernel  boundary func": 17,
+  "Num boundary parameters": 34,
+  "Num classified boundary parameters": 18,
+  "Num boundary parameter fields": 24,
+  "Num classified boundary parameter fields": 2,
+  "Num drv callbacks": 1,
+  "Num shared struct": 11,
+  "Shared fields": 39,
+  "KRDU fields": 11,
+  "ptr fields": 54,
+  "func ptr fields": 7,
+  "data ptr fields": 47,
+  "total taint path": 30,
+  "total taint controlled path": 7,
+  "total direct controlled path": 20,
+  "UNCLASSIFY": 11,
+  "PARAM_NUM_ARITH": 1,
+  "PARAM_PTR_WRITE": 3,
+  "PARAM_RISKY_KERNEL_FUNC": 10,
+  "PARAM_UNCLASSIFY": 94,
+  "PARAM_BRANCH": 16
+}

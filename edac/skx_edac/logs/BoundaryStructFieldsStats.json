@@ -1,0 +1,79 @@
+{
+  "Struct": "x86_cpu_id",
+  "No.Fields": 6,
+  "No.KRDU fields": 0,
+  "No.classified fields": 0,
+  "No.unclassified fields": 0
+}
+{
+  "Struct": "file",
+  "No.Fields": 19,
+  "No.KRDU fields": 0,
+  "No.classified fields": 0,
+  "No.unclassified fields": 0
+}
+{
+  "Struct": "inode",
+  "No.Fields": 50,
+  "No.KRDU fields": 0,
+  "No.classified fields": 0,
+  "No.unclassified fields": 0
+}
+{
+  "Struct": "dentry",
+  "No.Fields": 16,
+  "No.KRDU fields": 0,
+  "No.classified fields": 0,
+  "No.unclassified fields": 0
+}
+{
+  "Struct": "pci_dev",
+  "No.Fields": 115,
+  "No.KRDU fields": 0,
+  "No.classified fields": 0,
+  "No.unclassified fields": 0
+}
+{
+  "Struct": "notifier_block",
+  "No.Fields": 3,
+  "No.KRDU fields": 0,
+  "No.classified fields": 0,
+  "No.unclassified fields": 0
+}
+{
+  "Struct": "edac_mc_layer",
+  "No.Fields": 3,
+  "No.KRDU fields": 0,
+  "No.classified fields": 0,
+  "No.unclassified fields": 0
+}
+{
+  "Struct": "attribute_group",
+  "No.Fields": 5,
+  "No.KRDU fields": 0,
+  "No.classified fields": 0,
+  "No.unclassified fields": 0
+}
+{
+  "Struct": "device",
+  "No.Fields": 44,
+  "No.KRDU fields": 0,
+  "No.classified fields": 0,
+  "No.unclassified fields": 0
+}
+{
+  "Struct": "mem_ctl_info",
+  "No.Fields": 85,
+  "No.KRDU fields": 8,
+  "No.classified fields": 2,
+  "No.unclassified fields": 6,
+  "CONTROL_VAR": "2"
+}
+{
+  "Shared Struct": 10,
+  "Shared Fields": 346,
+  "KRDU Fields": 8,
+  "Classified Fields": 2,
+  "Non-Classified Fields": 6,
+  "CONTROL_VAR": 2
+}

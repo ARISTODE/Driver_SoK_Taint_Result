@@ -1,0 +1,37 @@
+[
+  {
+    "Total Bugon": 4,
+    "Controlled Bugon": 2,
+    "Uncontrolled Bugon": 2
+  },
+  {
+    "Drv caller": "[ x38_probe1 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/x38_edac.c#L344 ], ",
+    "Trans func name": "kzalloc",
+    "Bugon loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689",
+    "Call Path": "edac_mc_alloc->kzalloc",
+    "Is check controlled": "false",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L689 | "
+  },
+  {
+    "Drv caller": "[ x38_probe1 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/x38_edac.c#L344 ], ",
+    "Trans func name": "kmalloc_array",
+    "Bugon loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L604",
+    "Check": "No check",
+    "Call Path": "edac_mc_alloc->kcalloc->kmalloc_array"
+  },
+  {
+    "Drv caller": "[ x38_process_error_info | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/x38_edac.c#L228 ], [ x38_process_error_info | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/x38_edac.c#L222 ], [ x38_process_error_info | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/x38_edac.c#L213 ], ",
+    "Trans func name": "edac_ue_error",
+    "Bugon loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/edac_mc.c#L887",
+    "Check": "No check",
+    "Call Path": "edac_mc_handle_error->edac_raw_mc_handle_error->edac_ue_error"
+  },
+  {
+    "Drv caller": "[ x38_remove_one | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/x38_edac.c#L439 ], [ x38_probe1 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/x38_edac.c#L406 ], ",
+    "Trans func name": "iounmap",
+    "Bugon loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/arch/x86/mm/ioremap.c#L495",
+    "Call Path": "iounmap",
+    "Is check controlled": "false",
+    "Cond loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/arch/x86/mm/ioremap.c#L483 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/arch/x86/mm/ioremap.c#L495 | "
+  }
+]

@@ -1,0 +1,11 @@
+[
+  {
+    "type": "indirect",
+    "drv boundary func": "i5000_init_one",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L2007",
+    "call path": " [i5000_init_one->pci_enable_device->pci_enable_device_flags] ",
+    "num condition checks": 2,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L1990 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L2006 | ",
+    "is controlled": false
+  }
+]

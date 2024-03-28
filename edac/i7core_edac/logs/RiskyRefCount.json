@@ -1,0 +1,47 @@
+[
+  {
+    "type": "indirect",
+    "drv boundary func": "i7core_probe",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L2007",
+    "call path": " [i7core_probe->i7core_get_all_devices->i7core_get_onedevice->pci_enable_device->pci_enable_device_flags] ",
+    "num condition checks": 2,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L1990 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L2006 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "i7core_probe",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L845",
+    "call path": " [i7core_probe->i7core_register_mci->i7core_create_sysfs_devices->device_add->fw_devlink_link_device->__fw_devlink_link_to_consumers->fw_devlink_create_devlink->device_link_add] ",
+    "num condition checks": 4,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L831 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L832 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L839 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L844 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "i7core_probe",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L916",
+    "call path": " [i7core_probe->i7core_register_mci->i7core_create_sysfs_devices->device_add->fw_devlink_link_device->__fw_devlink_link_to_consumers->fw_devlink_create_devlink->device_link_add] ",
+    "num condition checks": 5,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L908 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L889 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L914 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L915 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/base/core.c#L831 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "i7core_probe",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/refcount.h#L267",
+    "call path": " [i7core_probe->i7core_register_mci->i7core_create_sysfs_devices->device_add->fw_devlink_link_device->__fw_devlink_link_to_consumers->fw_devlink_create_devlink->device_link_add->refcount_inc] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "i7core_probe",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/kref.h#L45",
+    "call path": " [i7core_probe->i7core_register_mci->i7core_create_sysfs_devices->device_add->fw_devlink_link_device->__fw_devlink_link_to_consumers->fw_devlink_create_devlink->device_link_add->kref_get] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  }
+]

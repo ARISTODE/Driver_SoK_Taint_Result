@@ -1,6 +1,6 @@
 {
-  "concurrency": 4,
-  "memory": 4,
+  "bus": 8,
   "timer": 2,
-  "bus": 3
+  "memory": 2,
+  "concurrency": 4
 }

@@ -1,5 +1,16 @@
 [
   {
+    "struct name": "mutex",
+    "No.Fields": 4,
+    "No.Shared fields": 0,
+    "No.KRDU fields": 0,
+    "No.classified fields": 0,
+    "No.unclassified fields": 0,
+    "UNCLASSIFY": 0
+  }
+]
+[
+  {
     "struct name": "file_operations",
     "No.Fields": 34,
     "No.Shared fields": 0,
@@ -410,17 +421,6 @@
     "struct name": "p_log",
     "No.Fields": 2,
     "No.Shared fields": 1,
-    "No.KRDU fields": 0,
-    "No.classified fields": 0,
-    "No.unclassified fields": 0,
-    "UNCLASSIFY": 0
-  }
-]
-[
-  {
-    "struct name": "mutex",
-    "No.Fields": 4,
-    "No.Shared fields": 0,
     "No.KRDU fields": 0,
     "No.classified fields": 0,
     "No.unclassified fields": 0,

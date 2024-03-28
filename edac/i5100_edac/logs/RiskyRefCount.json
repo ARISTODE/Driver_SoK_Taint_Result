@@ -1,0 +1,29 @@
+[
+  {
+    "type": "indirect",
+    "drv boundary func": "i5100_init_one",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L2007",
+    "call path": " [i5100_init_one->pci_enable_device->pci_enable_device_flags] ",
+    "num condition checks": 2,
+    "condition checks": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L1990 | https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L2006 | ",
+    "is controlled": false
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "i5100_init_one",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L1225",
+    "call path": " [i5100_init_one->cancel_delayed_work_sync->__cancel_work_timer->try_to_grab_pending->pwq_dec_nr_in_flight] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  },
+  {
+    "type": "indirect",
+    "drv boundary func": "i5100_remove_one",
+    "src loc": "https://github.com/ksplit/lvd-linux/tree/ksplit-latest/kernel/workqueue.c#L1225",
+    "call path": " [i5100_remove_one->cancel_delayed_work_sync->__cancel_work_timer->try_to_grab_pending->pwq_dec_nr_in_flight] ",
+    "num condition checks": 0,
+    "condition checks": "",
+    "is controlled": true
+  }
+]

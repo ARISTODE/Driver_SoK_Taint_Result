@@ -1,232 +1,259 @@
 [
   {
     "id": 0,
-    "kernel boundary func name": "pci_get_device",
-    "risky func": "pci_get_subsys",
+    "kernel boundary func name": "pci_read_config_byte",
+    "risky func": "pci_bus_read_config_byte",
     "Risky API Class": "bus",
     "Is Controlled Path": 1,
-    "call path": "( [3]e752x_get_devs ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/e752x_edac.c#L1176 )->pci_get_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/search.c#L327 )->pci_get_subsys ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/search.c#L298 ) )( [3]e752x_get_devs ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/e752x_edac.c#L1176 )->pci_get_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/search.c#L327 )->pci_get_subsys ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/search.c#L298 ) )"
+    "No. path cond": 1,
+    "call path": "( [3]e752x_probe1 ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L1255 )->pci_read_config_byte ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L542 )->pci_bus_read_config_byte ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L66 ) )( [3]e752x_probe1 ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L1255 )->pci_read_config_byte ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L542 )->pci_bus_read_config_byte ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L66 ) )( [3]e752x_get_error_info ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L838 )->pci_read_config_byte ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L542 )->pci_bus_read_config_byte ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L66 ) )( [3]e752x_init_csrows ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L1065 )->pci_read_config_byte ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L542 )->pci_bus_read_config_byte ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L66 ) )( [3]e752x_get_error_info ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L838 )->pci_read_config_byte ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L542 )->pci_bus_read_config_byte ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L66 ) )( [3]e752x_init_mem_map_table ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L1138 )->pci_read_config_byte ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L542 )->pci_bus_read_config_byte ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L66 ) )( [3]e752x_get_error_info ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L838 )->pci_read_config_byte ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L542 )->pci_bus_read_config_byte ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L66 ) )( [3]e752x_init_mem_map_table ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L1138 )->pci_read_config_byte ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L542 )->pci_bus_read_config_byte ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L66 ) )( [3]e752x_init_csrows ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L1065 )->pci_read_config_byte ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L542 )->pci_bus_read_config_byte ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L66 ) )( [3]e752x_get_error_info ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L838 )->pci_read_config_byte ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L542 )->pci_bus_read_config_byte ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L66 ) )"
   },
   {
     "id": 1,
-    "kernel boundary func name": "pci_scan_single_device",
-    "risky func": "pci_get_slot",
+    "kernel boundary func name": "pci_write_config_byte",
+    "risky func": "pci_bus_write_config_byte",
     "Risky API Class": "bus",
-    "Is Controlled Path": 1,
-    "call path": "( [3]e752x_get_devs ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/e752x_edac.c#L1176 )->pci_scan_single_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/probe.c#L1794 )->pci_get_slot ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/search.c#L189 ) )"
+    "Is Controlled Path": 0,
+    "No. path cond": 1,
+    "call path": "( [3]e752x_init_error_reporting_regs ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L1232 )->pci_write_config_byte ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L573 )->pci_bus_write_config_byte ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L69 ) )( [3]e752x_probe1 ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L1255 )->pci_write_config_byte ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L573 )->pci_bus_write_config_byte ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L69 ) )( [3]e752x_get_error_info ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L838 )->pci_write_config_byte ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L573 )->pci_bus_write_config_byte ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L69 ) )( [3]e752x_init_error_reporting_regs ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L1232 )->pci_write_config_byte ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L573 )->pci_bus_write_config_byte ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L69 ) )( [3]e752x_init_error_reporting_regs ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L1232 )->pci_write_config_byte ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L573 )->pci_bus_write_config_byte ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L69 ) )( [3]e752x_init_error_reporting_regs ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L1232 )->pci_write_config_byte ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L573 )->pci_bus_write_config_byte ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L69 ) )( [3]e752x_init_error_reporting_regs ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L1232 )->pci_write_config_byte ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L573 )->pci_bus_write_config_byte ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L69 ) )( [3]e752x_init_error_reporting_regs ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L1232 )->pci_write_config_byte ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L573 )->pci_bus_write_config_byte ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L69 ) )( [3]e752x_get_error_info ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L838 )->pci_write_config_byte ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L573 )->pci_bus_write_config_byte ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L69 ) )( [3]e752x_get_error_info ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L838 )->pci_write_config_byte ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L573 )->pci_bus_write_config_byte ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L69 ) )( [3]e752x_get_error_info ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L838 )->pci_write_config_byte ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L573 )->pci_bus_write_config_byte ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L69 ) )"
   },
   {
     "id": 2,
-    "kernel boundary func name": "pci_scan_single_device",
-    "risky func": "kfree",
-    "Risky API Class": "memory",
-    "Is Controlled Path": 1,
-    "No. path cond": 4,
-    "call path": "( [4]e752x_get_devs ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/e752x_edac.c#L1176 )->pci_scan_single_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/probe.c#L1794 )->pci_scan_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/probe.c#L1613 )->kfree ( Unknown Loc ) )"
+    "kernel boundary func name": "pci_read_config_dword",
+    "risky func": "pci_bus_read_config_dword",
+    "Risky API Class": "bus",
+    "Is Controlled Path": 0,
+    "No. path cond": 1,
+    "call path": "( [3]e752x_get_error_info ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L838 )->pci_read_config_dword ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L562 )->pci_bus_read_config_dword ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L68 ) )( [3]e752x_get_error_info ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L838 )->pci_read_config_dword ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L562 )->pci_bus_read_config_dword ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L68 ) )( [3]e752x_get_error_info ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L838 )->pci_read_config_dword ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L562 )->pci_bus_read_config_dword ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L68 ) )( [3]e752x_get_error_info ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L838 )->pci_read_config_dword ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L562 )->pci_bus_read_config_dword ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L68 ) )( [3]e752x_get_error_info ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L838 )->pci_read_config_dword ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L562 )->pci_bus_read_config_dword ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L68 ) )( [3]e752x_get_error_info ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L838 )->pci_read_config_dword ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L562 )->pci_bus_read_config_dword ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L68 ) )( [3]e752x_get_error_info ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L838 )->pci_read_config_dword ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L562 )->pci_bus_read_config_dword ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L68 ) )( [3]e752x_init_csrows ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L1065 )->pci_read_config_dword ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L562 )->pci_bus_read_config_dword ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L68 ) )( [3]e752x_get_error_info ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L838 )->pci_read_config_dword ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L562 )->pci_bus_read_config_dword ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L68 ) )( [3]e752x_get_error_info ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L838 )->pci_read_config_dword ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L562 )->pci_bus_read_config_dword ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L68 ) )"
   },
   {
     "id": 3,
-    "kernel boundary func name": "pci_scan_single_device",
-    "risky func": "pci_bus_read_config_dword",
+    "kernel boundary func name": "pci_read_config_word",
+    "risky func": "pci_bus_read_config_word",
     "Risky API Class": "bus",
-    "Is Controlled Path": 1,
-    "No. path cond": 7,
-    "call path": "( [5]e752x_get_devs ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/e752x_edac.c#L1176 )->pci_scan_single_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/probe.c#L1794 )->pci_scan_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/probe.c#L1613 )->pci_bus_read_dev_vendor_id ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/probe.c#L1569 )->pci_bus_read_config_dword ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/access.c#L58 ) )"
+    "Is Controlled Path": 0,
+    "No. path cond": 1,
+    "call path": "( [3]e752x_get_error_info ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L838 )->pci_read_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L552 )->pci_bus_read_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L67 ) )( [3]e752x_probe1 ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L1255 )->pci_read_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L552 )->pci_bus_read_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L67 ) )( [3]e752x_get_error_info ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L838 )->pci_read_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L552 )->pci_bus_read_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L67 ) )( [3]e752x_probe1 ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L1255 )->pci_read_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L552 )->pci_bus_read_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L67 ) )( [3]get_sdram_scrub_rate ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L1017 )->pci_read_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L552 )->pci_bus_read_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L67 ) )( [3]e752x_get_error_info ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L838 )->pci_read_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L552 )->pci_bus_read_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L67 ) )( [3]e752x_get_error_info ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L838 )->pci_read_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L552 )->pci_bus_read_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L67 ) )( [3]e752x_get_error_info ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L838 )->pci_read_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L552 )->pci_bus_read_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L67 ) )( [3]e752x_probe1 ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L1255 )->pci_read_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L552 )->pci_bus_read_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L67 ) )( [3]e752x_get_error_info ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L838 )->pci_read_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L552 )->pci_bus_read_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L67 ) )( [3]pci_write_bits16 ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/edac_pci.h#L115 )->pci_read_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L552 )->pci_bus_read_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L67 ) )( [3]e752x_probe1 ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L1255 )->pci_read_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L552 )->pci_bus_read_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L67 ) )"
   },
   {
     "id": 4,
     "kernel boundary func name": "pci_scan_single_device",
-    "risky func": "kzalloc.297",
-    "Risky API Class": "",
+    "risky func": "pci_get_slot",
+    "Risky API Class": "bus",
     "Is Controlled Path": 1,
-    "No. path cond": 2,
-    "call path": "( [5]e752x_get_devs ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/e752x_edac.c#L1176 )->pci_scan_single_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/probe.c#L1794 )->pci_scan_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/probe.c#L1613 )->pci_alloc_dev ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/probe.c#L1553 )->kzalloc.297 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L634 ) )"
+    "call path": "( [3]e752x_get_devs ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L1174 )->pci_scan_single_device ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/probe.c#L2573 )->pci_get_slot ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/search.c#L194 ) )"
   },
   {
     "id": 5,
     "kernel boundary func name": "pci_scan_single_device",
-    "risky func": "pci_find_capability",
-    "Risky API Class": "bus",
+    "risky func": "kfree",
+    "Risky API Class": "memory",
     "Is Controlled Path": 1,
-    "No. path cond": 6,
-    "call path": "( [5]e752x_get_devs ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/e752x_edac.c#L1176 )->pci_scan_single_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/probe.c#L1794 )->pci_scan_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/probe.c#L1613 )->pci_setup_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/probe.c#L1203 )->pci_find_capability ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/pci.c#L258 ) )"
+    "No. path cond": 15,
+    "call path": "( [4]e752x_get_devs ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L1174 )->pci_scan_single_device ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/probe.c#L2573 )->pci_scan_device ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/probe.c#L2413 )->kfree ( Unknown Loc ) )"
   },
   {
     "id": 6,
     "kernel boundary func name": "pci_scan_single_device",
-    "risky func": "pci_bus_read_config_word",
-    "Risky API Class": "bus",
-    "Is Controlled Path": 1,
-    "No. path cond": 4,
-    "call path": "( [6]e752x_get_devs ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/e752x_edac.c#L1176 )->pci_scan_single_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/probe.c#L1794 )->pci_scan_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/probe.c#L1613 )->pci_setup_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/probe.c#L1203 )->pci_read_config_word.293 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/pci.h#L921 )->pci_bus_read_config_word ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/access.c#L57 ) )"
+    "risky func": "kzalloc.523",
+    "Risky API Class": "",
+    "Is Controlled Path": 0,
+    "No. path cond": 2,
+    "call path": "( [5]e752x_get_devs ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L1174 )->pci_scan_single_device ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/probe.c#L2573 )->pci_scan_device ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/probe.c#L2413 )->pci_alloc_dev ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/probe.c#L2299 )->kzalloc.523 ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L687 ) )"
   },
   {
     "id": 7,
     "kernel boundary func name": "pci_scan_single_device",
-    "risky func": "pci_bus_write_config_word",
+    "risky func": "pci_find_capability",
     "Risky API Class": "bus",
     "Is Controlled Path": 1,
-    "No. path cond": 4,
-    "call path": "( [6]e752x_get_devs ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/e752x_edac.c#L1176 )->pci_scan_single_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/probe.c#L1794 )->pci_scan_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/probe.c#L1613 )->pci_setup_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/probe.c#L1203 )->pci_write_config_word.307 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/pci.h#L934 )->pci_bus_write_config_word ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/access.c#L60 ) )"
+    "No. path cond": 7,
+    "call path": "( [5]e752x_get_devs ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L1174 )->pci_scan_single_device ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/probe.c#L2573 )->pci_scan_device ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/probe.c#L2413 )->pci_setup_device ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/probe.c#L1821 )->pci_find_capability ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L491 ) )"
   },
   {
     "id": 8,
     "kernel boundary func name": "pci_scan_single_device",
-    "risky func": "pci_bus_read_config_byte",
+    "risky func": "pci_bus_read_config_dword",
     "Risky API Class": "bus",
-    "Is Controlled Path": 1,
-    "No. path cond": 3,
-    "call path": "( [8]e752x_get_devs ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/e752x_edac.c#L1176 )->pci_scan_single_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/probe.c#L1794 )->pci_scan_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/probe.c#L1613 )->pci_setup_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/probe.c#L1203 )->pci_find_capability ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/pci.c#L258 )->__pci_find_next_cap ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/pci.c#L204 )->__pci_find_next_cap_ttl ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/pci.c#L180 )->pci_bus_read_config_byte ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/access.c#L56 ) )"
+    "Is Controlled Path": 0,
+    "No. path cond": 9,
+    "call path": "( [6]e752x_get_devs ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L1174 )->pci_scan_single_device ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/probe.c#L2573 )->pci_scan_device ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/probe.c#L2413 )->pci_bus_read_dev_vendor_id ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/probe.c#L2390 )->pci_bus_generic_read_dev_vendor_id ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/probe.c#L2373 )->pci_bus_read_config_dword ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L68 ) )"
   },
   {
     "id": 9,
     "kernel boundary func name": "pci_scan_single_device",
-    "risky func": "pci_find_ext_capability",
+    "risky func": "pci_bus_read_config_word",
     "Risky API Class": "bus",
-    "Is Controlled Path": 1,
-    "No. path cond": 7,
-    "call path": "( [6]e752x_get_devs ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/e752x_edac.c#L1176 )->pci_scan_single_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/probe.c#L1794 )->pci_device_add ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/probe.c#L1744 )->pci_configure_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/probe.c#L1508 )->program_hpp_type2 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/probe.c#L1442 )->pci_find_ext_capability ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/pci.c#L364 ) )"
+    "Is Controlled Path": 0,
+    "No. path cond": 12,
+    "call path": "( [6]e752x_get_devs ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L1174 )->pci_scan_single_device ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/probe.c#L2573 )->pci_scan_device ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/probe.c#L2413 )->pci_setup_device ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/probe.c#L1821 )->pci_read_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L552 )->pci_bus_read_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L67 ) )"
   },
   {
     "id": 10,
     "kernel boundary func name": "pci_scan_single_device",
-    "risky func": "kzalloc.118",
-    "Risky API Class": "",
+    "risky func": "pci_bus_write_config_word",
+    "Risky API Class": "bus",
     "Is Controlled Path": 0,
-    "No. path cond": 3,
-    "call path": "( [6]e752x_get_devs ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/e752x_edac.c#L1176 )->pci_scan_single_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/probe.c#L1794 )->pci_device_add ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/probe.c#L1744 )->pci_init_capabilities ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/probe.c#L1640 )->pci_vpd_init ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/access.c#L583 )->kzalloc.118 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L634 ) )"
+    "No. path cond": 12,
+    "call path": "( [6]e752x_get_devs ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L1174 )->pci_scan_single_device ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/probe.c#L2573 )->pci_scan_device ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/probe.c#L2413 )->pci_setup_device ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/probe.c#L1821 )->pci_write_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L581 )->pci_bus_write_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L70 ) )"
   },
   {
     "id": 11,
     "kernel boundary func name": "pci_scan_single_device",
-    "risky func": "pci_bus_write_config_dword",
+    "risky func": "pci_bus_read_config_byte",
     "Risky API Class": "bus",
-    "Is Controlled Path": 1,
-    "No. path cond": 7,
-    "call path": "( [8]e752x_get_devs ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/e752x_edac.c#L1176 )->pci_scan_single_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/probe.c#L1794 )->pci_scan_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/probe.c#L1613 )->pci_setup_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/probe.c#L1203 )->pci_read_bases ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/probe.c#L319 )->__pci_read_base ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/probe.c#L175 )->pci_write_config_dword.309 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/pci.h#L938 )->pci_bus_write_config_dword ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/access.c#L61 ) )"
+    "Is Controlled Path": 0,
+    "No. path cond": 3,
+    "call path": "( [8]e752x_get_devs ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L1174 )->pci_scan_single_device ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/probe.c#L2573 )->pci_scan_device ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/probe.c#L2413 )->pci_setup_device ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/probe.c#L1821 )->pci_find_capability ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L491 )->__pci_find_next_cap ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L437 )->__pci_find_next_cap_ttl ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L413 )->pci_bus_read_config_byte ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L66 ) )"
   },
   {
     "id": 12,
     "kernel boundary func name": "pci_scan_single_device",
-    "risky func": "pci_find_next_ext_capability",
+    "risky func": "pci_find_vsec_capability",
     "Risky API Class": "bus",
     "Is Controlled Path": 0,
     "No. path cond": 4,
-    "call path": "( [7]e752x_get_devs ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/e752x_edac.c#L1176 )->pci_scan_single_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/probe.c#L1794 )->pci_device_add ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/probe.c#L1744 )->pci_configure_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/probe.c#L1508 )->program_hpp_type2 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/probe.c#L1442 )->pci_find_ext_capability ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/pci.c#L364 )->pci_find_next_ext_capability ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/pci.c#L309 ) )"
+    "call path": "( [6]e752x_get_devs ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L1174 )->pci_scan_single_device ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/probe.c#L2573 )->pci_scan_device ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/probe.c#L2413 )->pci_setup_device ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/probe.c#L1821 )->set_pcie_thunderbolt ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/probe.c#L1584 )->pci_find_vsec_capability ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L716 ) )"
   },
   {
     "id": 13,
     "kernel boundary func name": "pci_scan_single_device",
-    "risky func": "pci_bus_write_config_byte",
+    "risky func": "pci_find_ext_capability",
     "Risky API Class": "bus",
     "Is Controlled Path": 1,
-    "No. path cond": 8,
-    "call path": "( [7]e752x_get_devs ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/e752x_edac.c#L1176 )->pci_scan_single_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/probe.c#L1794 )->pci_device_add ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/probe.c#L1744 )->pci_configure_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/probe.c#L1508 )->program_hpp_type0 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/probe.c#L1400 )->pci_write_config_byte.310 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/pci.h#L930 )->pci_bus_write_config_byte ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/access.c#L59 ) )"
+    "No. path cond": 5,
+    "call path": "( [6]e752x_get_devs ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L1174 )->pci_scan_single_device ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/probe.c#L2573 )->pci_device_add ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/probe.c#L2527 )->pci_configure_device ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/probe.c#L2256 )->pci_configure_ltr ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/probe.c#L2151 )->pci_find_ext_capability ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L596 ) )"
   },
   {
     "id": 14,
     "kernel boundary func name": "pci_scan_single_device",
-    "risky func": "mutex_unlock",
-    "Risky API Class": "concurrency",
-    "Is Controlled Path": 1,
-    "No. path cond": 16,
-    "call path": "( [7]e752x_get_devs ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/e752x_edac.c#L1176 )->pci_scan_single_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/probe.c#L1794 )->pci_device_add ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/probe.c#L1744 )->pci_init_capabilities ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/probe.c#L1640 )->pci_pm_init ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/pci.c#L2342 )->pci_pme_active ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/pci.c#L1789 )->mutex_unlock ( Unknown Loc ) )"
+    "risky func": "pci_find_next_ext_capability",
+    "Risky API Class": "bus",
+    "Is Controlled Path": 0,
+    "No. path cond": 2,
+    "call path": "( [7]e752x_get_devs ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L1174 )->pci_scan_single_device ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/probe.c#L2573 )->pci_scan_device ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/probe.c#L2413 )->pci_setup_device ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/probe.c#L1821 )->set_pcie_thunderbolt ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/probe.c#L1584 )->pci_find_vsec_capability ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L716 )->pci_find_next_ext_capability ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L541 ) )"
   },
   {
     "id": 15,
     "kernel boundary func name": "pci_scan_single_device",
-    "risky func": "mutex_lock",
-    "Risky API Class": "concurrency",
-    "Is Controlled Path": 1,
-    "No. path cond": 13,
-    "call path": "( [7]e752x_get_devs ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/e752x_edac.c#L1176 )->pci_scan_single_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/probe.c#L1794 )->pci_device_add ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/probe.c#L1744 )->pci_init_capabilities ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/probe.c#L1640 )->pci_pm_init ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/pci.c#L2342 )->pci_pme_active ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/pci.c#L1789 )->mutex_lock ( Unknown Loc ) )"
+    "risky func": "pci_bus_write_config_dword",
+    "Risky API Class": "bus",
+    "Is Controlled Path": 0,
+    "No. path cond": 17,
+    "call path": "( [8]e752x_get_devs ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L1174 )->pci_scan_single_device ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/probe.c#L2573 )->pci_scan_device ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/probe.c#L2413 )->pci_setup_device ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/probe.c#L1821 )->pci_read_bases ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/probe.c#L322 )->__pci_read_base ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/probe.c#L177 )->pci_write_config_dword ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L589 )->pci_bus_write_config_dword ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L71 ) )"
   },
   {
     "id": 16,
     "kernel boundary func name": "pci_scan_single_device",
-    "risky func": "kzalloc.184",
-    "Risky API Class": "",
-    "Is Controlled Path": 0,
-    "No. path cond": 5,
-    "call path": "( [8]e752x_get_devs ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/e752x_edac.c#L1176 )->pci_scan_single_device ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/probe.c#L1794 )->pci_device_add ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/probe.c#L1744 )->pci_init_capabilities ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/probe.c#L1640 )->pci_allocate_cap_save_buffers ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/pci.c#L2656 )->pci_add_cap_save_buffer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/pci.c#L2642 )->_pci_add_cap_save_buffer ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/pci.c#L2616 )->kzalloc.184 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L634 ) )"
+    "risky func": "mutex_lock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 8,
+    "call path": "( [7]e752x_get_devs ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L1174 )->pci_scan_single_device ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/probe.c#L2573 )->pci_device_add ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/probe.c#L2527 )->pci_init_capabilities ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/probe.c#L2457 )->pci_pm_init ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L3133 )->pci_pme_active ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L2466 )->mutex_lock ( Unknown Loc ) )"
   },
   {
     "id": 17,
+    "kernel boundary func name": "pci_scan_single_device",
+    "risky func": "mutex_unlock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 15,
+    "call path": "( [7]e752x_get_devs ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L1174 )->pci_scan_single_device ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/probe.c#L2573 )->pci_device_add ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/probe.c#L2527 )->pci_init_capabilities ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/probe.c#L2457 )->pci_pm_init ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L3133 )->pci_pme_active ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L2466 )->mutex_unlock ( Unknown Loc ) )"
+  },
+  {
+    "id": 18,
+    "kernel boundary func name": "pci_scan_single_device",
+    "risky func": "kzalloc.402",
+    "Risky API Class": "",
+    "Is Controlled Path": 0,
+    "No. path cond": 6,
+    "call path": "( [8]e752x_get_devs ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L1174 )->pci_scan_single_device ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/probe.c#L2573 )->pci_device_add ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/probe.c#L2527 )->pci_init_capabilities ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/probe.c#L2457 )->pci_allocate_cap_save_buffers ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L3450 )->pci_add_cap_save_buffer ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L3436 )->_pci_add_cap_save_buffer ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci.c#L3410 )->kzalloc.402 ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L687 ) )"
+  },
+  {
+    "id": 19,
+    "kernel boundary func name": "pci_write_config_word",
+    "risky func": "pci_bus_write_config_word",
+    "Risky API Class": "bus",
+    "Is Controlled Path": 0,
+    "No. path cond": 1,
+    "call path": "( [3]e752x_init_error_reporting_regs ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L1232 )->pci_write_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L581 )->pci_bus_write_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L70 ) )( [3]set_sdram_scrub_rate ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L988 )->pci_write_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L581 )->pci_bus_write_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L70 ) )( [3]e752x_init_sysbus_parity_mask ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L1211 )->pci_write_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L581 )->pci_bus_write_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L70 ) )( [3]e752x_init_sysbus_parity_mask ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L1211 )->pci_write_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L581 )->pci_bus_write_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L70 ) )( [3]pci_write_bits16 ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/edac_pci.h#L115 )->pci_write_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L581 )->pci_bus_write_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L70 ) )( [3]e752x_get_error_info ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L838 )->pci_write_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L581 )->pci_bus_write_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L70 ) )( [3]e752x_get_error_info ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L838 )->pci_write_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L581 )->pci_bus_write_config_word ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L70 ) )"
+  },
+  {
+    "id": 20,
+    "kernel boundary func name": "pci_write_config_dword",
+    "risky func": "pci_bus_write_config_dword",
+    "Risky API Class": "bus",
+    "Is Controlled Path": 0,
+    "No. path cond": 1,
+    "call path": "( [3]e752x_init_error_reporting_regs ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L1232 )->pci_write_config_dword ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L589 )->pci_bus_write_config_dword ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L71 ) )( [3]e752x_get_error_info ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L838 )->pci_write_config_dword ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L589 )->pci_bus_write_config_dword ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L71 ) )( [3]e752x_get_error_info ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L838 )->pci_write_config_dword ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L589 )->pci_bus_write_config_dword ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L71 ) )( [3]e752x_init_error_reporting_regs ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L1232 )->pci_write_config_dword ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L589 )->pci_bus_write_config_dword ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L71 ) )( [3]e752x_get_error_info ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L838 )->pci_write_config_dword ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L589 )->pci_bus_write_config_dword ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L71 ) )( [3]e752x_get_error_info ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L838 )->pci_write_config_dword ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L589 )->pci_bus_write_config_dword ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/access.c#L71 ) )"
+  },
+  {
+    "id": 21,
+    "kernel boundary func name": "pci_get_device",
+    "risky func": "pci_get_subsys",
+    "Risky API Class": "bus",
+    "Is Controlled Path": 1,
+    "call path": "( [3]e752x_get_devs ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L1174 )->pci_get_device ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/search.c#L330 )->pci_get_subsys ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/search.c#L301 ) )( [3]e752x_get_devs ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L1174 )->pci_get_device ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/search.c#L330 )->pci_get_subsys ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/search.c#L301 ) )"
+  },
+  {
+    "id": 22,
+    "kernel boundary func name": "pci_enable_device",
+    "Risky API Class": "bus",
+    "Direct Risky Kernel API": 1,
+    "driver callers": "e752x_init_one(https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L1390) | "
+  },
+  {
+    "id": 23,
     "kernel boundary func name": "pci_unregister_driver",
     "risky func": "kfree",
     "Risky API Class": "memory",
     "Is Controlled Path": 1,
     "No. path cond": 1,
-    "call path": "( [4]e752x_exit ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/e752x_edac.c#L1458 )->pci_unregister_driver ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/pci-driver.c#L1302 )->pci_free_dynids ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/pci/pci-driver.c#L79 )->kfree ( Unknown Loc ) )"
+    "call path": "( [4]e752x_exit ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L1455 )->pci_unregister_driver ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci-driver.c#L1456 )->pci_free_dynids ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/pci/pci-driver.c#L81 )->kfree ( Unknown Loc ) )"
   },
   {
-    "id": 18,
-    "kernel boundary func name": "edac_mc_del_mc",
-    "risky func": "mutex_unlock",
-    "Risky API Class": "concurrency",
-    "Is Controlled Path": 1,
-    "No. path cond": 2,
-    "call path": "( [3]e752x_remove_one ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/e752x_edac.c#L1399 )->edac_mc_del_mc ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L773 )->mutex_unlock ( Unknown Loc ) )"
-  },
-  {
-    "id": 19,
+    "id": 24,
     "kernel boundary func name": "edac_mc_del_mc",
     "risky func": "mutex_lock",
     "Risky API Class": "concurrency",
     "Is Controlled Path": 1,
     "No. path cond": 1,
-    "call path": "( [3]e752x_remove_one ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/e752x_edac.c#L1399 )->edac_mc_del_mc ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L773 )->mutex_lock ( Unknown Loc ) )"
+    "call path": "( [3]e752x_remove_one ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L1396 )->edac_mc_del_mc ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/edac_mc.c#L684 )->mutex_lock ( Unknown Loc ) )"
   },
   {
-    "id": 20,
-    "kernel boundary func name": "pci_enable_device",
-    "Risky API Class": "bus",
-    "Direct Risky Kernel API": 1,
-    "driver callers": "e752x_init_one(https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/e752x_edac.c#L1393) | "
-  },
-  {
-    "id": 21,
-    "kernel boundary func name": "edac_mc_add_mc_with_groups",
+    "id": 25,
+    "kernel boundary func name": "edac_mc_del_mc",
     "risky func": "mutex_unlock",
     "Risky API Class": "concurrency",
     "Is Controlled Path": 1,
-    "No. path cond": 8,
-    "call path": "( [3]e752x_probe1 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/e752x_edac.c#L1257 )->edac_mc_add_mc_with_groups ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L678 )->mutex_unlock ( Unknown Loc ) )"
+    "No. path cond": 3,
+    "call path": "( [3]e752x_remove_one ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L1396 )->edac_mc_del_mc ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/edac_mc.c#L684 )->mutex_unlock ( Unknown Loc ) )"
   },
   {
-    "id": 22,
+    "id": 26,
     "kernel boundary func name": "edac_mc_add_mc_with_groups",
     "risky func": "mutex_lock",
     "Risky API Class": "concurrency",
     "Is Controlled Path": 1,
-    "No. path cond": 6,
-    "call path": "( [3]e752x_probe1 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/e752x_edac.c#L1257 )->edac_mc_add_mc_with_groups ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L678 )->mutex_lock ( Unknown Loc ) )"
+    "No. path cond": 5,
+    "call path": "( [3]e752x_probe1 ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L1255 )->edac_mc_add_mc_with_groups ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/edac_mc.c#L600 )->mutex_lock ( Unknown Loc ) )"
   },
   {
-    "id": 23,
-    "kernel boundary func name": "edac_mc_free",
-    "risky func": "kfree",
+    "id": 27,
+    "kernel boundary func name": "edac_mc_add_mc_with_groups",
+    "risky func": "mutex_unlock",
+    "Risky API Class": "concurrency",
+    "Is Controlled Path": 1,
+    "No. path cond": 12,
+    "call path": "( [3]e752x_probe1 ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L1255 )->edac_mc_add_mc_with_groups ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/edac_mc.c#L600 )->mutex_unlock ( Unknown Loc ) )"
+  },
+  {
+    "id": 28,
+    "kernel boundary func name": "edac_mc_alloc",
+    "risky func": "kzalloc",
     "Risky API Class": "memory",
     "Is Controlled Path": 1,
-    "No. path cond": 9,
-    "call path": "( [4]e752x_probe1 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/e752x_edac.c#L1257 )->edac_mc_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L468 )->_edac_mc_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L212 )->kfree ( Unknown Loc ) )( [4]e752x_probe1 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/e752x_edac.c#L1257 )->edac_mc_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L468 )->_edac_mc_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L212 )->kfree ( Unknown Loc ) )( [4]e752x_remove_one ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/e752x_edac.c#L1399 )->edac_mc_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L468 )->_edac_mc_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L212 )->kfree ( Unknown Loc ) )"
-  },
-  {
-    "id": 24,
-    "kernel boundary func name": "edac_mc_alloc",
-    "risky func": "kzalloc.34",
-    "Risky API Class": "",
-    "Is Controlled Path": 0,
-    "No. path cond": 7,
-    "call path": "( [3]e752x_probe1 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/e752x_edac.c#L1257 )->edac_mc_alloc ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L266 )->kzalloc.34 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/./include/linux/slab.h#L634 ) )"
-  },
-  {
-    "id": 25,
-    "kernel boundary func name": "edac_mc_alloc",
-    "risky func": "kfree",
-    "Risky API Class": "memory",
-    "Is Controlled Path": 1,
-    "No. path cond": 21,
-    "call path": "( [4]e752x_probe1 ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/e752x_edac.c#L1257 )->edac_mc_alloc ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L266 )->_edac_mc_free ( https://gitlab.flux.utah.edu/xcap/xcap-capability-linux/-/blob/llvm_v4.8/drivers/edac/edac_mc.c#L212 )->kfree ( Unknown Loc ) )"
+    "No. path cond": 3,
+    "call path": "( [3]e752x_probe1 ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/e752x_edac.c#L1255 )->edac_mc_alloc ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/drivers/edac/edac_mc.c#L334 )->kzalloc ( https://github.com/ksplit/lvd-linux/tree/ksplit-latest/./include/linux/slab.h#L687 ) )"
   }
 ]
